@@ -972,8 +972,9 @@ main:focus {
   aspect-ratio: 1;
   width: min(224px, 100% - 4px);
   margin-top: 10px;
-  padding: 17px;
+  padding: 19px;
   border-radius: 22px;
+  box-sizing: border-box;
   background: radial-gradient(circle at 50% 30%, #241E1A 0%, #161210 65%, #0F0C0A 100%);
   border: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: 
@@ -1004,35 +1005,37 @@ main:focus {
   z-index: 6;
 }
 .pattern-lock-zone::before {
-  top: 7px;
-  left: 7px;
+  top: 8px;
+  left: 8px;
   box-shadow: 
     inset 0 1px 1px #000, 
-    calc(100% - 14px - 5px) 0 0 0 #120F0D;
+    calc(100% - 16px - 5px) 0 0 0 #120F0D;
 }
 .pattern-lock-zone::after {
-  bottom: 7px;
-  left: 7px;
+  bottom: 8px;
+  left: 8px;
   box-shadow: 
     inset 0 1px 1px #000, 
-    calc(100% - 14px - 5px) 0 0 0 #120F0D;
+    calc(100% - 16px - 5px) 0 0 0 #120F0D;
 }
 
 .pattern-grid {
   position: relative;
   z-index: 5;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 18px;
+  grid-template-columns: repeat(5, 22px);
+  grid-template-rows: repeat(5, 22px);
+  gap: 19px;
   width: 100%;
   height: 100%;
+  place-content: center;
   place-items: center;
 }
 
 /* Countersunk circular well + 3D machined bolt */
 .grid-dot {
-  width: 19px;
-  height: 19px;
+  width: 22px;
+  height: 22px;
   border-radius: 50%;
   background: radial-gradient(circle at 35% 30%, #4D4138 0%, #302823 55%, #1F1916 100%);
   border: 1px solid #5A4D42;
