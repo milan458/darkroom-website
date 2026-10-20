@@ -849,7 +849,7 @@
       successCard.hidden = false;
       const countEl = document.querySelector(".spots-count");
       if (countEl) {
-        countEl.innerHTML = `<strong>${Math.max(1, 100 - passNumber)}</strong> / 100 Pro Passes Left`;
+        countEl.innerHTML = `<strong>${Math.max(1, 100 - passNumber)}</strong> / 100 Early Passes Left`;
       }
     }
 
