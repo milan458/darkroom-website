@@ -831,4 +831,99 @@
 
   wireCopyButton("copy-app-link", "✓ Install link copied");
   wireCopyButton("modal-copy-link-btn", "✓ Link Copied");
+
+  /* ---------- 13. Early Tester Beta Waitlist (Coming Soon Front Fold) ---------- */
+  function initEarlyTesterWaitlist() {
+    const form = document.getElementById("waitlist-form");
+    const input = document.getElementById("waitlist-email");
+    const successCard = document.getElementById("waitlist-success");
+    const emailPill = document.getElementById("registered-email-pill");
+    const changeBtn = document.getElementById("waitlist-change-email");
+    const storageKey = "darkroom_early_tester_roster";
+
+    if (!form || !input || !successCard) return;
+
+    function renderConfirmed(email, passNumber = 63) {
+      if (emailPill) emailPill.textContent = email;
+      form.hidden = true;
+      successCard.hidden = false;
+      const countEl = document.querySelector(".spots-count");
+      if (countEl) {
+        countEl.innerHTML = `<strong>${Math.max(1, 100 - passNumber)}</strong> / 100 Pro Passes Left`;
+      }
+    }
+
+    function renderForm() {
+      form.hidden = false;
+      successCard.hidden = true;
+      form.classList.remove("show-error");
+      input.value = "";
+    }
+
+    // Check existing registration
+    try {
+      const saved = localStorage.getItem(storageKey);
+      if (saved) {
+        const data = JSON.parse(saved);
+        if (data && data.email) {
+          renderConfirmed(data.email, data.passNumber || 63);
+        }
+      }
+    } catch {}
+
+    input.addEventListener("input", () => {
+      form.classList.remove("show-error");
+    });
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const raw = input.value.trim();
+      const isValid = input.checkValidity() && raw.length > 3 && raw.includes("@");
+
+      if (!isValid) {
+        form.classList.add("show-error");
+        input.focus();
+        return;
+      }
+
+      form.classList.remove("show-error");
+      const record = {
+        email: raw,
+        passNumber: 63,
+        createdAt: new Date().toISOString()
+      };
+
+      try {
+        localStorage.setItem(storageKey, JSON.stringify(record));
+      } catch {}
+
+      renderConfirmed(raw, 63);
+    });
+
+    if (changeBtn) {
+      changeBtn.addEventListener("click", () => {
+        try {
+          localStorage.removeItem(storageKey);
+        } catch {}
+        renderForm();
+        input.focus();
+      });
+    }
+
+    // Smooth scroll and focus for early access links
+    document.querySelectorAll('a[href="#waitlist"]').forEach((anchor) => {
+      anchor.addEventListener("click", (e) => {
+        const target = document.getElementById("waitlist");
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: "smooth", block: "center" });
+          if (!form.hidden) {
+            setTimeout(() => input.focus(), 400);
+          }
+        }
+      });
+    });
+  }
+
+  initEarlyTesterWaitlist();
 })();
