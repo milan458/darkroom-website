@@ -832,25 +832,34 @@
   wireCopyButton("copy-app-link", "✓ Install link copied");
   wireCopyButton("modal-copy-link-btn", "✓ Link Copied");
 
-  /* ---------- 13. Early Tester Beta Waitlist (Coming Soon Front Fold) ---------- */
+  /* ---------- 13. Early Tester Beta Waitlist (Cloudflare D1 / API integration) ---------- */
   function initEarlyTesterWaitlist() {
     const form = document.getElementById("waitlist-form");
     const input = document.getElementById("waitlist-email");
+    const submitBtn = document.getElementById("waitlist-submit-btn");
     const successCard = document.getElementById("waitlist-success");
     const emailPill = document.getElementById("registered-email-pill");
     const changeBtn = document.getElementById("waitlist-change-email");
+    const countEl = document.querySelector(".spots-count");
     const storageKey = "darkroom_early_tester_roster";
 
     if (!form || !input || !successCard) return;
 
-    function renderConfirmed(email, passNumber = 63) {
+    function updateSpotsCount(spotsLeft) {
+      if (countEl) {
+        countEl.innerHTML = `<strong>${Math.max(1, spotsLeft)}</strong> / 100 Early Passes Left`;
+      }
+    }
+
+    function renderConfirmed(email, passNumber = 63, spotsLeft = 37) {
       if (emailPill) emailPill.textContent = email;
       form.hidden = true;
       successCard.hidden = false;
-      const countEl = document.querySelector(".spots-count");
-      if (countEl) {
-        countEl.innerHTML = `<strong>${Math.max(1, 100 - passNumber)}</strong> / 100 Early Passes Left`;
+      const titleDesc = document.querySelector(".waitlist-success-desc");
+      if (titleDesc) {
+        titleDesc.innerHTML = `We&rsquo;ve reserved <strong>Early Tester Pass #${passNumber} of 100</strong> for <code id="registered-email-pill" class="email-pill">${email}</code>.`;
       }
+      updateSpotsCount(spotsLeft);
     }
 
     function renderForm() {
@@ -858,26 +867,40 @@
       successCard.hidden = true;
       form.classList.remove("show-error");
       input.value = "";
+      if (submitBtn) {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = `<span>Claim Early Access</span><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+      }
     }
 
-    // Check existing registration
+    // Check existing registration in browser
     try {
       const saved = localStorage.getItem(storageKey);
       if (saved) {
         const data = JSON.parse(saved);
         if (data && data.email) {
-          renderConfirmed(data.email, data.passNumber || 63);
+          renderConfirmed(data.email, data.passNumber || 63, data.spotsLeft || 37);
         }
       }
     } catch {}
+
+    // Fetch live counts from Cloudflare D1 endpoint
+    fetch("/api/waitlist")
+      .then((res) => (res.ok ? res.json() : null))
+      .then((data) => {
+        if (data && typeof data.spotsLeft === "number") {
+          updateSpotsCount(data.spotsLeft);
+        }
+      })
+      .catch(() => {});
 
     input.addEventListener("input", () => {
       form.classList.remove("show-error");
     });
 
-    form.addEventListener("submit", (e) => {
+    form.addEventListener("submit", async (e) => {
       e.preventDefault();
-      const raw = input.value.trim();
+      const raw = input.value.trim().toLowerCase();
       const isValid = input.checkValidity() && raw.length > 3 && raw.includes("@");
 
       if (!isValid) {
@@ -887,17 +910,44 @@
       }
 
       form.classList.remove("show-error");
+
+      // Loading state on button
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = `<span>Claiming Pass…</span>`;
+      }
+
+      let passNumber = 63;
+      let spotsLeft = 37;
+
+      try {
+        const resp = await fetch("/api/waitlist", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ email: raw }),
+        });
+
+        if (resp.ok) {
+          const resData = await resp.json();
+          if (resData.passNumber) passNumber = resData.passNumber;
+          if (typeof resData.spotsLeft === "number") spotsLeft = resData.spotsLeft;
+        }
+      } catch (err) {
+        console.warn("Waitlist API offline, saving to local state:", err);
+      }
+
       const record = {
         email: raw,
-        passNumber: 63,
-        createdAt: new Date().toISOString()
+        passNumber,
+        spotsLeft,
+        createdAt: new Date().toISOString(),
       };
 
       try {
         localStorage.setItem(storageKey, JSON.stringify(record));
       } catch {}
 
-      renderConfirmed(raw, 63);
+      renderConfirmed(raw, passNumber, spotsLeft);
     });
 
     if (changeBtn) {
