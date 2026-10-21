@@ -1,0 +1,11 @@
+{
+  // Static site served as Workers static assets. Matches the dashboard's
+  // zero-config deploy; the "previews" block lets the PR preview build
+  // (`npx wrangler preview`) run.
+  "name": "darkroom-website",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "."
+  },
+  "previews": {}
+}
