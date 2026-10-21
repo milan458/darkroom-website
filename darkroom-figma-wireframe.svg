@@ -1,0 +1,360 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 6800" width="1440" height="6800">
+  <defs>
+    <style>
+      .bg { fill: #070605; }
+      .bg-alt { fill: #0E0C0A; }
+      .panel { fill: #141210; stroke: #26211C; stroke-width: 1.5; rx: 12px; }
+      .panel-highlight { fill: #1C1814; stroke: #F5B759; stroke-width: 1.5; rx: 12px; }
+      .card { fill: #1A1714; stroke: #2A241E; stroke-width: 1; rx: 8px; }
+      .border-line { stroke: #26211C; stroke-width: 1.5; stroke-dasharray: 4 4; }
+      .section-badge { fill: #E24A4A; rx: 4px; }
+      .badge-text { font-family: 'SF Pro Mono', Menlo, monospace; font-size: 11px; font-weight: 700; fill: #FFFFFF; letter-spacing: 1px; }
+      .title { font-family: 'SF Pro Display', -apple-system, sans-serif; font-size: 28px; font-weight: 700; fill: #F4EFEA; }
+      .subtitle { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 15px; fill: #9E948A; }
+      .mono { font-family: 'SF Pro Mono', Menlo, monospace; font-size: 12px; fill: #F5B759; }
+      .phone { fill: #060504; stroke: #3E352D; stroke-width: 2; rx: 40px; }
+      .btn-primary { fill: #E24A4A; rx: 6px; }
+      .btn-secondary { fill: #201C18; stroke: #3A322A; stroke-width: 1; rx: 6px; }
+      .btn-text { font-family: -apple-system, sans-serif; font-size: 13px; font-weight: 600; fill: #FFFFFF; text-anchor: middle; }
+      .grid-box { fill: #141210; stroke: #2A241E; stroke-width: 1; rx: 8px; }
+      .tag { font-family: 'SF Pro Mono', Menlo, monospace; font-size: 10px; fill: #E24A4A; }
+    </style>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1440" height="6800" class="bg" />
+
+  <!-- ==================== HEADER (NAVBAR) ==================== -->
+  <g id="FRAME-00-NAVBAR" transform="translate(0, 0)">
+    <rect width="1440" height="76" fill="#0A0908" stroke="#26211C" stroke-width="1" />
+    <text x="80" y="46" font-family="'SF Pro Display', sans-serif" font-size="18" font-weight="800" fill="#F4EFEA" letter-spacing="2">DARKROOM</text>
+    <text x="440" y="45" font-family="'SF Pro Mono', monospace" font-size="12" fill="#9E948A">FEATURES   HOW IT WORKS   SECURITY   COERCION   COMPARE   PRICING   FAQ</text>
+    <rect x="1220" y="20" width="140" height="36" class="btn-primary" />
+    <text x="1290" y="43" class="btn-text">EARLY ACCESS</text>
+  </g>
+
+  <!-- ==================== SECTION 01: HERO CHAMBER ==================== -->
+  <g id="SECTION-01-HERO" transform="translate(0, 76)">
+    <rect width="1440" height="720" class="bg" />
+    <rect x="80" y="30" width="130" height="24" class="section-badge" />
+    <text x="92" y="46" class="badge-text">SECTION 01: HERO</text>
+    
+    <!-- Phone Mockup (Left) -->
+    <g id="HERO-PHONE-SIMULATOR" transform="translate(100, 70)">
+      <rect width="320" height="580" class="phone" />
+      <rect x="90" y="14" width="140" height="28" rx="14" fill="#000000" />
+      <circle cx="160" cy="220" r="18" fill="#1C1814" stroke="#4A3F33" stroke-width="2" />
+      <circle cx="210" cy="220" r="18" fill="#1C1814" stroke="#4A3F33" stroke-width="2" />
+      <circle cx="260" cy="220" r="18" fill="#1C1814" stroke="#4A3F33" stroke-width="2" />
+      <circle cx="160" cy="270" r="18" fill="#1C1814" stroke="#4A3F33" stroke-width="2" />
+      <circle cx="210" cy="270" r="18" fill="#E24A4A" stroke="#E24A4A" stroke-width="2" />
+      <circle cx="260" cy="270" r="18" fill="#1C1814" stroke="#4A3F33" stroke-width="2" />
+      <text x="160" y="140" font-family="'SF Pro Display', sans-serif" font-size="22" font-weight="700" fill="#FFFFFF" text-anchor="middle">Darkroom</text>
+      <text x="160" y="165" font-family="'SF Pro Mono', monospace" font-size="11" fill="#9E948A" text-anchor="middle">Draw bolt pattern (6+ bolts)</text>
+      <rect x="20" y="520" width="280" height="44" rx="8" fill="#141210" stroke="#26211C" />
+      <text x="70" y="546" class="tag">• MAIN</text>
+      <text x="160" y="546" font-family="'SF Pro Mono', monospace" font-size="10" fill="#F5B759">• DECOY</text>
+      <text x="250" y="546" font-family="'SF Pro Mono', monospace" font-size="10" fill="#38A169">• DURESS</text>
+    </g>
+
+    <!-- Copy & Waitlist Card (Right) -->
+    <g id="HERO-COPY-WAITLIST" transform="translate(480, 70)">
+      <rect x="0" y="10" width="280" height="28" rx="14" fill="#141210" stroke="#2A241E" />
+      <text x="14" y="28" class="mono">iOS 17+ · TESTFLIGHT BETA · 1 MO FREE</text>
+      <text x="0" y="90" class="title" font-size="44">YOUR HIDDEN ALBUM</text>
+      <text x="0" y="140" class="title" font-size="44">ISN'T ACTUALLY HIDDEN.</text>
+      <text x="0" y="190" class="title" font-size="44" fill="#E24A4A">DARKROOM IS.</text>
+      
+      <!-- Lede -->
+      <line x1="0" y1="220" x2="0" y2="280" stroke="#E24A4A" stroke-width="3" />
+      <text x="16" y="244" class="subtitle" font-size="17" fill="#F4EFEA">Your photos move into a vault only your bolt pattern can open.</text>
+      <text x="16" y="270" class="subtitle" font-size="15">Encrypted on your iPhone with Argon2id and AES-256-GCM. Zero accounts.</text>
+
+      <!-- Waitlist Box -->
+      <rect x="0" y="310" width="660" height="240" class="panel" />
+      <text x="28" y="345" class="tag">APPLE TESTFLIGHT · PRIVATE BETA</text>
+      <text x="28" y="375" class="title" font-size="22">Become an Early Tester</text>
+      <rect x="460" y="352" width="170" height="28" rx="14" fill="#2A1E12" stroke="#F5B759" />
+      <text x="475" y="370" class="mono" font-size="11">● 38 / 100 Passes Left</text>
+      <text x="28" y="415" class="subtitle" font-size="14">Claim your private beta seat. The first 100 testers get 1 Month Free Pro</text>
+      <text x="28" y="435" class="subtitle" font-size="14">+ 50% discount on subsequent Yearly &amp; Lifetime plans.</text>
+      
+      <rect x="28" y="465" width="410" height="48" rx="6" fill="#0C0A09" stroke="#2A241E" />
+      <text x="48" y="495" class="subtitle" font-size="14">Enter email for TestFlight invite...</text>
+      <rect x="450" y="465" width="180" height="48" class="btn-primary" />
+      <text x="540" y="495" class="btn-text">CLAIM ACCESS →</text>
+    </g>
+  </g>
+
+  <!-- ==================== SECTION 02: 35MM FILM-STRIP TRUST BAR ==================== -->
+  <g id="SECTION-02-TRUST-BAR" transform="translate(0, 796)">
+    <rect width="1440" height="120" class="bg-alt" stroke="#26211C" stroke-width="1" />
+    <rect x="80" y="16" width="160" height="20" class="section-badge" fill="#F5B759" />
+    <text x="88" y="30" class="badge-text" fill="#000000">SECTION 02: TRUST BAR</text>
+    
+    <g transform="translate(80, 50)">
+      <rect x="0" y="0" width="200" height="48" class="grid-box" />
+      <text x="20" y="28" class="mono">01A</text><text x="60" y="28" class="subtitle" fill="#FFFFFF">No Accounts</text>
+      
+      <rect x="240" y="0" width="200" height="48" class="grid-box" />
+      <text x="260" y="28" class="mono">02A</text><text x="300" y="28" class="subtitle" fill="#FFFFFF">No Email Required</text>
+      
+      <rect x="480" y="0" width="200" height="48" class="grid-box" />
+      <text x="500" y="28" class="mono">03A</text><text x="540" y="28" class="subtitle" fill="#FFFFFF">No Backdoors</text>
+      
+      <rect x="720" y="0" width="200" height="48" class="grid-box" />
+      <text x="740" y="28" class="mono">04A</text><text x="780" y="28" class="subtitle" fill="#FFFFFF">Zero Analytics</text>
+      
+      <rect x="960" y="0" width="200" height="48" class="grid-box" />
+      <text x="980" y="28" class="mono">05A</text><text x="1020" y="28" class="subtitle" fill="#FFFFFF">Local-First Vault</text>
+    </g>
+  </g>
+
+  <!-- ==================== SECTION 03: 12-SPEC FEATURE BENTO GRID ==================== -->
+  <g id="SECTION-03-FEATURES-BENTO" transform="translate(0, 916)">
+    <rect width="1440" height="960" class="bg" />
+    <rect x="80" y="30" width="180" height="24" class="section-badge" />
+    <text x="92" y="46" class="badge-text">SECTION 03: FEATURES</text>
+    <text x="80" y="90" class="title">Engineered for absolute secrecy.</text>
+    <text x="80" y="115" class="subtitle">12 core privacy specifications. Zero trust architecture.</text>
+
+    <!-- 6 Bento Cards -->
+    <g transform="translate(80, 150)">
+      <rect x="0" y="0" width="400" height="220" class="panel" />
+      <text x="24" y="40" class="tag">01 · CRYPTOGRAPHY</text>
+      <text x="24" y="75" class="title" font-size="20">Argon2id Key Derivation</text>
+      <text x="24" y="110" class="subtitle" font-size="14">64 MiB RAM, 3 passes. Brute-force resistant.</text>
+
+      <rect x="440" y="0" width="400" height="220" class="panel" />
+      <text x="464" y="40" class="tag">02 · DEFENSE</text>
+      <text x="464" y="75" class="title" font-size="20">Plausible Deniability</text>
+      <text x="464" y="110" class="subtitle" font-size="14">3 distinct bolt patterns open 3 separate vaults.</text>
+
+      <rect x="880" y="0" width="400" height="220" class="panel" />
+      <text x="904" y="40" class="tag">03 · HARDWARE</text>
+      <text x="904" y="75" class="title" font-size="20">Secure Enclave Backing</text>
+      <text x="904" y="110" class="subtitle" font-size="14">Apple hardware-level security guarantees.</text>
+
+      <rect x="0" y="250" width="400" height="220" class="panel" />
+      <text x="24" y="290" class="tag">04 · CLOUD</text>
+      <text x="24" y="325" class="title" font-size="20">Ciphertext-Only iCloud</text>
+      <text x="24" y="360" class="subtitle" font-size="14">Apple never receives encryption keys or plaintext.</text>
+
+      <rect x="440" y="250" width="400" height="220" class="panel" />
+      <text x="464" y="290" class="tag">05 · IMPORT</text>
+      <text x="464" y="325" class="title" font-size="20">Direct Share Sheet Import</text>
+      <text x="464" y="360" class="subtitle" font-size="14">Send directly to vault and scrub original frame.</text>
+
+      <rect x="880" y="250" width="400" height="220" class="panel" />
+      <text x="904" y="290" class="tag">06 · EMERGENCY</text>
+      <text x="904" y="325" class="title" font-size="20">Duress Silent Wipe</text>
+      <text x="904" y="360" class="subtitle" font-size="14">Purges local keys silently without trace.</text>
+    </g>
+  </g>
+
+  <!-- ==================== SECTION 04: HOW IT WORKS ==================== -->
+  <g id="SECTION-04-HOW-IT-WORKS" transform="translate(0, 1876)">
+    <rect width="1440" height="680" class="bg-alt" stroke="#26211C" stroke-width="1" />
+    <rect x="80" y="30" width="200" height="24" class="section-badge" fill="#F5B759" />
+    <text x="92" y="46" class="badge-text" fill="#000000">SECTION 04: HOW IT WORKS</text>
+    <text x="80" y="90" class="title">From camera roll into sealed chamber.</text>
+    <text x="80" y="115" class="subtitle">3 simple stages: Expose, Seal, Encrypt.</text>
+
+    <g transform="translate(80, 160)">
+      <rect x="0" y="0" width="390" height="360" class="panel" />
+      <text x="30" y="50" class="mono" font-size="24">STAGE 01</text>
+      <text x="30" y="95" class="title" font-size="22">Select and Expose</text>
+      <text x="30" y="130" class="subtitle">Pick photos, 4K HDR videos, or private notes directly from iOS Photos or Files.</text>
+
+      <rect x="440" y="0" width="390" height="360" class="panel" />
+      <text x="470" y="50" class="mono" font-size="24">STAGE 02</text>
+      <text x="470" y="95" class="title" font-size="22">Seal with Argon2id</text>
+      <text x="470" y="130" class="subtitle">Your 5x5 bolt pattern stretches into a 256-bit AES master room key.</text>
+
+      <rect x="880" y="0" width="390" height="360" class="panel" />
+      <text x="910" y="50" class="mono" font-size="24">STAGE 03</text>
+      <text x="910" y="95" class="title" font-size="22">Shred Original Copy</text>
+      <text x="910" y="130" class="subtitle">Zero trace in Recently Deleted. Only ciphertext remains on disk.</text>
+    </g>
+  </g>
+
+  <!-- ==================== SECTION 05: CRYPTOGRAPHIC SECURITY MODEL ==================== -->
+  <g id="SECTION-05-SECURITY-MODEL" transform="translate(0, 2556)">
+    <rect width="1440" height="740" class="bg" />
+    <rect x="80" y="30" width="180" height="24" class="section-badge" />
+    <text x="92" y="46" class="badge-text">SECTION 05: SECURITY</text>
+    <text x="80" y="90" class="title">DRK1 Cryptographic Protocol</text>
+    <text x="80" y="115" class="subtitle">On-device key derivation, zero-knowledge sync, and chunked AES-256-GCM.</text>
+
+    <!-- Visual Architecture Box -->
+    <rect x="80" y="150" width="1280" height="480" class="panel-highlight" />
+    <text x="120" y="200" class="mono" font-size="16">DERIVATION FLOW &amp; KEY HIERARCHY</text>
+    
+    <g transform="translate(120, 240)">
+      <rect x="0" y="0" width="240" height="180" class="grid-box" />
+      <text x="20" y="40" class="tag">INPUT</text>
+      <text x="20" y="70" class="title" font-size="18">5×5 Bolt Pattern</text>
+      <text x="20" y="105" class="subtitle" font-size="13">N-point coordinate sequence</text>
+
+      <text x="270" y="95" class="mono" font-size="20">→</text>
+
+      <rect x="310" y="0" width="280" height="180" class="grid-box" />
+      <text x="330" y="40" class="tag">KDF ENGINE</text>
+      <text x="330" y="70" class="title" font-size="18">Argon2id (64 MiB, t=3)</text>
+      <text x="330" y="105" class="subtitle" font-size="13">+ 256-bit Header Salt</text>
+
+      <text x="620" y="95" class="mono" font-size="20">→</text>
+
+      <rect x="660" y="0" width="280" height="180" class="grid-box" />
+      <text x="680" y="40" class="tag">CIPHER</text>
+      <text x="680" y="70" class="title" font-size="18">AES-256-GCM</text>
+      <text x="680" y="105" class="subtitle" font-size="13">Unique key &amp; IV per 1 MiB chunk</text>
+    </g>
+  </g>
+
+  <!-- ==================== SECTION 06: COERCION DEFENSE (3-DOOR CHAMBER) ==================== -->
+  <g id="SECTION-06-COERCION" transform="translate(0, 3296)">
+    <rect width="1440" height="700" class="bg-alt" stroke="#26211C" stroke-width="1" />
+    <rect x="80" y="30" width="190" height="24" class="section-badge" fill="#F5B759" />
+    <text x="92" y="46" class="badge-text" fill="#000000">SECTION 06: COERCION</text>
+    <text x="80" y="90" class="title">3 Doors. Plausible Deniability.</text>
+    <text x="80" y="115" class="subtitle">If compelled to unlock your phone, your pattern decides what exists.</text>
+
+    <g transform="translate(80, 160)">
+      <rect x="0" y="0" width="390" height="420" class="panel" />
+      <circle cx="40" cy="40" r="8" fill="#E24A4A" />
+      <text x="60" y="45" class="title" font-size="20">Door 1: Real Vault</text>
+      <text x="30" y="90" class="subtitle">Your primary private vault. Fully decrypted with full resolution capture.</text>
+
+      <rect x="440" y="0" width="390" height="420" class="panel" />
+      <circle cx="480" cy="40" r="8" fill="#F5B759" />
+      <text x="500" y="45" class="title" font-size="20">Door 2: Decoy Room</text>
+      <text x="470" y="90" class="subtitle">A convincing secondary vault with innocent family or travel snapshots.</text>
+
+      <rect x="880" y="0" width="390" height="420" class="panel" />
+      <circle cx="920" cy="40" r="8" fill="#38A169" />
+      <text x="940" y="45" class="title" font-size="20">Door 3: Duress Wipe</text>
+      <text x="910" y="90" class="subtitle">Instantly destroys on-device decryption keys without raising alarms.</text>
+    </g>
+  </g>
+
+  <!-- ==================== SECTION 07: 17-ROW COMPETITOR COMPARISON ==================== -->
+  <g id="SECTION-07-COMPARE" transform="translate(0, 3996)">
+    <rect width="1440" height="880" class="bg" />
+    <rect x="80" y="30" width="220" height="24" class="section-badge" />
+    <text x="92" y="46" class="badge-text">SECTION 07: COMPARISON</text>
+    <text x="80" y="90" class="title">How Darkroom compares to the rest.</text>
+    <text x="80" y="115" class="subtitle">Comparison matrix vs VoltAire, Apple Hidden, Privary, Keepsafe, Calculator#.</text>
+
+    <!-- Table Outline -->
+    <rect x="80" y="150" width="1280" height="640" class="panel" />
+    <!-- Header Row -->
+    <rect x="80" y="150" width="1280" height="60" fill="#1C1814" rx="12" />
+    <text x="120" y="186" class="mono" font-size="13">PRIVACY &amp; CRYPTO CRITERIA</text>
+    <text x="540" y="186" class="mono" font-size="13" fill="#E24A4A">DARKROOM</text>
+    <text x="720" y="186" class="mono" font-size="13" fill="#9E948A">VOLTAIRE</text>
+    <text x="880" y="186" class="mono" font-size="13" fill="#9E948A">APPLE HIDDEN</text>
+    <text x="1060" y="186" class="mono" font-size="13" fill="#9E948A">KEEPSAFE</text>
+    <text x="1220" y="186" class="mono" font-size="13" fill="#9E948A">PRIVARY</text>
+    
+    <!-- Row Samples -->
+    <line x1="80" y1="210" x2="1360" y2="210" stroke="#26211C" stroke-width="1" />
+    <text x="120" y="245" class="subtitle">No Account / Zero Sign-up</text>
+    <text x="540" y="245" fill="#38A169" font-weight="700">✓ YES</text>
+    <text x="720" y="245" fill="#38A169">✓ YES</text>
+    <text x="880" y="245" fill="#E24A4A">✗ NO (Apple ID)</text>
+    <text x="1060" y="245" fill="#E24A4A">✗ NO (Email)</text>
+    <text x="1220" y="245" fill="#38A169">✓ YES</text>
+
+    <line x1="80" y1="270" x2="1360" y2="270" stroke="#26211C" stroke-width="1" />
+    <text x="120" y="305" class="subtitle">5×5 Bolt Pattern Key Derivation</text>
+    <text x="540" y="305" fill="#38A169" font-weight="700">✓ YES</text>
+    <text x="720" y="305" fill="#9E948A">✗ 4x4 Grid</text>
+    <text x="880" y="305" fill="#E24A4A">✗ None</text>
+    <text x="1060" y="305" fill="#E24A4A">✗ PIN</text>
+    <text x="1220" y="305" fill="#E24A4A">✗ PIN</text>
+
+    <line x1="80" y1="330" x2="1360" y2="330" stroke="#26211C" stroke-width="1" />
+    <text x="120" y="365" class="subtitle">Plausible Deniability Decoy</text>
+    <text x="540" y="365" fill="#38A169" font-weight="700">✓ YES (Included)</text>
+    <text x="720" y="365" fill="#9E948A">✓ Pro only</text>
+    <text x="880" y="365" fill="#E24A4A">✗ None</text>
+    <text x="1060" y="365" fill="#9E948A">✓ Fake PIN</text>
+    <text x="1220" y="365" fill="#9E948A">✓ Fake PIN</text>
+  </g>
+
+  <!-- ==================== SECTION 08: HONEST PRICING ==================== -->
+  <g id="SECTION-08-PRICING" transform="translate(0, 4876)">
+    <rect width="1440" height="660" class="bg-alt" stroke="#26211C" stroke-width="1" />
+    <rect x="80" y="30" width="180" height="24" class="section-badge" fill="#F5B759" />
+    <text x="92" y="46" class="badge-text" fill="#000000">SECTION 08: PRICING</text>
+    <text x="80" y="90" class="title">Honest, transparent pricing.</text>
+    <text x="80" y="115" class="subtitle">Generous free tier. No sneaky subscriptions. Lifetime option available.</text>
+
+    <!-- Pricing Cards -->
+    <g transform="translate(240, 160)">
+      <rect x="0" y="0" width="440" height="420" class="panel" />
+      <text x="40" y="50" class="mono">STANDARD</text>
+      <text x="40" y="90" class="title" font-size="36">Free Forever</text>
+      <text x="40" y="130" class="subtitle">1,000 encrypted frames · 1 decoy vault · Zero ads</text>
+      <rect x="40" y="330" width="360" height="48" class="btn-secondary" />
+      <text x="220" y="360" class="btn-text">START FREE ON IOS</text>
+
+      <rect x="500" y="0" width="440" height="420" class="panel-highlight" />
+      <text x="540" y="50" class="mono" fill="#E24A4A">DARKROOM PRO</text>
+      <text x="540" y="90" class="title" font-size="36">€39.99 Lifetime</text>
+      <text x="540" y="130" class="subtitle">Unlimited frames · Duress wipe · Family Sharing</text>
+      <rect x="540" y="330" width="360" height="48" class="btn-primary" />
+      <text x="720" y="360" class="btn-text">CLAIM EARLY TESTER PASS</text>
+    </g>
+  </g>
+
+  <!-- ==================== SECTION 09: PLAIN-ENGLISH FAQ ==================== -->
+  <g id="SECTION-09-FAQ" transform="translate(0, 5536)">
+    <rect width="1440" height="740" class="bg" />
+    <rect x="80" y="30" width="150" height="24" class="section-badge" />
+    <text x="92" y="46" class="badge-text">SECTION 09: FAQ</text>
+    <text x="80" y="90" class="title">Plain-English FAQ</text>
+    <text x="80" y="115" class="subtitle">11 straightforward answers regarding encryption, sync, and recovery.</text>
+
+    <!-- FAQ Accordions -->
+    <g transform="translate(80, 160)">
+      <rect x="0" y="0" width="600" height="80" class="panel" />
+      <text x="30" y="46" class="subtitle" fill="#FFFFFF" font-weight="600">01. What happens if I forget my bolt pattern?</text>
+
+      <rect x="680" y="0" width="600" height="80" class="panel" />
+      <text x="710" y="46" class="subtitle" fill="#FFFFFF" font-weight="600">02. Can Apple or Cloudflare see my photos?</text>
+
+      <rect x="0" y="100" width="600" height="80" class="panel" />
+      <text x="30" y="146" class="subtitle" fill="#FFFFFF" font-weight="600">03. Does iCloud backup include decrypted images?</text>
+
+      <rect x="680" y="100" width="600" height="80" class="panel" />
+      <text x="710" y="146" class="subtitle" fill="#FFFFFF" font-weight="600">04. How does the Duress Silent Wipe work?</text>
+
+      <rect x="0" y="200" width="600" height="80" class="panel" />
+      <text x="30" y="246" class="subtitle" fill="#FFFFFF" font-weight="600">05. Can other apps detect Darkroom on my iPhone?</text>
+
+      <rect x="680" y="200" width="600" height="80" class="panel" />
+      <text x="710" y="246" class="subtitle" fill="#FFFFFF" font-weight="600">06. What is the maximum resolution supported?</text>
+    </g>
+  </g>
+
+  <!-- ==================== SECTION 10: FINAL CTA & FOOTER ==================== -->
+  <g id="SECTION-10-FOOTER" transform="translate(0, 6276)">
+    <rect width="1440" height="524" class="bg-alt" stroke="#26211C" stroke-width="1" />
+    <rect x="80" y="30" width="180" height="24" class="section-badge" fill="#F5B759" />
+    <text x="92" y="46" class="badge-text" fill="#000000">SECTION 10: FOOTER</text>
+
+    <!-- Final CTA Card -->
+    <rect x="240" y="70" width="960" height="240" class="panel-highlight" />
+    <text x="720" y="130" class="title" font-size="34" text-anchor="middle">Close the door on prying eyes.</text>
+    <text x="720" y="170" class="subtitle" text-anchor="middle">1,000 frames &amp; 1 decoy room free forever. Apple TestFlight beta dropping soon.</text>
+    <rect x="560" y="210" width="320" height="48" class="btn-primary" />
+    <text x="720" y="240" class="btn-text">REQUEST TESTFLIGHT INVITE</text>
+
+    <!-- Footer Row -->
+    <line x1="80" y1="400" x2="1360" y2="400" stroke="#26211C" stroke-width="1" />
+    <text x="80" y="450" class="mono">DARKROOM © 2026 · ENCRYPTED LOCAL-FIRST PHOTO VAULT</text>
+    <text x="1100" y="450" class="subtitle" font-size="13">PRIVACY   TERMS   SECURITY AUDIT</text>
+  </g>
+</svg>
