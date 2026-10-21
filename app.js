@@ -795,7 +795,7 @@
           installBadge.textContent =
             ctx === "pro"
               ? "Darkroom Pro · Family Sharing Included"
-              : "iOS 17+ · 1,000 Frames + 1 Decoy Free";
+              : "iOS 17+ · Free plan with 1 decoy room";
         }
         if (typeof installDialog.showModal === "function") {
           installDialog.showModal();
