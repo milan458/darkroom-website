@@ -947,6 +947,12 @@ main:focus {
   color: var(--amber);
 }
 
+.waitlist-hint a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 /* Waitlist Success Confirmation */
 .waitlist-success {
   display: flex;
@@ -2590,8 +2596,8 @@ main:focus {
   --label-3: "Apple Hidden Album";
   --label-4: "Keepsafe";
   --label-5: "Private Photo Vault";
-  --label-6: "Calculator# / Privault";
-  --label-7: "Vaultaire / Obscura";
+  --label-6: "Vaultaire";
+  --label-7: "Encamera";
 }
 
 .compare-table caption {
@@ -2713,6 +2719,82 @@ main:focus {
 
 .chk-warn {
   color: var(--amber);
+}
+
+.chk-unknown {
+  color: var(--muted);
+}
+
+.compare-table sup,
+.competitor-card sup {
+  font-size: 0.7em;
+  line-height: 0;
+  margin-left: 2px;
+}
+
+.compare-table sup a,
+.competitor-card sup a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.compare-legend {
+  margin: 14px 0 0;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.compare-also {
+  margin: 28px 0 56px;
+  padding: 22px;
+  border-radius: var(--radius-md);
+  background: var(--panel);
+  border: 1px solid var(--line);
+}
+
+.compare-also h3,
+.compare-sources h3 {
+  font-family: var(--font-sans);
+  font-size: 1.02rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.compare-also ul {
+  list-style: disc;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 6px 24px;
+  padding-left: 1.1em;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.compare-sources {
+  margin-top: 40px;
+  font-size: 0.84rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.compare-sources ol {
+  list-style: decimal;
+  padding-left: 1.6em;
+  margin-bottom: 12px;
+}
+
+.compare-sources a {
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.compare-sources li:target {
+  color: var(--text);
+  background: var(--safelight-soft);
+  border-radius: 4px;
 }
 
 @container (width < 680px) {
@@ -3259,4 +3341,55 @@ main:focus {
   #pattern-canvas {
     display: none;
   }
+}
+
+/* ---------- Legal pages (privacy.html) ---------- */
+.legal-back {
+  font-size: 0.9rem;
+  color: var(--muted);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.legal-page {
+  max-width: 720px;
+  padding-block: 128px 96px;
+  line-height: 1.65;
+}
+
+.legal-page h1 {
+  font-family: var(--font-sans);
+  font-size: clamp(1.9rem, 4vw, 2.5rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 6px;
+}
+
+.legal-page h2 {
+  font-family: var(--font-sans);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 36px 0 10px;
+}
+
+.legal-page p,
+.legal-page li {
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+
+.legal-page ul {
+  list-style: disc;
+  padding-left: 1.2em;
+}
+
+.legal-page a {
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.legal-updated {
+  font-size: 0.88rem;
+  margin-bottom: 28px;
 }
