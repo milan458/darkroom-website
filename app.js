@@ -850,7 +850,7 @@
       successCard.hidden = false;
       const titleDesc = document.querySelector(".waitlist-success-desc");
       if (titleDesc) {
-        titleDesc.innerHTML = `We&rsquo;ll send your invite to <code id="registered-email-pill" class="email-pill">${email}</code>.`;
+        titleDesc.innerHTML = `Tap below to install the Darkroom beta with Apple&rsquo;s TestFlight app. We&rsquo;ll send beta news to <code id="registered-email-pill" class="email-pill">${email}</code>.`;
       }
     }
 
@@ -861,7 +861,7 @@
       input.value = "";
       if (submitBtn) {
         submitBtn.disabled = false;
-        submitBtn.innerHTML = `<span>Send me an invite</span><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+        submitBtn.innerHTML = `<span>Get the beta</span><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
       }
     }
 
