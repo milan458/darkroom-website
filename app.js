@@ -832,7 +832,7 @@
   wireCopyButton("copy-app-link", "✓ Install link copied");
   wireCopyButton("modal-copy-link-btn", "✓ Link Copied");
 
-  /* ---------- 13. Early Tester Beta Waitlist (Cloudflare D1 / API integration) ---------- */
+  /* ---------- 13. Early Tester Beta Waitlist (Google Sheets Webhook) ---------- */
   function initEarlyTesterWaitlist() {
     const form = document.getElementById("waitlist-form");
     const input = document.getElementById("waitlist-email");
@@ -840,27 +840,19 @@
     const successCard = document.getElementById("waitlist-success");
     const emailPill = document.getElementById("registered-email-pill");
     const changeBtn = document.getElementById("waitlist-change-email");
-    const countEl = document.querySelector(".spots-count");
     const storageKey = "darkroom_early_tester_roster";
     const GOOGLE_SHEETS_URL = "https://script.google.com/macros/s/AKfycbx-G1s-YefuipSRcmtC40tX_UBV45CNvM_gRZ93Xh-hv2e89fh6nKLZN9NzOHwwhDvW/exec";
 
     if (!form || !input || !successCard) return;
 
-    function updateSpotsCount(spotsLeft) {
-      if (countEl) {
-        countEl.innerHTML = `<strong>${Math.max(1, spotsLeft)}</strong> / 100 Early Passes Left`;
-      }
-    }
-
-    function renderConfirmed(email, passNumber = 63, spotsLeft = 37) {
+    function renderConfirmed(email) {
       if (emailPill) emailPill.textContent = email;
       form.hidden = true;
       successCard.hidden = false;
       const titleDesc = document.querySelector(".waitlist-success-desc");
       if (titleDesc) {
-        titleDesc.innerHTML = `We&rsquo;ve reserved <strong>Early Tester Pass #${passNumber} of 100</strong> for <code id="registered-email-pill" class="email-pill">${email}</code>.`;
+        titleDesc.innerHTML = `We&rsquo;ve reserved your <strong>Early Tester Pass</strong> for <code id="registered-email-pill" class="email-pill">${email}</code>.`;
       }
-      updateSpotsCount(spotsLeft);
     }
 
     function renderForm() {
@@ -880,20 +872,10 @@
       if (saved) {
         const data = JSON.parse(saved);
         if (data && data.email) {
-          renderConfirmed(data.email, data.passNumber || 63, data.spotsLeft || 37);
+          renderConfirmed(data.email);
         }
       }
     } catch {}
-
-    // Fetch live counts from Cloudflare D1 endpoint
-    fetch("/api/waitlist")
-      .then((res) => (res.ok ? res.json() : null))
-      .then((data) => {
-        if (data && typeof data.spotsLeft === "number") {
-          updateSpotsCount(data.spotsLeft);
-        }
-      })
-      .catch(() => {});
 
     input.addEventListener("input", () => {
       form.classList.remove("show-error");
@@ -918,11 +900,8 @@
         submitBtn.innerHTML = `<span>Claiming Pass…</span>`;
       }
 
-      let passNumber = 63;
-      let spotsLeft = 37;
-
       try {
-        // 1. Submit to Google Sheets (text/plain mode bypasses browser CORS preflight)
+        // Submit to Google Sheets (text/plain mode bypasses browser CORS preflight)
         await fetch(GOOGLE_SHEETS_URL, {
           method: "POST",
           mode: "no-cors",
@@ -935,8 +914,6 @@
 
       const record = {
         email: raw,
-        passNumber,
-        spotsLeft,
         createdAt: new Date().toISOString(),
       };
 
@@ -944,7 +921,7 @@
         localStorage.setItem(storageKey, JSON.stringify(record));
       } catch {}
 
-      renderConfirmed(raw, passNumber, spotsLeft);
+      renderConfirmed(raw);
     });
 
     if (changeBtn) {
