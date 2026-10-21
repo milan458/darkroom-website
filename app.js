@@ -899,17 +899,19 @@
         submitBtn.innerHTML = `<span>Sending…</span>`;
       }
 
-      try {
-        // Submit to Google Sheets (text/plain mode bypasses browser CORS preflight)
-        await fetch(GOOGLE_SHEETS_URL, {
-          method: "POST",
-          mode: "no-cors",
-          headers: { "Content-Type": "text/plain;charset=utf-8" },
-          body: JSON.stringify({ email: raw, timestamp: new Date().toISOString() }),
-        });
-      } catch (err) {
+      // Submit to Google Sheets (text/plain mode bypasses browser CORS preflight).
+      // Apps Script can take many seconds to answer, and no-cors hides the reply anyway,
+      // so wait at most a moment; keepalive lets the request finish even if the page is left.
+      const submit = fetch(GOOGLE_SHEETS_URL, {
+        method: "POST",
+        mode: "no-cors",
+        keepalive: true,
+        headers: { "Content-Type": "text/plain;charset=utf-8" },
+        body: JSON.stringify({ email: raw, timestamp: new Date().toISOString() }),
+      }).catch((err) => {
         console.warn("Google Sheet submit notice:", err);
-      }
+      });
+      await Promise.race([submit, new Promise((resolve) => setTimeout(resolve, 1500))]);
 
       const record = {
         email: raw,
