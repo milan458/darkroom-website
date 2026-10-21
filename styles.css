@@ -579,6 +579,28 @@ main:focus {
   align-items: center;
 }
 
+/* Desktop: centre the hero text on the phone itself, not phone + demo console */
+@media (min-width: 921px) {
+  .hero-grid {
+    row-gap: 14px;
+  }
+  .hero-grid .mockup-wrap {
+    display: contents;
+  }
+  .hero-grid .phone-frame {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .hero-grid .room-console {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .hero-copy {
+    grid-column: 2;
+    grid-row: 1;
+  }
+}
+
 .hero-copy {
   min-width: 0;
   width: 100%;
