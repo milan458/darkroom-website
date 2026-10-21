@@ -842,6 +842,7 @@
     const changeBtn = document.getElementById("waitlist-change-email");
     const countEl = document.querySelector(".spots-count");
     const storageKey = "darkroom_early_tester_roster";
+    const GOOGLE_SHEETS_URL = "https://script.google.com/macros/s/AKfycbx-G1s-YefuipSRcmtC40tX_UBV45CNvM_gRZ93Xh-hv2e89fh6nKLZN9NzOHwwhDvW/exec";
 
     if (!form || !input || !successCard) return;
 
@@ -921,19 +922,15 @@
       let spotsLeft = 37;
 
       try {
-        const resp = await fetch("/api/waitlist", {
+        // 1. Submit to Google Sheets (text/plain mode bypasses browser CORS preflight)
+        await fetch(GOOGLE_SHEETS_URL, {
           method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ email: raw }),
+          mode: "no-cors",
+          headers: { "Content-Type": "text/plain;charset=utf-8" },
+          body: JSON.stringify({ email: raw, timestamp: new Date().toISOString() }),
         });
-
-        if (resp.ok) {
-          const resData = await resp.json();
-          if (resData.passNumber) passNumber = resData.passNumber;
-          if (typeof resData.spotsLeft === "number") spotsLeft = resData.spotsLeft;
-        }
       } catch (err) {
-        console.warn("Waitlist API offline, saving to local state:", err);
+        console.warn("Google Sheet submit notice:", err);
       }
 
       const record = {
