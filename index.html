@@ -30,7 +30,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@700&family=DM+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body id="top">
@@ -97,7 +97,8 @@
       <nav class="nav-links" aria-label="Primary">
         <a href="#features">Features</a>
         <a href="#how-it-works">How it works</a>
-        <a href="#security">Privacy</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#security">Security</a>
         <a href="#compare">Compare</a>
         <a href="#pricing">Pricing</a>
         <a href="#about">About</a>
@@ -134,7 +135,8 @@
         <nav class="mobile-drawer-list" aria-label="Mobile">
           <a href="#features">Features</a>
           <a href="#how-it-works">How it works</a>
-          <a href="#security">Privacy</a>
+          <a href="#privacy">Privacy</a>
+          <a href="#security">Security</a>
           <a href="#compare">Compare</a>
           <a href="#pricing">Pricing</a>
           <a href="#about">About</a>
@@ -721,8 +723,8 @@
       </div>
     </section>
 
-    <!-- SECTION 3: Privacy, in plain words, with the technical details folded away -->
-    <section id="security" class="section">
+    <!-- SECTION 3a: Privacy, in plain words -->
+    <section id="privacy" class="section">
       <div class="container">
         <div class="section-head">
           <p class="eyebrow"><span class="dot dot-amber" aria-hidden="true"></span>Privacy</p>
@@ -741,11 +743,17 @@
           </div>
         </div>
 
-        <details class="tech-details">
-          <summary>Technical details, for the curious</summary>
+      </div>
+    </section>
+
+    <!-- SECTION 3b: Security model, the one technical section on the page -->
+    <section id="security" class="section">
+      <div class="container">
           <div class="sec-layout">
             <div>
-              <p style="color:var(--muted);margin-top:12px">Your pattern never encrypts files directly. It is stretched into a key that unlocks your vault key, which in turn unlocks a separate key for every photo, video, thumbnail and note.</p>
+              <p class="eyebrow"><span class="dot dot-amber" aria-hidden="true"></span>For the technically curious</p>
+              <h2>Keys inside keys. None of them leave your iPhone unwrapped.</h2>
+              <p style="color:var(--muted);margin-top:12px">Your pattern never encrypts files directly. It derives an Argon2id wrapping key that unlocks your room header, which unwraps a random 256-bit vault key, which unwraps a unique 256-bit key for every individual photo, video, thumbnail, and note.</p>
             <ul class="sec-spec-list" role="list">
               <li><strong>Argon2id (64 MiB RAM, 3 passes, 1 lane)</strong> resists GPU and ASIC cracking far better than legacy PBKDF2-SHA512 or bare PIN hashes</li>
               <li><strong>AES-256-GCM via Apple CryptoKit</strong> authenticates every file chunk, SQLite metadata column, capture timestamp, and thumbnail</li>
@@ -784,7 +792,7 @@ chunk[i]   = <span class="k">AES_256_GCM.open</span>(
 <span class="c">// Change pattern? Only roomHeader.sealedKey is re-wrapped.</span></code></pre>
           </div>
           </div>
-        </details>
+        
       </div>
     </section>
 
@@ -1596,7 +1604,8 @@ chunk[i]   = <span class="k">AES_256_GCM.open</span>(
             <li><a href="#coercion">Decoy vault</a></li>
             <li><a href="#features">Albums</a></li>
             <li><a href="#features">iCloud backup</a></li>
-            <li><a href="#security">Privacy</a></li>
+            <li><a href="#privacy">Privacy</a></li>
+            <li><a href="#security">How the encryption works</a></li>
           </ul>
         </div>
 

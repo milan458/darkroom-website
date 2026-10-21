@@ -67,10 +67,11 @@
 Updated 2026-10: testers found the uppercase, monospace "instrument panel" look too technical, so the site now reads like a friendly consumer app.
 
 1. **Everything (`--font-sans`)**: `"Plus Jakarta Sans"`, `400`–`700`, normal (sentence) case, no wide letter-spacing. Used for headings, buttons, labels, chips and body text.
-2. **Code only (`--font-mono`)**: `"DM Mono"`, reserved for the code listing inside the collapsed "Technical details" section.
-3. No `text-transform: uppercase` anywhere. `--font-display` (Archivo Narrow) is no longer used.
+2. **Code only (`--font-mono`)**: `"DM Mono"`, reserved for the code listing in the Security section.
+3. **Wordmark only (`--font-display`)**: `"Archivo Narrow"`, `700`, uppercase. The DARKROOM logo is the only uppercase text; in sentences the name is written "Darkroom".
+4. No other `text-transform: uppercase`.
 
-**Words:** use the app's plain vocabulary (pattern, recovery phrase, vault, decoy vault, albums, Recently Deleted, backed up, emergency erase). Encryption details (Argon2id, AES-256-GCM, key hierarchy) live only in the "Technical details" section.
+**Words:** use the app's plain vocabulary (pattern, recovery phrase, vault, decoy vault, albums, Recently Deleted, backed up, emergency erase). Encryption details (Argon2id, AES-256-GCM, key hierarchy) live only in the Security section (`#security`), the one technical section on the page.
 
 ---
 
