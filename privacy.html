@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <script>
+    try {
+      const savedScheme = localStorage.getItem("color-scheme");
+      const prefersLight = window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches;
+      document.documentElement.dataset.theme = savedScheme === "light" || savedScheme === "dark" ? savedScheme : (prefersLight ? "light" : "dark");
+    } catch {}
+  </script>
+  <title>Privacy policy · Darkroom</title>
+  <meta name="description" content="What darkroom.buzz collects when you visit or join the Darkroom beta, and what it doesn't.">
+  <link rel="icon" type="image/svg+xml" href="assets/darkroom-logo.svg">
+  <link rel="canonical" href="https://darkroom.buzz/privacy.html">
+  <link rel="stylesheet" href="assets/fonts/fonts.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="/" class="logo" aria-label="Darkroom home">
+        <span class="logo-plate" aria-hidden="true">
+          <img src="assets/darkroom-logo.svg" width="30" height="30" alt="">
+        </span>
+        <span>Darkroom</span>
+      </a>
+      <a href="/" class="legal-back">Back to the home page</a>
+    </div>
+  </header>
+
+  <main class="legal-page container">
+    <h1>Privacy policy</h1>
+    <p class="legal-updated">Website and beta sign-up · Last updated 21 October 2026</p>
+
+    <p>This page covers <strong>darkroom.buzz</strong> and the beta sign-up form on it. The Darkroom app has its own privacy policy: <a href="https://milan458.github.io/darkroom-site/privacy.html">Darkroom app privacy policy</a>.</p>
+
+    <h2>Who we are</h2>
+    <p>Darkroom is made by Inertia Projects. You can reach us at <a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a>.</p>
+
+    <h2>If you join the beta</h2>
+    <p>When you enter your email address and press &ldquo;Send me an invite&rdquo;, we receive your email address and the time you signed up. They are stored in a Google Sheet that only we can open, sent there through Google Apps Script.</p>
+    <p>We use your email address only to send you an Apple TestFlight invite for the Darkroom beta and to contact you about that beta. We don&rsquo;t sell it, and we don&rsquo;t share it with anyone else.</p>
+    <p>To have your email address removed, write to <a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a> from that address and we&rsquo;ll delete it.</p>
+
+    <h2>Just visiting</h2>
+    <ul>
+      <li>We don&rsquo;t use analytics, advertising or tracking of any kind, and we don&rsquo;t set cookies.</li>
+      <li>Our fonts are served from darkroom.buzz itself, so loading this page doesn&rsquo;t contact Google Fonts.</li>
+      <li>The site is hosted by Cloudflare. Like any web host, Cloudflare handles your IP address and basic request details to deliver pages and protect the site from abuse.</li>
+      <li>Your browser remembers your light or dark choice and, if you joined the beta, the email you used, so the page can show that you&rsquo;re on the list. This stays in your browser; &ldquo;Use a different email&rdquo; clears it.</li>
+    </ul>
+
+    <h2>Changes</h2>
+    <p>If this policy changes, we&rsquo;ll update this page and the date at the top.</p>
+  </main>
+</body>
+</html>
