@@ -330,7 +330,7 @@
             </div>
 
             <p class="waitlist-desc">
-              Leave your email and we&rsquo;ll send you an invite. Testers get <strong>1 month of Darkroom Pro free</strong>, plus <strong>50% off</strong> the yearly and lifetime plans later.
+              Leave your email and you&rsquo;ll get the TestFlight link straight away. Testers get <strong>1 month of Darkroom Pro free</strong>, plus <strong>50% off</strong> the yearly and lifetime plans later.
             </p>
 
             <form id="waitlist-form" class="waitlist-form" novalidate>
@@ -352,7 +352,7 @@
                   />
                 </div>
                 <button type="submit" class="btn btn-primary btn-waitlist-submit" id="waitlist-submit-btn">
-                  <span>Send me an invite</span>
+                  <span>Get the beta</span>
                   <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                     <path d="M4 10h12M11 5l5 5-5 5" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
@@ -361,7 +361,7 @@
               <p id="waitlist-error" class="waitlist-error" aria-live="polite">Please enter a valid email address.</p>
               <p id="waitlist-hint" class="waitlist-hint">
                 <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" width="12" height="12"><path d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1Zm0 3a1 1 0 1 1 0 2 1 1 0 0 1 0-2Zm1.25 8h-2.5a.75.75 0 0 1 0-1.5h.5V8.25h-.5a.75.75 0 0 1 0-1.5h1.75a.75.75 0 0 1 .75.75V10.5h.5a.75.75 0 0 1 0 1.5Z"/></svg>
-                Invite through Apple TestFlight &middot; No spam, ever &middot; <a href="privacy.html">Privacy policy</a>
+                Opens in Apple TestFlight &middot; No spam, ever &middot; <a href="privacy.html">Privacy policy</a>
               </p>
             </form>
 
@@ -371,10 +371,14 @@
                 <span class="ticket-status-dot"></span>
                 <span>You&rsquo;re on the list</span>
               </div>
-              <h3 class="waitlist-success-title">Thanks! You&rsquo;re on the list.</h3>
+              <h3 class="waitlist-success-title">Thanks! You&rsquo;re in.</h3>
               <p class="waitlist-success-desc">
-                We&rsquo;ll send your invite to <code id="registered-email-pill" class="email-pill">you@example.com</code>.
+                Tap below to install the Darkroom beta with Apple&rsquo;s TestFlight app. We&rsquo;ll send beta news to <code id="registered-email-pill" class="email-pill">you@example.com</code>.
               </p>
+              <a href="https://testflight.apple.com/join/tXs4WXTQ" class="btn btn-primary btn-testflight" id="waitlist-testflight-link" target="_blank" rel="noopener">
+                <span>Join the beta on TestFlight</span>
+                <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
               <div class="waitlist-success-ticket">
                 <div class="ticket-row">
                   <span class="ticket-label">Tester perk</span>
@@ -385,8 +389,8 @@
                   <span class="ticket-val amber-glow">50% off yearly and lifetime plans</span>
                 </div>
                 <div class="ticket-row">
-                  <span class="ticket-label">How you&rsquo;ll get it</span>
-                  <span class="ticket-val">An email invite to Apple TestFlight (iOS 17 or later)</span>
+                  <span class="ticket-label">How to install</span>
+                  <span class="ticket-val">Apple&rsquo;s free TestFlight app (iOS 17 or later)</span>
                 </div>
               </div>
               <button type="button" class="btn btn-outline btn-ticket-reset" id="waitlist-change-email">
