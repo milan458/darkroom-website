@@ -2356,7 +2356,7 @@ main:focus {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
   gap: clamp(28px, 4vw, 48px);
-  align-items: start;
+  align-items: center;
 }
 
 .sec-spec-list {
