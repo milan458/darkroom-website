@@ -104,7 +104,7 @@
       "crumb": "Is the Hidden album private?", "draft": true,
       "title": "Is the iPhone Hidden Album Actually Private?",
       "headline": "Is the iPhone Hidden album actually private?",
-      "description": "The Hidden album is locked with Face ID, but anyone with your passcode can open it, and it syncs to your other devices. What it protects and what it doesn't.",
+      "description": "The Hidden album locks with Face ID, but anyone with your passcode can open it, and it syncs to your devices. What it protects, and what it doesn't.",
       "summary": "What the Hidden album in Photos protects against, what it doesn't, and how to make it stricter.",
       "published": "2026-10-22", "updated": "2026-10-22", "priority": "0.8",
       "image": "/assets/guides/darkroom-library.jpg"

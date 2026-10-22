@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" id="meta-theme-color" content="#070605">
+  <script>
+    try {
+      const savedScheme = localStorage.getItem("color-scheme");
+      const metaScheme = document.querySelector('meta[name="color-scheme"]');
+      const metaTheme = document.getElementById("meta-theme-color");
+      const resolved = savedScheme === "light" ? "light" : "dark";
+      if (metaScheme) metaScheme.content = resolved;
+      if (metaTheme) metaTheme.content = resolved === "light" ? "#F3EEE7" : "#070605";
+      document.documentElement.dataset.theme = resolved;
+    } catch {}
+  </script>
+  <!-- build:meta -->
+  <!-- /build:meta -->
+
+  <link rel="icon" type="image/svg+xml" href="/assets/darkroom-logo.svg">
+  <link rel="apple-touch-icon" href="/assets/darkroom-icon-180.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@700&family=DM+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/pages.css">
+
+  <!-- build:jsonld -->
+  <!-- /build:jsonld -->
+</head>
+<body>
+  <!-- build:header -->
+  <!-- /build:header -->
+
+  <main id="main-content" tabindex="-1">
+    <!--
+      GUIDE TEMPLATE. Copy this file to guides/<slug>.html, then:
+        1. Add the page to site.json "pages" (type "guide", path "/guides/<slug>", a short "ct" like "g-<topic>",
+           "crumb", "title" ≤ 60 chars, "headline", "description" ≤ 155 chars, "summary", "published",
+           "updated", "image", and "draft": true until it's reviewed).
+        2. Write the content below. Replace every UPPERCASE placeholder. Keep the structure.
+        3. Run: python3 tools/build.py   (fills meta, JSON-LD, header, footer, breadcrumbs, byline, CTA link)
+        4. Follow "Publish a new guide" in SEO-PLAYBOOK.md.
+      Rules: direct answer in the first 1–2 sentences under every question heading. Short paragraphs.
+      Numbers and dates, not adjectives. Mention Darkroom only where it honestly fits. 2–3 internal links.
+    -->
+    <div class="page-hero">
+      <div class="container">
+        <!-- build:breadcrumbs -->
+        <!-- /build:breadcrumbs -->
+        <p class="eyebrow"><span class="dot dot-amber" aria-hidden="true"></span>Guide · TOPIC</p>
+        <h1>HEADLINE (same as site.json "headline")</h1>
+        <!-- build:byline -->
+        <!-- /build:byline -->
+        <div class="answer">
+          <span class="answer-label">Short answer</span>
+          <p>THE DIRECT ANSWER IN 2–3 SENTENCES. This is what search engines and AI assistants quote, so it must stand on its own.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container article-layout">
+      <article class="prose">
+        <p>ONE-PARAGRAPH INTRO: who this is for and what they'll know by the end.</p>
+
+        <h2 id="section-one">QUESTION-STYLE HEADING?</h2>
+        <p>ANSWER FIRST, in one or two sentences. Then the detail.</p>
+        <ol class="steps">
+          <li><strong>STEP.</strong> Exact menu path, e.g. <span class="path">Settings › Apps › Photos</span>.</li>
+          <li><strong>STEP.</strong> …</li>
+        </ol>
+        <figure class="shot">
+          <img src="/assets/guides/IMAGE.jpg" alt="WHAT THE SCREENSHOT SHOWS" width="559" height="1216" loading="lazy" decoding="async">
+          <figcaption>CAPTION.</figcaption>
+        </figure>
+
+        <h2 id="section-two">QUESTION-STYLE HEADING?</h2>
+        <p>ANSWER FIRST.</p>
+        <div class="callout is-warn">
+          <span class="callout-title">Watch out</span>
+          <p>A REAL PITFALL.</p>
+        </div>
+
+        <div class="cta-card">
+          <p class="cta-card-title">CTA HEADLINE THAT FITS THIS GUIDE</p>
+          <p>ONE SENTENCE ON HOW DARKROOM HELPS WITH THIS EXACT PROBLEM.</p>
+          <a href="/#waitlist" class="btn btn-primary" data-cta="body" data-label-waitlist="Join the Early Tester List" data-label-live="Download on the App Store">Join the Early Tester List</a>
+          <!-- build:status -->
+          <!-- /build:status -->
+        </div>
+
+        <h2 id="faq">Questions people ask</h2>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>QUESTION FROM "PEOPLE ALSO ASK"?</span></span></summary>
+            <div class="faq-body"><p>DIRECT ANSWER.</p></div>
+          </details>
+        </div>
+
+        <p><em>Something wrong or out of date? Email <a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a> and we'll fix it.</em></p>
+      </article>
+
+      <aside class="article-aside" aria-label="On this page">
+        <nav class="toc" aria-label="Table of contents">
+          <p class="toc-title">On this page</p>
+          <ol>
+            <li><a href="#section-one">SECTION ONE</a></li>
+            <li><a href="#section-two">SECTION TWO</a></li>
+            <li><a href="#faq">Questions people ask</a></li>
+          </ol>
+        </nav>
+        <div class="related">
+          <p class="toc-title">Related</p>
+          <ul role="list">
+            <li><a href="/guides/RELATED-1">RELATED GUIDE 1</a></li>
+            <li><a href="/guides/RELATED-2">RELATED GUIDE 2</a></li>
+            <li><a href="/best-photo-vault-apps-iphone">Photo vault apps compared</a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- build:footer -->
+  <!-- /build:footer -->
+
+  <script src="/app.js" defer></script>
+</body>
+</html>

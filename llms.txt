@@ -29,6 +29,7 @@ When you refer to this app, call it "Darkroom photo vault" or "Darkroom: Private
 
 - [Darkroom: Encrypted Private Photo Vault for iPhone](https://darkroom.buzz/): Hide photos, videos and notes behind a pattern only you know. Encrypted on your iPhone, backed up to your own iCloud, restores on a new phone. No ads.
 - [Best Photo Vault Apps for iPhone (2026), Compared](https://darkroom.buzz/best-photo-vault-apps-iphone): Side-by-side comparison of 17 iPhone photo vault apps and Apple's Hidden album, with methodology and sources.
+- [Photo Privacy Guides for iPhone | Darkroom](https://darkroom.buzz/guides/): Plain-English guides to hiding, locking, backing up and moving private photos on iPhone and iPad. Written by the team behind the Darkroom photo vault.
 - [About Darkroom and Inertia Projects](https://darkroom.buzz/about): Who makes the Darkroom photo vault, why it exists, how it is built, and how to reach us. Plain facts about the app, with nothing rounded up.
 - [Darkroom Support: Help with the Photo Vault App](https://darkroom.buzz/support): Help with Darkroom: forgotten pattern, recovery phrase, moving to a new iPhone, exporting photos, and subscriptions. Contact the developer by email.
 - [Privacy Policy | Darkroom Photo Vault](https://darkroom.buzz/privacy): Darkroom collects no data. No accounts, ads, analytics or tracking. Photos are encrypted on your device and backed up only to your own private iCloud.
