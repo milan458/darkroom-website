@@ -1,0 +1,44 @@
+# Cloudflare Pages response headers. https://developers.cloudflare.com/pages/configuration/headers/
+
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), interest-cohort=()
+
+/assets/*
+  Cache-Control: public, max-age=86400
+
+/llms.txt
+  Content-Type: text/plain; charset=utf-8
+/llms-full.txt
+  Content-Type: text/plain; charset=utf-8
+
+# Working files that are deployed with the site but aren't pages. Keep them out of search results.
+/index.release-saved.html
+  X-Robots-Tag: noindex
+/styles.release-saved.css
+  X-Robots-Tag: noindex
+/darkroom-figma-wireframe.svg
+  X-Robots-Tag: noindex
+/schema.sql
+  X-Robots-Tag: noindex
+/site.json
+  X-Robots-Tag: noindex
+/README.md
+  X-Robots-Tag: noindex
+/CLAUDE.md
+  X-Robots-Tag: noindex
+/SEO-PLAYBOOK.md
+  X-Robots-Tag: noindex
+/design-system/*
+  X-Robots-Tag: noindex
+/partials/*
+  X-Robots-Tag: noindex
+/templates/*
+  X-Robots-Tag: noindex
+/tools/*
+  X-Robots-Tag: noindex
+/.agents/*
+  X-Robots-Tag: noindex
+/.claude/*
+  X-Robots-Tag: noindex
