@@ -3067,7 +3067,8 @@ main:focus {
   margin-bottom: 44px;
 }
 
-.footer-col h4 {
+.footer-col h4,
+.footer-col .footer-heading {
   font-size: 0.76rem;
   font-family: var(--font-mono);
   letter-spacing: 0.12em;

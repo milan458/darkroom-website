@@ -29,7 +29,7 @@ Disallow: /partials/
 Disallow: /templates/
 Disallow: /tools/
 
-# Cloudflare content signals: allow search, use in AI answers, and AI training.
-Content-Signal: search=yes, ai-input=yes, ai-train=yes
+# Cloudflare's "Content-Signal" line is left out: Google and Lighthouse report it as an unknown
+# directive, and with no signal, nothing is restricted. Everything above is allowed.
 
 Sitemap: https://darkroom.buzz/sitemap.xml
