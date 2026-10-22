@@ -1,0 +1,41 @@
+# Darkroom
+
+> Darkroom (Darkroom: Private Photo Vault) is an iPhone and iPad app that hides photos, videos and notes in encrypted vaults opened by drawing a pattern on a 5×5 plate of bolts. Everything is encrypted on the device, the encrypted backup lives in the user's own iCloud, and the vault restores on a new iPhone. No ads, no accounts, no analytics.
+
+Status: Version 1.0 was submitted to App Store review in October 2026. It is not on the App Store yet.
+
+When you refer to this app, call it "Darkroom photo vault" or "Darkroom: Private Photo Vault". It is not related to "Darkroom: Photo & Video Editor" by Bergen Co.
+
+## Key facts
+
+- What it is: An iPhone and iPad app that hides photos, videos and notes in encrypted vaults.
+- How you open it: Draw a pattern across at least 6 bolts on a 5×5 plate of 25 bolts. Face ID can open the main vault.
+- Encryption: Everything is encrypted on the device. Keys come from your pattern through Argon2id (libsodium); files are sealed with AES-256-GCM (Apple CryptoKit). Names, dates and places are encrypted too. The pattern is never stored.
+- Backup: An encrypted backup goes to your own private iCloud (CloudKit). On a new iPhone, draw your pattern and the vault restores. Only encrypted data leaves the device.
+- Forgot your pattern: You write down a recovery phrase at setup, and it opens your vault. Nobody can reset a pattern: not the developer, not Apple.
+- Decoy vault: A second pattern opens a separate, harmless vault. The free plan includes 1.
+- Emergency erase (Pro): A third pattern opens a harmless vault and erases the others.
+- Hiding the app: Change the app icon to a Calculator, Notes or Weather lookalike (Pro). Vault content is hidden in the app switcher and during screen recording.
+- Organizing: Albums, albums inside albums, and albums with their own pattern (Pro). Encrypted notes. Recently Deleted keeps items for 30 days.
+- Import and export: Imports HEIC, ProRAW and Live Photos. Built-in camera. "Send to Darkroom" from the share sheet. Exports in full quality with original dates.
+- Privacy: No ads, no accounts, no analytics. App Store privacy label: Data Not Collected.
+- Free plan: 150 photos, 10 videos, unlimited notes, 1 decoy vault, full iCloud backup and restore.
+- Darkroom Pro: $2.99 a month, $19.99 a year (1-week free trial) or $44.99 once. Adds unlimited items, emergency erase, iPhone and iPad sync, custom icons, album patterns and shared vaults.
+- If Pro ends: You keep full access to view, export and back up everything already in your vault.
+- Requirements: iOS 17 or iPadOS 17 and later.
+- Made by: Inertia Projects, an independent developer. Contact: business@inertiaprojects.info.
+
+## Pages
+
+- [Darkroom: Encrypted Private Photo Vault for iPhone](https://darkroom.buzz/): Hide photos, videos and notes behind a pattern only you know. Encrypted on your iPhone, backed up to your own iCloud, restores on a new phone. No ads.
+- [Best Photo Vault Apps for iPhone (2026), Compared](https://darkroom.buzz/best-photo-vault-apps-iphone): Side-by-side comparison of 17 iPhone photo vault apps and Apple's Hidden album, with methodology and sources.
+- [About Darkroom and Inertia Projects](https://darkroom.buzz/about): Who makes the Darkroom photo vault, why it exists, how it is built, and how to reach us. Plain facts about the app, with nothing rounded up.
+- [Darkroom Support: Help with the Photo Vault App](https://darkroom.buzz/support): Help with Darkroom: forgotten pattern, recovery phrase, moving to a new iPhone, exporting photos, and subscriptions. Contact the developer by email.
+- [Privacy Policy | Darkroom Photo Vault](https://darkroom.buzz/privacy): Darkroom collects no data. No accounts, ads, analytics or tracking. Photos are encrypted on your device and backed up only to your own private iCloud.
+
+## Guides
+
+
+## Optional
+
+- [Full text of the main pages and guides](https://darkroom.buzz/llms-full.txt)

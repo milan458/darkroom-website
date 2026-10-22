@@ -5,14 +5,15 @@
 
 /* ---------- Page header: breadcrumbs, H1, lede, byline ---------- */
 .page-hero {
-  padding: clamp(40px, 6vw, 72px) 0 clamp(28px, 4vw, 44px);
+  /* The site header is fixed (about 77px tall), so start below it. */
+  padding: calc(78px + clamp(28px, 5vw, 56px)) 0 clamp(28px, 4vw, 44px);
   border-bottom: 1px solid var(--line);
 }
 
 .page-hero h1 {
   font-size: clamp(2.1rem, 5vw, 3.35rem);
   line-height: 1.04;
-  max-width: 22ch;
+  max-width: 26ch;
   margin-bottom: 18px;
   text-wrap: balance;
 }
@@ -375,6 +376,7 @@
 }
 
 .data-table tbody th {
+  min-width: 170px;
   font-weight: 600;
   color: var(--text);
 }
@@ -398,6 +400,10 @@
   color: var(--amber);
   text-decoration: underline;
   text-underline-offset: 3px;
+}
+
+.data-table td {
+  min-width: 130px;
 }
 
 .data-table .num {
