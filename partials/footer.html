@@ -1,0 +1,51 @@
+<!-- Shared footer for subpages. Edit partials/footer.html, then run python3 tools/build.py. -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <a href="/" class="logo" style="margin-bottom:12px" aria-label="Darkroom home">
+          <span class="logo-plate" aria-hidden="true">
+            <svg viewBox="0 0 180 180" width="30" height="30" aria-hidden="true"><use href="#darkroom-logo-mark"></use></svg>
+          </span>
+          <span>Darkroom</span>
+        </a>
+        <p style="color:var(--muted);max-width:34ch;margin-bottom:14px">Encrypted photo, video and note vault for iPhone and iPad. Encrypted on your device, backed up to your own iCloud.</p>
+        <p style="color:var(--amber);font-family:var(--font-mono);font-size:0.75rem">No accounts · No ads · No analytics</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Guides</h4>
+        <ul role="list">
+          {{guide_links}}
+          <li><a href="/guides/">All guides</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Darkroom</h4>
+        <ul role="list">
+          <li><a href="/#features">Features</a></li>
+          <li><a href="/#security">How the encryption works</a></li>
+          <li><a href="/#pricing">Free vs Pro</a></li>
+          <li><a href="/best-photo-vault-apps-iphone">Photo vault apps compared</a></li>
+          <li><a href="/#faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Help &amp; Legal</h4>
+        <ul role="list">
+          <li><a href="/about">About</a></li>
+          <li><a href="/support">Support</a></li>
+          <li><a href="/privacy">Privacy policy</a></li>
+          <li><a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; {{year}} Darkroom · Inertia Projects</p>
+      <p>App Store privacy label: <strong>Data Not Collected</strong></p>
+    </div>
+  </div>
+</footer>

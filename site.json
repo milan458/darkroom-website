@@ -1,0 +1,143 @@
+{
+  "_readme": "Source of truth for darkroom.buzz. Edit this file, then run: python3 tools/build.py. See CLAUDE.md and SEO-PLAYBOOK.md.",
+
+  "release": "waitlist",
+  "appStoreId": "",
+  "providerToken": "",
+
+  "origin": "https://darkroom.buzz",
+  "siteName": "Darkroom",
+  "appName": "Darkroom: Private Photo Vault",
+  "entityPhrase": "Darkroom photo vault",
+  "defaultOgImage": "/assets/og/darkroom-og.png",
+  "ogImageAlt": "Darkroom photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.",
+  "twitterHandle": "",
+
+  "organization": {
+    "name": "Inertia Projects",
+    "email": "business@inertiaprojects.info",
+    "url": "https://darkroom.buzz/about",
+    "logo": "https://darkroom.buzz/assets/darkroom-icon-512.png",
+    "sameAs": []
+  },
+
+  "author": {
+    "type": "Organization",
+    "name": "Inertia Projects",
+    "url": "https://darkroom.buzz/about",
+    "jobTitle": ""
+  },
+
+  "app": {
+    "version": "1.0",
+    "operatingSystem": "iOS 17.0 or later, iPadOS 17.0 or later",
+    "applicationCategory": "MultimediaApplication",
+    "applicationSubCategory": "Photo & Video",
+    "currency": "USD",
+    "offers": [
+      { "name": "Darkroom Free", "price": "0", "description": "150 photos, 10 videos, unlimited notes, 1 decoy vault, full iCloud backup and restore." },
+      { "name": "Darkroom Pro Monthly", "price": "2.99", "description": "Auto-renewing monthly subscription (in-app purchase)." },
+      { "name": "Darkroom Pro Yearly", "price": "19.99", "description": "Auto-renewing yearly subscription with a 1-week free trial (in-app purchase)." },
+      { "name": "Darkroom Pro Lifetime", "price": "44.99", "description": "One-time in-app purchase." }
+    ]
+  },
+
+  "statusText": {
+    "waitlist": "Version 1.0 was submitted to App Store review in October 2026. It is not on the App Store yet.",
+    "live": "Available on the App Store for iPhone and iPad."
+  },
+
+  "facts": [
+    ["What it is", "An iPhone and iPad app that hides photos, videos and notes in encrypted vaults."],
+    ["How you open it", "Draw a pattern across at least 6 bolts on a 5×5 plate of 25 bolts. Face ID can open the main vault."],
+    ["Encryption", "Everything is encrypted on the device. Keys come from your pattern through Argon2id (libsodium); files are sealed with AES-256-GCM (Apple CryptoKit). Names, dates and places are encrypted too. The pattern is never stored."],
+    ["Backup", "An encrypted backup goes to your own private iCloud (CloudKit). On a new iPhone, draw your pattern and the vault restores. Only encrypted data leaves the device."],
+    ["Forgot your pattern", "You write down a recovery phrase at setup, and it opens your vault. Nobody can reset a pattern: not the developer, not Apple."],
+    ["Decoy vault", "A second pattern opens a separate, harmless vault. The free plan includes 1."],
+    ["Emergency erase (Pro)", "A third pattern opens a harmless vault and erases the others."],
+    ["Hiding the app", "Change the app icon to a Calculator, Notes or Weather lookalike (Pro). Vault content is hidden in the app switcher and during screen recording."],
+    ["Organizing", "Albums, albums inside albums, and albums with their own pattern (Pro). Encrypted notes. Recently Deleted keeps items for 30 days."],
+    ["Import and export", "Imports HEIC, ProRAW and Live Photos. Built-in camera. \"Send to Darkroom\" from the share sheet. Exports in full quality with original dates."],
+    ["Privacy", "No ads, no accounts, no analytics. App Store privacy label: Data Not Collected."],
+    ["Free plan", "150 photos, 10 videos, unlimited notes, 1 decoy vault, full iCloud backup and restore."],
+    ["Darkroom Pro", "$2.99 a month, $19.99 a year (1-week free trial) or $44.99 once. Adds unlimited items, emergency erase, iPhone and iPad sync, custom icons, album patterns and shared vaults."],
+    ["If Pro ends", "You keep full access to view, export and back up everything already in your vault."],
+    ["Requirements", "iOS 17 or iPadOS 17 and later."],
+    ["Made by", "Inertia Projects, an independent developer. Contact: business@inertiaprojects.info."]
+  ],
+
+  "pages": [
+    {
+      "path": "/", "file": "index.html", "type": "home", "ct": "home",
+      "title": "Darkroom: Encrypted Private Photo Vault for iPhone",
+      "description": "Hide photos, videos and notes behind a pattern only you know. Encrypted on your iPhone, backed up to your own iCloud, restores on a new phone. No ads.",
+      "updated": "2026-10-22", "priority": "1.0"
+    },
+    {
+      "path": "/best-photo-vault-apps-iphone", "file": "best-photo-vault-apps-iphone.html", "type": "page", "ct": "compare",
+      "crumb": "Photo vault apps compared",
+      "title": "Best Photo Vault Apps for iPhone (2026), Compared",
+      "description": "17 iPhone photo vault apps side by side: encryption, backup, decoy vaults, free limits, ads and prices. Checked October 2026, with sources.",
+      "summary": "Side-by-side comparison of 17 iPhone photo vault apps and Apple's Hidden album, with methodology and sources.",
+      "published": "2026-10-22", "updated": "2026-10-22", "priority": "0.9"
+    },
+    {
+      "path": "/guides/", "file": "guides/index.html", "type": "page", "ct": "guides",
+      "crumb": "Guides",
+      "title": "Photo Privacy Guides for iPhone | Darkroom",
+      "description": "Plain-English guides to hiding, locking, backing up and moving private photos on iPhone and iPad. Written by the team behind the Darkroom photo vault.",
+      "updated": "2026-10-22", "priority": "0.8"
+    },
+    {
+      "path": "/guides/how-to-hide-photos-on-iphone", "file": "guides/how-to-hide-photos-on-iphone.html", "type": "guide", "ct": "g-hide-photos",
+      "crumb": "How to hide photos on iPhone", "draft": true,
+      "title": "How to Hide Photos on iPhone (Every Method, iOS 26)",
+      "headline": "How to hide photos on iPhone: every method, and what each one protects",
+      "description": "Every way to hide photos on iPhone in iOS 26: the Hidden album, locked notes, locked apps and vault apps. What each one protects, and what it doesn't.",
+      "summary": "All the ways to hide photos on iPhone, from the Hidden album to encrypted vault apps, and what each one actually protects.",
+      "published": "2026-10-22", "updated": "2026-10-22", "priority": "0.8",
+      "image": "/assets/guides/darkroom-lock.jpg"
+    },
+    {
+      "path": "/guides/is-iphone-hidden-album-private", "file": "guides/is-iphone-hidden-album-private.html", "type": "guide", "ct": "g-hidden-album",
+      "crumb": "Is the Hidden album private?", "draft": true,
+      "title": "Is the iPhone Hidden Album Actually Private?",
+      "headline": "Is the iPhone Hidden album actually private?",
+      "description": "The Hidden album is locked with Face ID, but anyone with your passcode can open it, and it syncs to your other devices. What it protects and what it doesn't.",
+      "summary": "What the Hidden album in Photos protects against, what it doesn't, and how to make it stricter.",
+      "published": "2026-10-22", "updated": "2026-10-22", "priority": "0.8",
+      "image": "/assets/guides/darkroom-library.jpg"
+    },
+    {
+      "path": "/guides/move-photo-vault-to-new-iphone", "file": "guides/move-photo-vault-to-new-iphone.html", "type": "guide", "ct": "g-new-iphone",
+      "crumb": "Move a photo vault to a new iPhone", "draft": true,
+      "title": "Move a Photo Vault to a New iPhone Without Losing Photos",
+      "headline": "How to move a private photo vault to a new iPhone without losing photos",
+      "description": "Why vault apps lose photos when you switch phones, and a step-by-step checklist to move yours safely: before, during and after the transfer.",
+      "summary": "A before-during-after checklist for moving any photo vault app to a new iPhone, and why vault photos go missing.",
+      "published": "2026-10-22", "updated": "2026-10-22", "priority": "0.8",
+      "image": "/assets/guides/darkroom-backup.jpg"
+    },
+    {
+      "path": "/about", "file": "about.html", "type": "page", "ct": "about",
+      "crumb": "About",
+      "title": "About Darkroom and Inertia Projects",
+      "description": "Who makes the Darkroom photo vault, why it exists, how it is built, and how to reach us. Plain facts about the app, with nothing rounded up.",
+      "updated": "2026-10-22", "priority": "0.6"
+    },
+    {
+      "path": "/support", "file": "support.html", "type": "page", "ct": "support",
+      "crumb": "Support",
+      "title": "Darkroom Support: Help with the Photo Vault App",
+      "description": "Help with Darkroom: forgotten pattern, recovery phrase, moving to a new iPhone, exporting photos, and subscriptions. Contact the developer by email.",
+      "updated": "2026-10-22", "priority": "0.5"
+    },
+    {
+      "path": "/privacy", "file": "privacy.html", "type": "page", "ct": "privacy",
+      "crumb": "Privacy policy",
+      "title": "Privacy Policy | Darkroom Photo Vault",
+      "description": "Darkroom collects no data. No accounts, ads, analytics or tracking. Photos are encrypted on your device and backed up only to your own private iCloud.",
+      "updated": "2026-10-22", "priority": "0.4"
+    }
+  ]
+}
