@@ -62,12 +62,13 @@ FREE ON THE APP STORE · NO ADS
 iOS 17+ · Private TestFlight Beta
 ·
 1 MO FREE PRO + 50% LAUNCH DISCOUNT
+Encrypted photo vault for iPhone & iPad
 ##
-Your Hidden album
-isn’t actually hidden.
-Darkroom is.
-Your photos move into a vault only your bolt pattern can open.
-Encrypted on your iPhone with Argon2id and AES-256-GCM. No account, no sign-up, no email.
+New phone.
+Same pattern.
+Every photo comes back.
+Darkroom locks your photos, videos and notes behind a pattern on a plate of bolts.
+Encrypted on your iPhone, backed up to your own iCloud, restored the moment you draw it. No account, no ads.
 Apple TestFlight · Private Beta
 ### Become an Early Tester
 Private Beta Registration Open
@@ -183,7 +184,7 @@ FRAME 02A
 During setup you write down a recovery phrase. It wraps the same 256-bit vault key in its own Argon2id envelope, so if you ever forget your pattern, the phrase still opens your vault.
 Free + Pro
 FRAME 03A
-#### Plausible Deniability
+#### No Vault List
 Darkroom never displays a list of vaults or a room switcher. Each pattern derives a key that unwraps only its matching room header — a wrong pattern opens nothing and reveals zero other rooms.
 Free + Pro
 FRAME 04A · COERCION SHIELD
@@ -296,7 +297,7 @@ Most vault apps prove you have something to hide. A locked folder list invites m
 Pattern A · Everyday
 #### Main Room
 Opens your real contact sheet, nested Rolls, and encrypted notes. Optionally paired with Face ID for instant daily access when you are alone.
-Pattern B · Plausible Deniability
+Pattern B · Decoy
 #### Decoy Room
 Opens a complete, lived-in vault with benign holiday photos and notes. Nothing in Settings labels it a decoy, and there is no vault list anywhere in the UI.
 Pattern C · Emergency

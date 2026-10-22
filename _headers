@@ -14,10 +14,6 @@
   Content-Type: text/plain; charset=utf-8
 
 # Working files that are deployed with the site but aren't pages. Keep them out of search results.
-/index.release-saved.html
-  X-Robots-Tag: noindex
-/styles.release-saved.css
-  X-Robots-Tag: noindex
 /darkroom-figma-wireframe.svg
   X-Robots-Tag: noindex
 /schema.sql
