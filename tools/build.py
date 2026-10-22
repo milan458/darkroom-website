@@ -6,7 +6,8 @@
 
 What it does, for every page listed in site.json:
   - fills the regions between <!-- build:NAME --> and <!-- /build:NAME --> markers:
-      meta        title, description, canonical, Open Graph, Twitter, Smart App Banner, robots
+      meta        Google tag (site.json "gaMeasurementId"), title, description, canonical, Open Graph,
+                  Twitter, Smart App Banner, robots
       jsonld      structured data (Organization, WebSite, MobileApplication, FAQPage, Article, BreadcrumbList)
       header      shared header (subpages), from partials/header.html
       footer      shared footer (subpages), from partials/footer.html
@@ -99,9 +100,21 @@ def fill_regions(text, renderers, page):
 def render_meta(page):
     title, desc = page["title"], page["description"]
     url = absolute(page["path"])
+    ga = SITE.get("gaMeasurementId")
+    ga_tag = [
+        "<!-- Google tag (gtag.js) -->",
+        f'<script async src="https://www.googletagmanager.com/gtag/js?id={ga}"></script>',
+        "<script>",
+        "  window.dataLayer = window.dataLayer || [];",
+        "  function gtag(){dataLayer.push(arguments);}",
+        "  gtag('js', new Date());",
+        "",
+        f"  gtag('config', '{ga}');",
+        "</script>",
+    ] if ga else []
     image = absolute(page.get("ogImage", SITE["defaultOgImage"]))
     is_article = page["type"] == "guide" or "published" in page
-    lines = [
+    lines = ga_tag + [
         f"<title>{esc(title)}</title>",
         f'<meta name="description" content="{esc(desc)}">',
         f'<link rel="canonical" href="{url}">',

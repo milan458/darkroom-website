@@ -1,6 +1,6 @@
 # darkroom.buzz
 
-Static marketing site for Darkroom, an encrypted iPhone/iPad photo vault (app repo: `~/dev/darkroom`). Plain HTML/CSS/JS, no framework. Deployed from GitHub as a Cloudflare Worker serving the repo folder as static assets (`wrangler.jsonc`). Everything in the folder is public unless it's listed in `.assetsignore`, so add new repo-only files there. Fonts are self-hosted in `assets/fonts/`; don't add Google Fonts or other third-party requests.
+Static marketing site for Darkroom, an encrypted iPhone/iPad photo vault (app repo: `~/dev/darkroom`). Plain HTML/CSS/JS, no framework. Deployed from GitHub as a Cloudflare Worker serving the repo folder as static assets (`wrangler.jsonc`). Everything in the folder is public unless it's listed in `.assetsignore`, so add new repo-only files there. Fonts are self-hosted in `assets/fonts/`; don't add Google Fonts. The only third-party script is the Google Analytics tag, added to every page by the build from `site.json` `gaMeasurementId` (the privacy page's website section describes it). Don't add others without updating `/privacy`.
 
 ## Ground rules
 - **Never push, merge or deploy without asking Milan.** Work on a branch, commit in small logical commits.
