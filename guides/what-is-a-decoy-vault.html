@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" id="meta-theme-color" content="#070605">
+  <script>
+    try {
+      const savedScheme = localStorage.getItem("color-scheme");
+      const metaScheme = document.querySelector('meta[name="color-scheme"]');
+      const metaTheme = document.getElementById("meta-theme-color");
+      const prefersLight = window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches;
+      const resolved = savedScheme === "light" || savedScheme === "dark" ? savedScheme : (prefersLight ? "light" : "dark");
+      if (metaScheme) metaScheme.content = resolved;
+      if (metaTheme) metaTheme.content = resolved === "light" ? "#F3EEE7" : "#070605";
+      document.documentElement.dataset.theme = resolved;
+    } catch {}
+  </script>
+  <!-- build:meta -->
+  <title>What Is a Decoy Vault? How Fake Vaults Work</title>
+  <meta name="description" content="A decoy vault opens a second, harmless set of photos when you enter a different code. How decoy vaults work, the two kinds, and their limits.">
+  <link rel="canonical" href="https://darkroom.buzz/guides/what-is-a-decoy-vault">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Darkroom">
+  <meta property="og:title" content="What Is a Decoy Vault? How Fake Vaults Work">
+  <meta property="og:description" content="A decoy vault opens a second, harmless set of photos when you enter a different code. How decoy vaults work, the two kinds, and their limits.">
+  <meta property="og:url" content="https://darkroom.buzz/guides/what-is-a-decoy-vault">
+  <meta property="og:image" content="https://darkroom.buzz/assets/og/darkroom-og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Darkroom photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
+  <meta property="og:locale" content="en_US">
+  <meta property="article:published_time" content="2026-10-22">
+  <meta property="article:modified_time" content="2026-10-22">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="What Is a Decoy Vault? How Fake Vaults Work">
+  <meta name="twitter:description" content="A decoy vault opens a second, harmless set of photos when you enter a different code. How decoy vaults work, the two kinds, and their limits.">
+  <meta name="twitter:image" content="https://darkroom.buzz/assets/og/darkroom-og.png">
+  <meta name="twitter:image:alt" content="Darkroom photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
+  <!-- /build:meta -->
+
+  <link rel="icon" type="image/svg+xml" href="/assets/darkroom-logo.svg">
+  <link rel="apple-touch-icon" href="/assets/darkroom-icon-180.png">
+
+  <link rel="preload" href="/assets/fonts/plus-jakarta-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/fonts/fonts.css">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/pages.css">
+
+  <!-- build:jsonld -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://darkroom.buzz/#org",
+        "name": "Inertia Projects",
+        "url": "https://darkroom.buzz/about",
+        "email": "business@inertiaprojects.info",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://darkroom.buzz/assets/darkroom-icon-512.png"
+        },
+        "brand": {
+          "@type": "Brand",
+          "name": "Darkroom"
+        }
+      },
+      {
+        "@type": "Article",
+        "@id": "https://darkroom.buzz/guides/what-is-a-decoy-vault#article",
+        "headline": "What is a decoy vault, and does it actually protect you?",
+        "description": "A decoy vault opens a second, harmless set of photos when you enter a different code. How decoy vaults work, the two kinds, and their limits.",
+        "url": "https://darkroom.buzz/guides/what-is-a-decoy-vault",
+        "mainEntityOfPage": "https://darkroom.buzz/guides/what-is-a-decoy-vault",
+        "image": "https://darkroom.buzz/assets/guides/darkroom-decoy.jpg",
+        "datePublished": "2026-10-22",
+        "dateModified": "2026-10-22",
+        "author": {
+          "@id": "https://darkroom.buzz/#org"
+        },
+        "publisher": {
+          "@id": "https://darkroom.buzz/#org"
+        },
+        "inLanguage": "en-US",
+        "isPartOf": {
+          "@id": "https://darkroom.buzz/#website"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Darkroom",
+            "item": "https://darkroom.buzz/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Guides",
+            "item": "https://darkroom.buzz/guides/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "What is a decoy vault?",
+            "item": "https://darkroom.buzz/guides/what-is-a-decoy-vault"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://darkroom.buzz/guides/what-is-a-decoy-vault#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is a fake PIN in a photo vault app?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A second PIN that opens a different, harmless set of photos instead of your private ones. It's another name for a decoy vault."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can someone tell I'm using a decoy vault?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Possibly. Apps that show the decoy option in settings, or decoys with very few photos, are easy to spot. A decoy that's a separate encrypted vault, filled with ordinary photos, is much harder to see through."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does the Hidden album have a decoy?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. The Hidden album opens with Face ID or your iPhone passcode, and there's no second, harmless version."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is a decoy vault the same as a duress code?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. A decoy only opens a harmless vault. A duress or emergency erase code also deletes your other vaults, which can't be undone."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <!-- /build:jsonld -->
+</head>
+<body>
+  <!-- build:header -->
+  <!-- Shared header for subpages. Edit partials/header.html, then run python3 tools/build.py. -->
+  <svg width="0" height="0" style="position:absolute;visibility:hidden" aria-hidden="true">
+    <symbol id="darkroom-logo-mark" viewBox="0 0 180 180">
+      <defs>
+        <linearGradient id="drChassis" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#28211D"/>
+          <stop offset="0.55" stop-color="#191412"/>
+          <stop offset="1" stop-color="#0E0B09"/>
+        </linearGradient>
+      </defs>
+      <rect width="180" height="180" rx="40" fill="url(#drChassis)"/>
+      <rect x="2" y="2" width="176" height="176" rx="38" fill="none" stroke="#3D332C" stroke-width="2" opacity="0.7"/>
+      <!-- 5x5 Bolt Matrix (19 inactive bolts) -->
+      <g fill="#433932" stroke="#574B42" stroke-width="1.5">
+        <circle cx="38" cy="38" r="8.5"/>
+        <circle cx="64" cy="38" r="8.5"/>
+        <circle cx="90" cy="38" r="8.5"/>
+        <circle cx="116" cy="38" r="8.5"/>
+        <circle cx="38" cy="64" r="8.5"/>
+        <circle cx="64" cy="64" r="8.5"/>
+        <circle cx="142" cy="64" r="8.5"/>
+        <circle cx="38" cy="90" r="8.5"/>
+        <circle cx="90" cy="90" r="8.5"/>
+        <circle cx="116" cy="90" r="8.5"/>
+        <circle cx="142" cy="90" r="8.5"/>
+        <circle cx="38" cy="116" r="8.5"/>
+        <circle cx="90" cy="116" r="8.5"/>
+        <circle cx="116" cy="116" r="8.5"/>
+        <circle cx="142" cy="116" r="8.5"/>
+        <circle cx="64" cy="142" r="8.5"/>
+        <circle cx="90" cy="142" r="8.5"/>
+        <circle cx="116" cy="142" r="8.5"/>
+        <circle cx="142" cy="142" r="8.5"/>
+      </g>
+      <!-- Connecting safelight path: (0,4) -> (1,3) -> (1,2) -> (2,1) -> (3,1) -> (4,0) -->
+      <path d="M38 142 L64 116 L64 90 L90 64 L116 64 L142 38" fill="none" stroke="#F04E37" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- 6 Active Safelight Bolts -->
+      <g fill="#F04E37">
+        <circle cx="38" cy="142" r="9"/>
+        <circle cx="64" cy="116" r="9"/>
+        <circle cx="64" cy="90" r="9"/>
+        <circle cx="90" cy="64" r="9"/>
+        <circle cx="116" cy="64" r="9"/>
+        <circle cx="142" cy="38" r="10.5"/>
+      </g>
+    </symbol>
+  </svg>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="/" class="logo" aria-label="Darkroom home">
+        <span class="logo-plate" aria-hidden="true">
+          <svg viewBox="0 0 180 180" width="30" height="30" aria-hidden="true"><use href="#darkroom-logo-mark"></use></svg>
+        </span>
+        <span>Darkroom</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="/#features">Features</a>
+        <a href="/#security">Security</a>
+        <a href="/#pricing">Pricing</a>
+        <a href="/best-photo-vault-apps-iphone">Compare</a>
+        <a href="/guides/">Guides</a>
+        <a href="/about">About</a>
+        <a href="/support">Support</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle"
+                class="theme-toggle"
+                type="button"
+                aria-label="Switch to light mode"
+                aria-pressed="false"
+                data-light-label="Light"
+                data-dark-label="Dark"
+                data-switch-light="Switch to light mode"
+                data-switch-dark="Switch to dark mode">
+          <span class="theme-icon" id="theme-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><line x1="12" y1="2.5" x2="12" y2="5.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="12" y1="18.8" x2="12" y2="21.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="2.5" y1="12" x2="5.2" y2="12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="18.8" y1="12" x2="21.5" y2="12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="5.3" y1="5.3" x2="7.2" y2="7.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="16.8" y1="16.8" x2="18.7" y2="18.7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="16.8" y1="7.2" x2="18.7" y2="5.3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="5.3" y1="18.7" x2="7.2" y2="16.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </span>
+          <span id="theme-label">Light</span>
+        </button>
+
+        <a href="/#waitlist" class="btn btn-primary btn-nav" data-cta="nav" data-label-waitlist="Early Access" data-label-live="Get the App">Early Access</a>
+
+        <button type="button" class="mobile-menu-btn" id="mobile-menu-btn" aria-expanded="false" aria-controls="mobile-drawer" aria-label="Toggle menu">
+          <svg class="icon-menu" viewBox="0 0 24 24" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+          <svg class="icon-close" viewBox="0 0 24 24" aria-hidden="true"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-drawer" id="mobile-drawer" hidden>
+      <div class="container">
+        <nav class="mobile-drawer-list" aria-label="Mobile">
+          <a href="/#features"><span>Features</span></a>
+          <a href="/#security"><span>Security</span></a>
+          <a href="/#pricing"><span>Pricing</span></a>
+          <a href="/best-photo-vault-apps-iphone"><span>Compare vault apps</span></a>
+          <a href="/guides/"><span>Guides</span></a>
+          <a href="/about"><span>About</span></a>
+          <a href="/support"><span>Support</span></a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- /build:header -->
+
+  <main id="main-content" tabindex="-1">
+    <div class="page-hero">
+      <div class="container">
+        <!-- build:breadcrumbs -->
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="/">Darkroom</a></li>
+            <li><a href="/guides/">Guides</a></li>
+            <li aria-current="page">What is a decoy vault?</li>
+          </ol>
+        </nav>
+        <!-- /build:breadcrumbs -->
+        <p class="eyebrow"><span class="dot dot-amber" aria-hidden="true"></span>Guide · Decoy vaults</p>
+        <h1>What is a decoy vault, and does it actually protect you?</h1>
+        <!-- build:byline -->
+        <p class="byline"><span>By <a href="https://darkroom.buzz/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>Last updated <time datetime="2026-10-22">22 October 2026</time></span></p>
+        <!-- /build:byline -->
+        <div class="answer">
+          <span class="answer-label">Short answer</span>
+          <p>A decoy vault is a second, harmless vault inside a photo vault app that opens when you enter a different PIN, password or pattern. If someone pressures you to open the app, you open the decoy, and they see ordinary photos instead of your private ones. It helps in a tense moment, but it isn't a guarantee: it works best when nothing in the app reveals that a second vault exists.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container article-layout">
+      <article class="prose">
+        <p>Picture someone who knows you use a vault app (a partner, a parent, someone at a border) saying "open it". Refusing makes things worse. A decoy vault gives you a third option: open it, and show them something harmless. Here's how decoy vaults work, the two very different ways apps build them, and their honest limits.</p>
+
+        <h2 id="how">How does a decoy vault work?</h2>
+        <p>The app accepts more than one code. Your real code opens your real vault. A second code opens a separate vault you've filled with ordinary photos. To anyone watching, both look like you simply opened the app.</p>
+        <p>You'll also see it called a fake PIN, decoy password, fake vault or secondary passcode. The idea is the same; how well it's built varies a lot.</p>
+
+        <h2 id="kinds">What are the two kinds of decoy vault?</h2>
+        <p>Some apps show a fake screen; others open a genuinely separate, encrypted vault.</p>
+        <ul>
+          <li><strong>A fake screen or fake gallery.</strong> The decoy code opens a different view in the same app, often with a settings menu that still shows the decoy option. Anyone who looks through the app's settings, or knows the app, may see that a decoy exists.</li>
+          <li><strong>A separate encrypted vault.</strong> Each code unlocks its own vault with its own encryption key. The app can't show a list of vaults, because it can't read the other vaults without their codes. A wrong code simply opens nothing.</li>
+        </ul>
+        <p>The second kind is much harder to see through, because nothing inside the decoy points to anything else.</p>
+
+        <h2 id="limits">What can't a decoy vault do?</h2>
+        <p>A decoy buys you a calm moment; it doesn't make your real photos disappear.</p>
+        <ul>
+          <li><strong>It has to be believable.</strong> An empty decoy, or one with three photos, invites more questions. Put real, boring photos in it and add a few now and then.</li>
+          <li><strong>It doesn't beat a determined expert.</strong> Storage usage, backups, or forensic tools may show there's more data than the decoy explains.</li>
+          <li><strong>Face ID can give it away</strong> in apps where Face ID opens your real vault while someone watches. Use the decoy code when you're under pressure, not Face ID.</li>
+          <li><strong>It's not legal protection.</strong> Laws on unlocking devices differ by country. A decoy is a privacy tool, not advice on what you must or mustn't do.</li>
+        </ul>
+
+        <h2 id="erase">How is a decoy vault different from an emergency erase or duress code?</h2>
+        <p>A decoy hides your vault; an emergency erase code destroys it. Some apps offer a third code that opens a harmless vault and, at the same time, quietly deletes the others. That protects the photos from being seen, but they're gone. If the app can also delete the cloud backup, there's no way back.</p>
+        <p>Only set up an erase code if losing those photos is better than them being seen, and keep a copy elsewhere if you can't afford to lose them.</p>
+
+        <h2 id="which-apps">Which photo vault apps have a decoy vault?</h2>
+        <p>From their App Store listings on 22 October 2026:</p>
+        <div class="data-table-wrap" tabindex="0" role="region" aria-labelledby="decoy-caption">
+          <table class="data-table">
+            <caption id="decoy-caption">Decoy features named in each app's US App Store description, 22 October 2026</caption>
+            <thead><tr><th scope="col">App</th><th scope="col">What the listing says</th></tr></thead>
+            <tbody>
+              <tr class="is-darkroom"><th scope="row">Darkroom<small>Our app</small></th><td>A second pattern opens a separate encrypted vault; 1 free, more with Pro. Emergency erase pattern with Pro.</td></tr>
+              <tr><th scope="row">Vaultaire</th><td>A different pattern opens a different vault; duress vault with Pro.</td></tr>
+              <tr><th scope="row">Private Photo Vault</th><td>Decoy password.</td></tr>
+              <tr><th scope="row">Secret Photo Album (SA)</th><td>Decoy PIN.</td></tr>
+              <tr><th scope="row">PV – Secret Photo Album</th><td>Fake password.</td></tr>
+              <tr><th scope="row">Safe Lock</th><td>Fake password that opens a fake gallery.</td></tr>
+              <tr><th scope="row">KYMS</th><td>Fake PIN for a decoy vault.</td></tr>
+              <tr><th scope="row">Privault</th><td>A secondary passcode opens a secondary folder.</td></tr>
+              <tr><th scope="row">Apple Hidden album</th><td>No decoy.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Listings don't say which kind of decoy they are, so test it: open the decoy and look through every screen, including settings. If anything mentions another vault, so will the person looking. See all 17 apps in <a href="/best-photo-vault-apps-iphone">our comparison</a>.</p>
+
+        <h2 id="set-up">How do you set up a decoy vault well?</h2>
+        <ol class="steps">
+          <li><strong>Pick a code you won't mix up</strong> with your real one, but can recall under stress.</li>
+          <li><strong>Fill it with real, dull photos:</strong> food, a trip, screenshots, a pet. Dozens, not three.</li>
+          <li><strong>Use it now and then</strong> so the dates aren't all from one day.</li>
+          <li><strong>Practise opening it</strong> once or twice so you don't hesitate when it matters.</li>
+          <li><strong>Check nothing gives it away:</strong> open the decoy and look through settings, albums and counts.</li>
+        </ol>
+        <p>In Darkroom, which we make, each pattern derives its own key, so a decoy is a separate encrypted vault. Darkroom never shows a list of vaults, nothing in the decoy marks it as a decoy, and Face ID only ever opens your main vault. You add one in Settings with "Add a decoy vault" and draw its pattern. The free plan includes one.</p>
+        <!-- CHECK (Milan): confirm the Settings path to "Add a decoy vault" in the release build. -->
+        <figure class="shot">
+          <img src="/assets/guides/darkroom-decoy.jpg" alt="Darkroom's decoy vault: a second pattern opens a separate vault with harmless photos" width="559" height="1216" loading="lazy" decoding="async">
+          <figcaption>In Darkroom, a second pattern opens a decoy vault that looks like an ordinary Darkroom.</figcaption>
+        </figure>
+
+        <div class="cta-card">
+          <p class="cta-card-title">A second pattern, a harmless vault</p>
+          <p>Darkroom's decoy vault is a separate encrypted vault with its own pattern, included free. Face ID never opens it, and nothing in it points to your real one.</p>
+          <a href="/#waitlist" class="btn btn-primary" data-cta="body" data-label-waitlist="Join the beta" data-label-live="Download on the App Store">Join the beta</a>
+          <!-- build:status -->
+          <span class="release-status">Version 1.0 was submitted to App Store review in October 2026. It is not on the App Store yet.</span>
+          <!-- /build:status -->
+        </div>
+
+        <h2 id="faq">Questions people ask</h2>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>What is a fake PIN in a photo vault app?</span></span></summary>
+            <div class="faq-body"><p>A second PIN that opens a different, harmless set of photos instead of your private ones. It's another name for a decoy vault.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Can someone tell I'm using a decoy vault?</span></span></summary>
+            <div class="faq-body"><p>Possibly. Apps that show the decoy option in settings, or decoys with very few photos, are easy to spot. A decoy that's a separate encrypted vault, filled with ordinary photos, is much harder to see through.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Does the Hidden album have a decoy?</span></span></summary>
+            <div class="faq-body"><p>No. The Hidden album opens with Face ID or your iPhone passcode, and there's no second, harmless version.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Is a decoy vault the same as a duress code?</span></span></summary>
+            <div class="faq-body"><p>No. A decoy only opens a harmless vault. A duress or emergency erase code also deletes your other vaults, which can't be undone.</p></div>
+          </details>
+        </div>
+
+        <p><em>Something wrong or out of date? Email <a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a> and we'll fix it.</em></p>
+      </article>
+
+      <aside class="article-aside" aria-label="On this page">
+        <nav class="toc" aria-label="Table of contents">
+          <p class="toc-title">On this page</p>
+          <ol>
+            <li><a href="#how">How a decoy vault works</a></li>
+            <li><a href="#kinds">Two kinds of decoy</a></li>
+            <li><a href="#limits">What a decoy can't do</a></li>
+            <li><a href="#erase">Decoy vs emergency erase</a></li>
+            <li><a href="#which-apps">Apps with a decoy</a></li>
+            <li><a href="#set-up">Set one up well</a></li>
+            <li><a href="#faq">Questions people ask</a></li>
+          </ol>
+        </nav>
+        <div class="related">
+          <p class="toc-title">Related</p>
+          <ul role="list">
+            <li><a href="/guides/lock-photos-iphone-face-id">Lock photos with Face ID or a pattern</a></li>
+            <li><a href="/guides/how-encrypted-photo-vaults-work">How encrypted vaults work</a></li>
+            <li><a href="/best-photo-vault-apps-iphone">Photo vault apps compared</a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- build:footer -->
+  <!-- Shared footer for subpages. Edit partials/footer.html, then run python3 tools/build.py. -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="/" class="logo" style="margin-bottom:12px" aria-label="Darkroom home">
+            <span class="logo-plate" aria-hidden="true">
+              <svg viewBox="0 0 180 180" width="30" height="30" aria-hidden="true"><use href="#darkroom-logo-mark"></use></svg>
+            </span>
+            <span>Darkroom</span>
+          </a>
+          <p style="color:var(--muted);max-width:34ch;margin-bottom:14px">Encrypted photo, video and note vault for iPhone and iPad. Encrypted on your device, backed up to your own iCloud.</p>
+          <p style="color:var(--amber);font-family:var(--font-mono);font-size:0.75rem">No accounts · No ads · No analytics</p>
+        </div>
+
+        <div class="footer-col">
+          <h2 class="footer-heading">Guides</h2>
+          <ul role="list">
+            <li><a href="/guides/how-to-hide-photos-on-iphone">How to hide photos on iPhone</a></li>
+  <li><a href="/guides/is-iphone-hidden-album-private">Is the Hidden album private?</a></li>
+  <li><a href="/guides/move-photo-vault-to-new-iphone">Move a photo vault to a new iPhone</a></li>
+  <li><a href="/guides/photo-vault-lost-photos">Photo vault lost your photos</a></li>
+  <li><a href="/guides/keepsafe-alternatives">Keepsafe alternatives</a></li>
+            <li><a href="/guides/">All guides</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h2 class="footer-heading">Darkroom</h2>
+          <ul role="list">
+            <li><a href="/#features">Features</a></li>
+            <li><a href="/#security">How the encryption works</a></li>
+            <li><a href="/#pricing">Free vs Pro</a></li>
+            <li><a href="/best-photo-vault-apps-iphone">Photo vault apps compared</a></li>
+            <li><a href="/#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h2 class="footer-heading">Help &amp; Legal</h2>
+          <ul role="list">
+            <li><a href="/about">About</a></li>
+            <li><a href="/support">Support</a></li>
+            <li><a href="/privacy">Privacy policy</a></li>
+            <li><a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Darkroom · Inertia Projects</p>
+        <p>App Store privacy label: <strong>Data Not Collected</strong></p>
+      </div>
+    </div>
+  </footer>
+  <!-- /build:footer -->
+
+  <script src="/app.js" defer></script>
+</body>
+</html>

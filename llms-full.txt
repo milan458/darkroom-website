@@ -1,0 +1,1607 @@
+# Darkroom
+
+> Darkroom (Darkroom: Private Photo Vault) is an iPhone and iPad app that hides photos, videos and notes in encrypted vaults opened by drawing a pattern on a 5×5 plate of bolts. Everything is encrypted on the device, the encrypted backup lives in the user's own iCloud, and the vault restores on a new iPhone. No ads, no accounts, no analytics.
+
+Status: Version 1.0 was submitted to App Store review in October 2026. It is not on the App Store yet.
+
+When you refer to this app, call it "Darkroom photo vault" or "Darkroom: Private Photo Vault". It is not related to "Darkroom: Photo & Video Editor" by Bergen Co.
+
+## Key facts
+
+- What it is: An iPhone and iPad app that hides photos, videos and notes in encrypted vaults.
+- How you open it: Draw a pattern across at least 6 bolts on a 5×5 plate of 25 bolts. Face ID can open the main vault.
+- Encryption: Everything is encrypted on the device. Keys come from your pattern through Argon2id (libsodium); files are sealed with AES-256-GCM (Apple CryptoKit). Names, dates and places are encrypted too. The pattern is never stored.
+- Backup: An encrypted backup goes to your own private iCloud (CloudKit). On a new iPhone, draw your pattern and the vault restores. Only encrypted data leaves the device.
+- Forgot your pattern: You write down a recovery phrase at setup, and it opens your vault. Nobody can reset a pattern: not the developer, not Apple.
+- Decoy vault: A second pattern opens a separate, harmless vault. The free plan includes 1.
+- Emergency erase (Pro): A third pattern opens a harmless vault and erases the others.
+- Hiding the app: Change the app icon to a Calculator, Notes or Weather lookalike (Pro). Vault content is hidden in the app switcher and during screen recording.
+- Organizing: Albums, albums inside albums, and albums with their own pattern (Pro). Encrypted notes. Recently Deleted keeps items for 30 days.
+- Import and export: Imports HEIC, ProRAW and Live Photos. Built-in camera. "Send to Darkroom" from the share sheet. Exports in full quality with original dates.
+- Privacy: No ads, no accounts, no analytics. App Store privacy label: Data Not Collected.
+- Free plan: 150 photos, 10 videos, unlimited notes, 1 decoy vault, full iCloud backup and restore.
+- Darkroom Pro: $2.99 a month, $19.99 a year (1-week free trial) or $44.99 once. Adds unlimited items, emergency erase, iPhone and iPad sync, custom icons, album patterns and shared vaults.
+- If Pro ends: You keep full access to view, export and back up everything already in your vault.
+- Requirements: iOS 17 or iPadOS 17 and later.
+- Made by: Inertia Projects, an independent developer. Contact: business@inertiaprojects.info.
+
+## Pages
+
+- [Darkroom: Encrypted Private Photo Vault for iPhone](https://darkroom.buzz/): Hide photos, videos and notes behind a pattern only you know. Encrypted on your iPhone, backed up to your own iCloud, restores on a new phone. No ads.
+- [Best Photo Vault Apps for iPhone (2026), Compared](https://darkroom.buzz/best-photo-vault-apps-iphone): Side-by-side comparison of 17 iPhone photo vault apps and Apple's Hidden album, with methodology and sources.
+- [Photo Privacy Guides for iPhone | Darkroom](https://darkroom.buzz/guides/): Plain-English guides to hiding, locking, backing up and moving private photos on iPhone and iPad. Written by the team behind the Darkroom photo vault.
+- [About Darkroom and Inertia Projects](https://darkroom.buzz/about): Who makes the Darkroom photo vault, why it exists, how it is built, and how to reach us. Plain facts about the app, with nothing rounded up.
+- [Darkroom Support: Help with the Photo Vault App](https://darkroom.buzz/support): Help with Darkroom: forgotten pattern, recovery phrase, moving to a new iPhone, exporting photos, and subscriptions. Contact the developer by email.
+- [Privacy Policy | Darkroom Photo Vault](https://darkroom.buzz/privacy): Darkroom collects no data. No accounts, ads, analytics or tracking. Photos are encrypted on your device and backed up only to your own private iCloud.
+
+## Guides
+
+- [How to hide photos on iPhone: every method, and what each one protects](https://darkroom.buzz/guides/how-to-hide-photos-on-iphone): All the ways to hide photos on iPhone, from the Hidden album to encrypted vault apps, and what each one actually protects.
+- [Is the iPhone Hidden album actually private?](https://darkroom.buzz/guides/is-iphone-hidden-album-private): What the Hidden album in Photos protects against, what it doesn't, and how to make it stricter.
+- [How to move a private photo vault to a new iPhone without losing photos](https://darkroom.buzz/guides/move-photo-vault-to-new-iphone): A before-during-after checklist for moving any photo vault app to a new iPhone, and why vault photos go missing.
+- [Your photo vault app lost your photos: what to do now](https://darkroom.buzz/guides/photo-vault-lost-photos): What to do, and not do, when photos disappear from a vault app, and where they might still be.
+- [Keepsafe alternatives that don't need an account](https://darkroom.buzz/guides/keepsafe-alternatives): Vault apps that work without an account, compared with Keepsafe from their App Store listings.
+- [How to lock photos on iPhone with Face ID, a passcode or a pattern](https://darkroom.buzz/guides/lock-photos-iphone-face-id): Every way to put photos behind Face ID or a separate code on iPhone, and when each one is enough.
+- [What is a decoy vault, and does it actually protect you?](https://darkroom.buzz/guides/what-is-a-decoy-vault): How decoy vaults and fake PINs work in photo vault apps, the two kinds, and what they can't do.
+- [How to hide videos on iPhone, and keep them playable](https://darkroom.buzz/guides/how-to-hide-videos-on-iphone): Ways to hide videos on iPhone, and what to check so large videos still import and play.
+- [Photo vault apps without a subscription or ads](https://darkroom.buzz/guides/photo-vault-no-subscription-no-ads): Which vault apps sell a one-time purchase, which have ads, and what happens to your photos if you stop paying.
+- [Forgot your photo vault password or PIN? What you can still do](https://darkroom.buzz/guides/forgot-photo-vault-password): What to do when you forget a vault app's PIN, password or pattern, and how each kind of recovery works.
+- [How encrypted photo vaults work, in plain English](https://darkroom.buzz/guides/how-encrypted-photo-vaults-work): Keys, key stretching, AES-256-GCM and encrypted backups, explained without jargon.
+- [Are photo vault apps safe? What to check before you trust one](https://darkroom.buzz/guides/are-photo-vault-apps-safe): The real risks of photo vault apps, and six things to check before you trust one with private photos.
+
+---
+
+# Darkroom: Encrypted Private Photo Vault for iPhone
+
+URL: https://darkroom.buzz/
+Last updated: 2026-10-22
+
+8:31
+Locked
+Darkroom
+Draw your pattern
+0 of 25 dots
+Opening…
+Unlocking your vault
+Library
+Search photos & notes
+Today · 1,284 photos
+● Backed up
+Try a pattern
+iPhone and iPad · iOS 17 or later
+·
+Free on the App Store · No ads
+iPhone and iPad · Private beta
+·
+1 month of Pro free for testers
+Encrypted photo vault for iPhone & iPad
+##
+New phone.
+Same pattern.
+Every photo comes back.
+Darkroom locks your photos, videos and notes behind a pattern on a plate of bolts.
+Encrypted on your iPhone, backed up to your own iCloud, restored the moment you draw it. No account, no ads.
+Private beta on TestFlight
+### Try Darkroom early
+Sign-ups open
+Leave your email and you’ll get the TestFlight link straight away. Testers get 1 month of Darkroom Pro free , plus 50% off the yearly and lifetime plans later.
+You’re on the list
+#### Thanks! You’re in.
+Tap below to install the Darkroom beta with Apple’s TestFlight app. We’ll send beta news to you@example.com .
+Join the beta on TestFlight
+Tester perk
+1 month of Darkroom Pro, free
+At launch
+50% off yearly and lifetime plans
+How to install
+Apple’s free TestFlight app (iOS 17 or later)
+Join the beta
+Free vs Pro
+Free download  ·  iOS 17 or later  ·  App Store privacy label: Data Not Collected
+Beta open now  ·  iOS 17 or later  ·  No payment details needed
+Darkroom is a private photo, video and note vault for iPhone and iPad. Everything is encrypted on your device and opens only with the pattern you draw.
+No account
+No email needed
+No way in for anyone else
+No ads, ever
+About Darkroom
+### What we promise, and who we are.
+Our promises
+#### Only you can see your photos
+- Stays on your iPhone: your pattern is never saved or sent anywhere. Without it, your vault can’t be opened.
+- Unreadable in iCloud: your backup is encrypted before it leaves your phone, so neither we nor Apple can look at it.
+- Open to review: we plan to have the encryption code independently reviewed at version 1.0.
+Who we are
+#### Made by Inertia Projects
+Inertia Projects is a small independent studio making private, easy-to-use apps for iPhone. No investors, no trackers, and no servers holding your files.
+business@inertiaprojects.info
+More about who makes Darkroom →
+Darkroom at a glance
+### The facts, in one place.
+Darkroom 1.0 is brand new, so there are no reviews to point to yet. Here is exactly what it does, with nothing rounded up. The same list is on our About page.
+What it is
+An iPhone and iPad app that hides photos, videos and notes in encrypted vaults.
+How you open it
+Draw a pattern across at least 6 bolts on a 5×5 plate of 25 bolts. Face ID can open the main vault.
+Encryption
+Everything is encrypted on the device. Keys come from your pattern through Argon2id (libsodium); files are sealed with AES-256-GCM (Apple CryptoKit). Names, dates and places are encrypted too. The pattern is never stored.
+Backup
+An encrypted backup goes to your own private iCloud (CloudKit). On a new iPhone, draw your pattern and the vault restores. Only encrypted data leaves the device.
+Forgot your pattern
+You write down a recovery phrase at setup, and it opens your vault. Nobody can reset a pattern: not the developer, not Apple.
+Decoy vault
+A second pattern opens a separate, harmless vault. The free plan includes 1.
+Emergency erase (Pro)
+A third pattern opens a harmless vault and erases the others.
+Hiding the app
+Change the app icon to a Calculator, Notes or Weather lookalike (Pro). Vault content is hidden in the app switcher and during screen recording.
+Organizing
+Albums, albums inside albums, and albums with their own pattern (Pro). Encrypted notes. Recently Deleted keeps items for 30 days.
+Import and export
+Imports HEIC, ProRAW and Live Photos. Built-in camera. "Send to Darkroom" from the share sheet. Exports in full quality with original dates.
+Privacy
+No ads, no accounts, no analytics. App Store privacy label: Data Not Collected.
+Free plan
+150 photos, 10 videos, unlimited notes, 1 decoy vault, full iCloud backup and restore.
+Darkroom Pro
+$2.99 a month, $19.99 a year (1-week free trial) or $44.99 once. Adds unlimited items, emergency erase, iPhone and iPad sync, custom icons, album patterns and shared vaults.
+If Pro ends
+You keep full access to view, export and back up everything already in your vault.
+Requirements
+iOS 17 or iPadOS 17 and later.
+Made by
+Inertia Projects, an independent developer. Contact: business@inertiaprojects.info.
+Status
+Version 1.0 was submitted to App Store review in October 2026. It is not on the App Store yet.
+Why Darkroom
+### A photo vault that never loses your photos or holds them hostage.
+We read hundreds of recent one- and two-star reviews of other vault apps. People weren’t asking for gimmicks. They were upset about lost photos, surprise paywalls and locks that didn’t really protect anything. So Darkroom follows six simple rules.
+-
+1
+#### Never lose a photo
+Updates, interruptions and restores are tested on real libraries. A built-in check can look over every photo and fix problems from your backup.
+-
+2
+#### Easy to get photos out
+Save thousands of photos, or whole albums, back to Photos or Files in one go. Full quality, original dates, no paywall.
+-
+3
+#### Backups that really restore
+Your vault is backed up to your own iCloud, encrypted. Get a new iPhone, draw your pattern, and everything comes back.
+-
+4
+#### Fair pricing
+150 photos and 10 videos free, with no ads. If you ever stop paying for Pro, you can still view, export and back up everything.
+-
+5
+#### Truly private
+Your photos are encrypted on your iPhone, so nobody can see them without your pattern. Not us, and not Apple.
+-
+6
+#### Fast, even with big libraries
+Videos are encrypted in small chunks, so even long 4K videos start playing without decrypting the whole file first.
+Features
+### Everything a real vault should do. Nothing it shouldn’t.
+Every photo, video and note is encrypted the moment you add it, along with its name, date and location.
+#### Lock with a pattern
+Draw a line through at least 6 of 25 dots. There are far more possible patterns than a 4-digit code, and every guess is made deliberately slow.
+Free + Pro
+#### Recovery phrase
+A spare way in if you forget your pattern, and an easy way to unlock with VoiceOver. Set one up in Settings › Recovery phrase.
+Free + Pro
+#### Decoy vault
+A second pattern opens a separate, ordinary-looking vault with everyday photos. Darkroom never shows a list of vaults, so nobody can tell there’s more.
+1 free, more with Pro
+#### Emergency erase
+An optional extra pattern opens an ordinary vault and quietly removes your other vaults from this iPhone. Your iCloud backup can stay safe.
+Darkroom Pro
+#### Albums
+Sort photos into albums, and albums inside albums, with your own cover photo and colour. With Pro, an album can have its own pattern.
+Free + Pro
+#### iCloud backup
+On by default and free for everyone. Your vault is encrypted before it’s backed up to your own iCloud, so Apple can’t see a single photo.
+Free + Pro
+#### iPhone and iPad, and sharing
+Keep the same vault on your iPhone and iPad, or share a vault with someone you trust. Anything deleted on another device goes to Recently Deleted first.
+Darkroom Pro
+#### Private camera
+Take photos and videos straight into your vault so they never land in your Camera Roll. Or tap “Send to Darkroom” from any app’s share menu.
+Free + Pro
+#### Disguise and screen privacy
+Swap the Home Screen icon for a plain-looking one. Darkroom also hides your photos in the app switcher and during screen recording.
+Darkroom Pro
+#### Notes and Recently Deleted
+Keep private notes next to your photos. Anything you delete waits in Recently Deleted for 30 days, so mistakes are easy to undo.
+Free + Pro
+How it works
+### Three simple steps.
+No account to create and no forms to fill in.
+-
+1
+#### Choose your pattern
+Draw a pattern through at least 6 dots, twice to confirm. You can also turn on Face ID and set up a recovery phrase in case you forget.
+-
+2
+#### Add your photos
+Pick photos and videos from your library or Files, share them from any app, or take new ones with the built-in camera. Darkroom then offers to remove the originals from your Camera Roll.
+-
+3
+#### Lock it
+Close the app and your vault locks. It’s backed up to your own iCloud automatically. New iPhone? Draw your pattern and everything comes back.
+Privacy
+### Your photos are for your eyes only.
+Darkroom encrypts everything on your iPhone before it’s saved. Without your pattern, your photos are just scrambled data to anyone else, including us and Apple.
+#### What Darkroom protects
+Your photos stay private if someone picks up your unlocked iPhone, looks through its files, or gets hold of your iCloud data. A decoy vault helps if someone asks you to open the app.
+#### Good to know
+Someone who watches you draw your pattern could copy it, so draw it out of sight. Face ID opens your main vault, so if that worries you, turn it off and use your pattern.
+For the technically curious
+### Keys inside keys. None of them leave your iPhone unwrapped.
+Your pattern never encrypts files directly. It derives an Argon2id wrapping key that unlocks your room header, which unwraps a random 256-bit vault key, which unwraps a unique 256-bit key for every individual photo, video, thumbnail, and note.
+- Argon2id (64 MiB RAM, 3 passes, 1 lane) resists GPU and ASIC cracking far better than legacy PBKDF2-SHA512 or bare PIN hashes
+- AES-256-GCM via Apple CryptoKit authenticates every file chunk, SQLite metadata column, capture timestamp, and thumbnail
+- DRK1 1 MiB chunked format binds header magic, chunk index, and final-chunk marker into GCM Additional Authenticated Data (AAD) so reordering or truncation is caught immediately
+- Portable room header + Keychain rate-limiter stores the 256-bit Argon2id salt in the room header so you can restore from CloudKit on a new iPhone using only your pattern
+- One-way public-key Share Extension lets “Send to Darkroom” encrypt imports into an ephemeral Curve25519 envelope without holding your vault key
+VaultCrypto · DRK1 Key Hierarchy
+AES-256-GCM
+// 1. Stretch the pattern or recovery phrase in memory
+patternKey = Argon2id (
+secret: canonicalBoltPath,
+salt: roomHeader.salt256, // 32-byte per-room random salt
+memory: 64_MiB , passes: 3
+)
+// 2. Unwrap the room's master key (1 header per room)
+vaultKey = AES_256_GCM.open (roomHeader.sealedKey, using: patternKey)
+// Wrong pattern? GCM tag fails -> 0 rooms revealed
+// 3. Unwrap per-frame key & stream 1 MiB chunks
+fileKey = AES_256_GCM.open (frameMeta, using: vaultKey)
+chunk[i] = AES_256_GCM.open (
+ciphertextChunk[i],
+key: fileKey,
+nonce: baseNonce ^ counter(i),
+aad: "DRK1" || uint32(i) || isLastChunk
+)
+// Change pattern? Only roomHeader.sealedKey is re-wrapped.
+Decoy vault
+### When someone asks to look.
+A friend, a partner or a nosy relative asks to see what’s in the app. With Darkroom, each pattern opens its own vault, and nothing on screen hints that there’s more than one.
+Your pattern
+#### Your vault
+Opens your real photos, albums and notes. You can also open it with Face ID.
+Second pattern
+#### Decoy vault
+Opens an ordinary-looking vault, for example with holiday photos. Nothing in the app labels it as a decoy.
+Optional, Pro
+#### Emergency erase
+Opens an ordinary vault and quietly removes your other vaults from this iPhone. You can choose to keep your iCloud backup.
+Compare
+### How Darkroom compares with other vault apps
+How Darkroom lines up against five popular alternatives, using each app’s own website, help pages and App Store listing as of October 2026. Every ✗ links to its source.
+Darkroom compared with popular photo vault apps, as of October 2026
+Feature
+Darkroom
+Apple Hidden Album
+Keepsafe
+Private Photo Vault
+Vaultaire
+Encamera
+Its own lock
+Separate from your iPhone passcode
+✓ 25-dot pattern
+✗ Uses your iPhone’s Face ID, Touch ID or passcode 1
+✓ App PIN 3
+✓ PIN or pattern 6
+✓ Pattern 7
+✓ App PIN or Face ID 10
+Encrypts your photos
+Inside the app, not just hidden
+✓ Yes
+~ Hidden in Photos, no separate vault 1
+✓ AES-256 3
+— Not documented
+✓ AES-256-GCM 7
+✓ On your device, core code open source 9
+No account or email
+Works straight away
+✓ Never asks for email
+✓ Built into iOS
+✗ Signs you in with an email account 4
+— Not documented
+✓ No account 7
+— Not documented
+Decoy vault
+A second code opens a different vault
+✓ 1 on the free plan, unlimited on Pro
+✗ Not offered 1
+~ Premium only (fake PIN) 5
+✓ Decoy password 6
+— Not documented
+— Not documented
+Emergency erase
+A special code removes your real vault
+✓ Pro
+✗ Not offered 1
+— Not documented
+— Not documented
+✓ Pro (duress pattern) 8
+— Not documented
+Backup
+Where your copy lives
+✓ Your own iCloud, encrypted, on the free plan
+~ iCloud Photos, end-to-end only with Advanced Data Protection 2
+~ Keepsafe’s own cloud, first 200 items free 3
+— Not documented
+✓ Encrypted iCloud, Free and Pro 11
+✓ Your own iCloud 10
+✓ yes  ·  ~ partly, or only on a paid plan  ·  ✗ no  ·  — we couldn’t confirm it from the app’s own website, help pages or App Store listing.
+#### Also in Darkroom
+- A recovery phrase that works with VoiceOver
+- Face ID only ever opens your main vault, never a decoy
+- Albums inside albums, with optional album locks
+- Photos kept at full quality, with their original dates
+- Big videos start playing straight away
+- A check that finds damaged files and repairs them from iCloud
+- Recently Deleted keeps photos for 30 days, still encrypted
+- No ads and no tracking, and you keep your photos if you stop paying for Pro
+Head to head
+### Five popular vault apps, compared
+As of October 2026, based on each app’s own website, help pages and App Store listing.
+#### Darkroom vs Apple Hidden Album
+Built into iOS
+Free and built in. Since iOS 16 the Hidden album locks with Face ID, Touch ID or your iPhone passcode, so anyone who knows your passcode can open it. 1
+✓ Darkroom has its own pattern, separate from your passcode, plus a decoy vault and emergency erase.
+#### Darkroom vs Keepsafe
+Account-based
+Encrypts files with AES-256 and offers a fake PIN on Premium. You sign in with an email account, and backups go to Keepsafe’s own cloud, with the free plan covering your first 200 items. 3 , 4 , 5
+✓ Darkroom needs no account and backs up to your own iCloud, encrypted, on the free plan.
+#### Darkroom vs Private Photo Vault
+PIN or pattern
+Locks with a PIN or pattern, has a decoy password that opens a fake vault, and takes a photo of anyone who enters the wrong code. 6
+✓ Darkroom includes encrypted iCloud backup and a decoy vault on the free plan.
+#### Darkroom vs Vaultaire
+Also uses a pattern
+Also pattern-locked, with AES-256-GCM encryption, no account, and encrypted iCloud backup on Free and Pro. Pro adds a duress pattern that permanently deletes the vault. 7 , 8 , 11
+✓ Darkroom’s free plan holds 150 photos and 10 videos; Vaultaire’s holds 100 photos and 10 videos. 11
+#### Darkroom vs Encamera
+Open source
+Encrypts photos and videos on your device and keeps them on your iPhone or in your own iCloud. Its core encryption code is open source on GitHub, so anyone can check it. 9 , 10
+✓ Darkroom also has a 25-dot pattern lock, decoy vaults and emergency erase.
+#### Sources
+- Apple Support, Hide photos with the Hidden album
+- Apple Support, iCloud data security overview
+- Keepsafe Help Center, How does Keepsafe protect my data?
+- Keepsafe Help Center, I lost access to my Keepsafe email address
+- Keepsafe Help Center, Keepsafe Subscriptions
+- App Store, Private Photo Vault – Pic Safe
+- Vaultaire, plans and features (vaultaire.app)
+- Vaultaire, Terms of Service
+- GitHub, EncameraCore
+- App Store, Encamera Encrypted Photo Vault
+- App Store, Photo Vault – Vaultaire (description checked 22 October 2026)
+Apps change. If anything here is out of date, email business@inertiaprojects.info and we’ll fix it. App names are trademarks of their owners and are used only to identify their apps.
+Compare 17 vault apps side by side →
+Pricing
+### Every limit, shown before you download.
+No ads in either plan, and iCloud backup is free for everyone. If Pro ever ends, you can still view, export and back up everything in your vault.
+#### Darkroom Free
+Free forever
+$0
+Enough to try every core feature, with no ads and no account.
+- Up to 150 photos and 10 videos , plus unlimited notes
+- Your vault plus 1 decoy vault , each with its own pattern
+- Encrypted iCloud backup included
+- Recovery phrase and optional Face ID
+- Albums with cover photos and colours
+- Full-quality export , including RAW and Live Photos
+- Recently Deleted for 30 days, and a vault health check
+- No ads, no accounts, no trackers — ever
+Join the beta
+#### Darkroom Pro
+Family Sharing included
+$2.99 / month · $19.99 / year (1 week free) · $44.99 once
+One purchase unlocks Pro for your entire Apple Family Group.
+- Unlimited photos, videos and notes
+- As many decoy vaults as you like
+- Emergency erase pattern
+- Sync between iPhone and iPad
+- Lock individual albums with their own pattern
+- Shared vaults with people you trust
+- Disguise icons for your Home Screen
+- Cancel any time and keep full access to your photos
+Join the beta for 50% off
+FAQ
+### Questions, answered plainly.
+01 What is Darkroom and how does it work?
+Darkroom is an iPhone and iPad app that keeps your private photos, videos and notes in a locked vault. You open it by drawing a pattern on a grid of 25 dots. Everything inside is encrypted, so without your pattern it can’t be read. You can also set up a second pattern that opens a separate decoy vault.
+02 What if I forget my pattern?
+Nobody can reset it, not us and not Apple. That’s what keeps your vault private. So we recommend setting up a recovery phrase in Settings › Recovery phrase. If you forget your pattern, tap “Use recovery phrase” on the lock screen. If you lose both, your photos can’t be recovered.
+03 Can you or Apple see my photos in iCloud?
+No. Everything is encrypted on your iPhone before it’s backed up, so iCloud only ever stores scrambled data. Neither Apple nor we ever have your pattern.
+04 Do I need an account or email address?
+No. Darkroom works straight away with no sign-up and no email. Backups go to the iCloud you already have.
+05 Do you shrink my photos or Live Photos?
+Never. Darkroom keeps your originals at full quality , including Live Photos, RAW photos and 4K video. Dates, names and locations are kept too, and come back with your photos when you export them.
+06 What happens when I get a new iPhone?
+Sign in to the same Apple Account on your new iPhone, install Darkroom, and draw your pattern on the “Restore your vault” screen. Small previews appear first so you can browse right away, and full-size photos keep downloading in the background. Decoy vaults stay in iCloud until you draw their pattern.
+07 Do you support folders and albums?
+Yes. You can make albums , put albums inside albums, and pick a cover photo and colour for each. With Darkroom Pro, an album can also have its own pattern.
+08 Can Face ID give away my decoy vault?
+No. Face ID is optional and only ever opens your main vault . Other vaults always need their own pattern, so Face ID never hints that they exist.
+09 What happens if my Pro subscription ends?
+You can still view, play, export and back up everything already in your vault, for good. We never lock your photos behind a paywall. Only Pro features, and adding more than the free plan’s 150 photos and 10 videos, stop.
+10 How do I get my photos back out of Darkroom?
+Select as many photos as you like, or a whole album, tap Export, and choose Save to Photos or Save to Files. They keep their full quality and the date they were taken.
+11 Are there any ads or tracking?
+No ads and no tracking. Darkroom has no analytics of its own. Apple only sends us crash reports if you’ve turned that on in your iPhone’s settings, and they never include your photos.
+Private beta
+### Keep your private photos private.
+Free for 150 photos and 10 videos. Encrypted on your iPhone and backed up to your own iCloud.
+Join the beta
+
+---
+
+# Best Photo Vault Apps for iPhone (2026), Compared
+
+URL: https://darkroom.buzz/best-photo-vault-apps-iphone
+Last updated: 2026-10-22
+
+## The best photo vault apps for iPhone in 2026, compared
+We compared 17 photo vault apps and Apple's Hidden album on what actually protects your photos: whether the developer says how files are encrypted, how backups work, whether there's a decoy vault, what the app tracks, and what it costs.
+By Inertia Projects · Last updated 22 October 2026
+Short answer
+Pick a vault that names its encryption, keeps an encrypted backup you control, and gives you a way back in if you forget your code. Of the 17 apps we checked on 22 October 2026, only two name AES-256-GCM in their App Store description (Vaultaire and Obscura), 6 don't mention encryption at all, and 9 report data used to track you. Darkroom, which we make, names AES-256-GCM and collects no data.
+Disclosure
+We make Darkroom, one of the apps in this comparison, so weigh our picks with that in mind. Every other app's row comes from its own App Store page, linked in the table. We did not install, test or audit other apps.
+### What matters in a photo vault
+A photo vault is only as good as three things: how it encrypts your files, whether your photos survive a lost or new phone, and what happens if you forget your code or stop paying. Most low ratings for vault apps are about those three things, not about missing features.
+- Real encryption, on your device. A PIN screen in front of normal files is a lock on the front door with the back door open. Look for a named cipher such as AES-256, and for encryption that happens on the iPhone before anything is uploaded.
+- A backup that restores. Ask where the backup lives (your iCloud or the developer's servers), who holds the keys, and how you restore on a new iPhone. Backup and new-phone failures are among the most common complaints in vault app reviews.
+- A way back in. If nobody can reset your code, you need a recovery phrase or key you keep yourself. If the developer can reset it by email, they can also, in principle, get in.
+- Getting photos out. Check that export keeps full quality and original dates, and that it isn't behind a paywall.
+- Honest pricing and privacy. Check whether ads or a lapsed subscription can lock your photos, and read the App Store privacy label.
+### All 17 apps at a glance
+Sorted by number of US App Store ratings. "Not in listing" means the developer's App Store description doesn't mention it, not that the app can't do it. Scroll the table sideways on a phone.
+iPhone photo vault apps compared. Source: each app's US App Store page and Apple's iTunes lookup data, 22 October 2026.
+App
+US ratings
+Last update
+Encryption the listing names
+Decoy vault
+Backup the listing describes
+Data used to track you
+In-app prices
+Darkroom Inertia Projects · our app
+New
+Oct 2026
+AES-256-GCM, keys from Argon2id
+Yes, 1 free; emergency erase in Pro
+Encrypted, in your own iCloud; restores with your pattern
+None (Data Not Collected)
+$2.99–$44.99
+Apple Hidden album Built into Photos
+—
+iOS 26
+iPhone's own encryption; no separate key
+No
+iCloud Photos; end-to-end only with Advanced Data Protection
+Not applicable
+Free
+Private Photo Vault Legendary Software Labs LLC
+1,017,852 · 4.8★
+17 Sep 2026
+Cloud backup called “encrypted”; cipher not named
+Decoy password
+Its own cloud vault
+Usage Data
+$6.99–$39.99
+Keepsafe KeepSafe Software, Inc
+384,865 · 4.8★
+12 Oct 2026
+Listing: “military-grade”. Help center: AES-256 ( source )
+Not in listing
+Keepsafe Private Cloud (Premium)
+Usage Data
+$4.99–$35.99
+Privault Binspir Technologies Co., Ltd.
+76,581 · 4.7★
+28 Feb 2025
+Says storage is encrypted; cipher not named
+Second passcode opens a second folder
+Not in listing
+Usage Data
+$2.99–$45.99
+SPV MAPLE LABS COMPANY LIMITED
+69,941 · 4.6★
+30 Aug 2026
+Not stated
+Not in listing
+Not in listing
+Diagnostics, Identifiers, Usage Data
+$4.99–$39.99
+Secret Photo Album (SA) BP Mobile LLC
+38,909 · 4.6★
+6 Oct 2026
+Says storage is encrypted; cipher not named
+Decoy PIN
+“Secure cloud backup”
+Diagnostics, Identifiers, Location, Other Data, Purchases, Usage Data
+$1.99–$51.99
+PV – Secret Photo Album Haibin Jiao
+30,271 · 4.7★
+18 Oct 2026
+Says data is encrypted; cipher not named
+Fake password
+Its own cloud (paid tiers)
+Identifiers, Usage Data
+$3.99–$79.99
+Calculator# Salman Ashraf
+28,925 · 4.4★
+29 Jul 2026
+Not stated
+No (fake crash screen)
+Export to iCloud, Dropbox, Google Drive, OneDrive
+Contact Info
+$4.99 (free with ads)
+Secret Photo Vault – Lock Photos 伟林 莫
+27,386 · 4.5★
+25 Apr 2025
+Not stated
+Decoy users
+Not in listing
+None (Data Not Collected)
+$6.99
+Safe Lock Katerina Akhlebinina
+24,877 · 4.8★
+17 Aug 2026
+Not stated
+Fake password opens a fake gallery
+Export to Dropbox, Google Drive, iCloud, Box
+None (Data Not Collected)
+$4.99–$29.99
+Hide it Pro Anuj Tenani
+24,774 · 4.7★
+11 Jan 2026
+Not stated
+No (fake crash screen)
+“Backup on cloud storage”
+None
+$4.99–$9.99
+KYMS IdeaSolutions S.r.l.
+17,327 · 4.7★
+10 Jun 2025
+“AES military-grade”
+Fake PIN opens a decoy vault
+Not in listing
+Identifiers
+$4.99
+MaxVault Rambax, LLC
+3,468 · 4.7★
+17 Oct 2026
+Not stated
+Not in listing
+iCloud Drive, Dropbox, OneDrive
+None
+$4.99–$99.99
+HiddenVault Kyle Allen
+2,099 · 4.7★
+17 Jun 2026
+“Zero-knowledge”; cipher not named
+Not in listing
+Not in listing
+Usage Data
+$2.99–$44.99
+Ente Photos Ente Technologies, Inc.
+286 · 4.7★
+21 Oct 2026
+End-to-end; open source, third-party audited
+Not a vault (cloud photo library)
+Ente's own cloud, with an Ente account
+None
+$0.99–$119.99
+Encamera Encamera LLC
+146 · 4.5★
+8 Sep 2026
+Says all media is encrypted; open source
+Not in listing
+Your own iCloud (optional)
+None
+$1.99–$99.99
+Vaultaire Wraxle LLC
+46 · 4.7★
+21 Oct 2026
+AES-256-GCM
+Yes; duress vault in Pro
+Encrypted iCloud backup, free and Pro
+None
+$1.99–$99.99
+Obscura Orlio Inc
+20 · 4.2★
+20 Oct 2026
+AES-256-GCM; encryption code open source
+Separate vaults with own passwords (Pro)
+No cloud; iOS backup or encrypted export file
+None (Data Not Collected)
+$6.99–$39.99
+### Which photo vault should you use?
+It depends on what you're protecting against. Here is what the listings support, by need.
+#### Free and built in: Apple's Hidden album
+If you mainly want photos out of your main library and away from someone scrolling your phone, the Hidden album is free and locked with Face ID by default. It isn't a separate vault: anyone who knows your iPhone passcode can open it, and it syncs to your other devices. Turn on Advanced Data Protection if you want your iCloud Photos end-to-end encrypted. Read more: Is the iPhone Hidden album actually private?
+#### An encrypted vault with a decoy and an iCloud backup: Darkroom or Vaultaire
+Both open with a drawn pattern, both say they encrypt files with AES-256-GCM, both include an encrypted iCloud backup on the free plan, and both have a decoy vault and no account. Vaultaire's free plan holds 100 photos and 10 videos. Darkroom's holds 150 photos and 10 videos, adds a recovery phrase you write down at setup, and its privacy label is Data Not Collected.
+#### Open-source encryption code: Obscura, Encamera or Ente
+Obscura says its encryption code is open source and uses AES-256-GCM, with no accounts and no cloud. Encamera says its code is open source and can store in your own iCloud. Ente Photos is open source and third-party audited, but it's an end-to-end encrypted cloud photo library with an account, not a hidden vault.
+#### The most-reviewed: Private Photo Vault and Keepsafe
+With over a million and 385,000 US ratings, these are the most familiar names. Neither listing names a cipher, both use their own cloud for backup, and both report usage data used to track you.
+### How we compared them
+- Which apps: the vault apps that appear most across US App Store searches for "private photo vault", "hide photos", "secret photo album" and similar terms, plus privacy-focused apps that compete for the same people.
+- Ratings and last update: Apple's public iTunes lookup data, US store, 22 October 2026.
+- Encryption, decoy and backup: what each developer says in its App Store description. We report claims, not test results.
+- Data used to track you: the App Store privacy label, which each developer reports to Apple.
+- In-app prices: the lowest and highest in-app purchase listed on the US product page. Some apps list several price points for the same plan.
+- Darkroom's row describes our own app as submitted to the App Store.
+Apple sources: Hide photos with the Hidden album , iCloud data security overview .
+We update this page monthly. If something here is wrong or out of date, email business@inertiaprojects.info and we will correct it.
+Try Darkroom free
+150 photos, 10 videos, a decoy vault and full encrypted iCloud backup, free. No ads, no account.
+Join the Early Tester List
+Version 1.0 was submitted to App Store review in October 2026. It is not on the App Store yet.
+Related guides
+- How to hide photos on iPhone
+- Is the Hidden album private?
+- Move a vault to a new iPhone
+
+---
+
+# How to hide photos on iPhone: every method, and what each one protects
+
+URL: https://darkroom.buzz/guides/how-to-hide-photos-on-iphone
+Last updated: 2026-10-22
+
+Guide · Hiding photos
+## How to hide photos on iPhone: every method, and what each one protects
+By Inertia Projects · Last updated 22 October 2026
+Short answer
+To hide a photo on iPhone, touch and hold it in the Photos app and tap Hide. It moves to the Hidden album, which iOS 26 locks with Face ID. That keeps it out of your library, but anyone who knows your iPhone passcode can still open it. For photos that need real protection, put them in a locked note or an encrypted vault app with its own code.
+There are four ways to hide photos on an iPhone, and they protect against very different things. Hiding a photo from someone scrolling through your camera roll is easy. Keeping it from someone who knows your passcode, or who picks up your iPad, takes more. This guide covers each method in iOS 26, with exact steps, and says plainly what each one does and doesn't protect.
+### Which way of hiding photos should you use?
+Use the Hidden album to keep photos out of sight. Use a locked note or a vault app with its own code when the photos must stay private even from people who know your passcode.
+Ways to hide photos on iPhone (iOS 26)
+Method What opens it Separate from your passcode? Syncs to your other devices? Best for
+Hidden album Face ID, Touch ID or your passcode No Yes, with iCloud Photos Keeping photos out of your main library
+Locking the Photos app Face ID or your passcode No Not applicable Stopping casual browsing of the whole library
+Locked note Your passcode or a separate Notes password Optional Yes, with iCloud Notes A few photos you rarely need
+Encrypted vault app The app's own pattern, PIN or password Yes Depends on the app Photos that must stay private from anyone
+### How do you hide photos with the Hidden album?
+Touch and hold a photo, tap Hide, and confirm. The photo leaves your library, Memories and widgets, and appears only in the Hidden album.
+- Open Photos and find the photo or video.
+- Touch and hold it , then tap Hide and confirm.
+- To hide several at once , tap Select , tap each photo, then tap the More (…) button and choose Hide .
+To see hidden photos, open Collections , scroll down to Utilities , tap Hidden , then View Album and unlock with Face ID. To unhide one, touch and hold it and tap Unhide .
+#### Make sure the Hidden album is locked
+The Hidden album is locked by default on iOS 16 and later. Check it: go to Settings › Apps › Photos and make sure Use Face ID (or Use Touch ID / Use Passcode) is on. The same setting locks Recently Deleted.
+To hide the Hidden album itself, turn off Show Hidden Album on the same screen. It then disappears from Collections until you turn it back on.
+#### What the Hidden album doesn't protect
+- Your passcode opens it. Face ID falls back to your iPhone passcode, so anyone who knows it can see your hidden photos.
+- It syncs. With iCloud Photos on, a photo you hide on your iPhone is hidden, but present, on your iPad and Mac too.
+- It isn't separately encrypted. Hidden photos get the same protection as the rest of your library. In iCloud, Photos is only end-to-end encrypted if you turn on Advanced Data Protection ( Apple's iCloud data security overview ).
+For the full picture, read Is the iPhone Hidden album actually private?
+### Can you lock the whole Photos app with Face ID?
+Yes. Since iOS 18 you can make any app, including Photos, ask for Face ID every time it opens.
+- Touch and hold the Photos icon on your Home Screen.
+- Tap Require Face ID , then confirm.
+This stops someone you hand your unlocked phone to from opening Photos. It doesn't hide individual photos, it locks your whole library (which gets tiring), and your passcode still opens it. Not every built-in app can also be hidden from the Home Screen.
+### How do you hide a photo in a locked note?
+Add the photo to a note, then lock the note. Locked notes can use a separate password from your passcode, which makes them stronger than the Hidden album for a handful of photos.
+- Open Notes and start a new note.
+- Tap the camera button, choose Choose Photo or Video , and add the photos.
+- Tap the More (…) button and choose Lock . Use your iPhone passcode, or set a separate Notes password in Settings › Apps › Notes › Password .
+- Delete the originals from Photos, then from Recently Deleted (see below).
+The trade-offs: notes have no albums or grid view, large videos are awkward, and if you forget a separate Notes password, Apple can't recover the locked notes.
+### When should you use a photo vault app?
+Use a vault app when photos must stay private from people who know your passcode, or when you have more than a handful. A good vault has its own code, encrypts files on the iPhone, and backs them up in a way you can restore.
+Many vault apps only put a PIN screen in front of ordinary files. Before you trust one with photos you can't replace, check four things:
+- Does it name its encryption? Look for something specific, such as AES-256, done on the device.
+- Where does the backup go, and does it restore on a new iPhone? Vault reviews are full of photos lost when switching phones.
+- What if you forget your code? You want a recovery option you control, not an email reset the developer can use too.
+- Can you export everything, in full quality, without paying?
+We compared 17 vault apps on exactly these points: the best photo vault apps for iPhone in 2026 .
+#### Hiding photos with Darkroom
+Darkroom is the vault app we make. It opens with a pattern you draw on a 5×5 plate of bolts, encrypts every photo on your iPhone with AES-256-GCM, and keeps an encrypted backup in your own iCloud.
+- Draw your pattern (at least 6 bolts) and write down the recovery phrase Darkroom shows you.
+- Tap add and pick photos and videos from your library. HEIC, ProRAW and Live Photos keep their original quality.
+- Let Darkroom offer to delete the originals from Photos once they're safely in the vault, then empty Recently Deleted.
+Darkroom opens with a pattern on a 5×5 plate of bolts, not your iPhone passcode.
+### Don't forget Recently Deleted and other copies
+Moving a photo somewhere private isn't enough if a copy stays behind. Deleted photos sit in Recently Deleted for 30 days.
+- Recently Deleted: open Collections › Utilities › Recently Deleted , unlock it, select the photos and delete them for good.
+- Shared albums and the iCloud Shared Photo Library: anything you shared is still visible to the people you shared it with.
+- Messages and other apps: a photo you sent or received in Messages, WhatsApp or email has its own copy there.
+- Computers: check old imports on a Mac or PC.
+Photos only you can see
+Darkroom hides photos and videos behind a pattern only you know, encrypted on your iPhone and backed up to your own iCloud. Free for 150 photos and 10 videos. No ads, no account.
+Join the Early Tester List
+Version 1.0 was submitted to App Store review in October 2026. It is not on the App Store yet.
+### Questions people ask
+Does hiding a photo on iPhone delete it?
+No. Hiding moves the photo out of your library into the Hidden album. It stays on your iPhone and in iCloud Photos, and you can unhide it at any time.
+Can someone see my hidden photos without my Face ID?
+Only if they know your iPhone passcode, or can unlock another device signed in to your Apple Account with iCloud Photos on. Face ID falls back to the passcode.
+How do I hide videos on iPhone?
+The same way as photos: touch and hold the video in Photos and tap Hide. Every method in this guide works for videos too, although large videos are awkward in Notes.
+Are hidden photos encrypted?
+Not separately. They have the same protection as the rest of your photo library. In iCloud, photos are end-to-end encrypted only if you turn on Advanced Data Protection. A vault app that encrypts with its own key adds a separate layer.
+Can I hide the Hidden album?
+Yes. Go to Settings › Apps › Photos and turn off Show Hidden Album. The album disappears from Collections until you turn the setting back on.
+Something wrong or out of date? Email business@inertiaprojects.info and we'll fix it.
+Related
+- Is the Hidden album private?
+- Move a vault to a new iPhone
+- Photo vault apps compared
+
+---
+
+# Is the iPhone Hidden album actually private?
+
+URL: https://darkroom.buzz/guides/is-iphone-hidden-album-private
+Last updated: 2026-10-22
+
+Guide · Hidden album
+## Is the iPhone Hidden album actually private?
+By Inertia Projects · Last updated 22 October 2026
+Short answer
+Partly. Since iOS 16, the Hidden album is locked with Face ID by default, which keeps it away from someone using your unlocked phone. But it isn't a separate vault: your iPhone passcode opens it, it syncs to every device on your Apple Account, and in iCloud it's only end-to-end encrypted if you turn on Advanced Data Protection.
+The Hidden album is the first place most people put private photos, because it's free and already on the iPhone. It's good at one job: keeping photos out of your main library. Whether it's private enough depends on who you're keeping them from. Here is what it protects, what it doesn't, and how to make it stricter.
+### What does the Hidden album actually do?
+It takes photos out of view. A hidden photo disappears from your Library, from Memories and featured photos, and from widgets, and shows up only in the Hidden album under Collections › Utilities .
+Since iOS 16, the Hidden album and Recently Deleted are locked by default. Opening them needs Face ID, Touch ID or your passcode ( Apple: Hide photos with the Hidden album ). You can also remove the album from view entirely with Settings › Apps › Photos › Show Hidden Album .
+What it doesn't do is move, copy or re-encrypt the photo. A hidden photo is the same file in the same library, with a flag that says "don't show this."
+### Who can see your hidden photos?
+Anyone who can unlock your iPhone with its passcode, or unlock another device signed in to your Apple Account, can see them. Here's how it plays out.
+Who can open the Hidden album (iOS 26, default settings)
+Situation Can they see hidden photos?
+Someone scrolling your unlocked iPhone No. The Hidden album asks for Face ID.
+Someone who knows your iPhone passcode Yes. Face ID falls back to the passcode.
+Someone using your iPad or Mac Yes, if they can unlock that device and iCloud Photos is on.
+Someone who makes you unlock your phone Yes. There's no second code or decoy.
+Other apps with full Photos access Not while the album is locked. If you turn the lock off, apps with full library access can request hidden photos ( Apple developer docs ).
+Apple, or a legal request to Apple for your iCloud data With standard iCloud protection, Apple holds the keys to iCloud Photos. With Advanced Data Protection on, it doesn't.
+### Why your passcode is the weak point
+The Face ID lock on the Hidden album is a convenience lock, not a separate one. If Face ID fails or is skipped, your iPhone passcode opens the album. Partners, children and housemates often know that passcode, or have watched it typed. A six-digit code typed in public is also easy to shoulder-surf.
+If people around you know your passcode, the Hidden album keeps photos out of casual view and nothing more.
+### Hidden photos sync to your other devices
+With iCloud Photos on, the photos you hide on one device are hidden on your other devices too ( Apple ). That means they exist on every iPad and Mac signed in to your Apple Account. On a shared family iPad, or a Mac that someone else uses, that matters. On a Mac, the Hidden album opens with Touch ID or the login password.
+### Is the Hidden album encrypted in iCloud?
+Only with Advanced Data Protection. By default, iCloud Photos is encrypted in transit and on Apple's servers, but Apple holds the keys. With Advanced Data Protection turned on, Photos becomes end-to-end encrypted and the keys stay on your trusted devices ( Apple: iCloud data security overview ).
+To turn it on, go to Settings › [your name] › iCloud › Advanced Data Protection and follow the steps. You'll need a recovery contact or recovery key, because Apple can no longer help you recover your data ( Apple: How to turn on Advanced Data Protection ).
+### How to make the Hidden album more private
+- Keep the lock on. In Settings › Apps › Photos , make sure Use Face ID is on. It also keeps other apps from reading hidden photos.
+- Hide the album. Turn off Show Hidden Album on the same screen.
+- Use a stronger passcode. In Settings › Face ID & Passcode › Change Passcode › Passcode Options , choose a custom alphanumeric code.
+- Turn on Advanced Data Protection for end-to-end encrypted iCloud Photos.
+- Check where else the photos live: Recently Deleted, shared albums, the iCloud Shared Photo Library, Messages, and any Mac or iPad on your account.
+### When is the Hidden album not enough?
+When the people you're worried about know your passcode, share your devices, or could make you unlock your phone. Then you need a code that's separate from your iPhone's, encryption with a key only you hold, and ideally a way to show something harmless if you're pressured.
+That's what a real photo vault app is for. Darkroom, which we make, opens with a pattern you draw on a 5×5 plate of bolts, separate from your passcode. Every photo is encrypted on your iPhone with AES-256-GCM, and a second pattern can open a decoy vault with harmless photos. The encrypted backup goes to your own iCloud, and you can restore it on a new iPhone by drawing your pattern.
+In Darkroom, a second pattern opens a decoy vault that looks like an ordinary Darkroom.
+Other vault apps differ a lot in how they protect photos. See 17 photo vault apps compared , or read every way to hide photos on iPhone .
+A vault with its own key
+Darkroom opens with a pattern only you know, not your iPhone passcode. Free for 150 photos, 10 videos and 1 decoy vault. No ads, no account.
+Join the Early Tester List
+Version 1.0 was submitted to App Store review in October 2026. It is not on the App Store yet.
+### Questions people ask
+Can someone see my Hidden album without Face ID?
+Yes, if they know your iPhone passcode. The Hidden album unlocks with Face ID, Touch ID or the passcode.
+Does the Hidden album show up on my Mac and iPad?
+Yes, if iCloud Photos is on. Photos you hide on one device are hidden on your other devices too. On a Mac, the Hidden album is off by default and opens with Touch ID or your login password.
+Can apps see my hidden photos?
+Not while the Hidden album is locked, which it is by default. If you turn off Use Face ID in Settings › Apps › Photos, apps with full access to your library can request hidden photos.
+Is the Hidden album safe from Apple?
+Only with Advanced Data Protection on. With standard iCloud protection, Apple holds the encryption keys for iCloud Photos. With Advanced Data Protection, Photos is end-to-end encrypted.
+Do hidden photos get deleted if I turn off Show Hidden Album?
+No. Turning off Show Hidden Album only hides the album from view. The photos stay in your library until you unhide or delete them.
+Something wrong or out of date? Email business@inertiaprojects.info and we'll fix it.
+Related
+- How to hide photos on iPhone
+- Move a vault to a new iPhone
+- Photo vault apps compared
+
+---
+
+# How to move a private photo vault to a new iPhone without losing photos
+
+URL: https://darkroom.buzz/guides/move-photo-vault-to-new-iphone
+Last updated: 2026-10-22
+
+Guide · New iPhone
+## How to move a private photo vault to a new iPhone without losing photos
+By Inertia Projects · Last updated 22 October 2026
+Short answer
+Before you switch, find out how your vault app backs up, make sure that backup is complete, and export a copy of anything you can't replace. Many vault apps keep photos only on the phone or in their own cloud, so a normal iPhone transfer brings back the app but not the photos. Don't erase the old iPhone until every photo opens on the new one.
+Switching phones is when vault photos most often disappear. In the most recent one- and two-star App Store reviews of eight popular vault apps, which we read in October 2026, backup and new-phone transfer problems came up 31 times, and lost or missing photos 47 times. Most of those losses are avoidable if you check a few things before the old phone is wiped. This checklist works for any vault app.
+### Why do vault photos go missing on a new iPhone?
+Usually because the photos were never in the place the owner thought they were. The common causes:
+- The vault isn't in your iPhone backup. Apps can keep files out of iCloud Backup and Quick Start transfers. Many vaults do, on purpose, so private photos don't sit in an ordinary backup. The app comes back on the new phone; the photos don't.
+- The backup is in the developer's cloud and needs an account, a paid plan, or an email you no longer use.
+- The backup was never finished. iCloud storage was full, uploads were set to Wi-Fi only, or the app wasn't opened long enough to upload.
+- The code doesn't carry over. A PIN or recovery email tied to the old phone, or a forgotten password with no recovery option.
+- The old phone was erased too early , before anyone checked the new one.
+### Step 1: Find out how your vault app backs up
+Open the vault's settings and look for a backup, sync or cloud section. Then answer three questions: where does the backup go, is it on, and what do you need to restore it?
+Where vault apps keep their backups, and what restoring needs
+Backup type What you need on the new iPhone Risk
+iPhone backup / Quick Start A full transfer from the old iPhone Only works if the app includes vault files in the backup. Check, don't assume.
+The developer's own cloud Your account login, often a paid plan Lost login, lapsed subscription, or a service that shuts down.
+Your own iCloud, managed by the app The same Apple Account, plus the vault's code Incomplete upload if iCloud storage is full.
+Manual export file The file, and its password if it's encrypted Only as current as your last export.
+If you can't find any backup setting, assume the photos exist only on the old phone. Contact the developer before you switch.
+### Step 2: Export a safety copy of what you can't replace
+Export your most important photos and videos to somewhere you control, such as Files on a Mac or an encrypted external drive. Check the export keeps full quality and dates. Exported copies are no longer encrypted by the vault, so keep them somewhere private and delete them once the move is done.
+### Step 3: Make sure the backup is complete
+- Connect to Wi-Fi and power , and open the vault app. Many apps only upload while they're open or recently used.
+- Check the backup status in the app. Look for "backed up", a last-backup time, or a count of items still waiting.
+- Check your iCloud storage in Settings › [your name] › iCloud . A full iCloud quietly stops backups.
+- Compare counts. Note how many photos and videos the vault holds now, so you can check them later.
+### Step 4: Make sure you can get in on the new phone
+Write down your vault code and any recovery phrase, recovery key or recovery email. If your vault has a decoy vault or several vaults with different codes, note each one. Face ID won't carry over: the first unlock on a new iPhone needs the code itself.
+### Step 5: Move to the new iPhone
+Set up the new iPhone with Quick Start or from an iCloud backup, signed in to the same Apple Account. Then install or open the vault app.
+### Step 6: Restore inside the vault app, then check everything
+- Open the vault app and follow its restore steps: log in, enter your code, or choose restore.
+- Wait for it to finish. Large libraries can take hours. Keep the phone on Wi-Fi and power.
+- Compare the counts with what you noted in Step 3.
+- Open a few full-size photos and play a few videos , including old ones, not just thumbnails.
+- Check albums, notes and any decoy vaults.
+### Step 7: Only then erase the old iPhone
+Keep the old phone as it is until the new one has passed Step 6. If something is missing, the old phone is your copy. When everything checks out, delete your safety exports from Step 2, then erase the old iPhone.
+### Moving Darkroom to a new iPhone
+Darkroom, which we make, is built for this moment. Its vault files are deliberately left out of the iPhone's own backup and Quick Start transfer. Instead, Darkroom keeps its own encrypted backup in your iCloud, and you restore it by drawing your pattern.
+- On the old iPhone: open Settings › Backup in Darkroom and check that nothing is still waiting to back up.
+- On the new iPhone: sign in to the same Apple Account, install Darkroom, and choose Restore your vault .
+- Draw your pattern, or choose Restore with recovery phrase . Thumbnails arrive first so you can browse right away; full-size originals download in the background.
+- Open other vaults, such as a decoy, by drawing their patterns. They stay in iCloud until you do.
+Darkroom backs up only encrypted data, to your own iCloud. The backup counts toward your iCloud storage.
+### What if photos are already missing?
+Don't delete or reinstall the vault app on either phone, and don't erase the old iPhone if you still have it. Check whether the old phone still opens the vault, look for a restore option in the app's settings, check whether the app has its own website login, and email the developer with your app version and what happened. Reinstalling can delete local files that might still be recoverable.
+New phone? Everything comes back.
+Darkroom keeps an encrypted backup in your own iCloud. On a new iPhone, draw your pattern and your vault restores. Free plan included.
+Join the Early Tester List
+Version 1.0 was submitted to App Store review in October 2026. It is not on the App Store yet.
+### Questions people ask
+Does Quick Start transfer photo vault apps?
+It transfers the app, and the app's files only if the app includes them in the iPhone's backup. Many vault apps leave their files out on purpose, so check how your vault backs up before you switch.
+Do I need the same Apple Account on the new iPhone?
+For vaults that back up to your iCloud, yes. The backup lives in that Apple Account's iCloud. For vaults that use their own cloud, you need that app's login instead.
+Will Face ID work for my vault on the new iPhone?
+Not until you've unlocked it once with your code. Face ID is tied to the device, so the first unlock on a new iPhone needs your PIN, password or pattern.
+How long does restoring a vault take?
+It depends on the size of the library and your connection. Thousands of photos and long videos can take hours. Keep the new phone on Wi-Fi and power, and don't erase the old one until it's done.
+Does Darkroom restore with Quick Start?
+Quick Start moves the app, not the vault. The vault comes back from Darkroom's own encrypted iCloud backup when you choose Restore your vault and draw your pattern on the new iPhone.
+Something wrong or out of date? Email business@inertiaprojects.info and we'll fix it.
+Related
+- How to hide photos on iPhone
+- Is the Hidden album private?
+- Photo vault apps compared
+
+---
+
+# Your photo vault app lost your photos: what to do now
+
+URL: https://darkroom.buzz/guides/photo-vault-lost-photos
+Last updated: 2026-10-22
+
+Guide · Missing photos
+## Your photo vault app lost your photos: what to do now
+By Inertia Projects · Last updated 22 October 2026
+Short answer
+Stop and don't delete, reinstall or reset anything yet. Photos that vanish from a vault app are often still on the old phone, in the app's own cloud, or in a backup, and reinstalling can erase the last local copy. Check those places in order, then contact the developer with your app version and what happened.
+Lost or missing photos are one of the most common complaints about vault apps. In the most recent one- and two-star App Store reviews of eight popular vault apps, which we read in October 2026, missing photos came up 47 times. The good news: "missing" often means "not where you're looking". This guide walks through what to do, in order, without making things worse.
+### What should you not do when vault photos go missing?
+Don't delete the app, reinstall it, or reset your iPhone. A vault app keeps its files inside its own storage on the phone. Deleting the app deletes that storage, and reinstalling gives you an empty vault.
+- Don't delete or reinstall the vault app , on any device.
+- Don't erase your old iPhone if you've just switched phones.
+- Don't restore an older iPhone backup over your phone yet. It can replace newer data.
+- Don't pay a "recovery" tool or service that promises to unlock a vault. If the vault really is encrypted, they can't; if it isn't, the developer can help for free.
+### Where could the photos still be?
+Check these places in order. Most recoveries happen at one of the first three.
+- Inside the app, but somewhere else. Look for other albums or folders, a trash or "Recently Deleted" area, a second vault opened by a different PIN (a decoy you set up and forgot), or a filter that hides some items.
+- On your old iPhone or iPad. If you switched phones, open the vault on the old device. Many vault apps don't move their photos with Quick Start or an iCloud backup.
+- In the app's cloud or backup. Look in the app's settings for backup, sync or cloud. Some apps keep a cloud copy in their own service, which needs the same account you used before. Others back up to your own iCloud and restore when you open the vault with the same code on the same Apple Account.
+- In your iCloud storage list. Go to Settings › [your name] › iCloud › Manage Account Storage and look for the vault app. If it's there with data, a backup exists, even if the app isn't showing it yet.
+- On a computer. If the app's listing mentions iTunes, Finder or Wi-Fi transfer (Private Photo Vault's does), connect the iPhone to a Mac or PC and check the app's files in Finder (iPhone › Files) or the Apple Devices app. Some apps keep copies there.
+- In Photos. Check Collections › Utilities › Recently Deleted in the Photos app. If you deleted originals after importing them into the vault in the last 30 days, they may still be there.
+### What happened? Match your situation
+Common ways vault photos go missing, and where to look first
+What happened Look first
+Switched to a new iPhone The old iPhone, then the app's own backup or cloud restore
+App was updated, then photos disappeared Force-quit and reopen; check for another update; contact the developer before reinstalling
+Reinstalled the app The app's cloud or iCloud backup, signed in with the same account
+Subscription ended Whether the app limits access on the free plan; resubscribing may restore access
+Entered a different PIN or pattern You may be in a decoy vault; lock and try your main code
+Only thumbnails show, or videos won't play Full-size files may still be downloading from the cloud; keep the app open on Wi-Fi
+### How do you ask the developer for help?
+Email the developer before you change anything else. Their contact details are on the app's App Store page under App Support, or in the app's settings. Include:
+- The app name and version, and your iPhone model and iOS version.
+- What you did just before the photos went missing (update, new phone, reinstall, subscription change).
+- Roughly how many items are missing, and whether thumbnails show.
+- Whether you used the app's cloud backup, and the account email if it has one.
+Never send your PIN, password, pattern or recovery phrase. A real developer won't ask for it.
+If the developer doesn't answer within a few days, you can ask Apple for a refund of a recent purchase at reportaproblem.apple.com. That won't recover photos, but it's worth knowing.
+### How do you stop it happening again?
+Use a vault with a backup you can restore, check that backup now and then, and keep your own copy of anything you can't replace.
+- Know where your backup lives and what you need to restore it: an account, an Apple Account, a code, a recovery phrase.
+- Check that backups finish. A full iCloud quietly stops them.
+- Test a restore on another device if you can, before you need it.
+- Export irreplaceable photos to an encrypted drive or a computer you control, as a second copy.
+- Before switching phones, follow our new-iPhone checklist .
+Darkroom, which we make, was built around this problem. Its encrypted backup goes to your own iCloud on the free plan, and on a new iPhone you draw your pattern and the vault comes back. If you forget the pattern, the recovery phrase you wrote down at setup opens it. And if Pro ends, you keep full access to view, export and back up everything.
+Darkroom backs up only encrypted data, to your own iCloud, and restores with your pattern.
+A backup that actually restores
+Darkroom backs up an encrypted copy of your vault to your own iCloud, free. New phone? Draw your pattern and everything comes back.
+Join the beta
+Version 1.0 was submitted to App Store review in October 2026. It is not on the App Store yet.
+### Questions people ask
+Can deleted vault app photos be recovered?
+Sometimes. If the app had a cloud backup, or you still have the old phone or a computer copy, yes. If the app kept photos only on the phone and the app was deleted, they're usually gone, because deleting an app deletes its storage.
+Will reinstalling the vault app bring my photos back?
+Only if the app restores them from a cloud backup. Reinstalling by itself gives you an empty vault, and it deletes any local copy that was left. Contact the developer first.
+Does an iCloud backup of my iPhone include my vault photos?
+It depends on the app. Some include their files in the iPhone's backup; many leave them out on purpose and use their own backup instead. Check the app's settings or ask the developer.
+I see thumbnails but the photos won't open. Are they lost?
+Not necessarily. Many vaults download full-size photos from the cloud in the background. Keep the app open on Wi-Fi and power for a while, and check your iCloud or the app's cloud storage isn't full.
+Something wrong or out of date? Email business@inertiaprojects.info and we'll fix it.
+Related
+- Move a vault to a new iPhone
+- Forgot your vault password
+- Photo vault apps compared
+
+---
+
+# Keepsafe alternatives that don't need an account
+
+URL: https://darkroom.buzz/guides/keepsafe-alternatives
+Last updated: 2026-10-22
+
+Guide · Alternatives
+## Keepsafe alternatives that don't need an account
+By Inertia Projects · Last updated 22 October 2026
+Short answer
+If you want a Keepsafe alternative without an email account, look for a vault that says it needs no account and backs up to your own iCloud instead of its own servers. From their App Store listings in October 2026, Vaultaire, Obscura, Encamera and Darkroom (which we make) all work without an account. Apple's Hidden album needs no extra account either, but it opens with your iPhone passcode.
+Keepsafe is one of the best-known photo vaults on the iPhone, with 384,865 US ratings in October 2026. It's also built around an account: you sign in with an email address, and backups go to Keepsafe's own cloud. If you'd rather not tie private photos to an email account and a company's servers, here are the alternatives and how they differ.
+### Why do people look for Keepsafe alternatives?
+Usually because of the account, the cloud, or the price. These are the points Keepsafe's own pages and App Store listing describe:
+- An email account. Keepsafe uses an account tied to your email; its help center has a page on what to do if you lose access to that email ( Keepsafe Help Center ).
+- Keepsafe's own cloud. Premium's "Private Cloud" stores up to 10,000 items with Keepsafe, and "Space Saver" compresses photos on the phone and keeps originals in that cloud (App Store listing).
+- Price. The US listing shows Keepsafe Premium from $4.99 up to $35.99, including $9.99 a month or $23.99 a year.
+- Tracking. Keepsafe's App Store privacy label lists Usage Data as "Data Used to Track You".
+None of that makes Keepsafe unsafe. Keepsafe's help center says it encrypts files with AES-256 ( source ). It's a different model: the company holds your account and your cloud copy.
+### Keepsafe alternatives with no account, compared
+Every app here says in its App Store listing that it needs no account, except Apple's Hidden album, which is built into iOS.
+No-account alternatives to Keepsafe. Source: each app's US App Store page, 22 October 2026.
+App Opens with Encryption named Backup Decoy Data used to track you
+Darkroom Our app Pattern on a 5×5 plate AES-256-GCM Your own iCloud, encrypted, free Yes, 1 free None
+Vaultaire Pattern AES-256-GCM Your iCloud, encrypted, Free and Pro Yes None
+Obscura Password AES-256-GCM, open-source code No cloud; encrypted export file Separate vaults (Pro) None (Data Not Collected)
+Encamera PIN or Face ID Says media is encrypted; open source Your own iCloud (optional) Not in listing None
+Apple Hidden album Face ID or iPhone passcode iPhone's own encryption iCloud Photos No Not applicable
+For 17 apps side by side, including Keepsafe, see the full photo vault comparison .
+### Which Keepsafe alternative should you choose?
+Pick by what mattered to you about leaving Keepsafe.
+- No account, encrypted iCloud backup, and a decoy: Darkroom or Vaultaire. Both open with a drawn pattern and include encrypted iCloud backup on the free plan. Darkroom's free plan holds 150 photos and 10 videos; Vaultaire's holds 100 photos and 10 videos.
+- Open-source encryption you can read: Obscura or Encamera. Obscura keeps everything on the device and says there is no recovery if you forget your password.
+- Nothing to install: Apple's Hidden album. It's free and locked with Face ID, but anyone with your passcode can open it. See is the Hidden album private?
+Whatever you pick, check one thing before you move years of photos: what happens if you forget your code. With no account, there's no email reset. Darkroom has you write down a recovery phrase at setup for exactly this.
+### How do you switch from Keepsafe without losing photos?
+Export from Keepsafe back to Photos, check everything arrived at full quality, move it into the new vault, and only then delete Keepsafe's copies.
+- If you used Space Saver, the full-size originals live in Keepsafe's cloud, not on the phone. Make sure you export the originals, not the compressed copies: open a few photos and check they're full quality before you go on.
+- Export from Keepsafe to your Photos library, album by album. Note how many items each album has.
+- Check the export in Photos: counts match, videos play, Live Photos move.
+- Import into the new vault, and let it delete the originals from Photos if it offers to. Then empty Recently Deleted in Photos.
+- Check the new vault's backup has finished.
+- Only then delete items from Keepsafe and cancel the subscription in Settings › [your name] › Subscriptions .
+Watch out
+Exported photos sit unencrypted in your Photos library until the new vault imports them. Do the move in one sitting, on a phone only you are using.
+Darkroom has no sign-up and no account. The backup goes to your own iCloud.
+No account. No email. No ads.
+Darkroom opens with a pattern only you know and backs up, encrypted, to your own iCloud. Free for 150 photos and 10 videos.
+Join the beta
+Version 1.0 was submitted to App Store review in October 2026. It is not on the App Store yet.
+### Questions people ask
+Does Keepsafe need an account?
+Yes. Keepsafe uses an account tied to your email address, and its cloud backup is stored with Keepsafe.
+What is the best Keepsafe alternative without an account?
+It depends on what you need. For encrypted iCloud backup and a decoy vault, Darkroom and Vaultaire both work without an account. For open-source encryption, look at Obscura or Encamera.
+Can I move my photos from Keepsafe to another vault?
+Yes. Export them from Keepsafe to Photos, check they arrived at full quality, import them into the new vault, and only then delete them from Keepsafe.
+If a vault has no account, how do I recover it if I forget my code?
+Only through whatever recovery the app gives you, such as a recovery phrase you keep yourself. With no account, there is no email reset, so set up recovery before you need it.
+Something wrong or out of date? Email business@inertiaprojects.info and we'll fix it.
+Related
+- Photo vault apps compared
+- Vaults without subscriptions or ads
+- Forgot your vault password
+
+---
+
+# How to lock photos on iPhone with Face ID, a passcode or a pattern
+
+URL: https://darkroom.buzz/guides/lock-photos-iphone-face-id
+Last updated: 2026-10-22
+
+Guide · Locking photos
+## How to lock photos on iPhone with Face ID, a passcode or a pattern
+By Inertia Projects · Last updated 22 October 2026
+Short answer
+iPhone can lock photos with Face ID in three built-in ways: hide them so they go into the Hidden album (locked by default), make the whole Photos app require Face ID, or put them in a locked note. All three fall back to your iPhone passcode. For a lock that's separate from your passcode, such as a pattern, you need a photo vault app.
+There's no "lock this album" button in the Photos app. Instead, iOS 26 gives you a few locks that work at different levels: one album, the whole app, or a single note. Here's how to set up each one, what it actually locks, and when you need something stronger.
+### How do you lock photos in the Hidden album with Face ID?
+Hide the photos, then make sure the Hidden album's Face ID lock is on. It's on by default since iOS 16.
+- Hide the photos: in Photos, touch and hold a photo and tap Hide . For several, tap Select , choose them, tap More (…) and Hide .
+- Check the lock: go to Settings › Apps › Photos and turn on Use Face ID (or Use Touch ID / Use Passcode). This locks both Hidden and Recently Deleted.
+- Optional: turn off Show Hidden Album so the album doesn't appear in Collections at all.
+Photos can't lock other albums. Only Hidden and Recently Deleted have a lock. And the lock accepts your iPhone passcode, so anyone who knows it can open the album ( Apple Support ).
+### How do you lock the whole Photos app?
+Since iOS 18, you can make any app ask for Face ID before it opens.
+- Touch and hold the Photos icon on the Home Screen.
+- Tap Require Face ID and confirm.
+Now Photos asks for Face ID every time it opens, which stops someone you've handed your unlocked phone from browsing your library. It's all or nothing, though: you'll unlock your whole library many times a day, and the passcode still opens it.
+### How do you lock photos in a note?
+Add photos to a note, then lock the note. Notes can use a separate password from your iPhone passcode, with Face ID as a shortcut.
+- In Notes , create a note, tap the camera button and choose Choose Photo or Video .
+- Tap More (…) and Lock .
+- To use a separate password, go to Settings › Apps › Notes › Password , choose a Notes password, and turn on Use Face ID .
+- Delete the originals from Photos, then from Recently Deleted.
+This is the only built-in lock that can be separate from your passcode. It suits a handful of photos, not a library: there are no albums, and long videos are awkward. If you forget a separate Notes password, Apple can't recover the locked notes.
+### How do you show someone one photo without them swiping?
+Use Guided Access. It locks the iPhone to the app you're in, so the other person can't leave it.
+- Turn it on once in Settings › Accessibility › Guided Access , and set a passcode.
+- Open the photo, then triple-click the side button and tap Start . You can circle areas of the screen to disable them.
+- To end it, triple-click the side button and enter the Guided Access passcode.
+Guided Access doesn't stop swiping between photos inside Photos unless you disable touch on the screen, so circle the whole photo or turn off Touch in its options.
+### Can you lock photos with a pattern on iPhone?
+Not with built-in features. iOS uses Face ID, Touch ID and passcodes; a drawn pattern lock comes only from vault apps. Private Photo Vault, Vaultaire and Darkroom, among others, offer a pattern according to their App Store listings and websites.
+A pattern is only as good as what's behind it. In some apps it just opens a screen in front of normal files; in others it's used to derive the encryption key. Ask how the app uses it before you trust it (we explain the difference in how encrypted photo vaults work ).
+In Darkroom, which we make, you draw a pattern across at least 6 of the 25 bolts on a 5×5 plate. The pattern is never stored: it's stretched with Argon2id into the key that opens your vault, and every photo is encrypted on the iPhone with AES-256-GCM. Face ID can open the main vault for convenience, but never a decoy vault.
+Darkroom's lock: a pattern across a 5×5 plate of bolts, separate from your iPhone passcode.
+### Which photo lock should you use?
+Ways to lock photos on iPhone (iOS 26)
+Lock What it locks Separate from passcode? Good for
+Hidden album lock Hidden and Recently Deleted No Keeping photos out of your library
+Require Face ID on Photos The whole Photos app No Handing your phone to someone
+Locked note One note Yes, with a Notes password A few photos
+Guided Access The screen you're on Yes Showing a single photo
+Vault app with its own code The vault's photos and videos Yes Photos that must stay private from anyone
+A lock that isn't your passcode
+Darkroom opens with a pattern only you know, separate from your iPhone passcode. Every photo is encrypted on your iPhone. Free for 150 photos and 10 videos.
+Join the beta
+Version 1.0 was submitted to App Store review in October 2026. It is not on the App Store yet.
+### Questions people ask
+Can I lock a specific album on iPhone?
+No. The Photos app only locks the Hidden and Recently Deleted albums. To lock other photos, hide them, put them in a locked note, or use a vault app.
+Can I lock photos with a different password than my iPhone passcode?
+Yes, in two ways: a locked note with a separate Notes password, or a vault app with its own PIN, password or pattern.
+Does locking the Photos app hide it?
+No. Require Face ID only asks for Face ID when Photos opens. The app stays on your Home Screen.
+Is a pattern lock safer than a PIN?
+Not automatically. What matters is whether the code is used to encrypt the photos and how slow it is to guess. A long pattern or password used to derive an encryption key is far stronger than a 4-digit PIN in front of normal files.
+Something wrong or out of date? Email business@inertiaprojects.info and we'll fix it.
+Related
+- How to hide photos on iPhone
+- Is the Hidden album private?
+- How encrypted vaults work
+
+---
+
+# What is a decoy vault, and does it actually protect you?
+
+URL: https://darkroom.buzz/guides/what-is-a-decoy-vault
+Last updated: 2026-10-22
+
+Guide · Decoy vaults
+## What is a decoy vault, and does it actually protect you?
+By Inertia Projects · Last updated 22 October 2026
+Short answer
+A decoy vault is a second, harmless vault inside a photo vault app that opens when you enter a different PIN, password or pattern. If someone pressures you to open the app, you open the decoy, and they see ordinary photos instead of your private ones. It helps in a tense moment, but it isn't a guarantee: it works best when nothing in the app reveals that a second vault exists.
+Picture someone who knows you use a vault app (a partner, a parent, someone at a border) saying "open it". Refusing makes things worse. A decoy vault gives you a third option: open it, and show them something harmless. Here's how decoy vaults work, the two very different ways apps build them, and their honest limits.
+### How does a decoy vault work?
+The app accepts more than one code. Your real code opens your real vault. A second code opens a separate vault you've filled with ordinary photos. To anyone watching, both look like you simply opened the app.
+You'll also see it called a fake PIN, decoy password, fake vault or secondary passcode. The idea is the same; how well it's built varies a lot.
+### What are the two kinds of decoy vault?
+Some apps show a fake screen; others open a genuinely separate, encrypted vault.
+- A fake screen or fake gallery. The decoy code opens a different view in the same app, often with a settings menu that still shows the decoy option. Anyone who looks through the app's settings, or knows the app, may see that a decoy exists.
+- A separate encrypted vault. Each code unlocks its own vault with its own encryption key. The app can't show a list of vaults, because it can't read the other vaults without their codes. A wrong code simply opens nothing.
+The second kind is much harder to see through, because nothing inside the decoy points to anything else.
+### What can't a decoy vault do?
+A decoy buys you a calm moment; it doesn't make your real photos disappear.
+- It has to be believable. An empty decoy, or one with three photos, invites more questions. Put real, boring photos in it and add a few now and then.
+- It doesn't beat a determined expert. Storage usage, backups, or forensic tools may show there's more data than the decoy explains.
+- Face ID can give it away in apps where Face ID opens your real vault while someone watches. Use the decoy code when you're under pressure, not Face ID.
+- It's not legal protection. Laws on unlocking devices differ by country. A decoy is a privacy tool, not advice on what you must or mustn't do.
+### How is a decoy vault different from an emergency erase or duress code?
+A decoy hides your vault; an emergency erase code destroys it. Some apps offer a third code that opens a harmless vault and, at the same time, quietly deletes the others. That protects the photos from being seen, but they're gone. If the app can also delete the cloud backup, there's no way back.
+Only set up an erase code if losing those photos is better than them being seen, and keep a copy elsewhere if you can't afford to lose them.
+### Which photo vault apps have a decoy vault?
+From their App Store listings on 22 October 2026:
+Decoy features named in each app's US App Store description, 22 October 2026
+App What the listing says
+Darkroom Our app A second pattern opens a separate encrypted vault; 1 free, more with Pro. Emergency erase pattern with Pro.
+Vaultaire A different pattern opens a different vault; duress vault with Pro.
+Private Photo Vault Decoy password.
+Secret Photo Album (SA) Decoy PIN.
+PV – Secret Photo Album Fake password.
+Safe Lock Fake password that opens a fake gallery.
+KYMS Fake PIN for a decoy vault.
+Privault A secondary passcode opens a secondary folder.
+Apple Hidden album No decoy.
+Listings don't say which kind of decoy they are, so test it: open the decoy and look through every screen, including settings. If anything mentions another vault, so will the person looking. See all 17 apps in our comparison .
+### How do you set up a decoy vault well?
+- Pick a code you won't mix up with your real one, but can recall under stress.
+- Fill it with real, dull photos: food, a trip, screenshots, a pet. Dozens, not three.
+- Use it now and then so the dates aren't all from one day.
+- Practise opening it once or twice so you don't hesitate when it matters.
+- Check nothing gives it away: open the decoy and look through settings, albums and counts.
+In Darkroom, which we make, each pattern derives its own key, so a decoy is a separate encrypted vault. Darkroom never shows a list of vaults, nothing in the decoy marks it as a decoy, and Face ID only ever opens your main vault. You add one in Settings with "Add a decoy vault" and draw its pattern. The free plan includes one.
+In Darkroom, a second pattern opens a decoy vault that looks like an ordinary Darkroom.
+A second pattern, a harmless vault
+Darkroom's decoy vault is a separate encrypted vault with its own pattern, included free. Face ID never opens it, and nothing in it points to your real one.
+Join the beta
+Version 1.0 was submitted to App Store review in October 2026. It is not on the App Store yet.
+### Questions people ask
+What is a fake PIN in a photo vault app?
+A second PIN that opens a different, harmless set of photos instead of your private ones. It's another name for a decoy vault.
+Can someone tell I'm using a decoy vault?
+Possibly. Apps that show the decoy option in settings, or decoys with very few photos, are easy to spot. A decoy that's a separate encrypted vault, filled with ordinary photos, is much harder to see through.
+Does the Hidden album have a decoy?
+No. The Hidden album opens with Face ID or your iPhone passcode, and there's no second, harmless version.
+Is a decoy vault the same as a duress code?
+No. A decoy only opens a harmless vault. A duress or emergency erase code also deletes your other vaults, which can't be undone.
+Something wrong or out of date? Email business@inertiaprojects.info and we'll fix it.
+Related
+- Lock photos with Face ID or a pattern
+- How encrypted vaults work
+- Photo vault apps compared
+
+---
+
+# How to hide videos on iPhone, and keep them playable
+
+URL: https://darkroom.buzz/guides/how-to-hide-videos-on-iphone
+Last updated: 2026-10-22
+
+Guide · Hiding videos
+## How to hide videos on iPhone, and keep them playable
+By Inertia Projects · Last updated 22 October 2026
+Short answer
+To hide a video on iPhone, touch and hold it in Photos and tap Hide. It moves to the Hidden album, which is locked with Face ID. For videos that must stay private even from someone who knows your passcode, use a vault app with its own code, and check that it keeps videos at full quality and plays large ones without trouble.
+Hiding a video works the same way as hiding a photo, but videos bring their own problems: they're big, they fill iCloud, and they're where vault apps most often let people down. In the most recent one- and two-star reviews of eight popular vault apps, which we read in October 2026, video problems came up 40 times. Here's how to hide videos and keep them playable.
+### How do you hide a video in the Photos app?
+The same way as a photo: touch and hold, then Hide.
+- Open Photos and find the video. Collections › Media Types › Videos lists them all.
+- Touch and hold it , tap Hide , and confirm. For several, tap Select , choose them, tap More (…) and Hide .
+- Check the lock: in Settings › Apps › Photos , make sure Use Face ID is on.
+The video moves to Collections › Utilities › Hidden , keeps its full quality, and plays as normal. As with photos, your iPhone passcode opens the Hidden album, and hidden videos sync to your other devices with iCloud Photos. More on that in is the Hidden album private?
+### Can you hide a video in a locked note?
+Yes, but it's only practical for short clips. Add the video to a note with the camera button, then lock the note with More (…) › Lock . Large videos make notes slow to open and sync, and there's no gallery to browse.
+### How do you hide videos in a vault app?
+Import them from Photos into the vault, check they play, then delete the originals from Photos and Recently Deleted. Before you trust a vault with videos, check four things:
+- Does it keep full quality? Some vaults compress videos, or keep originals only in their own cloud. Look for "original quality" or similar in the listing.
+- Does it handle big files? 4K, HDR, slow-motion and long videos are often several gigabytes. Import one long video as a test.
+- Do videos play without waiting? Some encrypted vaults decrypt the whole file before playing it, which takes time and space. Better ones decrypt as they play.
+- Are videos in the free plan? Many free plans limit videos more than photos. Darkroom's free plan, for example, holds 10 videos.
+In Darkroom, which we make, videos are encrypted on the iPhone in 1 MiB chunks with AES-256-GCM. Because each chunk can be decrypted on its own, even long 4K videos start playing straight away, without a decrypted copy written to storage. Videos keep their original quality and date, and export back to Photos the same way. You can also record videos straight into the vault with its camera, so they never touch your camera roll.
+Photos and videos in a Darkroom vault, encrypted on the iPhone.
+### Why do videos cause trouble in vault apps?
+Size, mostly. A minute of 4K video can be hundreds of megabytes, so anything a vault does to a video (import, encrypt, back up, restore) takes longer and fails more often than with photos.
+- Import fails or stops when the app is closed mid-way or the phone runs low on space.
+- Backups lag behind, especially if they only run on Wi-Fi or iCloud is nearly full, so the newest videos are the ones missing after a restore.
+- Playback stalls when the app decrypts the whole file first.
+- Formats get lost: Live Photos can lose their video part, and HDR can be flattened, if the app re-encodes.
+After importing, play a few videos from the start, middle and end, and check one Live Photo still moves.
+### How much storage do hidden videos take?
+The same as before you hid them, and sometimes double for a while. Hiding in Photos doesn't change size. Moving videos into a vault creates a second copy until you delete the originals, so make sure you have free space for the largest videos first.
+If the vault backs up to iCloud, videos count toward your iCloud storage too. Check Settings › [your name] › iCloud before a big import. In Darkroom you can keep videos from using mobile data with Wi-Fi only for videos in the backup settings.
+### What should you clean up after hiding videos?
+- Recently Deleted: deleted originals stay for 30 days. Open Collections › Utilities › Recently Deleted , unlock it, and delete them for good.
+- Messages and chat apps: a video you sent or received has its own copy in that conversation.
+- Shared albums and the Shared Library: people you shared with can still see it.
+- Your computer: check old imports on a Mac or PC.
+Big videos, played straight away
+Darkroom encrypts videos on your iPhone in small chunks, so even long 4K videos play without waiting, at full quality. Free for 10 videos and 150 photos.
+Join the beta
+Version 1.0 was submitted to App Store review in October 2026. It is not on the App Store yet.
+### Questions people ask
+Can you hide videos on iPhone without an app?
+Yes. Touch and hold the video in Photos and tap Hide. It moves to the Hidden album, which opens with Face ID or your passcode.
+Do hidden videos lose quality?
+Not in the Photos app; hiding doesn't change the file. Some vault apps compress videos or keep the original only in their cloud, so check before you move large videos into one.
+Why won't my videos play in my vault app?
+Usually because the full-size video is still downloading from the app's cloud, the import didn't finish, or the app has to decrypt the whole file first. Keep the app open on Wi-Fi, and contact the developer if one video never plays.
+Do hidden videos still use iCloud storage?
+Yes. Hidden videos in Photos count toward iCloud Photos, and videos in a vault that backs up to iCloud count toward your iCloud storage.
+Something wrong or out of date? Email business@inertiaprojects.info and we'll fix it.
+Related
+- How to hide photos on iPhone
+- Photo vault lost your photos?
+- Photo vault apps compared
+
+---
+
+# Photo vault apps without a subscription or ads
+
+URL: https://darkroom.buzz/guides/photo-vault-no-subscription-no-ads
+Last updated: 2026-10-22
+
+Guide · Pricing
+## Photo vault apps without a subscription or ads
+By Inertia Projects · Last updated 22 October 2026
+Short answer
+Several iPhone photo vaults sell a one-time purchase instead of, or alongside, a subscription: on the US App Store in October 2026 these include Vaultaire ($39.99 lifetime), Obscura ($39.99), Darkroom ($44.99, which we make), Privault ($45.99) and PV ($41.99). Ads are a separate question: Calculator#, Privault, KYMS and PV say their free versions have ads or sell ad removal. The free options with no purchase at all are Apple's Hidden album and locked notes.
+Pricing is the most common complaint in vault app reviews. In the most recent one- and two-star reviews of eight popular vault apps, which we read in October 2026, subscriptions and paywalls came up 67 times, more than lost photos. Here's which vaults let you pay once, which show ads, and the question that matters most: what happens to your photos if you stop paying.
+### Why does a vault's pricing matter more than most apps'?
+Because the app holds your photos. If a music app's subscription lapses, you lose music you can stream elsewhere. If a vault limits access when you stop paying, your own photos are on the other side of the paywall. Check the "if I stop paying" rule before you move a library in.
+### Which photo vaults have a one-time purchase?
+These apps list an in-app purchase named lifetime, permanent or similar on their US App Store page (22 October 2026). Names are the developers'; we haven't bought them.
+One-time purchases listed on US App Store pages, 22 October 2026
+App One-time option (as listed) Subscriptions also listed
+Darkroom Our app Pro Lifetime $44.99 $2.99/month, $19.99/year
+Vaultaire Pro Lifetime $39.99 Weekly, monthly, annual
+Obscura Obscura Pro $39.99 $6.99/month, $29.99/year
+PV – Secret Photo Album Permanent Membership $41.99 Monthly, yearly, cloud tiers
+Privault Permanent Pro $45.99 $3.49/month, $24.99/year
+MaxVault Lifetime Premium $79.99–$99.99 $7.99/month, $29.99/year
+Encamera Lifetime $99.99; Limited Lifetime $49.99 Weekly, monthly, yearly
+Secret Photo Vault – Lock Photos Pro Version $6.99 None listed
+Keepsafe, SPV and HiddenVault list Premium plans and subscriptions but no purchase named lifetime or permanent. Private Photo Vault lists Premium plans and an "Upgrade" for $39.99; its listing doesn't say whether that is one-time. Full price ranges for 17 apps are in our comparison .
+### Which photo vault apps show ads?
+From each developer's own App Store description and purchase list:
+- Calculator# says it is "free with ads".
+- Privault sells "Remove ADs" for $2.99.
+- KYMS sells "Remove advertising" for $4.99.
+- PV – Secret Photo Album lists "Ad Free" as a paid feature.
+- Darkroom, Vaultaire and Encamera say no ads.
+Ads matter more than annoyance here: ad networks are a common reason an app's privacy label lists "Data Used to Track You". In our comparison, 9 of 17 vault apps reported tracking data.
+### What do free plans include?
+Free plans differ in what they cap. From each app's listing or help pages:
+- Darkroom: 150 photos, 10 videos, unlimited notes, 1 decoy vault, and encrypted iCloud backup and restore.
+- Vaultaire: up to 3 vaults, 100 photos and 10 videos in total, with encrypted iCloud backup.
+- Keepsafe: the free plan covers your first 200 items ( Keepsafe Help Center ).
+- Apple's Hidden album and locked notes: free and unlimited, apart from your iCloud storage.
+Check whether backup is in the free plan. Some vaults charge for cloud backup, which means a free user's photos exist only on one phone.
+### What happens to your photos if you stop paying?
+Read this before anything else. The good answer is: you keep full access to everything already in the vault, including export and backup, and only new imports or premium features stop. The bad answer is anything that limits viewing, exporting or restoring your existing photos.
+Darkroom's rule, which we make: if Pro ends, you keep full access to view, export and back up everything already in your vault. Only adding past the free limits and Pro features (unlimited items, emergency erase, iPhone and iPad sync, custom icons, album patterns, shared vaults) pause.
+Darkroom: no ads, no account, and your photos stay yours if Pro ends.
+### How do you choose a vault you won't regret paying for?
+- Start free with a few dozen photos and a couple of videos. Test import, playback, export and backup.
+- Find the "stop paying" rule in the app or its support pages.
+- Compare a year of subscription with the one-time price. If you'll use it for years, one-time usually wins.
+- Check the privacy label for "Data Used to Track You".
+- Check Family Sharing if others in your household want it.
+Pay once, or not at all
+Darkroom is free for 150 photos and 10 videos, with no ads and encrypted iCloud backup. Pro is $2.99 a month, $19.99 a year, or $44.99 once.
+Join the beta
+Version 1.0 was submitted to App Store review in October 2026. It is not on the App Store yet.
+### Questions people ask
+Is there a photo vault app with no subscription?
+Yes. Several sell a one-time purchase, including Vaultaire, Obscura, Darkroom, Privault and PV, according to their App Store listings in October 2026. Apple's Hidden album and locked notes are free.
+Which photo vault app has no ads?
+Darkroom, Vaultaire and Encamera say they have no ads. Apps such as Calculator#, Privault and KYMS show ads in their free versions or sell ad removal.
+Will I lose my photos if I cancel a vault subscription?
+It depends on the app. Some keep full access to existing photos; others limit access or features. Check the app's rule before you subscribe. In Darkroom you keep full access to view, export and back up everything.
+Is a lifetime vault purchase worth it?
+If you plan to use the vault for more than two or three years, a one-time purchase usually costs less than the subscription. Try the free plan first to make sure the app works for you.
+Something wrong or out of date? Email business@inertiaprojects.info and we'll fix it.
+Related
+- Photo vault apps compared
+- Keepsafe alternatives
+- Are photo vault apps safe?
+
+---
+
+# Forgot your photo vault password or PIN? What you can still do
+
+URL: https://darkroom.buzz/guides/forgot-photo-vault-password
+Last updated: 2026-10-22
+
+Guide · Locked out
+## Forgot your photo vault password or PIN? What you can still do
+By Inertia Projects · Last updated 22 October 2026
+Short answer
+First, don't delete or reinstall the app; that can erase the vault for good. Then find out how your app handles recovery: some reset by email, some use a recovery phrase or key you saved at setup, and some truly encrypted vaults can't be opened by anyone without the code. Look in the app's lock screen and settings, check your email and notes for a recovery code, and contact the developer.
+Getting locked out of a vault app is one of the most common complaints in vault reviews: in the most recent one- and two-star reviews of eight popular vault apps, which we read in October 2026, it came up 27 times. What you can do depends almost entirely on how the app was built, so this guide starts with what's safe to try, then explains each kind of recovery.
+### What should you not do when you forget a vault code?
+- Don't delete or reinstall the app. The vault lives in the app's storage. Deleting the app deletes it.
+- Don't guess wildly. Many vaults add delays after wrong tries, and some can wipe after too many. Try a few likely codes, then stop.
+- Don't pay an unlock service. If the vault is properly encrypted, no outside tool can open it. If it isn't, the developer can help you directly.
+- Don't restore an old iPhone backup over your phone hoping for an older code. You could lose newer photos and data.
+### What should you try first?
+- Look for a "Forgot" option on the app's lock screen: forgot PIN, forgot password, use recovery phrase, or similar.
+- Search your email for messages from the app: a recovery email, a setup confirmation, or a recovery code.
+- Check where you keep passwords: Apple's Passwords app, a password manager, notes, or a paper note from when you set it up.
+- Check other devices. If the vault is also on your iPad, it might still be unlocked there or use Face ID.
+- Try Face ID or Touch ID if you turned it on. It may still open the vault even if you've forgotten the code.
+- Contact the developer (App Store page › App Support). Give your app version and iPhone model. Never send them other passwords.
+### How does vault recovery work?
+There are three models, and each trades convenience against privacy.
+The three ways vault apps handle a forgotten code
+Recovery model How you get back in The trade-off
+Email or account reset The developer emails you a reset or code Easy to recover, but someone with your email, or the developer, can too
+Recovery phrase or key you keep Enter the phrase or key you saved at setup Nobody else can reset it, so losing both the code and the phrase locks you out
+No recovery Only the code opens it Maximum privacy, no second chance
+An app that can reset your code by email holds, or can rebuild, the key to your vault. That's not automatically bad, but it means your photos are only as private as your email account.
+### How do popular vault apps handle a forgotten code?
+From each developer's own App Store listing or help pages (October 2026):
+- PV – Secret Photo Album: set a recovery email in the app's settings; it's used if you forget the passcode.
+- Keepsafe: account-based, tied to your email. Its help center covers losing access to that email ( Keepsafe Help Center ).
+- Hide it Pro: lists a "Password Reset" in-app purchase for $4.99.
+- Calculator#: its listing describes "Lost Password Recovery".
+- Obscura: says plainly that if you forget your password, your photos are gone, with no reset or recovery email.
+- Darkroom (which we make): no reset by anyone, including us or Apple. At setup you write down a recovery phrase; on the lock screen, tap "Use recovery phrase" and it opens your main vault.
+Darkroom asks you to write down a recovery phrase at setup. It's the only spare key.
+### What if you forgot your iPhone passcode (Hidden album)?
+Apple's Hidden album opens with Face ID or your iPhone passcode. If Face ID still works, it still opens. If you changed your passcode in the last 72 hours, iOS 17 and later let you use the previous one from the lock screen's "Forgot Passcode?" option.
+Otherwise, the only way back is to erase the iPhone with a computer or in Recovery Mode, then restore from a backup ( Apple: reset your iPhone and passcode ). Photos in iCloud Photos come back when you sign in again; anything that was only on the phone and not in a backup is lost.
+### How do you avoid getting locked out next time?
+- Save the code in Apple's Passwords app or a password manager, with a note of which app it's for.
+- Set up recovery now, whatever your app offers, and test it once.
+- Write a recovery phrase on paper and keep it somewhere safe, away from the phone.
+- Keep a backup you understand, so a lockout isn't also a loss. See what to do if a vault loses photos .
+Never locked out, never reset by anyone else
+Darkroom has you write down a recovery phrase at setup. It opens your vault if you forget your pattern, and nobody else, including us, can reset it.
+Join the beta
+Version 1.0 was submitted to App Store review in October 2026. It is not on the App Store yet.
+### Questions people ask
+Can a photo vault app reset my password?
+Only if it was built that way, usually through your email or an account. Vaults that encrypt with a key only you hold can't reset it; they rely on a recovery phrase or key you saved.
+Can I recover a vault if I deleted the app?
+Only from a backup: the app's cloud, your iCloud, or a computer copy. Deleting the app deletes the vault stored on the phone.
+Is there software that can unlock a photo vault?
+Not for a properly encrypted vault. Treat any paid unlock tool or service as a scam, and contact the app's developer instead.
+What if I forgot my Darkroom pattern?
+Tap "Use recovery phrase" on the lock screen and enter the phrase you wrote down at setup. If you've lost both, nobody can open the vault, including us.
+Something wrong or out of date? Email business@inertiaprojects.info and we'll fix it.
+Related
+- Photo vault lost your photos?
+- How encrypted vaults work
+- Keepsafe alternatives
+
+---
+
+# How encrypted photo vaults work, in plain English
+
+URL: https://darkroom.buzz/guides/how-encrypted-photo-vaults-work
+Last updated: 2026-10-22
+
+Guide · Encryption explained
+## How encrypted photo vaults work, in plain English
+By Inertia Projects · Last updated 22 October 2026
+Short answer
+An encrypted photo vault scrambles each photo with a secret key, so the file is unreadable without it. Your PIN, password or pattern is turned into that key (or into a key that unlocks it) on your phone, slowly on purpose, so guessing is expensive. A vault that only shows a PIN screen in front of normal files is hiding photos, not encrypting them.
+Vault apps love the word "encrypted", and some add "military-grade". Neither tells you much. This guide explains, without math, what real encryption in a photo vault involves, so you can read an app's claims and know what they mean.
+### What's the difference between hiding and encrypting a photo?
+Hiding puts a door in front of a normal photo. Encrypting turns the photo itself into unreadable data.
+A vault that only hides stores your photos as ordinary image files inside the app, and shows a PIN screen before it displays them. Anyone who gets at those files another way (a computer backup, a forensic tool, a bug) sees the photos. An encrypting vault stores only scrambled data. Without the key, even a perfect copy of the files is useless.
+### What is an encryption key?
+A key is a long random number that the encryption uses to scramble and unscramble data. A 256-bit key has about 10 77 possible values, far beyond what any computer could try, so nobody guesses the key itself.
+That's why attackers don't go after the key. They go after the thing that unlocks it: your code.
+### How does a PIN or pattern become a key?
+Through a "key derivation function", which turns your code into a key. Good ones are deliberately slow and memory-hungry, so each guess costs real time.
+This matters because codes are short. A 4-digit PIN has 10,000 possibilities. If each guess took a microsecond, a computer would try them all in a hundredth of a second. If each guess takes half a second and a lot of memory, the same search takes over an hour for a 4-digit PIN, and grows enormously with every extra character or bolt. A long random password becomes impractical to guess.
+- Argon2id is the current recommended choice. It's "memory-hard", which makes it expensive to speed up with graphics cards or custom chips.
+- PBKDF2 is older and still common. It's slow, but cheaper to attack with specialised hardware.
+- A plain hash, or nothing, means guesses are nearly free.
+Darkroom, which we make, uses Argon2id with 64 MiB of memory and 3 passes, plus a random 256-bit salt so the same pattern never produces the same key twice.
+### What does AES-256-GCM mean?
+It's the cipher that scrambles the photos, in a mode that also detects tampering.
+- AES is the standard cipher used by governments, banks and your iPhone itself.
+- 256 is the key size in bits.
+- GCM adds an authentication tag: if a single bit of the encrypted file is changed or damaged, decryption fails instead of producing a corrupted photo.
+"Military-grade encryption" usually just means AES. The interesting questions are what the key comes from, where it's kept, and whether the backup is encrypted too.
+### Why do good vaults use "keys inside keys"?
+So you can change your code without re-encrypting every photo, and so one leaked file key doesn't expose the rest.
+- Your code is stretched into a wrapping key .
+- The wrapping key unlocks a random vault key , stored only in encrypted form.
+- The vault key unlocks a separate random file key for every photo, video and note.
+Changing your code only re-wraps the vault key. A recovery phrase works the same way: it's a second wrapping of the same vault key, so either the code or the phrase opens the vault. Large videos are often encrypted in chunks, so they can play without decrypting the whole file first. Darkroom uses 1 MiB chunks, each with its own authentication tag. The full key hierarchy is on our security section .
+### How does an encrypted backup stay private?
+By encrypting on the phone before anything is uploaded, so the cloud only ever stores scrambled data. This is called end-to-end encryption.
+The test is simple: could the company reset your code by email and give you your photos back? If yes, they can reach the key, and so could anyone who gets into their systems or your email. If no, only you can decrypt the backup, which is also why losing both your code and your recovery phrase means losing access.
+Darkroom encrypts photos, thumbnails and their names, dates and places on the iPhone, then backs up only that ciphertext to your own private iCloud (CloudKit). Apple stores it but can't read it.
+### What can encryption not protect against?
+- Someone watching you enter your code, or making you enter it.
+- An open vault. While it's unlocked on screen, the photos are visible. Good apps lock quickly and hide content in the app switcher.
+- A short code. Slow key derivation helps, but a 4-digit PIN can still be tried exhaustively.
+- Copies outside the vault, such as originals left in Photos, Messages or Recently Deleted.
+### How can you tell if a vault really encrypts?
+- It names the cipher and the key derivation (for example AES-256-GCM and Argon2id or PBKDF2), not just "secure".
+- It says encryption happens on the device, before backup.
+- It can't reset your code by email, or it says honestly that it can.
+- Its backup is described as encrypted with your key, not just "secure cloud".
+- Ideally, the encryption code is open source or independently reviewed.
+In October 2026, only 2 of the 17 vault apps we compared named AES-256-GCM in their App Store description. See them all in our comparison .
+In Darkroom, your pattern is never stored. It's stretched with Argon2id into the key that opens your vault.
+Encryption you can read about
+Darkroom names every piece: Argon2id for your pattern, AES-256-GCM for each file, and only ciphertext in your own iCloud. Free for 150 photos and 10 videos.
+Join the beta
+Version 1.0 was submitted to App Store review in October 2026. It is not on the App Store yet.
+### Questions people ask
+Are photo vault apps encrypted?
+Some are, some aren't. Many only show a PIN screen in front of ordinary files. Look for a named cipher, such as AES-256, and encryption on the device before backup.
+What does military-grade encryption mean?
+Usually just AES, the standard cipher. It doesn't tell you how the key is made or stored, which matters more.
+What is Argon2id?
+A key derivation function that turns a password or pattern into an encryption key slowly and with a lot of memory, so guessing codes is expensive.
+Can an encrypted vault be hacked?
+The encryption itself isn't the weak point. Short codes, codes seen by someone else, and unencrypted copies left elsewhere are. Use a long code and remove originals after importing.
+Something wrong or out of date? Email business@inertiaprojects.info and we'll fix it.
+Related
+- Are photo vault apps safe?
+- Forgot your vault password
+- Photo vault apps compared
+
+---
+
+# Are photo vault apps safe? What to check before you trust one
+
+URL: https://darkroom.buzz/guides/are-photo-vault-apps-safe
+Last updated: 2026-10-22
+
+Guide · Safety
+## Are photo vault apps safe? What to check before you trust one
+By Inertia Projects · Last updated 22 October 2026
+Short answer
+Some are, and many aren't as safe as they sound. A safe vault encrypts photos on your phone with a key only you control, keeps a backup you can actually restore, and doesn't track you. Of 17 vault apps we checked in October 2026, 9 reported data used to track you, 6 didn't mention encryption in their App Store listing, and only 2 named AES-256-GCM.
+"Is it safe?" can mean two things: will other people be unable to see my photos, and will I never lose them? A good vault has to do both, and the two pull against each other. Here are the real risks, what 17 apps' App Store pages show, and a checklist you can use on any vault.
+### What are the real risks of photo vault apps?
+- No real encryption. Some vaults only put a PIN screen in front of normal image files. Anyone who reaches the files another way can see them.
+- Losing your photos. Vault photos are often left out of normal iPhone backups. A new phone, a reinstall or an expired subscription can leave them stranded. In recent one- and two-star reviews of eight popular vaults, lost or missing photos came up 47 times.
+- Getting locked out. A forgotten code with no recovery option can mean losing everything.
+- Your data going elsewhere. Ad and analytics SDKs, and backups on the developer's servers, mean your activity, or your photos, leave your control.
+- Paywalls around your own photos. Some apps limit access when you stop paying.
+### What do vault apps' App Store listings show?
+We looked at 17 popular iPhone vault apps on 22 October 2026, using only what each developer says on its App Store page and the privacy label it reported to Apple:
+17 iPhone photo vault apps, US App Store, 22 October 2026
+Finding Apps
+Report "Data Used to Track You" 9 of 17
+Don't mention encryption in the listing 6 of 17
+Name AES-256-GCM 2 of 17
+Report "Data Not Collected" 3 of 17
+Not mentioning encryption doesn't prove an app doesn't encrypt, and privacy labels are self-reported. But a vault that protects your photos well usually says how. App-by-app details are in our comparison .
+### What should you check before trusting a photo vault?
+- Encryption, named and on-device. Look for a specific cipher (AES-256) and a statement that photos are encrypted on the phone. "Secure" and "military-grade" alone tell you nothing. Our plain-English encryption guide explains what to look for.
+- A backup you can restore. Where does it go, is it encrypted with your key, and how do you restore on a new iPhone? Is backup included in the free plan?
+- Recovery that doesn't weaken privacy. A recovery phrase or key you keep is safer than an email reset the developer controls. No recovery at all is private but unforgiving.
+- The privacy label. On the App Store page, check "Data Used to Track You". For a vault, the best answer is "Data Not Collected".
+- The stop-paying rule. Can you still view, export and back up your photos if the subscription ends?
+- Export. Can you get everything out in full quality, with dates, in one go, without paying?
+### What are the red flags?
+- Only "military-grade" or "bank-level" security, with no specifics.
+- A code that the developer can reset by email, without saying what that means for privacy.
+- Cloud backup only on a paid plan, so free users have one copy on one phone.
+- Heavy ads, or tracking data in the privacy label.
+- Recent reviews about photos disappearing after updates or new phones.
+- No update in over a year. Vault apps need to keep up with each iOS release.
+### How do you use a photo vault more safely?
+- Use a long code, and don't reuse your iPhone passcode.
+- Save your recovery phrase or key on paper, somewhere safe.
+- Remove originals from Photos and Recently Deleted after importing.
+- Check the backup now and then, especially before changing phones (see our new-iPhone checklist ).
+- Keep a second copy of anything irreplaceable, somewhere you control.
+We built Darkroom, our own vault, to pass this checklist: photos are encrypted on the iPhone with AES-256-GCM using a key from your pattern (Argon2id); the backup is encrypted, in your own iCloud, on the free plan; a recovery phrase you write down at setup is the only spare key; the privacy label is Data Not Collected; there are no ads; and if Pro ends you keep full access to view, export and back up. It's also brand new, with no reviews yet, so judge it by the same checklist.
+Darkroom: no account, no ads, encrypted on your iPhone.
+Built to pass the checklist
+Encrypted on your iPhone, backed up to your own iCloud, a recovery phrase only you hold, and Data Not Collected. Free for 150 photos and 10 videos.
+Join the beta
+Version 1.0 was submitted to App Store review in October 2026. It is not on the App Store yet.
+### Questions people ask
+Are photo vault apps safe to use?
+Some are. The safe ones encrypt photos on your phone with a key only you control, keep a backup you can restore, and don't track you. Check the listing and privacy label before trusting one.
+Can photo vault apps see my photos?
+If the app encrypts on your phone with a key only you hold, no. If it keeps photos unencrypted, or stores them on its own servers with a key it controls, it could.
+Is the iPhone Hidden album safer than a vault app?
+It's safer than a vault that doesn't encrypt, but it opens with your iPhone passcode and syncs to your other devices. A good vault adds a separate code and its own encryption.
+Do photo vault apps get hacked?
+Weak ones can leak photos through unencrypted files or cloud accounts. With a properly encrypted vault, the risk shifts to your code: keep it long and private.
+Something wrong or out of date? Email business@inertiaprojects.info and we'll fix it.
+Related
+- How encrypted vaults work
+- Is the Hidden album private?
+- Photo vault apps compared
+
+---
+
+# About Darkroom and Inertia Projects
+
+URL: https://darkroom.buzz/about
+Last updated: 2026-10-22
+
+## About Darkroom
+Darkroom is an iPhone and iPad photo vault made by Inertia Projects, a small independent developer. It exists because private photos kept getting lost in other vault apps, and it is built so that can't happen quietly.
+### Who makes Darkroom
+Darkroom is designed and built by Inertia Projects . There are no investors, no ad partners and no servers that store your files. Email reaches the person who writes the code: business@inertiaprojects.info .
+### Why it exists
+Before launch, we read the most recent one- and two-star App Store reviews of eight popular vault apps (October 2026). The complaints weren't about missing features. They were about:
+- Subscriptions and paywalls , including photos locked behind one (67 mentions).
+- Photos that went missing (47 mentions).
+- Video problems (40 mentions).
+- Backups that didn't restore , especially on a new phone (31 mentions).
+- Getting locked out after forgetting a password (27 mentions).
+So Darkroom was built around a backup that actually restores on a new iPhone, a recovery phrase so you can't be locked out, full-quality export, and pricing where your photos are never held hostage. If Pro ends, you keep full access to view, export and back up everything.
+### How it's built
+- A native Swift app for iPhone and iPad. No web views, no cross-platform layer.
+- Keys come from your pattern through Argon2id (libsodium), using 64 MiB of memory and 3 passes, so every guess is slow to try.
+- Files are sealed with AES-256-GCM (Apple CryptoKit), each with its own random key, in 1 MiB chunks so large videos stream.
+- The encrypted backup uses CloudKit , in the private database of your own Apple Account.
+- No third-party SDKs for ads, analytics or crash reporting.
+The full key hierarchy is on the homepage security section .
+### Darkroom, in plain facts
+The same list appears on the homepage and in llms.txt , the summary we publish for AI assistants. If you write about Darkroom, this is the source of truth.
+What it is
+An iPhone and iPad app that hides photos, videos and notes in encrypted vaults.
+How you open it
+Draw a pattern across at least 6 bolts on a 5×5 plate of 25 bolts. Face ID can open the main vault.
+Encryption
+Everything is encrypted on the device. Keys come from your pattern through Argon2id (libsodium); files are sealed with AES-256-GCM (Apple CryptoKit). Names, dates and places are encrypted too. The pattern is never stored.
+Backup
+An encrypted backup goes to your own private iCloud (CloudKit). On a new iPhone, draw your pattern and the vault restores. Only encrypted data leaves the device.
+Forgot your pattern
+You write down a recovery phrase at setup, and it opens your vault. Nobody can reset a pattern: not the developer, not Apple.
+Decoy vault
+A second pattern opens a separate, harmless vault. The free plan includes 1.
+Emergency erase (Pro)
+A third pattern opens a harmless vault and erases the others.
+Hiding the app
+Change the app icon to a Calculator, Notes or Weather lookalike (Pro). Vault content is hidden in the app switcher and during screen recording.
+Organizing
+Albums, albums inside albums, and albums with their own pattern (Pro). Encrypted notes. Recently Deleted keeps items for 30 days.
+Import and export
+Imports HEIC, ProRAW and Live Photos. Built-in camera. "Send to Darkroom" from the share sheet. Exports in full quality with original dates.
+Privacy
+No ads, no accounts, no analytics. App Store privacy label: Data Not Collected.
+Free plan
+150 photos, 10 videos, unlimited notes, 1 decoy vault, full iCloud backup and restore.
+Darkroom Pro
+$2.99 a month, $19.99 a year (1-week free trial) or $44.99 once. Adds unlimited items, emergency erase, iPhone and iPad sync, custom icons, album patterns and shared vaults.
+If Pro ends
+You keep full access to view, export and back up everything already in your vault.
+Requirements
+iOS 17 or iPadOS 17 and later.
+Made by
+Inertia Projects, an independent developer. Contact: business@inertiaprojects.info.
+Status
+Version 1.0 was submitted to App Store review in October 2026. It is not on the App Store yet.
+### Contact
+Questions, press, corrections: business@inertiaprojects.info . For help with the app, see Support .
+
+---
+
+# Darkroom Support: Help with the Photo Vault App
+
+URL: https://darkroom.buzz/support
+Last updated: 2026-10-22
+
+## Darkroom support
+Darkroom hides photos, videos and notes in encrypted vaults on your iPhone and iPad, opened with a pattern of bolts only you know. Here are answers to the questions people ask most, and how to reach us.
+### Contact
+Email business@inertiaprojects.info . Please include your app version (in the app, Settings › App settings › About) and your iPhone or iPad model. Never send us your bolt pattern or recovery phrase. We will never ask for them.
+### I forgot my bolt pattern
+Use your recovery phrase. On the lock screen, tap “Use recovery phrase”, type it in, and your vault opens. You can then set a new pattern. You can see or change your recovery phrase in Settings › Recovery phrase.
+Nobody can reset a pattern: not us, not Apple. Darkroom never stores your pattern, and your files are encrypted with a key that only your pattern or your recovery phrase can unlock. If both are lost, the vault cannot be opened by anyone.
+### Moving to a new iPhone
+Install Darkroom on the new iPhone, signed in to the same Apple Account, and draw your pattern on the Restore screen. Your vault comes back from your encrypted iCloud backup.
+- Before you switch: on the old iPhone, open Settings › Backup in Darkroom and check that nothing is still waiting to back up.
+- On the new iPhone: sign in to the same Apple Account, install Darkroom, and choose Restore your vault.
+- Draw your pattern (or use Restore with recovery phrase). Thumbnails arrive first; full-size originals download in the background.
+- Other vaults , such as a decoy vault, stay in iCloud until you draw their patterns.
+Darkroom's vault files are not part of the iPhone's own device backup or Quick Start transfer. They come back through Darkroom's own encrypted iCloud backup. More detail: How to move a photo vault to a new iPhone without losing photos .
+### Getting photos out
+Select items, or a whole album, then Export › Save to Photos or Save to Files. Originals keep their full quality and the date they were taken. This works on the free plan and if Pro has ended.
+### iCloud storage is full
+Your backup counts toward your iCloud storage. If it's full, your photos stay safe on the iPhone and back up when there's space again. Free up iCloud storage or upgrade it in iOS Settings › your name › iCloud.
+### Subscriptions and purchases
+If Pro ends, you keep full access to view, export and back up everything already in your vault. Manage or cancel a subscription in iOS Settings › your name › Subscriptions. To restore a purchase on a new device, open Darkroom and go to Settings › App settings › Restore purchases.
+### Privacy
+Darkroom collects no data: no accounts, no ads, no analytics. Read the privacy policy .
+
+---

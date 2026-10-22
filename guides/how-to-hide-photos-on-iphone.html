@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" id="meta-theme-color" content="#070605">
+  <script>
+    try {
+      const savedScheme = localStorage.getItem("color-scheme");
+      const metaScheme = document.querySelector('meta[name="color-scheme"]');
+      const metaTheme = document.getElementById("meta-theme-color");
+      const prefersLight = window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches;
+      const resolved = savedScheme === "light" || savedScheme === "dark" ? savedScheme : (prefersLight ? "light" : "dark");
+      if (metaScheme) metaScheme.content = resolved;
+      if (metaTheme) metaTheme.content = resolved === "light" ? "#F3EEE7" : "#070605";
+      document.documentElement.dataset.theme = resolved;
+    } catch {}
+  </script>
+  <!-- build:meta -->
+  <title>How to Hide Photos on iPhone (Every Method, iOS 26)</title>
+  <meta name="description" content="Every way to hide photos on iPhone in iOS 26: the Hidden album, locked notes, locked apps and vault apps. What each one protects, and what it doesn&#x27;t.">
+  <link rel="canonical" href="https://darkroom.buzz/guides/how-to-hide-photos-on-iphone">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Darkroom">
+  <meta property="og:title" content="How to Hide Photos on iPhone (Every Method, iOS 26)">
+  <meta property="og:description" content="Every way to hide photos on iPhone in iOS 26: the Hidden album, locked notes, locked apps and vault apps. What each one protects, and what it doesn&#x27;t.">
+  <meta property="og:url" content="https://darkroom.buzz/guides/how-to-hide-photos-on-iphone">
+  <meta property="og:image" content="https://darkroom.buzz/assets/og/darkroom-og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Darkroom photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
+  <meta property="og:locale" content="en_US">
+  <meta property="article:published_time" content="2026-10-22">
+  <meta property="article:modified_time" content="2026-10-22">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="How to Hide Photos on iPhone (Every Method, iOS 26)">
+  <meta name="twitter:description" content="Every way to hide photos on iPhone in iOS 26: the Hidden album, locked notes, locked apps and vault apps. What each one protects, and what it doesn&#x27;t.">
+  <meta name="twitter:image" content="https://darkroom.buzz/assets/og/darkroom-og.png">
+  <meta name="twitter:image:alt" content="Darkroom photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
+  <!-- /build:meta -->
+
+  <link rel="icon" type="image/svg+xml" href="/assets/darkroom-logo.svg">
+  <link rel="apple-touch-icon" href="/assets/darkroom-icon-180.png">
+
+  <link rel="preload" href="/assets/fonts/plus-jakarta-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/fonts/fonts.css">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/pages.css">
+
+  <!-- build:jsonld -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://darkroom.buzz/#org",
+        "name": "Inertia Projects",
+        "url": "https://darkroom.buzz/about",
+        "email": "business@inertiaprojects.info",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://darkroom.buzz/assets/darkroom-icon-512.png"
+        },
+        "brand": {
+          "@type": "Brand",
+          "name": "Darkroom"
+        }
+      },
+      {
+        "@type": "Article",
+        "@id": "https://darkroom.buzz/guides/how-to-hide-photos-on-iphone#article",
+        "headline": "How to hide photos on iPhone: every method, and what each one protects",
+        "description": "Every way to hide photos on iPhone in iOS 26: the Hidden album, locked notes, locked apps and vault apps. What each one protects, and what it doesn't.",
+        "url": "https://darkroom.buzz/guides/how-to-hide-photos-on-iphone",
+        "mainEntityOfPage": "https://darkroom.buzz/guides/how-to-hide-photos-on-iphone",
+        "image": "https://darkroom.buzz/assets/guides/darkroom-lock.jpg",
+        "datePublished": "2026-10-22",
+        "dateModified": "2026-10-22",
+        "author": {
+          "@id": "https://darkroom.buzz/#org"
+        },
+        "publisher": {
+          "@id": "https://darkroom.buzz/#org"
+        },
+        "inLanguage": "en-US",
+        "isPartOf": {
+          "@id": "https://darkroom.buzz/#website"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Darkroom",
+            "item": "https://darkroom.buzz/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Guides",
+            "item": "https://darkroom.buzz/guides/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "How to hide photos on iPhone",
+            "item": "https://darkroom.buzz/guides/how-to-hide-photos-on-iphone"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://darkroom.buzz/guides/how-to-hide-photos-on-iphone#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Does hiding a photo on iPhone delete it?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Hiding moves the photo out of your library into the Hidden album. It stays on your iPhone and in iCloud Photos, and you can unhide it at any time."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can someone see my hidden photos without my Face ID?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Only if they know your iPhone passcode, or can unlock another device signed in to your Apple Account with iCloud Photos on. Face ID falls back to the passcode."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I hide videos on iPhone?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The same way as photos: touch and hold the video in Photos and tap Hide. Every method in this guide works for videos too, although large videos are awkward in Notes."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are hidden photos encrypted?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Not separately. They have the same protection as the rest of your photo library. In iCloud, photos are end-to-end encrypted only if you turn on Advanced Data Protection. A vault app that encrypts with its own key adds a separate layer."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I hide the Hidden album?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Go to Settings › Apps › Photos and turn off Show Hidden Album. The album disappears from Collections until you turn the setting back on."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <!-- /build:jsonld -->
+</head>
+<body>
+  <!-- build:header -->
+  <!-- Shared header for subpages. Edit partials/header.html, then run python3 tools/build.py. -->
+  <svg width="0" height="0" style="position:absolute;visibility:hidden" aria-hidden="true">
+    <symbol id="darkroom-logo-mark" viewBox="0 0 180 180">
+      <defs>
+        <linearGradient id="drChassis" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#28211D"/>
+          <stop offset="0.55" stop-color="#191412"/>
+          <stop offset="1" stop-color="#0E0B09"/>
+        </linearGradient>
+      </defs>
+      <rect width="180" height="180" rx="40" fill="url(#drChassis)"/>
+      <rect x="2" y="2" width="176" height="176" rx="38" fill="none" stroke="#3D332C" stroke-width="2" opacity="0.7"/>
+      <!-- 5x5 Bolt Matrix (19 inactive bolts) -->
+      <g fill="#433932" stroke="#574B42" stroke-width="1.5">
+        <circle cx="38" cy="38" r="8.5"/>
+        <circle cx="64" cy="38" r="8.5"/>
+        <circle cx="90" cy="38" r="8.5"/>
+        <circle cx="116" cy="38" r="8.5"/>
+        <circle cx="38" cy="64" r="8.5"/>
+        <circle cx="64" cy="64" r="8.5"/>
+        <circle cx="142" cy="64" r="8.5"/>
+        <circle cx="38" cy="90" r="8.5"/>
+        <circle cx="90" cy="90" r="8.5"/>
+        <circle cx="116" cy="90" r="8.5"/>
+        <circle cx="142" cy="90" r="8.5"/>
+        <circle cx="38" cy="116" r="8.5"/>
+        <circle cx="90" cy="116" r="8.5"/>
+        <circle cx="116" cy="116" r="8.5"/>
+        <circle cx="142" cy="116" r="8.5"/>
+        <circle cx="64" cy="142" r="8.5"/>
+        <circle cx="90" cy="142" r="8.5"/>
+        <circle cx="116" cy="142" r="8.5"/>
+        <circle cx="142" cy="142" r="8.5"/>
+      </g>
+      <!-- Connecting safelight path: (0,4) -> (1,3) -> (1,2) -> (2,1) -> (3,1) -> (4,0) -->
+      <path d="M38 142 L64 116 L64 90 L90 64 L116 64 L142 38" fill="none" stroke="#F04E37" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- 6 Active Safelight Bolts -->
+      <g fill="#F04E37">
+        <circle cx="38" cy="142" r="9"/>
+        <circle cx="64" cy="116" r="9"/>
+        <circle cx="64" cy="90" r="9"/>
+        <circle cx="90" cy="64" r="9"/>
+        <circle cx="116" cy="64" r="9"/>
+        <circle cx="142" cy="38" r="10.5"/>
+      </g>
+    </symbol>
+  </svg>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="/" class="logo" aria-label="Darkroom home">
+        <span class="logo-plate" aria-hidden="true">
+          <svg viewBox="0 0 180 180" width="30" height="30" aria-hidden="true"><use href="#darkroom-logo-mark"></use></svg>
+        </span>
+        <span>Darkroom</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="/#features">Features</a>
+        <a href="/#security">Security</a>
+        <a href="/#pricing">Pricing</a>
+        <a href="/best-photo-vault-apps-iphone">Compare</a>
+        <a href="/guides/">Guides</a>
+        <a href="/about">About</a>
+        <a href="/support">Support</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle"
+                class="theme-toggle"
+                type="button"
+                aria-label="Switch to light mode"
+                aria-pressed="false"
+                data-light-label="Light"
+                data-dark-label="Dark"
+                data-switch-light="Switch to light mode"
+                data-switch-dark="Switch to dark mode">
+          <span class="theme-icon" id="theme-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><line x1="12" y1="2.5" x2="12" y2="5.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="12" y1="18.8" x2="12" y2="21.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="2.5" y1="12" x2="5.2" y2="12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="18.8" y1="12" x2="21.5" y2="12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="5.3" y1="5.3" x2="7.2" y2="7.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="16.8" y1="16.8" x2="18.7" y2="18.7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="16.8" y1="7.2" x2="18.7" y2="5.3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="5.3" y1="18.7" x2="7.2" y2="16.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </span>
+          <span id="theme-label">Light</span>
+        </button>
+
+        <a href="/#waitlist" class="btn btn-primary btn-nav" data-cta="nav" data-label-waitlist="Early Access" data-label-live="Get the App">Early Access</a>
+
+        <button type="button" class="mobile-menu-btn" id="mobile-menu-btn" aria-expanded="false" aria-controls="mobile-drawer" aria-label="Toggle menu">
+          <svg class="icon-menu" viewBox="0 0 24 24" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+          <svg class="icon-close" viewBox="0 0 24 24" aria-hidden="true"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-drawer" id="mobile-drawer" hidden>
+      <div class="container">
+        <nav class="mobile-drawer-list" aria-label="Mobile">
+          <a href="/#features"><span>Features</span></a>
+          <a href="/#security"><span>Security</span></a>
+          <a href="/#pricing"><span>Pricing</span></a>
+          <a href="/best-photo-vault-apps-iphone"><span>Compare vault apps</span></a>
+          <a href="/guides/"><span>Guides</span></a>
+          <a href="/about"><span>About</span></a>
+          <a href="/support"><span>Support</span></a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- /build:header -->
+
+  <main id="main-content" tabindex="-1">
+    <div class="page-hero">
+      <div class="container">
+        <!-- build:breadcrumbs -->
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="/">Darkroom</a></li>
+            <li><a href="/guides/">Guides</a></li>
+            <li aria-current="page">How to hide photos on iPhone</li>
+          </ol>
+        </nav>
+        <!-- /build:breadcrumbs -->
+        <p class="eyebrow"><span class="dot dot-amber" aria-hidden="true"></span>Guide · Hiding photos</p>
+        <h1>How to hide photos on iPhone: every method, and what each one protects</h1>
+        <!-- build:byline -->
+        <p class="byline"><span>By <a href="https://darkroom.buzz/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>Last updated <time datetime="2026-10-22">22 October 2026</time></span></p>
+        <!-- /build:byline -->
+        <div class="answer">
+          <span class="answer-label">Short answer</span>
+          <p>To hide a photo on iPhone, touch and hold it in the Photos app and tap Hide. It moves to the Hidden album, which iOS 26 locks with Face ID. That keeps it out of your library, but anyone who knows your iPhone passcode can still open it. For photos that need real protection, put them in a locked note or an encrypted vault app with its own code.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container article-layout">
+      <article class="prose">
+        <p>There are four ways to hide photos on an iPhone, and they protect against very different things. Hiding a photo from someone scrolling through your camera roll is easy. Keeping it from someone who knows your passcode, or who picks up your iPad, takes more. This guide covers each method in iOS 26, with exact steps, and says plainly what each one does and doesn't protect.</p>
+
+        <h2 id="compare">Which way of hiding photos should you use?</h2>
+        <p>Use the Hidden album to keep photos out of sight. Use a locked note or a vault app with its own code when the photos must stay private even from people who know your passcode.</p>
+        <div class="data-table-wrap" tabindex="0" role="region" aria-labelledby="methods-caption">
+          <table class="data-table">
+            <caption id="methods-caption">Ways to hide photos on iPhone (iOS 26)</caption>
+            <thead>
+              <tr><th scope="col">Method</th><th scope="col">What opens it</th><th scope="col">Separate from your passcode?</th><th scope="col">Syncs to your other devices?</th><th scope="col">Best for</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Hidden album</th><td>Face ID, Touch ID or your passcode</td><td class="no">No</td><td>Yes, with iCloud Photos</td><td>Keeping photos out of your main library</td></tr>
+              <tr><th scope="row">Locking the Photos app</th><td>Face ID or your passcode</td><td class="no">No</td><td>Not applicable</td><td>Stopping casual browsing of the whole library</td></tr>
+              <tr><th scope="row">Locked note</th><td>Your passcode or a separate Notes password</td><td class="yes">Optional</td><td>Yes, with iCloud Notes</td><td>A few photos you rarely need</td></tr>
+              <tr><th scope="row">Encrypted vault app</th><td>The app's own pattern, PIN or password</td><td class="yes">Yes</td><td>Depends on the app</td><td>Photos that must stay private from anyone</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 id="hidden-album">How do you hide photos with the Hidden album?</h2>
+        <p>Touch and hold a photo, tap Hide, and confirm. The photo leaves your library, Memories and widgets, and appears only in the Hidden album.</p>
+        <ol class="steps">
+          <li><strong>Open Photos</strong> and find the photo or video.</li>
+          <li><strong>Touch and hold it</strong>, then tap <span class="path">Hide</span> and confirm.</li>
+          <li><strong>To hide several at once</strong>, tap <span class="path">Select</span>, tap each photo, then tap the <span class="path">More (…)</span> button and choose <span class="path">Hide</span>.</li>
+        </ol>
+        <p>To see hidden photos, open <span class="path">Collections</span>, scroll down to <span class="path">Utilities</span>, tap <span class="path">Hidden</span>, then <span class="path">View Album</span> and unlock with Face ID. To unhide one, touch and hold it and tap <span class="path">Unhide</span>.</p>
+        <!-- SCREENSHOT TODO (Milan): iOS 26 Photos, touch-and-hold menu on a photo with "Hide" visible. Save as /assets/guides/ios-photos-hide-menu.jpg -->
+
+        <h3 id="lock-hidden-album">Make sure the Hidden album is locked</h3>
+        <p>The Hidden album is locked by default on iOS 16 and later. Check it: go to <span class="path">Settings › Apps › Photos</span> and make sure <span class="path">Use Face ID</span> (or Use Touch ID / Use Passcode) is on. The same setting locks Recently Deleted.</p>
+        <p>To hide the Hidden album itself, turn off <span class="path">Show Hidden Album</span> on the same screen. It then disappears from Collections until you turn it back on.</p>
+        <!-- SCREENSHOT TODO (Milan): Settings › Apps › Photos in iOS 26 showing "Use Face ID" and "Show Hidden Album". Save as /assets/guides/ios-settings-photos.jpg -->
+
+        <h3 id="hidden-album-limits">What the Hidden album doesn't protect</h3>
+        <ul>
+          <li><strong>Your passcode opens it.</strong> Face ID falls back to your iPhone passcode, so anyone who knows it can see your hidden photos.</li>
+          <li><strong>It syncs.</strong> With iCloud Photos on, a photo you hide on your iPhone is hidden, but present, on your iPad and Mac too.</li>
+          <li><strong>It isn't separately encrypted.</strong> Hidden photos get the same protection as the rest of your library. In iCloud, Photos is only end-to-end encrypted if you turn on Advanced Data Protection (<a href="https://support.apple.com/en-us/102651">Apple's iCloud data security overview</a>).</li>
+        </ul>
+        <p>For the full picture, read <a href="/guides/is-iphone-hidden-album-private">Is the iPhone Hidden album actually private?</a></p>
+
+        <h2 id="lock-photos-app">Can you lock the whole Photos app with Face ID?</h2>
+        <p>Yes. Since iOS 18 you can make any app, including Photos, ask for Face ID every time it opens.</p>
+        <ol class="steps">
+          <li><strong>Touch and hold the Photos icon</strong> on your Home Screen.</li>
+          <li>Tap <span class="path">Require Face ID</span>, then confirm.</li>
+        </ol>
+        <p>This stops someone you hand your unlocked phone to from opening Photos. It doesn't hide individual photos, it locks your whole library (which gets tiring), and your passcode still opens it. Not every built-in app can also be hidden from the Home Screen.</p>
+
+        <h2 id="locked-note">How do you hide a photo in a locked note?</h2>
+        <p>Add the photo to a note, then lock the note. Locked notes can use a separate password from your passcode, which makes them stronger than the Hidden album for a handful of photos.</p>
+        <ol class="steps">
+          <li><strong>Open Notes</strong> and start a new note.</li>
+          <li>Tap the <span class="path">camera</span> button, choose <span class="path">Choose Photo or Video</span>, and add the photos.</li>
+          <li>Tap the <span class="path">More (…)</span> button and choose <span class="path">Lock</span>. Use your iPhone passcode, or set a separate Notes password in <span class="path">Settings › Apps › Notes › Password</span>.</li>
+          <li><strong>Delete the originals</strong> from Photos, then from Recently Deleted (see below).</li>
+        </ol>
+        <p>The trade-offs: notes have no albums or grid view, large videos are awkward, and if you forget a separate Notes password, Apple can't recover the locked notes.</p>
+
+        <h2 id="vault-app">When should you use a photo vault app?</h2>
+        <p>Use a vault app when photos must stay private from people who know your passcode, or when you have more than a handful. A good vault has its own code, encrypts files on the iPhone, and backs them up in a way you can restore.</p>
+        <p>Many vault apps only put a PIN screen in front of ordinary files. Before you trust one with photos you can't replace, check four things:</p>
+        <ul>
+          <li><strong>Does it name its encryption?</strong> Look for something specific, such as AES-256, done on the device.</li>
+          <li><strong>Where does the backup go, and does it restore on a new iPhone?</strong> Vault reviews are full of photos lost when switching phones.</li>
+          <li><strong>What if you forget your code?</strong> You want a recovery option you control, not an email reset the developer can use too.</li>
+          <li><strong>Can you export everything, in full quality, without paying?</strong></li>
+        </ul>
+        <p>We compared 17 vault apps on exactly these points: <a href="/best-photo-vault-apps-iphone">the best photo vault apps for iPhone in 2026</a>.</p>
+
+        <h3 id="darkroom">Hiding photos with Darkroom</h3>
+        <p>Darkroom is the vault app we make. It opens with a pattern you draw on a 5×5 plate of bolts, encrypts every photo on your iPhone with AES-256-GCM, and keeps an encrypted backup in your own iCloud.</p>
+        <ol class="steps">
+          <li><strong>Draw your pattern</strong> (at least 6 bolts) and write down the recovery phrase Darkroom shows you.</li>
+          <li><strong>Tap add</strong> and pick photos and videos from your library. HEIC, ProRAW and Live Photos keep their original quality.</li>
+          <li><strong>Let Darkroom offer to delete the originals</strong> from Photos once they're safely in the vault, then empty Recently Deleted.</li>
+        </ol>
+        <figure class="shot">
+          <img src="/assets/guides/darkroom-lock.jpg" alt="Darkroom's lock screen: a 5×5 plate of bolts with a pattern drawn across it" width="559" height="1216" loading="lazy" decoding="async">
+          <figcaption>Darkroom opens with a pattern on a 5×5 plate of bolts, not your iPhone passcode.</figcaption>
+        </figure>
+
+        <h2 id="recently-deleted">Don't forget Recently Deleted and other copies</h2>
+        <p>Moving a photo somewhere private isn't enough if a copy stays behind. Deleted photos sit in Recently Deleted for 30 days.</p>
+        <ul>
+          <li><strong>Recently Deleted:</strong> open <span class="path">Collections › Utilities › Recently Deleted</span>, unlock it, select the photos and delete them for good.</li>
+          <li><strong>Shared albums and the iCloud Shared Photo Library:</strong> anything you shared is still visible to the people you shared it with.</li>
+          <li><strong>Messages and other apps:</strong> a photo you sent or received in Messages, WhatsApp or email has its own copy there.</li>
+          <li><strong>Computers:</strong> check old imports on a Mac or PC.</li>
+        </ul>
+
+        <div class="cta-card">
+          <p class="cta-card-title">Photos only you can see</p>
+          <p>Darkroom hides photos and videos behind a pattern only you know, encrypted on your iPhone and backed up to your own iCloud. Free for 150 photos and 10 videos. No ads, no account.</p>
+          <a href="/#waitlist" class="btn btn-primary" data-cta="body" data-label-waitlist="Join the Early Tester List" data-label-live="Download on the App Store">Join the Early Tester List</a>
+          <!-- build:status -->
+          <span class="release-status">Version 1.0 was submitted to App Store review in October 2026. It is not on the App Store yet.</span>
+          <!-- /build:status -->
+        </div>
+
+        <h2 id="faq">Questions people ask</h2>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Does hiding a photo on iPhone delete it?</span></span></summary>
+            <div class="faq-body"><p>No. Hiding moves the photo out of your library into the Hidden album. It stays on your iPhone and in iCloud Photos, and you can unhide it at any time.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Can someone see my hidden photos without my Face ID?</span></span></summary>
+            <div class="faq-body"><p>Only if they know your iPhone passcode, or can unlock another device signed in to your Apple Account with iCloud Photos on. Face ID falls back to the passcode.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>How do I hide videos on iPhone?</span></span></summary>
+            <div class="faq-body"><p>The same way as photos: touch and hold the video in Photos and tap Hide. Every method in this guide works for videos too, although large videos are awkward in Notes.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Are hidden photos encrypted?</span></span></summary>
+            <div class="faq-body"><p>Not separately. They have the same protection as the rest of your photo library. In iCloud, photos are end-to-end encrypted only if you turn on Advanced Data Protection. A vault app that encrypts with its own key adds a separate layer.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Can I hide the Hidden album?</span></span></summary>
+            <div class="faq-body"><p>Yes. Go to Settings › Apps › Photos and turn off Show Hidden Album. The album disappears from Collections until you turn the setting back on.</p></div>
+          </details>
+        </div>
+
+        <p><em>Something wrong or out of date? Email <a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a> and we'll fix it.</em></p>
+      </article>
+
+      <aside class="article-aside" aria-label="On this page">
+        <nav class="toc" aria-label="Table of contents">
+          <p class="toc-title">On this page</p>
+          <ol>
+            <li><a href="#compare">Which method to use</a></li>
+            <li><a href="#hidden-album">The Hidden album</a></li>
+            <li><a href="#lock-photos-app">Lock the Photos app</a></li>
+            <li><a href="#locked-note">A locked note</a></li>
+            <li><a href="#vault-app">A photo vault app</a></li>
+            <li><a href="#recently-deleted">Recently Deleted and copies</a></li>
+            <li><a href="#faq">Questions people ask</a></li>
+          </ol>
+        </nav>
+        <div class="related">
+          <p class="toc-title">Related</p>
+          <ul role="list">
+            <li><a href="/guides/is-iphone-hidden-album-private">Is the Hidden album private?</a></li>
+            <li><a href="/guides/move-photo-vault-to-new-iphone">Move a vault to a new iPhone</a></li>
+            <li><a href="/best-photo-vault-apps-iphone">Photo vault apps compared</a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- build:footer -->
+  <!-- Shared footer for subpages. Edit partials/footer.html, then run python3 tools/build.py. -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="/" class="logo" style="margin-bottom:12px" aria-label="Darkroom home">
+            <span class="logo-plate" aria-hidden="true">
+              <svg viewBox="0 0 180 180" width="30" height="30" aria-hidden="true"><use href="#darkroom-logo-mark"></use></svg>
+            </span>
+            <span>Darkroom</span>
+          </a>
+          <p style="color:var(--muted);max-width:34ch;margin-bottom:14px">Encrypted photo, video and note vault for iPhone and iPad. Encrypted on your device, backed up to your own iCloud.</p>
+          <p style="color:var(--amber);font-family:var(--font-mono);font-size:0.75rem">No accounts · No ads · No analytics</p>
+        </div>
+
+        <div class="footer-col">
+          <h2 class="footer-heading">Guides</h2>
+          <ul role="list">
+            <li><a href="/guides/how-to-hide-photos-on-iphone">How to hide photos on iPhone</a></li>
+  <li><a href="/guides/is-iphone-hidden-album-private">Is the Hidden album private?</a></li>
+  <li><a href="/guides/move-photo-vault-to-new-iphone">Move a photo vault to a new iPhone</a></li>
+  <li><a href="/guides/photo-vault-lost-photos">Photo vault lost your photos</a></li>
+  <li><a href="/guides/keepsafe-alternatives">Keepsafe alternatives</a></li>
+            <li><a href="/guides/">All guides</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h2 class="footer-heading">Darkroom</h2>
+          <ul role="list">
+            <li><a href="/#features">Features</a></li>
+            <li><a href="/#security">How the encryption works</a></li>
+            <li><a href="/#pricing">Free vs Pro</a></li>
+            <li><a href="/best-photo-vault-apps-iphone">Photo vault apps compared</a></li>
+            <li><a href="/#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h2 class="footer-heading">Help &amp; Legal</h2>
+          <ul role="list">
+            <li><a href="/about">About</a></li>
+            <li><a href="/support">Support</a></li>
+            <li><a href="/privacy">Privacy policy</a></li>
+            <li><a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Darkroom · Inertia Projects</p>
+        <p>App Store privacy label: <strong>Data Not Collected</strong></p>
+      </div>
+    </div>
+  </footer>
+  <!-- /build:footer -->
+
+  <script src="/app.js" defer></script>
+</body>
+</html>

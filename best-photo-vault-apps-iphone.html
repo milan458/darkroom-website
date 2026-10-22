@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" id="meta-theme-color" content="#070605">
+  <script>
+    try {
+      const savedScheme = localStorage.getItem("color-scheme");
+      const metaScheme = document.querySelector('meta[name="color-scheme"]');
+      const metaTheme = document.getElementById("meta-theme-color");
+      const prefersLight = window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches;
+      const resolved = savedScheme === "light" || savedScheme === "dark" ? savedScheme : (prefersLight ? "light" : "dark");
+      if (metaScheme) metaScheme.content = resolved;
+      if (metaTheme) metaTheme.content = resolved === "light" ? "#F3EEE7" : "#070605";
+      document.documentElement.dataset.theme = resolved;
+    } catch {}
+  </script>
+  <!-- build:meta -->
+  <title>Best Photo Vault Apps for iPhone (2026), Compared</title>
+  <meta name="description" content="17 iPhone photo vault apps side by side: encryption, backup, decoy vaults, free limits, ads and prices. Checked October 2026, with sources.">
+  <link rel="canonical" href="https://darkroom.buzz/best-photo-vault-apps-iphone">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Darkroom">
+  <meta property="og:title" content="Best Photo Vault Apps for iPhone (2026), Compared">
+  <meta property="og:description" content="17 iPhone photo vault apps side by side: encryption, backup, decoy vaults, free limits, ads and prices. Checked October 2026, with sources.">
+  <meta property="og:url" content="https://darkroom.buzz/best-photo-vault-apps-iphone">
+  <meta property="og:image" content="https://darkroom.buzz/assets/og/darkroom-og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Darkroom photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
+  <meta property="og:locale" content="en_US">
+  <meta property="article:published_time" content="2026-10-22">
+  <meta property="article:modified_time" content="2026-10-22">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Best Photo Vault Apps for iPhone (2026), Compared">
+  <meta name="twitter:description" content="17 iPhone photo vault apps side by side: encryption, backup, decoy vaults, free limits, ads and prices. Checked October 2026, with sources.">
+  <meta name="twitter:image" content="https://darkroom.buzz/assets/og/darkroom-og.png">
+  <meta name="twitter:image:alt" content="Darkroom photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
+  <!-- /build:meta -->
+
+  <link rel="icon" type="image/svg+xml" href="/assets/darkroom-logo.svg">
+  <link rel="apple-touch-icon" href="/assets/darkroom-icon-180.png">
+
+  <link rel="preload" href="/assets/fonts/plus-jakarta-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/fonts/fonts.css">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/pages.css">
+
+  <!-- build:jsonld -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://darkroom.buzz/#org",
+        "name": "Inertia Projects",
+        "url": "https://darkroom.buzz/about",
+        "email": "business@inertiaprojects.info",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://darkroom.buzz/assets/darkroom-icon-512.png"
+        },
+        "brand": {
+          "@type": "Brand",
+          "name": "Darkroom"
+        }
+      },
+      {
+        "@type": "Article",
+        "@id": "https://darkroom.buzz/best-photo-vault-apps-iphone#article",
+        "headline": "Best Photo Vault Apps for iPhone (2026), Compared",
+        "description": "17 iPhone photo vault apps side by side: encryption, backup, decoy vaults, free limits, ads and prices. Checked October 2026, with sources.",
+        "url": "https://darkroom.buzz/best-photo-vault-apps-iphone",
+        "mainEntityOfPage": "https://darkroom.buzz/best-photo-vault-apps-iphone",
+        "image": "https://darkroom.buzz/assets/og/darkroom-og.png",
+        "datePublished": "2026-10-22",
+        "dateModified": "2026-10-22",
+        "author": {
+          "@id": "https://darkroom.buzz/#org"
+        },
+        "publisher": {
+          "@id": "https://darkroom.buzz/#org"
+        },
+        "inLanguage": "en-US",
+        "isPartOf": {
+          "@id": "https://darkroom.buzz/#website"
+        },
+        "about": {
+          "@id": "https://darkroom.buzz/#app"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Darkroom",
+            "item": "https://darkroom.buzz/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Photo vault apps compared",
+            "item": "https://darkroom.buzz/best-photo-vault-apps-iphone"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <!-- /build:jsonld -->
+</head>
+<body>
+  <!-- build:header -->
+  <!-- Shared header for subpages. Edit partials/header.html, then run python3 tools/build.py. -->
+  <svg width="0" height="0" style="position:absolute;visibility:hidden" aria-hidden="true">
+    <symbol id="darkroom-logo-mark" viewBox="0 0 180 180">
+      <defs>
+        <linearGradient id="drChassis" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#28211D"/>
+          <stop offset="0.55" stop-color="#191412"/>
+          <stop offset="1" stop-color="#0E0B09"/>
+        </linearGradient>
+      </defs>
+      <rect width="180" height="180" rx="40" fill="url(#drChassis)"/>
+      <rect x="2" y="2" width="176" height="176" rx="38" fill="none" stroke="#3D332C" stroke-width="2" opacity="0.7"/>
+      <!-- 5x5 Bolt Matrix (19 inactive bolts) -->
+      <g fill="#433932" stroke="#574B42" stroke-width="1.5">
+        <circle cx="38" cy="38" r="8.5"/>
+        <circle cx="64" cy="38" r="8.5"/>
+        <circle cx="90" cy="38" r="8.5"/>
+        <circle cx="116" cy="38" r="8.5"/>
+        <circle cx="38" cy="64" r="8.5"/>
+        <circle cx="64" cy="64" r="8.5"/>
+        <circle cx="142" cy="64" r="8.5"/>
+        <circle cx="38" cy="90" r="8.5"/>
+        <circle cx="90" cy="90" r="8.5"/>
+        <circle cx="116" cy="90" r="8.5"/>
+        <circle cx="142" cy="90" r="8.5"/>
+        <circle cx="38" cy="116" r="8.5"/>
+        <circle cx="90" cy="116" r="8.5"/>
+        <circle cx="116" cy="116" r="8.5"/>
+        <circle cx="142" cy="116" r="8.5"/>
+        <circle cx="64" cy="142" r="8.5"/>
+        <circle cx="90" cy="142" r="8.5"/>
+        <circle cx="116" cy="142" r="8.5"/>
+        <circle cx="142" cy="142" r="8.5"/>
+      </g>
+      <!-- Connecting safelight path: (0,4) -> (1,3) -> (1,2) -> (2,1) -> (3,1) -> (4,0) -->
+      <path d="M38 142 L64 116 L64 90 L90 64 L116 64 L142 38" fill="none" stroke="#F04E37" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- 6 Active Safelight Bolts -->
+      <g fill="#F04E37">
+        <circle cx="38" cy="142" r="9"/>
+        <circle cx="64" cy="116" r="9"/>
+        <circle cx="64" cy="90" r="9"/>
+        <circle cx="90" cy="64" r="9"/>
+        <circle cx="116" cy="64" r="9"/>
+        <circle cx="142" cy="38" r="10.5"/>
+      </g>
+    </symbol>
+  </svg>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="/" class="logo" aria-label="Darkroom home">
+        <span class="logo-plate" aria-hidden="true">
+          <svg viewBox="0 0 180 180" width="30" height="30" aria-hidden="true"><use href="#darkroom-logo-mark"></use></svg>
+        </span>
+        <span>Darkroom</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="/#features">Features</a>
+        <a href="/#security">Security</a>
+        <a href="/#pricing">Pricing</a>
+        <a href="/best-photo-vault-apps-iphone">Compare</a>
+        <a href="/guides/">Guides</a>
+        <a href="/about">About</a>
+        <a href="/support">Support</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle"
+                class="theme-toggle"
+                type="button"
+                aria-label="Switch to light mode"
+                aria-pressed="false"
+                data-light-label="Light"
+                data-dark-label="Dark"
+                data-switch-light="Switch to light mode"
+                data-switch-dark="Switch to dark mode">
+          <span class="theme-icon" id="theme-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><line x1="12" y1="2.5" x2="12" y2="5.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="12" y1="18.8" x2="12" y2="21.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="2.5" y1="12" x2="5.2" y2="12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="18.8" y1="12" x2="21.5" y2="12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="5.3" y1="5.3" x2="7.2" y2="7.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="16.8" y1="16.8" x2="18.7" y2="18.7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="16.8" y1="7.2" x2="18.7" y2="5.3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="5.3" y1="18.7" x2="7.2" y2="16.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </span>
+          <span id="theme-label">Light</span>
+        </button>
+
+        <a href="/#waitlist" class="btn btn-primary btn-nav" data-cta="nav" data-label-waitlist="Early Access" data-label-live="Get the App">Early Access</a>
+
+        <button type="button" class="mobile-menu-btn" id="mobile-menu-btn" aria-expanded="false" aria-controls="mobile-drawer" aria-label="Toggle menu">
+          <svg class="icon-menu" viewBox="0 0 24 24" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+          <svg class="icon-close" viewBox="0 0 24 24" aria-hidden="true"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-drawer" id="mobile-drawer" hidden>
+      <div class="container">
+        <nav class="mobile-drawer-list" aria-label="Mobile">
+          <a href="/#features"><span>Features</span></a>
+          <a href="/#security"><span>Security</span></a>
+          <a href="/#pricing"><span>Pricing</span></a>
+          <a href="/best-photo-vault-apps-iphone"><span>Compare vault apps</span></a>
+          <a href="/guides/"><span>Guides</span></a>
+          <a href="/about"><span>About</span></a>
+          <a href="/support"><span>Support</span></a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- /build:header -->
+
+  <main id="main-content" tabindex="-1">
+    <div class="page-hero">
+      <div class="container">
+        <!-- build:breadcrumbs -->
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="/">Darkroom</a></li>
+            <li aria-current="page">Photo vault apps compared</li>
+          </ol>
+        </nav>
+        <!-- /build:breadcrumbs -->
+        <h1>The best photo vault apps for iPhone in 2026, compared</h1>
+        <p class="page-lede">We compared 17 photo vault apps and Apple's Hidden album on what actually protects your photos: whether the developer says how files are encrypted, how backups work, whether there's a decoy vault, what the app tracks, and what it costs.</p>
+        <!-- build:byline -->
+        <p class="byline"><span>By <a href="https://darkroom.buzz/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>Last updated <time datetime="2026-10-22">22 October 2026</time></span></p>
+        <!-- /build:byline -->
+        <div class="answer">
+          <span class="answer-label">Short answer</span>
+          <p>Pick a vault that names its encryption, keeps an encrypted backup you control, and gives you a way back in if you forget your code. Of the 17 apps we checked on 22 October 2026, only two name AES-256-GCM in their App Store description (Vaultaire and Obscura), 6 don't mention encryption at all, and 9 report data used to track you. Darkroom, which we make, names AES-256-GCM and collects no data.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container article-layout">
+      <article class="prose">
+        <div class="callout">
+          <span class="callout-title">Disclosure</span>
+          <p>We make Darkroom, one of the apps in this comparison, so weigh our picks with that in mind. Every other app's row comes from its own App Store page, linked in the table. We did not install, test or audit other apps.</p>
+        </div>
+
+        <h2 id="what-matters">What matters in a photo vault</h2>
+        <p>A photo vault is only as good as three things: how it encrypts your files, whether your photos survive a lost or new phone, and what happens if you forget your code or stop paying. Most low ratings for vault apps are about those three things, not about missing features.</p>
+        <ol>
+          <li><strong>Real encryption, on your device.</strong> A PIN screen in front of normal files is a lock on the front door with the back door open. Look for a named cipher such as AES-256, and for encryption that happens on the iPhone before anything is uploaded.</li>
+          <li><strong>A backup that restores.</strong> Ask where the backup lives (your iCloud or the developer's servers), who holds the keys, and how you restore on a new iPhone. Backup and new-phone failures are among the most common complaints in vault app reviews.</li>
+          <li><strong>A way back in.</strong> If nobody can reset your code, you need a recovery phrase or key you keep yourself. If the developer can reset it by email, they can also, in principle, get in.</li>
+          <li><strong>Getting photos out.</strong> Check that export keeps full quality and original dates, and that it isn't behind a paywall.</li>
+          <li><strong>Honest pricing and privacy.</strong> Check whether ads or a lapsed subscription can lock your photos, and read the App Store privacy label.</li>
+        </ol>
+
+        <h2 id="table">All 17 apps at a glance</h2>
+        <p>Sorted by number of US App Store ratings. "Not in listing" means the developer's App Store description doesn't mention it, not that the app can't do it. Scroll the table sideways on a phone.</p>
+      </article>
+    </div>
+
+    <div class="container" style="padding-bottom:12px">
+      <div class="data-table-wrap" tabindex="0" role="region" aria-labelledby="vault-table-caption">
+        <table class="data-table">
+          <caption id="vault-table-caption">iPhone photo vault apps compared. Source: each app's US App Store page and Apple's iTunes lookup data, 22 October 2026.</caption>
+          <thead>
+            <tr>
+              <th scope="col">App</th>
+              <th scope="col">US ratings</th>
+              <th scope="col">Last update</th>
+              <th scope="col">Encryption the listing names</th>
+              <th scope="col">Decoy vault</th>
+              <th scope="col">Backup the listing describes</th>
+              <th scope="col">Data used to track you</th>
+              <th scope="col">In-app prices</th>
+            </tr>
+          </thead>
+          <tbody>
+              <tr class="is-darkroom">
+                <th scope="row">Darkroom<small>Inertia Projects · our app</small></th>
+                <td class="num">New</td>
+                <td class="num">Oct 2026</td>
+                <td class="yes">AES-256-GCM, keys from Argon2id</td>
+                <td class="yes">Yes, 1 free; emergency erase in Pro</td>
+                <td>Encrypted, in your own iCloud; restores with your pattern</td>
+                <td class="yes">None (Data Not Collected)</td>
+                <td class="num">$2.99–$44.99</td>
+              </tr>
+              <tr>
+                <th scope="row">Apple Hidden album<small>Built into Photos</small></th>
+                <td class="num">—</td>
+                <td class="num">iOS 26</td>
+                <td>iPhone's own encryption; no separate key</td>
+                <td class="no">No</td>
+                <td>iCloud Photos; end-to-end only with Advanced Data Protection</td>
+                <td>Not applicable</td>
+                <td class="num">Free</td>
+              </tr>
+              <tr>
+                <th scope="row"><a href="https://apps.apple.com/us/app/private-photo-vault-pic-safe/id417571834">Private Photo Vault</a><small>Legendary Software Labs LLC</small></th>
+                <td class="num">1,017,852 · 4.8★</td>
+                <td class="num">17 Sep 2026</td>
+                <td>Cloud backup called “encrypted”; cipher not named</td>
+                <td>Decoy password</td>
+                <td>Its own cloud vault</td>
+                <td class="warn">Usage Data</td>
+                <td class="num">$6.99–$39.99</td>
+              </tr>
+              <tr>
+                <th scope="row"><a href="https://apps.apple.com/us/app/secret-photo-vault-keepsafe/id510873505">Keepsafe</a><small>KeepSafe Software, Inc</small></th>
+                <td class="num">384,865 · 4.8★</td>
+                <td class="num">12 Oct 2026</td>
+                <td>Listing: “military-grade”. Help center: AES-256 (<a href="https://support.getkeepsafe.com/hc/en-us/articles/360035454311-How-does-Keepsafe-protect-my-data">source</a>)</td>
+                <td class="no">Not in listing</td>
+                <td>Keepsafe Private Cloud (Premium)</td>
+                <td class="warn">Usage Data</td>
+                <td class="num">$4.99–$35.99</td>
+              </tr>
+              <tr>
+                <th scope="row"><a href="https://apps.apple.com/us/app/privault-private-photo-vault/id1186436980">Privault</a><small>Binspir Technologies Co., Ltd.</small></th>
+                <td class="num">76,581 · 4.7★</td>
+                <td class="num">28 Feb 2025</td>
+                <td>Says storage is encrypted; cipher not named</td>
+                <td>Second passcode opens a second folder</td>
+                <td class="no">Not in listing</td>
+                <td class="warn">Usage Data</td>
+                <td class="num">$2.99–$45.99</td>
+              </tr>
+              <tr>
+                <th scope="row"><a href="https://apps.apple.com/us/app/spv-secret-photo-vault/id1449239240">SPV</a><small>MAPLE LABS COMPANY LIMITED</small></th>
+                <td class="num">69,941 · 4.6★</td>
+                <td class="num">30 Aug 2026</td>
+                <td class="no">Not stated</td>
+                <td class="no">Not in listing</td>
+                <td class="no">Not in listing</td>
+                <td class="warn">Diagnostics, Identifiers, Usage Data</td>
+                <td class="num">$4.99–$39.99</td>
+              </tr>
+              <tr>
+                <th scope="row"><a href="https://apps.apple.com/us/app/secret-photo-album-sa/id1174964304">Secret Photo Album (SA)</a><small>BP Mobile LLC</small></th>
+                <td class="num">38,909 · 4.6★</td>
+                <td class="num">6 Oct 2026</td>
+                <td>Says storage is encrypted; cipher not named</td>
+                <td>Decoy PIN</td>
+                <td>“Secure cloud backup”</td>
+                <td class="warn">Diagnostics, Identifiers, Location, Other Data, Purchases, Usage Data</td>
+                <td class="num">$1.99–$51.99</td>
+              </tr>
+              <tr>
+                <th scope="row"><a href="https://apps.apple.com/us/app/pv-secret-photo-album/id867586326">PV – Secret Photo Album</a><small>Haibin Jiao</small></th>
+                <td class="num">30,271 · 4.7★</td>
+                <td class="num">18 Oct 2026</td>
+                <td>Says data is encrypted; cipher not named</td>
+                <td>Fake password</td>
+                <td>Its own cloud (paid tiers)</td>
+                <td class="warn">Identifiers, Usage Data</td>
+                <td class="num">$3.99–$79.99</td>
+              </tr>
+              <tr>
+                <th scope="row"><a href="https://apps.apple.com/us/app/calculator-hide-photos-videos/id1165276801">Calculator#</a><small>Salman Ashraf</small></th>
+                <td class="num">28,925 · 4.4★</td>
+                <td class="num">29 Jul 2026</td>
+                <td class="no">Not stated</td>
+                <td class="no">No (fake crash screen)</td>
+                <td>Export to iCloud, Dropbox, Google Drive, OneDrive</td>
+                <td class="warn">Contact Info</td>
+                <td class="num">$4.99 (free with ads)</td>
+              </tr>
+              <tr>
+                <th scope="row"><a href="https://apps.apple.com/us/app/secret-photo-vault-lock-photos/id448033053">Secret Photo Vault – Lock Photos</a><small>伟林 莫</small></th>
+                <td class="num">27,386 · 4.5★</td>
+                <td class="num">25 Apr 2025</td>
+                <td class="no">Not stated</td>
+                <td>Decoy users</td>
+                <td class="no">Not in listing</td>
+                <td class="yes">None (Data Not Collected)</td>
+                <td class="num">$6.99</td>
+              </tr>
+              <tr>
+                <th scope="row"><a href="https://apps.apple.com/us/app/safe-lock-hidden-photo-vault/id1195429570">Safe Lock</a><small>Katerina Akhlebinina</small></th>
+                <td class="num">24,877 · 4.8★</td>
+                <td class="num">17 Aug 2026</td>
+                <td class="no">Not stated</td>
+                <td>Fake password opens a fake gallery</td>
+                <td>Export to Dropbox, Google Drive, iCloud, Box</td>
+                <td class="yes">None (Data Not Collected)</td>
+                <td class="num">$4.99–$29.99</td>
+              </tr>
+              <tr>
+                <th scope="row"><a href="https://apps.apple.com/us/app/hide-photos-video-hide-it-pro/id523488488">Hide it Pro</a><small>Anuj Tenani</small></th>
+                <td class="num">24,774 · 4.7★</td>
+                <td class="num">11 Jan 2026</td>
+                <td class="no">Not stated</td>
+                <td class="no">No (fake crash screen)</td>
+                <td>“Backup on cloud storage”</td>
+                <td class="yes">None</td>
+                <td class="num">$4.99–$9.99</td>
+              </tr>
+              <tr>
+                <th scope="row"><a href="https://apps.apple.com/us/app/secret-photos-kyms/id471303390">KYMS</a><small>IdeaSolutions S.r.l.</small></th>
+                <td class="num">17,327 · 4.7★</td>
+                <td class="num">10 Jun 2025</td>
+                <td>“AES military-grade”</td>
+                <td>Fake PIN opens a decoy vault</td>
+                <td class="no">Not in listing</td>
+                <td class="warn">Identifiers</td>
+                <td class="num">$4.99</td>
+              </tr>
+              <tr>
+                <th scope="row"><a href="https://apps.apple.com/us/app/photo-video-vault-maxvault/id645754521">MaxVault</a><small>Rambax, LLC</small></th>
+                <td class="num">3,468 · 4.7★</td>
+                <td class="num">17 Oct 2026</td>
+                <td class="no">Not stated</td>
+                <td class="no">Not in listing</td>
+                <td>iCloud Drive, Dropbox, OneDrive</td>
+                <td class="yes">None</td>
+                <td class="num">$4.99–$99.99</td>
+              </tr>
+              <tr>
+                <th scope="row"><a href="https://apps.apple.com/us/app/hiddenvault-secret-photo-vault/id1519673105">HiddenVault</a><small>Kyle Allen</small></th>
+                <td class="num">2,099 · 4.7★</td>
+                <td class="num">17 Jun 2026</td>
+                <td>“Zero-knowledge”; cipher not named</td>
+                <td class="no">Not in listing</td>
+                <td class="no">Not in listing</td>
+                <td class="warn">Usage Data</td>
+                <td class="num">$2.99–$44.99</td>
+              </tr>
+              <tr>
+                <th scope="row"><a href="https://apps.apple.com/us/app/ente-photos/id1542026904">Ente Photos</a><small>Ente Technologies, Inc.</small></th>
+                <td class="num">286 · 4.7★</td>
+                <td class="num">21 Oct 2026</td>
+                <td>End-to-end; open source, third-party audited</td>
+                <td>Not a vault (cloud photo library)</td>
+                <td>Ente's own cloud, with an Ente account</td>
+                <td class="yes">None</td>
+                <td class="num">$0.99–$119.99</td>
+              </tr>
+              <tr>
+                <th scope="row"><a href="https://apps.apple.com/us/app/encamera-encrypted-photo-vault/id1639202616">Encamera</a><small>Encamera LLC</small></th>
+                <td class="num">146 · 4.5★</td>
+                <td class="num">8 Sep 2026</td>
+                <td>Says all media is encrypted; open source</td>
+                <td class="no">Not in listing</td>
+                <td>Your own iCloud (optional)</td>
+                <td class="yes">None</td>
+                <td class="num">$1.99–$99.99</td>
+              </tr>
+              <tr>
+                <th scope="row"><a href="https://apps.apple.com/us/app/photo-vault-vaultaire/id6758529311">Vaultaire</a><small>Wraxle LLC</small></th>
+                <td class="num">46 · 4.7★</td>
+                <td class="num">21 Oct 2026</td>
+                <td class="yes">AES-256-GCM</td>
+                <td>Yes; duress vault in Pro</td>
+                <td>Encrypted iCloud backup, free and Pro</td>
+                <td class="yes">None</td>
+                <td class="num">$1.99–$99.99</td>
+              </tr>
+              <tr>
+                <th scope="row"><a href="https://apps.apple.com/us/app/obscura-photo-vault/id6759755376">Obscura</a><small>Orlio Inc</small></th>
+                <td class="num">20 · 4.2★</td>
+                <td class="num">20 Oct 2026</td>
+                <td class="yes">AES-256-GCM; encryption code open source</td>
+                <td>Separate vaults with own passwords (Pro)</td>
+                <td class="no">No cloud; iOS backup or encrypted export file</td>
+                <td class="yes">None (Data Not Collected)</td>
+                <td class="num">$6.99–$39.99</td>
+              </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="container article-layout">
+      <article class="prose">
+        <h2 id="picks">Which photo vault should you use?</h2>
+        <p>It depends on what you're protecting against. Here is what the listings support, by need.</p>
+        <h3 id="pick-free">Free and built in: Apple's Hidden album</h3>
+        <p>If you mainly want photos out of your main library and away from someone scrolling your phone, the Hidden album is free and locked with Face ID by default. It isn't a separate vault: anyone who knows your iPhone passcode can open it, and it syncs to your other devices. Turn on Advanced Data Protection if you want your iCloud Photos end-to-end encrypted. Read more: <a href="/guides/is-iphone-hidden-album-private">Is the iPhone Hidden album actually private?</a></p>
+        <h3 id="pick-encrypted">An encrypted vault with a decoy and an iCloud backup: Darkroom or Vaultaire</h3>
+        <p>Both open with a drawn pattern, both say they encrypt files with AES-256-GCM, both include an encrypted iCloud backup on the free plan, and both have a decoy vault and no account. Vaultaire's free plan holds 100 photos and 10 videos. Darkroom's holds 150 photos and 10 videos, adds a recovery phrase you write down at setup, and its privacy label is Data Not Collected.</p>
+        <h3 id="pick-open-source">Open-source encryption code: Obscura, Encamera or Ente</h3>
+        <p>Obscura says its encryption code is open source and uses AES-256-GCM, with no accounts and no cloud. Encamera says its code is open source and can store in your own iCloud. Ente Photos is open source and third-party audited, but it's an end-to-end encrypted cloud photo library with an account, not a hidden vault.</p>
+        <h3 id="pick-popular">The most-reviewed: Private Photo Vault and Keepsafe</h3>
+        <p>With over a million and 385,000 US ratings, these are the most familiar names. Neither listing names a cipher, both use their own cloud for backup, and both report usage data used to track you.</p>
+
+        <h2 id="methodology">How we compared them</h2>
+        <ul>
+          <li><strong>Which apps:</strong> the vault apps that appear most across US App Store searches for "private photo vault", "hide photos", "secret photo album" and similar terms, plus privacy-focused apps that compete for the same people.</li>
+          <li><strong>Ratings and last update:</strong> Apple's public iTunes lookup data, US store, 22 October 2026.</li>
+          <li><strong>Encryption, decoy and backup:</strong> what each developer says in its App Store description. We report claims, not test results.</li>
+          <li><strong>Data used to track you:</strong> the App Store privacy label, which each developer reports to Apple.</li>
+          <li><strong>In-app prices:</strong> the lowest and highest in-app purchase listed on the US product page. Some apps list several price points for the same plan.</li>
+          <li><strong>Darkroom's row</strong> describes our own app as submitted to the App Store.</li>
+        </ul>
+        <p>Apple sources: <a href="https://support.apple.com/en-us/104987">Hide photos with the Hidden album</a>, <a href="https://support.apple.com/en-us/102651">iCloud data security overview</a>.</p>
+        <p>We update this page monthly. If something here is wrong or out of date, email <a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a> and we will correct it.</p>
+
+        <div class="cta-card">
+          <p class="cta-card-title">Try Darkroom free</p>
+          <p>150 photos, 10 videos, a decoy vault and full encrypted iCloud backup, free. No ads, no account.</p>
+          <a href="/#waitlist" class="btn btn-primary" data-cta="body" data-label-waitlist="Join the Early Tester List" data-label-live="Download on the App Store">Join the Early Tester List</a>
+          <!-- build:status -->
+          <span class="release-status">Version 1.0 was submitted to App Store review in October 2026. It is not on the App Store yet.</span>
+          <!-- /build:status -->
+        </div>
+      </article>
+
+      <aside class="article-aside" aria-label="On this page">
+        <nav class="toc" aria-label="Table of contents">
+          <p class="toc-title">On this page</p>
+          <ol>
+            <li><a href="#what-matters">What matters in a vault</a></li>
+            <li><a href="#table">All 17 apps at a glance</a></li>
+            <li><a href="#picks">Which one should you use?</a></li>
+            <li><a href="#methodology">How we compared them</a></li>
+          </ol>
+        </nav>
+        <div class="related">
+          <p class="toc-title">Related guides</p>
+          <ul role="list">
+            <li><a href="/guides/how-to-hide-photos-on-iphone">How to hide photos on iPhone</a></li>
+            <li><a href="/guides/is-iphone-hidden-album-private">Is the Hidden album private?</a></li>
+            <li><a href="/guides/move-photo-vault-to-new-iphone">Move a vault to a new iPhone</a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- build:footer -->
+  <!-- Shared footer for subpages. Edit partials/footer.html, then run python3 tools/build.py. -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="/" class="logo" style="margin-bottom:12px" aria-label="Darkroom home">
+            <span class="logo-plate" aria-hidden="true">
+              <svg viewBox="0 0 180 180" width="30" height="30" aria-hidden="true"><use href="#darkroom-logo-mark"></use></svg>
+            </span>
+            <span>Darkroom</span>
+          </a>
+          <p style="color:var(--muted);max-width:34ch;margin-bottom:14px">Encrypted photo, video and note vault for iPhone and iPad. Encrypted on your device, backed up to your own iCloud.</p>
+          <p style="color:var(--amber);font-family:var(--font-mono);font-size:0.75rem">No accounts · No ads · No analytics</p>
+        </div>
+
+        <div class="footer-col">
+          <h2 class="footer-heading">Guides</h2>
+          <ul role="list">
+            <li><a href="/guides/how-to-hide-photos-on-iphone">How to hide photos on iPhone</a></li>
+  <li><a href="/guides/is-iphone-hidden-album-private">Is the Hidden album private?</a></li>
+  <li><a href="/guides/move-photo-vault-to-new-iphone">Move a photo vault to a new iPhone</a></li>
+  <li><a href="/guides/photo-vault-lost-photos">Photo vault lost your photos</a></li>
+  <li><a href="/guides/keepsafe-alternatives">Keepsafe alternatives</a></li>
+            <li><a href="/guides/">All guides</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h2 class="footer-heading">Darkroom</h2>
+          <ul role="list">
+            <li><a href="/#features">Features</a></li>
+            <li><a href="/#security">How the encryption works</a></li>
+            <li><a href="/#pricing">Free vs Pro</a></li>
+            <li><a href="/best-photo-vault-apps-iphone">Photo vault apps compared</a></li>
+            <li><a href="/#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h2 class="footer-heading">Help &amp; Legal</h2>
+          <ul role="list">
+            <li><a href="/about">About</a></li>
+            <li><a href="/support">Support</a></li>
+            <li><a href="/privacy">Privacy policy</a></li>
+            <li><a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Darkroom · Inertia Projects</p>
+        <p>App Store privacy label: <strong>Data Not Collected</strong></p>
+      </div>
+    </div>
+  </footer>
+  <!-- /build:footer -->
+
+  <script src="/app.js" defer></script>
+</body>
+</html>

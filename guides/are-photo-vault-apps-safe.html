@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" id="meta-theme-color" content="#070605">
+  <script>
+    try {
+      const savedScheme = localStorage.getItem("color-scheme");
+      const metaScheme = document.querySelector('meta[name="color-scheme"]');
+      const metaTheme = document.getElementById("meta-theme-color");
+      const prefersLight = window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches;
+      const resolved = savedScheme === "light" || savedScheme === "dark" ? savedScheme : (prefersLight ? "light" : "dark");
+      if (metaScheme) metaScheme.content = resolved;
+      if (metaTheme) metaTheme.content = resolved === "light" ? "#F3EEE7" : "#070605";
+      document.documentElement.dataset.theme = resolved;
+    } catch {}
+  </script>
+  <!-- build:meta -->
+  <title>Are Photo Vault Apps Safe? What to Check First</title>
+  <meta name="description" content="Some photo vault apps encrypt your photos; others only hide them behind a PIN. Six things to check before trusting one, with data from 17 apps.">
+  <link rel="canonical" href="https://darkroom.buzz/guides/are-photo-vault-apps-safe">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Darkroom">
+  <meta property="og:title" content="Are Photo Vault Apps Safe? What to Check First">
+  <meta property="og:description" content="Some photo vault apps encrypt your photos; others only hide them behind a PIN. Six things to check before trusting one, with data from 17 apps.">
+  <meta property="og:url" content="https://darkroom.buzz/guides/are-photo-vault-apps-safe">
+  <meta property="og:image" content="https://darkroom.buzz/assets/og/darkroom-og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Darkroom photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
+  <meta property="og:locale" content="en_US">
+  <meta property="article:published_time" content="2026-10-22">
+  <meta property="article:modified_time" content="2026-10-22">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Are Photo Vault Apps Safe? What to Check First">
+  <meta name="twitter:description" content="Some photo vault apps encrypt your photos; others only hide them behind a PIN. Six things to check before trusting one, with data from 17 apps.">
+  <meta name="twitter:image" content="https://darkroom.buzz/assets/og/darkroom-og.png">
+  <meta name="twitter:image:alt" content="Darkroom photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
+  <!-- /build:meta -->
+
+  <link rel="icon" type="image/svg+xml" href="/assets/darkroom-logo.svg">
+  <link rel="apple-touch-icon" href="/assets/darkroom-icon-180.png">
+
+  <link rel="preload" href="/assets/fonts/plus-jakarta-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/fonts/fonts.css">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/pages.css">
+
+  <!-- build:jsonld -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://darkroom.buzz/#org",
+        "name": "Inertia Projects",
+        "url": "https://darkroom.buzz/about",
+        "email": "business@inertiaprojects.info",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://darkroom.buzz/assets/darkroom-icon-512.png"
+        },
+        "brand": {
+          "@type": "Brand",
+          "name": "Darkroom"
+        }
+      },
+      {
+        "@type": "Article",
+        "@id": "https://darkroom.buzz/guides/are-photo-vault-apps-safe#article",
+        "headline": "Are photo vault apps safe? What to check before you trust one",
+        "description": "Some photo vault apps encrypt your photos; others only hide them behind a PIN. Six things to check before trusting one, with data from 17 apps.",
+        "url": "https://darkroom.buzz/guides/are-photo-vault-apps-safe",
+        "mainEntityOfPage": "https://darkroom.buzz/guides/are-photo-vault-apps-safe",
+        "image": "https://darkroom.buzz/assets/guides/darkroom-promises.jpg",
+        "datePublished": "2026-10-22",
+        "dateModified": "2026-10-22",
+        "author": {
+          "@id": "https://darkroom.buzz/#org"
+        },
+        "publisher": {
+          "@id": "https://darkroom.buzz/#org"
+        },
+        "inLanguage": "en-US",
+        "isPartOf": {
+          "@id": "https://darkroom.buzz/#website"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Darkroom",
+            "item": "https://darkroom.buzz/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Guides",
+            "item": "https://darkroom.buzz/guides/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Are photo vault apps safe?",
+            "item": "https://darkroom.buzz/guides/are-photo-vault-apps-safe"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://darkroom.buzz/guides/are-photo-vault-apps-safe#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Are photo vault apps safe to use?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Some are. The safe ones encrypt photos on your phone with a key only you control, keep a backup you can restore, and don't track you. Check the listing and privacy label before trusting one."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can photo vault apps see my photos?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If the app encrypts on your phone with a key only you hold, no. If it keeps photos unencrypted, or stores them on its own servers with a key it controls, it could."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is the iPhone Hidden album safer than a vault app?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It's safer than a vault that doesn't encrypt, but it opens with your iPhone passcode and syncs to your other devices. A good vault adds a separate code and its own encryption."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do photo vault apps get hacked?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Weak ones can leak photos through unencrypted files or cloud accounts. With a properly encrypted vault, the risk shifts to your code: keep it long and private."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <!-- /build:jsonld -->
+</head>
+<body>
+  <!-- build:header -->
+  <!-- Shared header for subpages. Edit partials/header.html, then run python3 tools/build.py. -->
+  <svg width="0" height="0" style="position:absolute;visibility:hidden" aria-hidden="true">
+    <symbol id="darkroom-logo-mark" viewBox="0 0 180 180">
+      <defs>
+        <linearGradient id="drChassis" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#28211D"/>
+          <stop offset="0.55" stop-color="#191412"/>
+          <stop offset="1" stop-color="#0E0B09"/>
+        </linearGradient>
+      </defs>
+      <rect width="180" height="180" rx="40" fill="url(#drChassis)"/>
+      <rect x="2" y="2" width="176" height="176" rx="38" fill="none" stroke="#3D332C" stroke-width="2" opacity="0.7"/>
+      <!-- 5x5 Bolt Matrix (19 inactive bolts) -->
+      <g fill="#433932" stroke="#574B42" stroke-width="1.5">
+        <circle cx="38" cy="38" r="8.5"/>
+        <circle cx="64" cy="38" r="8.5"/>
+        <circle cx="90" cy="38" r="8.5"/>
+        <circle cx="116" cy="38" r="8.5"/>
+        <circle cx="38" cy="64" r="8.5"/>
+        <circle cx="64" cy="64" r="8.5"/>
+        <circle cx="142" cy="64" r="8.5"/>
+        <circle cx="38" cy="90" r="8.5"/>
+        <circle cx="90" cy="90" r="8.5"/>
+        <circle cx="116" cy="90" r="8.5"/>
+        <circle cx="142" cy="90" r="8.5"/>
+        <circle cx="38" cy="116" r="8.5"/>
+        <circle cx="90" cy="116" r="8.5"/>
+        <circle cx="116" cy="116" r="8.5"/>
+        <circle cx="142" cy="116" r="8.5"/>
+        <circle cx="64" cy="142" r="8.5"/>
+        <circle cx="90" cy="142" r="8.5"/>
+        <circle cx="116" cy="142" r="8.5"/>
+        <circle cx="142" cy="142" r="8.5"/>
+      </g>
+      <!-- Connecting safelight path: (0,4) -> (1,3) -> (1,2) -> (2,1) -> (3,1) -> (4,0) -->
+      <path d="M38 142 L64 116 L64 90 L90 64 L116 64 L142 38" fill="none" stroke="#F04E37" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- 6 Active Safelight Bolts -->
+      <g fill="#F04E37">
+        <circle cx="38" cy="142" r="9"/>
+        <circle cx="64" cy="116" r="9"/>
+        <circle cx="64" cy="90" r="9"/>
+        <circle cx="90" cy="64" r="9"/>
+        <circle cx="116" cy="64" r="9"/>
+        <circle cx="142" cy="38" r="10.5"/>
+      </g>
+    </symbol>
+  </svg>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="/" class="logo" aria-label="Darkroom home">
+        <span class="logo-plate" aria-hidden="true">
+          <svg viewBox="0 0 180 180" width="30" height="30" aria-hidden="true"><use href="#darkroom-logo-mark"></use></svg>
+        </span>
+        <span>Darkroom</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="/#features">Features</a>
+        <a href="/#security">Security</a>
+        <a href="/#pricing">Pricing</a>
+        <a href="/best-photo-vault-apps-iphone">Compare</a>
+        <a href="/guides/">Guides</a>
+        <a href="/about">About</a>
+        <a href="/support">Support</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle"
+                class="theme-toggle"
+                type="button"
+                aria-label="Switch to light mode"
+                aria-pressed="false"
+                data-light-label="Light"
+                data-dark-label="Dark"
+                data-switch-light="Switch to light mode"
+                data-switch-dark="Switch to dark mode">
+          <span class="theme-icon" id="theme-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><line x1="12" y1="2.5" x2="12" y2="5.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="12" y1="18.8" x2="12" y2="21.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="2.5" y1="12" x2="5.2" y2="12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="18.8" y1="12" x2="21.5" y2="12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="5.3" y1="5.3" x2="7.2" y2="7.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="16.8" y1="16.8" x2="18.7" y2="18.7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="16.8" y1="7.2" x2="18.7" y2="5.3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="5.3" y1="18.7" x2="7.2" y2="16.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </span>
+          <span id="theme-label">Light</span>
+        </button>
+
+        <a href="/#waitlist" class="btn btn-primary btn-nav" data-cta="nav" data-label-waitlist="Early Access" data-label-live="Get the App">Early Access</a>
+
+        <button type="button" class="mobile-menu-btn" id="mobile-menu-btn" aria-expanded="false" aria-controls="mobile-drawer" aria-label="Toggle menu">
+          <svg class="icon-menu" viewBox="0 0 24 24" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+          <svg class="icon-close" viewBox="0 0 24 24" aria-hidden="true"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-drawer" id="mobile-drawer" hidden>
+      <div class="container">
+        <nav class="mobile-drawer-list" aria-label="Mobile">
+          <a href="/#features"><span>Features</span></a>
+          <a href="/#security"><span>Security</span></a>
+          <a href="/#pricing"><span>Pricing</span></a>
+          <a href="/best-photo-vault-apps-iphone"><span>Compare vault apps</span></a>
+          <a href="/guides/"><span>Guides</span></a>
+          <a href="/about"><span>About</span></a>
+          <a href="/support"><span>Support</span></a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- /build:header -->
+
+  <main id="main-content" tabindex="-1">
+    <div class="page-hero">
+      <div class="container">
+        <!-- build:breadcrumbs -->
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="/">Darkroom</a></li>
+            <li><a href="/guides/">Guides</a></li>
+            <li aria-current="page">Are photo vault apps safe?</li>
+          </ol>
+        </nav>
+        <!-- /build:breadcrumbs -->
+        <p class="eyebrow"><span class="dot dot-amber" aria-hidden="true"></span>Guide · Safety</p>
+        <h1>Are photo vault apps safe? What to check before you trust one</h1>
+        <!-- build:byline -->
+        <p class="byline"><span>By <a href="https://darkroom.buzz/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>Last updated <time datetime="2026-10-22">22 October 2026</time></span></p>
+        <!-- /build:byline -->
+        <div class="answer">
+          <span class="answer-label">Short answer</span>
+          <p>Some are, and many aren't as safe as they sound. A safe vault encrypts photos on your phone with a key only you control, keeps a backup you can actually restore, and doesn't track you. Of 17 vault apps we checked in October 2026, 9 reported data used to track you, 6 didn't mention encryption in their App Store listing, and only 2 named AES-256-GCM.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container article-layout">
+      <article class="prose">
+        <p>"Is it safe?" can mean two things: will other people be unable to see my photos, and will I never lose them? A good vault has to do both, and the two pull against each other. Here are the real risks, what 17 apps' App Store pages show, and a checklist you can use on any vault.</p>
+
+        <h2 id="risks">What are the real risks of photo vault apps?</h2>
+        <ul>
+          <li><strong>No real encryption.</strong> Some vaults only put a PIN screen in front of normal image files. Anyone who reaches the files another way can see them.</li>
+          <li><strong>Losing your photos.</strong> Vault photos are often left out of normal iPhone backups. A new phone, a reinstall or an expired subscription can leave them stranded. In recent one- and two-star reviews of eight popular vaults, lost or missing photos came up 47 times.</li>
+          <li><strong>Getting locked out.</strong> A forgotten code with no recovery option can mean losing everything.</li>
+          <li><strong>Your data going elsewhere.</strong> Ad and analytics SDKs, and backups on the developer's servers, mean your activity, or your photos, leave your control.</li>
+          <li><strong>Paywalls around your own photos.</strong> Some apps limit access when you stop paying.</li>
+        </ul>
+
+        <h2 id="numbers">What do vault apps' App Store listings show?</h2>
+        <p>We looked at 17 popular iPhone vault apps on 22 October 2026, using only what each developer says on its App Store page and the privacy label it reported to Apple:</p>
+        <div class="data-table-wrap" tabindex="0" role="region" aria-labelledby="safe-caption">
+          <table class="data-table">
+            <caption id="safe-caption">17 iPhone photo vault apps, US App Store, 22 October 2026</caption>
+            <thead><tr><th scope="col">Finding</th><th scope="col">Apps</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Report "Data Used to Track You"</th><td class="num">9 of 17</td></tr>
+              <tr><th scope="row">Don't mention encryption in the listing</th><td class="num">6 of 17</td></tr>
+              <tr><th scope="row">Name AES-256-GCM</th><td class="num">2 of 17</td></tr>
+              <tr><th scope="row">Report "Data Not Collected"</th><td class="num">3 of 17</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Not mentioning encryption doesn't prove an app doesn't encrypt, and privacy labels are self-reported. But a vault that protects your photos well usually says how. App-by-app details are in <a href="/best-photo-vault-apps-iphone">our comparison</a>.</p>
+
+        <h2 id="checklist">What should you check before trusting a photo vault?</h2>
+        <ol class="steps">
+          <li><strong>Encryption, named and on-device.</strong> Look for a specific cipher (AES-256) and a statement that photos are encrypted on the phone. "Secure" and "military-grade" alone tell you nothing. Our <a href="/guides/how-encrypted-photo-vaults-work">plain-English encryption guide</a> explains what to look for.</li>
+          <li><strong>A backup you can restore.</strong> Where does it go, is it encrypted with your key, and how do you restore on a new iPhone? Is backup included in the free plan?</li>
+          <li><strong>Recovery that doesn't weaken privacy.</strong> A recovery phrase or key you keep is safer than an email reset the developer controls. No recovery at all is private but unforgiving.</li>
+          <li><strong>The privacy label.</strong> On the App Store page, check "Data Used to Track You". For a vault, the best answer is "Data Not Collected".</li>
+          <li><strong>The stop-paying rule.</strong> Can you still view, export and back up your photos if the subscription ends?</li>
+          <li><strong>Export.</strong> Can you get everything out in full quality, with dates, in one go, without paying?</li>
+        </ol>
+
+        <h2 id="red-flags">What are the red flags?</h2>
+        <ul>
+          <li>Only "military-grade" or "bank-level" security, with no specifics.</li>
+          <li>A code that the developer can reset by email, without saying what that means for privacy.</li>
+          <li>Cloud backup only on a paid plan, so free users have one copy on one phone.</li>
+          <li>Heavy ads, or tracking data in the privacy label.</li>
+          <li>Recent reviews about photos disappearing after updates or new phones.</li>
+          <li>No update in over a year. Vault apps need to keep up with each iOS release.</li>
+        </ul>
+
+        <h2 id="safer">How do you use a photo vault more safely?</h2>
+        <ul>
+          <li><strong>Use a long code,</strong> and don't reuse your iPhone passcode.</li>
+          <li><strong>Save your recovery phrase or key</strong> on paper, somewhere safe.</li>
+          <li><strong>Remove originals</strong> from Photos and Recently Deleted after importing.</li>
+          <li><strong>Check the backup</strong> now and then, especially before changing phones (see <a href="/guides/move-photo-vault-to-new-iphone">our new-iPhone checklist</a>).</li>
+          <li><strong>Keep a second copy</strong> of anything irreplaceable, somewhere you control.</li>
+        </ul>
+        <p>We built Darkroom, our own vault, to pass this checklist: photos are encrypted on the iPhone with AES-256-GCM using a key from your pattern (Argon2id); the backup is encrypted, in your own iCloud, on the free plan; a recovery phrase you write down at setup is the only spare key; the privacy label is Data Not Collected; there are no ads; and if Pro ends you keep full access to view, export and back up. It's also brand new, with no reviews yet, so judge it by the same checklist.</p>
+        <figure class="shot">
+          <img src="/assets/guides/darkroom-promises.jpg" alt="Darkroom's promises screen: no sign-up, no ads, nobody else can look" width="559" height="1216" loading="lazy" decoding="async">
+          <figcaption>Darkroom: no account, no ads, encrypted on your iPhone.</figcaption>
+        </figure>
+
+        <div class="cta-card">
+          <p class="cta-card-title">Built to pass the checklist</p>
+          <p>Encrypted on your iPhone, backed up to your own iCloud, a recovery phrase only you hold, and Data Not Collected. Free for 150 photos and 10 videos.</p>
+          <a href="/#waitlist" class="btn btn-primary" data-cta="body" data-label-waitlist="Join the beta" data-label-live="Download on the App Store">Join the beta</a>
+          <!-- build:status -->
+          <span class="release-status">Version 1.0 was submitted to App Store review in October 2026. It is not on the App Store yet.</span>
+          <!-- /build:status -->
+        </div>
+
+        <h2 id="faq">Questions people ask</h2>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Are photo vault apps safe to use?</span></span></summary>
+            <div class="faq-body"><p>Some are. The safe ones encrypt photos on your phone with a key only you control, keep a backup you can restore, and don't track you. Check the listing and privacy label before trusting one.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Can photo vault apps see my photos?</span></span></summary>
+            <div class="faq-body"><p>If the app encrypts on your phone with a key only you hold, no. If it keeps photos unencrypted, or stores them on its own servers with a key it controls, it could.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Is the iPhone Hidden album safer than a vault app?</span></span></summary>
+            <div class="faq-body"><p>It's safer than a vault that doesn't encrypt, but it opens with your iPhone passcode and syncs to your other devices. A good vault adds a separate code and its own encryption.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Do photo vault apps get hacked?</span></span></summary>
+            <div class="faq-body"><p>Weak ones can leak photos through unencrypted files or cloud accounts. With a properly encrypted vault, the risk shifts to your code: keep it long and private.</p></div>
+          </details>
+        </div>
+
+        <p><em>Something wrong or out of date? Email <a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a> and we'll fix it.</em></p>
+      </article>
+
+      <aside class="article-aside" aria-label="On this page">
+        <nav class="toc" aria-label="Table of contents">
+          <p class="toc-title">On this page</p>
+          <ol>
+            <li><a href="#risks">The real risks</a></li>
+            <li><a href="#numbers">What the listings show</a></li>
+            <li><a href="#checklist">Six things to check</a></li>
+            <li><a href="#red-flags">Red flags</a></li>
+            <li><a href="#safer">Using one more safely</a></li>
+            <li><a href="#faq">Questions people ask</a></li>
+          </ol>
+        </nav>
+        <div class="related">
+          <p class="toc-title">Related</p>
+          <ul role="list">
+            <li><a href="/guides/how-encrypted-photo-vaults-work">How encrypted vaults work</a></li>
+            <li><a href="/guides/is-iphone-hidden-album-private">Is the Hidden album private?</a></li>
+            <li><a href="/best-photo-vault-apps-iphone">Photo vault apps compared</a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- build:footer -->
+  <!-- Shared footer for subpages. Edit partials/footer.html, then run python3 tools/build.py. -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="/" class="logo" style="margin-bottom:12px" aria-label="Darkroom home">
+            <span class="logo-plate" aria-hidden="true">
+              <svg viewBox="0 0 180 180" width="30" height="30" aria-hidden="true"><use href="#darkroom-logo-mark"></use></svg>
+            </span>
+            <span>Darkroom</span>
+          </a>
+          <p style="color:var(--muted);max-width:34ch;margin-bottom:14px">Encrypted photo, video and note vault for iPhone and iPad. Encrypted on your device, backed up to your own iCloud.</p>
+          <p style="color:var(--amber);font-family:var(--font-mono);font-size:0.75rem">No accounts · No ads · No analytics</p>
+        </div>
+
+        <div class="footer-col">
+          <h2 class="footer-heading">Guides</h2>
+          <ul role="list">
+            <li><a href="/guides/how-to-hide-photos-on-iphone">How to hide photos on iPhone</a></li>
+  <li><a href="/guides/is-iphone-hidden-album-private">Is the Hidden album private?</a></li>
+  <li><a href="/guides/move-photo-vault-to-new-iphone">Move a photo vault to a new iPhone</a></li>
+  <li><a href="/guides/photo-vault-lost-photos">Photo vault lost your photos</a></li>
+  <li><a href="/guides/keepsafe-alternatives">Keepsafe alternatives</a></li>
+            <li><a href="/guides/">All guides</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h2 class="footer-heading">Darkroom</h2>
+          <ul role="list">
+            <li><a href="/#features">Features</a></li>
+            <li><a href="/#security">How the encryption works</a></li>
+            <li><a href="/#pricing">Free vs Pro</a></li>
+            <li><a href="/best-photo-vault-apps-iphone">Photo vault apps compared</a></li>
+            <li><a href="/#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h2 class="footer-heading">Help &amp; Legal</h2>
+          <ul role="list">
+            <li><a href="/about">About</a></li>
+            <li><a href="/support">Support</a></li>
+            <li><a href="/privacy">Privacy policy</a></li>
+            <li><a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Darkroom · Inertia Projects</p>
+        <p>App Store privacy label: <strong>Data Not Collected</strong></p>
+      </div>
+    </div>
+  </footer>
+  <!-- /build:footer -->
+
+  <script src="/app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" id="meta-theme-color" content="#070605">
+  <script>
+    try {
+      const savedScheme = localStorage.getItem("color-scheme");
+      const metaScheme = document.querySelector('meta[name="color-scheme"]');
+      const metaTheme = document.getElementById("meta-theme-color");
+      const prefersLight = window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches;
+      const resolved = savedScheme === "light" || savedScheme === "dark" ? savedScheme : (prefersLight ? "light" : "dark");
+      if (metaScheme) metaScheme.content = resolved;
+      if (metaTheme) metaTheme.content = resolved === "light" ? "#F3EEE7" : "#070605";
+      document.documentElement.dataset.theme = resolved;
+    } catch {}
+  </script>
+  <!-- build:meta -->
+  <title>How to Hide Videos on iPhone (iOS 26)</title>
+  <meta name="description" content="Hide videos on iPhone with the Hidden album, a locked note or a vault app. What changes for large 4K videos, Live Photos and iCloud storage.">
+  <link rel="canonical" href="https://darkroom.buzz/guides/how-to-hide-videos-on-iphone">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Darkroom">
+  <meta property="og:title" content="How to Hide Videos on iPhone (iOS 26)">
+  <meta property="og:description" content="Hide videos on iPhone with the Hidden album, a locked note or a vault app. What changes for large 4K videos, Live Photos and iCloud storage.">
+  <meta property="og:url" content="https://darkroom.buzz/guides/how-to-hide-videos-on-iphone">
+  <meta property="og:image" content="https://darkroom.buzz/assets/og/darkroom-og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Darkroom photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
+  <meta property="og:locale" content="en_US">
+  <meta property="article:published_time" content="2026-10-22">
+  <meta property="article:modified_time" content="2026-10-22">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="How to Hide Videos on iPhone (iOS 26)">
+  <meta name="twitter:description" content="Hide videos on iPhone with the Hidden album, a locked note or a vault app. What changes for large 4K videos, Live Photos and iCloud storage.">
+  <meta name="twitter:image" content="https://darkroom.buzz/assets/og/darkroom-og.png">
+  <meta name="twitter:image:alt" content="Darkroom photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
+  <!-- /build:meta -->
+
+  <link rel="icon" type="image/svg+xml" href="/assets/darkroom-logo.svg">
+  <link rel="apple-touch-icon" href="/assets/darkroom-icon-180.png">
+
+  <link rel="preload" href="/assets/fonts/plus-jakarta-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/fonts/fonts.css">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/pages.css">
+
+  <!-- build:jsonld -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://darkroom.buzz/#org",
+        "name": "Inertia Projects",
+        "url": "https://darkroom.buzz/about",
+        "email": "business@inertiaprojects.info",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://darkroom.buzz/assets/darkroom-icon-512.png"
+        },
+        "brand": {
+          "@type": "Brand",
+          "name": "Darkroom"
+        }
+      },
+      {
+        "@type": "Article",
+        "@id": "https://darkroom.buzz/guides/how-to-hide-videos-on-iphone#article",
+        "headline": "How to hide videos on iPhone, and keep them playable",
+        "description": "Hide videos on iPhone with the Hidden album, a locked note or a vault app. What changes for large 4K videos, Live Photos and iCloud storage.",
+        "url": "https://darkroom.buzz/guides/how-to-hide-videos-on-iphone",
+        "mainEntityOfPage": "https://darkroom.buzz/guides/how-to-hide-videos-on-iphone",
+        "image": "https://darkroom.buzz/assets/guides/darkroom-library.jpg",
+        "datePublished": "2026-10-22",
+        "dateModified": "2026-10-22",
+        "author": {
+          "@id": "https://darkroom.buzz/#org"
+        },
+        "publisher": {
+          "@id": "https://darkroom.buzz/#org"
+        },
+        "inLanguage": "en-US",
+        "isPartOf": {
+          "@id": "https://darkroom.buzz/#website"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Darkroom",
+            "item": "https://darkroom.buzz/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Guides",
+            "item": "https://darkroom.buzz/guides/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "How to hide videos on iPhone",
+            "item": "https://darkroom.buzz/guides/how-to-hide-videos-on-iphone"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://darkroom.buzz/guides/how-to-hide-videos-on-iphone#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Can you hide videos on iPhone without an app?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Touch and hold the video in Photos and tap Hide. It moves to the Hidden album, which opens with Face ID or your passcode."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do hidden videos lose quality?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Not in the Photos app; hiding doesn't change the file. Some vault apps compress videos or keep the original only in their cloud, so check before you move large videos into one."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why won't my videos play in my vault app?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Usually because the full-size video is still downloading from the app's cloud, the import didn't finish, or the app has to decrypt the whole file first. Keep the app open on Wi-Fi, and contact the developer if one video never plays."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do hidden videos still use iCloud storage?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Hidden videos in Photos count toward iCloud Photos, and videos in a vault that backs up to iCloud count toward your iCloud storage."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <!-- /build:jsonld -->
+</head>
+<body>
+  <!-- build:header -->
+  <!-- Shared header for subpages. Edit partials/header.html, then run python3 tools/build.py. -->
+  <svg width="0" height="0" style="position:absolute;visibility:hidden" aria-hidden="true">
+    <symbol id="darkroom-logo-mark" viewBox="0 0 180 180">
+      <defs>
+        <linearGradient id="drChassis" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#28211D"/>
+          <stop offset="0.55" stop-color="#191412"/>
+          <stop offset="1" stop-color="#0E0B09"/>
+        </linearGradient>
+      </defs>
+      <rect width="180" height="180" rx="40" fill="url(#drChassis)"/>
+      <rect x="2" y="2" width="176" height="176" rx="38" fill="none" stroke="#3D332C" stroke-width="2" opacity="0.7"/>
+      <!-- 5x5 Bolt Matrix (19 inactive bolts) -->
+      <g fill="#433932" stroke="#574B42" stroke-width="1.5">
+        <circle cx="38" cy="38" r="8.5"/>
+        <circle cx="64" cy="38" r="8.5"/>
+        <circle cx="90" cy="38" r="8.5"/>
+        <circle cx="116" cy="38" r="8.5"/>
+        <circle cx="38" cy="64" r="8.5"/>
+        <circle cx="64" cy="64" r="8.5"/>
+        <circle cx="142" cy="64" r="8.5"/>
+        <circle cx="38" cy="90" r="8.5"/>
+        <circle cx="90" cy="90" r="8.5"/>
+        <circle cx="116" cy="90" r="8.5"/>
+        <circle cx="142" cy="90" r="8.5"/>
+        <circle cx="38" cy="116" r="8.5"/>
+        <circle cx="90" cy="116" r="8.5"/>
+        <circle cx="116" cy="116" r="8.5"/>
+        <circle cx="142" cy="116" r="8.5"/>
+        <circle cx="64" cy="142" r="8.5"/>
+        <circle cx="90" cy="142" r="8.5"/>
+        <circle cx="116" cy="142" r="8.5"/>
+        <circle cx="142" cy="142" r="8.5"/>
+      </g>
+      <!-- Connecting safelight path: (0,4) -> (1,3) -> (1,2) -> (2,1) -> (3,1) -> (4,0) -->
+      <path d="M38 142 L64 116 L64 90 L90 64 L116 64 L142 38" fill="none" stroke="#F04E37" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- 6 Active Safelight Bolts -->
+      <g fill="#F04E37">
+        <circle cx="38" cy="142" r="9"/>
+        <circle cx="64" cy="116" r="9"/>
+        <circle cx="64" cy="90" r="9"/>
+        <circle cx="90" cy="64" r="9"/>
+        <circle cx="116" cy="64" r="9"/>
+        <circle cx="142" cy="38" r="10.5"/>
+      </g>
+    </symbol>
+  </svg>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="/" class="logo" aria-label="Darkroom home">
+        <span class="logo-plate" aria-hidden="true">
+          <svg viewBox="0 0 180 180" width="30" height="30" aria-hidden="true"><use href="#darkroom-logo-mark"></use></svg>
+        </span>
+        <span>Darkroom</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="/#features">Features</a>
+        <a href="/#security">Security</a>
+        <a href="/#pricing">Pricing</a>
+        <a href="/best-photo-vault-apps-iphone">Compare</a>
+        <a href="/guides/">Guides</a>
+        <a href="/about">About</a>
+        <a href="/support">Support</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle"
+                class="theme-toggle"
+                type="button"
+                aria-label="Switch to light mode"
+                aria-pressed="false"
+                data-light-label="Light"
+                data-dark-label="Dark"
+                data-switch-light="Switch to light mode"
+                data-switch-dark="Switch to dark mode">
+          <span class="theme-icon" id="theme-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><line x1="12" y1="2.5" x2="12" y2="5.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="12" y1="18.8" x2="12" y2="21.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="2.5" y1="12" x2="5.2" y2="12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="18.8" y1="12" x2="21.5" y2="12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="5.3" y1="5.3" x2="7.2" y2="7.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="16.8" y1="16.8" x2="18.7" y2="18.7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="16.8" y1="7.2" x2="18.7" y2="5.3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="5.3" y1="18.7" x2="7.2" y2="16.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </span>
+          <span id="theme-label">Light</span>
+        </button>
+
+        <a href="/#waitlist" class="btn btn-primary btn-nav" data-cta="nav" data-label-waitlist="Early Access" data-label-live="Get the App">Early Access</a>
+
+        <button type="button" class="mobile-menu-btn" id="mobile-menu-btn" aria-expanded="false" aria-controls="mobile-drawer" aria-label="Toggle menu">
+          <svg class="icon-menu" viewBox="0 0 24 24" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+          <svg class="icon-close" viewBox="0 0 24 24" aria-hidden="true"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-drawer" id="mobile-drawer" hidden>
+      <div class="container">
+        <nav class="mobile-drawer-list" aria-label="Mobile">
+          <a href="/#features"><span>Features</span></a>
+          <a href="/#security"><span>Security</span></a>
+          <a href="/#pricing"><span>Pricing</span></a>
+          <a href="/best-photo-vault-apps-iphone"><span>Compare vault apps</span></a>
+          <a href="/guides/"><span>Guides</span></a>
+          <a href="/about"><span>About</span></a>
+          <a href="/support"><span>Support</span></a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- /build:header -->
+
+  <main id="main-content" tabindex="-1">
+    <div class="page-hero">
+      <div class="container">
+        <!-- build:breadcrumbs -->
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="/">Darkroom</a></li>
+            <li><a href="/guides/">Guides</a></li>
+            <li aria-current="page">How to hide videos on iPhone</li>
+          </ol>
+        </nav>
+        <!-- /build:breadcrumbs -->
+        <p class="eyebrow"><span class="dot dot-amber" aria-hidden="true"></span>Guide · Hiding videos</p>
+        <h1>How to hide videos on iPhone, and keep them playable</h1>
+        <!-- build:byline -->
+        <p class="byline"><span>By <a href="https://darkroom.buzz/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>Last updated <time datetime="2026-10-22">22 October 2026</time></span></p>
+        <!-- /build:byline -->
+        <div class="answer">
+          <span class="answer-label">Short answer</span>
+          <p>To hide a video on iPhone, touch and hold it in Photos and tap Hide. It moves to the Hidden album, which is locked with Face ID. For videos that must stay private even from someone who knows your passcode, use a vault app with its own code, and check that it keeps videos at full quality and plays large ones without trouble.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container article-layout">
+      <article class="prose">
+        <p>Hiding a video works the same way as hiding a photo, but videos bring their own problems: they're big, they fill iCloud, and they're where vault apps most often let people down. In the most recent one- and two-star reviews of eight popular vault apps, which we read in October 2026, video problems came up 40 times. Here's how to hide videos and keep them playable.</p>
+
+        <h2 id="photos">How do you hide a video in the Photos app?</h2>
+        <p>The same way as a photo: touch and hold, then Hide.</p>
+        <ol class="steps">
+          <li><strong>Open Photos</strong> and find the video. <span class="path">Collections › Media Types › Videos</span> lists them all.</li>
+          <li><strong>Touch and hold it</strong>, tap <span class="path">Hide</span>, and confirm. For several, tap <span class="path">Select</span>, choose them, tap <span class="path">More (…)</span> and <span class="path">Hide</span>.</li>
+          <li><strong>Check the lock:</strong> in <span class="path">Settings › Apps › Photos</span>, make sure <span class="path">Use Face ID</span> is on.</li>
+        </ol>
+        <p>The video moves to <span class="path">Collections › Utilities › Hidden</span>, keeps its full quality, and plays as normal. As with photos, your iPhone passcode opens the Hidden album, and hidden videos sync to your other devices with iCloud Photos. More on that in <a href="/guides/is-iphone-hidden-album-private">is the Hidden album private?</a></p>
+
+        <h2 id="notes">Can you hide a video in a locked note?</h2>
+        <p>Yes, but it's only practical for short clips. Add the video to a note with the camera button, then lock the note with <span class="path">More (…) › Lock</span>. Large videos make notes slow to open and sync, and there's no gallery to browse.</p>
+
+        <h2 id="vault">How do you hide videos in a vault app?</h2>
+        <p>Import them from Photos into the vault, check they play, then delete the originals from Photos and Recently Deleted. Before you trust a vault with videos, check four things:</p>
+        <ul>
+          <li><strong>Does it keep full quality?</strong> Some vaults compress videos, or keep originals only in their own cloud. Look for "original quality" or similar in the listing.</li>
+          <li><strong>Does it handle big files?</strong> 4K, HDR, slow-motion and long videos are often several gigabytes. Import one long video as a test.</li>
+          <li><strong>Do videos play without waiting?</strong> Some encrypted vaults decrypt the whole file before playing it, which takes time and space. Better ones decrypt as they play.</li>
+          <li><strong>Are videos in the free plan?</strong> Many free plans limit videos more than photos. Darkroom's free plan, for example, holds 10 videos.</li>
+        </ul>
+        <p>In Darkroom, which we make, videos are encrypted on the iPhone in 1 MiB chunks with AES-256-GCM. Because each chunk can be decrypted on its own, even long 4K videos start playing straight away, without a decrypted copy written to storage. Videos keep their original quality and date, and export back to Photos the same way. You can also record videos straight into the vault with its camera, so they never touch your camera roll.</p>
+        <figure class="shot">
+          <img src="/assets/guides/darkroom-library.jpg" alt="Darkroom's library: a private grid of photos and videos inside the vault" width="559" height="1216" loading="lazy" decoding="async">
+          <figcaption>Photos and videos in a Darkroom vault, encrypted on the iPhone.</figcaption>
+        </figure>
+
+        <h2 id="video-problems">Why do videos cause trouble in vault apps?</h2>
+        <p>Size, mostly. A minute of 4K video can be hundreds of megabytes, so anything a vault does to a video (import, encrypt, back up, restore) takes longer and fails more often than with photos.</p>
+        <ul>
+          <li><strong>Import fails or stops</strong> when the app is closed mid-way or the phone runs low on space.</li>
+          <li><strong>Backups lag behind,</strong> especially if they only run on Wi-Fi or iCloud is nearly full, so the newest videos are the ones missing after a restore.</li>
+          <li><strong>Playback stalls</strong> when the app decrypts the whole file first.</li>
+          <li><strong>Formats get lost:</strong> Live Photos can lose their video part, and HDR can be flattened, if the app re-encodes.</li>
+        </ul>
+        <p>After importing, play a few videos from the start, middle and end, and check one Live Photo still moves.</p>
+
+        <h2 id="storage">How much storage do hidden videos take?</h2>
+        <p>The same as before you hid them, and sometimes double for a while. Hiding in Photos doesn't change size. Moving videos into a vault creates a second copy until you delete the originals, so make sure you have free space for the largest videos first.</p>
+        <p>If the vault backs up to iCloud, videos count toward your iCloud storage too. Check <span class="path">Settings › [your name] › iCloud</span> before a big import. In Darkroom you can keep videos from using mobile data with <span class="path">Wi-Fi only for videos</span> in the backup settings.</p>
+
+        <h2 id="after">What should you clean up after hiding videos?</h2>
+        <ul>
+          <li><strong>Recently Deleted:</strong> deleted originals stay for 30 days. Open <span class="path">Collections › Utilities › Recently Deleted</span>, unlock it, and delete them for good.</li>
+          <li><strong>Messages and chat apps:</strong> a video you sent or received has its own copy in that conversation.</li>
+          <li><strong>Shared albums and the Shared Library:</strong> people you shared with can still see it.</li>
+          <li><strong>Your computer:</strong> check old imports on a Mac or PC.</li>
+        </ul>
+
+        <div class="cta-card">
+          <p class="cta-card-title">Big videos, played straight away</p>
+          <p>Darkroom encrypts videos on your iPhone in small chunks, so even long 4K videos play without waiting, at full quality. Free for 10 videos and 150 photos.</p>
+          <a href="/#waitlist" class="btn btn-primary" data-cta="body" data-label-waitlist="Join the beta" data-label-live="Download on the App Store">Join the beta</a>
+          <!-- build:status -->
+          <span class="release-status">Version 1.0 was submitted to App Store review in October 2026. It is not on the App Store yet.</span>
+          <!-- /build:status -->
+        </div>
+
+        <h2 id="faq">Questions people ask</h2>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Can you hide videos on iPhone without an app?</span></span></summary>
+            <div class="faq-body"><p>Yes. Touch and hold the video in Photos and tap Hide. It moves to the Hidden album, which opens with Face ID or your passcode.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Do hidden videos lose quality?</span></span></summary>
+            <div class="faq-body"><p>Not in the Photos app; hiding doesn't change the file. Some vault apps compress videos or keep the original only in their cloud, so check before you move large videos into one.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Why won't my videos play in my vault app?</span></span></summary>
+            <div class="faq-body"><p>Usually because the full-size video is still downloading from the app's cloud, the import didn't finish, or the app has to decrypt the whole file first. Keep the app open on Wi-Fi, and contact the developer if one video never plays.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Do hidden videos still use iCloud storage?</span></span></summary>
+            <div class="faq-body"><p>Yes. Hidden videos in Photos count toward iCloud Photos, and videos in a vault that backs up to iCloud count toward your iCloud storage.</p></div>
+          </details>
+        </div>
+
+        <p><em>Something wrong or out of date? Email <a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a> and we'll fix it.</em></p>
+      </article>
+
+      <aside class="article-aside" aria-label="On this page">
+        <nav class="toc" aria-label="Table of contents">
+          <p class="toc-title">On this page</p>
+          <ol>
+            <li><a href="#photos">Hide a video in Photos</a></li>
+            <li><a href="#notes">Hide a video in Notes</a></li>
+            <li><a href="#vault">Hide videos in a vault app</a></li>
+            <li><a href="#video-problems">Why videos cause trouble</a></li>
+            <li><a href="#storage">Storage and iCloud</a></li>
+            <li><a href="#after">Clean up afterwards</a></li>
+            <li><a href="#faq">Questions people ask</a></li>
+          </ol>
+        </nav>
+        <div class="related">
+          <p class="toc-title">Related</p>
+          <ul role="list">
+            <li><a href="/guides/how-to-hide-photos-on-iphone">How to hide photos on iPhone</a></li>
+            <li><a href="/guides/photo-vault-lost-photos">Photo vault lost your photos?</a></li>
+            <li><a href="/best-photo-vault-apps-iphone">Photo vault apps compared</a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- build:footer -->
+  <!-- Shared footer for subpages. Edit partials/footer.html, then run python3 tools/build.py. -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="/" class="logo" style="margin-bottom:12px" aria-label="Darkroom home">
+            <span class="logo-plate" aria-hidden="true">
+              <svg viewBox="0 0 180 180" width="30" height="30" aria-hidden="true"><use href="#darkroom-logo-mark"></use></svg>
+            </span>
+            <span>Darkroom</span>
+          </a>
+          <p style="color:var(--muted);max-width:34ch;margin-bottom:14px">Encrypted photo, video and note vault for iPhone and iPad. Encrypted on your device, backed up to your own iCloud.</p>
+          <p style="color:var(--amber);font-family:var(--font-mono);font-size:0.75rem">No accounts · No ads · No analytics</p>
+        </div>
+
+        <div class="footer-col">
+          <h2 class="footer-heading">Guides</h2>
+          <ul role="list">
+            <li><a href="/guides/how-to-hide-photos-on-iphone">How to hide photos on iPhone</a></li>
+  <li><a href="/guides/is-iphone-hidden-album-private">Is the Hidden album private?</a></li>
+  <li><a href="/guides/move-photo-vault-to-new-iphone">Move a photo vault to a new iPhone</a></li>
+  <li><a href="/guides/photo-vault-lost-photos">Photo vault lost your photos</a></li>
+  <li><a href="/guides/keepsafe-alternatives">Keepsafe alternatives</a></li>
+            <li><a href="/guides/">All guides</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h2 class="footer-heading">Darkroom</h2>
+          <ul role="list">
+            <li><a href="/#features">Features</a></li>
+            <li><a href="/#security">How the encryption works</a></li>
+            <li><a href="/#pricing">Free vs Pro</a></li>
+            <li><a href="/best-photo-vault-apps-iphone">Photo vault apps compared</a></li>
+            <li><a href="/#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h2 class="footer-heading">Help &amp; Legal</h2>
+          <ul role="list">
+            <li><a href="/about">About</a></li>
+            <li><a href="/support">Support</a></li>
+            <li><a href="/privacy">Privacy policy</a></li>
+            <li><a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Darkroom · Inertia Projects</p>
+        <p>App Store privacy label: <strong>Data Not Collected</strong></p>
+      </div>
+    </div>
+  </footer>
+  <!-- /build:footer -->
+
+  <script src="/app.js" defer></script>
+</body>
+</html>

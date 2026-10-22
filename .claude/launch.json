@@ -4,8 +4,22 @@
     {
       "name": "darkroom-site",
       "runtimeExecutable": "python3",
-      "runtimeArgs": ["-m", "http.server", "4321", "--directory", "/Users/milansharma/dev/darkroom-website"],
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "4321",
+        "--directory",
+        "/Users/milansharma/dev/darkroom-website"
+      ],
       "port": 4321
+    },
+    {
+      "name": "darkroom-site-clean-urls",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "tools/serve.py"
+      ],
+      "port": 4322
     }
   ]
 }

@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" id="meta-theme-color" content="#070605">
+  <script>
+    try {
+      const savedScheme = localStorage.getItem("color-scheme");
+      const metaScheme = document.querySelector('meta[name="color-scheme"]');
+      const metaTheme = document.getElementById("meta-theme-color");
+      const prefersLight = window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches;
+      const resolved = savedScheme === "light" || savedScheme === "dark" ? savedScheme : (prefersLight ? "light" : "dark");
+      if (metaScheme) metaScheme.content = resolved;
+      if (metaTheme) metaTheme.content = resolved === "light" ? "#F3EEE7" : "#070605";
+      document.documentElement.dataset.theme = resolved;
+    } catch {}
+  </script>
+  <!-- build:meta -->
+  <title>How to Lock Photos on iPhone With Face ID or a Pattern</title>
+  <meta name="description" content="Lock photos on iPhone with Face ID: the Hidden album, locking the Photos app, locked notes, Guided Access, and vault apps that use their own pattern.">
+  <link rel="canonical" href="https://darkroom.buzz/guides/lock-photos-iphone-face-id">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Darkroom">
+  <meta property="og:title" content="How to Lock Photos on iPhone With Face ID or a Pattern">
+  <meta property="og:description" content="Lock photos on iPhone with Face ID: the Hidden album, locking the Photos app, locked notes, Guided Access, and vault apps that use their own pattern.">
+  <meta property="og:url" content="https://darkroom.buzz/guides/lock-photos-iphone-face-id">
+  <meta property="og:image" content="https://darkroom.buzz/assets/og/darkroom-og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Darkroom photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
+  <meta property="og:locale" content="en_US">
+  <meta property="article:published_time" content="2026-10-22">
+  <meta property="article:modified_time" content="2026-10-22">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="How to Lock Photos on iPhone With Face ID or a Pattern">
+  <meta name="twitter:description" content="Lock photos on iPhone with Face ID: the Hidden album, locking the Photos app, locked notes, Guided Access, and vault apps that use their own pattern.">
+  <meta name="twitter:image" content="https://darkroom.buzz/assets/og/darkroom-og.png">
+  <meta name="twitter:image:alt" content="Darkroom photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
+  <!-- /build:meta -->
+
+  <link rel="icon" type="image/svg+xml" href="/assets/darkroom-logo.svg">
+  <link rel="apple-touch-icon" href="/assets/darkroom-icon-180.png">
+
+  <link rel="preload" href="/assets/fonts/plus-jakarta-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/fonts/fonts.css">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/pages.css">
+
+  <!-- build:jsonld -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://darkroom.buzz/#org",
+        "name": "Inertia Projects",
+        "url": "https://darkroom.buzz/about",
+        "email": "business@inertiaprojects.info",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://darkroom.buzz/assets/darkroom-icon-512.png"
+        },
+        "brand": {
+          "@type": "Brand",
+          "name": "Darkroom"
+        }
+      },
+      {
+        "@type": "Article",
+        "@id": "https://darkroom.buzz/guides/lock-photos-iphone-face-id#article",
+        "headline": "How to lock photos on iPhone with Face ID, a passcode or a pattern",
+        "description": "Lock photos on iPhone with Face ID: the Hidden album, locking the Photos app, locked notes, Guided Access, and vault apps that use their own pattern.",
+        "url": "https://darkroom.buzz/guides/lock-photos-iphone-face-id",
+        "mainEntityOfPage": "https://darkroom.buzz/guides/lock-photos-iphone-face-id",
+        "image": "https://darkroom.buzz/assets/guides/darkroom-lock.jpg",
+        "datePublished": "2026-10-22",
+        "dateModified": "2026-10-22",
+        "author": {
+          "@id": "https://darkroom.buzz/#org"
+        },
+        "publisher": {
+          "@id": "https://darkroom.buzz/#org"
+        },
+        "inLanguage": "en-US",
+        "isPartOf": {
+          "@id": "https://darkroom.buzz/#website"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Darkroom",
+            "item": "https://darkroom.buzz/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Guides",
+            "item": "https://darkroom.buzz/guides/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Lock photos with Face ID",
+            "item": "https://darkroom.buzz/guides/lock-photos-iphone-face-id"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://darkroom.buzz/guides/lock-photos-iphone-face-id#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Can I lock a specific album on iPhone?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. The Photos app only locks the Hidden and Recently Deleted albums. To lock other photos, hide them, put them in a locked note, or use a vault app."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I lock photos with a different password than my iPhone passcode?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, in two ways: a locked note with a separate Notes password, or a vault app with its own PIN, password or pattern."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does locking the Photos app hide it?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Require Face ID only asks for Face ID when Photos opens. The app stays on your Home Screen."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is a pattern lock safer than a PIN?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Not automatically. What matters is whether the code is used to encrypt the photos and how slow it is to guess. A long pattern or password used to derive an encryption key is far stronger than a 4-digit PIN in front of normal files."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <!-- /build:jsonld -->
+</head>
+<body>
+  <!-- build:header -->
+  <!-- Shared header for subpages. Edit partials/header.html, then run python3 tools/build.py. -->
+  <svg width="0" height="0" style="position:absolute;visibility:hidden" aria-hidden="true">
+    <symbol id="darkroom-logo-mark" viewBox="0 0 180 180">
+      <defs>
+        <linearGradient id="drChassis" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#28211D"/>
+          <stop offset="0.55" stop-color="#191412"/>
+          <stop offset="1" stop-color="#0E0B09"/>
+        </linearGradient>
+      </defs>
+      <rect width="180" height="180" rx="40" fill="url(#drChassis)"/>
+      <rect x="2" y="2" width="176" height="176" rx="38" fill="none" stroke="#3D332C" stroke-width="2" opacity="0.7"/>
+      <!-- 5x5 Bolt Matrix (19 inactive bolts) -->
+      <g fill="#433932" stroke="#574B42" stroke-width="1.5">
+        <circle cx="38" cy="38" r="8.5"/>
+        <circle cx="64" cy="38" r="8.5"/>
+        <circle cx="90" cy="38" r="8.5"/>
+        <circle cx="116" cy="38" r="8.5"/>
+        <circle cx="38" cy="64" r="8.5"/>
+        <circle cx="64" cy="64" r="8.5"/>
+        <circle cx="142" cy="64" r="8.5"/>
+        <circle cx="38" cy="90" r="8.5"/>
+        <circle cx="90" cy="90" r="8.5"/>
+        <circle cx="116" cy="90" r="8.5"/>
+        <circle cx="142" cy="90" r="8.5"/>
+        <circle cx="38" cy="116" r="8.5"/>
+        <circle cx="90" cy="116" r="8.5"/>
+        <circle cx="116" cy="116" r="8.5"/>
+        <circle cx="142" cy="116" r="8.5"/>
+        <circle cx="64" cy="142" r="8.5"/>
+        <circle cx="90" cy="142" r="8.5"/>
+        <circle cx="116" cy="142" r="8.5"/>
+        <circle cx="142" cy="142" r="8.5"/>
+      </g>
+      <!-- Connecting safelight path: (0,4) -> (1,3) -> (1,2) -> (2,1) -> (3,1) -> (4,0) -->
+      <path d="M38 142 L64 116 L64 90 L90 64 L116 64 L142 38" fill="none" stroke="#F04E37" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- 6 Active Safelight Bolts -->
+      <g fill="#F04E37">
+        <circle cx="38" cy="142" r="9"/>
+        <circle cx="64" cy="116" r="9"/>
+        <circle cx="64" cy="90" r="9"/>
+        <circle cx="90" cy="64" r="9"/>
+        <circle cx="116" cy="64" r="9"/>
+        <circle cx="142" cy="38" r="10.5"/>
+      </g>
+    </symbol>
+  </svg>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="/" class="logo" aria-label="Darkroom home">
+        <span class="logo-plate" aria-hidden="true">
+          <svg viewBox="0 0 180 180" width="30" height="30" aria-hidden="true"><use href="#darkroom-logo-mark"></use></svg>
+        </span>
+        <span>Darkroom</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="/#features">Features</a>
+        <a href="/#security">Security</a>
+        <a href="/#pricing">Pricing</a>
+        <a href="/best-photo-vault-apps-iphone">Compare</a>
+        <a href="/guides/">Guides</a>
+        <a href="/about">About</a>
+        <a href="/support">Support</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle"
+                class="theme-toggle"
+                type="button"
+                aria-label="Switch to light mode"
+                aria-pressed="false"
+                data-light-label="Light"
+                data-dark-label="Dark"
+                data-switch-light="Switch to light mode"
+                data-switch-dark="Switch to dark mode">
+          <span class="theme-icon" id="theme-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><line x1="12" y1="2.5" x2="12" y2="5.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="12" y1="18.8" x2="12" y2="21.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="2.5" y1="12" x2="5.2" y2="12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="18.8" y1="12" x2="21.5" y2="12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="5.3" y1="5.3" x2="7.2" y2="7.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="16.8" y1="16.8" x2="18.7" y2="18.7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="16.8" y1="7.2" x2="18.7" y2="5.3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="5.3" y1="18.7" x2="7.2" y2="16.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </span>
+          <span id="theme-label">Light</span>
+        </button>
+
+        <a href="/#waitlist" class="btn btn-primary btn-nav" data-cta="nav" data-label-waitlist="Early Access" data-label-live="Get the App">Early Access</a>
+
+        <button type="button" class="mobile-menu-btn" id="mobile-menu-btn" aria-expanded="false" aria-controls="mobile-drawer" aria-label="Toggle menu">
+          <svg class="icon-menu" viewBox="0 0 24 24" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+          <svg class="icon-close" viewBox="0 0 24 24" aria-hidden="true"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-drawer" id="mobile-drawer" hidden>
+      <div class="container">
+        <nav class="mobile-drawer-list" aria-label="Mobile">
+          <a href="/#features"><span>Features</span></a>
+          <a href="/#security"><span>Security</span></a>
+          <a href="/#pricing"><span>Pricing</span></a>
+          <a href="/best-photo-vault-apps-iphone"><span>Compare vault apps</span></a>
+          <a href="/guides/"><span>Guides</span></a>
+          <a href="/about"><span>About</span></a>
+          <a href="/support"><span>Support</span></a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- /build:header -->
+
+  <main id="main-content" tabindex="-1">
+    <div class="page-hero">
+      <div class="container">
+        <!-- build:breadcrumbs -->
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="/">Darkroom</a></li>
+            <li><a href="/guides/">Guides</a></li>
+            <li aria-current="page">Lock photos with Face ID</li>
+          </ol>
+        </nav>
+        <!-- /build:breadcrumbs -->
+        <p class="eyebrow"><span class="dot dot-amber" aria-hidden="true"></span>Guide · Locking photos</p>
+        <h1>How to lock photos on iPhone with Face ID, a passcode or a pattern</h1>
+        <!-- build:byline -->
+        <p class="byline"><span>By <a href="https://darkroom.buzz/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>Last updated <time datetime="2026-10-22">22 October 2026</time></span></p>
+        <!-- /build:byline -->
+        <div class="answer">
+          <span class="answer-label">Short answer</span>
+          <p>iPhone can lock photos with Face ID in three built-in ways: hide them so they go into the Hidden album (locked by default), make the whole Photos app require Face ID, or put them in a locked note. All three fall back to your iPhone passcode. For a lock that's separate from your passcode, such as a pattern, you need a photo vault app.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container article-layout">
+      <article class="prose">
+        <p>There's no "lock this album" button in the Photos app. Instead, iOS 26 gives you a few locks that work at different levels: one album, the whole app, or a single note. Here's how to set up each one, what it actually locks, and when you need something stronger.</p>
+
+        <h2 id="hidden-album">How do you lock photos in the Hidden album with Face ID?</h2>
+        <p>Hide the photos, then make sure the Hidden album's Face ID lock is on. It's on by default since iOS 16.</p>
+        <ol class="steps">
+          <li><strong>Hide the photos:</strong> in Photos, touch and hold a photo and tap <span class="path">Hide</span>. For several, tap <span class="path">Select</span>, choose them, tap <span class="path">More (…)</span> and <span class="path">Hide</span>.</li>
+          <li><strong>Check the lock:</strong> go to <span class="path">Settings › Apps › Photos</span> and turn on <span class="path">Use Face ID</span> (or Use Touch ID / Use Passcode). This locks both Hidden and Recently Deleted.</li>
+          <li><strong>Optional:</strong> turn off <span class="path">Show Hidden Album</span> so the album doesn't appear in Collections at all.</li>
+        </ol>
+        <p>Photos can't lock other albums. Only Hidden and Recently Deleted have a lock. And the lock accepts your iPhone passcode, so anyone who knows it can open the album (<a href="https://support.apple.com/en-us/104987">Apple Support</a>).</p>
+
+        <h2 id="photos-app">How do you lock the whole Photos app?</h2>
+        <p>Since iOS 18, you can make any app ask for Face ID before it opens.</p>
+        <ol class="steps">
+          <li><strong>Touch and hold the Photos icon</strong> on the Home Screen.</li>
+          <li>Tap <span class="path">Require Face ID</span> and confirm.</li>
+        </ol>
+        <p>Now Photos asks for Face ID every time it opens, which stops someone you've handed your unlocked phone from browsing your library. It's all or nothing, though: you'll unlock your whole library many times a day, and the passcode still opens it.</p>
+
+        <h2 id="notes">How do you lock photos in a note?</h2>
+        <p>Add photos to a note, then lock the note. Notes can use a separate password from your iPhone passcode, with Face ID as a shortcut.</p>
+        <ol class="steps">
+          <li>In <strong>Notes</strong>, create a note, tap the <span class="path">camera</span> button and choose <span class="path">Choose Photo or Video</span>.</li>
+          <li>Tap <span class="path">More (…)</span> and <span class="path">Lock</span>.</li>
+          <li>To use a separate password, go to <span class="path">Settings › Apps › Notes › Password</span>, choose a Notes password, and turn on <span class="path">Use Face ID</span>.</li>
+          <li><strong>Delete the originals</strong> from Photos, then from Recently Deleted.</li>
+        </ol>
+        <p>This is the only built-in lock that can be separate from your passcode. It suits a handful of photos, not a library: there are no albums, and long videos are awkward. If you forget a separate Notes password, Apple can't recover the locked notes.</p>
+
+        <h2 id="guided-access">How do you show someone one photo without them swiping?</h2>
+        <p>Use Guided Access. It locks the iPhone to the app you're in, so the other person can't leave it.</p>
+        <ol class="steps">
+          <li>Turn it on once in <span class="path">Settings › Accessibility › Guided Access</span>, and set a passcode.</li>
+          <li>Open the photo, then triple-click the side button and tap <span class="path">Start</span>. You can circle areas of the screen to disable them.</li>
+          <li>To end it, triple-click the side button and enter the Guided Access passcode.</li>
+        </ol>
+        <p>Guided Access doesn't stop swiping between photos inside Photos unless you disable touch on the screen, so circle the whole photo or turn off <span class="path">Touch</span> in its options.</p>
+
+        <h2 id="pattern">Can you lock photos with a pattern on iPhone?</h2>
+        <p>Not with built-in features. iOS uses Face ID, Touch ID and passcodes; a drawn pattern lock comes only from vault apps. Private Photo Vault, Vaultaire and Darkroom, among others, offer a pattern according to their App Store listings and websites.</p>
+        <p>A pattern is only as good as what's behind it. In some apps it just opens a screen in front of normal files; in others it's used to derive the encryption key. Ask how the app uses it before you trust it (we explain the difference in <a href="/guides/how-encrypted-photo-vaults-work">how encrypted photo vaults work</a>).</p>
+        <p>In Darkroom, which we make, you draw a pattern across at least 6 of the 25 bolts on a 5×5 plate. The pattern is never stored: it's stretched with Argon2id into the key that opens your vault, and every photo is encrypted on the iPhone with AES-256-GCM. Face ID can open the main vault for convenience, but never a decoy vault.</p>
+        <figure class="shot">
+          <img src="/assets/guides/darkroom-lock.jpg" alt="Darkroom's lock screen: a 5×5 plate of bolts with a pattern drawn across it" width="559" height="1216" loading="lazy" decoding="async">
+          <figcaption>Darkroom's lock: a pattern across a 5×5 plate of bolts, separate from your iPhone passcode.</figcaption>
+        </figure>
+
+        <h2 id="which">Which photo lock should you use?</h2>
+        <div class="data-table-wrap" tabindex="0" role="region" aria-labelledby="lock-caption">
+          <table class="data-table">
+            <caption id="lock-caption">Ways to lock photos on iPhone (iOS 26)</caption>
+            <thead><tr><th scope="col">Lock</th><th scope="col">What it locks</th><th scope="col">Separate from passcode?</th><th scope="col">Good for</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Hidden album lock</th><td>Hidden and Recently Deleted</td><td class="no">No</td><td>Keeping photos out of your library</td></tr>
+              <tr><th scope="row">Require Face ID on Photos</th><td>The whole Photos app</td><td class="no">No</td><td>Handing your phone to someone</td></tr>
+              <tr><th scope="row">Locked note</th><td>One note</td><td class="yes">Yes, with a Notes password</td><td>A few photos</td></tr>
+              <tr><th scope="row">Guided Access</th><td>The screen you're on</td><td class="yes">Yes</td><td>Showing a single photo</td></tr>
+              <tr><th scope="row">Vault app with its own code</th><td>The vault's photos and videos</td><td class="yes">Yes</td><td>Photos that must stay private from anyone</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="cta-card">
+          <p class="cta-card-title">A lock that isn't your passcode</p>
+          <p>Darkroom opens with a pattern only you know, separate from your iPhone passcode. Every photo is encrypted on your iPhone. Free for 150 photos and 10 videos.</p>
+          <a href="/#waitlist" class="btn btn-primary" data-cta="body" data-label-waitlist="Join the beta" data-label-live="Download on the App Store">Join the beta</a>
+          <!-- build:status -->
+          <span class="release-status">Version 1.0 was submitted to App Store review in October 2026. It is not on the App Store yet.</span>
+          <!-- /build:status -->
+        </div>
+
+        <h2 id="faq">Questions people ask</h2>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Can I lock a specific album on iPhone?</span></span></summary>
+            <div class="faq-body"><p>No. The Photos app only locks the Hidden and Recently Deleted albums. To lock other photos, hide them, put them in a locked note, or use a vault app.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Can I lock photos with a different password than my iPhone passcode?</span></span></summary>
+            <div class="faq-body"><p>Yes, in two ways: a locked note with a separate Notes password, or a vault app with its own PIN, password or pattern.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Does locking the Photos app hide it?</span></span></summary>
+            <div class="faq-body"><p>No. Require Face ID only asks for Face ID when Photos opens. The app stays on your Home Screen.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Is a pattern lock safer than a PIN?</span></span></summary>
+            <div class="faq-body"><p>Not automatically. What matters is whether the code is used to encrypt the photos and how slow it is to guess. A long pattern or password used to derive an encryption key is far stronger than a 4-digit PIN in front of normal files.</p></div>
+          </details>
+        </div>
+
+        <p><em>Something wrong or out of date? Email <a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a> and we'll fix it.</em></p>
+      </article>
+
+      <aside class="article-aside" aria-label="On this page">
+        <nav class="toc" aria-label="Table of contents">
+          <p class="toc-title">On this page</p>
+          <ol>
+            <li><a href="#hidden-album">Lock the Hidden album</a></li>
+            <li><a href="#photos-app">Lock the Photos app</a></li>
+            <li><a href="#notes">Lock photos in Notes</a></li>
+            <li><a href="#guided-access">Show one photo safely</a></li>
+            <li><a href="#pattern">Lock photos with a pattern</a></li>
+            <li><a href="#which">Which lock to use</a></li>
+            <li><a href="#faq">Questions people ask</a></li>
+          </ol>
+        </nav>
+        <div class="related">
+          <p class="toc-title">Related</p>
+          <ul role="list">
+            <li><a href="/guides/how-to-hide-photos-on-iphone">How to hide photos on iPhone</a></li>
+            <li><a href="/guides/is-iphone-hidden-album-private">Is the Hidden album private?</a></li>
+            <li><a href="/guides/how-encrypted-photo-vaults-work">How encrypted vaults work</a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- build:footer -->
+  <!-- Shared footer for subpages. Edit partials/footer.html, then run python3 tools/build.py. -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="/" class="logo" style="margin-bottom:12px" aria-label="Darkroom home">
+            <span class="logo-plate" aria-hidden="true">
+              <svg viewBox="0 0 180 180" width="30" height="30" aria-hidden="true"><use href="#darkroom-logo-mark"></use></svg>
+            </span>
+            <span>Darkroom</span>
+          </a>
+          <p style="color:var(--muted);max-width:34ch;margin-bottom:14px">Encrypted photo, video and note vault for iPhone and iPad. Encrypted on your device, backed up to your own iCloud.</p>
+          <p style="color:var(--amber);font-family:var(--font-mono);font-size:0.75rem">No accounts · No ads · No analytics</p>
+        </div>
+
+        <div class="footer-col">
+          <h2 class="footer-heading">Guides</h2>
+          <ul role="list">
+            <li><a href="/guides/how-to-hide-photos-on-iphone">How to hide photos on iPhone</a></li>
+  <li><a href="/guides/is-iphone-hidden-album-private">Is the Hidden album private?</a></li>
+  <li><a href="/guides/move-photo-vault-to-new-iphone">Move a photo vault to a new iPhone</a></li>
+  <li><a href="/guides/photo-vault-lost-photos">Photo vault lost your photos</a></li>
+  <li><a href="/guides/keepsafe-alternatives">Keepsafe alternatives</a></li>
+            <li><a href="/guides/">All guides</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h2 class="footer-heading">Darkroom</h2>
+          <ul role="list">
+            <li><a href="/#features">Features</a></li>
+            <li><a href="/#security">How the encryption works</a></li>
+            <li><a href="/#pricing">Free vs Pro</a></li>
+            <li><a href="/best-photo-vault-apps-iphone">Photo vault apps compared</a></li>
+            <li><a href="/#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h2 class="footer-heading">Help &amp; Legal</h2>
+          <ul role="list">
+            <li><a href="/about">About</a></li>
+            <li><a href="/support">Support</a></li>
+            <li><a href="/privacy">Privacy policy</a></li>
+            <li><a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Darkroom · Inertia Projects</p>
+        <p>App Store privacy label: <strong>Data Not Collected</strong></p>
+      </div>
+    </div>
+  </footer>
+  <!-- /build:footer -->
+
+  <script src="/app.js" defer></script>
+</body>
+</html>

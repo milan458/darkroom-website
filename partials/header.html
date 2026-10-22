@@ -1,0 +1,108 @@
+<!-- Shared header for subpages. Edit partials/header.html, then run python3 tools/build.py. -->
+<svg width="0" height="0" style="position:absolute;visibility:hidden" aria-hidden="true">
+  <symbol id="darkroom-logo-mark" viewBox="0 0 180 180">
+    <defs>
+      <linearGradient id="drChassis" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#28211D"/>
+        <stop offset="0.55" stop-color="#191412"/>
+        <stop offset="1" stop-color="#0E0B09"/>
+      </linearGradient>
+    </defs>
+    <rect width="180" height="180" rx="40" fill="url(#drChassis)"/>
+    <rect x="2" y="2" width="176" height="176" rx="38" fill="none" stroke="#3D332C" stroke-width="2" opacity="0.7"/>
+    <!-- 5x5 Bolt Matrix (19 inactive bolts) -->
+    <g fill="#433932" stroke="#574B42" stroke-width="1.5">
+      <circle cx="38" cy="38" r="8.5"/>
+      <circle cx="64" cy="38" r="8.5"/>
+      <circle cx="90" cy="38" r="8.5"/>
+      <circle cx="116" cy="38" r="8.5"/>
+      <circle cx="38" cy="64" r="8.5"/>
+      <circle cx="64" cy="64" r="8.5"/>
+      <circle cx="142" cy="64" r="8.5"/>
+      <circle cx="38" cy="90" r="8.5"/>
+      <circle cx="90" cy="90" r="8.5"/>
+      <circle cx="116" cy="90" r="8.5"/>
+      <circle cx="142" cy="90" r="8.5"/>
+      <circle cx="38" cy="116" r="8.5"/>
+      <circle cx="90" cy="116" r="8.5"/>
+      <circle cx="116" cy="116" r="8.5"/>
+      <circle cx="142" cy="116" r="8.5"/>
+      <circle cx="64" cy="142" r="8.5"/>
+      <circle cx="90" cy="142" r="8.5"/>
+      <circle cx="116" cy="142" r="8.5"/>
+      <circle cx="142" cy="142" r="8.5"/>
+    </g>
+    <!-- Connecting safelight path: (0,4) -> (1,3) -> (1,2) -> (2,1) -> (3,1) -> (4,0) -->
+    <path d="M38 142 L64 116 L64 90 L90 64 L116 64 L142 38" fill="none" stroke="#F04E37" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- 6 Active Safelight Bolts -->
+    <g fill="#F04E37">
+      <circle cx="38" cy="142" r="9"/>
+      <circle cx="64" cy="116" r="9"/>
+      <circle cx="64" cy="90" r="9"/>
+      <circle cx="90" cy="64" r="9"/>
+      <circle cx="116" cy="64" r="9"/>
+      <circle cx="142" cy="38" r="10.5"/>
+    </g>
+  </symbol>
+</svg>
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<header class="site-header">
+  <div class="container nav-inner">
+    <a href="/" class="logo" aria-label="Darkroom home">
+      <span class="logo-plate" aria-hidden="true">
+        <svg viewBox="0 0 180 180" width="30" height="30" aria-hidden="true"><use href="#darkroom-logo-mark"></use></svg>
+      </span>
+      <span>Darkroom</span>
+    </a>
+
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/#features">Features</a>
+      <a href="/#security">Security</a>
+      <a href="/#pricing">Pricing</a>
+      <a href="/best-photo-vault-apps-iphone">Compare</a>
+      <a href="/guides/">Guides</a>
+      <a href="/about">About</a>
+      <a href="/support">Support</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button id="theme-toggle"
+              class="theme-toggle"
+              type="button"
+              aria-label="Switch to light mode"
+              aria-pressed="false"
+              data-light-label="Light"
+              data-dark-label="Dark"
+              data-switch-light="Switch to light mode"
+              data-switch-dark="Switch to dark mode">
+        <span class="theme-icon" id="theme-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><line x1="12" y1="2.5" x2="12" y2="5.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="12" y1="18.8" x2="12" y2="21.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="2.5" y1="12" x2="5.2" y2="12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="18.8" y1="12" x2="21.5" y2="12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="5.3" y1="5.3" x2="7.2" y2="7.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="16.8" y1="16.8" x2="18.7" y2="18.7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="16.8" y1="7.2" x2="18.7" y2="5.3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="5.3" y1="18.7" x2="7.2" y2="16.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </span>
+        <span id="theme-label">Light</span>
+      </button>
+
+      <a href="/#waitlist" class="btn btn-primary btn-nav" data-cta="nav" data-label-waitlist="Early Access" data-label-live="Get the App">Early Access</a>
+
+      <button type="button" class="mobile-menu-btn" id="mobile-menu-btn" aria-expanded="false" aria-controls="mobile-drawer" aria-label="Toggle menu">
+        <svg class="icon-menu" viewBox="0 0 24 24" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+        <svg class="icon-close" viewBox="0 0 24 24" aria-hidden="true"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-drawer" id="mobile-drawer" hidden>
+    <div class="container">
+      <nav class="mobile-drawer-list" aria-label="Mobile">
+        <a href="/#features"><span>Features</span></a>
+        <a href="/#security"><span>Security</span></a>
+        <a href="/#pricing"><span>Pricing</span></a>
+        <a href="/best-photo-vault-apps-iphone"><span>Compare vault apps</span></a>
+        <a href="/guides/"><span>Guides</span></a>
+        <a href="/about"><span>About</span></a>
+        <a href="/support"><span>Support</span></a>
+      </nav>
+    </div>
+  </div>
+</header>

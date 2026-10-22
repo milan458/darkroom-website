@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" id="meta-theme-color" content="#070605">
+  <script>
+    try {
+      const savedScheme = localStorage.getItem("color-scheme");
+      const metaScheme = document.querySelector('meta[name="color-scheme"]');
+      const metaTheme = document.getElementById("meta-theme-color");
+      const prefersLight = window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches;
+      const resolved = savedScheme === "light" || savedScheme === "dark" ? savedScheme : (prefersLight ? "light" : "dark");
+      if (metaScheme) metaScheme.content = resolved;
+      if (metaTheme) metaTheme.content = resolved === "light" ? "#F3EEE7" : "#070605";
+      document.documentElement.dataset.theme = resolved;
+    } catch {}
+  </script>
+  <!-- build:meta -->
+  <title>About Darkroom and Inertia Projects</title>
+  <meta name="description" content="Who makes the Darkroom photo vault, why it exists, how it is built, and how to reach us. Plain facts about the app, with nothing rounded up.">
+  <link rel="canonical" href="https://darkroom.buzz/about">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Darkroom">
+  <meta property="og:title" content="About Darkroom and Inertia Projects">
+  <meta property="og:description" content="Who makes the Darkroom photo vault, why it exists, how it is built, and how to reach us. Plain facts about the app, with nothing rounded up.">
+  <meta property="og:url" content="https://darkroom.buzz/about">
+  <meta property="og:image" content="https://darkroom.buzz/assets/og/darkroom-og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Darkroom photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="About Darkroom and Inertia Projects">
+  <meta name="twitter:description" content="Who makes the Darkroom photo vault, why it exists, how it is built, and how to reach us. Plain facts about the app, with nothing rounded up.">
+  <meta name="twitter:image" content="https://darkroom.buzz/assets/og/darkroom-og.png">
+  <meta name="twitter:image:alt" content="Darkroom photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
+  <!-- /build:meta -->
+
+  <link rel="icon" type="image/svg+xml" href="/assets/darkroom-logo.svg">
+  <link rel="apple-touch-icon" href="/assets/darkroom-icon-180.png">
+
+  <link rel="preload" href="/assets/fonts/plus-jakarta-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/fonts/fonts.css">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/pages.css">
+
+  <!-- build:jsonld -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://darkroom.buzz/#org",
+        "name": "Inertia Projects",
+        "url": "https://darkroom.buzz/about",
+        "email": "business@inertiaprojects.info",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://darkroom.buzz/assets/darkroom-icon-512.png"
+        },
+        "brand": {
+          "@type": "Brand",
+          "name": "Darkroom"
+        }
+      },
+      {
+        "@type": "AboutPage",
+        "@id": "https://darkroom.buzz/about#webpage",
+        "url": "https://darkroom.buzz/about",
+        "name": "About Darkroom and Inertia Projects",
+        "description": "Who makes the Darkroom photo vault, why it exists, how it is built, and how to reach us. Plain facts about the app, with nothing rounded up.",
+        "isPartOf": {
+          "@id": "https://darkroom.buzz/#website"
+        },
+        "dateModified": "2026-10-22",
+        "publisher": {
+          "@id": "https://darkroom.buzz/#org"
+        },
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Darkroom",
+            "item": "https://darkroom.buzz/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "About",
+            "item": "https://darkroom.buzz/about"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <!-- /build:jsonld -->
+</head>
+<body>
+  <!-- build:header -->
+  <!-- Shared header for subpages. Edit partials/header.html, then run python3 tools/build.py. -->
+  <svg width="0" height="0" style="position:absolute;visibility:hidden" aria-hidden="true">
+    <symbol id="darkroom-logo-mark" viewBox="0 0 180 180">
+      <defs>
+        <linearGradient id="drChassis" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#28211D"/>
+          <stop offset="0.55" stop-color="#191412"/>
+          <stop offset="1" stop-color="#0E0B09"/>
+        </linearGradient>
+      </defs>
+      <rect width="180" height="180" rx="40" fill="url(#drChassis)"/>
+      <rect x="2" y="2" width="176" height="176" rx="38" fill="none" stroke="#3D332C" stroke-width="2" opacity="0.7"/>
+      <!-- 5x5 Bolt Matrix (19 inactive bolts) -->
+      <g fill="#433932" stroke="#574B42" stroke-width="1.5">
+        <circle cx="38" cy="38" r="8.5"/>
+        <circle cx="64" cy="38" r="8.5"/>
+        <circle cx="90" cy="38" r="8.5"/>
+        <circle cx="116" cy="38" r="8.5"/>
+        <circle cx="38" cy="64" r="8.5"/>
+        <circle cx="64" cy="64" r="8.5"/>
+        <circle cx="142" cy="64" r="8.5"/>
+        <circle cx="38" cy="90" r="8.5"/>
+        <circle cx="90" cy="90" r="8.5"/>
+        <circle cx="116" cy="90" r="8.5"/>
+        <circle cx="142" cy="90" r="8.5"/>
+        <circle cx="38" cy="116" r="8.5"/>
+        <circle cx="90" cy="116" r="8.5"/>
+        <circle cx="116" cy="116" r="8.5"/>
+        <circle cx="142" cy="116" r="8.5"/>
+        <circle cx="64" cy="142" r="8.5"/>
+        <circle cx="90" cy="142" r="8.5"/>
+        <circle cx="116" cy="142" r="8.5"/>
+        <circle cx="142" cy="142" r="8.5"/>
+      </g>
+      <!-- Connecting safelight path: (0,4) -> (1,3) -> (1,2) -> (2,1) -> (3,1) -> (4,0) -->
+      <path d="M38 142 L64 116 L64 90 L90 64 L116 64 L142 38" fill="none" stroke="#F04E37" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- 6 Active Safelight Bolts -->
+      <g fill="#F04E37">
+        <circle cx="38" cy="142" r="9"/>
+        <circle cx="64" cy="116" r="9"/>
+        <circle cx="64" cy="90" r="9"/>
+        <circle cx="90" cy="64" r="9"/>
+        <circle cx="116" cy="64" r="9"/>
+        <circle cx="142" cy="38" r="10.5"/>
+      </g>
+    </symbol>
+  </svg>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="/" class="logo" aria-label="Darkroom home">
+        <span class="logo-plate" aria-hidden="true">
+          <svg viewBox="0 0 180 180" width="30" height="30" aria-hidden="true"><use href="#darkroom-logo-mark"></use></svg>
+        </span>
+        <span>Darkroom</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="/#features">Features</a>
+        <a href="/#security">Security</a>
+        <a href="/#pricing">Pricing</a>
+        <a href="/best-photo-vault-apps-iphone">Compare</a>
+        <a href="/guides/">Guides</a>
+        <a href="/about">About</a>
+        <a href="/support">Support</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle"
+                class="theme-toggle"
+                type="button"
+                aria-label="Switch to light mode"
+                aria-pressed="false"
+                data-light-label="Light"
+                data-dark-label="Dark"
+                data-switch-light="Switch to light mode"
+                data-switch-dark="Switch to dark mode">
+          <span class="theme-icon" id="theme-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><line x1="12" y1="2.5" x2="12" y2="5.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="12" y1="18.8" x2="12" y2="21.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="2.5" y1="12" x2="5.2" y2="12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="18.8" y1="12" x2="21.5" y2="12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="5.3" y1="5.3" x2="7.2" y2="7.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="16.8" y1="16.8" x2="18.7" y2="18.7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="16.8" y1="7.2" x2="18.7" y2="5.3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="5.3" y1="18.7" x2="7.2" y2="16.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </span>
+          <span id="theme-label">Light</span>
+        </button>
+
+        <a href="/#waitlist" class="btn btn-primary btn-nav" data-cta="nav" data-label-waitlist="Early Access" data-label-live="Get the App">Early Access</a>
+
+        <button type="button" class="mobile-menu-btn" id="mobile-menu-btn" aria-expanded="false" aria-controls="mobile-drawer" aria-label="Toggle menu">
+          <svg class="icon-menu" viewBox="0 0 24 24" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+          <svg class="icon-close" viewBox="0 0 24 24" aria-hidden="true"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-drawer" id="mobile-drawer" hidden>
+      <div class="container">
+        <nav class="mobile-drawer-list" aria-label="Mobile">
+          <a href="/#features"><span>Features</span></a>
+          <a href="/#security"><span>Security</span></a>
+          <a href="/#pricing"><span>Pricing</span></a>
+          <a href="/best-photo-vault-apps-iphone"><span>Compare vault apps</span></a>
+          <a href="/guides/"><span>Guides</span></a>
+          <a href="/about"><span>About</span></a>
+          <a href="/support"><span>Support</span></a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- /build:header -->
+
+  <main id="main-content" tabindex="-1">
+    <div class="page-hero">
+      <div class="container">
+        <!-- build:breadcrumbs -->
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="/">Darkroom</a></li>
+            <li aria-current="page">About</li>
+          </ol>
+        </nav>
+        <!-- /build:breadcrumbs -->
+        <h1>About Darkroom</h1>
+        <p class="page-lede">Darkroom is an iPhone and iPad photo vault made by Inertia Projects, a small independent developer. It exists because private photos kept getting lost in other vault apps, and it is built so that can't happen quietly.</p>
+      </div>
+    </div>
+
+    <div class="container page-narrow page-body">
+      <div class="prose">
+        <h2 id="who">Who makes Darkroom</h2>
+        <p>Darkroom is designed and built by <strong>Inertia Projects</strong>. There are no investors, no ad partners and no servers that store your files. Email reaches the person who writes the code: <a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a>.</p>
+        <!-- ABOUT TODO (Milan): add a short, real bio here once you decide what to share:
+             name or first name, where you're based, your background, why you care about photo privacy,
+             and links (X, GitHub, LinkedIn). A named person behind a privacy app builds trust with
+             readers and search engines. Then set site.json "author" to {"type": "Person", ...}. -->
+
+        <h2 id="why">Why it exists</h2>
+        <p>Before launch, we read the most recent one- and two-star App Store reviews of eight popular vault apps (October 2026). The complaints weren't about missing features. They were about:</p>
+        <ul>
+          <li><strong>Subscriptions and paywalls</strong>, including photos locked behind one (67 mentions).</li>
+          <li><strong>Photos that went missing</strong> (47 mentions).</li>
+          <li><strong>Video problems</strong> (40 mentions).</li>
+          <li><strong>Backups that didn't restore</strong>, especially on a new phone (31 mentions).</li>
+          <li><strong>Getting locked out</strong> after forgetting a password (27 mentions).</li>
+        </ul>
+        <p>So Darkroom was built around a backup that actually restores on a new iPhone, a recovery phrase so you can't be locked out, full-quality export, and pricing where your photos are never held hostage. If Pro ends, you keep full access to view, export and back up everything.</p>
+
+        <h2 id="how">How it's built</h2>
+        <ul>
+          <li>A native Swift app for iPhone and iPad. No web views, no cross-platform layer.</li>
+          <li>Keys come from your pattern through <strong>Argon2id</strong> (libsodium), using 64 MiB of memory and 3 passes, so every guess is slow to try.</li>
+          <li>Files are sealed with <strong>AES-256-GCM</strong> (Apple CryptoKit), each with its own random key, in 1 MiB chunks so large videos stream.</li>
+          <li>The encrypted backup uses <strong>CloudKit</strong>, in the private database of your own Apple Account.</li>
+          <li>No third-party SDKs for ads, analytics or crash reporting.</li>
+        </ul>
+        <p>The full key hierarchy is on the <a href="/#security">homepage security section</a>.</p>
+
+        <h2 id="facts">Darkroom, in plain facts</h2>
+        <p>The same list appears on the homepage and in <a href="/llms.txt">llms.txt</a>, the summary we publish for AI assistants. If you write about Darkroom, this is the source of truth.</p>
+      </div>
+
+      <!-- build:facts -->
+      <dl class="facts-list">
+        <div class="facts-row">
+          <dt>What it is</dt>
+          <dd>An iPhone and iPad app that hides photos, videos and notes in encrypted vaults.</dd>
+        </div>
+        <div class="facts-row">
+          <dt>How you open it</dt>
+          <dd>Draw a pattern across at least 6 bolts on a 5×5 plate of 25 bolts. Face ID can open the main vault.</dd>
+        </div>
+        <div class="facts-row">
+          <dt>Encryption</dt>
+          <dd>Everything is encrypted on the device. Keys come from your pattern through Argon2id (libsodium); files are sealed with AES-256-GCM (Apple CryptoKit). Names, dates and places are encrypted too. The pattern is never stored.</dd>
+        </div>
+        <div class="facts-row">
+          <dt>Backup</dt>
+          <dd>An encrypted backup goes to your own private iCloud (CloudKit). On a new iPhone, draw your pattern and the vault restores. Only encrypted data leaves the device.</dd>
+        </div>
+        <div class="facts-row">
+          <dt>Forgot your pattern</dt>
+          <dd>You write down a recovery phrase at setup, and it opens your vault. Nobody can reset a pattern: not the developer, not Apple.</dd>
+        </div>
+        <div class="facts-row">
+          <dt>Decoy vault</dt>
+          <dd>A second pattern opens a separate, harmless vault. The free plan includes 1.</dd>
+        </div>
+        <div class="facts-row">
+          <dt>Emergency erase (Pro)</dt>
+          <dd>A third pattern opens a harmless vault and erases the others.</dd>
+        </div>
+        <div class="facts-row">
+          <dt>Hiding the app</dt>
+          <dd>Change the app icon to a Calculator, Notes or Weather lookalike (Pro). Vault content is hidden in the app switcher and during screen recording.</dd>
+        </div>
+        <div class="facts-row">
+          <dt>Organizing</dt>
+          <dd>Albums, albums inside albums, and albums with their own pattern (Pro). Encrypted notes. Recently Deleted keeps items for 30 days.</dd>
+        </div>
+        <div class="facts-row">
+          <dt>Import and export</dt>
+          <dd>Imports HEIC, ProRAW and Live Photos. Built-in camera. &quot;Send to Darkroom&quot; from the share sheet. Exports in full quality with original dates.</dd>
+        </div>
+        <div class="facts-row">
+          <dt>Privacy</dt>
+          <dd>No ads, no accounts, no analytics. App Store privacy label: Data Not Collected.</dd>
+        </div>
+        <div class="facts-row">
+          <dt>Free plan</dt>
+          <dd>150 photos, 10 videos, unlimited notes, 1 decoy vault, full iCloud backup and restore.</dd>
+        </div>
+        <div class="facts-row">
+          <dt>Darkroom Pro</dt>
+          <dd>$2.99 a month, $19.99 a year (1-week free trial) or $44.99 once. Adds unlimited items, emergency erase, iPhone and iPad sync, custom icons, album patterns and shared vaults.</dd>
+        </div>
+        <div class="facts-row">
+          <dt>If Pro ends</dt>
+          <dd>You keep full access to view, export and back up everything already in your vault.</dd>
+        </div>
+        <div class="facts-row">
+          <dt>Requirements</dt>
+          <dd>iOS 17 or iPadOS 17 and later.</dd>
+        </div>
+        <div class="facts-row">
+          <dt>Made by</dt>
+          <dd>Inertia Projects, an independent developer. Contact: business@inertiaprojects.info.</dd>
+        </div>
+        <div class="facts-row">
+          <dt>Status</dt>
+          <dd>Version 1.0 was submitted to App Store review in October 2026. It is not on the App Store yet.</dd>
+        </div>
+      </dl>
+      <!-- /build:facts -->
+
+      <div class="prose">
+        <h2 id="contact">Contact</h2>
+        <p>Questions, press, corrections: <a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a>. For help with the app, see <a href="/support">Support</a>.</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- build:footer -->
+  <!-- Shared footer for subpages. Edit partials/footer.html, then run python3 tools/build.py. -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="/" class="logo" style="margin-bottom:12px" aria-label="Darkroom home">
+            <span class="logo-plate" aria-hidden="true">
+              <svg viewBox="0 0 180 180" width="30" height="30" aria-hidden="true"><use href="#darkroom-logo-mark"></use></svg>
+            </span>
+            <span>Darkroom</span>
+          </a>
+          <p style="color:var(--muted);max-width:34ch;margin-bottom:14px">Encrypted photo, video and note vault for iPhone and iPad. Encrypted on your device, backed up to your own iCloud.</p>
+          <p style="color:var(--amber);font-family:var(--font-mono);font-size:0.75rem">No accounts · No ads · No analytics</p>
+        </div>
+
+        <div class="footer-col">
+          <h2 class="footer-heading">Guides</h2>
+          <ul role="list">
+            <li><a href="/guides/how-to-hide-photos-on-iphone">How to hide photos on iPhone</a></li>
+  <li><a href="/guides/is-iphone-hidden-album-private">Is the Hidden album private?</a></li>
+  <li><a href="/guides/move-photo-vault-to-new-iphone">Move a photo vault to a new iPhone</a></li>
+  <li><a href="/guides/photo-vault-lost-photos">Photo vault lost your photos</a></li>
+  <li><a href="/guides/keepsafe-alternatives">Keepsafe alternatives</a></li>
+            <li><a href="/guides/">All guides</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h2 class="footer-heading">Darkroom</h2>
+          <ul role="list">
+            <li><a href="/#features">Features</a></li>
+            <li><a href="/#security">How the encryption works</a></li>
+            <li><a href="/#pricing">Free vs Pro</a></li>
+            <li><a href="/best-photo-vault-apps-iphone">Photo vault apps compared</a></li>
+            <li><a href="/#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h2 class="footer-heading">Help &amp; Legal</h2>
+          <ul role="list">
+            <li><a href="/about">About</a></li>
+            <li><a href="/support">Support</a></li>
+            <li><a href="/privacy">Privacy policy</a></li>
+            <li><a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Darkroom · Inertia Projects</p>
+        <p>App Store privacy label: <strong>Data Not Collected</strong></p>
+      </div>
+    </div>
+  </footer>
+  <!-- /build:footer -->
+
+  <script src="/app.js" defer></script>
+</body>
+</html>

@@ -17,3 +17,10 @@ wrangler.jsonc
 README.md
 *.release-saved.*
 darkroom-figma-wireframe.svg
+# Site build tooling and docs (see CLAUDE.md)
+tools
+partials
+templates
+site.json
+CLAUDE.md
+SEO-PLAYBOOK.md

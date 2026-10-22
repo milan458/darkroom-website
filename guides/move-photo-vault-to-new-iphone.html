@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" id="meta-theme-color" content="#070605">
+  <script>
+    try {
+      const savedScheme = localStorage.getItem("color-scheme");
+      const metaScheme = document.querySelector('meta[name="color-scheme"]');
+      const metaTheme = document.getElementById("meta-theme-color");
+      const prefersLight = window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches;
+      const resolved = savedScheme === "light" || savedScheme === "dark" ? savedScheme : (prefersLight ? "light" : "dark");
+      if (metaScheme) metaScheme.content = resolved;
+      if (metaTheme) metaTheme.content = resolved === "light" ? "#F3EEE7" : "#070605";
+      document.documentElement.dataset.theme = resolved;
+    } catch {}
+  </script>
+  <!-- build:meta -->
+  <title>Move a Photo Vault to a New iPhone Without Losing Photos</title>
+  <meta name="description" content="Why vault apps lose photos when you switch phones, and a step-by-step checklist to move yours safely: before, during and after the transfer.">
+  <link rel="canonical" href="https://darkroom.buzz/guides/move-photo-vault-to-new-iphone">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Darkroom">
+  <meta property="og:title" content="Move a Photo Vault to a New iPhone Without Losing Photos">
+  <meta property="og:description" content="Why vault apps lose photos when you switch phones, and a step-by-step checklist to move yours safely: before, during and after the transfer.">
+  <meta property="og:url" content="https://darkroom.buzz/guides/move-photo-vault-to-new-iphone">
+  <meta property="og:image" content="https://darkroom.buzz/assets/og/darkroom-og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Darkroom photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
+  <meta property="og:locale" content="en_US">
+  <meta property="article:published_time" content="2026-10-22">
+  <meta property="article:modified_time" content="2026-10-22">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Move a Photo Vault to a New iPhone Without Losing Photos">
+  <meta name="twitter:description" content="Why vault apps lose photos when you switch phones, and a step-by-step checklist to move yours safely: before, during and after the transfer.">
+  <meta name="twitter:image" content="https://darkroom.buzz/assets/og/darkroom-og.png">
+  <meta name="twitter:image:alt" content="Darkroom photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
+  <!-- /build:meta -->
+
+  <link rel="icon" type="image/svg+xml" href="/assets/darkroom-logo.svg">
+  <link rel="apple-touch-icon" href="/assets/darkroom-icon-180.png">
+
+  <link rel="preload" href="/assets/fonts/plus-jakarta-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/fonts/fonts.css">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/pages.css">
+
+  <!-- build:jsonld -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://darkroom.buzz/#org",
+        "name": "Inertia Projects",
+        "url": "https://darkroom.buzz/about",
+        "email": "business@inertiaprojects.info",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://darkroom.buzz/assets/darkroom-icon-512.png"
+        },
+        "brand": {
+          "@type": "Brand",
+          "name": "Darkroom"
+        }
+      },
+      {
+        "@type": "Article",
+        "@id": "https://darkroom.buzz/guides/move-photo-vault-to-new-iphone#article",
+        "headline": "How to move a private photo vault to a new iPhone without losing photos",
+        "description": "Why vault apps lose photos when you switch phones, and a step-by-step checklist to move yours safely: before, during and after the transfer.",
+        "url": "https://darkroom.buzz/guides/move-photo-vault-to-new-iphone",
+        "mainEntityOfPage": "https://darkroom.buzz/guides/move-photo-vault-to-new-iphone",
+        "image": "https://darkroom.buzz/assets/guides/darkroom-backup.jpg",
+        "datePublished": "2026-10-22",
+        "dateModified": "2026-10-22",
+        "author": {
+          "@id": "https://darkroom.buzz/#org"
+        },
+        "publisher": {
+          "@id": "https://darkroom.buzz/#org"
+        },
+        "inLanguage": "en-US",
+        "isPartOf": {
+          "@id": "https://darkroom.buzz/#website"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Darkroom",
+            "item": "https://darkroom.buzz/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Guides",
+            "item": "https://darkroom.buzz/guides/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Move a photo vault to a new iPhone",
+            "item": "https://darkroom.buzz/guides/move-photo-vault-to-new-iphone"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://darkroom.buzz/guides/move-photo-vault-to-new-iphone#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Does Quick Start transfer photo vault apps?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It transfers the app, and the app's files only if the app includes them in the iPhone's backup. Many vault apps leave their files out on purpose, so check how your vault backs up before you switch."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need the same Apple Account on the new iPhone?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For vaults that back up to your iCloud, yes. The backup lives in that Apple Account's iCloud. For vaults that use their own cloud, you need that app's login instead."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Will Face ID work for my vault on the new iPhone?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Not until you've unlocked it once with your code. Face ID is tied to the device, so the first unlock on a new iPhone needs your PIN, password or pattern."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does restoring a vault take?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It depends on the size of the library and your connection. Thousands of photos and long videos can take hours. Keep the new phone on Wi-Fi and power, and don't erase the old one until it's done."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Darkroom restore with Quick Start?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Quick Start moves the app, not the vault. The vault comes back from Darkroom's own encrypted iCloud backup when you choose Restore your vault and draw your pattern on the new iPhone."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <!-- /build:jsonld -->
+</head>
+<body>
+  <!-- build:header -->
+  <!-- Shared header for subpages. Edit partials/header.html, then run python3 tools/build.py. -->
+  <svg width="0" height="0" style="position:absolute;visibility:hidden" aria-hidden="true">
+    <symbol id="darkroom-logo-mark" viewBox="0 0 180 180">
+      <defs>
+        <linearGradient id="drChassis" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#28211D"/>
+          <stop offset="0.55" stop-color="#191412"/>
+          <stop offset="1" stop-color="#0E0B09"/>
+        </linearGradient>
+      </defs>
+      <rect width="180" height="180" rx="40" fill="url(#drChassis)"/>
+      <rect x="2" y="2" width="176" height="176" rx="38" fill="none" stroke="#3D332C" stroke-width="2" opacity="0.7"/>
+      <!-- 5x5 Bolt Matrix (19 inactive bolts) -->
+      <g fill="#433932" stroke="#574B42" stroke-width="1.5">
+        <circle cx="38" cy="38" r="8.5"/>
+        <circle cx="64" cy="38" r="8.5"/>
+        <circle cx="90" cy="38" r="8.5"/>
+        <circle cx="116" cy="38" r="8.5"/>
+        <circle cx="38" cy="64" r="8.5"/>
+        <circle cx="64" cy="64" r="8.5"/>
+        <circle cx="142" cy="64" r="8.5"/>
+        <circle cx="38" cy="90" r="8.5"/>
+        <circle cx="90" cy="90" r="8.5"/>
+        <circle cx="116" cy="90" r="8.5"/>
+        <circle cx="142" cy="90" r="8.5"/>
+        <circle cx="38" cy="116" r="8.5"/>
+        <circle cx="90" cy="116" r="8.5"/>
+        <circle cx="116" cy="116" r="8.5"/>
+        <circle cx="142" cy="116" r="8.5"/>
+        <circle cx="64" cy="142" r="8.5"/>
+        <circle cx="90" cy="142" r="8.5"/>
+        <circle cx="116" cy="142" r="8.5"/>
+        <circle cx="142" cy="142" r="8.5"/>
+      </g>
+      <!-- Connecting safelight path: (0,4) -> (1,3) -> (1,2) -> (2,1) -> (3,1) -> (4,0) -->
+      <path d="M38 142 L64 116 L64 90 L90 64 L116 64 L142 38" fill="none" stroke="#F04E37" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- 6 Active Safelight Bolts -->
+      <g fill="#F04E37">
+        <circle cx="38" cy="142" r="9"/>
+        <circle cx="64" cy="116" r="9"/>
+        <circle cx="64" cy="90" r="9"/>
+        <circle cx="90" cy="64" r="9"/>
+        <circle cx="116" cy="64" r="9"/>
+        <circle cx="142" cy="38" r="10.5"/>
+      </g>
+    </symbol>
+  </svg>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="/" class="logo" aria-label="Darkroom home">
+        <span class="logo-plate" aria-hidden="true">
+          <svg viewBox="0 0 180 180" width="30" height="30" aria-hidden="true"><use href="#darkroom-logo-mark"></use></svg>
+        </span>
+        <span>Darkroom</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="/#features">Features</a>
+        <a href="/#security">Security</a>
+        <a href="/#pricing">Pricing</a>
+        <a href="/best-photo-vault-apps-iphone">Compare</a>
+        <a href="/guides/">Guides</a>
+        <a href="/about">About</a>
+        <a href="/support">Support</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle"
+                class="theme-toggle"
+                type="button"
+                aria-label="Switch to light mode"
+                aria-pressed="false"
+                data-light-label="Light"
+                data-dark-label="Dark"
+                data-switch-light="Switch to light mode"
+                data-switch-dark="Switch to dark mode">
+          <span class="theme-icon" id="theme-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><line x1="12" y1="2.5" x2="12" y2="5.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="12" y1="18.8" x2="12" y2="21.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="2.5" y1="12" x2="5.2" y2="12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="18.8" y1="12" x2="21.5" y2="12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="5.3" y1="5.3" x2="7.2" y2="7.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="16.8" y1="16.8" x2="18.7" y2="18.7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="16.8" y1="7.2" x2="18.7" y2="5.3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="5.3" y1="18.7" x2="7.2" y2="16.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </span>
+          <span id="theme-label">Light</span>
+        </button>
+
+        <a href="/#waitlist" class="btn btn-primary btn-nav" data-cta="nav" data-label-waitlist="Early Access" data-label-live="Get the App">Early Access</a>
+
+        <button type="button" class="mobile-menu-btn" id="mobile-menu-btn" aria-expanded="false" aria-controls="mobile-drawer" aria-label="Toggle menu">
+          <svg class="icon-menu" viewBox="0 0 24 24" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+          <svg class="icon-close" viewBox="0 0 24 24" aria-hidden="true"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-drawer" id="mobile-drawer" hidden>
+      <div class="container">
+        <nav class="mobile-drawer-list" aria-label="Mobile">
+          <a href="/#features"><span>Features</span></a>
+          <a href="/#security"><span>Security</span></a>
+          <a href="/#pricing"><span>Pricing</span></a>
+          <a href="/best-photo-vault-apps-iphone"><span>Compare vault apps</span></a>
+          <a href="/guides/"><span>Guides</span></a>
+          <a href="/about"><span>About</span></a>
+          <a href="/support"><span>Support</span></a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- /build:header -->
+
+  <main id="main-content" tabindex="-1">
+    <div class="page-hero">
+      <div class="container">
+        <!-- build:breadcrumbs -->
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="/">Darkroom</a></li>
+            <li><a href="/guides/">Guides</a></li>
+            <li aria-current="page">Move a photo vault to a new iPhone</li>
+          </ol>
+        </nav>
+        <!-- /build:breadcrumbs -->
+        <p class="eyebrow"><span class="dot dot-amber" aria-hidden="true"></span>Guide · New iPhone</p>
+        <h1>How to move a private photo vault to a new iPhone without losing photos</h1>
+        <!-- build:byline -->
+        <p class="byline"><span>By <a href="https://darkroom.buzz/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>Last updated <time datetime="2026-10-22">22 October 2026</time></span></p>
+        <!-- /build:byline -->
+        <div class="answer">
+          <span class="answer-label">Short answer</span>
+          <p>Before you switch, find out how your vault app backs up, make sure that backup is complete, and export a copy of anything you can't replace. Many vault apps keep photos only on the phone or in their own cloud, so a normal iPhone transfer brings back the app but not the photos. Don't erase the old iPhone until every photo opens on the new one.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container article-layout">
+      <article class="prose">
+        <p>Switching phones is when vault photos most often disappear. In the most recent one- and two-star App Store reviews of eight popular vault apps, which we read in October 2026, backup and new-phone transfer problems came up 31 times, and lost or missing photos 47 times. Most of those losses are avoidable if you check a few things before the old phone is wiped. This checklist works for any vault app.</p>
+
+        <h2 id="why">Why do vault photos go missing on a new iPhone?</h2>
+        <p>Usually because the photos were never in the place the owner thought they were. The common causes:</p>
+        <ul>
+          <li><strong>The vault isn't in your iPhone backup.</strong> Apps can keep files out of iCloud Backup and Quick Start transfers. Many vaults do, on purpose, so private photos don't sit in an ordinary backup. The app comes back on the new phone; the photos don't.</li>
+          <li><strong>The backup is in the developer's cloud</strong> and needs an account, a paid plan, or an email you no longer use.</li>
+          <li><strong>The backup was never finished.</strong> iCloud storage was full, uploads were set to Wi-Fi only, or the app wasn't opened long enough to upload.</li>
+          <li><strong>The code doesn't carry over.</strong> A PIN or recovery email tied to the old phone, or a forgotten password with no recovery option.</li>
+          <li><strong>The old phone was erased too early</strong>, before anyone checked the new one.</li>
+        </ul>
+
+        <h2 id="step-1">Step 1: Find out how your vault app backs up</h2>
+        <p>Open the vault's settings and look for a backup, sync or cloud section. Then answer three questions: where does the backup go, is it on, and what do you need to restore it?</p>
+        <div class="data-table-wrap" tabindex="0" role="region" aria-labelledby="backup-caption">
+          <table class="data-table">
+            <caption id="backup-caption">Where vault apps keep their backups, and what restoring needs</caption>
+            <thead><tr><th scope="col">Backup type</th><th scope="col">What you need on the new iPhone</th><th scope="col">Risk</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">iPhone backup / Quick Start</th><td>A full transfer from the old iPhone</td><td>Only works if the app includes vault files in the backup. Check, don't assume.</td></tr>
+              <tr><th scope="row">The developer's own cloud</th><td>Your account login, often a paid plan</td><td>Lost login, lapsed subscription, or a service that shuts down.</td></tr>
+              <tr><th scope="row">Your own iCloud, managed by the app</th><td>The same Apple Account, plus the vault's code</td><td>Incomplete upload if iCloud storage is full.</td></tr>
+              <tr><th scope="row">Manual export file</th><td>The file, and its password if it's encrypted</td><td>Only as current as your last export.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>If you can't find any backup setting, assume the photos exist only on the old phone. Contact the developer before you switch.</p>
+
+        <h2 id="step-2">Step 2: Export a safety copy of what you can't replace</h2>
+        <p>Export your most important photos and videos to somewhere you control, such as Files on a Mac or an encrypted external drive. Check the export keeps full quality and dates. Exported copies are no longer encrypted by the vault, so keep them somewhere private and delete them once the move is done.</p>
+
+        <h2 id="step-3">Step 3: Make sure the backup is complete</h2>
+        <ol class="steps">
+          <li><strong>Connect to Wi-Fi and power</strong>, and open the vault app. Many apps only upload while they're open or recently used.</li>
+          <li><strong>Check the backup status</strong> in the app. Look for "backed up", a last-backup time, or a count of items still waiting.</li>
+          <li><strong>Check your iCloud storage</strong> in <span class="path">Settings › [your name] › iCloud</span>. A full iCloud quietly stops backups.</li>
+          <li><strong>Compare counts.</strong> Note how many photos and videos the vault holds now, so you can check them later.</li>
+        </ol>
+
+        <h2 id="step-4">Step 4: Make sure you can get in on the new phone</h2>
+        <p>Write down your vault code and any recovery phrase, recovery key or recovery email. If your vault has a decoy vault or several vaults with different codes, note each one. Face ID won't carry over: the first unlock on a new iPhone needs the code itself.</p>
+
+        <h2 id="step-5">Step 5: Move to the new iPhone</h2>
+        <p>Set up the new iPhone with Quick Start or from an iCloud backup, signed in to the same Apple Account. Then install or open the vault app.</p>
+
+        <h2 id="step-6">Step 6: Restore inside the vault app, then check everything</h2>
+        <ol class="steps">
+          <li><strong>Open the vault app</strong> and follow its restore steps: log in, enter your code, or choose restore.</li>
+          <li><strong>Wait for it to finish.</strong> Large libraries can take hours. Keep the phone on Wi-Fi and power.</li>
+          <li><strong>Compare the counts</strong> with what you noted in Step 3.</li>
+          <li><strong>Open a few full-size photos and play a few videos</strong>, including old ones, not just thumbnails.</li>
+          <li><strong>Check albums, notes and any decoy vaults.</strong></li>
+        </ol>
+
+        <h2 id="step-7">Step 7: Only then erase the old iPhone</h2>
+        <p>Keep the old phone as it is until the new one has passed Step 6. If something is missing, the old phone is your copy. When everything checks out, delete your safety exports from Step 2, then erase the old iPhone.</p>
+
+        <h2 id="darkroom">Moving Darkroom to a new iPhone</h2>
+        <p>Darkroom, which we make, is built for this moment. Its vault files are deliberately left out of the iPhone's own backup and Quick Start transfer. Instead, Darkroom keeps its own encrypted backup in your iCloud, and you restore it by drawing your pattern.</p>
+        <ol class="steps">
+          <li><strong>On the old iPhone:</strong> open <span class="path">Settings › Backup</span> in Darkroom and check that nothing is still waiting to back up.</li>
+          <li><strong>On the new iPhone:</strong> sign in to the same Apple Account, install Darkroom, and choose <span class="path">Restore your vault</span>.</li>
+          <li><strong>Draw your pattern,</strong> or choose <span class="path">Restore with recovery phrase</span>. Thumbnails arrive first so you can browse right away; full-size originals download in the background.</li>
+          <li><strong>Open other vaults,</strong> such as a decoy, by drawing their patterns. They stay in iCloud until you do.</li>
+        </ol>
+        <figure class="shot">
+          <img src="/assets/guides/darkroom-backup.jpg" alt="Darkroom's backup screen: the vault is encrypted on the iPhone and backed up privately to the user's iCloud" width="559" height="1216" loading="lazy" decoding="async">
+          <figcaption>Darkroom backs up only encrypted data, to your own iCloud. The backup counts toward your iCloud storage.</figcaption>
+        </figure>
+        <!-- SCREENSHOT TODO (Milan): Darkroom's "Restore your vault" screen on a new iPhone. Save as /assets/guides/darkroom-restore.jpg -->
+
+        <h2 id="already-missing">What if photos are already missing?</h2>
+        <p>Don't delete or reinstall the vault app on either phone, and don't erase the old iPhone if you still have it. Check whether the old phone still opens the vault, look for a restore option in the app's settings, check whether the app has its own website login, and email the developer with your app version and what happened. Reinstalling can delete local files that might still be recoverable.</p>
+
+        <div class="cta-card">
+          <p class="cta-card-title">New phone? Everything comes back.</p>
+          <p>Darkroom keeps an encrypted backup in your own iCloud. On a new iPhone, draw your pattern and your vault restores. Free plan included.</p>
+          <a href="/#waitlist" class="btn btn-primary" data-cta="body" data-label-waitlist="Join the Early Tester List" data-label-live="Download on the App Store">Join the Early Tester List</a>
+          <!-- build:status -->
+          <span class="release-status">Version 1.0 was submitted to App Store review in October 2026. It is not on the App Store yet.</span>
+          <!-- /build:status -->
+        </div>
+
+        <h2 id="faq">Questions people ask</h2>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Does Quick Start transfer photo vault apps?</span></span></summary>
+            <div class="faq-body"><p>It transfers the app, and the app's files only if the app includes them in the iPhone's backup. Many vault apps leave their files out on purpose, so check how your vault backs up before you switch.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Do I need the same Apple Account on the new iPhone?</span></span></summary>
+            <div class="faq-body"><p>For vaults that back up to your iCloud, yes. The backup lives in that Apple Account's iCloud. For vaults that use their own cloud, you need that app's login instead.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Will Face ID work for my vault on the new iPhone?</span></span></summary>
+            <div class="faq-body"><p>Not until you've unlocked it once with your code. Face ID is tied to the device, so the first unlock on a new iPhone needs your PIN, password or pattern.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>How long does restoring a vault take?</span></span></summary>
+            <div class="faq-body"><p>It depends on the size of the library and your connection. Thousands of photos and long videos can take hours. Keep the new phone on Wi-Fi and power, and don't erase the old one until it's done.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Does Darkroom restore with Quick Start?</span></span></summary>
+            <div class="faq-body"><p>Quick Start moves the app, not the vault. The vault comes back from Darkroom's own encrypted iCloud backup when you choose Restore your vault and draw your pattern on the new iPhone.</p></div>
+          </details>
+        </div>
+
+        <p><em>Something wrong or out of date? Email <a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a> and we'll fix it.</em></p>
+      </article>
+
+      <aside class="article-aside" aria-label="On this page">
+        <nav class="toc" aria-label="Table of contents">
+          <p class="toc-title">On this page</p>
+          <ol>
+            <li><a href="#why">Why photos go missing</a></li>
+            <li><a href="#step-1">1. How your vault backs up</a></li>
+            <li><a href="#step-2">2. Export a safety copy</a></li>
+            <li><a href="#step-3">3. Finish the backup</a></li>
+            <li><a href="#step-4">4. Your code and recovery</a></li>
+            <li><a href="#step-5">5. Move to the new iPhone</a></li>
+            <li><a href="#step-6">6. Restore and check</a></li>
+            <li><a href="#step-7">7. Then erase the old one</a></li>
+            <li><a href="#darkroom">Moving Darkroom</a></li>
+            <li><a href="#faq">Questions people ask</a></li>
+          </ol>
+        </nav>
+        <div class="related">
+          <p class="toc-title">Related</p>
+          <ul role="list">
+            <li><a href="/guides/how-to-hide-photos-on-iphone">How to hide photos on iPhone</a></li>
+            <li><a href="/guides/is-iphone-hidden-album-private">Is the Hidden album private?</a></li>
+            <li><a href="/best-photo-vault-apps-iphone">Photo vault apps compared</a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- build:footer -->
+  <!-- Shared footer for subpages. Edit partials/footer.html, then run python3 tools/build.py. -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="/" class="logo" style="margin-bottom:12px" aria-label="Darkroom home">
+            <span class="logo-plate" aria-hidden="true">
+              <svg viewBox="0 0 180 180" width="30" height="30" aria-hidden="true"><use href="#darkroom-logo-mark"></use></svg>
+            </span>
+            <span>Darkroom</span>
+          </a>
+          <p style="color:var(--muted);max-width:34ch;margin-bottom:14px">Encrypted photo, video and note vault for iPhone and iPad. Encrypted on your device, backed up to your own iCloud.</p>
+          <p style="color:var(--amber);font-family:var(--font-mono);font-size:0.75rem">No accounts · No ads · No analytics</p>
+        </div>
+
+        <div class="footer-col">
+          <h2 class="footer-heading">Guides</h2>
+          <ul role="list">
+            <li><a href="/guides/how-to-hide-photos-on-iphone">How to hide photos on iPhone</a></li>
+  <li><a href="/guides/is-iphone-hidden-album-private">Is the Hidden album private?</a></li>
+  <li><a href="/guides/move-photo-vault-to-new-iphone">Move a photo vault to a new iPhone</a></li>
+  <li><a href="/guides/photo-vault-lost-photos">Photo vault lost your photos</a></li>
+  <li><a href="/guides/keepsafe-alternatives">Keepsafe alternatives</a></li>
+            <li><a href="/guides/">All guides</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h2 class="footer-heading">Darkroom</h2>
+          <ul role="list">
+            <li><a href="/#features">Features</a></li>
+            <li><a href="/#security">How the encryption works</a></li>
+            <li><a href="/#pricing">Free vs Pro</a></li>
+            <li><a href="/best-photo-vault-apps-iphone">Photo vault apps compared</a></li>
+            <li><a href="/#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h2 class="footer-heading">Help &amp; Legal</h2>
+          <ul role="list">
+            <li><a href="/about">About</a></li>
+            <li><a href="/support">Support</a></li>
+            <li><a href="/privacy">Privacy policy</a></li>
+            <li><a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Darkroom · Inertia Projects</p>
+        <p>App Store privacy label: <strong>Data Not Collected</strong></p>
+      </div>
+    </div>
+  </footer>
+  <!-- /build:footer -->
+
+  <script src="/app.js" defer></script>
+</body>
+</html>
