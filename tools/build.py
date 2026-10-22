@@ -323,7 +323,7 @@ def render_guide_list():
 
 def render_partial(name, page):
     text = (ROOT / "partials" / name).read_text(encoding="utf-8")
-    guide_links = "\n".join(f'<li><a href="{g["path"]}">{esc(g["crumb"])}</a></li>' for g in GUIDES)
+    guide_links = "\n".join(f'<li><a href="{g["path"]}">{esc(g["crumb"])}</a></li>' for g in GUIDES[:5])
     return text.replace("{{guide_links}}", guide_links).replace("{{year}}", page["updated"][:4])
 
 

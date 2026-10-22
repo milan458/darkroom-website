@@ -190,18 +190,22 @@ Sources for new rows: Search Console queries, Google autocomplete and People Als
 
 | # | Keyword / question | Intent | URL | Status |
 |---|---|---|---|---|
-| 1 | How to hide photos on iPhone (all methods, Hidden album limits) | How-to | /guides/how-to-hide-photos-on-iphone | Draft, needs review |
-| 2 | Is the iPhone Hidden album actually private? | Question | /guides/is-iphone-hidden-album-private | Draft, needs review |
-| 3 | How to move a private photo vault to a new iPhone without losing photos | How-to | /guides/move-photo-vault-to-new-iphone | Draft, needs review |
-| 4 | Private Photo Vault lost my photos: what to do | Problem | /guides/photo-vault-lost-photos | To do |
+| 1 | How to hide photos on iPhone (all methods, Hidden album limits) | How-to | /guides/how-to-hide-photos-on-iphone | Live 22 Oct 2026, check menu paths on a device |
+| 2 | Is the iPhone Hidden album actually private? | Question | /guides/is-iphone-hidden-album-private | Live 22 Oct 2026, check menu paths on a device |
+| 3 | How to move a private photo vault to a new iPhone without losing photos | How-to | /guides/move-photo-vault-to-new-iphone | Live 22 Oct 2026, check menu paths on a device |
+| 4 | Private Photo Vault lost my photos: what to do | Problem | /guides/photo-vault-lost-photos | Live 22 Oct 2026, check menu paths on a device |
 | 5 | Best photo vault apps for iPhone 2026 | Comparison | /best-photo-vault-apps-iphone | Live (refresh monthly) |
-| 6 | Keepsafe alternatives with no account | Comparison | /guides/keepsafe-alternatives | To do |
-| 7 | How to lock photos on iPhone with Face ID or a pattern | How-to | /guides/lock-photos-iphone-face-id | To do |
-| 8 | What is a decoy vault | Definition | /guides/what-is-a-decoy-vault | To do |
-| 9 | How to hide videos on iPhone | How-to | /guides/how-to-hide-videos-on-iphone | To do |
-| 10 | Photo vault apps without subscriptions or ads | Comparison | /guides/photo-vault-no-subscription-no-ads | To do |
-| 11 | Forgot photo vault password: what now | Problem | /guides/forgot-photo-vault-password | To do |
-| 12 | How encrypted photo vaults work (Argon2id/AES-GCM in plain English) | Explainer | /guides/how-encrypted-photo-vaults-work | To do |
+| 6 | Keepsafe alternatives with no account | Comparison | /guides/keepsafe-alternatives | Live 22 Oct 2026, check menu paths on a device |
+| 7 | How to lock photos on iPhone with Face ID or a pattern | How-to | /guides/lock-photos-iphone-face-id | Live 22 Oct 2026, check menu paths on a device |
+| 8 | What is a decoy vault | Definition | /guides/what-is-a-decoy-vault | Live 22 Oct 2026, check menu paths on a device |
+| 9 | How to hide videos on iPhone | How-to | /guides/how-to-hide-videos-on-iphone | Live 22 Oct 2026, check menu paths on a device |
+| 10 | Photo vault apps without subscriptions or ads | Comparison | /guides/photo-vault-no-subscription-no-ads | Live 22 Oct 2026, check menu paths on a device |
+| 11 | Forgot photo vault password: what now | Problem | /guides/forgot-photo-vault-password | Live 22 Oct 2026, check menu paths on a device |
+| 12 | How encrypted photo vaults work (Argon2id/AES-GCM in plain English) | Explainer | /guides/how-encrypted-photo-vaults-work | Live 22 Oct 2026, check menu paths on a device |
+| 13 | Are photo vault apps safe? | Question | /guides/are-photo-vault-apps-safe | Live 22 Oct 2026, check menu paths on a device |
+| 14 | How to hide photos on iPad | How-to | /guides/how-to-hide-photos-on-ipad | To do |
+| 15 | Calculator vault apps: do they actually hide anything? | Question | /guides/calculator-vault-apps | To do |
+| 16 | How to hide apps on iPhone (iOS 18+) | How-to | /guides/how-to-hide-apps-on-iphone | To do |
 
 Statuses: To do → Drafting → Draft, needs review → Live → Refreshed (date).
 

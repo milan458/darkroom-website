@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" id="meta-theme-color" content="#070605">
+  <script>
+    try {
+      const savedScheme = localStorage.getItem("color-scheme");
+      const metaScheme = document.querySelector('meta[name="color-scheme"]');
+      const metaTheme = document.getElementById("meta-theme-color");
+      const prefersLight = window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches;
+      const resolved = savedScheme === "light" || savedScheme === "dark" ? savedScheme : (prefersLight ? "light" : "dark");
+      if (metaScheme) metaScheme.content = resolved;
+      if (metaTheme) metaTheme.content = resolved === "light" ? "#F3EEE7" : "#070605";
+      document.documentElement.dataset.theme = resolved;
+    } catch {}
+  </script>
+  <!-- build:meta -->
+  <title>Photo Vault Lost Your Photos? What to Do Next</title>
+  <meta name="description" content="Photos missing from Private Photo Vault, Keepsafe or another vault app? What to do first, where photos can still be, and how to stop it happening again.">
+  <link rel="canonical" href="https://darkroom.buzz/guides/photo-vault-lost-photos">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Darkroom">
+  <meta property="og:title" content="Photo Vault Lost Your Photos? What to Do Next">
+  <meta property="og:description" content="Photos missing from Private Photo Vault, Keepsafe or another vault app? What to do first, where photos can still be, and how to stop it happening again.">
+  <meta property="og:url" content="https://darkroom.buzz/guides/photo-vault-lost-photos">
+  <meta property="og:image" content="https://darkroom.buzz/assets/og/darkroom-og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Darkroom photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
+  <meta property="og:locale" content="en_US">
+  <meta property="article:published_time" content="2026-10-22">
+  <meta property="article:modified_time" content="2026-10-22">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Photo Vault Lost Your Photos? What to Do Next">
+  <meta name="twitter:description" content="Photos missing from Private Photo Vault, Keepsafe or another vault app? What to do first, where photos can still be, and how to stop it happening again.">
+  <meta name="twitter:image" content="https://darkroom.buzz/assets/og/darkroom-og.png">
+  <meta name="twitter:image:alt" content="Darkroom photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
+  <!-- /build:meta -->
+
+  <link rel="icon" type="image/svg+xml" href="/assets/darkroom-logo.svg">
+  <link rel="apple-touch-icon" href="/assets/darkroom-icon-180.png">
+
+  <link rel="preload" href="/assets/fonts/plus-jakarta-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/fonts/fonts.css">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/pages.css">
+
+  <!-- build:jsonld -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://darkroom.buzz/#org",
+        "name": "Inertia Projects",
+        "url": "https://darkroom.buzz/about",
+        "email": "business@inertiaprojects.info",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://darkroom.buzz/assets/darkroom-icon-512.png"
+        },
+        "brand": {
+          "@type": "Brand",
+          "name": "Darkroom"
+        }
+      },
+      {
+        "@type": "Article",
+        "@id": "https://darkroom.buzz/guides/photo-vault-lost-photos#article",
+        "headline": "Your photo vault app lost your photos: what to do now",
+        "description": "Photos missing from Private Photo Vault, Keepsafe or another vault app? What to do first, where photos can still be, and how to stop it happening again.",
+        "url": "https://darkroom.buzz/guides/photo-vault-lost-photos",
+        "mainEntityOfPage": "https://darkroom.buzz/guides/photo-vault-lost-photos",
+        "image": "https://darkroom.buzz/assets/guides/darkroom-backup.jpg",
+        "datePublished": "2026-10-22",
+        "dateModified": "2026-10-22",
+        "author": {
+          "@id": "https://darkroom.buzz/#org"
+        },
+        "publisher": {
+          "@id": "https://darkroom.buzz/#org"
+        },
+        "inLanguage": "en-US",
+        "isPartOf": {
+          "@id": "https://darkroom.buzz/#website"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Darkroom",
+            "item": "https://darkroom.buzz/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Guides",
+            "item": "https://darkroom.buzz/guides/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Photo vault lost your photos",
+            "item": "https://darkroom.buzz/guides/photo-vault-lost-photos"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://darkroom.buzz/guides/photo-vault-lost-photos#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Can deleted vault app photos be recovered?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sometimes. If the app had a cloud backup, or you still have the old phone or a computer copy, yes. If the app kept photos only on the phone and the app was deleted, they're usually gone, because deleting an app deletes its storage."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Will reinstalling the vault app bring my photos back?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Only if the app restores them from a cloud backup. Reinstalling by itself gives you an empty vault, and it deletes any local copy that was left. Contact the developer first."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does an iCloud backup of my iPhone include my vault photos?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It depends on the app. Some include their files in the iPhone's backup; many leave them out on purpose and use their own backup instead. Check the app's settings or ask the developer."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "I see thumbnails but the photos won't open. Are they lost?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Not necessarily. Many vaults download full-size photos from the cloud in the background. Keep the app open on Wi-Fi and power for a while, and check your iCloud or the app's cloud storage isn't full."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <!-- /build:jsonld -->
+</head>
+<body>
+  <!-- build:header -->
+  <!-- Shared header for subpages. Edit partials/header.html, then run python3 tools/build.py. -->
+  <svg width="0" height="0" style="position:absolute;visibility:hidden" aria-hidden="true">
+    <symbol id="darkroom-logo-mark" viewBox="0 0 180 180">
+      <defs>
+        <linearGradient id="drChassis" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#28211D"/>
+          <stop offset="0.55" stop-color="#191412"/>
+          <stop offset="1" stop-color="#0E0B09"/>
+        </linearGradient>
+      </defs>
+      <rect width="180" height="180" rx="40" fill="url(#drChassis)"/>
+      <rect x="2" y="2" width="176" height="176" rx="38" fill="none" stroke="#3D332C" stroke-width="2" opacity="0.7"/>
+      <!-- 5x5 Bolt Matrix (19 inactive bolts) -->
+      <g fill="#433932" stroke="#574B42" stroke-width="1.5">
+        <circle cx="38" cy="38" r="8.5"/>
+        <circle cx="64" cy="38" r="8.5"/>
+        <circle cx="90" cy="38" r="8.5"/>
+        <circle cx="116" cy="38" r="8.5"/>
+        <circle cx="38" cy="64" r="8.5"/>
+        <circle cx="64" cy="64" r="8.5"/>
+        <circle cx="142" cy="64" r="8.5"/>
+        <circle cx="38" cy="90" r="8.5"/>
+        <circle cx="90" cy="90" r="8.5"/>
+        <circle cx="116" cy="90" r="8.5"/>
+        <circle cx="142" cy="90" r="8.5"/>
+        <circle cx="38" cy="116" r="8.5"/>
+        <circle cx="90" cy="116" r="8.5"/>
+        <circle cx="116" cy="116" r="8.5"/>
+        <circle cx="142" cy="116" r="8.5"/>
+        <circle cx="64" cy="142" r="8.5"/>
+        <circle cx="90" cy="142" r="8.5"/>
+        <circle cx="116" cy="142" r="8.5"/>
+        <circle cx="142" cy="142" r="8.5"/>
+      </g>
+      <!-- Connecting safelight path: (0,4) -> (1,3) -> (1,2) -> (2,1) -> (3,1) -> (4,0) -->
+      <path d="M38 142 L64 116 L64 90 L90 64 L116 64 L142 38" fill="none" stroke="#F04E37" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- 6 Active Safelight Bolts -->
+      <g fill="#F04E37">
+        <circle cx="38" cy="142" r="9"/>
+        <circle cx="64" cy="116" r="9"/>
+        <circle cx="64" cy="90" r="9"/>
+        <circle cx="90" cy="64" r="9"/>
+        <circle cx="116" cy="64" r="9"/>
+        <circle cx="142" cy="38" r="10.5"/>
+      </g>
+    </symbol>
+  </svg>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="/" class="logo" aria-label="Darkroom home">
+        <span class="logo-plate" aria-hidden="true">
+          <svg viewBox="0 0 180 180" width="30" height="30" aria-hidden="true"><use href="#darkroom-logo-mark"></use></svg>
+        </span>
+        <span>Darkroom</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="/#features">Features</a>
+        <a href="/#security">Security</a>
+        <a href="/#pricing">Pricing</a>
+        <a href="/best-photo-vault-apps-iphone">Compare</a>
+        <a href="/guides/">Guides</a>
+        <a href="/about">About</a>
+        <a href="/support">Support</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle"
+                class="theme-toggle"
+                type="button"
+                aria-label="Switch to light mode"
+                aria-pressed="false"
+                data-light-label="Light"
+                data-dark-label="Dark"
+                data-switch-light="Switch to light mode"
+                data-switch-dark="Switch to dark mode">
+          <span class="theme-icon" id="theme-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><line x1="12" y1="2.5" x2="12" y2="5.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="12" y1="18.8" x2="12" y2="21.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="2.5" y1="12" x2="5.2" y2="12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="18.8" y1="12" x2="21.5" y2="12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="5.3" y1="5.3" x2="7.2" y2="7.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="16.8" y1="16.8" x2="18.7" y2="18.7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="16.8" y1="7.2" x2="18.7" y2="5.3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="5.3" y1="18.7" x2="7.2" y2="16.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </span>
+          <span id="theme-label">Light</span>
+        </button>
+
+        <a href="/#waitlist" class="btn btn-primary btn-nav" data-cta="nav" data-label-waitlist="Early Access" data-label-live="Get the App">Early Access</a>
+
+        <button type="button" class="mobile-menu-btn" id="mobile-menu-btn" aria-expanded="false" aria-controls="mobile-drawer" aria-label="Toggle menu">
+          <svg class="icon-menu" viewBox="0 0 24 24" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+          <svg class="icon-close" viewBox="0 0 24 24" aria-hidden="true"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-drawer" id="mobile-drawer" hidden>
+      <div class="container">
+        <nav class="mobile-drawer-list" aria-label="Mobile">
+          <a href="/#features"><span>Features</span></a>
+          <a href="/#security"><span>Security</span></a>
+          <a href="/#pricing"><span>Pricing</span></a>
+          <a href="/best-photo-vault-apps-iphone"><span>Compare vault apps</span></a>
+          <a href="/guides/"><span>Guides</span></a>
+          <a href="/about"><span>About</span></a>
+          <a href="/support"><span>Support</span></a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- /build:header -->
+
+  <main id="main-content" tabindex="-1">
+    <div class="page-hero">
+      <div class="container">
+        <!-- build:breadcrumbs -->
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="/">Darkroom</a></li>
+            <li><a href="/guides/">Guides</a></li>
+            <li aria-current="page">Photo vault lost your photos</li>
+          </ol>
+        </nav>
+        <!-- /build:breadcrumbs -->
+        <p class="eyebrow"><span class="dot dot-amber" aria-hidden="true"></span>Guide · Missing photos</p>
+        <h1>Your photo vault app lost your photos: what to do now</h1>
+        <!-- build:byline -->
+        <p class="byline"><span>By <a href="https://darkroom.buzz/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>Last updated <time datetime="2026-10-22">22 October 2026</time></span></p>
+        <!-- /build:byline -->
+        <div class="answer">
+          <span class="answer-label">Short answer</span>
+          <p>Stop and don't delete, reinstall or reset anything yet. Photos that vanish from a vault app are often still on the old phone, in the app's own cloud, or in a backup, and reinstalling can erase the last local copy. Check those places in order, then contact the developer with your app version and what happened.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container article-layout">
+      <article class="prose">
+        <p>Lost or missing photos are one of the most common complaints about vault apps. In the most recent one- and two-star App Store reviews of eight popular vault apps, which we read in October 2026, missing photos came up 47 times. The good news: "missing" often means "not where you're looking". This guide walks through what to do, in order, without making things worse.</p>
+
+        <h2 id="first">What should you not do when vault photos go missing?</h2>
+        <p>Don't delete the app, reinstall it, or reset your iPhone. A vault app keeps its files inside its own storage on the phone. Deleting the app deletes that storage, and reinstalling gives you an empty vault.</p>
+        <ul>
+          <li><strong>Don't delete or reinstall the vault app</strong>, on any device.</li>
+          <li><strong>Don't erase your old iPhone</strong> if you've just switched phones.</li>
+          <li><strong>Don't restore an older iPhone backup over your phone</strong> yet. It can replace newer data.</li>
+          <li><strong>Don't pay a "recovery" tool or service</strong> that promises to unlock a vault. If the vault really is encrypted, they can't; if it isn't, the developer can help for free.</li>
+        </ul>
+
+        <h2 id="where">Where could the photos still be?</h2>
+        <p>Check these places in order. Most recoveries happen at one of the first three.</p>
+        <ol class="steps">
+          <li><strong>Inside the app, but somewhere else.</strong> Look for other albums or folders, a trash or "Recently Deleted" area, a second vault opened by a different PIN (a decoy you set up and forgot), or a filter that hides some items.</li>
+          <li><strong>On your old iPhone or iPad.</strong> If you switched phones, open the vault on the old device. Many vault apps don't move their photos with Quick Start or an iCloud backup.</li>
+          <li><strong>In the app's cloud or backup.</strong> Look in the app's settings for backup, sync or cloud. Some apps keep a cloud copy in their own service, which needs the same account you used before. Others back up to your own iCloud and restore when you open the vault with the same code on the same Apple Account.</li>
+          <li><strong>In your iCloud storage list.</strong> Go to <span class="path">Settings › [your name] › iCloud › Manage Account Storage</span> and look for the vault app. If it's there with data, a backup exists, even if the app isn't showing it yet.</li>
+          <li><strong>On a computer.</strong> If the app's listing mentions iTunes, Finder or Wi-Fi transfer (Private Photo Vault's does), connect the iPhone to a Mac or PC and check the app's files in Finder (iPhone › Files) or the Apple Devices app. Some apps keep copies there.</li>
+          <li><strong>In Photos.</strong> Check <span class="path">Collections › Utilities › Recently Deleted</span> in the Photos app. If you deleted originals after importing them into the vault in the last 30 days, they may still be there.</li>
+        </ol>
+
+        <h2 id="by-cause">What happened? Match your situation</h2>
+        <div class="data-table-wrap" tabindex="0" role="region" aria-labelledby="cause-caption">
+          <table class="data-table">
+            <caption id="cause-caption">Common ways vault photos go missing, and where to look first</caption>
+            <thead><tr><th scope="col">What happened</th><th scope="col">Look first</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Switched to a new iPhone</th><td>The old iPhone, then the app's own backup or cloud restore</td></tr>
+              <tr><th scope="row">App was updated, then photos disappeared</th><td>Force-quit and reopen; check for another update; contact the developer before reinstalling</td></tr>
+              <tr><th scope="row">Reinstalled the app</th><td>The app's cloud or iCloud backup, signed in with the same account</td></tr>
+              <tr><th scope="row">Subscription ended</th><td>Whether the app limits access on the free plan; resubscribing may restore access</td></tr>
+              <tr><th scope="row">Entered a different PIN or pattern</th><td>You may be in a decoy vault; lock and try your main code</td></tr>
+              <tr><th scope="row">Only thumbnails show, or videos won't play</th><td>Full-size files may still be downloading from the cloud; keep the app open on Wi-Fi</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 id="contact">How do you ask the developer for help?</h2>
+        <p>Email the developer before you change anything else. Their contact details are on the app's App Store page under App Support, or in the app's settings. Include:</p>
+        <ul>
+          <li>The app name and version, and your iPhone model and iOS version.</li>
+          <li>What you did just before the photos went missing (update, new phone, reinstall, subscription change).</li>
+          <li>Roughly how many items are missing, and whether thumbnails show.</li>
+          <li>Whether you used the app's cloud backup, and the account email if it has one.</li>
+        </ul>
+        <p>Never send your PIN, password, pattern or recovery phrase. A real developer won't ask for it.</p>
+        <p>If the developer doesn't answer within a few days, you can ask Apple for a refund of a recent purchase at reportaproblem.apple.com. That won't recover photos, but it's worth knowing.</p>
+
+        <h2 id="prevent">How do you stop it happening again?</h2>
+        <p>Use a vault with a backup you can restore, check that backup now and then, and keep your own copy of anything you can't replace.</p>
+        <ul>
+          <li><strong>Know where your backup lives</strong> and what you need to restore it: an account, an Apple Account, a code, a recovery phrase.</li>
+          <li><strong>Check that backups finish.</strong> A full iCloud quietly stops them.</li>
+          <li><strong>Test a restore</strong> on another device if you can, before you need it.</li>
+          <li><strong>Export irreplaceable photos</strong> to an encrypted drive or a computer you control, as a second copy.</li>
+          <li><strong>Before switching phones,</strong> follow <a href="/guides/move-photo-vault-to-new-iphone">our new-iPhone checklist</a>.</li>
+        </ul>
+        <p>Darkroom, which we make, was built around this problem. Its encrypted backup goes to your own iCloud on the free plan, and on a new iPhone you draw your pattern and the vault comes back. If you forget the pattern, the recovery phrase you wrote down at setup opens it. And if Pro ends, you keep full access to view, export and back up everything.</p>
+        <figure class="shot">
+          <img src="/assets/guides/darkroom-backup.jpg" alt="Darkroom's backup screen: encrypted on the iPhone, backed up privately to the user's own iCloud" width="559" height="1216" loading="lazy" decoding="async">
+          <figcaption>Darkroom backs up only encrypted data, to your own iCloud, and restores with your pattern.</figcaption>
+        </figure>
+
+        <div class="cta-card">
+          <p class="cta-card-title">A backup that actually restores</p>
+          <p>Darkroom backs up an encrypted copy of your vault to your own iCloud, free. New phone? Draw your pattern and everything comes back.</p>
+          <a href="/#waitlist" class="btn btn-primary" data-cta="body" data-label-waitlist="Join the beta" data-label-live="Download on the App Store">Join the beta</a>
+          <!-- build:status -->
+          <span class="release-status">Version 1.0 was submitted to App Store review in October 2026. It is not on the App Store yet.</span>
+          <!-- /build:status -->
+        </div>
+
+        <h2 id="faq">Questions people ask</h2>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Can deleted vault app photos be recovered?</span></span></summary>
+            <div class="faq-body"><p>Sometimes. If the app had a cloud backup, or you still have the old phone or a computer copy, yes. If the app kept photos only on the phone and the app was deleted, they're usually gone, because deleting an app deletes its storage.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Will reinstalling the vault app bring my photos back?</span></span></summary>
+            <div class="faq-body"><p>Only if the app restores them from a cloud backup. Reinstalling by itself gives you an empty vault, and it deletes any local copy that was left. Contact the developer first.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Does an iCloud backup of my iPhone include my vault photos?</span></span></summary>
+            <div class="faq-body"><p>It depends on the app. Some include their files in the iPhone's backup; many leave them out on purpose and use their own backup instead. Check the app's settings or ask the developer.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>I see thumbnails but the photos won't open. Are they lost?</span></span></summary>
+            <div class="faq-body"><p>Not necessarily. Many vaults download full-size photos from the cloud in the background. Keep the app open on Wi-Fi and power for a while, and check your iCloud or the app's cloud storage isn't full.</p></div>
+          </details>
+        </div>
+
+        <p><em>Something wrong or out of date? Email <a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a> and we'll fix it.</em></p>
+      </article>
+
+      <aside class="article-aside" aria-label="On this page">
+        <nav class="toc" aria-label="Table of contents">
+          <p class="toc-title">On this page</p>
+          <ol>
+            <li><a href="#first">First: what not to do</a></li>
+            <li><a href="#where">Where the photos might be</a></li>
+            <li><a href="#by-cause">Match what happened</a></li>
+            <li><a href="#contact">Contacting the developer</a></li>
+            <li><a href="#prevent">Stop it happening again</a></li>
+            <li><a href="#faq">Questions people ask</a></li>
+          </ol>
+        </nav>
+        <div class="related">
+          <p class="toc-title">Related</p>
+          <ul role="list">
+            <li><a href="/guides/move-photo-vault-to-new-iphone">Move a vault to a new iPhone</a></li>
+            <li><a href="/guides/forgot-photo-vault-password">Forgot your vault password</a></li>
+            <li><a href="/best-photo-vault-apps-iphone">Photo vault apps compared</a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- build:footer -->
+  <!-- Shared footer for subpages. Edit partials/footer.html, then run python3 tools/build.py. -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="/" class="logo" style="margin-bottom:12px" aria-label="Darkroom home">
+            <span class="logo-plate" aria-hidden="true">
+              <svg viewBox="0 0 180 180" width="30" height="30" aria-hidden="true"><use href="#darkroom-logo-mark"></use></svg>
+            </span>
+            <span>Darkroom</span>
+          </a>
+          <p style="color:var(--muted);max-width:34ch;margin-bottom:14px">Encrypted photo, video and note vault for iPhone and iPad. Encrypted on your device, backed up to your own iCloud.</p>
+          <p style="color:var(--amber);font-family:var(--font-mono);font-size:0.75rem">No accounts · No ads · No analytics</p>
+        </div>
+
+        <div class="footer-col">
+          <h2 class="footer-heading">Guides</h2>
+          <ul role="list">
+            <li><a href="/guides/how-to-hide-photos-on-iphone">How to hide photos on iPhone</a></li>
+  <li><a href="/guides/is-iphone-hidden-album-private">Is the Hidden album private?</a></li>
+  <li><a href="/guides/move-photo-vault-to-new-iphone">Move a photo vault to a new iPhone</a></li>
+  <li><a href="/guides/photo-vault-lost-photos">Photo vault lost your photos</a></li>
+  <li><a href="/guides/keepsafe-alternatives">Keepsafe alternatives</a></li>
+            <li><a href="/guides/">All guides</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h2 class="footer-heading">Darkroom</h2>
+          <ul role="list">
+            <li><a href="/#features">Features</a></li>
+            <li><a href="/#security">How the encryption works</a></li>
+            <li><a href="/#pricing">Free vs Pro</a></li>
+            <li><a href="/best-photo-vault-apps-iphone">Photo vault apps compared</a></li>
+            <li><a href="/#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h2 class="footer-heading">Help &amp; Legal</h2>
+          <ul role="list">
+            <li><a href="/about">About</a></li>
+            <li><a href="/support">Support</a></li>
+            <li><a href="/privacy">Privacy policy</a></li>
+            <li><a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Darkroom · Inertia Projects</p>
+        <p>App Store privacy label: <strong>Data Not Collected</strong></p>
+      </div>
+    </div>
+  </footer>
+  <!-- /build:footer -->
+
+  <script src="/app.js" defer></script>
+</body>
+</html>
