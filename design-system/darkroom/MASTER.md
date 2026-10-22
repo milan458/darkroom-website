@@ -62,11 +62,16 @@
 
 ---
 
-## 2. Three-Tier Typography System
+## 2. Typography System
 
-1. **Display / Machined Engravings (`--font-display`)**: `"Archivo Narrow"`, `700` weight, uppercase, tight tracking (`0.015em`). Used for `h1`–`h3`, buttons, and hardware headers.
-2. **Editorial Prose (`--font-sans`)**: `"Plus Jakarta Sans"`, `400`/`500`/`600` weights. Used for body paragraphs, feature descriptions, competitor cards, and FAQ answers to eliminate all-monospace reading fatigue while maintaining `max-width: 68ch` and `1.65` line height.
-3. **Instrument Telemetry & Specs (`--font-mono`)**: `"DM Mono"` / `"JetBrains Mono"`, `400`/`500` weights. Reserved strictly for frame numbers (`FRAME 01A`), cryptographic specs (`ARGON2ID · 64 MiB`), bench widgets, comparison badges, and the `DRK1` code window.
+Updated 2026-10: testers found the uppercase, monospace "instrument panel" look too technical, so the site now reads like a friendly consumer app.
+
+1. **Everything (`--font-sans`)**: `"Plus Jakarta Sans"`, `400`–`700`, normal (sentence) case, no wide letter-spacing. Used for headings, buttons, labels, chips and body text.
+2. **Code only (`--font-mono`)**: `"DM Mono"`, reserved for the code listing in the Security section.
+3. **Wordmark only (`--font-display`)**: `"Archivo Narrow"`, `700`, uppercase. The DARKROOM logo is the only uppercase text; in sentences the name is written "Darkroom".
+4. No other `text-transform: uppercase`.
+
+**Words:** use the app's plain vocabulary (pattern, recovery phrase, vault, decoy vault, albums, Recently Deleted, backed up, emergency erase). Encryption details (Argon2id, AES-256-GCM, key hierarchy) live only in the Security section (`#security`), the one technical section on the page.
 
 ---
 

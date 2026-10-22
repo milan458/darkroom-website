@@ -45,23 +45,23 @@ URL: https://darkroom.buzz/
 Last updated: 2026-10-22
 
 8:31
-Door closed
+Locked
 Darkroom
-Draw your bolt pattern (6+ bolts)
-0 of 25 bolts · Argon2id armed
-Lights coming on…
-Argon2id (64 MiB · 3 passes) unwrapping room key
-Vault · Main Room
-Search frames & notes
-Today · 1,284 frames
-● Sealed
-Simulate Door Pattern
-iOS 17+ · iPhone & iPad
+Draw your pattern
+0 of 25 dots
+Opening…
+Unlocking your vault
+Library
+Search photos & notes
+Today · 1,284 photos
+● Backed up
+Try a pattern
+iPhone and iPad · iOS 17 or later
 ·
-FREE ON THE APP STORE · NO ADS
-iOS 17+ · Private TestFlight Beta
+Free on the App Store · No ads
+iPhone and iPad · Private beta
 ·
-1 MO FREE PRO + 50% LAUNCH DISCOUNT
+1 month of Pro free for testers
 Encrypted photo vault for iPhone & iPad
 ##
 New phone.
@@ -69,35 +69,44 @@ Same pattern.
 Every photo comes back.
 Darkroom locks your photos, videos and notes behind a pattern on a plate of bolts.
 Encrypted on your iPhone, backed up to your own iCloud, restored the moment you draw it. No account, no ads.
-Apple TestFlight · Private Beta
-### Become an Early Tester
-Private Beta Registration Open
-Claim your private beta seat. Early testers receive 1 Month of Free Darkroom Pro during the beta, plus an exclusive 50% discount on subsequent Yearly and Lifetime plans.
-EARLY TESTER PASS RESERVED
-#### You’re on the early tester roster!
-We’ve reserved your Early Tester Pass for you@example.com .
-Beta Perk
-Darkroom Pro · 1 Month Free
-Launch Benefit
-50% Off Yearly & Lifetime Plans
-Delivery Channel
-Apple TestFlight Build (iOS 17+)
-Join the Early Tester List
+Private beta on TestFlight
+### Try Darkroom early
+Sign-ups open
+Leave your email and you’ll get the TestFlight link straight away. Testers get 1 month of Darkroom Pro free , plus 50% off the yearly and lifetime plans later.
+You’re on the list
+#### Thanks! You’re in.
+Tap below to install the Darkroom beta with Apple’s TestFlight app. We’ll send beta news to you@example.com .
+Join the beta on TestFlight
+Tester perk
+1 month of Darkroom Pro, free
+At launch
+50% off yearly and lifetime plans
+How to install
+Apple’s free TestFlight app (iOS 17 or later)
+Join the beta
 Free vs Pro
-Free download  ·  iOS 17+  ·  iPhone & iPad  ·  App Store privacy label: Data Not Collected
-TestFlight beta build dropping soon  ·  iOS 17+  ·  1 Mo Free Pro + 50% launch discount  ·  No payment info needed
-Darkroom is a local-first encrypted photo, video, and note vault for iPhone and iPad. A pattern drawn across a 5×5 plate of 25 bolts is stretched with Argon2id (64 MiB, 3 passes) and a 256-bit room-header salt to unwrap a random 256-bit vault key, which unwraps a unique AES-256-GCM key for every file and 1 MiB streamable chunk.
-01A
-No Accounts
-02A
-No Email Required
-03A
-No Backdoors
-04A
-No Ads, Ever
-Darkroom at a Glance
-### A new app with no reviews yet. Here is exactly what it does.
-Darkroom 1.0 is brand new, so there are no ratings to point to yet. Instead, here is every fact about the app in one place, with nothing rounded up. The same list is on our About page and in the summary we publish for search engines.
+Free download  ·  iOS 17 or later  ·  App Store privacy label: Data Not Collected
+Beta open now  ·  iOS 17 or later  ·  No payment details needed
+Darkroom is a private photo, video and note vault for iPhone and iPad. Everything is encrypted on your device and opens only with the pattern you draw.
+No account
+No email needed
+No way in for anyone else
+No ads, ever
+About Darkroom
+### What we promise, and who we are.
+Our promises
+#### Only you can see your photos
+- Stays on your iPhone: your pattern is never saved or sent anywhere. Without it, your vault can’t be opened.
+- Unreadable in iCloud: your backup is encrypted before it leaves your phone, so neither we nor Apple can look at it.
+- Open to review: we plan to have the encryption code independently reviewed at version 1.0.
+Who we are
+#### Made by Inertia Projects
+Inertia Projects is a small independent studio making private, easy-to-use apps for iPhone. No investors, no trackers, and no servers holding your files.
+business@inertiaprojects.info
+More about who makes Darkroom →
+Darkroom at a glance
+### The facts, in one place.
+Darkroom 1.0 is brand new, so there are no reviews to point to yet. Here is exactly what it does, with nothing rounded up. The same list is on our About page.
 What it is
 An iPhone and iPad app that hides photos, videos and notes in encrypted vaults.
 How you open it
@@ -132,144 +141,99 @@ Made by
 Inertia Projects, an independent developer. Contact: business@inertiaprojects.info.
 Status
 Version 1.0 was submitted to App Store review in October 2026. It is not on the App Store yet.
-HOW THE KEYS WORK
-#### Nothing that opens your vault leaves your iPhone
-- Pattern never stored: Your pattern is stretched with Argon2id in memory to unwrap the vault key. Nothing that could rebuild it is saved on the phone or in iCloud.
-- Only ciphertext in iCloud: Photos, thumbnails and their names, dates and places are encrypted with AES-256-GCM before they go to your private CloudKit database.
-- No reset button: Neither we nor Apple can open a vault. The recovery phrase you write down at setup is the only spare key.
-WHO MAKES IT
-#### Made by Inertia Projects
-Darkroom is made by Inertia Projects, a small independent developer. We run no servers that store your files, and the app has no ads, no analytics and no accounts. If something is unclear or wrong on this page, email us and we will fix it.
-business@inertiaprojects.info
-More about who makes Darkroom →
-Built From One-Star Reviews
-### Most vault apps either risk data loss or trap your files behind paywalls. Darkroom is built to keep your library recoverable and exportable.
-Before launch, we read hundreds of one- and two-star reviews of other iOS vault apps. Almost nobody complained about missing novelties. They complained about vanished libraries, subscription lockouts, and fake PIN screens. Darkroom was engineered around six non-negotiable rules.
+Why Darkroom
+### A photo vault that never loses your photos or holds them hostage.
+We read hundreds of recent one- and two-star reviews of other vault apps. People weren’t asking for gimmicks. They were upset about lost photos, surprise paywalls and locks that didn’t really protect anything. So Darkroom follows six simple rules.
 -
-Rule 01
-#### Never Lose a Frame
-Every migration, interruption, and CloudKit restore is tested against real vaults. Built-in “Check Vault” verifies every file’s GCM tags on demand.
+1
+#### Never lose a photo
+Updates, interruptions and restores are tested on real libraries. A built-in check can look over every photo and fix problems from your backup.
 -
-Rule 02
-#### Out as Easily as In
-Import and export are symmetrical. Batch-export thousands of frames or entire Rolls back to Photos or Files in one tap, with original ProRAW/HEIC bytes and capture dates intact — zero paywalls or accounts required.
+2
+#### Easy to get photos out
+Save thousands of photos, or whole albums, back to Photos or Files in one go. Full quality, original dates, no paywall.
 -
-Rule 03
-#### Backup That Restores
-Backups you can actually restore, even if you reinstall the app or switch devices. Backs up only AES-256-GCM ciphertext chunks to your private iCloud; encryption keys never leave your iPhone.
+3
+#### Backups that really restore
+Your vault is backed up to your own iCloud, encrypted. Get a new iPhone, draw your pattern, and everything comes back.
 -
-Rule 04
-#### No Hostage Pricing
-150 photos, 10 videos and 1 decoy room free forever with zero ads. If a Pro pass ever lapses, you retain complete lifetime access to view, play, export, and back up everything in your vault.
+4
+#### Fair pricing
+150 photos and 10 videos free, with no ads. If you ever stop paying for Pro, you can still view, export and back up everything.
 -
-Rule 05
-#### Mathematically Sealed
-Encrypted on-device with Argon2id + AES-256-GCM. Without your bolt pattern or recovery phrase, the files are unreadable to us, to Apple, and to anyone who copies them off the phone.
+5
+#### Truly private
+Your photos are encrypted on your iPhone, so nobody can see them without your pattern. Not us, and not Apple.
 -
-Rule 06
-#### Fast With Huge Libraries
-Built to stay fast with large libraries. Videos are encrypted in 1 MiB chunks, so even long 4K videos start playing without decrypting the whole file first.
-Zero-Knowledge Feature Architecture
+6
+#### Fast, even with big libraries
+Videos are encrypted in small chunks, so even long 4K videos start playing without decrypting the whole file first.
+Features
 ### Everything a real vault should do. Nothing it shouldn’t.
-We build cryptographic storage architecture, not ad-tech data vacuums. Every frame, filename, capture date, location, thumbnail, and note is sealed before it touches disk.
-FRAME 01A · PRIMARY LOCK
-#### 5×5 Bolt Pattern Lock
-Draw a path across at least 6 of 25 bolts — exponentially more combinations than a 3×3 pattern or 4-digit PIN. Argon2id (~64 MiB RAM, 3 passes) slows every offline brute-force guess to ~0.5 seconds.
-25 Machined Bolts
-Argon2id · 64 MiB
-Zero Disk Footprint
+Every photo, video and note is encrypted the moment you add it, along with its name, date and location.
+#### Lock with a pattern
+Draw a line through at least 6 of 25 dots. There are far more possible patterns than a 4-digit code, and every guess is made deliberately slow.
 Free + Pro
-FRAME 02A
-#### Recovery Phrase
-During setup you write down a recovery phrase. It wraps the same 256-bit vault key in its own Argon2id envelope, so if you ever forget your pattern, the phrase still opens your vault.
+#### Recovery phrase
+A spare way in if you forget your pattern, and an easy way to unlock with VoiceOver. Set one up in Settings › Recovery phrase.
 Free + Pro
-FRAME 03A
-#### No Vault List
-Darkroom never displays a list of vaults or a room switcher. Each pattern derives a key that unwraps only its matching room header — a wrong pattern opens nothing and reveals zero other rooms.
-Free + Pro
-FRAME 04A · COERCION SHIELD
-#### Unlisted Decoy Rooms
-Set a second bolt pattern that opens a believable room filled with everyday photos. Nothing in Settings marks it as a decoy, and Face ID only ever unlocks your main room so biometrics can’t expose decoys.
-Independent Header Envelope
-Zero UI Vault Picker
-Biometric Isolation
-Free (1 Decoy) + Pro (Unlimited)
-FRAME 05A
-#### Silent Duress Pattern
-Under physical coercion? Draw your duress pattern. Darkroom opens an ordinary room while silently destroying the local keys and encrypted files of every other room on that iPhone in milliseconds.
+#### Decoy vault
+A second pattern opens a separate, ordinary-looking vault with everyday photos. Darkroom never shows a list of vaults, so nobody can tell there’s more.
+1 free, more with Pro
+#### Emergency erase
+An optional extra pattern opens an ordinary vault and quietly removes your other vaults from this iPhone. Your iCloud backup can stay safe.
 Darkroom Pro
-FRAME 06A
-#### Nested Rolls & Per-Roll Locks
-Unlike vaults that dump everything into one flat grid, Darkroom organizes frames into nested Rolls with custom cover frames and colour tags. Pro lets you lock individual Rolls behind their own bolt pattern.
+#### Albums
+Sort photos into albums, and albums inside albums, with your own cover photo and colour. With Pro, an album can have its own pattern.
 Free + Pro
-FRAME 07A · ZERO-KNOWLEDGE CLOUD
-#### Sealed Private iCloud Backup
-On by default and free for every user. Frames, thumbnails, and metadata are encrypted with AES-256-GCM before upload to your private CloudKit database. Apple receives only ciphertext and cannot decrypt a single pixel.
-Private CloudKit Container
-0 Bytes Plaintext
-Pattern-Only Restore
+#### iCloud backup
+On by default and free for everyone. Your vault is encrypted before it’s backed up to your own iCloud, so Apple can’t see a single photo.
 Free + Pro
-FRAME 08A
-#### iPhone & iPad Sync + Shared Vaults
-Open the same rooms across iPhone and iPad with native keyboard shortcuts and drag-and-drop, or share a sealed vault over CloudKit. Remote deletions go to the Fixer Tray so another device never erases local frames silently.
+#### iPhone and iPad, and sharing
+Keep the same vault on your iPhone and iPad, or share a vault with someone you trust. Anything deleted on another device goes to Recently Deleted first.
 Darkroom Pro
-FRAME 09A
-#### In-Vault Camera & Blind Share Sheet
-Shoot photos and videos straight into the open vault so nothing ever touches your Camera Roll. Or use “Send to Darkroom” from any app — it seals files with a public-key envelope while your vault key stays locked away.
+#### Private camera
+Take photos and videos straight into your vault so they never land in your Camera Roll. Or tap “Send to Darkroom” from any app’s share menu.
 Free + Pro
-FRAME 10A
-#### Disguise Icons & Capture Shield
-Swap the Home Screen icon for subtle utility alternates or pair with a custom Shortcuts title. Darkroom blanks the iOS app switcher preview and hides vault contents automatically during screen recording.
+#### Disguise and screen privacy
+Swap the Home Screen icon for a plain-looking one. Darkroom also hides your photos in the app switcher and during screen recording.
 Darkroom Pro
-FRAME 11A · STREAMING ENGINE
-#### DRK1 Chunked Streaming & Integrity Check
-Videos are encrypted in 1 MiB AES-256-GCM chunks with AAD truncation guards so 4 GB 4K videos play immediately without full-file temp decryption. Run “Check Vault” anytime to verify every file’s authentication tags and repair damaged chunks from iCloud.
-1 MiB Random-Access Chunks
-AAD Reorder Guard
-One-Tap CloudKit Repair
+#### Notes and Recently Deleted
+Keep private notes next to your photos. Anything you delete waits in Recently Deleted for 30 days, so mistakes are easy to undo.
 Free + Pro
-FRAME 12A
-#### Encrypted Notes & 30-Day Fixer Tray
-Write private notes with titles and bodies right alongside your photos, autosaved and encrypted in place. Deleted frames rest in the Fixer Tray for 30 days before permanent erasure on-device and in iCloud.
-Free + Pro
-How It Works
-### Three stages. Then the safelight comes on.
-No setup wizards, no account registration, no recovery servers. You draw a bolt pattern, develop your frames, and close the door.
+How it works
+### Three simple steps.
+No account to create and no forms to fill in.
 -
-01
-Stage 01 · The Door
-#### Set Your Bolt Pattern
-Draw your path twice across at least 6 bolts on the 5×5 plate. Argon2id stretches your pattern with a 256-bit room-header salt into the wrapping key that unlocks your random 256-bit vault key. Then write down your recovery phrase. Add Face ID for your main vault if you like.
-KDF Algorithm Argon2id · 64 MiB
-Room Header Salt 256-bit Random (DRK1)
-Pattern Stored on Disk? Never (0 bytes)
+1
+#### Choose your pattern
+Draw a pattern through at least 6 dots, twice to confirm. You can also turn on Face ID and set up a recovery phrase in case you forget.
 -
-02
-Stage 02 · Developing
-#### Develop Your Frames
-Pick photos and videos from Photos or Files, share from any app, or shoot with the in-vault camera. Every item gets its own random 256-bit file key and is sealed into 1 MiB AES-256-GCM chunks before iOS prompts to remove the Camera Roll originals.
-IMG_4021.HEIC (ProRAW) Sealed · DRK1
-IMG_4022.MOV (4K 60fps) Encrypting chunks…
-NOTE_09.DRK Sealed
+2
+#### Add your photos
+Pick photos and videos from your library or Files, share them from any app, or take new ones with the built-in camera. Darkroom then offers to remove the originals from your Camera Roll.
 -
-03
-Stage 03 · Sealed Sync
-#### Close the Door & Seal to iCloud
-Lock the app or swipe away. Darkroom zeroes active keys in memory, masks the iOS app switcher snapshot, and syncs only encrypted records to your private CloudKit container. New iPhone? Draw your pattern and your vault restores.
-Private CloudKit Healthy
-Last Sealed Today · 20:31
-Plaintext Sent to Cloud 0 bytes
-Cryptographic Architecture
+3
+#### Lock it
+Close the app and your vault locks. It’s backed up to your own iCloud automatically. New iPhone? Draw your pattern and everything comes back.
+Privacy
+### Your photos are for your eyes only.
+Darkroom encrypts everything on your iPhone before it’s saved. Without your pattern, your photos are just scrambled data to anyone else, including us and Apple.
+#### What Darkroom protects
+Your photos stay private if someone picks up your unlocked iPhone, looks through its files, or gets hold of your iCloud data. A decoy vault helps if someone asks you to open the app.
+#### Good to know
+Someone who watches you draw your pattern could copy it, so draw it out of sight. Face ID opens your main vault, so if that worries you, turn it off and use your pattern.
+For the technically curious
 ### Keys inside keys. None of them leave your iPhone unwrapped.
-Your bolt pattern never encrypts files directly. It derives an Argon2id wrapping key that unlocks your room header, which unwraps a random 256-bit vault key, which unwraps a unique 256-bit key for every individual photo, video, thumbnail, and note.
+Your pattern never encrypts files directly. It derives an Argon2id wrapping key that unlocks your room header, which unwraps a random 256-bit vault key, which unwraps a unique 256-bit key for every individual photo, video, thumbnail, and note.
 - Argon2id (64 MiB RAM, 3 passes, 1 lane) resists GPU and ASIC cracking far better than legacy PBKDF2-SHA512 or bare PIN hashes
 - AES-256-GCM via Apple CryptoKit authenticates every file chunk, SQLite metadata column, capture timestamp, and thumbnail
 - DRK1 1 MiB chunked format binds header magic, chunk index, and final-chunk marker into GCM Additional Authenticated Data (AAD) so reordering or truncation is caught immediately
-- Portable room header + Keychain rate-limiter stores the 256-bit Argon2id salt in the room header so you can restore from CloudKit on a new iPhone using only your bolt pattern
+- Portable room header + Keychain rate-limiter stores the 256-bit Argon2id salt in the room header so you can restore from CloudKit on a new iPhone using only your pattern
 - One-way public-key Share Extension lets “Send to Darkroom” encrypt imports into an ephemeral Curve25519 envelope without holding your vault key
 VaultCrypto · DRK1 Key Hierarchy
 AES-256-GCM
-// 1. Stretch bolt pattern or passphrase in memory
+// 1. Stretch the pattern or recovery phrase in memory
 patternKey = Argon2id (
 secret: canonicalBoltPath,
 salt: roomHeader.salt256, // 32-byte per-room random salt
@@ -287,133 +251,181 @@ nonce: baseNonce ^ counter(i),
 aad: "DRK1" || uint32(i) || isLastChunk
 )
 // Change pattern? Only roomHeader.sealedKey is re-wrapped.
-#### What Darkroom Protects Against
-Someone taking your unlocked iPhone, demanding you open the app (use a Decoy Room or the Duress Pattern), inspecting your filesystem, or obtaining a copy of your iCloud data. Without your bolt pattern or passphrase, every file and metadata record is authenticated cryptographic noise.
-#### What It Doesn’t (Honest Threat Model)
-A 6-bolt geometric pattern has less entropy than a long random passphrase, and someone who watches your fingers draw it can replay the path. Face ID opens your main room, so if someone could force your face to the phone, disable Face ID and rely on a long passphrase + Decoy/Duress rooms.
-Real-World Coercion Defense
-### Someone takes your phone and asks you to unlock it. Now what?
-Most vault apps prove you have something to hide. A locked folder list invites more pressure, and a fake “calculator” disguise fools nobody who knows the App Store. Darkroom gives you three distinct doors on the exact same 5×5 bolt plate — with zero UI clues that other doors exist.
-Pattern A · Everyday
-#### Main Room
-Opens your real contact sheet, nested Rolls, and encrypted notes. Optionally paired with Face ID for instant daily access when you are alone.
-Pattern B · Decoy
-#### Decoy Room
-Opens a complete, lived-in vault with benign holiday photos and notes. Nothing in Settings labels it a decoy, and there is no vault list anywhere in the UI.
-Pattern C · Emergency
-#### Duress Pattern
-Opens a harmless room while silently erasing the local keys and encrypted files of your other rooms on this iPhone. Your sealed iCloud backup remains intact if you choose.
-Darkroom vs. Other Vaults
-### How Darkroom compares with other iPhone photo vaults
-Most vault apps say they keep photos safe. Fewer say how. This table shows what each developer states on its own App Store page, plus the privacy label it reported to Apple. Checked 22 October 2026.
-Seven iPhone photo vaults, from each app's US App Store page on 22 Oct 2026. We did not test or audit other apps.
-App
-Encryption named
 Decoy vault
+### When someone asks to look.
+A friend, a partner or a nosy relative asks to see what’s in the app. With Darkroom, each pattern opens its own vault, and nothing on screen hints that there’s more than one.
+Your pattern
+#### Your vault
+Opens your real photos, albums and notes. You can also open it with Face ID.
+Second pattern
+#### Decoy vault
+Opens an ordinary-looking vault, for example with holiday photos. Nothing in the app labels it as a decoy.
+Optional, Pro
+#### Emergency erase
+Opens an ordinary vault and quietly removes your other vaults from this iPhone. You can choose to keep your iCloud backup.
+Compare
+### How Darkroom compares with other vault apps
+How Darkroom lines up against five popular alternatives, using each app’s own website, help pages and App Store listing as of October 2026. Every ✗ links to its source.
+Darkroom compared with popular photo vault apps, as of October 2026
+Feature
+Darkroom
+Apple Hidden Album
+Keepsafe
+Private Photo Vault
+Vaultaire
+Encamera
+Its own lock
+Separate from your iPhone passcode
+✓ 25-dot pattern
+✗ Uses your iPhone’s Face ID, Touch ID or passcode 1
+✓ App PIN 3
+✓ PIN or pattern 6
+✓ Pattern 7
+✓ App PIN or Face ID 10
+Encrypts your photos
+Inside the app, not just hidden
+✓ Yes
+~ Hidden in Photos, no separate vault 1
+✓ AES-256 3
+— Not documented
+✓ AES-256-GCM 7
+✓ On your device, core code open source 9
+No account or email
+Works straight away
+✓ Never asks for email
+✓ Built into iOS
+✗ Signs you in with an email account 4
+— Not documented
+✓ No account 7
+— Not documented
+Decoy vault
+A second code opens a different vault
+✓ 1 on the free plan, unlimited on Pro
+✗ Not offered 1
+~ Premium only (fake PIN) 5
+✓ Decoy password 6
+— Not documented
+— Not documented
+Emergency erase
+A special code removes your real vault
+✓ Pro
+✗ Not offered 1
+— Not documented
+— Not documented
+✓ Pro (duress pattern) 8
+— Not documented
 Backup
-Data used to track you
-In-app prices
-Darkroom New, Oct 2026
-AES-256-GCM, Argon2id
-Yes, 1 free
-Encrypted, in your own iCloud
-None (Data Not Collected)
-$2.99–$44.99
-Apple Hidden album Built into Photos
-iPhone's own encryption; no separate key
-No
-iCloud Photos; end-to-end only with Advanced Data Protection
-Not applicable
-Free
-Private Photo Vault 1,017,852 ratings
-Cipher not named
-Decoy password
-Its own cloud vault
-Usage Data
-$6.99–$39.99
-Keepsafe 384,865 ratings
-"Military-grade"; cipher not named
-Not in listing
-Keepsafe Private Cloud
-Usage Data
-$4.99–$35.99
-SPV 69,941 ratings
-Not stated
-Not in listing
-Not in listing
-Diagnostics, Identifiers, Usage Data
-$4.99–$39.99
-Calculator# 28,925 ratings
-Not stated
-No (fake crash screen)
-iCloud, Dropbox, Google Drive, OneDrive
-Contact Info
-$4.99 (free with ads)
-Vaultaire 46 ratings
-AES-256-GCM
-Yes
-Encrypted iCloud backup
-None
-$1.99–$99.99
-Ratings are US App Store counts. "Not in listing" means the developer's App Store description doesn't mention it, not that the app can't do it. Privacy labels are self-reported by each developer.
-See all 17 apps, with sources →
-Honest Pricing
+Where your copy lives
+✓ Your own iCloud, encrypted, on the free plan
+~ iCloud Photos, end-to-end only with Advanced Data Protection 2
+~ Keepsafe’s own cloud, first 200 items free 3
+— Not documented
+✓ Encrypted iCloud, Free and Pro 11
+✓ Your own iCloud 10
+✓ yes  ·  ~ partly, or only on a paid plan  ·  ✗ no  ·  — we couldn’t confirm it from the app’s own website, help pages or App Store listing.
+#### Also in Darkroom
+- A recovery phrase that works with VoiceOver
+- Face ID only ever opens your main vault, never a decoy
+- Albums inside albums, with optional album locks
+- Photos kept at full quality, with their original dates
+- Big videos start playing straight away
+- A check that finds damaged files and repairs them from iCloud
+- Recently Deleted keeps photos for 30 days, still encrypted
+- No ads and no tracking, and you keep your photos if you stop paying for Pro
+Head to head
+### Five popular vault apps, compared
+As of October 2026, based on each app’s own website, help pages and App Store listing.
+#### Darkroom vs Apple Hidden Album
+Built into iOS
+Free and built in. Since iOS 16 the Hidden album locks with Face ID, Touch ID or your iPhone passcode, so anyone who knows your passcode can open it. 1
+✓ Darkroom has its own pattern, separate from your passcode, plus a decoy vault and emergency erase.
+#### Darkroom vs Keepsafe
+Account-based
+Encrypts files with AES-256 and offers a fake PIN on Premium. You sign in with an email account, and backups go to Keepsafe’s own cloud, with the free plan covering your first 200 items. 3 , 4 , 5
+✓ Darkroom needs no account and backs up to your own iCloud, encrypted, on the free plan.
+#### Darkroom vs Private Photo Vault
+PIN or pattern
+Locks with a PIN or pattern, has a decoy password that opens a fake vault, and takes a photo of anyone who enters the wrong code. 6
+✓ Darkroom includes encrypted iCloud backup and a decoy vault on the free plan.
+#### Darkroom vs Vaultaire
+Also uses a pattern
+Also pattern-locked, with AES-256-GCM encryption, no account, and encrypted iCloud backup on Free and Pro. Pro adds a duress pattern that permanently deletes the vault. 7 , 8 , 11
+✓ Darkroom’s free plan holds 150 photos and 10 videos; Vaultaire’s holds 100 photos and 10 videos. 11
+#### Darkroom vs Encamera
+Open source
+Encrypts photos and videos on your device and keeps them on your iPhone or in your own iCloud. Its core encryption code is open source on GitHub, so anyone can check it. 9 , 10
+✓ Darkroom also has a 25-dot pattern lock, decoy vaults and emergency erase.
+#### Sources
+- Apple Support, Hide photos with the Hidden album
+- Apple Support, iCloud data security overview
+- Keepsafe Help Center, How does Keepsafe protect my data?
+- Keepsafe Help Center, I lost access to my Keepsafe email address
+- Keepsafe Help Center, Keepsafe Subscriptions
+- App Store, Private Photo Vault – Pic Safe
+- Vaultaire, plans and features (vaultaire.app)
+- Vaultaire, Terms of Service
+- GitHub, EncameraCore
+- App Store, Encamera Encrypted Photo Vault
+- App Store, Photo Vault – Vaultaire (description checked 22 October 2026)
+Apps change. If anything here is out of date, email business@inertiaprojects.info and we’ll fix it. App names are trademarks of their owners and are used only to identify their apps.
+Compare 17 vault apps side by side →
+Pricing
 ### Every limit, shown before you download.
-No ads in either plan. Free iCloud backup and restore in both plans. And if a Pro subscription ever ends, you keep 100% access to view, play, export, and back up everything already in your vault.
+No ads in either plan, and iCloud backup is free for everyone. If Pro ever ends, you can still view, export and back up everything in your vault.
 #### Darkroom Free
-Free Forever
+Free forever
 $0
 Enough to try every core feature, with no ads and no account.
-- Up to 150 photos & 10 videos + unlimited encrypted notes
-- Main room + 1 unlisted decoy room (separate 5×5 bolt patterns)
-- Sealed private iCloud backup & restore included free
-- Recovery phrase & optional Face ID for the main vault
-- Nested Rolls with cover frames & colour tags
-- Full-quality batch export (HEIC, ProRAW, Live Photos)
-- 30-day Fixer Tray & “Check Vault” integrity verifier
+- Up to 150 photos and 10 videos , plus unlimited notes
+- Your vault plus 1 decoy vault , each with its own pattern
+- Encrypted iCloud backup included
+- Recovery phrase and optional Face ID
+- Albums with cover photos and colours
+- Full-quality export , including RAW and Live Photos
+- Recently Deleted for 30 days, and a vault health check
 - No ads, no accounts, no trackers — ever
-Claim Free Beta Pass
+Join the beta
 #### Darkroom Pro
-Family Sharing Included
+Family Sharing included
 $2.99 / month · $19.99 / year (1 week free) · $44.99 once
 One purchase unlocks Pro for your entire Apple Family Group.
-- Unlimited photos, 4K videos & notes across all rooms
-- Unlimited unlisted decoy rooms
-- Silent Duress Pattern (opens harmless room, wipes other local rooms)
-- Encrypted sync between iPhone & iPad via CloudKit
-- Separate bolt pattern per Roll (lock folders inside a room)
-- Encrypted Shared Vaults with other Darkroom users
-- Disguise App Icons & custom Home Screen shortcut support
-- No-Hostage Guarantee: cancel anytime and keep full access to existing frames
-Claim 50% Off Lifetime Pro Pass
+- Unlimited photos, videos and notes
+- As many decoy vaults as you like
+- Emergency erase pattern
+- Sync between iPhone and iPad
+- Lock individual albums with their own pattern
+- Shared vaults with people you trust
+- Disguise icons for your Home Screen
+- Cancel any time and keep full access to your photos
+Join the beta for 50% off
 FAQ
 ### Questions, answered plainly.
 01 What is Darkroom and how does it work?
-Darkroom is a native iPhone and iPad app that locks photos, videos, and notes inside encrypted vaults opened by drawing a pattern on a 5×5 plate of 25 bolts. Your pattern is stretched in memory with Argon2id (~64 MiB, 3 passes) and a 256-bit room-header salt to unwrap your 256-bit vault key, which in turn unwraps a unique AES-256-GCM key for every file. Different patterns open different rooms with no visible room list.
-02 What if I forget my bolt pattern?
-Use your recovery phrase . Nobody can reset a pattern, not us and not Apple, so during setup Darkroom has you write down a recovery phrase. On the lock screen, choose to use your recovery phrase and it opens your vault. If you lose both your pattern and your recovery phrase, the encrypted data cannot be recovered by anyone.
+Darkroom is an iPhone and iPad app that keeps your private photos, videos and notes in a locked vault. You open it by drawing a pattern on a grid of 25 dots. Everything inside is encrypted, so without your pattern it can’t be read. You can also set up a second pattern that opens a separate decoy vault.
+02 What if I forget my pattern?
+Nobody can reset it, not us and not Apple. That’s what keeps your vault private. So we recommend setting up a recovery phrase in Settings › Recovery phrase. If you forget your pattern, tap “Use recovery phrase” on the lock screen. If you lose both, your photos can’t be recovered.
 03 Can you or Apple see my photos in iCloud?
-No. Every photo, video chunk, thumbnail, note, and metadata field is encrypted on your iPhone with AES-256-GCM before it is uploaded to your private CloudKit database. iCloud only ever receives opaque ciphertext and random record IDs. Neither Apple nor we ever hold your pattern or unwrapped keys.
+No. Everything is encrypted on your iPhone before it’s backed up, so iCloud only ever stores scrambled data. Neither Apple nor we ever have your pattern.
 04 Do I need an account or email address?
-No. Darkroom works out of the box with zero sign-up, zero email address, and zero servers operated by us. Encrypted backups automatically use your existing Apple Account’s private CloudKit storage.
-05 Do you compress my photos or strip ProRAW / Live Photos?
-Never. Unlike vaults that recompress images by default, Darkroom always stores your exact original bytes — including HEIC, Apple ProRAW, Live Photos, and 4K video. Capture dates, original filenames, and locations are encrypted inside the vault index and restored intact when you export.
+No. Darkroom works straight away with no sign-up and no email. Backups go to the iCloud you already have.
+05 Do you shrink my photos or Live Photos?
+Never. Darkroom keeps your originals at full quality , including Live Photos, RAW photos and 4K video. Dates, names and locations are kept too, and come back with your photos when you export them.
 06 What happens when I get a new iPhone?
-Draw your pattern on the new iPhone and your vault comes back. Sign in to the same Apple Account, install Darkroom, and draw your bolt pattern on the Restore screen. Your contact sheet thumbnails appear first so you can browse immediately while full-resolution originals download in the background. Any decoy rooms remain hidden in iCloud until you draw their respective patterns.
+Sign in to the same Apple Account on your new iPhone, install Darkroom, and draw your pattern on the “Restore your vault” screen. Small previews appear first so you can browse right away, and full-size photos keep downloading in the background. Decoy vaults stay in iCloud until you draw their pattern.
 07 Do you support folders and albums?
-Yes — we call them Rolls . You can create Rolls, nest Rolls inside Rolls as deep as you like, pick cover frames, and assign colour tags. With Darkroom Pro, you can also assign a separate bolt pattern to individual Rolls.
-08 Can Face ID expose my decoy rooms?
-No. Face ID is optional and is strictly bound to your main room only. Decoy rooms and the duress pattern always require drawing their bolt pattern on the plate, so a Face ID prompt can never betray that other rooms exist.
+Yes. You can make albums , put albums inside albums, and pick a cover photo and colour for each. With Darkroom Pro, an album can also have its own pattern.
+08 Can Face ID give away my decoy vault?
+No. Face ID is optional and only ever opens your main vault . Other vaults always need their own pattern, so Face ID never hints that they exist.
 09 What happens if my Pro subscription ends?
-You keep full access to view, play, export, and back up every single frame already in your vault forever. We never lock your existing photos behind a paywall. Only Pro-only features and importing past the free plan's 150 photos and 10 videos pause.
+You can still view, play, export and back up everything already in your vault, for good. We never lock your photos behind a paywall. Only Pro features, and adding more than the free plan’s 150 photos and 10 videos, stop.
 10 How do I get my photos back out of Darkroom?
-Select as many frames as you want — or an entire Roll — and tap Export › Save to Photos or Save to Files. Your originals export in one batch with their full quality and original capture dates preserved.
-11 Are there any ads, analytics, or crash trackers?
-Zero ad SDKs and zero third-party analytics SDKs (no Firebase, no PostHog, no Amplitude). Darkroom has no crash reporter of its own. If you choose to share analytics with app developers in iOS Settings, Apple may pass us anonymous crash reports, which never include your photos, videos or notes.
-Door Closed · Safelight Ready
-### Close the door on prying eyes.
-150 photos, 10 videos and 1 decoy room free forever. Encrypted on your iPhone, sealed to your private iCloud.
-Claim TestFlight Early Pass
+Select as many photos as you like, or a whole album, tap Export, and choose Save to Photos or Save to Files. They keep their full quality and the date they were taken.
+11 Are there any ads or tracking?
+No ads and no tracking. Darkroom has no analytics of its own. Apple only sends us crash reports if you’ve turned that on in your iPhone’s settings, and they never include your photos.
+Private beta
+### Keep your private photos private.
+Free for 150 photos and 10 videos. Encrypted on your iPhone and backed up to your own iCloud.
+Join the beta
 
 ---
 
@@ -474,7 +486,7 @@ $6.99–$39.99
 Keepsafe KeepSafe Software, Inc
 384,865 · 4.8★
 12 Oct 2026
-“Military-grade”; cipher not named
+Listing: “military-grade”. Help center: AES-256 ( source )
 Not in listing
 Keepsafe Private Cloud (Premium)
 Usage Data

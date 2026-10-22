@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="color-scheme" content="dark">
+  <meta name="color-scheme" content="light dark">
   <meta name="theme-color" id="meta-theme-color" content="#070605">
   <script>
     try {
       const savedScheme = localStorage.getItem("color-scheme");
       const metaScheme = document.querySelector('meta[name="color-scheme"]');
       const metaTheme = document.getElementById("meta-theme-color");
-      const resolved = savedScheme === "light" ? "light" : "dark";
+      const prefersLight = window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches;
+      const resolved = savedScheme === "light" || savedScheme === "dark" ? savedScheme : (prefersLight ? "light" : "dark");
       if (metaScheme) metaScheme.content = resolved;
       if (metaTheme) metaTheme.content = resolved === "light" ? "#F3EEE7" : "#070605";
       document.documentElement.dataset.theme = resolved;
@@ -22,9 +23,8 @@
   <link rel="icon" type="image/svg+xml" href="/assets/darkroom-logo.svg">
   <link rel="apple-touch-icon" href="/assets/darkroom-icon-180.png">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@700&family=DM+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" href="/assets/fonts/plus-jakarta-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/fonts/fonts.css">
   <link rel="stylesheet" href="/styles.css">
   <link rel="stylesheet" href="/pages.css">
 

@@ -1,5 +1,5 @@
 (() => {
-  /* ---------- 1. Theme Toggle (Safelight Dark <-> Baryta Contact-Sheet Paper) ---------- */
+  /* ---------- 1. Theme Toggle (follows the system until the visitor picks) ---------- */
   const ICONS = {
     sun: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><line x1="12" y1="2.5" x2="12" y2="5.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="12" y1="18.8" x2="12" y2="21.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="2.5" y1="12" x2="5.2" y2="12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="18.8" y1="12" x2="21.5" y2="12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="5.3" y1="5.3" x2="7.2" y2="7.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="16.8" y1="16.8" x2="18.7" y2="18.7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="16.8" y1="7.2" x2="18.7" y2="5.3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="5.3" y1="18.7" x2="7.2" y2="16.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>',
     moon: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 14.8a8.9 8.9 0 1 1-9.6-11 7.2 7.2 0 0 0 9.6 11Z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>'
@@ -36,8 +36,8 @@
       themeBtn.setAttribute(
         "aria-label",
         isDark
-          ? themeBtn.dataset.switchLight || "Switch to paper mode"
-          : themeBtn.dataset.switchDark || "Switch to safelight mode"
+          ? themeBtn.dataset.switchLight || "Switch to light mode"
+          : themeBtn.dataset.switchDark || "Switch to dark mode"
       );
     }
     if (themeIcon) {
@@ -45,8 +45,8 @@
     }
     if (themeLabel) {
       themeLabel.textContent = isDark
-        ? themeBtn?.dataset.lightLabel || "Paper"
-        : themeBtn?.dataset.darkLabel || "Safelight";
+        ? themeBtn?.dataset.lightLabel || "Light"
+        : themeBtn?.dataset.darkLabel || "Dark";
     }
     window.dispatchEvent(new CustomEvent("darkroom-themechange", { detail: { theme: resolved, isDark } }));
   }
@@ -101,13 +101,13 @@
     main: {
       key: "main",
       pattern: [20, 16, 11, 7, 8, 4],
-      verifyLabel: "Main Room pattern · Argon2id",
-      doorStatus: "Main Room open",
-      unlockTitle: "Lights coming on…",
-      unlockSub: "Argon2id (64 MiB · 3 passes) unwrapping Main Room key",
-      roomTitle: "Vault · Main Room",
-      rollMeta: "Today · 1,284 frames",
-      sealMeta: "● Sealed",
+      verifyLabel: "Pattern recognised",
+      doorStatus: "Unlocked",
+      unlockTitle: "Opening…",
+      unlockSub: "Unlocking your vault",
+      roomTitle: "Library",
+      rollMeta: "Today · 1,284 photos",
+      sealMeta: "● Backed up",
       sealWarn: false,
       palettes: [
         ["#5A3A2C", "#C27A4A"],
@@ -126,13 +126,13 @@
     decoy: {
       key: "decoy",
       pattern: [0, 6, 12, 8, 4, 9],
-      verifyLabel: "Decoy Room pattern · Argon2id",
-      doorStatus: "Decoy Room open",
-      unlockTitle: "Opening Decoy Room…",
-      unlockSub: "Unwrapping harmless travel room · 0 other rooms revealed",
-      roomTitle: "Vault · Lisbon",
-      rollMeta: "Today · 14 frames",
-      sealMeta: "● Decoy",
+      verifyLabel: "Pattern recognised",
+      doorStatus: "Unlocked",
+      unlockTitle: "Opening…",
+      unlockSub: "Opening the decoy vault",
+      roomTitle: "Holiday",
+      rollMeta: "Today · 14 photos",
+      sealMeta: "● Backed up",
       sealWarn: false,
       palettes: [
         ["#2E4A3E", "#5ED196"],
@@ -148,13 +148,13 @@
     duress: {
       key: "duress",
       pattern: [24, 18, 12, 6, 0, 1, 2],
-      verifyLabel: "Duress pattern · Local wipe armed",
-      doorStatus: "Duress executed",
-      unlockTitle: "Silent local wipe complete",
-      unlockSub: "Other local room records destroyed · iCloud copy intact",
-      roomTitle: "Vault · Receipts",
-      rollMeta: "Today · 8 frames",
-      sealMeta: "● Wiped",
+      verifyLabel: "Pattern recognised",
+      doorStatus: "Unlocked",
+      unlockTitle: "Opening…",
+      unlockSub: "Other vaults removed from this iPhone",
+      roomTitle: "Receipts",
+      rollMeta: "Today · 8 photos",
+      sealMeta: "● Backed up",
       sealWarn: true,
       palettes: [
         ["#443222", "#F5B759"],
@@ -205,8 +205,7 @@
         cell.style.background = `radial-gradient(circle at ${cx}% ${cy}%, ${c2}, transparent 62%), linear-gradient(${angle}deg, ${c1}, #120F0D)`;
       }
 
-      const code = `${cfg.prefix}${String(i).padStart(2, "0")}A`;
-      const frameNo = `<span class="vault-cell-no">${code}</span>`;
+      const frameNo = "";
       const dur = cfg.durations[i] ? `<span class="vault-cell-time">${cfg.durations[i]}</span>` : "";
       cell.innerHTML = frameNo + dur;
       frag.appendChild(cell);
@@ -257,7 +256,7 @@
       userInteracting: false,
       userPinnedMode: null,
       activeMode: "main",
-      modeOrder: ["main", "decoy", "duress"],
+      modeOrder: ["main", "decoy"],
       nodeCenters: []
     };
 
@@ -279,7 +278,7 @@
     function syncPauseUI() {
       if (!pauseBtn || !pauseLabel) return;
       pauseBtn.setAttribute("aria-pressed", String(state.userPaused));
-      pauseLabel.textContent = state.userPaused ? "Resume Demo" : "Pause Demo";
+      pauseLabel.textContent = state.userPaused ? "Resume demo" : "Pause demo";
     }
 
     /* Live Clock */
@@ -417,7 +416,7 @@
       }
     }
 
-    function resetLockUI(msg = "Draw your bolt pattern (6+ bolts)", cls = "") {
+    function resetLockUI(msg = "Draw your pattern", cls = "") {
       dots.forEach((d) => d.classList.remove("active"));
       renderSvgTrail([]);
       if (counterEl) counterEl.textContent = "0";
@@ -425,7 +424,7 @@
         subtitleEl.textContent = msg;
         subtitleEl.className = "lock-subtitle" + (cls ? ` ${cls}` : "");
       }
-      setDoorStatus("Door closed", false);
+      setDoorStatus("Locked", false);
     }
 
     function wait(ms, ticket) {
@@ -473,7 +472,7 @@
       pts.push(state.nodeCenters[first]);
       renderSvgTrail(pts);
       if (counterEl) counterEl.textContent = "1";
-      if (subtitleEl) subtitleEl.textContent = "Drawing bolt pattern…";
+      if (subtitleEl) subtitleEl.textContent = "Drawing…";
 
       for (let i = 1; i < seq.length; i++) {
         const prevPt = state.nodeCenters[seq[i - 1]];
@@ -621,7 +620,7 @@
       isDrawing = true;
       userPath = [];
       screenEl.classList.remove("mockup-unlocking", "mockup-vault");
-      resetLockUI("Drawing your bolt pattern…");
+      resetLockUI("Drawing…");
       measureNodes();
       zoneEl.setPointerCapture(e.pointerId);
 
@@ -651,10 +650,10 @@
 
       if (userPath.length < 6) {
         if (subtitleEl) {
-          subtitleEl.textContent = "Connect at least 6 bolts to unlock";
+          subtitleEl.textContent = "Connect at least 6 dots";
           subtitleEl.className = "lock-subtitle is-err";
         }
-        announceStatus("Connect at least 6 bolts to unlock");
+        announceStatus("Connect at least 6 dots");
         window.setTimeout(() => {
           resetLockUI();
           state.userInteracting = false;
@@ -690,7 +689,7 @@
         state.userInteracting = false;
         screenEl.classList.remove("mockup-unlocking", "mockup-vault");
         resetLockUI();
-        announceStatus("Vault door closed");
+        announceStatus("Vault locked");
         startAutoLoop(state.activeMode);
       });
     }
@@ -702,7 +701,7 @@
         const targetMode = state.userPinnedMode || "main";
         syncPresetButtons(targetMode);
         const cfg = ROOM_MODES[targetMode] || ROOM_MODES.main;
-        announceStatus(`Passphrase spare key unlocked ${cfg.roomTitle}`);
+        announceStatus(`Recovery phrase opened ${cfg.roomTitle}`);
         screenEl.classList.add("mockup-unlocking");
         window.setTimeout(() => {
           screenEl.classList.remove("mockup-unlocking");
@@ -795,7 +794,7 @@
           installBadge.textContent =
             ctx === "pro"
               ? "Darkroom Pro · Family Sharing Included"
-              : "iOS 17+ · Free plan with 1 decoy room";
+              : "For iPhone and iPad · Free plan";
         }
         if (typeof installDialog.showModal === "function") {
           installDialog.showModal();
@@ -829,8 +828,8 @@
     });
   }
 
-  wireCopyButton("copy-app-link", "✓ Install link copied");
-  wireCopyButton("modal-copy-link-btn", "✓ Link Copied");
+  wireCopyButton("copy-app-link", "✓ Link copied");
+  wireCopyButton("modal-copy-link-btn", "✓ Link copied");
 
   /* ---------- 13. Early Tester Beta Waitlist (Google Sheets Webhook) ---------- */
   function initEarlyTesterWaitlist() {
@@ -851,7 +850,7 @@
       successCard.hidden = false;
       const titleDesc = document.querySelector(".waitlist-success-desc");
       if (titleDesc) {
-        titleDesc.innerHTML = `We&rsquo;ve reserved your <strong>Early Tester Pass</strong> for <code id="registered-email-pill" class="email-pill">${email}</code>.`;
+        titleDesc.innerHTML = `Tap below to install the Darkroom beta with Apple&rsquo;s TestFlight app. We&rsquo;ll send beta news to <code id="registered-email-pill" class="email-pill">${email}</code>.`;
       }
     }
 
@@ -862,7 +861,7 @@
       input.value = "";
       if (submitBtn) {
         submitBtn.disabled = false;
-        submitBtn.innerHTML = `<span>Claim Early Access</span><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+        submitBtn.innerHTML = `<span>Get the beta</span><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
       }
     }
 
@@ -897,20 +896,22 @@
       // Loading state on button
       if (submitBtn) {
         submitBtn.disabled = true;
-        submitBtn.innerHTML = `<span>Claiming Pass…</span>`;
+        submitBtn.innerHTML = `<span>Sending…</span>`;
       }
 
-      try {
-        // Submit to Google Sheets (text/plain mode bypasses browser CORS preflight)
-        await fetch(GOOGLE_SHEETS_URL, {
-          method: "POST",
-          mode: "no-cors",
-          headers: { "Content-Type": "text/plain;charset=utf-8" },
-          body: JSON.stringify({ email: raw, timestamp: new Date().toISOString() }),
-        });
-      } catch (err) {
+      // Submit to Google Sheets (text/plain mode bypasses browser CORS preflight).
+      // Apps Script can take many seconds to answer, and no-cors hides the reply anyway,
+      // so wait at most a moment; keepalive lets the request finish even if the page is left.
+      const submit = fetch(GOOGLE_SHEETS_URL, {
+        method: "POST",
+        mode: "no-cors",
+        keepalive: true,
+        headers: { "Content-Type": "text/plain;charset=utf-8" },
+        body: JSON.stringify({ email: raw, timestamp: new Date().toISOString() }),
+      }).catch((err) => {
         console.warn("Google Sheet submit notice:", err);
-      }
+      });
+      await Promise.race([submit, new Promise((resolve) => setTimeout(resolve, 1500))]);
 
       const record = {
         email: raw,

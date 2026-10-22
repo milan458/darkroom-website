@@ -55,7 +55,7 @@ In the Cloudflare dashboard for darkroom.buzz:
 2. **Managed robots.txt**: turn it **off**, so Cloudflare serves our `robots.txt` instead of its content-signals-only file. Then check https://darkroom.buzz/robots.txt shows our file, with the `Sitemap:` line.
 3. **Bot Fight Mode / Super Bot Fight Mode**: if on, make sure **verified bots are allowed**. Bot Fight Mode can challenge crawlers; turn it off if Search Console or Bing report crawl errors.
 4. **Web Analytics**: the privacy policy says the site has no analytics. If Cloudflare Web Analytics is on, either turn it off or update the "This website" section of `/privacy`.
-5. After deploy, check that `/_headers` rules apply: `curl -I https://darkroom.buzz/site.json` should show `X-Robots-Tag: noindex`.
+5. After deploy, check that repo-only files aren't served (they're listed in `.assetsignore`): `curl -I https://darkroom.buzz/site.json` should return 404. New repo-only files must be added to `.assetsignore`, because the Worker serves the whole folder.
 
 ### App Store Connect URLs (after this branch is deployed)
 - **Support URL:** `https://darkroom.buzz/support`

@@ -1,0 +1,26 @@
+# Files in the repo that must not be served on darkroom.buzz.
+# The Worker serves the whole folder (wrangler.jsonc: assets.directory = "."),
+# so anything not listed here is public.
+.git
+.github
+.agents
+.claude
+.DS_Store
+.gitignore
+.assetsignore
+node_modules
+.wrangler
+functions
+design-system
+schema.sql
+wrangler.jsonc
+README.md
+*.release-saved.*
+darkroom-figma-wireframe.svg
+# Site build tooling and docs (see CLAUDE.md)
+tools
+partials
+templates
+site.json
+CLAUDE.md
+SEO-PLAYBOOK.md
