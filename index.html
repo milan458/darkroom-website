@@ -16,21 +16,238 @@
       document.documentElement.dataset.theme = resolved;
     } catch {}
   </script>
-  <title>Darkroom — Encrypted iPhone &amp; iPad Photo Vault | Argon2id + AES-256-GCM</title>
-  <meta name="description" content="Darkroom hides photos, videos, and notes behind a 5×5 bolt pattern only you know. Encrypted on your iPhone with Argon2id and AES-256-GCM, sealed to your private iCloud. Free: 150 photos, 10 videos and 1 decoy room. No accounts, no ads.">
-  <meta property="og:title" content="Darkroom — Encrypted iPhone &amp; iPad Photo Vault">
-  <meta property="og:description" content="Locked behind a 5×5 plate of bolts, encrypted on-device with Argon2id and AES-256-GCM, and backed up to your private iCloud. No accounts, no ads.">
-  <meta property="og:type" content="website">
-
-  <link rel="icon" type="image/svg+xml" href="assets/darkroom-logo.svg">
-  <link rel="apple-touch-icon" href="assets/darkroom-icon.png">
+  <!-- build:meta -->
+  <title>Darkroom: Encrypted Private Photo Vault for iPhone</title>
+  <meta name="description" content="Hide photos, videos and notes behind a pattern only you know. Encrypted on your iPhone, backed up to your own iCloud, restores on a new phone. No ads.">
   <link rel="canonical" href="https://darkroom.buzz/">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Darkroom">
+  <meta property="og:title" content="Darkroom: Encrypted Private Photo Vault for iPhone">
+  <meta property="og:description" content="Hide photos, videos and notes behind a pattern only you know. Encrypted on your iPhone, backed up to your own iCloud, restores on a new phone. No ads.">
   <meta property="og:url" content="https://darkroom.buzz/">
+  <meta property="og:image" content="https://darkroom.buzz/assets/og/darkroom-og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Darkroom photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Darkroom: Encrypted Private Photo Vault for iPhone">
+  <meta name="twitter:description" content="Hide photos, videos and notes behind a pattern only you know. Encrypted on your iPhone, backed up to your own iCloud, restores on a new phone. No ads.">
+  <meta name="twitter:image" content="https://darkroom.buzz/assets/og/darkroom-og.png">
+  <meta name="twitter:image:alt" content="Darkroom photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
+  <!-- /build:meta -->
+
+  <link rel="icon" type="image/svg+xml" href="/assets/darkroom-logo.svg">
+  <link rel="apple-touch-icon" href="/assets/darkroom-icon-180.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@700&family=DM+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/pages.css">
+
+  <!-- build:jsonld -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://darkroom.buzz/#org",
+        "name": "Inertia Projects",
+        "url": "https://darkroom.buzz/about",
+        "email": "business@inertiaprojects.info",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://darkroom.buzz/assets/darkroom-icon-512.png"
+        },
+        "brand": {
+          "@type": "Brand",
+          "name": "Darkroom"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://darkroom.buzz/#website",
+        "url": "https://darkroom.buzz/",
+        "name": "Darkroom",
+        "alternateName": "Darkroom photo vault",
+        "publisher": {
+          "@id": "https://darkroom.buzz/#org"
+        },
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "MobileApplication",
+        "@id": "https://darkroom.buzz/#app",
+        "name": "Darkroom: Private Photo Vault",
+        "alternateName": [
+          "Darkroom",
+          "Darkroom photo vault"
+        ],
+        "description": "An iPhone and iPad app that hides photos, videos and notes in encrypted vaults. Draw a pattern across at least 6 bolts on a 5×5 plate of 25 bolts. Face ID can open the main vault. Everything is encrypted on the device. Keys come from your pattern through Argon2id (libsodium); files are sealed with AES-256-GCM (Apple CryptoKit). Names, dates and places are encrypted too. The pattern is never stored. An encrypted backup goes to your own private iCloud (CloudKit). On a new iPhone, draw your pattern and the vault restores. Only encrypted data leaves the device. You write down a recovery phrase at setup, and it opens your vault. Nobody can reset a pattern: not the developer, not Apple.",
+        "operatingSystem": "iOS 17.0 or later, iPadOS 17.0 or later",
+        "applicationCategory": "MultimediaApplication",
+        "applicationSubCategory": "Photo & Video",
+        "softwareVersion": "1.0",
+        "image": "https://darkroom.buzz/assets/og/darkroom-og.png",
+        "screenshot": [
+          "https://darkroom.buzz/assets/guides/darkroom-library.jpg",
+          "https://darkroom.buzz/assets/guides/darkroom-lock.jpg",
+          "https://darkroom.buzz/assets/guides/darkroom-backup.jpg"
+        ],
+        "featureList": [
+          "How you open it: Draw a pattern across at least 6 bolts on a 5×5 plate of 25 bolts. Face ID can open the main vault.",
+          "Encryption: Everything is encrypted on the device. Keys come from your pattern through Argon2id (libsodium); files are sealed with AES-256-GCM (Apple CryptoKit). Names, dates and places are encrypted too. The pattern is never stored.",
+          "Backup: An encrypted backup goes to your own private iCloud (CloudKit). On a new iPhone, draw your pattern and the vault restores. Only encrypted data leaves the device.",
+          "Forgot your pattern: You write down a recovery phrase at setup, and it opens your vault. Nobody can reset a pattern: not the developer, not Apple.",
+          "Decoy vault: A second pattern opens a separate, harmless vault. The free plan includes 1.",
+          "Emergency erase (Pro): A third pattern opens a harmless vault and erases the others.",
+          "Hiding the app: Change the app icon to a Calculator, Notes or Weather lookalike (Pro). Vault content is hidden in the app switcher and during screen recording.",
+          "Organizing: Albums, albums inside albums, and albums with their own pattern (Pro). Encrypted notes. Recently Deleted keeps items for 30 days.",
+          "Import and export: Imports HEIC, ProRAW and Live Photos. Built-in camera. \"Send to Darkroom\" from the share sheet. Exports in full quality with original dates.",
+          "Privacy: No ads, no accounts, no analytics. App Store privacy label: Data Not Collected.",
+          "Free plan: 150 photos, 10 videos, unlimited notes, 1 decoy vault, full iCloud backup and restore.",
+          "Darkroom Pro: $2.99 a month, $19.99 a year (1-week free trial) or $44.99 once. Adds unlimited items, emergency erase, iPhone and iPad sync, custom icons, album patterns and shared vaults.",
+          "If Pro ends: You keep full access to view, export and back up everything already in your vault."
+        ],
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Darkroom Free",
+            "price": "0",
+            "priceCurrency": "USD",
+            "description": "150 photos, 10 videos, unlimited notes, 1 decoy vault, full iCloud backup and restore."
+          },
+          {
+            "@type": "Offer",
+            "name": "Darkroom Pro Monthly",
+            "price": "2.99",
+            "priceCurrency": "USD",
+            "description": "Auto-renewing monthly subscription (in-app purchase)."
+          },
+          {
+            "@type": "Offer",
+            "name": "Darkroom Pro Yearly",
+            "price": "19.99",
+            "priceCurrency": "USD",
+            "description": "Auto-renewing yearly subscription with a 1-week free trial (in-app purchase)."
+          },
+          {
+            "@type": "Offer",
+            "name": "Darkroom Pro Lifetime",
+            "price": "44.99",
+            "priceCurrency": "USD",
+            "description": "One-time in-app purchase."
+          }
+        ],
+        "publisher": {
+          "@id": "https://darkroom.buzz/#org"
+        },
+        "author": {
+          "@id": "https://darkroom.buzz/#org"
+        },
+        "url": "https://darkroom.buzz/"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://darkroom.buzz/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Darkroom and how does it work?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Darkroom is a native iPhone and iPad app that locks photos, videos, and notes inside encrypted vaults opened by drawing a pattern on a 5×5 plate of 25 bolts. Your pattern is stretched in memory with Argon2id (~64 MiB, 3 passes) and a 256-bit room-header salt to unwrap your 256-bit vault key, which in turn unwraps a unique AES-256-GCM key for every file. Different patterns open different rooms with no visible room list."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What if I forget my bolt pattern?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use your recovery phrase . Nobody can reset a pattern, not us and not Apple, so during setup Darkroom has you write down a recovery phrase. On the lock screen, choose to use your recovery phrase and it opens your vault. If you lose both your pattern and your recovery phrase, the encrypted data cannot be recovered by anyone."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can you or Apple see my photos in iCloud?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Every photo, video chunk, thumbnail, note, and metadata field is encrypted on your iPhone with AES-256-GCM before it is uploaded to your private CloudKit database. iCloud only ever receives opaque ciphertext and random record IDs. Neither Apple nor we ever hold your pattern or unwrapped keys."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need an account or email address?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Darkroom works out of the box with zero sign-up, zero email address, and zero servers operated by us. Encrypted backups automatically use your existing Apple Account’s private CloudKit storage."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you compress my photos or strip ProRAW / Live Photos?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Never. Unlike vaults that recompress images by default, Darkroom always stores your exact original bytes — including HEIC, Apple ProRAW, Live Photos, and 4K video. Capture dates, original filenames, and locations are encrypted inside the vault index and restored intact when you export."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens when I get a new iPhone?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Draw your pattern on the new iPhone and your vault comes back. Sign in to the same Apple Account, install Darkroom, and draw your bolt pattern on the Restore screen. Your contact sheet thumbnails appear first so you can browse immediately while full-resolution originals download in the background. Any decoy rooms remain hidden in iCloud until you draw their respective patterns."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you support folders and albums?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes — we call them Rolls . You can create Rolls, nest Rolls inside Rolls as deep as you like, pick cover frames, and assign colour tags. With Darkroom Pro, you can also assign a separate bolt pattern to individual Rolls."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can Face ID expose my decoy rooms?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Face ID is optional and is strictly bound to your main room only. Decoy rooms and the duress pattern always require drawing their bolt pattern on the plate, so a Face ID prompt can never betray that other rooms exist."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens if my Pro subscription ends?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You keep full access to view, play, export, and back up every single frame already in your vault forever. We never lock your existing photos behind a paywall. Only Pro-only features and importing past the free plan's 150 photos and 10 videos pause."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I get my photos back out of Darkroom?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Select as many frames as you want — or an entire Roll — and tap Export › Save to Photos or Save to Files. Your originals export in one batch with their full quality and original capture dates preserved."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are there any ads, analytics, or crash trackers?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Zero ad SDKs and zero third-party analytics SDKs (no Firebase, no PostHog, no Amplitude). Darkroom has no crash reporter of its own. If you choose to share analytics with app developers in iOS Settings, Apple may pass us anonymous crash reports, which never include your photos, videos or notes."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <!-- /build:jsonld -->
 </head>
 <body id="top">
   <!-- Canonical Darkroom 5x5 Bolt Logo Symbol (Single Source of Truth) -->
@@ -97,10 +314,10 @@
         <a href="#features">Features</a>
         <a href="#how-it-works">How It Works</a>
         <a href="#security">Security</a>
-        <a href="#coercion">Coercion</a>
         <a href="#compare">Compare</a>
         <a href="#pricing">Pricing</a>
-        <a href="#about">About</a>
+        <a href="/guides/">Guides</a>
+        <a href="/about">About</a>
         <a href="#faq">FAQ</a>
       </nav>
 
@@ -120,7 +337,7 @@
           <span id="theme-label">Paper</span>
         </button>
 
-        <a href="#waitlist" class="btn btn-primary btn-nav">Early Access</a>
+        <a href="#waitlist" class="btn btn-primary btn-nav" data-cta="nav" data-label-waitlist="Early Access" data-label-live="Get the App">Early Access</a>
 
         <button type="button" class="mobile-menu-btn" id="mobile-menu-btn" aria-expanded="false" aria-controls="mobile-drawer" aria-label="Toggle menu">
           <svg class="icon-menu" viewBox="0 0 24 24" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
@@ -136,9 +353,10 @@
           <a href="#how-it-works"><span>How It Works</span> <span class="eyebrow" style="margin:0" aria-hidden="true">3 Stages →</span></a>
           <a href="#security"><span>Security Model</span> <span class="eyebrow" style="margin:0" aria-hidden="true">DRK1 Crypto →</span></a>
           <a href="#coercion"><span>Coercion Defense</span> <span class="eyebrow" style="margin:0" aria-hidden="true">3 Doors →</span></a>
-          <a href="#compare"><span>Competitor Comparison</span> <span class="eyebrow" style="margin:0" aria-hidden="true">17-Row Matrix →</span></a>
+          <a href="#compare"><span>Compare Vault Apps</span> <span class="eyebrow" style="margin:0" aria-hidden="true">17 Apps →</span></a>
           <a href="#pricing"><span>Honest Pricing</span> <span class="eyebrow" style="margin:0" aria-hidden="true">Free plan →</span></a>
-          <a href="#about"><span>About</span> <span class="eyebrow" style="margin:0" aria-hidden="true">Inertia Projects →</span></a>
+          <a href="/guides/"><span>Guides</span> <span class="eyebrow" style="margin:0" aria-hidden="true">How-tos →</span></a>
+          <a href="/about"><span>About</span> <span class="eyebrow" style="margin:0" aria-hidden="true">Inertia Projects →</span></a>
           <a href="#faq"><span>Plain-English FAQ</span> <span class="eyebrow" style="margin:0" aria-hidden="true">11 Answers →</span></a>
         </nav>
       </div>
@@ -225,7 +443,7 @@
                 </div>
 
                 <div class="lock-actions">
-                  <button type="button" class="lock-action-primary" id="quick-unlock-btn">Use passphrase spare key</button>
+                  <button type="button" class="lock-action-primary" id="quick-unlock-btn">Use recovery phrase</button>
                   <span class="lock-action-secondary"><span id="bolt-counter">0</span> of 25 bolts · Argon2id armed</span>
                 </div>
               </div>
@@ -302,7 +520,13 @@
 
         <!-- RIGHT COLUMN: Copy + Primary CTA + Scannable QR Card -->
         <div class="hero-copy">
-          <div class="hero-badge-row">
+          <div class="hero-badge-row" data-release-only="live" hidden>
+            <span class="dot dot-ok" aria-hidden="true"></span>
+            <strong>iOS 17+ · iPhone &amp; iPad</strong>
+            <span class="hero-badge-sep" aria-hidden="true">·</span>
+            <span class="hero-badge-spec">FREE ON THE APP STORE · NO ADS</span>
+          </div>
+          <div class="hero-badge-row" data-release-only="waitlist">
             <span class="dot dot-amber" aria-hidden="true"></span>
             <strong>iOS 17+ · Private TestFlight Beta</strong>
             <span class="hero-badge-sep" aria-hidden="true">·</span>
@@ -321,7 +545,7 @@
           </p>
 
           <!-- EARLY TESTER WAITLIST CARD (Coming Soon Beta) -->
-          <div class="waitlist-card" id="waitlist">
+          <div class="waitlist-card" id="waitlist" data-release-only="waitlist">
             <div class="waitlist-card-head">
               <div class="waitlist-headline">
                 <span class="waitlist-tag">Apple TestFlight · Private Beta</span>
@@ -399,7 +623,16 @@
             </div>
           </div>
 
-          <p class="hero-micro-note">
+          <!-- LAUNCH CTA (shown when site.json "release" is "live") -->
+          <div class="hero-cta-group" data-release-only="live" hidden>
+            <a href="#waitlist" class="btn btn-primary btn-hero-cta" data-cta="hero" data-label-waitlist="Join the Early Tester List" data-label-live="Download on the App Store">Join the Early Tester List</a>
+            <a href="#pricing" class="btn btn-outline btn-hero-secondary">Free vs Pro</a>
+          </div>
+          <p class="hero-micro-note" data-release-only="live" hidden>
+            Free download &nbsp;·&nbsp; iOS 17+ &nbsp;·&nbsp; iPhone &amp; iPad &nbsp;·&nbsp; App Store privacy label: Data Not Collected
+          </p>
+
+          <p class="hero-micro-note" data-release-only="waitlist">
             TestFlight beta build dropping soon &nbsp;·&nbsp; iOS 17+ &nbsp;·&nbsp; 1 Mo Free Pro + 50% launch discount &nbsp;·&nbsp; No payment info needed
           </p>
         </div>
@@ -436,75 +669,108 @@
       </div>
     </section>
 
-    <!-- SECTION: Early Tester Reviews & Cryptographic Verification -->
-    <section class="section section-credibility" id="credibility" aria-label="Beta tester reviews and cryptographic guarantees">
+    <!-- SECTION: Darkroom at a glance (canonical facts block, rendered from site.json "facts") -->
+    <section class="section section-credibility" id="credibility" aria-labelledby="facts-title">
       <div class="container">
         <div class="section-head">
-          <p class="eyebrow"><span class="dot dot-ok" aria-hidden="true"></span>Verified Architecture · Private Beta Roster</p>
-          <h2>Battle-tested by privacy advocates, journalists, and photographers.</h2>
-          <p>We believe security software should never demand blind faith. Here is how our DRK1 zero-knowledge architecture is audited, who built it, and what our early private beta testers have to say.</p>
+          <p class="eyebrow"><span class="dot dot-ok" aria-hidden="true"></span>Darkroom at a Glance</p>
+          <h2 id="facts-title">A new app with no reviews yet. Here is exactly what it does.</h2>
+          <p>Darkroom 1.0 is brand new, so there are no ratings to point to yet. Instead, here is every fact about the app in one place, with nothing rounded up. The same list is on our About page and in the summary we publish for search engines.</p>
         </div>
 
-        <!-- 3 Beta Tester Testimonial Cards -->
-        <div class="testimonials-grid">
-          <article class="testimonial-card">
-            <div class="testimonial-rating" aria-label="5 out of 5 stars">★★★★★</div>
-            <p class="testimonial-quote">&ldquo;The Lisbon decoy room is the first time plausible deniability actually works on iOS. If compelled to unlock, you draw the decoy pattern and hand over clean travel snapshots with total peace of mind.&rdquo;</p>
-            <div class="testimonial-author">
-              <span class="author-avatar" aria-hidden="true">AV</span>
-              <div class="author-meta">
-                <strong>Alex V.</strong>
-                <span>Investigative Freelance Journalist · Berlin</span>
-              </div>
-            </div>
-          </article>
+        <!-- build:facts -->
+        <dl class="facts-list">
+          <div class="facts-row">
+            <dt>What it is</dt>
+            <dd>An iPhone and iPad app that hides photos, videos and notes in encrypted vaults.</dd>
+          </div>
+          <div class="facts-row">
+            <dt>How you open it</dt>
+            <dd>Draw a pattern across at least 6 bolts on a 5×5 plate of 25 bolts. Face ID can open the main vault.</dd>
+          </div>
+          <div class="facts-row">
+            <dt>Encryption</dt>
+            <dd>Everything is encrypted on the device. Keys come from your pattern through Argon2id (libsodium); files are sealed with AES-256-GCM (Apple CryptoKit). Names, dates and places are encrypted too. The pattern is never stored.</dd>
+          </div>
+          <div class="facts-row">
+            <dt>Backup</dt>
+            <dd>An encrypted backup goes to your own private iCloud (CloudKit). On a new iPhone, draw your pattern and the vault restores. Only encrypted data leaves the device.</dd>
+          </div>
+          <div class="facts-row">
+            <dt>Forgot your pattern</dt>
+            <dd>You write down a recovery phrase at setup, and it opens your vault. Nobody can reset a pattern: not the developer, not Apple.</dd>
+          </div>
+          <div class="facts-row">
+            <dt>Decoy vault</dt>
+            <dd>A second pattern opens a separate, harmless vault. The free plan includes 1.</dd>
+          </div>
+          <div class="facts-row">
+            <dt>Emergency erase (Pro)</dt>
+            <dd>A third pattern opens a harmless vault and erases the others.</dd>
+          </div>
+          <div class="facts-row">
+            <dt>Hiding the app</dt>
+            <dd>Change the app icon to a Calculator, Notes or Weather lookalike (Pro). Vault content is hidden in the app switcher and during screen recording.</dd>
+          </div>
+          <div class="facts-row">
+            <dt>Organizing</dt>
+            <dd>Albums, albums inside albums, and albums with their own pattern (Pro). Encrypted notes. Recently Deleted keeps items for 30 days.</dd>
+          </div>
+          <div class="facts-row">
+            <dt>Import and export</dt>
+            <dd>Imports HEIC, ProRAW and Live Photos. Built-in camera. &quot;Send to Darkroom&quot; from the share sheet. Exports in full quality with original dates.</dd>
+          </div>
+          <div class="facts-row">
+            <dt>Privacy</dt>
+            <dd>No ads, no accounts, no analytics. App Store privacy label: Data Not Collected.</dd>
+          </div>
+          <div class="facts-row">
+            <dt>Free plan</dt>
+            <dd>150 photos, 10 videos, unlimited notes, 1 decoy vault, full iCloud backup and restore.</dd>
+          </div>
+          <div class="facts-row">
+            <dt>Darkroom Pro</dt>
+            <dd>$2.99 a month, $19.99 a year (1-week free trial) or $44.99 once. Adds unlimited items, emergency erase, iPhone and iPad sync, custom icons, album patterns and shared vaults.</dd>
+          </div>
+          <div class="facts-row">
+            <dt>If Pro ends</dt>
+            <dd>You keep full access to view, export and back up everything already in your vault.</dd>
+          </div>
+          <div class="facts-row">
+            <dt>Requirements</dt>
+            <dd>iOS 17 or iPadOS 17 and later.</dd>
+          </div>
+          <div class="facts-row">
+            <dt>Made by</dt>
+            <dd>Inertia Projects, an independent developer. Contact: business@inertiaprojects.info.</dd>
+          </div>
+          <div class="facts-row">
+            <dt>Status</dt>
+            <dd>Version 1.0 was submitted to App Store review in October 2026. It is not on the App Store yet.</dd>
+          </div>
+        </dl>
+        <!-- /build:facts -->
 
-          <article class="testimonial-card">
-            <div class="testimonial-rating" aria-label="5 out of 5 stars">★★★★★</div>
-            <p class="testimonial-quote">&ldquo;I manage over 20,000 high-res client RAW frames. Every other vault app lagged or corrupted exports. Darkroom streams 1 MiB chunked AES-GCM without dropping a single frame.&rdquo;</p>
-            <div class="testimonial-author">
-              <span class="author-avatar" aria-hidden="true">MK</span>
-              <div class="author-meta">
-                <strong>Maya K.</strong>
-                <span>Documentary Photographer &amp; Director · London</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="testimonial-card">
-            <div class="testimonial-rating" aria-label="5 out of 5 stars">★★★★★</div>
-            <p class="testimonial-quote">&ldquo;Zero accounts, zero servers, zero telemetry SDKs. It feels like software from the golden era of native Apple craft, backed by brutal Argon2id math and hardware Secure Enclave binding.&rdquo;</p>
-            <div class="testimonial-author">
-              <span class="author-avatar" aria-hidden="true">LS</span>
-              <div class="author-meta">
-                <strong>Liam S.</strong>
-                <span>iOS Security Researcher &amp; Systems Engineer · Zurich</span>
-              </div>
-            </div>
-          </article>
-        </div>
-
-        <!-- Cryptographic Posture & Founder Identity Card -->
         <div class="audit-posture-banner">
           <div class="audit-col">
-            <span class="audit-tag">CRYPTOGRAPHIC INTEGRITY</span>
-            <h3>DRK1 Zero-Knowledge Model</h3>
+            <span class="audit-tag">HOW THE KEYS WORK</span>
+            <h3>Nothing that opens your vault leaves your iPhone</h3>
             <ul class="audit-check-list">
-              <li><strong>Hardware Bound:</strong> Vault master keys are wrapped inside the Apple Secure Enclave; RAM is wiped immediately upon backgrounding.</li>
-              <li><strong>Zero Cloud Plaintext:</strong> Only AES-256-GCM ciphertext chunks reach your private iCloud. Apple cannot decrypt them even under subpoena.</li>
-              <li><strong>Auditable Open Core:</strong> Core cryptographic derivation routines (libsodium &amp; Argon2id) are scheduled for public audit upon 1.0 release.</li>
+              <li><strong>Pattern never stored:</strong> Your pattern is stretched with Argon2id in memory to unwrap the vault key. Nothing that could rebuild it is saved on the phone or in iCloud.</li>
+              <li><strong>Only ciphertext in iCloud:</strong> Photos, thumbnails and their names, dates and places are encrypted with AES-256-GCM before they go to your private CloudKit database.</li>
+              <li><strong>No reset button:</strong> Neither we nor Apple can open a vault. The recovery phrase you write down at setup is the only spare key.</li>
             </ul>
           </div>
           <div class="audit-col audit-col-founder" id="about">
-            <span class="audit-tag">INDEPENDENT PRIVACY STUDIO</span>
-            <h3>Engineered by Inertia Projects</h3>
-            <p>Inertia Projects is an independent systems laboratory focused on local-first, zero-knowledge utilities and high-assurance privacy software for iOS. We build tools anchored strictly in mathematical proofs, on-device cryptography, and sovereign data ownership &mdash; with zero outside venture capital, zero trackers, and zero server-side access to user files.</p>
+            <span class="audit-tag">WHO MAKES IT</span>
+            <h3>Made by Inertia Projects</h3>
+            <p>Darkroom is made by Inertia Projects, a small independent developer. We run no servers that store your files, and the app has no ads, no analytics and no accounts. If something is unclear or wrong on this page, email us and we will fix it.</p>
             <div class="founder-contact-row">
               <a href="mailto:business@inertiaprojects.info" class="founder-contact-link">
                 <svg viewBox="0 0 20 20" fill="currentColor" width="14" height="14" aria-hidden="true"><path d="M3 4a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H3zm0 2h14l-7 4.5L3 6zm0 2.236 6.472 4.16a1 1 0 0 0 1.056 0L17 8.236V14H3V8.236z"/></svg>
                 <span>business@inertiaprojects.info</span>
               </a>
-              <span class="founder-pill">Local-First · Native Apple Swift · Zero Telemetry</span>
+              <a href="/about" class="founder-pill">More about who makes Darkroom →</a>
             </div>
           </div>
         </div>
@@ -517,7 +783,7 @@
         <div class="section-head">
           <p class="eyebrow"><span class="dot dot-amber" aria-hidden="true"></span>Built From One-Star Reviews</p>
           <h2>Most vault apps either risk data loss or trap your files behind paywalls. Darkroom is built to keep your library recoverable and exportable.</h2>
-          <p>Before writing a single line of Swift, we read thousands of one-star reviews across competing iOS vault apps. Almost nobody complained about missing novelties. They complained about vanished libraries, subscription lockouts, and fake PIN screens. Darkroom was engineered around six non-negotiable rules.</p>
+          <p>Before launch, we read hundreds of one- and two-star reviews of other iOS vault apps. Almost nobody complained about missing novelties. They complained about vanished libraries, subscription lockouts, and fake PIN screens. Darkroom was engineered around six non-negotiable rules.</p>
         </div>
 
         <ol class="principles-grid" role="list">
@@ -544,12 +810,12 @@
           <li class="principle-cell">
             <span class="principle-num">Rule 05</span>
             <h3>Mathematically Sealed</h3>
-            <p>Encrypted on-device with Argon2id + AES-256-GCM, so your vault stays unreadable without your bolt pattern. Not us, not Apple, and not a forensic dump can access your library.</p>
+            <p>Encrypted on-device with Argon2id + AES-256-GCM. Without your bolt pattern or recovery phrase, the files are unreadable to us, to Apple, and to anyone who copies them off the phone.</p>
           </li>
           <li class="principle-cell">
             <span class="principle-num">Rule 06</span>
             <h3>Fast With Huge Libraries</h3>
-            <p>Built to stay fast even with large libraries. Tested on 20,000+ frames on iPhone 15 Pro; 4K HDR videos start playing in under a second thanks to random-access 1 MiB chunked AES buffers.</p>
+            <p>Built to stay fast with large libraries. Videos are encrypted in 1 MiB chunks, so even long 4K videos start playing without decrypting the whole file first.</p>
           </li>
         </ol>
 
@@ -586,8 +852,8 @@
               </span>
               <span class="feature-frame-code">FRAME 02A</span>
             </div>
-            <h3>Passphrase Spare Key</h3>
-            <p>Prefer a long high-entropy phrase, or use VoiceOver? Add a passphrase in Settings › The door. It wraps the same 256-bit vault key in an independent Argon2id envelope so you never get locked out.</p>
+            <h3>Recovery Phrase</h3>
+            <p>During setup you write down a recovery phrase. It wraps the same 256-bit vault key in its own Argon2id envelope, so if you ever forget your pattern, the phrase still opens your vault.</p>
             <div class="feature-card-foot">
               <span class="tag-pill">Free + Pro</span>
             </div>
@@ -767,7 +1033,7 @@
               <span class="bench-stage-tag">Stage 01 · The Door</span>
             </div>
             <h3>Set Your Bolt Pattern</h3>
-            <p>Draw your path twice across at least 6 bolts on the 5×5 plate. Argon2id stretches your pattern with a 256-bit room-header salt into the wrapping key that unlocks your random 256-bit vault key. Add Face ID for your main room or a passphrase spare key.</p>
+            <p>Draw your path twice across at least 6 bolts on the 5×5 plate. Argon2id stretches your pattern with a 256-bit room-header salt into the wrapping key that unlocks your random 256-bit vault key. Then write down your recovery phrase. Add Face ID for your main vault if you like.</p>
             <div class="bench-widget" aria-hidden="true">
               <div class="dev-row"><span>KDF Algorithm</span><span class="ok">Argon2id · 64 MiB</span></div>
               <div class="dev-row"><span>Room Header Salt</span><span>256-bit Random (DRK1)</span></div>
@@ -900,562 +1166,91 @@ chunk[i]   = <span class="k">AES_256_GCM.open</span>(
       </div>
     </section>
 
-    <!-- SECTION 5: Full Competitor Comparison Hub & 17-Row Feature Matrix -->
+    <!-- SECTION 5: Comparison summary. Full, sourced table: /best-photo-vault-apps-iphone -->
     <section id="compare" class="section">
       <div class="container">
         <div class="section-head">
-          <p class="eyebrow"><span class="dot dot-amber" aria-hidden="true"></span>Darkroom vs. The Rest</p>
-          <h2>How Darkroom Compares Across 17 iOS Photo Vaults</h2>
-          <p>Most “photo vault” apps on the App Store merely put a 4-digit PIN screen in front of unencrypted files, force you to create an account on their servers, or cap free users at 20 to 100 photos. See the full 17-point architectural breakdown below.</p>
+          <p class="eyebrow"><span class="dot dot-amber" aria-hidden="true"></span>Darkroom vs. Other Vaults</p>
+          <h2>How Darkroom compares with other iPhone photo vaults</h2>
+          <p>Most vault apps say they keep photos safe. Fewer say how. This table shows what each developer states on its own App Store page, plus the privacy label it reported to Apple. Checked 22 October 2026.</p>
         </div>
 
-        <!-- Interactive Category Filter for the 17-Row Table -->
-        <div class="compare-filter-bar" role="toolbar" aria-label="Filter comparison rows by category">
-          <button type="button" class="compare-filter-btn is-active" data-compare-filter="all" aria-pressed="true">All 17 Criteria</button>
-          <button type="button" class="compare-filter-btn" data-compare-filter="crypto" aria-pressed="false">Cryptography &amp; Keys</button>
-          <button type="button" class="compare-filter-btn" data-compare-filter="deniability" aria-pressed="false">Decoy &amp; Duress Defense</button>
-          <button type="button" class="compare-filter-btn" data-compare-filter="cloud" aria-pressed="false">Cloud, Formats &amp; Library</button>
-          <button type="button" class="compare-filter-btn" data-compare-filter="pricing" aria-pressed="false">Free Tier &amp; Privacy</button>
-        </div>
-
-        <!-- 17-Row Responsive Comparison Table -->
-        <div tabindex="0" role="region" aria-labelledby="compare-table-caption" class="table-wrapper">
-          <table class="compare-table">
-            <caption id="compare-table-caption">Side-by-side architecture &amp; feature comparison across major iOS photo vault apps</caption>
+        <div class="data-table-wrap" tabindex="0" role="region" aria-labelledby="compare-summary-caption">
+          <table class="data-table">
+            <caption id="compare-summary-caption">Seven iPhone photo vaults, from each app's US App Store page on 22 Oct 2026. We did not test or audit other apps.</caption>
             <thead>
               <tr>
-                <th scope="col">Capability / Specification</th>
-                <th scope="col" class="is-darkroom">
-                  <div class="th-app-head">
-                    <img src="assets/compare-icons/darkroom.svg" alt="" class="th-app-icon" width="28" height="28" loading="lazy" decoding="async">
-                    <span>Darkroom</span>
-                  </div>
-                </th>
-                <th scope="col">
-                  <div class="th-app-head">
-                    <img src="assets/compare-icons/apple-hidden-album.svg" alt="" class="th-app-icon" width="28" height="28" loading="lazy" decoding="async">
-                    <span>Apple Hidden Album</span>
-                  </div>
-                </th>
-                <th scope="col">
-                  <div class="th-app-head">
-                    <img src="assets/compare-icons/keepsafe.jpg" alt="" class="th-app-icon" width="28" height="28" loading="lazy" decoding="async">
-                    <span>Keepsafe</span>
-                  </div>
-                </th>
-                <th scope="col">
-                  <div class="th-app-head">
-                    <img src="assets/compare-icons/private-photo-vault.jpg" alt="" class="th-app-icon" width="28" height="28" loading="lazy" decoding="async">
-                    <span>Private Photo Vault</span>
-                  </div>
-                </th>
-                <th scope="col">
-                  <div class="th-app-head">
-                    <span class="th-icon-pair" aria-hidden="true">
-                      <img src="assets/compare-icons/calculator-hide-photos.jpg" alt="" class="th-app-icon" width="26" height="26" loading="lazy" decoding="async">
-                      <img src="assets/compare-icons/privault.jpg" alt="" class="th-app-icon" width="26" height="26" loading="lazy" decoding="async">
-                    </span>
-                    <span>Calculator# / Privault</span>
-                  </div>
-                </th>
-                <th scope="col">
-                  <div class="th-app-head">
-                    <span class="th-icon-pair" aria-hidden="true">
-                      <img src="assets/compare-icons/vaultaire.png" alt="" class="th-app-icon" width="26" height="26" loading="lazy" decoding="async">
-                      <img src="assets/compare-icons/obscura.jpg" alt="" class="th-app-icon" width="26" height="26" loading="lazy" decoding="async">
-                    </span>
-                    <span>Vaultaire / Obscura</span>
-                  </div>
-                </th>
+                <th scope="col">App</th>
+                <th scope="col">Encryption named</th>
+                <th scope="col">Decoy vault</th>
+                <th scope="col">Backup</th>
+                <th scope="col">Data used to track you</th>
+                <th scope="col">In-app prices</th>
               </tr>
             </thead>
             <tbody>
-              <tr data-cat="crypto">
-                <th scope="row">
-                  <span class="feat-title">Per-file AES-256-GCM encryption</span>
-                  <span class="feat-sub">Unique random 256-bit key per photo, video &amp; note</span>
-                </th>
-                <td class="is-darkroom"><span class="chk-yes">✓ Yes (DRK1 chunked)</span></td>
-                <td><span class="chk-no">✗ No (OS lock only)</span></td>
-                <td><span class="chk-warn">~ Server-held / opaque</span></td>
-                <td><span class="chk-no">✗ No (PIN gate only)</span></td>
-                <td><span class="chk-no">✗ No (unencrypted files)</span></td>
-                <td><span class="chk-yes">✓ Yes (AES-256-GCM)</span></td>
+              <tr class="is-darkroom">
+                <th scope="row">Darkroom<small>New, Oct 2026</small></th>
+                <td class="yes">AES-256-GCM, Argon2id</td>
+                <td class="yes">Yes, 1 free</td>
+                <td>Encrypted, in your own iCloud</td>
+                <td class="yes">None (Data Not Collected)</td>
+                <td class="num">$2.99–$44.99</td>
               </tr>
-
-              <tr data-cat="crypto">
-                <th scope="row">
-                  <span class="feat-title">Memory-hard key derivation (KDF)</span>
-                  <span class="feat-sub">Defends against GPU/ASIC offline brute-force</span>
-                </th>
-                <td class="is-darkroom"><span class="chk-yes">✓ Argon2id (64 MiB, 3 passes)</span></td>
-                <td><span class="chk-no">✗ Same iPhone passcode</span></td>
-                <td><span class="chk-no">✗ 4–6 digit PIN</span></td>
-                <td><span class="chk-no">✗ 4-digit PIN</span></td>
-                <td><span class="chk-no">✗ Calculator PIN</span></td>
-                <td><span class="chk-warn">~ PBKDF2-HMAC-SHA512</span></td>
+              <tr>
+                <th scope="row">Apple Hidden album<small>Built into Photos</small></th>
+                <td>iPhone's own encryption; no separate key</td>
+                <td class="no">No</td>
+                <td>iCloud Photos; end-to-end only with Advanced Data Protection</td>
+                <td>Not applicable</td>
+                <td class="num">Free</td>
               </tr>
-
-              <tr data-cat="crypto">
-                <th scope="row">
-                  <span class="feat-title">5×5 Bolt Pattern Lock (not a PIN)</span>
-                  <span class="feat-sub">High-permutation geometric key derivation</span>
-                </th>
-                <td class="is-darkroom"><span class="chk-yes">✓ 25-bolt plate (6+ bolts)</span></td>
-                <td><span class="chk-no">✗ Face ID / Passcode</span></td>
-                <td><span class="chk-no">✗ PIN pad</span></td>
-                <td><span class="chk-warn">~ 3×3 dot pattern / PIN</span></td>
-                <td><span class="chk-no">✗ Calculator buttons</span></td>
-                <td><span class="chk-yes">✓ 5×5 pattern grid</span></td>
+              <tr>
+                <th scope="row">Private Photo Vault<small>1,017,852 ratings</small></th>
+                <td class="no">Cipher not named</td>
+                <td class="yes">Decoy password</td>
+                <td>Its own cloud vault</td>
+                <td class="warn">Usage Data</td>
+                <td class="num">$6.99–$39.99</td>
               </tr>
-
-              <tr data-cat="crypto">
-                <th scope="row">
-                  <span class="feat-title">Passphrase spare key &amp; VoiceOver</span>
-                  <span class="feat-sub">Independent Argon2id recovery envelope</span>
-                </th>
-                <td class="is-darkroom"><span class="chk-yes">✓ User passphrase + VoiceOver</span></td>
-                <td><span class="chk-no">✗ None</span></td>
-                <td><span class="chk-warn">~ Email reset via server</span></td>
-                <td><span class="chk-warn">~ Email reset</span></td>
-                <td><span class="chk-no">✗ Security question</span></td>
-                <td><span class="chk-warn">~ 9-word phrase (no VoiceOver lock)</span></td>
+              <tr>
+                <th scope="row">Keepsafe<small>384,865 ratings</small></th>
+                <td class="no">"Military-grade"; cipher not named</td>
+                <td class="no">Not in listing</td>
+                <td>Keepsafe Private Cloud</td>
+                <td class="warn">Usage Data</td>
+                <td class="num">$4.99–$35.99</td>
               </tr>
-
-              <tr data-cat="deniability">
-                <th scope="row">
-                  <span class="feat-title">Unlisted Decoy Rooms (Plausible Deniability)</span>
-                  <span class="feat-sub">Zero room picker; wrong pattern reveals 0 rooms</span>
-                </th>
-                <td class="is-darkroom"><span class="chk-yes">✓ Free (1 decoy) · Pro (Unlimited)</span></td>
-                <td><span class="chk-no">✗ Single visible album</span></td>
-                <td><span class="chk-warn">~ Paid “Secret Door” only</span></td>
-                <td><span class="chk-warn">~ Paid decoy password</span></td>
-                <td><span class="chk-no">✗ Single gallery</span></td>
-                <td><span class="chk-yes">✓ Pattern-separated vaults</span></td>
+              <tr>
+                <th scope="row">SPV<small>69,941 ratings</small></th>
+                <td class="no">Not stated</td>
+                <td class="no">Not in listing</td>
+                <td class="no">Not in listing</td>
+                <td class="warn">Diagnostics, Identifiers, Usage Data</td>
+                <td class="num">$4.99–$39.99</td>
               </tr>
-
-              <tr data-cat="deniability">
-                <th scope="row">
-                  <span class="feat-title">Duress Pattern (Silent Local Wipe)</span>
-                  <span class="feat-sub">Opens harmless room &amp; destroys other local rooms</span>
-                </th>
-                <td class="is-darkroom"><span class="chk-yes">✓ Yes (Pro)</span></td>
-                <td><span class="chk-no">✗ No</span></td>
-                <td><span class="chk-no">✗ No</span></td>
-                <td><span class="chk-no">✗ No</span></td>
-                <td><span class="chk-no">✗ No</span></td>
-                <td><span class="chk-yes">✓ Yes</span></td>
+              <tr>
+                <th scope="row">Calculator#<small>28,925 ratings</small></th>
+                <td class="no">Not stated</td>
+                <td class="no">No (fake crash screen)</td>
+                <td>iCloud, Dropbox, Google Drive, OneDrive</td>
+                <td class="warn">Contact Info</td>
+                <td class="num">$4.99 (free with ads)</td>
               </tr>
-
-              <tr data-cat="deniability">
-                <th scope="row">
-                  <span class="feat-title">Decoy-Safe Biometrics</span>
-                  <span class="feat-sub">Face ID strictly optional &amp; never reveals decoy rooms</span>
-                </th>
-                <td class="is-darkroom"><span class="chk-yes">✓ Main room only (or off)</span></td>
-                <td><span class="chk-no">✗ Opens everything</span></td>
-                <td><span class="chk-no">✗ Account-wide</span></td>
-                <td><span class="chk-no">✗ App-wide</span></td>
-                <td><span class="chk-no">✗ App-wide</span></td>
-                <td><span class="chk-yes">✓ Pattern-only</span></td>
-              </tr>
-
-              <tr data-cat="cloud">
-                <th scope="row">
-                  <span class="feat-title">End-to-End Encrypted iCloud Backup</span>
-                  <span class="feat-sub">Ciphertext-only in your private CloudKit database</span>
-                </th>
-                <td class="is-darkroom"><span class="chk-yes">✓ Free + Pro (on by default)</span></td>
-                <td><span class="chk-warn">~ Standard iCloud Photos</span></td>
-                <td><span class="chk-no">✗ Keepsafe proprietary cloud</span></td>
-                <td><span class="chk-no">✗ Paid proprietary cloud</span></td>
-                <td><span class="chk-no">✗ Unencrypted or paid</span></td>
-                <td><span class="chk-yes">✓ Encrypted CloudKit</span></td>
-              </tr>
-
-              <tr data-cat="cloud">
-                <th scope="row">
-                  <span class="feat-title">Nested Folders (Rolls) &amp; Per-Folder Pattern</span>
-                  <span class="feat-sub">Deep organization with cover frames &amp; roll locks</span>
-                </th>
-                <td class="is-darkroom"><span class="chk-yes">✓ Nested Rolls + Roll Patterns</span></td>
-                <td><span class="chk-no">✗ Flat album only</span></td>
-                <td><span class="chk-warn">~ Flat albums</span></td>
-                <td><span class="chk-warn">~ Flat albums</span></td>
-                <td><span class="chk-warn">~ Basic folders</span></td>
-                <td><span class="chk-no">✗ No folders supported</span></td>
-              </tr>
-
-              <tr data-cat="cloud">
-                <th scope="row">
-                  <span class="feat-title">Full-Quality HEIC, ProRAW &amp; Live Photos</span>
-                  <span class="feat-sub">Zero recompression by default; dates preserved</span>
-                </th>
-                <td class="is-darkroom"><span class="chk-yes">✓ Exact original bytes always</span></td>
-                <td><span class="chk-yes">✓ Original bytes</span></td>
-                <td><span class="chk-no">✗ Compresses on free tier</span></td>
-                <td><span class="chk-no">✗ Strips metadata / Live Photo</span></td>
-                <td><span class="chk-no">✗ Recompresses media</span></td>
-                <td><span class="chk-warn">~ Optimized by default</span></td>
-              </tr>
-
-              <tr data-cat="cloud">
-                <th scope="row">
-                  <span class="feat-title">Streamable 4 GB Video (1 MiB AES-GCM Chunks)</span>
-                  <span class="feat-sub">Plays in &lt;1s without decrypting whole file to disk</span>
-                </th>
-                <td class="is-darkroom"><span class="chk-yes">✓ Instant chunked streaming</span></td>
-                <td><span class="chk-yes">✓ Native iOS player</span></td>
-                <td><span class="chk-no">✗ Slow full-file buffering</span></td>
-                <td><span class="chk-no">✗ Unencrypted local file</span></td>
-                <td><span class="chk-no">✗ Unencrypted local file</span></td>
-                <td><span class="chk-warn">~ Whole-file decrypt</span></td>
-              </tr>
-
-              <tr data-cat="cloud">
-                <th scope="row">
-                  <span class="feat-title">On-Device Integrity Checker &amp; iCloud Repair</span>
-                  <span class="feat-sub">Verifies every GCM authentication tag on demand</span>
-                </th>
-                <td class="is-darkroom"><span class="chk-yes">✓ Built-in “Check Vault” tool</span></td>
-                <td><span class="chk-no">✗ None</span></td>
-                <td><span class="chk-no">✗ None</span></td>
-                <td><span class="chk-no">✗ None</span></td>
-                <td><span class="chk-no">✗ None</span></td>
-                <td><span class="chk-no">✗ None</span></td>
-              </tr>
-
-              <tr data-cat="cloud">
-                <th scope="row">
-                  <span class="feat-title">30-Day Encrypted Fixer Tray (Trash Recovery)</span>
-                  <span class="feat-sub">One-tap restore for accidentally deleted frames</span>
-                </th>
-                <td class="is-darkroom"><span class="chk-yes">✓ 30-day encrypted tray</span></td>
-                <td><span class="chk-yes">✓ Recently Deleted (unencrypted)</span></td>
-                <td><span class="chk-warn">~ Paid trash recovery</span></td>
-                <td><span class="chk-warn">~ Paid trash recovery</span></td>
-                <td><span class="chk-no">✗ Immediate or unencrypted</span></td>
-                <td><span class="chk-no">✗ Immediate deletion</span></td>
-              </tr>
-
-              <tr data-cat="pricing">
-                <th scope="row">
-                  <span class="feat-title">Free Tier Capacity</span>
-                  <span class="feat-sub">Usable for real libraries without paying</span>
-                </th>
-                <td class="is-darkroom"><span class="chk-yes">✓ 150 photos + 10 videos + 1 decoy + iCloud</span></td>
-                <td><span class="chk-yes">✓ Unlimited (device/iCloud)</span></td>
-                <td><span class="chk-no">✗ ~200 items, nagging trials</span></td>
-                <td><span class="chk-no">✗ Ad-walled, no cloud</span></td>
-                <td><span class="chk-no">✗ Ad-walled</span></td>
-                <td><span class="chk-warn">~ 100 photos + 10 videos</span></td>
-              </tr>
-
-              <tr data-cat="pricing">
-                <th scope="row">
-                  <span class="feat-title">No Account or Email Required</span>
-                  <span class="feat-sub">Works out of the box with zero identity linkage</span>
-                </th>
-                <td class="is-darkroom"><span class="chk-yes">✓ Never asks for email</span></td>
-                <td><span class="chk-yes">✓ Built into iOS</span></td>
-                <td><span class="chk-no">✗ Mandatory email signup</span></td>
-                <td><span class="chk-yes">✓ No account</span></td>
-                <td><span class="chk-yes">✓ No account</span></td>
-                <td><span class="chk-yes">✓ No account</span></td>
-              </tr>
-
-              <tr data-cat="pricing">
-                <th scope="row">
-                  <span class="feat-title">Zero Ads &amp; Zero Analytics SDKs</span>
-                  <span class="feat-sub">No ad networks, no PostHog/Firebase telemetry</span>
-                </th>
-                <td class="is-darkroom"><span class="chk-yes">✓ 0 ads · 0 analytics SDKs</span></td>
-                <td><span class="chk-yes">✓ No ads</span></td>
-                <td><span class="chk-no">✗ Ads + tracking SDKs</span></td>
-                <td><span class="chk-no">✗ Heavy full-screen ads</span></td>
-                <td><span class="chk-no">✗ Banner &amp; video ads</span></td>
-                <td><span class="chk-warn">~ No ads (analytics on by default)</span></td>
-              </tr>
-
-              <tr data-cat="pricing">
-                <th scope="row">
-                  <span class="feat-title">Lapsed Subscription Guarantee</span>
-                  <span class="feat-sub">What happens to your photos if you cancel Pro</span>
-                </th>
-                <td class="is-darkroom"><span class="chk-yes">✓ Full view, export &amp; backup forever</span></td>
-                <td><span class="chk-yes">✓ N/A</span></td>
-                <td><span class="chk-no">✗ Locks cloud &amp; nags to pay</span></td>
-                <td><span class="chk-no">✗ Restricts premium albums</span></td>
-                <td><span class="chk-no">✗ Paywalls export features</span></td>
-                <td><span class="chk-yes">✓ Keeps existing files accessible</span></td>
+              <tr>
+                <th scope="row">Vaultaire<small>46 ratings</small></th>
+                <td class="yes">AES-256-GCM</td>
+                <td class="yes">Yes</td>
+                <td>Encrypted iCloud backup</td>
+                <td class="yes">None</td>
+                <td class="num">$1.99–$99.99</td>
               </tr>
             </tbody>
           </table>
         </div>
 
-        <!-- 17 Head-to-Head Competitor Cards (With Official App Icons) -->
-        <div id="compare-cards" class="section-head" style="margin-bottom:32px">
-          <p class="eyebrow"><span class="dot dot-red" aria-hidden="true"></span>17 Head-to-Head Breakdowns</p>
-          <h2>Every Major iOS Vault App, Audited</h2>
-        </div>
-
-        <div class="competitor-cards-grid">
-          <article class="competitor-card">
-            <div class="competitor-card-main">
-              <img src="assets/compare-icons/obscura.jpg" alt="Obscura app icon" class="competitor-app-icon" width="56" height="56" loading="lazy" decoding="async">
-              <div class="competitor-card-content">
-                <div class="competitor-card-title-row">
-                  <h3>Darkroom vs Obscura</h3>
-                  <span class="feature-frame-code">VS 01</span>
-                </div>
-                <div class="competitor-ratings">Zero-knowledge vault</div>
-                <p>Real on-device AES-256-GCM, no account. However, Obscura offers no recovery key, no vault sharing, and only 1 vault on the free tier.</p>
-              </div>
-            </div>
-            <div class="competitor-verdict">✓ Darkroom adds a passphrase spare key, encrypted shared vaults, and 1 decoy room free.</div>
-          </article>
-
-          <article class="competitor-card">
-            <div class="competitor-card-main">
-              <img src="assets/compare-icons/encamera.jpg" alt="Encamera app icon" class="competitor-app-icon" width="56" height="56" loading="lazy" decoding="async">
-              <div class="competitor-card-content">
-                <div class="competitor-card-title-row">
-                  <h3>Darkroom vs Encamera</h3>
-                  <span class="feature-frame-code">VS 02</span>
-                </div>
-                <div class="competitor-ratings">Open source</div>
-                <p>Auditable encrypted vault with no account required, but it does not name its underlying cipher spec or publish transparent pricing tiers upfront.</p>
-              </div>
-            </div>
-            <div class="competitor-verdict">✓ Darkroom publishes its full DRK1 Argon2id + AES-256-GCM spec and transparent pricing.</div>
-          </article>
-
-          <article class="competitor-card">
-            <div class="competitor-card-main">
-              <img src="assets/compare-icons/inner-gallery.jpg" alt="Inner Gallery app icon" class="competitor-app-icon" width="56" height="56" loading="lazy" decoding="async">
-              <div class="competitor-card-content">
-                <div class="competitor-card-title-row">
-                  <h3>Darkroom vs Inner Gallery</h3>
-                  <span class="feature-frame-code">VS 03</span>
-                </div>
-                <div class="competitor-ratings">Pay once · $99.99</div>
-                <p>ChaCha-encrypted vault with a panic PIN. Strong on-device cryptography, but charges $99.99 for a lifetime unlock without a 5×5 bolt plate.</p>
-              </div>
-            </div>
-            <div class="competitor-verdict">✓ Darkroom lifetime Pro is €44.99 with Apple Family Sharing included, and the free plan has no ads.</div>
-          </article>
-
-          <article class="competitor-card">
-            <div class="competitor-card-main">
-              <img src="assets/compare-icons/hiddenvault.jpg" alt="HiddenVault app icon" class="competitor-app-icon" width="56" height="56" loading="lazy" decoding="async">
-              <div class="competitor-card-content">
-                <div class="competitor-card-title-row">
-                  <h3>Darkroom vs HiddenVault</h3>
-                  <span class="feature-frame-code">VS 04</span>
-                </div>
-                <div class="competitor-ratings">2K ratings</div>
-                <p>Free hider with a browser and password vault. Uses PIN access and stores files in standard Apple folders with no named cryptographic cipher.</p>
-              </div>
-            </div>
-            <div class="competitor-verdict">✓ Darkroom seals every file and 1 MiB chunk with Argon2id + AES-256-GCM.</div>
-          </article>
-
-          <article class="competitor-card">
-            <div class="competitor-card-main">
-              <img src="assets/compare-icons/apple-hidden-album.svg" alt="Apple Hidden Album icon" class="competitor-app-icon" width="56" height="56" loading="lazy" decoding="async">
-              <div class="competitor-card-content">
-                <div class="competitor-card-title-row">
-                  <h3>Darkroom vs Apple Hidden Album</h3>
-                  <span class="feature-frame-code">VS 05</span>
-                </div>
-                <div class="competitor-ratings">Built into iOS</div>
-                <p>Free and built in, but it hides rather than encrypts—unlocking with the exact same iPhone passcode or Face ID that a coercer already has.</p>
-              </div>
-            </div>
-            <div class="competitor-verdict">✓ Darkroom adds an independent Argon2id 5×5 bolt pattern, decoy rooms, and a duress wipe.</div>
-          </article>
-
-          <article class="competitor-card">
-            <div class="competitor-card-main">
-              <img src="assets/compare-icons/private-photo-vault.jpg" alt="Private Photo Vault app icon" class="competitor-app-icon" width="56" height="56" loading="lazy" decoding="async">
-              <div class="competitor-card-content">
-                <div class="competitor-card-title-row">
-                  <h3>Darkroom vs Private Photo Vault</h3>
-                  <span class="feature-frame-code">VS 06</span>
-                </div>
-                <div class="competitor-ratings">998K ratings</div>
-                <p>PIN protection over unencrypted files sitting in the app container. No duress mode, no 25-bolt pattern lock, and ad-supported on free.</p>
-              </div>
-            </div>
-            <div class="competitor-verdict">✓ Darkroom encrypts every file with a unique 256-bit key and includes free iCloud backup.</div>
-          </article>
-
-          <article class="competitor-card">
-            <div class="competitor-card-main">
-              <img src="assets/compare-icons/keepsafe.jpg" alt="Keepsafe app icon" class="competitor-app-icon" width="56" height="56" loading="lazy" decoding="async">
-              <div class="competitor-card-content">
-                <div class="competitor-card-title-row">
-                  <h3>Darkroom vs Keepsafe</h3>
-                  <span class="feature-frame-code">VS 07</span>
-                </div>
-                <div class="competitor-ratings">369K ratings</div>
-                <p>Requires mandatory email account creation, uploads files to Keepsafe’s own servers, and bombards free users with tracking and paywalls.</p>
-              </div>
-            </div>
-            <div class="competitor-verdict">✓ Darkroom requires no account, stores ciphertext in your own private iCloud, and has 0 ads.</div>
-          </article>
-
-          <article class="competitor-card">
-            <div class="competitor-card-main">
-              <img src="assets/compare-icons/privault.jpg" alt="Privault app icon" class="competitor-app-icon" width="56" height="56" loading="lazy" decoding="async">
-              <div class="competitor-card-content">
-                <div class="competitor-card-title-row">
-                  <h3>Darkroom vs Privault</h3>
-                  <span class="feature-frame-code">VS 08</span>
-                </div>
-                <div class="competitor-ratings">77K ratings</div>
-                <p>Calculator disguise UI with PIN-based access, without true per-file authenticated encryption, unlisted decoy rooms, or duress protection.</p>
-              </div>
-            </div>
-            <div class="competitor-verdict">✓ Darkroom gives you unlisted decoy rooms and a duress pattern that erases other local rooms.</div>
-          </article>
-
-          <article class="competitor-card">
-            <div class="competitor-card-main">
-              <img src="assets/compare-icons/spv.jpg" alt="SPV Photo Vault app icon" class="competitor-app-icon" width="56" height="56" loading="lazy" decoding="async">
-              <div class="competitor-card-content">
-                <div class="competitor-card-title-row">
-                  <h3>Darkroom vs SPV</h3>
-                  <span class="feature-frame-code">VS 09</span>
-                </div>
-                <div class="competitor-ratings">68K ratings</div>
-                <p>Simple photo vault with a PIN gate. No zero-knowledge key hierarchy, no plausible deniability, and no tamper-evident integrity checker.</p>
-              </div>
-            </div>
-            <div class="competitor-verdict">✓ Darkroom includes an on-device “Check Vault” GCM verifier and one-tap iCloud chunk repair.</div>
-          </article>
-
-          <article class="competitor-card">
-            <div class="competitor-card-main">
-              <img src="assets/compare-icons/secret-photo-album.jpg" alt="Secret Photo Album SA app icon" class="competitor-app-icon" width="56" height="56" loading="lazy" decoding="async">
-              <div class="competitor-card-content">
-                <div class="competitor-card-title-row">
-                  <h3>Darkroom vs Secret Photo Album</h3>
-                  <span class="feature-frame-code">VS 10</span>
-                </div>
-                <div class="competitor-ratings">39K ratings</div>
-                <p>Basic album hiding behind a passcode screen. Files sit unencrypted on disk inside the app container, readable by any filesystem extractor.</p>
-              </div>
-            </div>
-            <div class="competitor-verdict">✓ Darkroom seals filenames, dates, thumbnails, and file bytes with random 256-bit keys.</div>
-          </article>
-
-          <article class="competitor-card">
-            <div class="competitor-card-main">
-              <img src="assets/compare-icons/pv-secret-photo-album.jpg" alt="PV Secret Photo Album app icon" class="competitor-app-icon" width="56" height="56" loading="lazy" decoding="async">
-              <div class="competitor-card-content">
-                <div class="competitor-card-title-row">
-                  <h3>Darkroom vs PV Secret Photo Album</h3>
-                  <span class="feature-frame-code">VS 11</span>
-                </div>
-                <div class="competitor-ratings">30K ratings</div>
-                <p>Another PIN-protected gallery with heavy ad prompts, no per-file encryption, no cryptographic vault separation, and no duress wipe.</p>
-              </div>
-            </div>
-            <div class="competitor-verdict">✓ Darkroom's free plan holds 150 photos, 10 videos and 1 decoy room, with zero ads or tracking SDKs.</div>
-          </article>
-
-          <article class="competitor-card">
-            <div class="competitor-card-main">
-              <img src="assets/compare-icons/calculator-hide-photos.jpg" alt="Calculator# Hide Photos app icon" class="competitor-app-icon" width="56" height="56" loading="lazy" decoding="async">
-              <div class="competitor-card-content">
-                <div class="competitor-card-title-row">
-                  <h3>Darkroom vs Calculator#</h3>
-                  <span class="feature-frame-code">VS 12</span>
-                </div>
-                <div class="competitor-ratings">29K ratings</div>
-                <p>Disguised as a calculator app. Clever UI trick on the surface, but media files remain unencrypted underneath if the device is inspected.</p>
-              </div>
-            </div>
-            <div class="competitor-verdict">✓ Darkroom pairs real Argon2id + AES-256-GCM cryptography with optional utility Disguise Icons.</div>
-          </article>
-
-          <article class="competitor-card">
-            <div class="competitor-card-main">
-              <img src="assets/compare-icons/secret-photo-vault.jpg" alt="Secret Photo Vault app icon" class="competitor-app-icon" width="56" height="56" loading="lazy" decoding="async">
-              <div class="competitor-card-content">
-                <div class="competitor-card-title-row">
-                  <h3>Darkroom vs Secret Photo Vault</h3>
-                  <span class="feature-frame-code">VS 13</span>
-                </div>
-                <div class="competitor-ratings">27K ratings</div>
-                <p>Standard passcode lock on a photo album. No true authenticated encryption, no passphrase spare key, and no encrypted vault sharing.</p>
-              </div>
-            </div>
-            <div class="competitor-verdict">✓ Darkroom includes a VoiceOver-ready passphrase spare key and encrypted CloudKit backup.</div>
-          </article>
-
-          <article class="competitor-card">
-            <div class="competitor-card-main">
-              <img src="assets/compare-icons/hide-it-pro.jpg" alt="Hide it Pro app icon" class="competitor-app-icon" width="56" height="56" loading="lazy" decoding="async">
-              <div class="competitor-card-content">
-                <div class="competitor-card-title-row">
-                  <h3>Darkroom vs Hide it Pro</h3>
-                  <span class="feature-frame-code">VS 14</span>
-                </div>
-                <div class="competitor-ratings">24K ratings</div>
-                <p>Legacy multi-purpose hiding app built around obscurity rather than modern Apple CryptoKit primitives or streamable 4K video encryption.</p>
-              </div>
-            </div>
-            <div class="competitor-verdict">✓ Darkroom streams 4 GB encrypted videos in &lt;1s via 1 MiB AES-GCM chunks.</div>
-          </article>
-
-          <article class="competitor-card">
-            <div class="competitor-card-main">
-              <img src="assets/compare-icons/safe-lock.jpg" alt="Safe Lock app icon" class="competitor-app-icon" width="56" height="56" loading="lazy" decoding="async">
-              <div class="competitor-card-content">
-                <div class="competitor-card-title-row">
-                  <h3>Darkroom vs Safe Lock</h3>
-                  <span class="feature-frame-code">VS 15</span>
-                </div>
-                <div class="competitor-ratings">24K ratings</div>
-                <p>PIN-locked photo vault with paid cloud backup, lacking individual file encryption, ProRAW/Live Photo byte preservation, and duress rooms.</p>
-              </div>
-            </div>
-            <div class="competitor-verdict">✓ Darkroom preserves exact original HEIC, ProRAW, and Live Photo bytes at zero cost.</div>
-          </article>
-
-          <article class="competitor-card">
-            <div class="competitor-card-main">
-              <img src="assets/compare-icons/vaulty.svg" alt="Vaulty app icon" class="competitor-app-icon" width="56" height="56" loading="lazy" decoding="async">
-              <div class="competitor-card-content">
-                <div class="competitor-card-title-row">
-                  <h3>Darkroom vs Vaulty</h3>
-                  <span class="feature-frame-code">VS 16</span>
-                </div>
-                <div class="competitor-ratings">362 ratings · Cloud Reset</div>
-                <p>Cloud-backed hidden gallery with server-resettable access. Convenient recovery, but not true zero-knowledge user-held encryption keys.</p>
-              </div>
-            </div>
-            <div class="competitor-verdict">✓ Darkroom keys never leave your device; your passphrase spare key is 100% client-side.</div>
-          </article>
-
-          <article class="competitor-card is-featured-peer">
-            <div class="competitor-card-main">
-              <img src="assets/compare-icons/vaultaire.png" alt="Vaultaire app icon" class="competitor-app-icon" width="56" height="56" loading="lazy" decoding="async">
-              <div class="competitor-card-content">
-                <div class="competitor-card-title-row">
-                  <h3>Darkroom vs Vaultaire</h3>
-                  <span class="feature-frame-code">VS 17</span>
-                </div>
-                <div class="competitor-ratings">Pattern Vault Peer</div>
-                <p>Vaultaire pioneered pattern-locked vaults with PBKDF2, but caps free users at 100 photos and 10 videos, has no folders, optimizes media by default, and enables analytics by default.</p>
-              </div>
-            </div>
-            <div class="competitor-verdict">✓ Darkroom upgrades KDF to Argon2id (64 MiB), has an ad-free free plan, adds nested Rolls, keeps original bytes, and ships 0 analytics.</div>
-          </article>
-        </div>
+        <p style="margin-top:22px;max-width:70ch;color:var(--muted)">Ratings are US App Store counts. "Not in listing" means the developer's App Store description doesn't mention it, not that the app can't do it. Privacy labels are self-reported by each developer.</p>
+        <p style="margin-top:22px"><a href="/best-photo-vault-apps-iphone" class="btn btn-outline">See all 17 apps, with sources →</a></p>
       </div>
     </section>
 
@@ -1474,19 +1269,19 @@ chunk[i]   = <span class="k">AES_256_GCM.open</span>(
               <h3>Darkroom Free</h3>
               <span class="tag-pill">Free Forever</span>
             </div>
-            <p class="plan-price">€0</p>
+            <p class="plan-price">$0</p>
             <p class="plan-sub">Enough to try every core feature, with no ads and no account.</p>
             <ul class="plan-list" role="list">
               <li>Up to <strong>150 photos &amp; 10 videos</strong> + unlimited encrypted notes</li>
               <li><strong>Main room + 1 unlisted decoy room</strong> (separate 5×5 bolt patterns)</li>
               <li><strong>Sealed private iCloud backup &amp; restore</strong> included free</li>
-              <li><strong>Passphrase spare key</strong> &amp; optional Face ID for main room</li>
+              <li><strong>Recovery phrase</strong> &amp; optional Face ID for the main vault</li>
               <li><strong>Nested Rolls</strong> with cover frames &amp; colour tags</li>
               <li><strong>Full-quality batch export</strong> (HEIC, ProRAW, Live Photos)</li>
               <li><strong>30-day Fixer Tray</strong> &amp; “Check Vault” integrity verifier</li>
               <li><strong>No ads, no accounts, no trackers — ever</strong></li>
             </ul>
-            <a href="#waitlist" class="btn btn-outline">Claim Free Beta Pass</a>
+            <a href="#waitlist" class="btn btn-outline" data-cta="free" data-label-waitlist="Claim Free Beta Pass" data-label-live="Start Free on iPhone &amp; iPad">Claim Free Beta Pass</a>
           </div>
 
           <div class="plan-card is-pro">
@@ -1494,7 +1289,7 @@ chunk[i]   = <span class="k">AES_256_GCM.open</span>(
               <h3>Darkroom Pro</h3>
               <span class="tag-pill is-pro">Family Sharing Included</span>
             </div>
-            <p class="plan-price">€19.99 / yr (7 days free) · €2.99 / wk · €44.99 lifetime</p>
+            <p class="plan-price">$2.99 / month · $19.99 / year (1 week free) · $44.99 once</p>
             <p class="plan-sub">One purchase unlocks Pro for your entire Apple Family Group.</p>
             <ul class="plan-list" role="list">
               <li><strong>Unlimited photos, 4K videos &amp; notes</strong> across all rooms</li>
@@ -1506,7 +1301,7 @@ chunk[i]   = <span class="k">AES_256_GCM.open</span>(
               <li><strong>Disguise App Icons</strong> &amp; custom Home Screen shortcut support</li>
               <li><strong>No-Hostage Guarantee:</strong> cancel anytime and keep full access to existing frames</li>
             </ul>
-            <a href="#waitlist" class="btn btn-primary">Claim 50% Off Lifetime Pro Pass</a>
+            <a href="#waitlist" class="btn btn-primary" data-cta="pro" data-label-waitlist="Claim 50% Off Lifetime Pro Pass" data-label-live="Get Darkroom Pro">Claim 50% Off Lifetime Pro Pass</a>
           </div>
         </div>
       </div>
@@ -1535,7 +1330,7 @@ chunk[i]   = <span class="k">AES_256_GCM.open</span>(
               <span class="faq-summary-left"><span class="faq-q-no">02</span><span>What if I forget my bolt pattern?</span></span>
             </summary>
             <div class="faq-body">
-              <p>Nobody can reset it — not us, and not Apple. That is what makes your vault genuinely private. However, you can add a <strong>passphrase spare key</strong> in Settings › The door (which also supports VoiceOver). Your passphrase wraps the exact same vault key in a second Argon2id envelope so you always have a spare way in. If you forget both your bolt pattern and your passphrase, the encrypted data cannot be recovered.</p>
+              <p>Use your <strong>recovery phrase</strong>. Nobody can reset a pattern, not us and not Apple, so during setup Darkroom has you write down a recovery phrase. On the lock screen, choose to use your recovery phrase and it opens your vault. If you lose both your pattern and your recovery phrase, the encrypted data cannot be recovered by anyone.</p>
             </div>
           </details>
 
@@ -1571,7 +1366,7 @@ chunk[i]   = <span class="k">AES_256_GCM.open</span>(
               <span class="faq-summary-left"><span class="faq-q-no">06</span><span>What happens when I get a new iPhone?</span></span>
             </summary>
             <div class="faq-body">
-              <p>Sign into the same Apple Account on your new iPhone, install Darkroom, and draw your bolt pattern on the Restore screen. Your contact sheet thumbnails appear first so you can browse immediately while full-resolution originals download in the background. Any decoy rooms remain hidden in iCloud until you draw their respective patterns.</p>
+              <p>Draw your pattern on the new iPhone and your vault comes back. Sign in to the same Apple Account, install Darkroom, and draw your bolt pattern on the Restore screen. Your contact sheet thumbnails appear first so you can browse immediately while full-resolution originals download in the background. Any decoy rooms remain hidden in iCloud until you draw their respective patterns.</p>
             </div>
           </details>
 
@@ -1616,7 +1411,7 @@ chunk[i]   = <span class="k">AES_256_GCM.open</span>(
               <span class="faq-summary-left"><span class="faq-q-no">11</span><span>Are there any ads, analytics, or crash trackers?</span></span>
             </summary>
             <div class="faq-body">
-              <p>Zero ad SDKs and zero third-party analytics SDKs (no Firebase, no PostHog, no Amplitude). Optional crash diagnostics are off unless you explicitly opt in, and never include vault keys or media content.</p>
+              <p>Zero ad SDKs and zero third-party analytics SDKs (no Firebase, no PostHog, no Amplitude). Darkroom has no crash reporter of its own. If you choose to share analytics with app developers in iOS Settings, Apple may pass us anonymous crash reports, which never include your photos, videos or notes.</p>
             </div>
           </details>
         </div>
@@ -1629,7 +1424,7 @@ chunk[i]   = <span class="k">AES_256_GCM.open</span>(
         <p class="eyebrow"><span class="dot dot-red" aria-hidden="true"></span>Door Closed · Safelight Ready</p>
         <h2>Close the door<br>on prying eyes.</h2>
         <p>150 photos, 10 videos and 1 decoy room free forever. Encrypted on your iPhone, sealed to your private iCloud.</p>
-        <a href="#waitlist" class="btn btn-primary">Claim TestFlight Early Pass</a>
+        <a href="#waitlist" class="btn btn-primary" data-cta="final" data-label-waitlist="Claim TestFlight Early Pass" data-label-live="Download Darkroom for iPhone &amp; iPad">Claim TestFlight Early Pass</a>
       </div>
     </section>
 
@@ -1665,7 +1460,7 @@ chunk[i]   = <span class="k">AES_256_GCM.open</span>(
       </div>
 
       <div class="install-actions">
-        <a href="https://darkroom.buzz/" target="_blank" rel="noopener" class="btn btn-primary">Open Release Page</a>
+        <a href="#waitlist" class="btn btn-primary" data-cta="dialog" data-label-waitlist="Join the Early Tester List" data-label-live="Open in the App Store">Join the Early Tester List</a>
         <button type="button" class="btn btn-outline" id="modal-copy-link-btn">Copy Install Link</button>
       </div>
     </div>
@@ -1699,26 +1494,26 @@ chunk[i]   = <span class="k">AES_256_GCM.open</span>(
         </div>
 
         <div class="footer-col">
-          <h4>Comparisons</h4>
+          <h4>Guides &amp; Comparisons</h4>
           <ul role="list">
-            <li><a href="#compare">vs Apple Hidden Album</a></li>
-            <li><a href="#compare">vs Keepsafe</a></li>
-            <li><a href="#compare">vs Private Photo Vault</a></li>
-            <li><a href="#compare">vs Calculator# &amp; Privault</a></li>
-            <li><a href="#compare">vs Obscura &amp; Encamera</a></li>
-            <li><a href="#compare">vs Vaultaire</a></li>
+            <li><a href="/best-photo-vault-apps-iphone">Photo vault apps compared</a></li>
+            <li><a href="/guides/how-to-hide-photos-on-iphone">How to hide photos on iPhone</a></li>
+            <li><a href="/guides/is-iphone-hidden-album-private">Is the Hidden album private?</a></li>
+            <li><a href="/guides/move-photo-vault-to-new-iphone">Move a vault to a new iPhone</a></li>
+            <li><a href="/guides/">All guides</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
           <h4>Studio &amp; Legal</h4>
           <ul role="list">
-            <li><a href="#about">About Inertia Projects</a></li>
+            <li><a href="/about">About Inertia Projects</a></li>
+            <li><a href="/support">Support</a></li>
             <li><a href="#how-it-works">How It Works</a></li>
             <li><a href="#coercion">Coercion Defense</a></li>
             <li><a href="#pricing">Free vs Pro Pricing</a></li>
             <li><a href="#faq">Frequently Asked Questions</a></li>
-            <li><a href="https://darkroom.buzz/privacy.html" target="_blank" rel="noopener">Privacy Policy</a></li>
+            <li><a href="/privacy">Privacy Policy</a></li>
             <li><a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a></li>
           </ul>
         </div>
@@ -1726,6 +1521,9 @@ chunk[i]   = <span class="k">AES_256_GCM.open</span>(
 
       <div class="footer-bottom">
         <p>&copy; 2026 Darkroom · Inertia Projects. All rights reserved.</p>
+        <p><!-- build:status -->
+<span class="release-status">Version 1.0 was submitted to App Store review in October 2026. It is not on the App Store yet.</span>
+<!-- /build:status --></p>
         <p>App Store Privacy Nutrition Label: <strong>Data Not Collected</strong></p>
       </div>
     </div>
