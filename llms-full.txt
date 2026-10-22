@@ -712,6 +712,7 @@ Darkroom is the vault app we make. It opens with a pattern you draw on a 5×5 pl
 - Tap add and pick photos and videos from your library. HEIC, ProRAW and Live Photos keep their original quality.
 - Let Darkroom offer to delete the originals from Photos once they're safely in the vault, then empty Recently Deleted.
 Darkroom opens with a pattern on a 5×5 plate of bolts, not your iPhone passcode.
+Try Darkroom free: join the beta →
 ### Don't forget Recently Deleted and other copies
 Moving a photo somewhere private isn't enough if a copy stays behind. Deleted photos sit in Recently Deleted for 30 days.
 - Recently Deleted: open Collections › Utilities › Recently Deleted , unlock it, select the photos and delete them for good.
@@ -861,6 +862,7 @@ Darkroom, which we make, is built for this moment. Its vault files are deliberat
 - Draw your pattern, or choose Restore with recovery phrase . Thumbnails arrive first so you can browse right away; full-size originals download in the background.
 - Open other vaults, such as a decoy, by drawing their patterns. They stay in iCloud until you do.
 Darkroom backs up only encrypted data, to your own iCloud. The backup counts toward your iCloud storage.
+Try Darkroom free: join the beta →
 ### What if photos are already missing?
 Don't delete or reinstall the vault app on either phone, and don't erase the old iPhone if you still have it. Check whether the old phone still opens the vault, look for a restore option in the app's settings, check whether the app has its own website login, and email the developer with your app version and what happened. Reinstalling can delete local files that might still be recoverable.
 New phone? Everything comes back.
@@ -1064,6 +1066,7 @@ Not with built-in features. iOS uses Face ID, Touch ID and passcodes; a drawn pa
 A pattern is only as good as what's behind it. In some apps it just opens a screen in front of normal files; in others it's used to derive the encryption key. Ask how the app uses it before you trust it (we explain the difference in how encrypted photo vaults work ).
 In Darkroom, which we make, you draw a pattern across at least 6 of the 25 bolts on a 5×5 plate. The pattern is never stored: it's stretched with Argon2id into the key that opens your vault, and every photo is encrypted on the iPhone with AES-256-GCM. Face ID can open the main vault for convenience, but never a decoy vault.
 Darkroom's lock: a pattern across a 5×5 plate of bolts, separate from your iPhone passcode.
+Try Darkroom free: join the beta →
 ### Which photo lock should you use?
 Ways to lock photos on iPhone (iOS 26)
 Lock What it locks Separate from passcode? Good for
@@ -1191,6 +1194,7 @@ Import them from Photos into the vault, check they play, then delete the origina
 - Are videos in the free plan? Many free plans limit videos more than photos. Darkroom's free plan, for example, holds 10 videos.
 In Darkroom, which we make, videos are encrypted on the iPhone in 1 MiB chunks with AES-256-GCM. Because each chunk can be decrypted on its own, even long 4K videos start playing straight away, without a decrypted copy written to storage. Videos keep their original quality and date, and export back to Photos the same way. You can also record videos straight into the vault with its camera, so they never touch your camera roll.
 Photos and videos in a Darkroom vault, encrypted on the iPhone.
+Try Darkroom free: join the beta →
 ### Why do videos cause trouble in vault apps?
 Size, mostly. A minute of 4K video can be hundreds of megabytes, so anything a vault does to a video (import, encrypt, back up, restore) takes longer and fails more often than with photos.
 - Import fails or stops when the app is closed mid-way or the phone runs low on space.
@@ -1272,6 +1276,7 @@ Check whether backup is in the free plan. Some vaults charge for cloud backup, w
 Read this before anything else. The good answer is: you keep full access to everything already in the vault, including export and backup, and only new imports or premium features stop. The bad answer is anything that limits viewing, exporting or restoring your existing photos.
 Darkroom's rule, which we make: if Pro ends, you keep full access to view, export and back up everything already in your vault. Only adding past the free limits and Pro features (unlimited items, emergency erase, iPhone and iPad sync, custom icons, album patterns, shared vaults) pause.
 Darkroom: no ads, no account, and your photos stay yours if Pro ends.
+Try Darkroom free: join the beta →
 ### How do you choose a vault you won't regret paying for?
 - Start free with a few dozen photos and a couple of videos. Test import, playback, export and backup.
 - Find the "stop paying" rule in the app or its support pages.
@@ -1339,6 +1344,7 @@ From each developer's own App Store listing or help pages (October 2026):
 - Obscura: says plainly that if you forget your password, your photos are gone, with no reset or recovery email.
 - Darkroom (which we make): no reset by anyone, including us or Apple. At setup you write down a recovery phrase; on the lock screen, tap "Use recovery phrase" and it opens your main vault.
 Darkroom asks you to write down a recovery phrase at setup. It's the only spare key.
+Try Darkroom free: join the beta →
 ### What if you forgot your iPhone passcode (Hidden album)?
 Apple's Hidden album opens with Face ID or your iPhone passcode. If Face ID still works, it still opens. If you changed your passcode in the last 72 hours, iOS 17 and later let you use the previous one from the lock screen's "Forgot Passcode?" option.
 Otherwise, the only way back is to erase the iPhone with a computer or in Recovery Mode, then restore from a backup ( Apple: reset your iPhone and passcode ). Photos in iCloud Photos come back when you sign in again; anything that was only on the phone and not in a backup is lost.
