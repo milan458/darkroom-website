@@ -238,6 +238,22 @@
       "image": "/assets/guides/darkroom-promises.jpg"
     },
     {
+      "path": "/guides/vaultaire-vs-keepsafe",
+      "file": "guides/vaultaire-vs-keepsafe.html",
+      "type": "guide",
+      "ct": "g-vaultaire-keepsafe",
+      "crumb": "Vaultaire vs Keepsafe",
+      "title": "Vaultaire vs Keepsafe: Photo Vaults Compared (2026)",
+      "headline": "Vaultaire vs Keepsafe: which photo vault fits you?",
+      "description": "Vaultaire needs no account and backs up to your own iCloud. Keepsafe uses an email account and its own cloud. Price, encryption and decoys compared.",
+      "summary": "Vaultaire and Keepsafe compared from their App Store listings: account, backup, price, encryption and decoy vaults.",
+      "published": "2026-10-26",
+      "updated": "2026-10-26",
+      "priority": "0.7",
+      "image": "/assets/guides/darkroom-backup.jpg",
+      "draft": true
+    },
+    {
       "path": "/guides/lock-photos-iphone-face-id",
       "file": "guides/lock-photos-iphone-face-id.html",
       "type": "guide",

@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" id="meta-theme-color" content="#070605">
+  <script>
+    try {
+      const savedScheme = localStorage.getItem("color-scheme");
+      const metaScheme = document.querySelector('meta[name="color-scheme"]');
+      const metaTheme = document.getElementById("meta-theme-color");
+      const prefersLight = window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches;
+      const resolved = savedScheme === "light" || savedScheme === "dark" ? savedScheme : (prefersLight ? "light" : "dark");
+      if (metaScheme) metaScheme.content = resolved;
+      if (metaTheme) metaTheme.content = resolved === "light" ? "#F3EEE7" : "#070605";
+      document.documentElement.dataset.theme = resolved;
+    } catch {}
+  </script>
+  <!-- build:meta -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WWNMHW99TP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-WWNMHW99TP');
+  </script>
+  <title>Vaultaire vs Keepsafe: Photo Vaults Compared (2026)</title>
+  <meta name="description" content="Vaultaire needs no account and backs up to your own iCloud. Keepsafe uses an email account and its own cloud. Price, encryption and decoys compared.">
+  <link rel="canonical" href="https://darkroom.buzz/guides/vaultaire-vs-keepsafe">
+  <meta name="robots" content="noindex, follow">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Darkroom">
+  <meta property="og:title" content="Vaultaire vs Keepsafe: Photo Vaults Compared (2026)">
+  <meta property="og:description" content="Vaultaire needs no account and backs up to your own iCloud. Keepsafe uses an email account and its own cloud. Price, encryption and decoys compared.">
+  <meta property="og:url" content="https://darkroom.buzz/guides/vaultaire-vs-keepsafe">
+  <meta property="og:image" content="https://darkroom.buzz/assets/og/darkroom-og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Darkroom photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
+  <meta property="og:locale" content="en_US">
+  <meta property="article:published_time" content="2026-10-26">
+  <meta property="article:modified_time" content="2026-10-26">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Vaultaire vs Keepsafe: Photo Vaults Compared (2026)">
+  <meta name="twitter:description" content="Vaultaire needs no account and backs up to your own iCloud. Keepsafe uses an email account and its own cloud. Price, encryption and decoys compared.">
+  <meta name="twitter:image" content="https://darkroom.buzz/assets/og/darkroom-og.png">
+  <meta name="twitter:image:alt" content="Darkroom photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
+  <!-- /build:meta -->
+
+  <link rel="icon" type="image/svg+xml" href="/assets/darkroom-logo.svg">
+  <link rel="apple-touch-icon" href="/assets/darkroom-icon-180.png">
+
+  <link rel="preload" href="/assets/fonts/plus-jakarta-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/fonts/fonts.css">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/pages.css">
+
+  <!-- build:jsonld -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://darkroom.buzz/#org",
+        "name": "Inertia Projects",
+        "url": "https://darkroom.buzz/about",
+        "email": "business@inertiaprojects.info",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://darkroom.buzz/assets/darkroom-icon-512.png"
+        },
+        "brand": {
+          "@type": "Brand",
+          "name": "Darkroom"
+        }
+      },
+      {
+        "@type": "Article",
+        "@id": "https://darkroom.buzz/guides/vaultaire-vs-keepsafe#article",
+        "headline": "Vaultaire vs Keepsafe: which photo vault fits you?",
+        "description": "Vaultaire needs no account and backs up to your own iCloud. Keepsafe uses an email account and its own cloud. Price, encryption and decoys compared.",
+        "url": "https://darkroom.buzz/guides/vaultaire-vs-keepsafe",
+        "mainEntityOfPage": "https://darkroom.buzz/guides/vaultaire-vs-keepsafe",
+        "image": "https://darkroom.buzz/assets/guides/darkroom-backup.jpg",
+        "datePublished": "2026-10-26",
+        "dateModified": "2026-10-26",
+        "author": {
+          "@id": "https://darkroom.buzz/#org"
+        },
+        "publisher": {
+          "@id": "https://darkroom.buzz/#org"
+        },
+        "inLanguage": "en-US",
+        "isPartOf": {
+          "@id": "https://darkroom.buzz/#website"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Darkroom",
+            "item": "https://darkroom.buzz/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Guides",
+            "item": "https://darkroom.buzz/guides/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Vaultaire vs Keepsafe",
+            "item": "https://darkroom.buzz/guides/vaultaire-vs-keepsafe"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://darkroom.buzz/guides/vaultaire-vs-keepsafe#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is Vaultaire better than Keepsafe?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It depends on what you want. Vaultaire needs no account, backs up to your own iCloud and sells a lifetime plan. Keepsafe gives you an email account to recover through, with its cloud copy on Keepsafe's servers."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Vaultaire need an account?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Vaultaire works without an account or an email address. Its backups go to your own iCloud, encrypted."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Keepsafe free?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Keepsafe has a free plan that backs up your first 200 items to its cloud. Premium costs $9.99 a month or $23.99 a year on the US App Store in October 2026."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Keepsafe store my photos on its servers?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Its cloud backup does. Keepsafe's Private Cloud stores your backed-up items with Keepsafe, and Space Saver keeps the full-size originals there."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I move my photos from Keepsafe to Vaultaire?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Export them from Keepsafe to your Photos library at full quality, import them into Vaultaire, check the backup has finished, and only then delete them from Keepsafe."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <!-- /build:jsonld -->
+</head>
+<body>
+  <!-- build:header -->
+  <!-- Shared header for subpages. Edit partials/header.html, then run python3 tools/build.py. -->
+  <svg width="0" height="0" style="position:absolute;visibility:hidden" aria-hidden="true">
+    <symbol id="darkroom-logo-mark" viewBox="0 0 180 180">
+      <defs>
+        <linearGradient id="drChassis" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#28211D"/>
+          <stop offset="0.55" stop-color="#191412"/>
+          <stop offset="1" stop-color="#0E0B09"/>
+        </linearGradient>
+      </defs>
+      <rect width="180" height="180" rx="40" fill="url(#drChassis)"/>
+      <rect x="2" y="2" width="176" height="176" rx="38" fill="none" stroke="#3D332C" stroke-width="2" opacity="0.7"/>
+      <!-- 5x5 Bolt Matrix (19 inactive bolts) -->
+      <g fill="#433932" stroke="#574B42" stroke-width="1.5">
+        <circle cx="38" cy="38" r="8.5"/>
+        <circle cx="64" cy="38" r="8.5"/>
+        <circle cx="90" cy="38" r="8.5"/>
+        <circle cx="116" cy="38" r="8.5"/>
+        <circle cx="38" cy="64" r="8.5"/>
+        <circle cx="64" cy="64" r="8.5"/>
+        <circle cx="142" cy="64" r="8.5"/>
+        <circle cx="38" cy="90" r="8.5"/>
+        <circle cx="90" cy="90" r="8.5"/>
+        <circle cx="116" cy="90" r="8.5"/>
+        <circle cx="142" cy="90" r="8.5"/>
+        <circle cx="38" cy="116" r="8.5"/>
+        <circle cx="90" cy="116" r="8.5"/>
+        <circle cx="116" cy="116" r="8.5"/>
+        <circle cx="142" cy="116" r="8.5"/>
+        <circle cx="64" cy="142" r="8.5"/>
+        <circle cx="90" cy="142" r="8.5"/>
+        <circle cx="116" cy="142" r="8.5"/>
+        <circle cx="142" cy="142" r="8.5"/>
+      </g>
+      <!-- Connecting safelight path: (0,4) -> (1,3) -> (1,2) -> (2,1) -> (3,1) -> (4,0) -->
+      <path d="M38 142 L64 116 L64 90 L90 64 L116 64 L142 38" fill="none" stroke="#F04E37" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- 6 Active Safelight Bolts -->
+      <g fill="#F04E37">
+        <circle cx="38" cy="142" r="9"/>
+        <circle cx="64" cy="116" r="9"/>
+        <circle cx="64" cy="90" r="9"/>
+        <circle cx="90" cy="64" r="9"/>
+        <circle cx="116" cy="64" r="9"/>
+        <circle cx="142" cy="38" r="10.5"/>
+      </g>
+    </symbol>
+  </svg>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="/" class="logo" aria-label="Darkroom home">
+        <span class="logo-plate" aria-hidden="true">
+          <svg viewBox="0 0 180 180" width="30" height="30" aria-hidden="true"><use href="#darkroom-logo-mark"></use></svg>
+        </span>
+        <span>Darkroom</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="/#features">Features</a>
+        <a href="/#security">Security</a>
+        <a href="/#pricing">Pricing</a>
+        <a href="/best-photo-vault-apps-iphone">Compare</a>
+        <a href="/guides/">Guides</a>
+        <a href="/about">About</a>
+        <a href="/support">Support</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle"
+                class="theme-toggle"
+                type="button"
+                aria-label="Switch to light mode"
+                aria-pressed="false"
+                data-light-label="Light"
+                data-dark-label="Dark"
+                data-switch-light="Switch to light mode"
+                data-switch-dark="Switch to dark mode">
+          <span class="theme-icon" id="theme-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><line x1="12" y1="2.5" x2="12" y2="5.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="12" y1="18.8" x2="12" y2="21.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="2.5" y1="12" x2="5.2" y2="12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="18.8" y1="12" x2="21.5" y2="12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="5.3" y1="5.3" x2="7.2" y2="7.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="16.8" y1="16.8" x2="18.7" y2="18.7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="16.8" y1="7.2" x2="18.7" y2="5.3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="5.3" y1="18.7" x2="7.2" y2="16.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </span>
+          <span id="theme-label">Light</span>
+        </button>
+
+        <a href="/#waitlist" class="btn btn-primary btn-nav" data-cta="nav" data-label-waitlist="Join the beta" data-label-live="Get the App">Join the beta</a>
+
+        <button type="button" class="mobile-menu-btn" id="mobile-menu-btn" aria-expanded="false" aria-controls="mobile-drawer" aria-label="Toggle menu">
+          <svg class="icon-menu" viewBox="0 0 24 24" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+          <svg class="icon-close" viewBox="0 0 24 24" aria-hidden="true"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-drawer" id="mobile-drawer" hidden>
+      <div class="container">
+        <nav class="mobile-drawer-list" aria-label="Mobile">
+          <a href="/#features"><span>Features</span></a>
+          <a href="/#security"><span>Security</span></a>
+          <a href="/#pricing"><span>Pricing</span></a>
+          <a href="/best-photo-vault-apps-iphone"><span>Compare vault apps</span></a>
+          <a href="/guides/"><span>Guides</span></a>
+          <a href="/about"><span>About</span></a>
+          <a href="/support"><span>Support</span></a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- /build:header -->
+
+  <main id="main-content" tabindex="-1">
+    <div class="page-hero">
+      <div class="container">
+        <!-- build:breadcrumbs -->
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="/">Darkroom</a></li>
+            <li><a href="/guides/">Guides</a></li>
+            <li aria-current="page">Vaultaire vs Keepsafe</li>
+          </ol>
+        </nav>
+        <!-- /build:breadcrumbs -->
+        <p class="eyebrow"><span class="dot dot-amber" aria-hidden="true"></span>Guide · Comparison</p>
+        <h1>Vaultaire vs Keepsafe: which photo vault fits you?</h1>
+        <!-- build:byline -->
+        <p class="byline"><span>By <a href="https://darkroom.buzz/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>Last updated <time datetime="2026-10-26">26 October 2026</time></span></p>
+        <!-- /build:byline -->
+        <div class="answer">
+          <span class="answer-label">Short answer</span>
+          <p>The main difference is who holds your photos. Vaultaire needs no account and backs up, encrypted, to your own iCloud, including on its free plan. Keepsafe signs you in with an email address and keeps its cloud copy on Keepsafe's own servers. From their US App Store listings in October 2026, Vaultaire sells a $39.99 lifetime plan and lists no data used to track you; Keepsafe is subscription-based and lists Usage Data as used to track you.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container article-layout">
+      <article class="prose">
+        <p>Keepsafe is one of the best-known photo vaults on the iPhone, with 384,865 US ratings in October 2026. Vaultaire is new, with 46. Both hide photos and videos behind a lock, but they're built on different ideas about accounts and the cloud. This guide compares them point by point, using each app's App Store listing and its own published pages, so you can pick the one that fits how you want your photos stored.</p>
+
+        <h2 id="compare">How do Vaultaire and Keepsafe differ?</h2>
+        <p>Vaultaire works without an account and keeps backups in your iCloud; Keepsafe works through an email account and its own cloud. The rest of the differences follow from that.</p>
+        <div class="data-table-wrap" tabindex="0" role="region" aria-labelledby="vs-caption">
+          <table class="data-table">
+            <caption id="vs-caption">Vaultaire and Keepsafe side by side. Source: each app's US App Store page, 21–22 October 2026, and the Keepsafe Help Center.</caption>
+            <thead><tr><th scope="col"></th><th scope="col"><a href="https://apps.apple.com/us/app/photo-vault-vaultaire/id6758529311">Vaultaire</a></th><th scope="col"><a href="https://apps.apple.com/us/app/secret-photo-vault-keepsafe/id510873505">Keepsafe</a></th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Developer</th><td>Wraxle LLC</td><td>KeepSafe Software, Inc.</td></tr>
+              <tr><th scope="row">Account</th><td class="yes">None</td><td>Email account</td></tr>
+              <tr><th scope="row">Encryption named</th><td class="yes">AES-256-GCM (listing)</td><td>"Military-grade" (listing); AES-256 (help center)</td></tr>
+              <tr><th scope="row">Backup</th><td class="yes">Your own iCloud, encrypted, Free and Pro</td><td>Keepsafe's Private Cloud; first 200 items free, up to 10,000 with Premium</td></tr>
+              <tr><th scope="row">Free plan</th><td>Up to 3 vaults, 100 photos and 10 videos in total</td><td>Cloud backup of your first 200 items</td></tr>
+              <tr><th scope="row">Decoy vault</th><td class="yes">Yes; duress vault with Pro</td><td class="no">Not in listing</td></tr>
+              <tr><th scope="row">One-time purchase</th><td class="yes">Pro Lifetime, $39.99</td><td class="no">None listed</td></tr>
+              <tr><th scope="row">In-app purchases</th><td>$1.99–$99.99</td><td>$4.99–$35.99, including $9.99 a month and $23.99 a year</td></tr>
+              <tr><th scope="row">Data used to track you</th><td class="yes">None</td><td class="no">Usage Data</td></tr>
+              <tr><th scope="row">US ratings</th><td>46, 4.7★</td><td>384,865, 4.8★</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>For 17 vault apps in one table, see <a href="/best-photo-vault-apps-iphone">the full photo vault comparison</a>.</p>
+
+        <h2 id="account">Do you need an account for Vaultaire or Keepsafe?</h2>
+        <p>Vaultaire doesn't ask for one. Keepsafe does: you sign in with an email address.</p>
+        <p>An account gives you an email address to recover through. The cost is that your vault is tied to that address and to a company's records. Keepsafe's help center has a page on what to do if you lose access to that email (<a href="https://support.getkeepsafe.com/hc/en-us/articles/360035083132-I-lost-access-to-my-Keepsafe-email-address">Keepsafe Help Center</a>).</p>
+        <p>With no account, nobody can reset your code for you. Before you trust a no-account vault with years of photos, check what it offers if you forget your code. Our guide on <a href="/guides/forgot-photo-vault-password">forgotten vault passwords</a> covers what to look for.</p>
+
+        <h2 id="backup">Where do Vaultaire and Keepsafe back up your photos?</h2>
+        <p>Vaultaire backs up to your own iCloud, encrypted, on both its free and Pro plans. Keepsafe backs up to its own cloud, called Private Cloud.</p>
+        <ul>
+          <li><strong>Vaultaire:</strong> the listing says backups are encrypted and go to your iCloud, on the free plan too.</li>
+          <li><strong>Keepsafe:</strong> the free plan backs up your first 200 items (<a href="https://support.getkeepsafe.com/hc/en-us/articles/360039059532-Keepsafe-Subscriptions">Keepsafe Help Center</a>). Premium raises Private Cloud to 10,000 items, and its "Space Saver" keeps small copies on the phone and the originals in Keepsafe's cloud.</li>
+        </ul>
+        <div class="callout is-warn">
+          <span class="callout-title">Watch out</span>
+          <p>If you use Keepsafe's Space Saver, the full-size originals are in Keepsafe's cloud, not on your phone. If you ever leave Keepsafe, export the originals, not the small copies.</p>
+        </div>
+
+        <h2 id="price">Which is cheaper, Vaultaire or Keepsafe?</h2>
+        <p>For long-term use, Vaultaire: it sells a $39.99 lifetime plan, while Keepsafe's listing shows only Premium subscriptions and plans.</p>
+        <p>Keepsafe's US listing shows $9.99 a month or $23.99 a year, with purchases from $4.99 to $35.99. Vaultaire's listing shows weekly, monthly and annual Pro subscriptions alongside the $39.99 lifetime purchase, with purchases from $1.99 to $99.99. Prices differ by country and change; check the App Store in your region before you buy. More apps with one-time prices are in <a href="/guides/photo-vault-no-subscription-no-ads">vaults without subscriptions or ads</a>.</p>
+
+        <h2 id="security">Which one is more secure?</h2>
+        <p>Both say they encrypt your files. Vaultaire names the method in its listing (AES-256-GCM); Keepsafe's listing says "military-grade", and its help center says AES-256 (<a href="https://support.getkeepsafe.com/hc/en-us/articles/360035454311-How-does-Keepsafe-protect-my-data">source</a>).</p>
+        <p>The bigger difference is where copies live. With Vaultaire, the only copies are on your devices and in your iCloud. With Keepsafe, a copy also lives on Keepsafe's servers, tied to your account. For what the encryption terms mean, see <a href="/guides/how-encrypted-photo-vaults-work">how encrypted photo vaults work</a>.</p>
+
+        <h2 id="decoy">Does Vaultaire or Keepsafe have a decoy vault?</h2>
+        <p>Vaultaire does: a different pattern opens a different vault, and Pro adds a duress vault. Keepsafe's App Store listing doesn't mention a decoy.</p>
+        <p>A decoy vault opens a harmless set of photos if someone makes you unlock the app. It only helps if the decoy looks real. Our guide on <a href="/guides/what-is-a-decoy-vault">what a decoy vault is</a> explains how they work and their limits.</p>
+
+        <h2 id="choose">Should you choose Vaultaire or Keepsafe?</h2>
+        <p>Choose Vaultaire if you don't want an account or a company cloud. Choose Keepsafe if you want an email account to fall back on and don't mind its cloud.</p>
+        <ul>
+          <li><strong>Vaultaire fits</strong> if you want no account, an encrypted backup in your own iCloud, a decoy vault, and a one-time price.</li>
+          <li><strong>Keepsafe fits</strong> if you want an email account you can recover through, and you're comfortable with Keepsafe storing your cloud copy and with its subscription prices.</li>
+        </ul>
+        <p>Moving from Keepsafe? Follow the steps in <a href="/guides/keepsafe-alternatives#switch">how to switch from Keepsafe without losing photos</a>: export the originals, check them, import, and only then delete.</p>
+
+        <h2 id="darkroom">Is there another option like Vaultaire?</h2>
+        <p>Yes. Darkroom photo vault, which we make, works the same way as Vaultaire on the points above: no account, a drawn pattern, AES-256-GCM, and an encrypted backup to your own iCloud on the free plan.</p>
+        <p>The differences: Darkroom's free plan holds 150 photos and 10 videos with 1 decoy vault, you write down a recovery phrase at setup in case you forget your pattern, and its privacy label is Data Not Collected. Pro is $2.99 a month, $19.99 a year or $44.99 once.</p>
+
+        <div class="cta-card">
+          <p class="cta-card-title">No account. Your own iCloud.</p>
+          <p>Darkroom opens with a pattern only you know and backs up, encrypted, to your own iCloud. Free for 150 photos and 10 videos.</p>
+          <a href="/#waitlist" class="btn btn-primary" data-cta="body" data-label-waitlist="Join the beta" data-label-live="Download on the App Store">Join the beta</a>
+          <!-- build:status -->
+          <span class="release-status">Version 1.0 was submitted to App Store review in October 2026. It is not on the App Store yet.</span>
+          <!-- /build:status -->
+        </div>
+
+        <h2 id="faq">Questions people ask</h2>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Is Vaultaire better than Keepsafe?</span></span></summary>
+            <div class="faq-body"><p>It depends on what you want. Vaultaire needs no account, backs up to your own iCloud and sells a lifetime plan. Keepsafe gives you an email account to recover through, with its cloud copy on Keepsafe's servers.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Does Vaultaire need an account?</span></span></summary>
+            <div class="faq-body"><p>No. Vaultaire works without an account or an email address. Its backups go to your own iCloud, encrypted.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Is Keepsafe free?</span></span></summary>
+            <div class="faq-body"><p>Keepsafe has a free plan that backs up your first 200 items to its cloud. Premium costs $9.99 a month or $23.99 a year on the US App Store in October 2026.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Does Keepsafe store my photos on its servers?</span></span></summary>
+            <div class="faq-body"><p>Its cloud backup does. Keepsafe's Private Cloud stores your backed-up items with Keepsafe, and Space Saver keeps the full-size originals there.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Can I move my photos from Keepsafe to Vaultaire?</span></span></summary>
+            <div class="faq-body"><p>Yes. Export them from Keepsafe to your Photos library at full quality, import them into Vaultaire, check the backup has finished, and only then delete them from Keepsafe.</p></div>
+          </details>
+        </div>
+
+        <p><em>Something wrong or out of date? Email <a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a> and we'll fix it. App names are trademarks of their owners and are used only to identify their apps.</em></p>
+      </article>
+
+      <aside class="article-aside" aria-label="On this page">
+        <nav class="toc" aria-label="Table of contents">
+          <p class="toc-title">On this page</p>
+          <ol>
+            <li><a href="#compare">Side by side</a></li>
+            <li><a href="#account">Account</a></li>
+            <li><a href="#backup">Backup</a></li>
+            <li><a href="#price">Price</a></li>
+            <li><a href="#security">Security</a></li>
+            <li><a href="#decoy">Decoy vault</a></li>
+            <li><a href="#choose">Which to choose</a></li>
+            <li><a href="#faq">Questions people ask</a></li>
+          </ol>
+        </nav>
+        <div class="related">
+          <p class="toc-title">Related</p>
+          <ul role="list">
+            <li><a href="/guides/keepsafe-alternatives">Keepsafe alternatives</a></li>
+            <li><a href="/best-photo-vault-apps-iphone">Photo vault apps compared</a></li>
+            <li><a href="/guides/what-is-a-decoy-vault">What is a decoy vault?</a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- build:footer -->
+  <!-- Shared footer for subpages. Edit partials/footer.html, then run python3 tools/build.py. -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="/" class="logo" style="margin-bottom:12px" aria-label="Darkroom home">
+            <span class="logo-plate" aria-hidden="true">
+              <svg viewBox="0 0 180 180" width="30" height="30" aria-hidden="true"><use href="#darkroom-logo-mark"></use></svg>
+            </span>
+            <span>Darkroom</span>
+          </a>
+          <p style="color:var(--muted);max-width:34ch;margin-bottom:14px">Encrypted photo, video and note vault for iPhone and iPad. Encrypted on your device, backed up to your own iCloud.</p>
+          <p style="color:var(--amber);font-family:var(--font-mono);font-size:0.75rem">The app: no accounts · no ads · no analytics</p>
+        </div>
+
+        <div class="footer-col">
+          <h2 class="footer-heading">Guides</h2>
+          <ul role="list">
+            <li><a href="/guides/how-to-hide-photos-on-iphone">How to hide photos on iPhone</a></li>
+  <li><a href="/guides/is-iphone-hidden-album-private">Is the Hidden album private?</a></li>
+  <li><a href="/guides/move-photo-vault-to-new-iphone">Move a photo vault to a new iPhone</a></li>
+  <li><a href="/guides/photo-vault-lost-photos">Photo vault lost your photos</a></li>
+  <li><a href="/guides/keepsafe-alternatives">Keepsafe alternatives</a></li>
+            <li><a href="/guides/">All guides</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h2 class="footer-heading">Darkroom</h2>
+          <ul role="list">
+            <li><a href="/#features">Features</a></li>
+            <li><a href="/#security">How the encryption works</a></li>
+            <li><a href="/#pricing">Free vs Pro</a></li>
+            <li><a href="/best-photo-vault-apps-iphone">Photo vault apps compared</a></li>
+            <li><a href="/#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h2 class="footer-heading">Help &amp; Legal</h2>
+          <ul role="list">
+            <li><a href="/about">About</a></li>
+            <li><a href="/support">Support</a></li>
+            <li><a href="/privacy">Privacy policy</a></li>
+            <li><a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Darkroom · Inertia Projects</p>
+        <p>App Store privacy label: <strong>Data Not Collected</strong></p>
+      </div>
+    </div>
+  </footer>
+  <!-- /build:footer -->
+
+  <script src="/app.js" defer></script>
+</body>
+</html>
