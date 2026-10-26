@@ -37,7 +37,12 @@
   </url>
   <url>
     <loc>https://darkroom.buzz/guides/keepsafe-alternatives</loc>
-    <lastmod>2026-10-22</lastmod>
+    <lastmod>2026-10-26</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://darkroom.buzz/guides/vaultaire-vs-keepsafe</loc>
+    <lastmod>2026-10-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>

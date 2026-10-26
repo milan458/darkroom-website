@@ -233,7 +233,7 @@
       "description": "Want a Keepsafe alternative without an email account or its own cloud? Vault apps that need no account, compared from their App Store listings.",
       "summary": "Vault apps that work without an account, compared with Keepsafe from their App Store listings.",
       "published": "2026-10-22",
-      "updated": "2026-10-22",
+      "updated": "2026-10-26",
       "priority": "0.7",
       "image": "/assets/guides/darkroom-promises.jpg"
     },
@@ -250,8 +250,7 @@
       "published": "2026-10-26",
       "updated": "2026-10-26",
       "priority": "0.7",
-      "image": "/assets/guides/darkroom-backup.jpg",
-      "draft": true
+      "image": "/assets/guides/darkroom-backup.jpg"
     },
     {
       "path": "/guides/lock-photos-iphone-face-id",
