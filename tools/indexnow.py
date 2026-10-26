@@ -6,7 +6,7 @@ Google does not use IndexNow; use Search Console's URL Inspection for Google.
     python3 tools/indexnow.py                         # every public page in site.json
     python3 tools/indexnow.py /guides/some-new-guide  # just these paths (or full URLs)
 
-Run it after the change is live on darkroom.buzz, not before.
+Run it after the change is live on getnoxium.app, not before.
 """
 
 import json

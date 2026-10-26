@@ -1,4 +1,4 @@
-// Renders the 1200×630 Open Graph / Twitter card image: assets/og/darkroom-og.png
+// Renders the 1200×630 Open Graph / Twitter card image: assets/og/noxium-og.png
 //
 //     swift tools/og-image.swift [path/to/App/Fonts]
 //
@@ -14,7 +14,7 @@ let root = URL(fileURLWithPath: #filePath).deletingLastPathComponent().deletingL
 let fonts = CommandLine.arguments.count > 1
     ? URL(fileURLWithPath: CommandLine.arguments[1])
     : FileManager.default.homeDirectoryForCurrentUser.appendingPathComponent("dev/darkroom/App/Fonts")
-let out = root.appendingPathComponent("assets/og/darkroom-og.png")
+let out = root.appendingPathComponent("assets/og/noxium-og.png")
 
 func color(_ hex: UInt32, _ alpha: CGFloat = 1) -> CGColor {
     CGColor(srgbRed: CGFloat((hex >> 16) & 0xFF) / 255, green: CGFloat((hex >> 8) & 0xFF) / 255, blue: CGFloat(hex & 0xFF) / 255, alpha: alpha)
@@ -108,10 +108,10 @@ for row in 0..<5 {
 // Copy.
 let textX: CGFloat = 584, textW: CGFloat = 580
 var top: CGFloat = 132
-top += drawText("DARKROOM · PHOTO VAULT", font: mono(22, medium: true), color: color(0xF5B759), tracking: 3.2, x: textX, top: top, width: textW, context: context) + 22
+top += drawText("NOXIUM · PHOTO VAULT", font: mono(22, medium: true), color: color(0xF5B759), tracking: 3.2, x: textX, top: top, width: textW, context: context) + 22
 top += drawText("PHOTOS ONLY\nYOU CAN SEE.", font: archivoBold(96), color: color(0xF4EFEA), tracking: 1, lineHeight: 0.98, x: textX, top: top, width: textW, context: context) + 26
 drawText("Encrypted on your iPhone.\nBacked up to your own iCloud.\nNo ads. No accounts.", font: mono(23), color: color(0xB2A79C), lineHeight: 1.45, x: textX, top: top, width: textW, context: context)
-drawText("darkroom.buzz", font: mono(20, medium: true), color: color(0xE83B2E), tracking: 1.5, x: textX, top: h - 72, width: textW, context: context)
+drawText("getnoxium.app", font: mono(20, medium: true), color: color(0xE83B2E), tracking: 1.5, x: textX, top: h - 72, width: textW, context: context)
 
 try FileManager.default.createDirectory(at: out.deletingLastPathComponent(), withIntermediateDirectories: true)
 let rep = NSBitmapImageRep(cgImage: context.makeImage()!)

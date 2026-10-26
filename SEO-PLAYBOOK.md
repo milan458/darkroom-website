@@ -1,6 +1,6 @@
-# Darkroom SEO + AI visibility playbook
+# Noxium SEO + AI visibility playbook
 
-The operating manual for darkroom.buzz. Goal: rank in Google and Bing for the questions people ask about hiding and moving private photos, get cited by AI answer engines (ChatGPT search, Perplexity, Google AI Overviews, Claude, Copilot), and turn that traffic into App Store installs.
+The operating manual for getnoxium.app. Goal: rank in Google and Bing for the questions people ask about hiding and moving private photos, get cited by AI answer engines (ChatGPT search, Perplexity, Google AI Overviews, Claude, Copilot), and turn that traffic into App Store installs.
 
 Written 22 October 2026. Update the dates and the backlog table as you go.
 
@@ -12,13 +12,13 @@ Written 22 October 2026. Update the dates and the backlog table as you go.
 - **`python3 tools/build.py`** renders everything from it: meta tags, Open Graph/Twitter, JSON-LD, the shared header/footer, breadcrumbs, bylines, the facts block, the guide list, App Store links, `sitemap.xml`, `llms.txt` and `llms-full.txt`. Run it after any change. It warns about titles over 60 characters, descriptions over 155, and duplicates.
 - **Never hand-edit** anything between `<!-- build:… -->` and `<!-- /build:… -->`, or `sitemap.xml` / `llms*.txt`. The build overwrites them.
 - **Preview locally:** `python3 tools/serve.py` → http://localhost:4321 (clean URLs like on Cloudflare).
-- **Positioning:** "Your photos never get lost, even on a new phone." The bare word "darkroom" belongs to Bergen Co.'s photo editor (29k ratings), so we rank on problems and questions, not the brand. Use the entity phrase **"Darkroom photo vault"**. Keep the brand out of URLs and slugs until the trademark check is done.
+- **Positioning:** "Your photos never get lost, even on a new phone." The app was renamed from Darkroom to **Noxium** in October 2026, because "Darkroom" belongs to Bergen Co.'s photo editor (29k ratings) and couldn't rank. Noxium is unique, so we can now rank on the brand as well as on problems and questions. Use the entity phrase **"Noxium photo vault"** where the category isn't obvious. Keep the brand out of URLs and slugs until the trademark check is done.
 
 ---
 
 ## 1. Launch day: flip the site from waitlist to App Store
 
-When Apple approves Darkroom and you release it:
+When Apple approves Noxium and you release it:
 
 1. In `site.json` set:
    - `"release": "live"`
@@ -36,49 +36,65 @@ Every CTA has its own campaign token (`ct`), e.g. `home-hero`, `g-hide-photos-bo
 
 ---
 
+## 1a. Moving from darkroom.buzz to getnoxium.app (do once, in this order)
+
+The site moved to **https://getnoxium.app** when Darkroom was renamed Noxium (October 2026). `worker/index.js` sends every request for `darkroom.buzz`, `www.darkroom.buzz` and `www.getnoxium.app` to the same path on `getnoxium.app` with a 301, so links and rankings carry over. It only works once the domains are attached to this Worker:
+
+1. **Register** `getnoxium.app` (Cloudflare Registrar puts it in your Cloudflare account automatically).
+2. **Attach the domains:** Workers & Pages → `darkroom-website` → Settings → Domains & Routes → Add → Custom domain: add `getnoxium.app` and `www.getnoxium.app`. **Keep** `darkroom.buzz` and `www.darkroom.buzz` attached, or the redirect can't run.
+3. **Deploy this branch**, then check: `curl -I https://darkroom.buzz/guides/` shows `301` and `location: https://getnoxium.app/guides/`; `curl -I https://getnoxium.app/` shows `200`.
+4. **Google Search Console:** add `getnoxium.app` as a Domain property (DNS TXT), submit `https://getnoxium.app/sitemap.xml`, then in the **old** `darkroom.buzz` property open Settings → **Change of address** and pick `getnoxium.app`. Keep the old property verified.
+5. **Bing Webmaster Tools:** add `getnoxium.app` (import from Search Console), submit the sitemap, then in the old site use **Site Move**.
+6. **IndexNow:** `python3 tools/indexnow.py` (the key file deploys with the site, so it works on the new domain).
+7. **Cloudflare bot settings** (section 2) apply per domain: repeat them for the `getnoxium.app` zone.
+8. **Everywhere else:** App Store Connect URLs (section 2), the X/GitHub/AlternativeTo profiles (section 3), and the old GitHub Pages site.
+9. **Keep `darkroom.buzz` registered and attached for at least 12 months** (ideally for good). If it lapses, the redirects stop and someone else can buy it.
+
+---
+
 ## 2. One-time setup (dashboards)
 
 ### Google Search Console
-1. https://search.google.com/search-console → Add property → **Domain** → `darkroom.buzz`.
+1. https://search.google.com/search-console → Add property → **Domain** → `getnoxium.app`.
 2. Verify with the DNS TXT record in Cloudflare (DNS → Records → Add TXT on `@`).
-3. Sitemaps → submit `https://darkroom.buzz/sitemap.xml`.
+3. Sitemaps → submit `https://getnoxium.app/sitemap.xml`.
 4. URL Inspection → request indexing for `/`, `/best-photo-vault-apps-iphone`, `/guides/`, `/about`.
 
 ### Bing Webmaster Tools (ChatGPT search leans on Bing)
 1. https://www.bing.com/webmasters → **Import from Google Search Console** (fastest), or add the site and verify by DNS.
-2. Sitemaps → submit `https://darkroom.buzz/sitemap.xml`.
+2. Sitemaps → submit `https://getnoxium.app/sitemap.xml`.
 3. IndexNow is already wired: the key file `/7d2d95383a4c423d99b6b0cb4c75ca88.txt` deploys with the site, and `python3 tools/indexnow.py` pings Bing, Yandex, Seznam, Naver and Yep. Run it after every publish. Bing → IndexNow shows the submissions.
 
 ### Cloudflare bot settings (important: these can silently block AI crawlers)
-In the Cloudflare dashboard for darkroom.buzz:
+In the Cloudflare dashboard for getnoxium.app:
 1. **AI Crawl Control** (or Security → Bots → "Block AI bots"): set to **allow** / do not block. If it's on, GPTBot, ClaudeBot, PerplexityBot and others get blocked no matter what robots.txt says.
-2. **Managed robots.txt**: turn it **off**, so Cloudflare serves our `robots.txt` instead of its content-signals-only file. Then check https://darkroom.buzz/robots.txt shows our file, with the `Sitemap:` line.
+2. **Managed robots.txt**: turn it **off**, so Cloudflare serves our `robots.txt` instead of its content-signals-only file. Then check https://getnoxium.app/robots.txt shows our file, with the `Sitemap:` line.
 3. **Bot Fight Mode / Super Bot Fight Mode**: if on, make sure **verified bots are allowed**. Bot Fight Mode can challenge crawlers; turn it off if Search Console or Bing report crawl errors.
 4. **Analytics**: the site uses Google Analytics (`gaMeasurementId` in `site.json`, added to every page by the build). If you add or remove an analytics tool, update the "This website" section of `/privacy` in the same change.
-5. After deploy, check that repo-only files aren't served (they're listed in `.assetsignore`): `curl -I https://darkroom.buzz/site.json` should return 404. New repo-only files must be added to `.assetsignore`, because the Worker serves the whole folder.
+5. After deploy, check that repo-only files aren't served (they're listed in `.assetsignore`): `curl -I https://getnoxium.app/site.json` should return 404. New repo-only files must be added to `.assetsignore`, because the Worker serves the whole folder.
 
 ### App Store Connect URLs (after this branch is deployed)
-- **Support URL:** `https://darkroom.buzz/support`
-- **Marketing URL:** `https://darkroom.buzz/`
-- **Privacy Policy URL:** `https://darkroom.buzz/privacy` (App Privacy section, and in the description's last lines)
-- Then merge the `move-to-darkroom-buzz` branch in `~/dev/darkroom-site` and push it, so old GitHub Pages links redirect.
+- **Support URL:** `https://getnoxium.app/support`
+- **Marketing URL:** `https://getnoxium.app/`
+- **Privacy Policy URL:** `https://getnoxium.app/privacy` (App Privacy section, and in the description's last lines)
+- Then point the redirect in `~/dev/darkroom-site` (old GitHub Pages site) at `https://getnoxium.app/` and push it, so old links land on the new site.
 
 ---
 
 ## 3. Off-site entity consistency
 
-AI engines build their picture of Darkroom from every place it's mentioned. Use the **same name and the same sentence** everywhere:
+AI engines build their picture of Noxium from every place it's mentioned. Use the **same name and the same sentence** everywhere:
 
-> **Darkroom photo vault** — an iPhone and iPad app that hides photos, videos and notes behind a pattern only you know. Encrypted on your device, backed up to your own iCloud. No ads, no accounts.
+> **Noxium photo vault** — an iPhone and iPad app that hides photos, videos and notes behind a pattern only you know. Encrypted on your device, backed up to your own iCloud. No ads, no accounts.
 
 | Where | What to do | Status |
 |---|---|---|
-| App Store | Name "Darkroom: Private Photo Vault"; marketing URL darkroom.buzz | ☐ |
-| X profile | Name "Darkroom photo vault", bio = the sentence above, link darkroom.buzz | ☐ |
-| GitHub | Profile/org README with the sentence and link; link from darkroom.buzz/about once public | ☐ |
-| AlternativeTo | Add Darkroom as an alternative to Private Photo Vault, Keepsafe, Hidden album; same sentence | ☐ |
+| App Store | Name "Noxium: Private Photo Vault"; marketing URL getnoxium.app | ☐ |
+| X profile | Name "Noxium photo vault", bio = the sentence above, link getnoxium.app | ☐ |
+| GitHub | Profile/org README with the sentence and link; link from getnoxium.app/about once public | ☐ |
+| AlternativeTo | Add Noxium as an alternative to Private Photo Vault, Keepsafe, Hidden album; same sentence | ☐ |
 | Product Hunt | Launch page with the sentence; schedule after App Store launch | ☐ |
-| Reddit | Profile bio says you're the developer of Darkroom photo vault | ☐ |
+| Reddit | Profile bio says you're the developer of Noxium photo vault | ☐ |
 | Privacy Guides forum | Account bio, same | ☐ |
 
 When something changes (pricing, features), change `site.json` facts first, rebuild, then update these.
@@ -90,8 +106,8 @@ When something changes (pricing, features), change `site.json` facts first, rebu
 Answer **one** real question about hiding, locking, backing up or moving private photos.
 
 - Where: r/iphone, r/ios, r/privacy, r/apple, Apple Support Community, Quora. Search "hidden album", "photo vault", "new iPhone photos missing", "keepsafe".
-- How: answer the question fully in the reply itself. Most answers shouldn't mention Darkroom at all.
-- **Always disclose** when you mention Darkroom: "I'm the developer of Darkroom, a photo vault app, so I'm biased, but…".
+- How: answer the question fully in the reply itself. Most answers shouldn't mention Noxium at all.
+- **Always disclose** when you mention Noxium: "I'm the developer of Noxium, a photo vault app, so I'm biased, but…".
 - Link only when the link genuinely answers more than the reply can (usually a guide, not the homepage). Follow each subreddit's self-promotion rules.
 - Note the exact question wording in the backlog (section 10). Real questions are the best guide topics.
 
@@ -108,7 +124,7 @@ Answer **one** real question about hiding, locking, backing up or moving private
 
 Friday link actions, rotate through:
 - Submit/update AlternativeTo and Product Hunt listings.
-- Show HN once the app is live: "Show HN: Darkroom – encrypted photo vault for iPhone with a 5×5 bolt pattern lock". Be ready to answer crypto questions.
+- Show HN once the app is live: "Show HN: Noxium – encrypted photo vault for iPhone with a 5×5 bolt pattern lock". Be ready to answer crypto questions.
 - Post in the Privacy Guides forum's community software section; be open about being the developer.
 - Find "best photo vault apps" and "Keepsafe alternatives" articles (Google: `best photo vault app iphone 2026`, `keepsafe alternatives`). Email the writer a short, specific pitch: what's different (encrypted backup that restores, recovery phrase, Data Not Collected), a link to the comparison page, and an offer of a Pro code for testing.
 - Answer a journalist request (Qwoted, Featured) about phone privacy.
@@ -131,8 +147,8 @@ Friday link actions, rotate through:
 ## 7. Monthly (first Monday, about 1 hour)
 
 1. **Search Console review:** queries and pages, last 28 days vs previous. Note the top 10 queries, any page at positions 8–20 (Thursday candidates), and pages that dropped.
-2. **Refresh the comparison page** (`/best-photo-vault-apps-iphone`): re-run the App Store data pull (ratings, last update, privacy labels, prices) and update the table, the "Short answer" counts and `"updated"` in `site.json`. Also update the homepage summary table. Claude can do this: "Refresh the comparison data on darkroom.buzz following SEO-PLAYBOOK.md section 7."
-3. **AI visibility check:** in a private/logged-out window, ask ChatGPT (search on), Perplexity, Google (AI Overview), Claude and Copilot the questions below. For each, note whether darkroom.buzz is cited, whether Darkroom is mentioned, and which sites are cited instead. Log it in section 12.
+2. **Refresh the comparison page** (`/best-photo-vault-apps-iphone`): re-run the App Store data pull (ratings, last update, privacy labels, prices) and update the table, the "Short answer" counts and `"updated"` in `site.json`. Also update the homepage summary table. Claude can do this: "Refresh the comparison data on getnoxium.app following SEO-PLAYBOOK.md section 7."
+3. **AI visibility check:** in a private/logged-out window, ask ChatGPT (search on), Perplexity, Google (AI Overview), Claude and Copilot the questions below. For each, note whether getnoxium.app is cited, whether Noxium is mentioned, and which sites are cited instead. Log it in section 12.
    - How do I hide photos on my iPhone?
    - Is the iPhone Hidden album private?
    - How do I move a photo vault app to a new iPhone without losing photos?
@@ -140,7 +156,7 @@ Friday link actions, rotate through:
    - What are good Keepsafe alternatives without an account?
    - What is a decoy vault?
    - Photo vault app without ads or subscription?
-4. **Check `llms.txt`** still reads correctly: https://darkroom.buzz/llms.txt.
+4. **Check `llms.txt`** still reads correctly: https://getnoxium.app/llms.txt.
 5. **Update the backlog** statuses (section 10).
 
 ---
@@ -152,7 +168,7 @@ Friday link actions, rotate through:
 | Week 4 | Pages indexed | All public pages in the sitemap | Search Console → Pages; Bing → Site Explorer |
 | Week 4 | Impressions | Growing week over week; first guide queries appear | Search Console → Performance |
 | Month 3 | Clicks on guides | 300+/month across guides | Search Console, filter page contains `/guides/` |
-| Month 3 | AI citations | darkroom.buzz cited for at least 2 of the 7 monthly questions | Section 12 log |
+| Month 3 | AI citations | getnoxium.app cited for at least 2 of the 7 monthly questions | Section 12 log |
 | Month 6 | Rankings | Top 10 for several guide keywords | Search Console → average position per query |
 | Month 6 | Installs from the site | Steady campaign-link installs; know which pages drive them | App Store Connect → Analytics → Sources → Campaigns |
 
@@ -171,7 +187,7 @@ These are starting targets, not forecasts. Adjust them after month 1 with real d
    - Exact menu paths in `<span class="path">`, numbered steps in `<ol class="steps">`.
    - Tables with explicit numbers and dates where things compare.
    - Facts about Apple features: link the support.apple.com source.
-   - Mention Darkroom only where it honestly fits, and say "which we make".
+   - Mention Noxium only where it honestly fits, and say "which we make".
    - 2–3 internal links (other guides, the comparison page).
    - FAQ: 4–6 real People Also Ask questions. FAQPage JSON-LD is generated from it.
 5. **Screenshots:** iOS screenshots from a real device on the current iOS, cropped to the relevant part, saved as JPEG ~560 px wide in `/assets/guides/`, with real alt text and `width`/`height` set.
@@ -218,8 +234,8 @@ Statuses: To do → Drafting → Draft, needs review → Live → Refreshed (dat
 - Specific and checkable: numbers, dates, menu paths, sources. No "military-grade", "bank-level", "best-in-class", "revolutionary".
 - No fake social proof, no invented ratings or testimonials, no claims about competitors that aren't in their own listing or a dated source.
 - Never copy competitor text or screenshots.
-- Say what each option doesn't protect, including Darkroom (see the honest threat model on the homepage).
-- If a fact about Darkroom changes, change it in `site.json` first.
+- Say what each option doesn't protect, including Noxium (see the honest threat model on the homepage).
+- If a fact about Noxium changes, change it in `site.json` first.
 
 ---
 
@@ -227,7 +243,7 @@ Statuses: To do → Drafting → Draft, needs review → Live → Refreshed (dat
 
 ### AI visibility (monthly)
 
-| Date | Engine | Question | darkroom.buzz cited? | Darkroom mentioned? | Sites cited instead |
+| Date | Engine | Question | getnoxium.app cited? | Noxium mentioned? | Sites cited instead |
 |---|---|---|---|---|---|
 | | | | | | |
 
@@ -241,14 +257,14 @@ Statuses: To do → Drafting → Draft, needs review → Live → Refreshed (dat
 
 ## 13. Screenshots needed for the guides
 
-The App Store screenshots in `~/dev/darkroom/AppStore/screenshots/iphone/` are reused for Darkroom shots (`/assets/guides/darkroom-*.jpg`). These iOS screenshots still need to be taken on a real iPhone running iOS 26 (they're marked `SCREENSHOT TODO` in the HTML):
+The App Store screenshots in `~/dev/darkroom/AppStore/screenshots/iphone/` are reused for Noxium shots (`/assets/guides/noxium-*.jpg`). These iOS screenshots still need to be taken on a real iPhone running iOS 26 (they're marked `SCREENSHOT TODO` in the HTML):
 
 | File | Shows | Guide |
 |---|---|---|
 | `ios-photos-hide-menu.jpg` | Photos: touch-and-hold menu on a photo, "Hide" visible | How to hide photos |
 | `ios-settings-photos.jpg` | Settings › Apps › Photos: "Use Face ID" and "Show Hidden Album" | How to hide photos |
 | `ios-hidden-album-locked.jpg` | Collections › Utilities with the Hidden album locked | Hidden album private? |
-| `darkroom-restore.jpg` | Darkroom "Restore your vault" screen on a new iPhone | Move to a new iPhone |
+| `noxium-restore.jpg` | Noxium "Restore your vault" screen on a new iPhone | Move to a new iPhone |
 | (optional) `ios-require-face-id.jpg` | Touch-and-hold on the Photos icon showing "Require Face ID" | How to hide photos |
 | (optional) `ios-notes-lock.jpg` | A note with a photo and the Lock option | How to hide photos |
 

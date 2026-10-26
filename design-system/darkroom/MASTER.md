@@ -1,10 +1,10 @@
-# Darkroom Design System — Master Specification
+# Noxium Design System — Master Specification
 
-> **LOGIC:** Global Source of Truth for Darkroom (`darkroom-website`). Synthesized via `ui-ux-pro-max` (`dark-mode-oled` + `skeuomorphism` tactile machined hardware + `bento-box-grid` + `Real-Time / Operations Landing` pattern) and `design-system` Three-Layer Token Architecture (`Primitive → Semantic → Component`).
+> **LOGIC:** Global Source of Truth for Noxium (`darkroom-website`). Synthesized via `ui-ux-pro-max` (`dark-mode-oled` + `skeuomorphism` tactile machined hardware + `bento-box-grid` + `Real-Time / Operations Landing` pattern) and `design-system` Three-Layer Token Architecture (`Primitive → Semantic → Component`).
 
 ---
 
-**Project:** Darkroom — Encrypted iPhone & iPad Photo Vault  
+**Project:** Noxium — Encrypted iPhone & iPad Photo Vault  
 **Aesthetic Direction:** Machined Optical Instrument · Safelight OLED Dark (`#070605`) & Baryta Contact-Sheet Paper Light (`#F3EEE7`)  
 **Design Dials:** Variance `8/10` (Asymmetric Contact-Sheet Bento + Hardware Instrument Panels) · Motion `5/10` (Tactile Spring + Pauseable Live Simulator) · Density `5/10` (Balanced Precision)
 
@@ -16,7 +16,7 @@
 
 | Token | Value | Material Reference |
 |-------|-------|--------------------|
-| `--prim-obsidian-950` | `#070605` | Deep OLED darkroom chamber |
+| `--prim-obsidian-950` | `#070605` | Deep OLED noxium chamber |
 | `--prim-obsidian-900` | `#0D0B09` | Anodized chassis base |
 | `--prim-obsidian-850` | `#15120F` | Machined instrument panel |
 | `--prim-obsidian-800` | `#1D1814` | Elevated bolt plate surface |
@@ -26,7 +26,7 @@
 | `--prim-safelight-500` | `#E83B2E` | Spectral crimson safelight (630nm) |
 | `--prim-safelight-400` | `#F55A4E` | Active safelight filament highlight |
 | `--prim-safelight-700` | `#C2271B` | High-contrast ink safelight (Paper mode) |
-| `--prim-amber-400` | `#F5B759` | Sodium-vapor darkroom timer amber |
+| `--prim-amber-400` | `#F5B759` | Sodium-vapor noxium timer amber |
 | `--prim-amber-700` | `#8F5106` | Contact-sheet grease-pencil amber (Paper mode) |
 | `--prim-halide-400` | `#5ED196` | Silver-halide verified GCM tag mint |
 | `--prim-halide-700` | `#1C6B3F` | Archival fixer stamp green (Paper mode) |
@@ -68,7 +68,7 @@ Updated 2026-10: testers found the uppercase, monospace "instrument panel" look 
 
 1. **Everything (`--font-sans`)**: `"Plus Jakarta Sans"`, `400`–`700`, normal (sentence) case, no wide letter-spacing. Used for headings, buttons, labels, chips and body text.
 2. **Code only (`--font-mono`)**: `"DM Mono"`, reserved for the code listing in the Security section.
-3. **Wordmark only (`--font-display`)**: `"Archivo Narrow"`, `700`, uppercase. The DARKROOM logo is the only uppercase text; in sentences the name is written "Darkroom".
+3. **Wordmark only (`--font-display`)**: `"Archivo Narrow"`, `700`, uppercase. The NOXIUM logo is the only uppercase text; in sentences the name is written "Noxium".
 4. No other `text-transform: uppercase`.
 
 **Words:** use the app's plain vocabulary (pattern, recovery phrase, vault, decoy vault, albums, Recently Deleted, backed up, emergency erase). Encryption details (Argon2id, AES-256-GCM, key hierarchy) live only in the Security section (`#security`), the one technical section on the page.
