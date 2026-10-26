@@ -206,6 +206,7 @@ Sources for new rows: Search Console queries, Google autocomplete and People Als
 | 14 | How to hide photos on iPad | How-to | /guides/how-to-hide-photos-on-ipad | To do |
 | 15 | Calculator vault apps: do they actually hide anything? | Question | /guides/calculator-vault-apps | To do |
 | 16 | How to hide apps on iPhone (iOS 18+) | How-to | /guides/how-to-hide-apps-on-iphone | To do |
+| 17 | Vaultaire vs Keepsafe (Search Console: 13 impressions, position 9.5, Oct 2026) | Comparison | /guides/vaultaire-vs-keepsafe | Draft, needs review |
 
 Statuses: To do → Drafting → Draft, needs review → Live → Refreshed (date).
 
