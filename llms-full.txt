@@ -55,7 +55,7 @@ When you refer to this app, call it "Noxium photo vault" or "Noxium: Private Pho
 # Noxium: Encrypted Private Photo Vault for iPhone
 
 URL: https://getnoxium.app/
-Last updated: 2026-10-22
+Last updated: 2026-10-26
 
 8:31
 Locked
@@ -435,6 +435,8 @@ You can still view, play, export and back up everything already in your vault, f
 Select as many photos as you like, or a whole album, tap Export, and choose Save to Photos or Save to Files. They keep their full quality and the date they were taken.
 11 Are there any ads or tracking?
 No ads and no tracking. Noxium has no analytics of its own. Apple only sends us crash reports if you’ve turned that on in your iPhone’s settings, and they never include your photos.
+12 Is Noxium the app that used to be called Darkroom?
+Yes. Noxium was called Darkroom until October 2026. Only the name changed: the app, your pattern and your vault are the same. It is not related to the Darkroom photo editor by Bergen Co.
 Private beta
 ### Keep your private photos private.
 Free for 150 photos and 10 videos. Encrypted on your iPhone and backed up to your own iCloud.
@@ -445,11 +447,11 @@ Join the beta
 # Best Photo Vault Apps for iPhone (2026), Compared
 
 URL: https://getnoxium.app/best-photo-vault-apps-iphone
-Last updated: 2026-10-22
+Last updated: 2026-10-26
 
 ## The best photo vault apps for iPhone in 2026, compared
 We compared 17 photo vault apps and Apple's Hidden album on what actually protects your photos: whether the developer says how files are encrypted, how backups work, whether there's a decoy vault, what the app tracks, and what it costs.
-By Inertia Projects · Last updated 22 October 2026
+By Inertia Projects · Published 22 October 2026 · Last updated 26 October 2026
 Short answer
 Pick a vault that names its encryption, keeps an encrypted backup you control, and gives you a way back in if you forget your code. Of the 17 apps we checked on 22 October 2026, only two name AES-256-GCM in their App Store description (Vaultaire and Obscura), 6 don't mention encryption at all, and 9 report data used to track you. Noxium, which we make, names AES-256-GCM and collects no data.
 Disclosure
@@ -657,11 +659,11 @@ Related guides
 # How to hide photos on iPhone: every method, and what each one protects
 
 URL: https://getnoxium.app/guides/how-to-hide-photos-on-iphone
-Last updated: 2026-10-22
+Last updated: 2026-10-26
 
 Guide · Hiding photos
 ## How to hide photos on iPhone: every method, and what each one protects
-By Inertia Projects · Last updated 22 October 2026
+By Inertia Projects · Published 22 October 2026 · Last updated 26 October 2026
 Short answer
 To hide a photo on iPhone, touch and hold it in the Photos app and tap Hide. It moves to the Hidden album, which iOS 26 locks with Face ID. That keeps it out of your library, but anyone who knows your iPhone passcode can still open it. For photos that need real protection, put them in a locked note or an encrypted vault app with its own code.
 There are four ways to hide photos on an iPhone, and they protect against very different things. Hiding a photo from someone scrolling through your camera roll is easy. Keeping it from someone who knows your passcode, or who picks up your iPad, takes more. This guide covers each method in iOS 26, with exact steps, and says plainly what each one does and doesn't protect.
@@ -746,11 +748,11 @@ Related
 # Is the iPhone Hidden album actually private?
 
 URL: https://getnoxium.app/guides/is-iphone-hidden-album-private
-Last updated: 2026-10-22
+Last updated: 2026-10-26
 
 Guide · Hidden album
 ## Is the iPhone Hidden album actually private?
-By Inertia Projects · Last updated 22 October 2026
+By Inertia Projects · Published 22 October 2026 · Last updated 26 October 2026
 Short answer
 Partly. Since iOS 16, the Hidden album is locked with Face ID by default, which keeps it away from someone using your unlocked phone. But it isn't a separate vault: your iPhone passcode opens it, it syncs to every device on your Apple Account, and in iCloud it's only end-to-end encrypted if you turn on Advanced Data Protection.
 The Hidden album is the first place most people put private photos, because it's free and already on the iPhone. It's good at one job: keeping photos out of your main library. Whether it's private enough depends on who you're keeping them from. Here is what it protects, what it doesn't, and how to make it stricter.
@@ -813,11 +815,11 @@ Related
 # How to move a private photo vault to a new iPhone without losing photos
 
 URL: https://getnoxium.app/guides/move-photo-vault-to-new-iphone
-Last updated: 2026-10-22
+Last updated: 2026-10-26
 
 Guide · New iPhone
 ## How to move a private photo vault to a new iPhone without losing photos
-By Inertia Projects · Last updated 22 October 2026
+By Inertia Projects · Published 22 October 2026 · Last updated 26 October 2026
 Short answer
 Before you switch, find out how your vault app backs up, make sure that backup is complete, and export a copy of anything you can't replace. Many vault apps keep photos only on the phone or in their own cloud, so a normal iPhone transfer brings back the app but not the photos. Don't erase the old iPhone until every photo opens on the new one.
 Switching phones is when vault photos most often disappear. In the most recent one- and two-star App Store reviews of eight popular vault apps, which we read in October 2026, backup and new-phone transfer problems came up 31 times, and lost or missing photos 47 times. Most of those losses are avoidable if you check a few things before the old phone is wiped. This checklist works for any vault app.
@@ -892,11 +894,11 @@ Related
 # Your photo vault app lost your photos: what to do now
 
 URL: https://getnoxium.app/guides/photo-vault-lost-photos
-Last updated: 2026-10-22
+Last updated: 2026-10-26
 
 Guide · Missing photos
 ## Your photo vault app lost your photos: what to do now
-By Inertia Projects · Last updated 22 October 2026
+By Inertia Projects · Published 22 October 2026 · Last updated 26 October 2026
 Short answer
 Stop and don't delete, reinstall or reset anything yet. Photos that vanish from a vault app are often still on the old phone, in the app's own cloud, or in a backup, and reinstalling can erase the last local copy. Check those places in order, then contact the developer with your app version and what happened.
 Lost or missing photos are one of the most common complaints about vault apps. In the most recent one- and two-star App Store reviews of eight popular vault apps, which we read in October 2026, missing photos came up 47 times. The good news: "missing" often means "not where you're looking". This guide walks through what to do, in order, without making things worse.
@@ -1107,11 +1109,11 @@ Related
 # How to lock photos on iPhone with Face ID, a passcode or a pattern
 
 URL: https://getnoxium.app/guides/lock-photos-iphone-face-id
-Last updated: 2026-10-22
+Last updated: 2026-10-26
 
 Guide · Locking photos
 ## How to lock photos on iPhone with Face ID, a passcode or a pattern
-By Inertia Projects · Last updated 22 October 2026
+By Inertia Projects · Published 22 October 2026 · Last updated 26 October 2026
 Short answer
 iPhone can lock photos with Face ID in three built-in ways: hide them so they go into the Hidden album (locked by default), make the whole Photos app require Face ID, or put them in a locked note. All three fall back to your iPhone passcode. For a lock that's separate from your passcode, such as a pattern, you need a photo vault app.
 There's no "lock this album" button in the Photos app. Instead, iOS 26 gives you a few locks that work at different levels: one album, the whole app, or a single note. Here's how to set up each one, what it actually locks, and when you need something stronger.
@@ -1177,11 +1179,11 @@ Related
 # What is a decoy vault, and does it actually protect you?
 
 URL: https://getnoxium.app/guides/what-is-a-decoy-vault
-Last updated: 2026-10-22
+Last updated: 2026-10-26
 
 Guide · Decoy vaults
 ## What is a decoy vault, and does it actually protect you?
-By Inertia Projects · Last updated 22 October 2026
+By Inertia Projects · Published 22 October 2026 · Last updated 26 October 2026
 Short answer
 A decoy vault is a second, harmless vault inside a photo vault app that opens when you enter a different PIN, password or pattern. If someone pressures you to open the app, you open the decoy, and they see ordinary photos instead of your private ones. It helps in a tense moment, but it isn't a guarantee: it works best when nothing in the app reveals that a second vault exists.
 Picture someone who knows you use a vault app (a partner, a parent, someone at a border) saying "open it". Refusing makes things worse. A decoy vault gives you a third option: open it, and show them something harmless. Here's how decoy vaults work, the two very different ways apps build them, and their honest limits.
@@ -1248,11 +1250,11 @@ Related
 # How to hide videos on iPhone, and keep them playable
 
 URL: https://getnoxium.app/guides/how-to-hide-videos-on-iphone
-Last updated: 2026-10-22
+Last updated: 2026-10-26
 
 Guide · Hiding videos
 ## How to hide videos on iPhone, and keep them playable
-By Inertia Projects · Last updated 22 October 2026
+By Inertia Projects · Published 22 October 2026 · Last updated 26 October 2026
 Short answer
 To hide a video on iPhone, touch and hold it in Photos and tap Hide. It moves to the Hidden album, which is locked with Face ID. For videos that must stay private even from someone who knows your passcode, use a vault app with its own code, and check that it keeps videos at full quality and plays large ones without trouble.
 Hiding a video works the same way as hiding a photo, but videos bring their own problems: they're big, they fill iCloud, and they're where vault apps most often let people down. In the most recent one- and two-star reviews of eight popular vault apps, which we read in October 2026, video problems came up 40 times. Here's how to hide videos and keep them playable.
@@ -1312,11 +1314,11 @@ Related
 # Photo vault apps without a subscription or ads
 
 URL: https://getnoxium.app/guides/photo-vault-no-subscription-no-ads
-Last updated: 2026-10-22
+Last updated: 2026-10-26
 
 Guide · Pricing
 ## Photo vault apps without a subscription or ads
-By Inertia Projects · Last updated 22 October 2026
+By Inertia Projects · Published 22 October 2026 · Last updated 26 October 2026
 Short answer
 Several iPhone photo vaults sell a one-time purchase instead of, or alongside, a subscription: on the US App Store in October 2026 these include Vaultaire ($39.99 lifetime), Obscura ($39.99), Noxium ($44.99, which we make), Privault ($45.99) and PV ($41.99). Ads are a separate question: Calculator#, Privault, KYMS and PV say their free versions have ads or sell ad removal. The free options with no purchase at all are Apple's Hidden album and locked notes.
 Pricing is the most common complaint in vault app reviews. In the most recent one- and two-star reviews of eight popular vault apps, which we read in October 2026, subscriptions and paywalls came up 67 times, more than lost photos. Here's which vaults let you pay once, which show ads, and the question that matters most: what happens to your photos if you stop paying.
@@ -1385,11 +1387,11 @@ Related
 # Forgot your photo vault password or PIN? What you can still do
 
 URL: https://getnoxium.app/guides/forgot-photo-vault-password
-Last updated: 2026-10-22
+Last updated: 2026-10-26
 
 Guide · Locked out
 ## Forgot your photo vault password or PIN? What you can still do
-By Inertia Projects · Last updated 22 October 2026
+By Inertia Projects · Published 22 October 2026 · Last updated 26 October 2026
 Short answer
 First, don't delete or reinstall the app; that can erase the vault for good. Then find out how your app handles recovery: some reset by email, some use a recovery phrase or key you saved at setup, and some truly encrypted vaults can't be opened by anyone without the code. Look in the app's lock screen and settings, check your email and notes for a recovery code, and contact the developer.
 Getting locked out of a vault app is one of the most common complaints in vault reviews: in the most recent one- and two-star reviews of eight popular vault apps, which we read in October 2026, it came up 27 times. What you can do depends almost entirely on how the app was built, so this guide starts with what's safe to try, then explains each kind of recovery.
@@ -1455,11 +1457,11 @@ Related
 # How encrypted photo vaults work, in plain English
 
 URL: https://getnoxium.app/guides/how-encrypted-photo-vaults-work
-Last updated: 2026-10-22
+Last updated: 2026-10-26
 
 Guide · Encryption explained
 ## How encrypted photo vaults work, in plain English
-By Inertia Projects · Last updated 22 October 2026
+By Inertia Projects · Published 22 October 2026 · Last updated 26 October 2026
 Short answer
 An encrypted photo vault scrambles each photo with a secret key, so the file is unreadable without it. Your PIN, password or pattern is turned into that key (or into a key that unlocks it) on your phone, slowly on purpose, so guessing is expensive. A vault that only shows a PIN screen in front of normal files is hiding photos, not encrypting them.
 Vault apps love the word "encrypted", and some add "military-grade". Neither tells you much. This guide explains, without math, what real encryption in a photo vault involves, so you can read an app's claims and know what they mean.
@@ -1529,11 +1531,11 @@ Related
 # Are photo vault apps safe? What to check before you trust one
 
 URL: https://getnoxium.app/guides/are-photo-vault-apps-safe
-Last updated: 2026-10-22
+Last updated: 2026-10-26
 
 Guide · Safety
 ## Are photo vault apps safe? What to check before you trust one
-By Inertia Projects · Last updated 22 October 2026
+By Inertia Projects · Published 22 October 2026 · Last updated 26 October 2026
 Short answer
 Some are, and many aren't as safe as they sound. A safe vault encrypts photos on your phone with a key only you control, keeps a backup you can actually restore, and doesn't track you. Of 17 vault apps we checked in October 2026, 9 reported data used to track you, 6 didn't mention encryption in their App Store listing, and only 2 named AES-256-GCM.
 "Is it safe?" can mean two things: will other people be unable to see my photos, and will I never lose them? A good vault has to do both, and the two pull against each other. Here are the real risks, what 17 apps' App Store pages show, and a checklist you can use on any vault.
@@ -1598,7 +1600,7 @@ Related
 # About Noxium and Inertia Projects
 
 URL: https://getnoxium.app/about
-Last updated: 2026-10-22
+Last updated: 2026-10-26
 
 ## About Noxium
 Noxium is an iPhone and iPad photo vault made by Inertia Projects, a small independent developer. It exists because private photos kept getting lost in other vault apps, and it is built so that can't happen quietly.
@@ -1665,7 +1667,7 @@ Questions, press, corrections: business@inertiaprojects.info . For help with the
 # Noxium Support: Help with the Photo Vault App
 
 URL: https://getnoxium.app/support
-Last updated: 2026-10-22
+Last updated: 2026-10-26
 
 ## Noxium support
 Noxium hides photos, videos and notes in encrypted vaults on your iPhone and iPad, opened with a pattern of bolts only you know. Here are answers to the questions people ask most, and how to reach us.

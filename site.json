@@ -135,7 +135,7 @@
       "ct": "home",
       "title": "Noxium: Encrypted Private Photo Vault for iPhone",
       "description": "Hide photos, videos and notes behind a pattern only you know. Encrypted on your iPhone, backed up to your own iCloud, restores on a new phone. No ads.",
-      "updated": "2026-10-22",
+      "updated": "2026-10-26",
       "priority": "1.0"
     },
     {
@@ -148,7 +148,7 @@
       "description": "17 iPhone photo vault apps side by side: encryption, backup, decoy vaults, free limits, ads and prices. Checked October 2026, with sources.",
       "summary": "Side-by-side comparison of 17 iPhone photo vault apps and Apple's Hidden album, with methodology and sources.",
       "published": "2026-10-22",
-      "updated": "2026-10-22",
+      "updated": "2026-10-26",
       "priority": "0.9"
     },
     {
@@ -159,7 +159,7 @@
       "crumb": "Guides",
       "title": "Photo Privacy Guides for iPhone | Noxium",
       "description": "Plain-English guides to hiding, locking, backing up and moving private photos on iPhone and iPad. Written by the team behind the Noxium photo vault.",
-      "updated": "2026-10-22",
+      "updated": "2026-10-26",
       "priority": "0.8"
     },
     {
@@ -174,7 +174,7 @@
       "description": "Every way to hide photos on iPhone in iOS 26: the Hidden album, locked notes, locked apps and vault apps. What each one protects, and what it doesn't.",
       "summary": "All the ways to hide photos on iPhone, from the Hidden album to encrypted vault apps, and what each one actually protects.",
       "published": "2026-10-22",
-      "updated": "2026-10-22",
+      "updated": "2026-10-26",
       "priority": "0.8",
       "image": "/assets/guides/noxium-lock.jpg"
     },
@@ -190,7 +190,7 @@
       "description": "The Hidden album locks with Face ID, but anyone with your passcode can open it, and it syncs to your devices. What it protects, and what it doesn't.",
       "summary": "What the Hidden album in Photos protects against, what it doesn't, and how to make it stricter.",
       "published": "2026-10-22",
-      "updated": "2026-10-22",
+      "updated": "2026-10-26",
       "priority": "0.8",
       "image": "/assets/guides/noxium-library.jpg"
     },
@@ -206,7 +206,7 @@
       "description": "Why vault apps lose photos when you switch phones, and a step-by-step checklist to move yours safely: before, during and after the transfer.",
       "summary": "A before-during-after checklist for moving any photo vault app to a new iPhone, and why vault photos go missing.",
       "published": "2026-10-22",
-      "updated": "2026-10-22",
+      "updated": "2026-10-26",
       "priority": "0.8",
       "image": "/assets/guides/noxium-backup.jpg"
     },
@@ -221,7 +221,7 @@
       "description": "Photos missing from Private Photo Vault, Keepsafe or another vault app? What to do first, where photos can still be, and how to stop it happening again.",
       "summary": "What to do, and not do, when photos disappear from a vault app, and where they might still be.",
       "published": "2026-10-22",
-      "updated": "2026-10-22",
+      "updated": "2026-10-26",
       "priority": "0.7",
       "image": "/assets/guides/noxium-backup.jpg"
     },
@@ -266,7 +266,7 @@
       "description": "Lock photos on iPhone with Face ID: the Hidden album, locking the Photos app, locked notes, Guided Access, and vault apps that use their own pattern.",
       "summary": "Every way to put photos behind Face ID or a separate code on iPhone, and when each one is enough.",
       "published": "2026-10-22",
-      "updated": "2026-10-22",
+      "updated": "2026-10-26",
       "priority": "0.7",
       "image": "/assets/guides/noxium-lock.jpg"
     },
@@ -281,7 +281,7 @@
       "description": "A decoy vault opens a second, harmless set of photos when you enter a different code. How decoy vaults work, the two kinds, and their limits.",
       "summary": "How decoy vaults and fake PINs work in photo vault apps, the two kinds, and what they can't do.",
       "published": "2026-10-22",
-      "updated": "2026-10-22",
+      "updated": "2026-10-26",
       "priority": "0.7",
       "image": "/assets/guides/noxium-decoy.jpg"
     },
@@ -296,7 +296,7 @@
       "description": "Hide videos on iPhone with the Hidden album, a locked note or a vault app. What changes for large 4K videos, Live Photos and iCloud storage.",
       "summary": "Ways to hide videos on iPhone, and what to check so large videos still import and play.",
       "published": "2026-10-22",
-      "updated": "2026-10-22",
+      "updated": "2026-10-26",
       "priority": "0.7",
       "image": "/assets/guides/noxium-library.jpg"
     },
@@ -311,7 +311,7 @@
       "description": "Which iPhone photo vault apps offer a one-time purchase, which show ads, and what free plans include, from App Store listings in October 2026.",
       "summary": "Which vault apps sell a one-time purchase, which have ads, and what happens to your photos if you stop paying.",
       "published": "2026-10-22",
-      "updated": "2026-10-22",
+      "updated": "2026-10-26",
       "priority": "0.7",
       "image": "/assets/guides/noxium-promises.jpg"
     },
@@ -326,7 +326,7 @@
       "description": "Locked out of a photo vault app? What to try first, how recovery works in different apps, and what not to do so you don't lose the photos for good.",
       "summary": "What to do when you forget a vault app's PIN, password or pattern, and how each kind of recovery works.",
       "published": "2026-10-22",
-      "updated": "2026-10-22",
+      "updated": "2026-10-26",
       "priority": "0.7",
       "image": "/assets/guides/noxium-recovery.jpg"
     },
@@ -341,7 +341,7 @@
       "description": "What encryption means in a photo vault: keys, Argon2id, AES-256-GCM and encrypted backups, without jargon, and how to spot a vault that only hides.",
       "summary": "Keys, key stretching, AES-256-GCM and encrypted backups, explained without jargon.",
       "published": "2026-10-22",
-      "updated": "2026-10-22",
+      "updated": "2026-10-26",
       "priority": "0.7",
       "image": "/assets/guides/noxium-lock.jpg"
     },
@@ -356,7 +356,7 @@
       "description": "Some photo vault apps encrypt your photos; others only hide them behind a PIN. Six things to check before trusting one, with data from 17 apps.",
       "summary": "The real risks of photo vault apps, and six things to check before you trust one with private photos.",
       "published": "2026-10-22",
-      "updated": "2026-10-22",
+      "updated": "2026-10-26",
       "priority": "0.7",
       "image": "/assets/guides/noxium-promises.jpg"
     },
@@ -368,7 +368,7 @@
       "crumb": "About",
       "title": "About Noxium and Inertia Projects",
       "description": "Who makes the Noxium photo vault, why it exists, how it is built, and how to reach us. Plain facts about the app, with nothing rounded up.",
-      "updated": "2026-10-22",
+      "updated": "2026-10-26",
       "priority": "0.6"
     },
     {
@@ -379,7 +379,7 @@
       "crumb": "Support",
       "title": "Noxium Support: Help with the Photo Vault App",
       "description": "Help with Noxium: forgotten pattern, recovery phrase, moving to a new iPhone, exporting photos, and subscriptions. Contact the developer by email.",
-      "updated": "2026-10-22",
+      "updated": "2026-10-26",
       "priority": "0.5"
     },
     {
@@ -390,7 +390,7 @@
       "crumb": "Privacy policy",
       "title": "Privacy Policy | Noxium Photo Vault",
       "description": "Noxium collects no data. No accounts, ads, analytics or tracking. Photos are encrypted on your device and backed up only to your own private iCloud.",
-      "updated": "2026-10-22",
+      "updated": "2026-10-26",
       "priority": "0.4"
     }
   ]
