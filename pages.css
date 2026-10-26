@@ -101,7 +101,7 @@
   display: grid;
   grid-template-columns: minmax(0, 1fr) 260px;
   gap: clamp(32px, 5vw, 64px);
-  padding: clamp(36px, 5vw, 56px) 0 clamp(56px, 7vw, 96px);
+  padding-block: clamp(36px, 5vw, 56px) clamp(56px, 7vw, 96px);
 }
 
 .article-layout > * {
@@ -212,6 +212,7 @@
 .prose ol {
   padding-left: 1.3em;
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: 0.45em;
 }
 
@@ -243,6 +244,13 @@
   font-size: 0.88em;
   color: var(--text);
   white-space: nowrap;
+}
+
+/* Long menu paths would run past a phone screen; let them wrap there. */
+@media (max-width: 600px) {
+  .prose .path {
+    white-space: normal;
+  }
 }
 
 .prose hr {
