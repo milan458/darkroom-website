@@ -1,4 +1,4 @@
--- Darkroom Early Tester Roster Schema (Cloudflare D1 SQLite)
+-- Noxium Early Tester Roster Schema (Cloudflare D1 SQLite)
 CREATE TABLE IF NOT EXISTS waitlist (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   email TEXT UNIQUE NOT NULL,

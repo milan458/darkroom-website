@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Darkroom subpages: guides, comparison, about, support, privacy.
+   Noxium subpages: guides, comparison, about, support, privacy.
    Loads after styles.css and uses only its tokens (see design-system/darkroom/MASTER.md).
    ========================================================================== */
 
@@ -400,7 +400,7 @@
   border-bottom: 0;
 }
 
-.data-table tr.is-darkroom > * {
+.data-table tr.is-noxium > * {
   background: var(--safelight-soft);
 }
 
@@ -476,7 +476,7 @@
   margin-top: 2em;
 }
 
-/* Inline CTA: one line where Darkroom first comes up in a guide */
+/* Inline CTA: one line where Noxium first comes up in a guide */
 .prose .inline-cta {
   margin-top: 1.2em;
   padding: 12px 16px;

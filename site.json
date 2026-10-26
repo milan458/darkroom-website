@@ -1,28 +1,31 @@
 {
-  "_readme": "Source of truth for darkroom.buzz. Edit this file, then run: python3 tools/build.py. See CLAUDE.md and SEO-PLAYBOOK.md.",
+  "_readme": "Source of truth for getnoxium.app. Edit this file, then run: python3 tools/build.py. See CLAUDE.md and SEO-PLAYBOOK.md.",
   "release": "waitlist",
   "appStoreId": "",
   "providerToken": "",
   "gaMeasurementId": "G-WWNMHW99TP",
   "indexNowKey": "7d2d95383a4c423d99b6b0cb4c75ca88",
-  "origin": "https://darkroom.buzz",
-  "siteName": "Darkroom",
-  "appName": "Darkroom: Private Photo Vault",
-  "entityPhrase": "Darkroom photo vault",
-  "defaultOgImage": "/assets/og/darkroom-og.png",
-  "ogImageAlt": "Darkroom photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.",
+  "origin": "https://getnoxium.app",
+  "siteName": "Noxium",
+  "appName": "Noxium: Private Photo Vault",
+  "entityPhrase": "Noxium photo vault",
+  "formerName": "Darkroom",
+  "formerOrigin": "https://darkroom.buzz",
+  "renamedOn": "October 2026",
+  "defaultOgImage": "/assets/og/noxium-og.png",
+  "ogImageAlt": "Noxium photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.",
   "twitterHandle": "",
   "organization": {
     "name": "Inertia Projects",
     "email": "business@inertiaprojects.info",
-    "url": "https://darkroom.buzz/about",
-    "logo": "https://darkroom.buzz/assets/darkroom-icon-512.png",
+    "url": "https://getnoxium.app/about",
+    "logo": "https://getnoxium.app/assets/noxium-icon-512.png",
     "sameAs": []
   },
   "author": {
     "type": "Organization",
     "name": "Inertia Projects",
-    "url": "https://darkroom.buzz/about",
+    "url": "https://getnoxium.app/about",
     "jobTitle": ""
   },
   "app": {
@@ -33,22 +36,22 @@
     "currency": "USD",
     "offers": [
       {
-        "name": "Darkroom Free",
+        "name": "Noxium Free",
         "price": "0",
         "description": "150 photos, 10 videos, unlimited notes, 1 decoy vault, full iCloud backup and restore."
       },
       {
-        "name": "Darkroom Pro Monthly",
+        "name": "Noxium Pro Monthly",
         "price": "2.99",
         "description": "Auto-renewing monthly subscription (in-app purchase)."
       },
       {
-        "name": "Darkroom Pro Yearly",
+        "name": "Noxium Pro Yearly",
         "price": "19.99",
         "description": "Auto-renewing yearly subscription with a 1-week free trial (in-app purchase)."
       },
       {
-        "name": "Darkroom Pro Lifetime",
+        "name": "Noxium Pro Lifetime",
         "price": "44.99",
         "description": "One-time in-app purchase."
       }
@@ -97,7 +100,7 @@
     ],
     [
       "Import and export",
-      "Imports HEIC, ProRAW and Live Photos. Built-in camera. \"Send to Darkroom\" from the share sheet. Exports in full quality with original dates."
+      "Imports HEIC, ProRAW and Live Photos. Built-in camera. \"Send to Noxium\" from the share sheet. Exports in full quality with original dates."
     ],
     [
       "Privacy",
@@ -108,7 +111,7 @@
       "150 photos, 10 videos, unlimited notes, 1 decoy vault, full iCloud backup and restore."
     ],
     [
-      "Darkroom Pro",
+      "Noxium Pro",
       "$2.99 a month, $19.99 a year (1-week free trial) or $44.99 once. Adds unlimited items, emergency erase, iPhone and iPad sync, custom icons, album patterns and shared vaults."
     ],
     [
@@ -130,7 +133,7 @@
       "file": "index.html",
       "type": "home",
       "ct": "home",
-      "title": "Darkroom: Encrypted Private Photo Vault for iPhone",
+      "title": "Noxium: Encrypted Private Photo Vault for iPhone",
       "description": "Hide photos, videos and notes behind a pattern only you know. Encrypted on your iPhone, backed up to your own iCloud, restores on a new phone. No ads.",
       "updated": "2026-10-22",
       "priority": "1.0"
@@ -154,8 +157,8 @@
       "type": "page",
       "ct": "guides",
       "crumb": "Guides",
-      "title": "Photo Privacy Guides for iPhone | Darkroom",
-      "description": "Plain-English guides to hiding, locking, backing up and moving private photos on iPhone and iPad. Written by the team behind the Darkroom photo vault.",
+      "title": "Photo Privacy Guides for iPhone | Noxium",
+      "description": "Plain-English guides to hiding, locking, backing up and moving private photos on iPhone and iPad. Written by the team behind the Noxium photo vault.",
       "updated": "2026-10-22",
       "priority": "0.8"
     },
@@ -173,7 +176,7 @@
       "published": "2026-10-22",
       "updated": "2026-10-22",
       "priority": "0.8",
-      "image": "/assets/guides/darkroom-lock.jpg"
+      "image": "/assets/guides/noxium-lock.jpg"
     },
     {
       "path": "/guides/is-iphone-hidden-album-private",
@@ -189,7 +192,7 @@
       "published": "2026-10-22",
       "updated": "2026-10-22",
       "priority": "0.8",
-      "image": "/assets/guides/darkroom-library.jpg"
+      "image": "/assets/guides/noxium-library.jpg"
     },
     {
       "path": "/guides/move-photo-vault-to-new-iphone",
@@ -205,7 +208,7 @@
       "published": "2026-10-22",
       "updated": "2026-10-22",
       "priority": "0.8",
-      "image": "/assets/guides/darkroom-backup.jpg"
+      "image": "/assets/guides/noxium-backup.jpg"
     },
     {
       "path": "/guides/photo-vault-lost-photos",
@@ -220,7 +223,7 @@
       "published": "2026-10-22",
       "updated": "2026-10-22",
       "priority": "0.7",
-      "image": "/assets/guides/darkroom-backup.jpg"
+      "image": "/assets/guides/noxium-backup.jpg"
     },
     {
       "path": "/guides/keepsafe-alternatives",
@@ -235,7 +238,7 @@
       "published": "2026-10-22",
       "updated": "2026-10-26",
       "priority": "0.7",
-      "image": "/assets/guides/darkroom-promises.jpg"
+      "image": "/assets/guides/noxium-promises.jpg"
     },
     {
       "path": "/guides/vaultaire-vs-keepsafe",
@@ -250,7 +253,7 @@
       "published": "2026-10-26",
       "updated": "2026-10-26",
       "priority": "0.7",
-      "image": "/assets/guides/darkroom-backup.jpg"
+      "image": "/assets/guides/noxium-backup.jpg"
     },
     {
       "path": "/guides/lock-photos-iphone-face-id",
@@ -265,7 +268,7 @@
       "published": "2026-10-22",
       "updated": "2026-10-22",
       "priority": "0.7",
-      "image": "/assets/guides/darkroom-lock.jpg"
+      "image": "/assets/guides/noxium-lock.jpg"
     },
     {
       "path": "/guides/what-is-a-decoy-vault",
@@ -280,7 +283,7 @@
       "published": "2026-10-22",
       "updated": "2026-10-22",
       "priority": "0.7",
-      "image": "/assets/guides/darkroom-decoy.jpg"
+      "image": "/assets/guides/noxium-decoy.jpg"
     },
     {
       "path": "/guides/how-to-hide-videos-on-iphone",
@@ -295,7 +298,7 @@
       "published": "2026-10-22",
       "updated": "2026-10-22",
       "priority": "0.7",
-      "image": "/assets/guides/darkroom-library.jpg"
+      "image": "/assets/guides/noxium-library.jpg"
     },
     {
       "path": "/guides/photo-vault-no-subscription-no-ads",
@@ -310,7 +313,7 @@
       "published": "2026-10-22",
       "updated": "2026-10-22",
       "priority": "0.7",
-      "image": "/assets/guides/darkroom-promises.jpg"
+      "image": "/assets/guides/noxium-promises.jpg"
     },
     {
       "path": "/guides/forgot-photo-vault-password",
@@ -325,7 +328,7 @@
       "published": "2026-10-22",
       "updated": "2026-10-22",
       "priority": "0.7",
-      "image": "/assets/guides/darkroom-recovery.jpg"
+      "image": "/assets/guides/noxium-recovery.jpg"
     },
     {
       "path": "/guides/how-encrypted-photo-vaults-work",
@@ -340,7 +343,7 @@
       "published": "2026-10-22",
       "updated": "2026-10-22",
       "priority": "0.7",
-      "image": "/assets/guides/darkroom-lock.jpg"
+      "image": "/assets/guides/noxium-lock.jpg"
     },
     {
       "path": "/guides/are-photo-vault-apps-safe",
@@ -355,7 +358,7 @@
       "published": "2026-10-22",
       "updated": "2026-10-22",
       "priority": "0.7",
-      "image": "/assets/guides/darkroom-promises.jpg"
+      "image": "/assets/guides/noxium-promises.jpg"
     },
     {
       "path": "/about",
@@ -363,8 +366,8 @@
       "type": "page",
       "ct": "about",
       "crumb": "About",
-      "title": "About Darkroom and Inertia Projects",
-      "description": "Who makes the Darkroom photo vault, why it exists, how it is built, and how to reach us. Plain facts about the app, with nothing rounded up.",
+      "title": "About Noxium and Inertia Projects",
+      "description": "Who makes the Noxium photo vault, why it exists, how it is built, and how to reach us. Plain facts about the app, with nothing rounded up.",
       "updated": "2026-10-22",
       "priority": "0.6"
     },
@@ -374,8 +377,8 @@
       "type": "page",
       "ct": "support",
       "crumb": "Support",
-      "title": "Darkroom Support: Help with the Photo Vault App",
-      "description": "Help with Darkroom: forgotten pattern, recovery phrase, moving to a new iPhone, exporting photos, and subscriptions. Contact the developer by email.",
+      "title": "Noxium Support: Help with the Photo Vault App",
+      "description": "Help with Noxium: forgotten pattern, recovery phrase, moving to a new iPhone, exporting photos, and subscriptions. Contact the developer by email.",
       "updated": "2026-10-22",
       "priority": "0.5"
     },
@@ -385,8 +388,8 @@
       "type": "page",
       "ct": "privacy",
       "crumb": "Privacy policy",
-      "title": "Privacy Policy | Darkroom Photo Vault",
-      "description": "Darkroom collects no data. No accounts, ads, analytics or tracking. Photos are encrypted on your device and backed up only to your own private iCloud.",
+      "title": "Privacy Policy | Noxium Photo Vault",
+      "description": "Noxium collects no data. No accounts, ads, analytics or tracking. Photos are encrypted on your device and backed up only to your own private iCloud.",
       "updated": "2026-10-22",
       "priority": "0.4"
     }

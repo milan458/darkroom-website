@@ -1,6 +1,6 @@
-# darkroom.buzz
+# getnoxium.app
 
-Static marketing site for Darkroom, an encrypted iPhone/iPad photo vault (app repo: `~/dev/darkroom`). Plain HTML/CSS/JS, no framework. Deployed from GitHub as a Cloudflare Worker serving the repo folder as static assets (`wrangler.jsonc`). Everything in the folder is public unless it's listed in `.assetsignore`, so add new repo-only files there. Fonts are self-hosted in `assets/fonts/`; don't add Google Fonts. The only third-party script is the Google Analytics tag, added to every page by the build from `site.json` `gaMeasurementId` (the privacy page's website section describes it). Don't add others without updating `/privacy`.
+Static marketing site for Noxium, an encrypted iPhone/iPad photo vault (app repo: `~/dev/darkroom`). Plain HTML/CSS/JS, no framework. Deployed from GitHub as a Cloudflare Worker serving the repo folder as static assets (`wrangler.jsonc`). Everything in the folder is public unless it's listed in `.assetsignore`, so add new repo-only files there. Fonts are self-hosted in `assets/fonts/`; don't add Google Fonts. The only third-party script is the Google Analytics tag, added to every page by the build from `site.json` `gaMeasurementId` (the privacy page's website section describes it). Don't add others without updating `/privacy`.
 
 ## Ground rules
 - **Never push, merge or deploy without asking Milan.** Work on a branch, commit in small logical commits.
@@ -24,10 +24,10 @@ Static marketing site for Darkroom, an encrypted iPhone/iPad photo vault (app re
 ## Content and voice
 - Match the App Store voice: short, plain sentences ("Photos only you can see."). Specific numbers, dates and menu paths.
 - **No unverifiable claims**: no invented testimonials, ratings, user counts, audits or performance numbers. No `aggregateRating` until real App Store ratings exist.
-- Facts about Darkroom come from `site.json` `facts` (also mirrored in `llms.txt` and JSON-LD). If the app changes, update `site.json` first. Check claims against the app code in `~/dev/darkroom` when unsure (e.g. the free tier is in `App/Core/AppEnvironment.swift`).
+- Facts about Noxium come from `site.json` `facts` (also mirrored in `llms.txt` and JSON-LD). If the app changes, update `site.json` first. Check claims against the app code in `~/dev/darkroom` when unsure (e.g. the free tier is in `App/Core/AppEnvironment.swift`).
 - Competitor statements must be factual, dated and sourced (their App Store listing or a cited page). Never copy competitor text or screenshots.
-- Guides: direct answer in the first 1–2 sentences under every heading, a "Short answer" box, steps, FAQ, 2–3 internal links, a named author and dates (from `site.json`), and Darkroom mentioned only where it honestly fits ("which we make"). New guides start with `"draft": true` (noindex, out of the sitemap) until Milan reviews them.
-- Use "Darkroom photo vault" as the entity phrase; "darkroom" alone belongs to an unrelated photo editor.
+- Guides: direct answer in the first 1–2 sentences under every heading, a "Short answer" box, steps, FAQ, 2–3 internal links, a named author and dates (from `site.json`), and Noxium mentioned only where it honestly fits ("which we make"). New guides start with `"draft": true` (noindex, out of the sitemap) until Milan reviews them.
+- Use "Noxium photo vault" as the entity phrase. The app was called Darkroom until October 2026; "Darkroom" alone is Bergen Co.'s unrelated photo editor, so don't use the old name except to explain the rename.
 
 ## Launch switch
 Set `"release": "live"`, `"appStoreId"` and `"providerToken"` in `site.json`, then build. Details: `SEO-PLAYBOOK.md` section 1.

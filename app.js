@@ -48,7 +48,7 @@
         ? themeBtn?.dataset.lightLabel || "Light"
         : themeBtn?.dataset.darkLabel || "Dark";
     }
-    window.dispatchEvent(new CustomEvent("darkroom-themechange", { detail: { theme: resolved, isDark } }));
+    window.dispatchEvent(new CustomEvent("noxium-themechange", { detail: { theme: resolved, isDark } }));
   }
 
   applyTheme(getActiveTheme(), false);
@@ -372,7 +372,7 @@
     });
     if (canvas.parentElement) ro.observe(canvas.parentElement);
 
-    window.addEventListener("darkroom-themechange", () => {
+    window.addEventListener("noxium-themechange", () => {
       syncCanvasColors();
       drawBgBase();
     });
@@ -776,7 +776,7 @@
   initComparisonFilters();
 
   /* ---------- 6. Native <dialog> Install Modal & Copy Link Actions ---------- */
-  const INSTALL_URL = "https://darkroom.buzz/";
+  const INSTALL_URL = "https://getnoxium.app/";
   const installDialog = document.getElementById("install-dialog");
   const installTitle = document.getElementById("install-dialog-title");
   const installBadge = document.getElementById("install-dialog-badge");
@@ -788,12 +788,12 @@
       btn.addEventListener("click", () => {
         const ctx = btn.getAttribute("data-open-install-modal");
         if (installTitle) {
-          installTitle.textContent = ctx === "pro" ? "Install Darkroom Pro" : "Install Darkroom";
+          installTitle.textContent = ctx === "pro" ? "Install Noxium Pro" : "Install Noxium";
         }
         if (installBadge) {
           installBadge.textContent =
             ctx === "pro"
-              ? "Darkroom Pro · Family Sharing Included"
+              ? "Noxium Pro · Family Sharing Included"
               : "For iPhone and iPad · Free plan";
         }
         if (typeof installDialog.showModal === "function") {
@@ -850,7 +850,7 @@
       successCard.hidden = false;
       const titleDesc = document.querySelector(".waitlist-success-desc");
       if (titleDesc) {
-        titleDesc.innerHTML = `Tap below to install the Darkroom beta with Apple&rsquo;s TestFlight app. We&rsquo;ll send beta news to <code id="registered-email-pill" class="email-pill">${email}</code>.`;
+        titleDesc.innerHTML = `Tap below to install the Noxium beta with Apple&rsquo;s TestFlight app. We&rsquo;ll send beta news to <code id="registered-email-pill" class="email-pill">${email}</code>.`;
       }
     }
 

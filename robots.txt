@@ -1,4 +1,4 @@
-# robots.txt for darkroom.buzz
+# robots.txt for getnoxium.app
 #
 # Every search engine and AI assistant is welcome to read, index and cite this site.
 # The bots are named one by one so it is explicit, and so a "block AI bots" default elsewhere
@@ -32,4 +32,4 @@ Disallow: /tools/
 # Cloudflare's "Content-Signal" line is left out: Google and Lighthouse report it as an unknown
 # directive, and with no signal, nothing is restricted. Everything above is allowed.
 
-Sitemap: https://darkroom.buzz/sitemap.xml
+Sitemap: https://getnoxium.app/sitemap.xml

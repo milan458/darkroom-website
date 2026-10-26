@@ -1,4 +1,4 @@
-# Files in the repo that must not be served on darkroom.buzz.
+# Files in the repo that must not be served on getnoxium.app.
 # The Worker serves the whole folder (wrangler.jsonc: assets.directory = "."),
 # so anything not listed here is public.
 .git

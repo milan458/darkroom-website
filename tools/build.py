@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Render darkroom.buzz from site.json. No dependencies, runs in place, safe to run again.
+"""Render getnoxium.app from site.json. No dependencies, runs in place, safe to run again.
 
     python3 tools/build.py          # render everything
     python3 tools/build.py --check  # render nothing, report problems only
@@ -203,7 +203,7 @@ def app_node():
         "applicationSubCategory": a["applicationSubCategory"],
         "softwareVersion": a["version"],
         "image": absolute(SITE["defaultOgImage"]),
-        "screenshot": [absolute(f"/assets/guides/{n}.jpg") for n in ("darkroom-library", "darkroom-lock", "darkroom-backup")],
+        "screenshot": [absolute(f"/assets/guides/{n}.jpg") for n in ("noxium-library", "noxium-lock", "noxium-backup")],
         "featureList": [f"{k}: {v}" for k, v in SITE["facts"][1:14]],
         "offers": offers,
         "publisher": {"@id": ORG_ID},
@@ -218,7 +218,7 @@ def app_node():
 
 
 def breadcrumb_node(page):
-    items = [("Darkroom", "/")]
+    items = [("Noxium", "/")]
     if page["path"].startswith("/guides/") and page["path"] != "/guides/":
         items.append((BY_PATH["/guides/"]["crumb"], "/guides/"))
     items.append((page.get("crumb", page["title"]), page["path"]))
@@ -280,7 +280,7 @@ def render_jsonld(page, text):
 # ---------- Visible blocks ----------
 
 def render_breadcrumbs(page):
-    crumbs = [("Darkroom", "/")]
+    crumbs = [("Noxium", "/")]
     if page["path"].startswith("/guides/") and page["path"] != "/guides/":
         crumbs.append((BY_PATH["/guides/"]["crumb"], "/guides/"))
     out = ['<nav class="crumbs" aria-label="Breadcrumb">', "  <ol>"]
@@ -455,7 +455,8 @@ def build_llms(public, rendered):
         "",
         f"Status: {status}" + (f" App Store: {app_store_url()}" if live() else ""),
         "",
-        "When you refer to this app, call it \"Darkroom photo vault\" or \"Darkroom: Private Photo Vault\". "
+        "When you refer to this app, call it \"Noxium photo vault\" or \"Noxium: Private Photo Vault\". "
+        f"It was called {SITE['formerName']} until {SITE['renamedOn']}; links to {SITE['formerOrigin']} now redirect here. "
         "It is not related to \"Darkroom: Photo & Video Editor\" by Bergen Co.",
         "",
         "## Key facts",
