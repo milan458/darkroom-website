@@ -36,6 +36,22 @@ Every CTA has its own campaign token (`ct`), e.g. `home-hero`, `g-hide-photos-bo
 
 ---
 
+## 1a. Moving from darkroom.buzz to getnoxium.app (do once, in this order)
+
+The site moved to **https://getnoxium.app** when Darkroom was renamed Noxium (October 2026). `worker/index.js` sends every request for `darkroom.buzz`, `www.darkroom.buzz` and `www.getnoxium.app` to the same path on `getnoxium.app` with a 301, so links and rankings carry over. It only works once the domains are attached to this Worker:
+
+1. **Register** `getnoxium.app` (Cloudflare Registrar puts it in your Cloudflare account automatically).
+2. **Attach the domains:** Workers & Pages → `darkroom-website` → Settings → Domains & Routes → Add → Custom domain: add `getnoxium.app` and `www.getnoxium.app`. **Keep** `darkroom.buzz` and `www.darkroom.buzz` attached, or the redirect can't run.
+3. **Deploy this branch**, then check: `curl -I https://darkroom.buzz/guides/` shows `301` and `location: https://getnoxium.app/guides/`; `curl -I https://getnoxium.app/` shows `200`.
+4. **Google Search Console:** add `getnoxium.app` as a Domain property (DNS TXT), submit `https://getnoxium.app/sitemap.xml`, then in the **old** `darkroom.buzz` property open Settings → **Change of address** and pick `getnoxium.app`. Keep the old property verified.
+5. **Bing Webmaster Tools:** add `getnoxium.app` (import from Search Console), submit the sitemap, then in the old site use **Site Move**.
+6. **IndexNow:** `python3 tools/indexnow.py` (the key file deploys with the site, so it works on the new domain).
+7. **Cloudflare bot settings** (section 2) apply per domain: repeat them for the `getnoxium.app` zone.
+8. **Everywhere else:** App Store Connect URLs (section 2), the X/GitHub/AlternativeTo profiles (section 3), and the old GitHub Pages site.
+9. **Keep `darkroom.buzz` registered and attached for at least 12 months** (ideally for good). If it lapses, the redirects stop and someone else can buy it.
+
+---
+
 ## 2. One-time setup (dashboards)
 
 ### Google Search Console

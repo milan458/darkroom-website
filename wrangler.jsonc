@@ -1,11 +1,14 @@
 {
-  // Static site served as Workers static assets. Matches the dashboard's
-  // zero-config deploy; the "previews" block lets the PR preview build
-  // (`npx wrangler preview`) run.
+  // Static site served as Workers static assets. worker/index.js runs first only to redirect the
+  // old domain (darkroom.buzz) to getnoxium.app; every other request goes straight to the files.
+  // The "previews" block lets the PR preview build (`npx wrangler preview`) run.
   "name": "darkroom-website",
+  "main": "worker/index.js",
   "compatibility_date": "2026-10-01",
   "assets": {
-    "directory": "."
+    "directory": ".",
+    "binding": "ASSETS",
+    "run_worker_first": true
   },
   "previews": {}
 }
