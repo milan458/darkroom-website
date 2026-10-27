@@ -191,6 +191,14 @@ Inline SVG, `viewBox="0 0 24 24"`, `fill: none; stroke: currentColor; stroke-wid
 
 No emoji anywhere.
 
+### 6.1 Logo
+
+- The **Orbit** icon is the only logo mark: `assets/noxium-logo.svg` (favicon, follows the browser's light/dark), `assets/noxium-icon-180.png` (apple-touch-icon), `assets/noxium-icon-512.png` (JSON-LD and sharing). Masters live with the app icon handoff.
+- The wordmark stays **"Noxium."** in Instrument Serif.
+- Never recolour the icon, and never add safelight red to it.
+- Minimum display size: 29 px.
+- Clear space: at least 25% of the icon's width on every side.
+
 ---
 
 ## 7. Apple marketing rules that shape the design
