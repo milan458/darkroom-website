@@ -423,7 +423,7 @@ Anything else? Write to business@inertiaprojects.info . A person replies.
 01 What is Noxium and how does it work?
 Noxium is an iPhone and iPad app that keeps your private photos, videos and notes in a locked vault. You open it by drawing a pattern on a grid of 25 dots. Everything inside is encrypted, so without your pattern it can’t be read. You can also set up a second pattern that opens a separate decoy vault.
 02 What if I forget my pattern?
-Nobody can reset it, not us and not Apple. That’s what keeps your vault private. So we recommend setting up a recovery phrase in Settings › Recovery phrase. If you forget your pattern, tap “Use recovery phrase” on the lock screen. If you lose both, your photos can’t be recovered.
+Nobody can reset it, not us and not Apple. That’s what keeps your vault private. You save a recovery phrase when you set up Noxium. If you forget your pattern, tap “Forgot your pattern?” on the lock screen and enter it. You can make a new phrase any time in Settings › Recovery phrase, and the old one stops working. If you lose both your pattern and your phrase, your photos can’t be recovered.
 03 Can you or Apple see my photos in iCloud?
 No. Everything is encrypted on your iPhone before it’s backed up, so iCloud only ever stores scrambled data. Neither Apple nor we ever have your pattern.
 04 Do I need an account or email address?
@@ -1683,7 +1683,7 @@ Noxium hides photos, videos and notes in encrypted vaults on your iPhone and iPa
 ### Contact
 Email business@inertiaprojects.info . Please include your app version (in the app, Settings › App settings › About) and your iPhone or iPad model. Never send us your bolt pattern or recovery phrase. We will never ask for them.
 ### I forgot my bolt pattern
-Use your recovery phrase. On the lock screen, tap “Use recovery phrase”, type it in, and your vault opens. You can then set a new pattern. You can see or change your recovery phrase in Settings › Recovery phrase.
+Use your recovery phrase. On the lock screen, tap “Forgot your pattern?”, type it in, and your vault opens. You can then set a new pattern. To replace your recovery phrase, make a new one in Settings › Recovery phrase; the old one stops working.
 Nobody can reset a pattern: not us, not Apple. Noxium never stores your pattern, and your files are encrypted with a key that only your pattern or your recovery phrase can unlock. If both are lost, the vault cannot be opened by anyone.
 ### Moving to a new iPhone
 Install Noxium on the new iPhone, signed in to the same Apple Account, and draw your pattern on the Restore screen. Your vault comes back from your encrypted iCloud backup.
