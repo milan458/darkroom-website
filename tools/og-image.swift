@@ -55,55 +55,44 @@ func drawText(_ text: String, font: CTFont, color fill: CGColor, tracking: CGFlo
 let context = CGContext(data: nil, width: width, height: height, bitsPerComponent: 8, bytesPerRow: 0,
                         space: CGColorSpace(name: CGColorSpace.sRGB)!, bitmapInfo: CGImageAlphaInfo.noneSkipLast.rawValue)!
 
-// Ground and a low safelight glow behind the plate.
-context.setFillColor(color(0x070605))
+// Ground and a soft white glow behind the icon.
+context.setFillColor(color(0x000000))
 context.fill(CGRect(x: 0, y: 0, width: w, height: h))
-let glow = CGGradient(colorsSpace: CGColorSpace(name: CGColorSpace.sRGB), colors: [color(0xE83B2E, 0.34), color(0xE83B2E, 0)] as CFArray, locations: [0, 1])!
+let glow = CGGradient(colorsSpace: CGColorSpace(name: CGColorSpace.sRGB), colors: [color(0xFFFFFF, 0.06), color(0xFFFFFF, 0)] as CFArray, locations: [0, 1])!
 context.drawRadialGradient(glow, startCenter: CGPoint(x: 300, y: 300), startRadius: 0, endCenter: CGPoint(x: 300, y: 300), endRadius: 430, options: [])
 
-// Bolt plate: 5×5 grid on a machined panel, with the logo's pattern lit in safelight red.
-let plate = CGRect(x: 90, y: (h - 420) / 2, width: 420, height: 420)
-let platePath = CGPath(roundedRect: plate, cornerWidth: 64, cornerHeight: 64, transform: nil)
-let plateFill = CGGradient(colorsSpace: CGColorSpace(name: CGColorSpace.sRGB), colors: [color(0x2B2520), color(0x13100E)] as CFArray, locations: [0, 1])!
+// The Orbit icon in a 420 × 420 square: 4.2 px per unit of its 100-unit canvas.
+let icon = CGRect(x: 90, y: (h - 420) / 2, width: 420, height: 420)
+let mid = CGPoint(x: icon.midX, y: icon.midY)
+func circle(_ center: CGPoint, _ r: CGFloat) -> CGRect { CGRect(x: center.x - r, y: center.y - r, width: r * 2, height: r * 2) }
+
+// Background: radial #1C1C22 → #000000 at 0.72, centred 10 units (42 px) above the middle (y is up here).
 context.saveGState()
-context.addPath(platePath)
+context.addPath(CGPath(roundedRect: icon, cornerWidth: 94, cornerHeight: 94, transform: nil))
 context.clip()
-context.drawLinearGradient(plateFill, start: CGPoint(x: 0, y: plate.maxY), end: CGPoint(x: 0, y: plate.minY), options: [])
+let iconGround = CGGradient(colorsSpace: CGColorSpace(name: CGColorSpace.sRGB),
+                            colors: [color(0x1C1C22), color(0x000000), color(0x000000)] as CFArray, locations: [0, 0.72, 1])!
+let groundCenter = CGPoint(x: mid.x, y: mid.y + 42)
+context.drawRadialGradient(iconGround, startCenter: groundCenter, startRadius: 0, endCenter: groundCenter, endRadius: 328, options: [.drawsAfterEndLocation])
 context.restoreGState()
-context.addPath(platePath)
-context.setStrokeColor(color(0x3D332C))
-context.setLineWidth(2)
-context.strokePath()
 
-let step: CGFloat = 76, origin = CGPoint(x: plate.minX + 58, y: plate.maxY - 58)
-func bolt(_ col: Int, _ row: Int) -> CGPoint { CGPoint(x: origin.x + CGFloat(col) * step, y: origin.y - CGFloat(row) * step) }
-let lit: [(Int, Int)] = [(0, 4), (1, 3), (1, 2), (2, 1), (3, 1), (4, 0)]
+// Orbit and the unlit bolt on it at −45°.
+context.setStrokeColor(color(0xFFFFFF, 0.42))
+context.setLineWidth(2.52)
+context.strokeEllipse(in: circle(mid, 138.6))
+context.setLineWidth(3.36)
+context.strokeEllipse(in: circle(CGPoint(x: mid.x + 97.9, y: mid.y + 97.9), 10.1))
 
-let path = CGMutablePath()
-path.move(to: bolt(lit[0].0, lit[0].1))
-for (c, r) in lit.dropFirst() { path.addLine(to: bolt(c, r)) }
-context.addPath(path)
-context.setStrokeColor(color(0xF04E37))
-context.setLineWidth(14)
-context.setLineCap(.round)
-context.setLineJoin(.round)
-context.strokePath()
-
-for row in 0..<5 {
-    for col in 0..<5 {
-        let center = bolt(col, row)
-        let isLit = lit.contains { $0 == (col, row) }
-        let r: CGFloat = isLit ? 25 : 22
-        let rect = CGRect(x: center.x - r, y: center.y - r, width: r * 2, height: r * 2)
-        context.setFillColor(isLit ? color(0xF04E37) : color(0x433932))
-        context.fillEllipse(in: rect)
-        if !isLit {
-            context.setStrokeColor(color(0x574B42))
-            context.setLineWidth(3)
-            context.strokeEllipse(in: rect)
-        }
-    }
-}
+// Outer and inner glow, halo ring, lit bolt.
+context.setFillColor(color(0xFFFFFF, 0.07))
+context.fillEllipse(in: circle(mid, 96.6))
+context.setFillColor(color(0xFFFFFF, 0.16))
+context.fillEllipse(in: circle(mid, 75.6))
+context.setStrokeColor(color(0xFFFFFF, 0.16))
+context.setLineWidth(4.2)
+context.strokeEllipse(in: circle(mid, 69.3))
+context.setFillColor(color(0xFFFFFF))
+context.fillEllipse(in: circle(mid, 52.5))
 
 // Copy.
 let textX: CGFloat = 584, textW: CGFloat = 580
