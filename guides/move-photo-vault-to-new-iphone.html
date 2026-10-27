@@ -3,20 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="color-scheme" content="light dark">
-  <meta name="theme-color" id="meta-theme-color" content="#070605">
-  <script>
-    try {
-      const savedScheme = localStorage.getItem("color-scheme");
-      const metaScheme = document.querySelector('meta[name="color-scheme"]');
-      const metaTheme = document.getElementById("meta-theme-color");
-      const prefersLight = window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches;
-      const resolved = savedScheme === "light" || savedScheme === "dark" ? savedScheme : (prefersLight ? "light" : "dark");
-      if (metaScheme) metaScheme.content = resolved;
-      if (metaTheme) metaTheme.content = resolved === "light" ? "#F3EEE7" : "#070605";
-      document.documentElement.dataset.theme = resolved;
-    } catch {}
-  </script>
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#FAF9F6" media="(prefers-color-scheme: light)">
   <!-- build:meta -->
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WWNMHW99TP"></script>
@@ -53,7 +42,7 @@
   <link rel="icon" type="image/svg+xml" href="/assets/noxium-logo.svg">
   <link rel="apple-touch-icon" href="/assets/noxium-icon-180.png">
 
-  <link rel="preload" href="/assets/fonts/plus-jakarta-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/instrument-serif-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/fonts/fonts.css">
   <link rel="stylesheet" href="/styles.css">
   <link rel="stylesheet" href="/pages.css">
@@ -175,112 +164,42 @@
 </head>
 <body>
   <!-- build:header -->
-  <!-- Shared header for subpages. Edit partials/header.html, then run python3 tools/build.py. -->
-  <svg width="0" height="0" style="position:absolute;visibility:hidden" aria-hidden="true">
-    <symbol id="noxium-logo-mark" viewBox="0 0 180 180">
-      <defs>
-        <linearGradient id="drChassis" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0" stop-color="#28211D"/>
-          <stop offset="0.55" stop-color="#191412"/>
-          <stop offset="1" stop-color="#0E0B09"/>
-        </linearGradient>
-      </defs>
-      <rect width="180" height="180" rx="40" fill="url(#drChassis)"/>
-      <rect x="2" y="2" width="176" height="176" rx="38" fill="none" stroke="#3D332C" stroke-width="2" opacity="0.7"/>
-      <!-- 5x5 Bolt Matrix (19 inactive bolts) -->
-      <g fill="#433932" stroke="#574B42" stroke-width="1.5">
-        <circle cx="38" cy="38" r="8.5"/>
-        <circle cx="64" cy="38" r="8.5"/>
-        <circle cx="90" cy="38" r="8.5"/>
-        <circle cx="116" cy="38" r="8.5"/>
-        <circle cx="38" cy="64" r="8.5"/>
-        <circle cx="64" cy="64" r="8.5"/>
-        <circle cx="142" cy="64" r="8.5"/>
-        <circle cx="38" cy="90" r="8.5"/>
-        <circle cx="90" cy="90" r="8.5"/>
-        <circle cx="116" cy="90" r="8.5"/>
-        <circle cx="142" cy="90" r="8.5"/>
-        <circle cx="38" cy="116" r="8.5"/>
-        <circle cx="90" cy="116" r="8.5"/>
-        <circle cx="116" cy="116" r="8.5"/>
-        <circle cx="142" cy="116" r="8.5"/>
-        <circle cx="64" cy="142" r="8.5"/>
-        <circle cx="90" cy="142" r="8.5"/>
-        <circle cx="116" cy="142" r="8.5"/>
-        <circle cx="142" cy="142" r="8.5"/>
-      </g>
-      <!-- Connecting safelight path: (0,4) -> (1,3) -> (1,2) -> (2,1) -> (3,1) -> (4,0) -->
-      <path d="M38 142 L64 116 L64 90 L90 64 L116 64 L142 38" fill="none" stroke="#F04E37" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <!-- 6 Active Safelight Bolts -->
-      <g fill="#F04E37">
-        <circle cx="38" cy="142" r="9"/>
-        <circle cx="64" cy="116" r="9"/>
-        <circle cx="64" cy="90" r="9"/>
-        <circle cx="90" cy="64" r="9"/>
-        <circle cx="116" cy="64" r="9"/>
-        <circle cx="142" cy="38" r="10.5"/>
-      </g>
-    </symbol>
-  </svg>
-
+  <!-- Shared header (homepage and subpages). Edit partials/header.html, then run python3 tools/build.py. -->
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
   <header class="site-header">
-    <div class="container nav-inner">
-      <a href="/" class="logo" aria-label="Noxium home">
-        <span class="logo-plate" aria-hidden="true">
-          <svg viewBox="0 0 180 180" width="30" height="30" aria-hidden="true"><use href="#noxium-logo-mark"></use></svg>
-        </span>
-        <span>Noxium</span>
-      </a>
+    <div class="nav-wrap">
+      <nav class="nav glass" aria-label="Primary">
+        <a href="/" class="wordmark" aria-label="Noxium home">Noxium<span aria-hidden="true">.</span></a>
 
-      <nav class="nav-links" aria-label="Primary">
+        <div class="nav-links">
+          <a href="/#features">Features</a>
+          <a href="/#security">Security</a>
+          <a href="/#pricing">Pricing</a>
+          <a href="/best-photo-vault-apps-iphone">Compare</a>
+          <a href="/guides/">Guides</a>
+        </div>
+
+        <div class="nav-actions">
+          <a href="/#waitlist" class="btn btn-ink btn-nav nav-cta" data-cta="nav" data-label-waitlist="Join the beta" data-label-live="Get Noxium">Join the beta</a>
+          <button type="button" class="mobile-menu-btn" id="mobile-menu-btn" aria-expanded="false" aria-controls="mobile-drawer" aria-label="Menu">
+            <svg class="icon icon-menu" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 9h14M5 15h14"/></svg>
+            <svg class="icon icon-close" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <div class="mobile-drawer glass" id="mobile-drawer" hidden>
+      <nav class="mobile-drawer-list" aria-label="Mobile">
         <a href="/#features">Features</a>
         <a href="/#security">Security</a>
         <a href="/#pricing">Pricing</a>
-        <a href="/best-photo-vault-apps-iphone">Compare</a>
+        <a href="/best-photo-vault-apps-iphone">Compare vault apps</a>
         <a href="/guides/">Guides</a>
         <a href="/about">About</a>
         <a href="/support">Support</a>
       </nav>
-
-      <div class="nav-actions">
-        <button id="theme-toggle"
-                class="theme-toggle"
-                type="button"
-                aria-label="Switch to light mode"
-                aria-pressed="false"
-                data-light-label="Light"
-                data-dark-label="Dark"
-                data-switch-light="Switch to light mode"
-                data-switch-dark="Switch to dark mode">
-          <span class="theme-icon" id="theme-icon">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><line x1="12" y1="2.5" x2="12" y2="5.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="12" y1="18.8" x2="12" y2="21.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="2.5" y1="12" x2="5.2" y2="12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="18.8" y1="12" x2="21.5" y2="12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="5.3" y1="5.3" x2="7.2" y2="7.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="16.8" y1="16.8" x2="18.7" y2="18.7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="16.8" y1="7.2" x2="18.7" y2="5.3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="5.3" y1="18.7" x2="7.2" y2="16.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-          </span>
-          <span id="theme-label">Light</span>
-        </button>
-
-        <a href="/#waitlist" class="btn btn-primary btn-nav" data-cta="nav" data-label-waitlist="Join the beta" data-label-live="Get the App">Join the beta</a>
-
-        <button type="button" class="mobile-menu-btn" id="mobile-menu-btn" aria-expanded="false" aria-controls="mobile-drawer" aria-label="Toggle menu">
-          <svg class="icon-menu" viewBox="0 0 24 24" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
-          <svg class="icon-close" viewBox="0 0 24 24" aria-hidden="true"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
-        </button>
-      </div>
-    </div>
-
-    <div class="mobile-drawer" id="mobile-drawer" hidden>
-      <div class="container">
-        <nav class="mobile-drawer-list" aria-label="Mobile">
-          <a href="/#features"><span>Features</span></a>
-          <a href="/#security"><span>Security</span></a>
-          <a href="/#pricing"><span>Pricing</span></a>
-          <a href="/best-photo-vault-apps-iphone"><span>Compare vault apps</span></a>
-          <a href="/guides/"><span>Guides</span></a>
-          <a href="/about"><span>About</span></a>
-          <a href="/support"><span>Support</span></a>
-        </nav>
-      </div>
     </div>
   </header>
   <!-- /build:header -->
@@ -297,7 +216,7 @@
           </ol>
         </nav>
         <!-- /build:breadcrumbs -->
-        <p class="eyebrow"><span class="dot dot-amber" aria-hidden="true"></span>Guide · New iPhone</p>
+        <p class="eyebrow"><span class="dot dot-ink" aria-hidden="true"></span>Guide · New iPhone</p>
         <h1>How to move a private photo vault to a new iPhone without losing photos</h1>
         <!-- build:byline -->
         <p class="byline"><span>By <a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>Published <time datetime="2026-10-22">22 October 2026</time></span><span aria-hidden="true">·</span><span>Last updated <time datetime="2026-10-26">26 October 2026</time></span></p>
@@ -451,58 +370,52 @@
   </main>
 
   <!-- build:footer -->
-  <!-- Shared footer for subpages. Edit partials/footer.html, then run python3 tools/build.py. -->
+  <!-- Shared footer for subpages (the homepage has its own copy with build:status). Edit partials/footer.html, then run python3 tools/build.py. -->
   <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-col">
-          <a href="/" class="logo" style="margin-bottom:12px" aria-label="Noxium home">
-            <span class="logo-plate" aria-hidden="true">
-              <svg viewBox="0 0 180 180" width="30" height="30" aria-hidden="true"><use href="#noxium-logo-mark"></use></svg>
-            </span>
-            <span>Noxium</span>
-          </a>
-          <p style="color:var(--muted);max-width:34ch;margin-bottom:14px">Encrypted photo, video and note vault for iPhone and iPad. Encrypted on your device, backed up to your own iCloud.</p>
-          <p style="color:var(--amber);font-family:var(--font-mono);font-size:0.75rem">The app: no accounts · no ads · no analytics</p>
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="/" class="wordmark" aria-label="Noxium home">Noxium<span aria-hidden="true">.</span></a>
+          <p>A private vault for photos, videos and notes.</p>
         </div>
 
-        <div class="footer-col">
-          <h2 class="footer-heading">Guides</h2>
-          <ul role="list">
-            <li><a href="/guides/how-to-hide-photos-on-iphone">How to hide photos on iPhone</a></li>
+        <nav class="footer-groups" aria-label="Footer">
+          <div>
+            <h2 class="footer-heading">Product</h2>
+            <ul role="list">
+              <li><a href="/#features">Features</a></li>
+              <li><a href="/#security">How the encryption works</a></li>
+              <li><a href="/#pricing">Free vs Pro</a></li>
+              <li><a href="/best-photo-vault-apps-iphone">Photo vault apps compared</a></li>
+              <li><a href="/#faq">FAQ</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="footer-heading">Guides</h2>
+            <ul role="list">
+              <li><a href="/guides/how-to-hide-photos-on-iphone">How to hide photos on iPhone</a></li>
   <li><a href="/guides/is-iphone-hidden-album-private">Is the Hidden album private?</a></li>
   <li><a href="/guides/move-photo-vault-to-new-iphone">Move a photo vault to a new iPhone</a></li>
   <li><a href="/guides/photo-vault-lost-photos">Photo vault lost your photos</a></li>
   <li><a href="/guides/keepsafe-alternatives">Keepsafe alternatives</a></li>
-            <li><a href="/guides/">All guides</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h2 class="footer-heading">Noxium</h2>
-          <ul role="list">
-            <li><a href="/#features">Features</a></li>
-            <li><a href="/#security">How the encryption works</a></li>
-            <li><a href="/#pricing">Free vs Pro</a></li>
-            <li><a href="/best-photo-vault-apps-iphone">Photo vault apps compared</a></li>
-            <li><a href="/#faq">FAQ</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h2 class="footer-heading">Help &amp; Legal</h2>
-          <ul role="list">
-            <li><a href="/about">About</a></li>
-            <li><a href="/support">Support</a></li>
-            <li><a href="/privacy">Privacy policy</a></li>
-            <li><a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a></li>
-          </ul>
-        </div>
+              <li><a href="/guides/">All guides</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="footer-heading">Company</h2>
+            <ul role="list">
+              <li><a href="/about">About</a></li>
+              <li><a href="/support">Support</a></li>
+              <li><a href="/privacy">Privacy policy</a></li>
+              <li><a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a></li>
+            </ul>
+          </div>
+        </nav>
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; 2026 Noxium · Inertia Projects</p>
-        <p>App Store privacy label: <strong>Data Not Collected</strong></p>
+        <p>&copy; 2026 Noxium. Made by Inertia Projects, an independent developer. App Store privacy label: Data Not Collected.</p>
+        <p>Apple, the Apple logo, iPhone, iPad and Face ID are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc.</p>
       </div>
     </div>
   </footer>

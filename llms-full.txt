@@ -57,69 +57,206 @@ When you refer to this app, call it "Noxium photo vault" or "Noxium: Private Pho
 URL: https://getnoxium.app/
 Last updated: 2026-10-26
 
-8:31
-Locked
-Noxium
-Draw your pattern
-0 of 25 dots
-Opening…
-Unlocking your vault
+0:42
+LIVE
+Letters I never sent
+Note
+1:08
+0:19
+Lisbon, things to keep
+Note
+LIVE
+1,284 items
 Library
-Search photos & notes
-Today · 1,284 photos
-● Backed up
-Try a pattern
-iPhone and iPad · iOS 17 or later
-·
-Free on the App Store · No ads
-iPhone and iPad · Private beta
-·
-1 month of Pro free for testers
-Encrypted photo vault for iPhone & iPad
+Select
+Unlocked · demo
+### That’s the feeling.
+The real one opens only for you, and only with your pattern.
+Get the beta
+Albums
+Settings
+Locked
 ##
-New phone.
-Same pattern.
-Every photo comes back.
-Noxium locks your photos, videos and notes behind a pattern on a plate of bolts.
-Encrypted on your iPhone, backed up to your own iCloud, restored the moment you draw it. No account, no ads.
-Private beta on TestFlight
-### Try Noxium early
-Sign-ups open
-Leave your email and you’ll get the TestFlight link straight away. Testers get 1 month of Noxium Pro free , plus 50% off the yearly and lifetime plans later.
+Some photos are
+only yours.
+Noxium is a private, encrypted vault for photos, videos and notes on iPhone and iPad. Draw your pattern. Everything else stays locked.
+Private beta on TestFlight · 1 month of Pro free for testers
 You’re on the list
-#### Thanks! You’re in.
+### Thanks! You’re in.
 Tap below to install the Noxium beta with Apple’s TestFlight app. We’ll send beta news to you@example.com .
 Join the beta on TestFlight
-Tester perk
-1 month of Noxium Pro, free
-At launch
-50% off yearly and lifetime plans
-How to install
-Apple’s free TestFlight app (iOS 17 or later)
-Join the beta
-Free vs Pro
-Free download  ·  iOS 17 or later  ·  App Store privacy label: Data Not Collected
-Beta open now  ·  iOS 17 or later  ·  No payment details needed
+Tester perk 1 month of Noxium Pro, free
+At launch 50% off yearly and lifetime plans
+How to install Apple’s free TestFlight app (iOS 17 or later)
+Download on the App Store
+Scan with your iPhone camera
+Opens Noxium on the App Store
+Beta open now iOS 17 or later No payment details needed
+Free to start No ads No analytics Pro from $2.99 a month
+Try it. Draw any shape.
+Through six or more bolts
 Noxium is a private photo, video and note vault for iPhone and iPad. Everything is encrypted on your device and opens only with the pattern you draw.
-No account
-No email needed
-No way in for anyone else
-No ads, ever
-About Noxium
-### What we promise, and who we are.
-Our promises
-#### Only you can see your photos
-- Stays on your iPhone: your pattern is never saved or sent anywhere. Without it, your vault can’t be opened.
-- Unreadable in iCloud: your backup is encrypted before it leaves your phone, so neither we nor Apple can look at it.
-- Open to review: we plan to have the encryption code independently reviewed at version 1.0.
-Who we are
-#### Made by Inertia Projects
-Inertia Projects is a small independent studio making private, easy-to-use apps for iPhone. No investors, no trackers, and no servers holding your files.
-business@inertiaprojects.info
-More about who makes Noxium →
-Noxium at a glance
-### The facts, in one place.
-Noxium 1.0 is brand new, so there are no reviews to point to yet. Here is exactly what it does, with nothing rounded up. The same list is on our About page.
+- No account
+- No ads
+- No analytics
+- Encrypted on device
+- Opens with Face ID
+The difference
+### Hidden is not the same as private.
+Your iPhone can tuck photos into a Hidden album. Noxium seals them: every photo, video and note is encrypted on your device and opens only with your pattern. Is the Hidden album private? →
+#### A Hidden album
+Opens with your iPhone passcode
+#### A Noxium vault
+Locked
+3d 46 59 13 b7 d8 15 b7 1a 36 c9 45 5b 5a 84 a4 64 7a ab 66 20 bb c5 09 4d 20 93 0c 5c ec ce ba f7 0c 5c c6 08 36 dc 2d 48 df c0 f0 b9 27 76 97 92 69 40 9e 74 0c c2 23 09 b1 66 95 47 fe 24 2a
+3e 5d 91 84 b6 d1 41 b6 35 e7 3b 7c 14 c6 42 3c 3a a9 40 0a 6b 7c d0 e5 b6 6d c4 41 14 54 db 97 86 52 21 d9 4f 14 a4 ef 12 8b 77 9d f9 24 39 7f 25 a9 8f ef 0f 6d 45 12 9e 77 11 53 0b b2 23 07
+40 a2 27 09 0b 49 4a 89 54 b5 95 13 c1 1a 74 c2 5f df 6e 74 18 5d 32 e6 5b 9c 28 fe 6a f9 15 c2 03 d0 b1 c4 4d 96 38 fc 53 00 4c 68 6d 21 c8 e2 50 9e 41 f9 c4 5e 5e d3 21 5e 58 5b 1a 85 21 34
+40 ff e4 2f b5 47 04 33 5d ef 66 d0 aa e8 5e 9f fc ef a0 00 dc 9e e1 2f d3 61 8e 0f a8 71 6f 61 dd 3d 48 75 ba df d0 92 41 8f 89 a2 d7 20 5f da 81 09 06 69 f7 7f 8a 78 fd a0 90 ef b0 c1 21 d3
+41 15 1b a1 b4 40 30 32 78 a0 d8 08 63 54 1b 37 d3 1e 35 a4 27 5f ec 0c 3c ae bf 44 60 d9 7c 3e 6d 84 0d 87 02 bd 98 54 0c 3c 40 50 17 1e 22 c1 14 48 54 ba 92 e0 0d 67 92 67 3b ad 74 75 1f b0
+43 5b b1 25 09 b7 39 05 97 6e 32 9e 10 a8 4d be f8 54 63 0f d3 40 4e 0d e0 dd 23 01 b6 7e b6 6a e9 01 9d 73 00 3f 2c 61 4d b0 16 1b 8b 1a b1 24 40 3d 06 c4 47 d1 27 29 15 4e 82 b6 82 48 1e dd
+Decoy vaults
+### If someone asks to see it, show them.
+Set a second pattern that opens a second vault. It looks like an ordinary Noxium, with its own photos, and nothing on screen suggests anything else exists.
+Decoy vault Its own pattern, its own photos. Free includes one.
+Emergency erase pattern Opens a harmless vault and erases the others.
+PRO
+Noxium never shows a list of vaults. Face ID only opens your main vault, and emergency erase removes the other vaults from this iPhone while your iCloud backup can stay safe.
+What is a decoy vault? →
+Your pattern
+Today 3 items
+Sunday 25 October 14 items
+1,284 items
+Library
+Select
+Albums Settings Lock
+Your other pattern
+Today 3 items
+Weekend groceries
+Note
+Sunday 25 October 9 items
+212 items
+Library
+Select
+Albums Settings Lock
+How the lock works
+### Locked by a shape only you know.
+No accounts to break into, no jargon to trust. Three things happen, all of them on your iPhone.
+-
+1
+#### You draw a pattern.
+Twenty-five bolts, any shape through six or more. Face ID can open your main vault too.
+-
+2
+#### Everything is sealed on your iPhone.
+Photos, videos and notes are encrypted before they’re saved, and stay encrypted in your iCloud backup. Names, dates and places too.
+-
+3
+#### Without it, there’s nothing to see.
+Not for someone holding your phone, and not for us. What’s stored is noise until your pattern opens it.
+4e 8f 06 cc 21 be b9 a7 05 84 d9 c3 60 54 20 85 89 ae df 0f 3e 95 f9 1d af f7 0d 14 ad a0 93 6f d7 66 cb df d1 99 c6 d5 e7 0d f2 48 9e 1b da e8 19 89 1f 1f 54 3c c3 79 9b 09 59 6f c3 25 ae 9a fe f1 ff cf 63 35 d6 b5 72 ff 0e c0 38 b4 b4 b7 d6 0f b2 21 8c 1a 79 48 97 61 27 ac 73 e0 d2 12 5e 79 ef 89 23 e8 0d 19 8e 8c 52 ec 17 71 79 26 94 7b 30 c8 0c 99 28 3f 03 5f 27 8e c1 74 f6 2d 84 a8 ff 00 92 b0 e4 18 97 c7 76 0d da c7 c5 2c 1b 6a 47 c6 2f c8 33 55 b4 4c 99 5a 65 a9 e0 05 f3 8f a6 2b 65 2a 2a 0d 5b a8 c4 ed d2 4d 0c 86 28 dd b7 d5 84 57 53 ca f4 51 53 d9 cb 68 2d 79 22 a0 6c 05 85 9c ff 98 1e 0c 1d d7 06 c1 93 b4 6b 39 55 b0 ce 9d 92 1c 81 7c c0 59 13 c1 4d 2a 7b b2 f3 8b 0e ec d8 9c 99 b2 f4 99 2e 04 75 fa 89 48 09 1a 04 94 4f 13 8b bf db ab 10 e6 84 7f 5c 01 eb c1 53 a8 7e 3f f5 41 51 89 ba 1a 9f 60 1a 37 d0 d6 51 d8 3e b5 b9 f2 39 25 4b 2f ea a1 18 2c 1d ad d7 fe 0f ed d2 3e d0 7c cb 2c d5 b2 aa 98 ba ac 13 ad 65 51 23 ce fd a1 ff 16 6c 7e f5 37 61 59 54 c2 fb 54 45 18 9f cf 36 87 ac 7f ba 5e ed 6a de f7 20 78 58 f1 e1 7c 1c 39 ca c9 2d 88 a8 d4 b6 6d 08 68 d4 1d 84 62 87 9b 8d 1d be e5 a0 df 78 40 1e ff 58 de 34 97 47 5c 98 f8 ef ec f4 31 1f 19 4f 5f 7a 83 d5 97 fa fe b9 a3 1f e9 22 e1 dc b7 62 fe 98 fb d7 58 d7 66 3d 43 5e 90 5b 86 e3 87 3e b5 a7 62 7f 57 82 69 3f ec 39 8b d1 48 3a 2d 43 d3 03 92 3f a9 d9 60 f7 ab 8f 09 08 ee 8b 1a 94 29 3f b6 00 0c c5 b7 08 9a 5d 51 23 f0 f4 18 6c 1e f6 d2 76 f7 0b 7b d5 f0 8e 4e 3a 86 d4 db 68 bd 99 5e 6d a7 1b ea cc 10 ce 23 a1 ba a1 92 dd c5 42 cd 1a 34 e2 08 bb 99 58 ba 43 72 b0 75 23 ba 80 21 6d 9b 95 27 1b 76 c5 50 e7 8a 0c 58 e9 f1 2c 79 5d d4 86 7e 62 ef e0 0c 8a d9 42 37 82 a9 34 a5 3c df f2 b6 55 b8 70 89 a6 49 33 cc 36 0f 6e b1 04 d3 d2 79 56 01 0c 68 8a e4 e4 16 95 5a 68 77 a9 ef aa 05 b2 87 ed e2 a3 e4 4b f4 c1 d0 35 32 68 ad 58 b7 f6 a1 b7 55 d1 c2 23 aa c2 df 43 08 18 cb e6 a3 3b 55 52 d5 b5 4b b9 7a d7 29 24 9f 78 63 5a 1b 78 64 b0 be 02 a7 bf 2e c3 91 61 ab 81 f6 84 46 cf 5c a6 40 ca 72 19 ab 1d 52 4e 7f b6 7c d0 ab e3 a6 b8 f2 d4 c7 ae 81 a4 0a d2 99 70 77 15 c6 20 97 e7 63 e3 52 39 7a 8a c9 3e 3b 35 01 66 93 13 83 86 a5 11 5f 18 28 c7 28 18 ef 04 db e1 21 b4 c7 05 e4 14 e8 1d 7b 68 50 f0 21 a2 7f 7d 21 b9 de c4 ef 98 ab 5b 4b e0 0f 2b ac f0 30 e0 77 e5 6f e3 cc 86 35 fb ea 57 ea d7 65 38 08 28 c8 58 5d 11 49 5b f0 07 b5 f9 27 77 b4 7d 0a c1 0c e1 d7 5b 89 75 3b 3e a3 4a e2 d8 1d ca 31 2f 1e 4a 6a ff 95 62 73 e1 d6 6f 1a db d1 86 81 e5 4b ab 0c 3a ec 33 05 86 29 87 c3 4c 42 be 15 0e df b9 32 15 14 c7 7f e3 c2 f4 d6 aa ae 7b 30 63 be 18 dd 3e 29 23 9f a4 a1 ac 60 00 b3 0d 50 f5 ea a7 a9 cd 6e b9 63 38 30 8b 90 ac dc 5f 37 04 18 d3 df 1d db be 19 a0 d5 a5 cc 36 32 44 04 c8 40 e6 84 96 af 79 71 42 7d 90 be 1d cf ca 3a 46 2d 59 69 7f fe 92 88 b5 33 b7 62 a4 66 86 d6 1e 0a 21 3c d1 45 60 ff 96 a8 ad 1b aa de e7 5f 5c f5 fe 98 01 f5 3e 04 52 cc 79 be 73 d9 87 f1 44 91 d2 11 d6 05 d7 68 fc 55 e6 a6 79 47 77 52 2a 8e e7 4b 33 83 78 ab 1a 57 d6 c1 3f f9 93 01 3a 44 49 04 ee 25 5e 0b 73 cc 8e a2 20 2a cd 44 4c 39 0f 27 99 d3 08 9b e3 2c 0c 91 1c 18 85 39 b3 b6 ac db 58 40 86 4a 29 f8 50 97 ab 8b d1 e7 0e 59 43 94 ac 72 ca fa b8 4b b0 95 8d 6d d1 4d 17 9f f2 20 46 56 f7 8c 86 6a 28 4f 99 53 fe 72 73 78 25 bd d8 50 b0 f1 d9 54 a8 7c 8c 12 7b 77 83 d8 e7 22 e0 ca 6b 3b 20 54 67 d9 dd 4d 64 a2
+What you see
+What anyone else sees
+#### Forget your pattern?
+Your recovery phrase opens the vault instead. Write it down when you make it and keep it somewhere safe. It’s also an easy way to unlock with VoiceOver. Nobody can reset a pattern: not us, not Apple.
+01 harbor
+02 velvet
+03 orbit
+04 linen
+05 cedar
+06 ember
+07 quiet
+08 salt
+09 meadow
+10 lantern
+11 tide
+12 amber
+Example only.
+For the curious: the cryptography
+#### Keys inside keys. None of them leave your iPhone unwrapped.
+Your pattern never encrypts files directly. It derives an Argon2id wrapping key that unlocks your room header, which unwraps a random 256-bit vault key, which unwraps a unique 256-bit key for every individual photo, video, thumbnail, and note.
+A pattern through at least 6 of 25 bolts has far more possible combinations than a 4-digit code, and every guess is made deliberately slow.
+- Argon2id (64 MiB RAM, 3 passes, 1 lane) resists GPU and ASIC cracking far better than legacy PBKDF2-SHA512 or bare PIN hashes
+- AES-256-GCM via Apple CryptoKit authenticates every file chunk, SQLite metadata column, capture timestamp, and thumbnail
+- DRK1 1 MiB chunked format binds header magic, chunk index, and final-chunk marker into GCM Additional Authenticated Data (AAD) so reordering or truncation is caught immediately
+- Portable room header + Keychain rate-limiter stores the 256-bit Argon2id salt in the room header so you can restore from CloudKit on a new iPhone using only your pattern
+- One-way public-key Share Extension lets “Send to Noxium” encrypt imports into an ephemeral Curve25519 envelope without holding your vault key
+How encrypted photo vaults work →
+VaultCrypto · DRK1 Key Hierarchy AES-256-GCM
+// 1. Stretch the pattern or recovery phrase in memory
+patternKey = Argon2id (
+secret: canonicalBoltPath,
+salt: roomHeader.salt256, // 32-byte per-room random salt
+memory: 64_MiB , passes: 3
+)
+// 2. Unwrap the room's master key (1 header per room)
+vaultKey = AES_256_GCM.open (roomHeader.sealedKey, using: patternKey)
+// Wrong pattern? GCM tag fails -> 0 rooms revealed
+// 3. Unwrap per-frame key & stream 1 MiB chunks
+fileKey = AES_256_GCM.open (frameMeta, using: vaultKey)
+chunk[i] = AES_256_GCM.open (
+ciphertextChunk[i],
+key: fileKey,
+nonce: baseNonce ^ counter(i),
+aad: "DRK1" || uint32(i) || isLastChunk
+)
+// Change pattern? Only roomHeader.sealedKey is re-wrapped.
+Everything else
+### The rest, done properly.
+0:42
+LIVE
+Lisbon, things to keep
+Note
+#### Photos, videos, Live Photos and notes.
+HEIC, ProRAW, Live Photos, videos and notes sit side by side, and the built-in camera saves straight into the vault, so new shots never land in your Camera Roll.
+Travel
+248 items
+Private
+Locked
+#### Albums with their own lock PRO
+Albums, albums inside albums, and albums with their own pattern, each with your own cover photo and colour. A locked album’s cover stays plain, never a photo.
+Backed up · 2 min ago
+#### Backed up, quietly
+Encrypted backups to your own iCloud, on by default and free for everyone. On a new iPhone, draw your pattern and the vault restores.
+N Send to Noxium
+Import from Photos
+#### From any app
+Save from the share sheet in any app, or bring photos across from your library, and Noxium offers to remove the originals from your Camera Roll. Export in full quality with original dates.
+“Close Noxium”
+#### Lock it with a word
+Ask Siri, or add it to a Shortcut. Noxium locks immediately, just as it does when you close the app.
+#### Sharing and sync PRO
+Share a vault with someone you trust, and keep yours in sync between iPhone and iPad. Anything deleted on another device goes to Recently Deleted first.
+Noxium
+#### Covered when you switch apps.
+Vault content is hidden in the app switcher and during screen recording. With Pro, the icon can pass for a Calculator, Notes or Weather app.
+Plus Recently Deleted, which keeps items for 30 days, so mistakes are easy to undo.
+Privacy
+### The app collects nothing.
+No ads, no accounts, no analytics. The App Store privacy label reads Data Not Collected.
+- Only you can see your photos
+Your pattern is never saved or sent anywhere. Without it, your vault can’t be opened. Not by us, and not by Apple.
+- Unreadable in iCloud
+Your backup is encrypted before it leaves your phone, so neither we nor Apple can look at it.
+- Never lose a photo
+Updates, interruptions and restores are tested on real libraries. A built-in check can look over every photo and fix problems from your backup.
+- Easy to get photos out
+Save thousands of photos, or whole albums, back to Photos or Files in one go. Full quality, original dates, no paywall.
+- Backups that really restore
+Your vault is backed up to your own iCloud, encrypted. Get a new iPhone, draw your pattern, and everything comes back.
+- Fair pricing
+150 photos and 10 videos free, with no ads. If you ever stop paying for Pro, you can still view, export and back up everything.
+- Fast, even with big libraries
+Videos are encrypted in small chunks, so even long 4K videos start playing without decrypting the whole file first.
+- What Noxium protects
+Your photos stay private if someone picks up your unlocked iPhone, looks through its files, or gets hold of your iCloud data. A decoy vault helps if someone asks you to open the app.
+- Good to know
+Someone who watches you draw your pattern could copy it, so draw it out of sight. Face ID opens your main vault, so if that worries you, turn it off and use your pattern.
+- Open to review
+We plan to have the encryption code independently reviewed at version 1.0.
+- Made by Inertia Projects
+A small independent studio making private, easy-to-use apps for iPhone. No investors, no trackers, and no servers holding your files. business@inertiaprojects.info · More about who makes Noxium →
+#### The facts, plainly.
+Noxium 1.0 is brand new, so there are no reviews to point to yet. Here is exactly what it does, with nothing rounded up. The same list is on our About page .
 What it is
 An iPhone and iPad app that hides photos, videos and notes in encrypted vaults.
 How you open it
@@ -154,130 +291,8 @@ Made by
 Inertia Projects, an independent developer. Contact: business@inertiaprojects.info.
 Status
 Version 1.0 was submitted to App Store review in October 2026. It is not on the App Store yet.
-Why Noxium
-### A photo vault that never loses your photos or holds them hostage.
-We read hundreds of recent one- and two-star reviews of other vault apps. People weren’t asking for gimmicks. They were upset about lost photos, surprise paywalls and locks that didn’t really protect anything. So Noxium follows six simple rules.
--
-1
-#### Never lose a photo
-Updates, interruptions and restores are tested on real libraries. A built-in check can look over every photo and fix problems from your backup.
--
-2
-#### Easy to get photos out
-Save thousands of photos, or whole albums, back to Photos or Files in one go. Full quality, original dates, no paywall.
--
-3
-#### Backups that really restore
-Your vault is backed up to your own iCloud, encrypted. Get a new iPhone, draw your pattern, and everything comes back.
--
-4
-#### Fair pricing
-150 photos and 10 videos free, with no ads. If you ever stop paying for Pro, you can still view, export and back up everything.
--
-5
-#### Truly private
-Your photos are encrypted on your iPhone, so nobody can see them without your pattern. Not us, and not Apple.
--
-6
-#### Fast, even with big libraries
-Videos are encrypted in small chunks, so even long 4K videos start playing without decrypting the whole file first.
-Features
-### Everything a real vault should do. Nothing it shouldn’t.
-Every photo, video and note is encrypted the moment you add it, along with its name, date and location.
-#### Lock with a pattern
-Draw a line through at least 6 of 25 dots. There are far more possible patterns than a 4-digit code, and every guess is made deliberately slow.
-Free + Pro
-#### Recovery phrase
-A spare way in if you forget your pattern, and an easy way to unlock with VoiceOver. Set one up in Settings › Recovery phrase.
-Free + Pro
-#### Decoy vault
-A second pattern opens a separate, ordinary-looking vault with everyday photos. Noxium never shows a list of vaults, so nobody can tell there’s more.
-1 free, more with Pro
-#### Emergency erase
-An optional extra pattern opens an ordinary vault and quietly removes your other vaults from this iPhone. Your iCloud backup can stay safe.
-Noxium Pro
-#### Albums
-Sort photos into albums, and albums inside albums, with your own cover photo and colour. With Pro, an album can have its own pattern.
-Free + Pro
-#### iCloud backup
-On by default and free for everyone. Your vault is encrypted before it’s backed up to your own iCloud, so Apple can’t see a single photo.
-Free + Pro
-#### iPhone and iPad, and sharing
-Keep the same vault on your iPhone and iPad, or share a vault with someone you trust. Anything deleted on another device goes to Recently Deleted first.
-Noxium Pro
-#### Private camera
-Take photos and videos straight into your vault so they never land in your Camera Roll. Or tap “Send to Noxium” from any app’s share menu.
-Free + Pro
-#### Disguise and screen privacy
-Swap the Home Screen icon for a plain-looking one. Noxium also hides your photos in the app switcher and during screen recording.
-Noxium Pro
-#### Notes and Recently Deleted
-Keep private notes next to your photos. Anything you delete waits in Recently Deleted for 30 days, so mistakes are easy to undo.
-Free + Pro
-How it works
-### Three simple steps.
-No account to create and no forms to fill in.
--
-1
-#### Choose your pattern
-Draw a pattern through at least 6 dots, twice to confirm. You can also turn on Face ID and set up a recovery phrase in case you forget.
--
-2
-#### Add your photos
-Pick photos and videos from your library or Files, share them from any app, or take new ones with the built-in camera. Noxium then offers to remove the originals from your Camera Roll.
--
-3
-#### Lock it
-Close the app and your vault locks. It’s backed up to your own iCloud automatically. New iPhone? Draw your pattern and everything comes back.
-Privacy
-### Your photos are for your eyes only.
-Noxium encrypts everything on your iPhone before it’s saved. Without your pattern, your photos are just scrambled data to anyone else, including us and Apple.
-#### What Noxium protects
-Your photos stay private if someone picks up your unlocked iPhone, looks through its files, or gets hold of your iCloud data. A decoy vault helps if someone asks you to open the app.
-#### Good to know
-Someone who watches you draw your pattern could copy it, so draw it out of sight. Face ID opens your main vault, so if that worries you, turn it off and use your pattern.
-For the technically curious
-### Keys inside keys. None of them leave your iPhone unwrapped.
-Your pattern never encrypts files directly. It derives an Argon2id wrapping key that unlocks your room header, which unwraps a random 256-bit vault key, which unwraps a unique 256-bit key for every individual photo, video, thumbnail, and note.
-- Argon2id (64 MiB RAM, 3 passes, 1 lane) resists GPU and ASIC cracking far better than legacy PBKDF2-SHA512 or bare PIN hashes
-- AES-256-GCM via Apple CryptoKit authenticates every file chunk, SQLite metadata column, capture timestamp, and thumbnail
-- DRK1 1 MiB chunked format binds header magic, chunk index, and final-chunk marker into GCM Additional Authenticated Data (AAD) so reordering or truncation is caught immediately
-- Portable room header + Keychain rate-limiter stores the 256-bit Argon2id salt in the room header so you can restore from CloudKit on a new iPhone using only your pattern
-- One-way public-key Share Extension lets “Send to Noxium” encrypt imports into an ephemeral Curve25519 envelope without holding your vault key
-VaultCrypto · DRK1 Key Hierarchy
-AES-256-GCM
-// 1. Stretch the pattern or recovery phrase in memory
-patternKey = Argon2id (
-secret: canonicalBoltPath,
-salt: roomHeader.salt256, // 32-byte per-room random salt
-memory: 64_MiB , passes: 3
-)
-// 2. Unwrap the room's master key (1 header per room)
-vaultKey = AES_256_GCM.open (roomHeader.sealedKey, using: patternKey)
-// Wrong pattern? GCM tag fails -> 0 rooms revealed
-// 3. Unwrap per-frame key & stream 1 MiB chunks
-fileKey = AES_256_GCM.open (frameMeta, using: vaultKey)
-chunk[i] = AES_256_GCM.open (
-ciphertextChunk[i],
-key: fileKey,
-nonce: baseNonce ^ counter(i),
-aad: "DRK1" || uint32(i) || isLastChunk
-)
-// Change pattern? Only roomHeader.sealedKey is re-wrapped.
-Decoy vault
-### When someone asks to look.
-A friend, a partner or a nosy relative asks to see what’s in the app. With Noxium, each pattern opens its own vault, and nothing on screen hints that there’s more than one.
-Your pattern
-#### Your vault
-Opens your real photos, albums and notes. You can also open it with Face ID.
-Second pattern
-#### Decoy vault
-Opens an ordinary-looking vault, for example with holiday photos. Nothing in the app labels it as a decoy.
-Optional, Pro
-#### Emergency erase
-Opens an ordinary vault and quietly removes your other vaults from this iPhone. You can choose to keep your iCloud backup.
-Compare
-### How Noxium compares with other vault apps
+Compared
+### Noxium next to the others.
 How Noxium lines up against five popular alternatives, using each app’s own website, help pages and App Store listing as of October 2026. Every ✗ links to its source.
 Noxium compared with popular photo vault apps, as of October 2026
 Feature
@@ -346,7 +361,7 @@ Where your copy lives
 - Recently Deleted keeps photos for 30 days, still encrypted
 - No ads and no tracking, and you keep your photos if you stop paying for Pro
 Head to head
-### Five popular vault apps, compared
+#### Five popular vault apps, compared
 As of October 2026, based on each app’s own website, help pages and App Store listing.
 #### Noxium vs Apple Hidden Album
 Built into iOS
@@ -381,42 +396,34 @@ Encrypts photos and videos on your device and keeps them on your iPhone or in yo
 - App Store, Encamera Encrypted Photo Vault
 - App Store, Photo Vault – Vaultaire (description checked 22 October 2026)
 Apps change. If anything here is out of date, email business@inertiaprojects.info and we’ll fix it. App names are trademarks of their owners and are used only to identify their apps.
-Compare 17 vault apps side by side →
+See all 17 apps →
 Pricing
-### Every limit, shown before you download.
-No ads in either plan, and iCloud backup is free for everyone. If Pro ever ends, you can still view, export and back up everything in your vault.
-#### Noxium Free
-Free forever
-$0
-Enough to try every core feature, with no ads and no account.
-- Up to 150 photos and 10 videos , plus unlimited notes
-- Your vault plus 1 decoy vault , each with its own pattern
-- Encrypted iCloud backup included
-- Recovery phrase and optional Face ID
-- Albums with cover photos and colours
-- Full-quality export , including RAW and Live Photos
-- Recently Deleted for 30 days, and a vault health check
-- No ads, no accounts, no trackers — ever
+### Start free. Upgrade for room.
+#### Free
+For the photos that matter most
+Free
+- Encrypted vault, pattern and Face ID
+- 150 photos, 10 videos, unlimited notes
+- 1 decoy vault
+- Full iCloud backup and restore
 Join the beta
-#### Noxium Pro
-Family Sharing included
-$2.99 / month · $19.99 / year (1 week free) · $44.99 once
-One purchase unlocks Pro for your entire Apple Family Group.
-- Unlimited photos, videos and notes
-- As many decoy vaults as you like
+#### Pro PRO
+For everything you keep
+$19.99 a year, with a 1-week free trial
+or $2.99 a month, or $44.99 once
+- Unlimited photos and videos
 - Emergency erase pattern
-- Sync between iPhone and iPad
-- Lock individual albums with their own pattern
-- Shared vaults with people you trust
-- Disguise icons for your Home Screen
-- Cancel any time and keep full access to your photos
-Join the beta for 50% off
-FAQ
-### Questions, answered plainly.
+- iPhone and iPad sync, shared vaults
+- Album patterns and custom app icons
+Join the beta
+Your photos are never held hostage. If Pro ends, you keep full access to view, export and back up everything already in your vault.
+Questions
+### Answered plainly.
+Anything else? Write to business@inertiaprojects.info . A person replies.
 01 What is Noxium and how does it work?
 Noxium is an iPhone and iPad app that keeps your private photos, videos and notes in a locked vault. You open it by drawing a pattern on a grid of 25 dots. Everything inside is encrypted, so without your pattern it can’t be read. You can also set up a second pattern that opens a separate decoy vault.
 02 What if I forget my pattern?
-Nobody can reset it, not us and not Apple. That’s what keeps your vault private. So we recommend setting up a recovery phrase in Settings › Recovery phrase. If you forget your pattern, tap “Use recovery phrase” on the lock screen. If you lose both, your photos can’t be recovered.
+Nobody can reset it, not us and not Apple. That’s what keeps your vault private. You save a recovery phrase when you set up Noxium. If you forget your pattern, tap “Forgot your pattern?” on the lock screen and enter it. You can make a new phrase any time in Settings › Recovery phrase, and the old one stops working. If you lose both your pattern and your phrase, your photos can’t be recovered.
 03 Can you or Apple see my photos in iCloud?
 No. Everything is encrypted on your iPhone before it’s backed up, so iCloud only ever stores scrambled data. Neither Apple nor we ever have your pattern.
 04 Do I need an account or email address?
@@ -437,10 +444,12 @@ Select as many photos as you like, or a whole album, tap Export, and choose Save
 No ads and no tracking. Noxium has no analytics of its own. Apple only sends us crash reports if you’ve turned that on in your iPhone’s settings, and they never include your photos.
 12 Is Noxium the app that used to be called Darkroom?
 Yes. Noxium was called Darkroom until October 2026. Only the name changed: the app, your pattern and your vault are the same. It is not related to the Darkroom photo editor by Bergen Co.
-Private beta
-### Keep your private photos private.
-Free for 150 photos and 10 videos. Encrypted on your iPhone and backed up to your own iCloud.
+### Draw your line.
+Noxium for iPhone and iPad. Free to start.
 Join the beta
+Download on the App Store
+Scan with your iPhone camera
+Opens Noxium on the App Store
 
 ---
 
@@ -1674,7 +1683,7 @@ Noxium hides photos, videos and notes in encrypted vaults on your iPhone and iPa
 ### Contact
 Email business@inertiaprojects.info . Please include your app version (in the app, Settings › App settings › About) and your iPhone or iPad model. Never send us your bolt pattern or recovery phrase. We will never ask for them.
 ### I forgot my bolt pattern
-Use your recovery phrase. On the lock screen, tap “Use recovery phrase”, type it in, and your vault opens. You can then set a new pattern. You can see or change your recovery phrase in Settings › Recovery phrase.
+Use your recovery phrase. On the lock screen, tap “Forgot your pattern?”, type it in, and your vault opens. You can then set a new pattern. To replace your recovery phrase, make a new one in Settings › Recovery phrase; the old one stops working.
 Nobody can reset a pattern: not us, not Apple. Noxium never stores your pattern, and your files are encrypted with a key that only your pattern or your recovery phrase can unlock. If both are lost, the vault cannot be opened by anyone.
 ### Moving to a new iPhone
 Install Noxium on the new iPhone, signed in to the same Apple Account, and draw your pattern on the Restore screen. Your vault comes back from your encrypted iCloud backup.

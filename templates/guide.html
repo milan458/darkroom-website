@@ -3,27 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="color-scheme" content="light dark">
-  <meta name="theme-color" id="meta-theme-color" content="#070605">
-  <script>
-    try {
-      const savedScheme = localStorage.getItem("color-scheme");
-      const metaScheme = document.querySelector('meta[name="color-scheme"]');
-      const metaTheme = document.getElementById("meta-theme-color");
-      const prefersLight = window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches;
-      const resolved = savedScheme === "light" || savedScheme === "dark" ? savedScheme : (prefersLight ? "light" : "dark");
-      if (metaScheme) metaScheme.content = resolved;
-      if (metaTheme) metaTheme.content = resolved === "light" ? "#F3EEE7" : "#070605";
-      document.documentElement.dataset.theme = resolved;
-    } catch {}
-  </script>
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#FAF9F6" media="(prefers-color-scheme: light)">
   <!-- build:meta -->
   <!-- /build:meta -->
 
   <link rel="icon" type="image/svg+xml" href="/assets/noxium-logo.svg">
   <link rel="apple-touch-icon" href="/assets/noxium-icon-180.png">
 
-  <link rel="preload" href="/assets/fonts/plus-jakarta-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/instrument-serif-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/fonts/fonts.css">
   <link rel="stylesheet" href="/styles.css">
   <link rel="stylesheet" href="/pages.css">
@@ -51,7 +40,7 @@
       <div class="container">
         <!-- build:breadcrumbs -->
         <!-- /build:breadcrumbs -->
-        <p class="eyebrow"><span class="dot dot-amber" aria-hidden="true"></span>Guide · TOPIC</p>
+        <p class="eyebrow"><span class="dot dot-ink" aria-hidden="true"></span>Guide · TOPIC</p>
         <h1>HEADLINE (same as site.json "headline")</h1>
         <!-- build:byline -->
         <!-- /build:byline -->
