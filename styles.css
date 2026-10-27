@@ -2319,3 +2319,5 @@ html.reveal-js .rv-draw .draw { transition: stroke-dashoffset 1s var(--ease-out)
   .qr-block { display: none; }
   .store-badge { height: 46px; }
 }
+
+.decoy-note { font-size: 14px; line-height: 1.55; color: var(--muted); }

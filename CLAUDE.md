@@ -16,8 +16,8 @@ Static marketing site for Noxium, an encrypted iPhone/iPad photo vault (app repo
 - After publishing: `python3 tools/indexnow.py <path>` (Bing and other IndexNow engines).
 
 ## Design
-- Follow `design-system/darkroom/MASTER.md`. Tokens live in `styles.css` (`:root` and `[data-theme="light"]`). Subpage components are in `pages.css` and use only those tokens.
-- Archivo Narrow (uppercase) for headings and buttons, Plus Jakarta Sans for prose, DM Mono for labels, specs and dates.
+- Follow `design-system/nocturne/MASTER.md` (Nocturne, the app's look). Tokens live in `styles.css` (`:root` is Dark, `@media (prefers-color-scheme: light)` is Light; there is no theme toggle). Subpage components are in `pages.css` and use only those tokens.
+- Instrument Serif (regular and italic, never bold) for page, section and card titles and the wordmark; the system font (SF Pro via `-apple-system`, Inter Tight as the non-Apple fallback) for everything else; DM Mono only for recovery words, cipher text, code and FAQ numbers.
 - Mobile-first: test at 375 px, no horizontal page scroll; wide tables scroll inside `.data-table-wrap`.
 - Inline SVG icons with `aria-hidden="true"`, never emoji as icons. One `<h1>` per page, no skipped heading levels.
 
