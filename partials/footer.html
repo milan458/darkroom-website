@@ -1,51 +1,45 @@
-<!-- Shared footer for subpages. Edit partials/footer.html, then run python3 tools/build.py. -->
+<!-- Shared footer for subpages (the homepage has its own copy with build:status). Edit partials/footer.html, then run python3 tools/build.py. -->
 <footer class="site-footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-col">
-        <a href="/" class="logo" style="margin-bottom:12px" aria-label="Noxium home">
-          <span class="logo-plate" aria-hidden="true">
-            <svg viewBox="0 0 180 180" width="30" height="30" aria-hidden="true"><use href="#noxium-logo-mark"></use></svg>
-          </span>
-          <span>Noxium</span>
-        </a>
-        <p style="color:var(--muted);max-width:34ch;margin-bottom:14px">Encrypted photo, video and note vault for iPhone and iPad. Encrypted on your device, backed up to your own iCloud.</p>
-        <p style="color:var(--amber);font-family:var(--font-mono);font-size:0.75rem">The app: no accounts · no ads · no analytics</p>
+  <div class="container footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="/" class="wordmark" aria-label="Noxium home">Noxium<span aria-hidden="true">.</span></a>
+        <p>A private vault for photos, videos and notes.</p>
       </div>
 
-      <div class="footer-col">
-        <h2 class="footer-heading">Guides</h2>
-        <ul role="list">
-          {{guide_links}}
-          <li><a href="/guides/">All guides</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h2 class="footer-heading">Noxium</h2>
-        <ul role="list">
-          <li><a href="/#features">Features</a></li>
-          <li><a href="/#security">How the encryption works</a></li>
-          <li><a href="/#pricing">Free vs Pro</a></li>
-          <li><a href="/best-photo-vault-apps-iphone">Photo vault apps compared</a></li>
-          <li><a href="/#faq">FAQ</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h2 class="footer-heading">Help &amp; Legal</h2>
-        <ul role="list">
-          <li><a href="/about">About</a></li>
-          <li><a href="/support">Support</a></li>
-          <li><a href="/privacy">Privacy policy</a></li>
-          <li><a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a></li>
-        </ul>
-      </div>
+      <nav class="footer-groups" aria-label="Footer">
+        <div>
+          <h2 class="footer-heading">Product</h2>
+          <ul role="list">
+            <li><a href="/#features">Features</a></li>
+            <li><a href="/#security">How the encryption works</a></li>
+            <li><a href="/#pricing">Free vs Pro</a></li>
+            <li><a href="/best-photo-vault-apps-iphone">Photo vault apps compared</a></li>
+            <li><a href="/#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="footer-heading">Guides</h2>
+          <ul role="list">
+            {{guide_links}}
+            <li><a href="/guides/">All guides</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="footer-heading">Company</h2>
+          <ul role="list">
+            <li><a href="/about">About</a></li>
+            <li><a href="/support">Support</a></li>
+            <li><a href="/privacy">Privacy policy</a></li>
+            <li><a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a></li>
+          </ul>
+        </div>
+      </nav>
     </div>
 
     <div class="footer-bottom">
-      <p>&copy; {{year}} Noxium · Inertia Projects</p>
-      <p>App Store privacy label: <strong>Data Not Collected</strong></p>
+      <p>&copy; {{year}} Noxium. Made by Inertia Projects, an independent developer. App Store privacy label: Data Not Collected.</p>
+      <p>Apple, the Apple logo, iPhone, iPad and Face ID are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc.</p>
     </div>
   </div>
 </footer>

@@ -1,72 +1,12 @@
 (() => {
-  /* ---------- 1. Theme Toggle (follows the system until the visitor picks) ---------- */
-  const ICONS = {
-    sun: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><line x1="12" y1="2.5" x2="12" y2="5.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="12" y1="18.8" x2="12" y2="21.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="2.5" y1="12" x2="5.2" y2="12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="18.8" y1="12" x2="21.5" y2="12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="5.3" y1="5.3" x2="7.2" y2="7.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="16.8" y1="16.8" x2="18.7" y2="18.7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="16.8" y1="7.2" x2="18.7" y2="5.3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="5.3" y1="18.7" x2="7.2" y2="16.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>',
-    moon: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 14.8a8.9 8.9 0 1 1-9.6-11 7.2 7.2 0 0 0 9.6 11Z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>'
-  };
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
-  const root = document.documentElement;
-  const metaScheme = document.querySelector('meta[name="color-scheme"]');
-  const metaThemeColor = document.getElementById("meta-theme-color");
-  const themeBtn = document.getElementById("theme-toggle");
-  const themeIcon = document.getElementById("theme-icon");
-  const themeLabel = document.getElementById("theme-label");
+  /* ---------- 1. Appearance follows the device. Clear the old toggle's saved choice. ---------- */
+  try {
+    localStorage.removeItem("color-scheme");
+  } catch {}
 
-  function getActiveTheme() {
-    return root.dataset.theme === "light" ? "light" : "dark";
-  }
-
-  function applyTheme(theme, persist = false) {
-    const resolved = theme === "light" ? "light" : "dark";
-    root.dataset.theme = resolved;
-    if (metaScheme) {
-      metaScheme.content = resolved;
-    }
-    if (metaThemeColor) {
-      metaThemeColor.content = resolved === "light" ? "#F3EEE7" : "#070605";
-    }
-    if (persist) {
-      try {
-        localStorage.setItem("color-scheme", resolved);
-      } catch {}
-    }
-    const isDark = resolved === "dark";
-    if (themeBtn) {
-      themeBtn.setAttribute("aria-pressed", String(!isDark));
-      themeBtn.setAttribute(
-        "aria-label",
-        isDark
-          ? themeBtn.dataset.switchLight || "Switch to light mode"
-          : themeBtn.dataset.switchDark || "Switch to dark mode"
-      );
-    }
-    if (themeIcon) {
-      themeIcon.innerHTML = isDark ? ICONS.sun : ICONS.moon;
-    }
-    if (themeLabel) {
-      themeLabel.textContent = isDark
-        ? themeBtn?.dataset.lightLabel || "Light"
-        : themeBtn?.dataset.darkLabel || "Dark";
-    }
-    window.dispatchEvent(new CustomEvent("noxium-themechange", { detail: { theme: resolved, isDark } }));
-  }
-
-  applyTheme(getActiveTheme(), false);
-
-  if (themeBtn) {
-    themeBtn.addEventListener("click", () => {
-      const next = getActiveTheme() === "dark" ? "light" : "dark";
-      applyTheme(next, true);
-    });
-  }
-
-  window.addEventListener("storage", (e) => {
-    if (e.key === "color-scheme") {
-      applyTheme(e.newValue === "light" ? "light" : "dark", false);
-    }
-  });
-
-  /* ---------- 2. Mobile Navigation Drawer ---------- */
+  /* ---------- 2. Mobile navigation drawer and current page ---------- */
   function initMobileNav() {
     const header = document.querySelector(".site-header");
     const btn = document.getElementById("mobile-menu-btn");
@@ -78,7 +18,6 @@
       isOpen = next;
       btn.classList.toggle("open", isOpen);
       btn.setAttribute("aria-expanded", String(isOpen));
-      drawer.classList.toggle("open", isOpen);
       drawer.hidden = !isOpen;
     };
 
@@ -94,664 +33,351 @@
     });
   }
 
-  initMobileNav();
-
-  /* ---------- 3. Room Configurations & Contact Sheet Renderer ---------- */
-  const ROOM_MODES = {
-    main: {
-      key: "main",
-      pattern: [20, 16, 11, 7, 8, 4],
-      verifyLabel: "Pattern recognised",
-      doorStatus: "Unlocked",
-      unlockTitle: "Opening…",
-      unlockSub: "Unlocking your vault",
-      roomTitle: "Library",
-      rollMeta: "Today · 1,284 photos",
-      sealMeta: "● Backed up",
-      sealWarn: false,
-      palettes: [
-        ["#5A3A2C", "#C27A4A"],
-        ["#2B3A4A", "#7A9CB8"],
-        ["#3D4A2E", "#A3B36A"],
-        ["#4A2B3A", "#C46A8A"],
-        ["#2E2A4A", "#8B7EC2"],
-        ["#4A3F2B", "#E0B36A"],
-        ["#1F3A36", "#6AB3A3"],
-        ["#3A2424", "#D36A5A"]
-      ],
-      durations: { 1: "0:18", 2: "0:11", 3: "0:35", 5: "0:13", 6: "0:45", 10: "2:15", 15: "0:08" },
-      notes: new Set([7, 13]),
-      prefix: ""
-    },
-    decoy: {
-      key: "decoy",
-      pattern: [0, 6, 12, 8, 4, 9],
-      verifyLabel: "Pattern recognised",
-      doorStatus: "Unlocked",
-      unlockTitle: "Opening…",
-      unlockSub: "Opening the decoy vault",
-      roomTitle: "Holiday",
-      rollMeta: "Today · 14 photos",
-      sealMeta: "● Backed up",
-      sealWarn: false,
-      palettes: [
-        ["#2E4A3E", "#5ED196"],
-        ["#2C4454", "#7BB5D6"],
-        ["#3B4C2B", "#9AC472"],
-        ["#364B4A", "#72C4B8"],
-        ["#46422A", "#C4B468"]
-      ],
-      durations: { 2: "0:09", 8: "0:14" },
-      notes: new Set([5]),
-      prefix: "D"
-    },
-    duress: {
-      key: "duress",
-      pattern: [24, 18, 12, 6, 0, 1, 2],
-      verifyLabel: "Pattern recognised",
-      doorStatus: "Unlocked",
-      unlockTitle: "Opening…",
-      unlockSub: "Other vaults removed from this iPhone",
-      roomTitle: "Receipts",
-      rollMeta: "Today · 8 photos",
-      sealMeta: "● Backed up",
-      sealWarn: true,
-      palettes: [
-        ["#443222", "#F5B759"],
-        ["#3A2D24", "#C89652"],
-        ["#322822", "#A87C46"],
-        ["#483626", "#E0A658"]
-      ],
-      durations: {},
-      notes: new Set([3, 6]),
-      prefix: "W"
-    }
-  };
-
-  function populateContactSheet(modeKey = "main") {
-    const grid = document.getElementById("vault-grid");
-    const roomTitleEl = document.getElementById("vault-room-title");
-    const rollMetaEl = document.getElementById("vault-roll-meta");
-    const sealMetaEl = document.getElementById("vault-seal-meta");
-    const unlockTitleEl = document.getElementById("unlock-stage-title");
-    const unlockSubEl = document.getElementById("unlock-stage-sub");
-    const cfg = ROOM_MODES[modeKey] || ROOM_MODES.main;
-
-    if (roomTitleEl) roomTitleEl.textContent = cfg.roomTitle;
-    if (rollMetaEl) rollMetaEl.textContent = cfg.rollMeta;
-    if (sealMetaEl) {
-      sealMetaEl.textContent = cfg.sealMeta;
-      sealMetaEl.style.color = cfg.sealWarn ? "var(--amber)" : "var(--ok)";
-    }
-    if (unlockTitleEl) unlockTitleEl.textContent = cfg.unlockTitle;
-    if (unlockSubEl) unlockSubEl.textContent = cfg.unlockSub;
-
-    if (!grid) return;
-    grid.innerHTML = "";
-
-    const frag = document.createDocumentFragment();
-    for (let i = 1; i <= 18; i++) {
-      const cell = document.createElement("div");
-      cell.className = "vault-cell";
-      const [c1, c2] = cfg.palettes[(i * 3) % cfg.palettes.length];
-      const angle = (i * 47) % 360;
-      const cx = 22 + ((i * 17) % 56);
-      const cy = 26 + ((i * 11) % 48);
-
-      if (cfg.notes.has(i)) {
-        cell.style.background =
-          "repeating-linear-gradient(180deg, rgba(245,183,89,0.28) 0 1.5px, transparent 1.5px 6px) 6px 6px / 68% 45% no-repeat, #221C18";
-      } else {
-        cell.style.background = `radial-gradient(circle at ${cx}% ${cy}%, ${c2}, transparent 62%), linear-gradient(${angle}deg, ${c1}, #120F0D)`;
-      }
-
-      const frameNo = "";
-      const dur = cfg.durations[i] ? `<span class="vault-cell-time">${cfg.durations[i]}</span>` : "";
-      cell.innerHTML = frameNo + dur;
-      frag.appendChild(cell);
-    }
-    grid.appendChild(frag);
+  function markCurrentPage() {
+    const path = location.pathname.replace(/\.html$/, "").replace(/\/index$/, "/");
+    document.querySelectorAll(".nav-links a").forEach((link) => {
+      const href = link.getAttribute("href");
+      if (href.includes("#")) return;
+      const match = href === "/guides/" ? path.startsWith("/guides/") : path === href;
+      if (match) link.setAttribute("aria-current", "page");
+    });
   }
 
-  populateContactSheet("main");
+  initMobileNav();
+  markCurrentPage();
 
-  /* ---------- 4. Hero Background Pattern Canvas + 3-Stage Phone Simulator ---------- */
-  function initHeroRuntime() {
-    const canvas = document.getElementById("pattern-canvas");
-    const pathEl = document.getElementById("drawing-path");
-    const cursorEl = document.getElementById("drawing-cursor");
-    const svgEl = document.getElementById("mockup-svg");
-    const zoneEl = document.getElementById("pattern-lock-zone");
-    const screenEl = document.getElementById("phone-screen");
-    const dots = Array.from(document.querySelectorAll(".grid-dot"));
-    const timeEl = document.getElementById("mockup-time");
-    const subtitleEl = document.getElementById("lock-subtitle");
-    const doorTextEl = document.getElementById("mockup-door-text");
-    const doorDotEl = document.getElementById("mockup-door-dot");
-    const counterEl = document.getElementById("bolt-counter");
-    const lockVaultBtn = document.getElementById("lock-vault-btn");
-    const quickUnlockBtn = document.getElementById("quick-unlock-btn");
-    const presetBtns = Array.from(document.querySelectorAll(".room-preset-btn[data-preset-mode]"));
-    const pauseBtn = document.getElementById("sim-pause-btn");
-    const pauseLabel = document.getElementById("sim-pause-label");
-    const liveStatus = document.getElementById("sim-live-status");
+  /* ---------- 3. Hero bolt pad: draw six or more bolts and the lock lifts ---------- */
+  const DEMO_PATTERN = [20, 16, 11, 7, 8, 4];
+  let lastPattern = null; // this page view only, never stored
 
-    if (!canvas || !pathEl || !cursorEl || !svgEl || !zoneEl || !screenEl || dots.length === 0) return;
+  const centre = (i) => [10 + 20 * (i % 5), 10 + 20 * Math.floor(i / 5)];
+  const points = (seq) => seq.map((i) => centre(i).join(",")).join(" ");
 
-    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
-    const ctx = canvas.getContext("2d");
+  function initHero() {
+    const pad = document.getElementById("hero-pad");
+    const lock = document.getElementById("lock");
+    const vault = document.getElementById("vault");
+    if (!pad || !lock || !vault) return;
 
-    const state = {
-      dotColor: "#F5B759",
-      trailColor: "rgba(232, 59, 46, 0.36)",
-      bgDots: [],
-      width: 0,
-      height: 0,
-      heroVisible: true,
-      bgTimer: 0,
-      bgClearTimer: 0,
-      loopTicket: 0,
-      loopRunning: false,
-      userPaused: false,
-      userInteracting: false,
-      userPinnedMode: null,
-      activeMode: "main",
-      modeOrder: ["main", "decoy"],
-      nodeCenters: []
+    const trail = document.getElementById("pad-trail");
+    const live = document.getElementById("pad-live");
+    const prompt = document.getElementById("pad-prompt");
+    const status = document.getElementById("hero-status");
+    const announce = document.getElementById("hero-announce");
+    const demoBtn = document.getElementById("demo-btn");
+    const vaultTitle = document.getElementById("vault-title");
+    const bolts = Array.from(pad.querySelectorAll(".b"));
+
+    let state = "idle"; // idle | drawing | wrong | success | unlocked
+    let path = [];
+    let drawing = false;
+    let demoRunning = false;
+    let timers = [];
+    let raf = 0;
+    let pending = null;
+
+    const later = (fn, ms) => timers.push(window.setTimeout(fn, ms));
+    const clearTimers = () => {
+      timers.forEach(clearTimeout);
+      timers = [];
     };
 
-    function announceStatus(msg) {
-      if (liveStatus) liveStatus.textContent = msg;
+    function setPrompt(kind) {
+      if (kind === "wrong") {
+        prompt.innerHTML = '<p class="prompt-error">Too short. Use at least six bolts.</p>';
+      } else if (kind === "success") {
+        prompt.innerHTML = '<p class="prompt-title">Unlocking…</p>';
+      } else {
+        const sub = kind === "drawing" ? `${path.length} ${path.length === 1 ? "bolt" : "bolts"}` : "Through six or more bolts";
+        prompt.innerHTML = `<p class="prompt-title">Try it. Draw any shape.</p><p class="prompt-sub">${sub}</p>`;
+      }
     }
 
-    function syncPresetButtons(modeKey) {
-      state.activeMode = modeKey;
-      screenEl.setAttribute("data-room-mode", modeKey);
-      populateContactSheet(modeKey);
-      presetBtns.forEach((btn) => {
-        const isMatch = btn.dataset.presetMode === modeKey;
-        btn.classList.toggle("is-active", isMatch);
-        btn.setAttribute("aria-pressed", String(isMatch));
+    function setStatus(text, dotClass) {
+      status.innerHTML = `<span class="dot ${dotClass}" aria-hidden="true"></span><span>${text}</span>`;
+    }
+
+    function light(i) {
+      bolts[i].classList.add("on");
+      trail.setAttribute("points", points(path));
+      if (state === "drawing") setPrompt("drawing");
+    }
+
+    function reset() {
+      path = [];
+      bolts.forEach((b) => b.classList.remove("on"));
+      trail.setAttribute("points", "");
+      live.classList.remove("on");
+      pad.classList.remove("err", "ok");
+      state = "idle";
+      setPrompt("idle");
+      setStatus("Locked", "dot-locked");
+    }
+
+    function toPercent(e) {
+      const r = pad.getBoundingClientRect();
+      return { x: ((e.clientX - r.left) / r.width) * 100, y: ((e.clientY - r.top) / r.height) * 100 };
+    }
+
+    // Same rule as the app: hit radius = pitch (20%) × 0.46.
+    function hit(p) {
+      const c = Math.round((p.x - 10) / 20);
+      const r = Math.round((p.y - 10) / 20);
+      if (c < 0 || c > 4 || r < 0 || r > 4) return -1;
+      const dx = p.x - (10 + 20 * c);
+      const dy = p.y - (10 + 20 * r);
+      return dx * dx + dy * dy <= 9.2 * 9.2 ? r * 5 + c : -1;
+    }
+
+    function updateLive(p) {
+      if (!path.length) return;
+      const [x1, y1] = centre(path[path.length - 1]);
+      live.setAttribute("x1", x1);
+      live.setAttribute("y1", y1);
+      live.setAttribute("x2", p.x);
+      live.setAttribute("y2", p.y);
+      live.classList.add("on");
+    }
+
+    function finish() {
+      live.classList.remove("on");
+      if (path.length >= 6) success();
+      else if (path.length > 0) wrong();
+      else reset();
+    }
+
+    function wrong() {
+      state = "wrong";
+      pad.classList.add("err");
+      setPrompt("wrong");
+      later(reset, 700);
+    }
+
+    function success() {
+      state = "success";
+      lastPattern = path.slice();
+      pad.classList.add("ok");
+      setPrompt("success");
+      setStatus("Unlocking", "dot-ink");
+      updateFinalPad();
+      later(unlock, 420);
+    }
+
+    function unlock() {
+      state = "unlocked";
+      loadWall();
+      lock.style.willChange = vault.style.willChange = "transform, opacity";
+      lock.classList.add("lifted");
+      vault.classList.add("open");
+      vault.inert = false;
+      vault.removeAttribute("aria-hidden");
+      announce.textContent = "Unlocked. This is a demo of Noxium's lock screen.";
+      vaultTitle.focus({ preventScroll: true });
+      later(() => {
+        lock.inert = true;
+        lock.style.willChange = vault.style.willChange = "";
+      }, 900);
+    }
+
+    function relock(focusDemo = true) {
+      if (state !== "unlocked") return;
+      clearTimers();
+      lock.inert = false;
+      lock.classList.remove("lifted");
+      vault.classList.remove("open");
+      vault.inert = true;
+      vault.setAttribute("aria-hidden", "true");
+      drawing = false;
+      demoRunning = false;
+      reset();
+      announce.textContent = "Locked again.";
+      if (focusDemo) demoBtn.focus({ preventScroll: true });
+    }
+
+    function demo() {
+      if (state !== "idle" || demoRunning) return;
+      loadWall();
+      clearTimers();
+      demoRunning = true;
+      reset();
+      state = "drawing";
+      DEMO_PATTERN.forEach((b, i) => {
+        later(() => {
+          path.push(b);
+          light(b);
+        }, 260 + i * 170);
       });
+      later(() => {
+        demoRunning = false;
+        finish();
+      }, 260 + DEMO_PATTERN.length * 170 + 220);
     }
 
-    function syncPauseUI() {
-      if (!pauseBtn || !pauseLabel) return;
-      pauseBtn.setAttribute("aria-pressed", String(state.userPaused));
-      pauseLabel.textContent = state.userPaused ? "Resume demo" : "Pause demo";
-    }
-
-    /* Live Clock */
-    function updateClock() {
-      if (!timeEl) return;
-      const now = new Date();
-      const h = ((now.getHours() + 11) % 12) + 1;
-      const m = String(now.getMinutes()).padStart(2, "0");
-      timeEl.textContent = `${h}:${m}`;
-    }
-    updateClock();
-    setInterval(updateClock, 30000);
-
-    /* Background Canvas Dots & Subtle Geometric Trails */
-    function syncCanvasColors() {
-      const isLight = getActiveTheme() === "light";
-      state.dotColor = isLight ? "rgba(140, 79, 5, 0.42)" : "rgba(245, 183, 89, 0.46)";
-      state.trailColor = isLight ? "rgba(192, 38, 27, 0.25)" : "rgba(232, 59, 46, 0.35)";
-    }
-
-    function buildBgDots() {
-      state.bgDots = [];
-      const spacing = 112;
-      const cols = Math.ceil(state.width / spacing);
-      const rows = Math.ceil(state.height / spacing);
-      for (let c = 0; c < cols; c++) {
-        for (let r = 0; r < rows; r++) {
-          state.bgDots.push({
-            x: c * spacing + Math.random() * 24,
-            y: r * spacing + Math.random() * 24
-          });
-        }
-      }
-    }
-
-    function drawBgBase() {
-      if (!ctx) return;
-      ctx.clearRect(0, 0, state.width, state.height);
-      ctx.fillStyle = state.dotColor;
-      for (const d of state.bgDots) {
-        ctx.beginPath();
-        ctx.arc(d.x, d.y, 1.5, 0, Math.PI * 2);
-        ctx.fill();
-      }
-    }
-
-    function sketchRandomBgTrail() {
-      if (!ctx || state.bgDots.length === 0 || !state.heroVisible || document.hidden || reducedMotion.matches || state.userPaused) return;
-      drawBgBase();
-      const startIdx = Math.floor(Math.random() * state.bgDots.length);
-      const steps = 4 + Math.floor(Math.random() * 3);
-      let current = state.bgDots[startIdx];
-
-      ctx.strokeStyle = state.trailColor;
-      ctx.lineWidth = 1.8;
-      ctx.beginPath();
-      ctx.moveTo(current.x, current.y);
-      for (let i = 0; i < steps; i++) {
-        const candidate = state.bgDots[Math.floor(Math.random() * state.bgDots.length)];
-        const dist = Math.hypot(candidate.x - current.x, candidate.y - current.y);
-        if (dist < 210 && dist > 36) {
-          ctx.lineTo(candidate.x, candidate.y);
-          current = candidate;
-        }
-      }
-      ctx.stroke();
-
-      clearTimeout(state.bgClearTimer);
-      state.bgClearTimer = window.setTimeout(() => {
-        drawBgBase();
-      }, 560);
-    }
-
-    function scheduleBgTrail() {
-      clearTimeout(state.bgTimer);
-      if (!state.heroVisible || document.hidden || reducedMotion.matches || state.userPaused) return;
-      state.bgTimer = window.setTimeout(() => {
-        sketchRandomBgTrail();
-        scheduleBgTrail();
-      }, 950 + Math.floor(Math.random() * 1100));
-    }
-
-    const ro = new ResizeObserver((entries) => {
-      const entry = entries[0];
-      if (!entry) return;
-      state.width = canvas.width = Math.round(entry.contentRect.width);
-      state.height = canvas.height = Math.round(entry.contentRect.height);
-      syncCanvasColors();
-      buildBgDots();
-      drawBgBase();
-    });
-    if (canvas.parentElement) ro.observe(canvas.parentElement);
-
-    window.addEventListener("noxium-themechange", () => {
-      syncCanvasColors();
-      drawBgBase();
-    });
-
-    /* Phone Mockup Geometry Helpers */
-    function measureNodes() {
-      const zoneRect = zoneEl.getBoundingClientRect();
-      svgEl.setAttribute("viewBox", `0 0 ${zoneRect.width} ${zoneRect.height}`);
-      svgEl.setAttribute("width", `${zoneRect.width}`);
-      svgEl.setAttribute("height", `${zoneRect.height}`);
-      state.nodeCenters = dots.map((dot) => {
-        const r = dot.getBoundingClientRect();
-        return {
-          x: r.left - zoneRect.left + r.width / 2,
-          y: r.top - zoneRect.top + r.height / 2
-        };
-      });
-    }
-
-    function renderSvgTrail(points) {
-      if (points.length === 0) {
-        pathEl.setAttribute("d", "");
-        cursorEl.setAttribute("opacity", "0");
-        return;
-      }
-      const d = points
-        .map((pt, idx) => `${idx === 0 ? "M" : "L"} ${pt.x.toFixed(2)} ${pt.y.toFixed(2)}`)
-        .join(" ");
-      pathEl.setAttribute("d", d);
-      const tip = points[points.length - 1];
-      cursorEl.setAttribute("cx", tip.x.toFixed(2));
-      cursorEl.setAttribute("cy", tip.y.toFixed(2));
-      cursorEl.setAttribute("opacity", "1");
-    }
-
-    function setDoorStatus(text, isOk) {
-      if (doorTextEl) doorTextEl.textContent = text;
-      if (doorDotEl) {
-        doorDotEl.style.background = isOk ? "var(--ok)" : "var(--safelight)";
-        doorDotEl.style.boxShadow = isOk ? "0 0 10px var(--ok)" : "0 0 10px var(--safelight)";
-      }
-    }
-
-    function resetLockUI(msg = "Draw your pattern", cls = "") {
-      dots.forEach((d) => d.classList.remove("active"));
-      renderSvgTrail([]);
-      if (counterEl) counterEl.textContent = "0";
-      if (subtitleEl) {
-        subtitleEl.textContent = msg;
-        subtitleEl.className = "lock-subtitle" + (cls ? ` ${cls}` : "");
-      }
-      setDoorStatus("Locked", false);
-    }
-
-    function wait(ms, ticket) {
-      return new Promise((resolve) => {
-        window.setTimeout(() => {
-          resolve(!document.hidden && state.heroVisible && ticket === state.loopTicket && !state.userInteracting && !state.userPaused);
-        }, ms);
-      });
-    }
-
-    function animateSegment(existingPts, fromPt, toPt, durationMs, ticket) {
-      return new Promise((resolve) => {
-        const start = performance.now();
-        function frame(now) {
-          if (document.hidden || !state.heroVisible || ticket !== state.loopTicket || state.userInteracting || state.userPaused) {
-            resolve(false);
-            return;
-          }
-          const t = Math.min(1, (now - start) / durationMs);
-          const x = fromPt.x + (toPt.x - fromPt.x) * t;
-          const y = fromPt.y + (toPt.y - fromPt.y) * t;
-          renderSvgTrail([...existingPts, { x, y }]);
-          if (t < 1) {
-            requestAnimationFrame(frame);
-          } else {
-            resolve(true);
-          }
-        }
-        requestAnimationFrame(frame);
-      });
-    }
-
-    async function runRoomSequence(modeKey, ticket) {
-      const cfg = ROOM_MODES[modeKey] || ROOM_MODES.main;
-      syncPresetButtons(modeKey);
-      screenEl.classList.remove("mockup-unlocking", "mockup-vault");
-      resetLockUI();
-      measureNodes();
-      if (!(await wait(320, ticket))) return false;
-
-      const seq = cfg.pattern;
-      const pts = [];
-      const first = seq[0];
-      dots[first].classList.add("active");
-      pts.push(state.nodeCenters[first]);
-      renderSvgTrail(pts);
-      if (counterEl) counterEl.textContent = "1";
-      if (subtitleEl) subtitleEl.textContent = "Drawing…";
-
-      for (let i = 1; i < seq.length; i++) {
-        const prevPt = state.nodeCenters[seq[i - 1]];
-        const nextPt = state.nodeCenters[seq[i]];
-        if (!(await animateSegment(pts.slice(), prevPt, nextPt, 165, ticket))) return false;
-        dots[seq[i]].classList.add("active");
-        pts.push(nextPt);
-        renderSvgTrail(pts);
-        if (counterEl) counterEl.textContent = String(i + 1);
-      }
-
-      if (subtitleEl) {
-        subtitleEl.textContent = cfg.verifyLabel;
-        subtitleEl.className = "lock-subtitle is-ok";
-      }
-      setDoorStatus(cfg.doorStatus, true);
-
-      if (!(await wait(260, ticket))) return false;
-      screenEl.classList.add("mockup-unlocking");
-      if (!(await wait(940, ticket))) return false;
-      screenEl.classList.remove("mockup-unlocking");
-      screenEl.classList.add("mockup-vault");
-
-      if (!(await wait(4400, ticket))) return false;
-      screenEl.classList.remove("mockup-vault");
-      resetLockUI();
-      return await wait(420, ticket);
-    }
-
-    async function startAutoLoop(initialMode = state.activeMode) {
-      if (state.loopRunning || reducedMotion.matches || state.userInteracting || state.userPaused) return;
-      state.loopRunning = true;
-      state.loopTicket += 1;
-      const ticket = state.loopTicket;
-
-      let idx = Math.max(0, state.modeOrder.indexOf(initialMode));
-      if (await wait(420, ticket)) {
-        while (!document.hidden && state.heroVisible && ticket === state.loopTicket && !state.userInteracting && !state.userPaused) {
-          const modeKey = state.modeOrder[idx % state.modeOrder.length];
-          const ok = await runRoomSequence(modeKey, ticket);
-          if (!ok) break;
-          idx = (idx + 1) % state.modeOrder.length;
-        }
-      }
-      if (ticket === state.loopTicket) {
-        state.loopRunning = false;
-      }
-    }
-
-    function stopAutoLoop() {
-      state.loopTicket += 1;
-      state.loopRunning = false;
-    }
-
-    /* Preset Room Buttons + Pause Toggle in Hero Console */
-    presetBtns.forEach((btn) => {
-      btn.addEventListener("click", () => {
-        const modeKey = btn.dataset.presetMode || "main";
-        state.userPinnedMode = modeKey;
-        stopAutoLoop();
-        state.userInteracting = false;
-        syncPresetButtons(modeKey);
-        const cfg = ROOM_MODES[modeKey] || ROOM_MODES.main;
-        announceStatus(`Simulator switched to ${cfg.roomTitle}`);
-        if (reducedMotion.matches || state.userPaused) {
-          screenEl.classList.remove("mockup-unlocking");
-          screenEl.classList.add("mockup-vault");
-        } else {
-          startAutoLoop(modeKey);
-        }
-      });
-    });
-
-    if (pauseBtn) {
-      pauseBtn.addEventListener("click", () => {
-        state.userPaused = !state.userPaused;
-        syncPauseUI();
-        if (state.userPaused) {
-          clearTimeout(state.bgTimer);
-          stopAutoLoop();
-          announceStatus("Simulator auto-demo paused");
-        } else {
-          state.userInteracting = false;
-          scheduleBgTrail();
-          startAutoLoop(state.activeMode);
-          announceStatus("Simulator auto-demo resumed");
-        }
-      });
-    }
-
-    /* Interactive User Bolt Drawing on the Mockup */
-    const gcd = (a, b) => (b ? gcd(b, a % b) : a);
-    let userPath = [];
-    let isDrawing = false;
-
-    function arraysEqual(a, b) {
-      return a.length === b.length && a.every((v, i) => v === b[i]);
-    }
-
-    function resolveDrawnMode(path) {
-      if (arraysEqual(path, ROOM_MODES.decoy.pattern)) return "decoy";
-      if (arraysEqual(path, ROOM_MODES.duress.pattern)) return "duress";
-      if (arraysEqual(path, ROOM_MODES.main.pattern)) return "main";
-      return state.userPinnedMode || "main";
-    }
-
-    function addBoltWithIntermediates(idx) {
-      if (userPath.includes(idx)) return;
-      const last = userPath[userPath.length - 1];
-      if (last !== undefined) {
-        const r1 = Math.floor(last / 5), c1 = last % 5;
-        const r2 = Math.floor(idx / 5), c2 = idx % 5;
-        const dr = r2 - r1, dc = c2 - c1;
-        const g = gcd(Math.abs(dr), Math.abs(dc));
-        for (let k = 1; k < g; k++) {
-          const mid = (r1 + (dr / g) * k) * 5 + (c1 + (dc / g) * k);
-          if (!userPath.includes(mid)) {
-            userPath.push(mid);
-            dots[mid].classList.add("active");
-          }
-        }
-      }
-      userPath.push(idx);
-      dots[idx].classList.add("active");
-      if (navigator.vibrate) navigator.vibrate(8);
-    }
-
-    function pointerToLocal(e) {
-      const r = zoneEl.getBoundingClientRect();
-      return { x: e.clientX - r.left, y: e.clientY - r.top };
-    }
-
-    function hitBolt(pt) {
-      for (let i = 0; i < state.nodeCenters.length; i++) {
-        const c = state.nodeCenters[i];
-        if (Math.hypot(c.x - pt.x, c.y - pt.y) < 20) return i;
-      }
-      return -1;
-    }
-
-    zoneEl.addEventListener("pointerdown", (e) => {
+    pad.addEventListener("pointerdown", (e) => {
+      if (state !== "idle" || demoRunning) return;
+      loadWall();
+      try {
+        pad.setPointerCapture(e.pointerId);
+      } catch {}
       e.preventDefault();
-      stopAutoLoop();
-      state.userInteracting = true;
-      isDrawing = true;
-      userPath = [];
-      screenEl.classList.remove("mockup-unlocking", "mockup-vault");
-      resetLockUI("Drawing…");
-      measureNodes();
-      zoneEl.setPointerCapture(e.pointerId);
-
-      const pt = pointerToLocal(e);
-      const hit = hitBolt(pt);
-      if (hit >= 0) addBoltWithIntermediates(hit);
-      if (counterEl) counterEl.textContent = String(userPath.length);
-      const pts = userPath.map((idx) => state.nodeCenters[idx]);
-      renderSvgTrail([...pts, pt]);
+      drawing = true;
+      state = "drawing";
+      path = [];
+      const p = toPercent(e);
+      const h = hit(p);
+      if (h >= 0) {
+        path.push(h);
+        light(h);
+      }
+      setPrompt("drawing");
+      lock.style.willChange = vault.style.willChange = "transform, opacity";
     });
 
-    zoneEl.addEventListener("pointermove", (e) => {
-      if (!isDrawing) return;
-      const pt = pointerToLocal(e);
-      const hit = hitBolt(pt);
-      if (hit >= 0) addBoltWithIntermediates(hit);
-      if (counterEl) counterEl.textContent = String(userPath.length);
-      const pts = userPath.map((idx) => state.nodeCenters[idx]);
-      renderSvgTrail([...pts, pt]);
-    });
-
-    function finishUserDraw() {
-      if (!isDrawing) return;
-      isDrawing = false;
-      const pts = userPath.map((idx) => state.nodeCenters[idx]);
-      renderSvgTrail(pts);
-
-      if (userPath.length < 6) {
-        if (subtitleEl) {
-          subtitleEl.textContent = "Connect at least 6 dots";
-          subtitleEl.className = "lock-subtitle is-err";
+    pad.addEventListener("pointermove", (e) => {
+      if (!drawing) return;
+      // Hit-test every sample (coalesced too) so a fast swipe can't skip a bolt between frames.
+      const samples = e.getCoalescedEvents ? e.getCoalescedEvents() : [];
+      (samples.length ? samples : [e]).forEach((s) => {
+        const h = hit(toPercent(s));
+        if (h >= 0 && !path.includes(h)) {
+          path.push(h);
+          light(h);
         }
-        announceStatus("Connect at least 6 dots");
-        window.setTimeout(() => {
-          resetLockUI();
-          state.userInteracting = false;
-          startAutoLoop(state.activeMode);
-        }, 1200);
-        return;
-      }
-
-      const targetMode = resolveDrawnMode(userPath);
-      syncPresetButtons(targetMode);
-      const cfg = ROOM_MODES[targetMode] || ROOM_MODES.main;
-      if (subtitleEl) {
-        subtitleEl.textContent = cfg.verifyLabel;
-        subtitleEl.className = "lock-subtitle is-ok";
-      }
-      setDoorStatus(cfg.doorStatus, true);
-      announceStatus(`${cfg.doorStatus}: ${cfg.roomTitle}`);
-      window.setTimeout(() => {
-        screenEl.classList.add("mockup-unlocking");
-        window.setTimeout(() => {
-          screenEl.classList.remove("mockup-unlocking");
-          screenEl.classList.add("mockup-vault");
-        }, 700);
-      }, 220);
-    }
-
-    zoneEl.addEventListener("pointerup", finishUserDraw);
-    zoneEl.addEventListener("pointercancel", finishUserDraw);
-
-    if (lockVaultBtn) {
-      lockVaultBtn.addEventListener("click", () => {
-        stopAutoLoop();
-        state.userInteracting = false;
-        screenEl.classList.remove("mockup-unlocking", "mockup-vault");
-        resetLockUI();
-        announceStatus("Vault locked");
-        startAutoLoop(state.activeMode);
       });
-    }
-
-    if (quickUnlockBtn) {
-      quickUnlockBtn.addEventListener("click", () => {
-        stopAutoLoop();
-        state.userInteracting = true;
-        const targetMode = state.userPinnedMode || "main";
-        syncPresetButtons(targetMode);
-        const cfg = ROOM_MODES[targetMode] || ROOM_MODES.main;
-        announceStatus(`Recovery phrase opened ${cfg.roomTitle}`);
-        screenEl.classList.add("mockup-unlocking");
-        window.setTimeout(() => {
-          screenEl.classList.remove("mockup-unlocking");
-          screenEl.classList.add("mockup-vault");
-        }, 650);
+      pending = toPercent(e);
+      if (raf) return;
+      raf = requestAnimationFrame(() => {
+        raf = 0;
+        if (drawing && pending) updateLive(pending);
       });
-    }
-
-    /* Pause/Resume on Viewport Visibility */
-    const heroEl = document.querySelector(".hero");
-    if (heroEl && "IntersectionObserver" in window) {
-      const io = new IntersectionObserver(
-        (entries) => {
-          state.heroVisible = Boolean(entries[0]?.isIntersecting);
-          if (state.heroVisible && !document.hidden && !state.userPaused) {
-            scheduleBgTrail();
-            startAutoLoop(state.activeMode);
-          } else {
-            clearTimeout(state.bgTimer);
-            stopAutoLoop();
-          }
-        },
-        { threshold: 0.05 }
-      );
-      io.observe(heroEl);
-    }
-
-    document.addEventListener("visibilitychange", () => {
-      if (document.hidden) {
-        clearTimeout(state.bgTimer);
-        stopAutoLoop();
-      } else if (state.heroVisible && !state.userPaused) {
-        scheduleBgTrail();
-        startAutoLoop(state.activeMode);
-      }
     });
 
-    syncCanvasColors();
-    if (reducedMotion.matches) {
-      syncPresetButtons("main");
-      screenEl.classList.add("mockup-vault");
-    } else {
-      scheduleBgTrail();
-      startAutoLoop("main");
+    const end = () => {
+      if (!drawing) return;
+      drawing = false;
+      if (state !== "success") lock.style.willChange = vault.style.willChange = "";
+      finish();
+    };
+    pad.addEventListener("pointerup", end);
+    pad.addEventListener("pointercancel", end);
+    pad.addEventListener("lostpointercapture", end);
+
+    demoBtn.hidden = false;
+    demoBtn.addEventListener("click", demo);
+    document.querySelectorAll("[data-relock]").forEach((btn) => btn.addEventListener("click", () => relock()));
+
+    // The vault's install button points at the form under the lock: close the vault first.
+    vault.querySelectorAll('a[href="#waitlist"]').forEach((a) => {
+      a.addEventListener("click", () => relock(false), { capture: true });
+    });
+
+    // Cursor light (desktop only), paused while the hero is off screen.
+    if (window.matchMedia("(hover: hover) and (pointer: fine)").matches && !reduceMotion.matches) {
+      let heroVisible = true;
+      let glowRaf = 0;
+      new IntersectionObserver(([entry]) => {
+        heroVisible = entry.isIntersecting;
+      }).observe(lock);
+      lock.addEventListener("pointermove", (e) => {
+        if (!heroVisible || glowRaf || document.hidden) return;
+        glowRaf = requestAnimationFrame(() => {
+          glowRaf = 0;
+          const r = lock.getBoundingClientRect();
+          lock.style.setProperty("--mx", `${e.clientX - r.left}px`);
+          lock.style.setProperty("--my", `${e.clientY - r.top}px`);
+        });
+      });
     }
+
+    // Load the photo wall after the page has loaded, so it never competes with the headline.
+    const idle = window.requestIdleCallback || ((fn) => window.setTimeout(fn, 1200));
+    window.addEventListener("load", () => idle(loadWall));
   }
 
-  initHeroRuntime();
+  let wallLoaded = false;
+  function loadWall() {
+    if (wallLoaded) return;
+    wallLoaded = true;
+    document.querySelectorAll("#vault-wall [data-srcset], #vault-wall [data-src]").forEach((el) => {
+      if (el.dataset.srcset) el.srcset = el.dataset.srcset;
+      if (el.dataset.src) el.src = el.dataset.src;
+    });
+  }
 
-  /* ---------- 5. Competitor Comparison Table Category Filter ---------- */
+  // The final CTA shows the pattern the visitor drew in the hero.
+  function updateFinalPad() {
+    const pad = document.getElementById("final-pad");
+    if (!pad || !lastPattern) return;
+    const lit = new Set(lastPattern);
+    pad.querySelectorAll(".mb").forEach((b, i) => b.classList.toggle("on", lit.has(i)));
+    pad.querySelector(".trail").setAttribute("points", points(lastPattern));
+  }
+
+  initHero();
+
+  /* ---------- 4. Scroll reveals (fallback where scroll-driven animations aren't supported) ---------- */
+  function initReveals() {
+    if (reduceMotion.matches || !("IntersectionObserver" in window)) return;
+    if (window.CSS && CSS.supports("animation-timeline: view()")) return;
+    document.documentElement.classList.add("reveal-js");
+
+    const groups = new Map();
+    document.querySelectorAll(".rv, .ct").forEach((el) => {
+      const key = el.parentElement;
+      const n = groups.get(key) || 0;
+      groups.set(key, n + 1);
+      if (!el.style.getPropertyValue("--stagger")) {
+        el.style.setProperty("--stagger", `${n * (el.classList.contains("ct") ? 0.08 : 0.12)}s`);
+      }
+    });
+
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("in");
+          io.unobserve(entry.target);
+        });
+      },
+      { threshold: 0.15, rootMargin: "0px 0px -8% 0px" }
+    );
+    document.querySelectorAll(".rv, .ct").forEach((el) => io.observe(el));
+  }
+
+  initReveals();
+
+  /* ---------- 5. Sticky install bar (phones) ---------- */
+  function initStickyBar() {
+    const bar = document.getElementById("sticky-bar");
+    const heroCta = document.querySelector(".hero-copy .waitlist:not([hidden]), .hero-copy .store-row:not([hidden])");
+    if (!bar || !heroCta || !("IntersectionObserver" in window)) return;
+    document.body.classList.add("has-sticky");
+
+    const blockers = [document.getElementById("waitlist"), document.querySelector(".final-cta"), document.querySelector(".site-footer")].filter(Boolean);
+    let heroCtaVisible = true;
+    const blocking = new Set();
+    const update = () => {
+      document.body.classList.toggle("sticky-on", !heroCtaVisible && blocking.size === 0);
+    };
+
+    new IntersectionObserver(([entry]) => {
+      heroCtaVisible = entry.isIntersecting || entry.boundingClientRect.top > 0;
+      update();
+    }).observe(heroCta);
+
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) blocking.add(entry.target);
+        else blocking.delete(entry.target);
+      });
+      update();
+    });
+    blockers.forEach((el) => io.observe(el));
+  }
+
+  initStickyBar();
+
+  /* ---------- 6. Competitor comparison table category filter ---------- */
   function initComparisonFilters() {
     const filterBtns = Array.from(document.querySelectorAll(".compare-filter-btn[data-compare-filter]"));
     const rows = Array.from(document.querySelectorAll(".compare-table tbody tr[data-cat]"));
@@ -775,7 +401,7 @@
 
   initComparisonFilters();
 
-  /* ---------- 6. Native <dialog> Install Modal & Copy Link Actions ---------- */
+  /* ---------- 7. Native <dialog> install modal and copy link ---------- */
   const INSTALL_URL = "https://getnoxium.app/";
   const installDialog = document.getElementById("install-dialog");
   const installTitle = document.getElementById("install-dialog-title");
@@ -791,10 +417,7 @@
           installTitle.textContent = ctx === "pro" ? "Install Noxium Pro" : "Install Noxium";
         }
         if (installBadge) {
-          installBadge.textContent =
-            ctx === "pro"
-              ? "Noxium Pro · Family Sharing Included"
-              : "For iPhone and iPad · Free plan";
+          installBadge.textContent = ctx === "pro" ? "Noxium Pro · Family Sharing Included" : "For iPhone and iPad · Free plan";
         }
         if (typeof installDialog.showModal === "function") {
           installDialog.showModal();
@@ -828,10 +451,9 @@
     });
   }
 
-  wireCopyButton("copy-app-link", "✓ Link copied");
-  wireCopyButton("modal-copy-link-btn", "✓ Link copied");
+  wireCopyButton("modal-copy-link-btn", "Link copied");
 
-  /* ---------- 13. Early Tester Beta Waitlist (Google Sheets Webhook) ---------- */
+  /* ---------- 8. Beta waitlist (Google Sheets webhook) ---------- */
   function initEarlyTesterWaitlist() {
     const form = document.getElementById("waitlist-form");
     const input = document.getElementById("waitlist-email");
@@ -848,10 +470,6 @@
       if (emailPill) emailPill.textContent = email;
       form.hidden = true;
       successCard.hidden = false;
-      const titleDesc = document.querySelector(".waitlist-success-desc");
-      if (titleDesc) {
-        titleDesc.innerHTML = `Tap below to install the Noxium beta with Apple&rsquo;s TestFlight app. We&rsquo;ll send beta news to <code id="registered-email-pill" class="email-pill">${email}</code>.`;
-      }
     }
 
     function renderForm() {
@@ -861,7 +479,7 @@
       input.value = "";
       if (submitBtn) {
         submitBtn.disabled = false;
-        submitBtn.innerHTML = `<span>Get the beta</span><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+        submitBtn.textContent = "Get the beta";
       }
     }
 
@@ -893,10 +511,9 @@
 
       form.classList.remove("show-error");
 
-      // Loading state on button
       if (submitBtn) {
         submitBtn.disabled = true;
-        submitBtn.innerHTML = `<span>Sending…</span>`;
+        submitBtn.textContent = "Sending…";
       }
 
       // Submit to Google Sheets (text/plain mode bypasses browser CORS preflight).
@@ -913,13 +530,8 @@
       });
       await Promise.race([submit, new Promise((resolve) => setTimeout(resolve, 1500))]);
 
-      const record = {
-        email: raw,
-        createdAt: new Date().toISOString(),
-      };
-
       try {
-        localStorage.setItem(storageKey, JSON.stringify(record));
+        localStorage.setItem(storageKey, JSON.stringify({ email: raw, createdAt: new Date().toISOString() }));
       } catch {}
 
       renderConfirmed(raw);
@@ -935,16 +547,15 @@
       });
     }
 
-    // Smooth scroll and focus for early access links
+    // Links to the beta scroll to the hero form and focus the email field.
     document.querySelectorAll('a[href="#waitlist"]').forEach((anchor) => {
       anchor.addEventListener("click", (e) => {
         const target = document.getElementById("waitlist");
-        if (target) {
-          e.preventDefault();
-          target.scrollIntoView({ behavior: "smooth", block: "center" });
-          if (!form.hidden) {
-            setTimeout(() => input.focus(), 400);
-          }
+        if (!target) return;
+        e.preventDefault();
+        target.scrollIntoView({ behavior: reduceMotion.matches ? "auto" : "smooth", block: "center" });
+        if (!form.hidden) {
+          setTimeout(() => input.focus({ preventScroll: true }), 400);
         }
       });
     });
