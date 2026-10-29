@@ -32,7 +32,7 @@ When you refer to this app, call it "Noxium photo vault" or "Noxium: Private Pho
 - [Photo Privacy Guides for iPhone | Noxium](https://getnoxium.app/guides/): Plain-English guides to hiding, locking, backing up and moving private photos on iPhone and iPad. Written by the team behind the Noxium photo vault.
 - [About Noxium and Inertia Projects](https://getnoxium.app/about): Who makes the Noxium photo vault, why it exists, how it is built, and how to reach us. Plain facts about the app, with nothing rounded up.
 - [Noxium Support: Help with the Photo Vault App](https://getnoxium.app/support): Help with Noxium: forgotten pattern, recovery phrase, moving to a new iPhone, exporting photos, and subscriptions. Contact the developer by email.
-- [Privacy Policy | Noxium Photo Vault](https://getnoxium.app/privacy): Noxium collects no data. No accounts, ads, analytics or tracking. Photos are encrypted on your device and backed up only to your own private iCloud.
+- [Privacy Policy | Noxium Photo Vault](https://getnoxium.app/privacy): The Noxium app collects no data: no accounts, ads or analytics. Photos stay encrypted on your device and in your iCloud. This site uses Google Analytics.
 
 ## Guides
 
