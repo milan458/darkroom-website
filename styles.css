@@ -651,8 +651,15 @@ main:focus { outline: none; }
   animation: line-up 1s var(--ease-out) both;
 }
 
-.hero-title .ln:nth-child(1) > span { animation-delay: .10s; }
-.hero-title .ln:nth-child(2) > span { animation-delay: .22s; font-style: italic; }
+.hero-title .ln:nth-of-type(2) > span { animation-delay: .10s; }
+.hero-title .ln:nth-of-type(3) > span { animation-delay: .22s; font-style: italic; }
+
+/* Keyword line inside the h1, styled as an eyebrow so the headline reads the same. */
+.hero-title .hero-kicker {
+  margin-bottom: 18px;
+  font-family: var(--font-sans);
+  letter-spacing: .16em;
+}
 
 .hero-lede {
   max-width: 36ch;

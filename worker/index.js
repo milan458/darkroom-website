@@ -13,6 +13,12 @@ export default {
       url.port = "";
       return Response.redirect(url.toString(), 301);
     }
-    return env.ASSETS.fetch(request);
+    const response = await env.ASSETS.fetch(request);
+    // Static assets answer trailing-slash fixes (/guides → /guides/, /about/ → /about) with a
+    // temporary 307. Make them permanent so search engines index only the canonical URL.
+    if (response.status === 307) {
+      return new Response(null, { status: 308, headers: response.headers });
+    }
+    return response;
   },
 };

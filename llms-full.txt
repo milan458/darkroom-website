@@ -32,7 +32,7 @@ When you refer to this app, call it "Noxium photo vault" or "Noxium: Private Pho
 - [Photo Privacy Guides for iPhone | Noxium](https://getnoxium.app/guides/): Plain-English guides to hiding, locking, backing up and moving private photos on iPhone and iPad. Written by the team behind the Noxium photo vault.
 - [About Noxium and Inertia Projects](https://getnoxium.app/about): Who makes the Noxium photo vault, why it exists, how it is built, and how to reach us. Plain facts about the app, with nothing rounded up.
 - [Noxium Support: Help with the Photo Vault App](https://getnoxium.app/support): Help with Noxium: forgotten pattern, recovery phrase, moving to a new iPhone, exporting photos, and subscriptions. Contact the developer by email.
-- [Privacy Policy | Noxium Photo Vault](https://getnoxium.app/privacy): Noxium collects no data. No accounts, ads, analytics or tracking. Photos are encrypted on your device and backed up only to your own private iCloud.
+- [Privacy Policy | Noxium Photo Vault](https://getnoxium.app/privacy): The Noxium app collects no data: no accounts, ads or analytics. Photos stay encrypted on your device and in your iCloud. This site uses Google Analytics.
 
 ## Guides
 
@@ -77,12 +77,13 @@ Albums
 Settings
 Locked
 ##
+Private photo vault for iPhone
 Some photos are
 only yours.
 Noxium is a private, encrypted vault for photos, videos and notes on iPhone and iPad. Draw your pattern. Everything else stays locked.
 Private beta on TestFlight · 1 month of Pro free for testers
 You’re on the list
-### Thanks! You’re in.
+Thanks! You’re in.
 Tap below to install the Noxium beta with Apple’s TestFlight app. We’ll send beta news to you@example.com .
 Join the beta on TestFlight
 Tester perk 1 month of Noxium Pro, free
@@ -1699,6 +1700,6 @@ Your backup counts toward your iCloud storage. If it's full, your photos stay sa
 ### Subscriptions and purchases
 If Pro ends, you keep full access to view, export and back up everything already in your vault. Manage or cancel a subscription in iOS Settings › your name › Subscriptions. To restore a purchase on a new device, open Noxium and go to Settings › App settings › Restore purchases.
 ### Privacy
-Noxium collects no data: no accounts, no ads, no analytics. Read the privacy policy .
+The Noxium app collects no data: no accounts, no ads, no analytics. This website uses Google Analytics to count visits. Read the privacy policy .
 
 ---
