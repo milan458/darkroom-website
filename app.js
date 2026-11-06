@@ -464,6 +464,16 @@
     const storageKey = "darkroom_early_tester_roster";
     const GOOGLE_SHEETS_URL = "https://script.google.com/macros/s/AKfycbx-G1s-YefuipSRcmtC40tX_UBV45CNvM_gRZ93Xh-hv2e89fh6nKLZN9NzOHwwhDvW/exec";
 
+    // Live mode (site.json "release": "live") hides the beta block. The sign-up is closed, so
+    // forget any email this browser saved when its owner joined the beta.
+    const waitlistBlock = document.getElementById("waitlist");
+    if (waitlistBlock && waitlistBlock.hidden) {
+      try {
+        localStorage.removeItem(storageKey);
+      } catch {}
+      return;
+    }
+
     if (!form || !input || !successCard) return;
 
     function renderConfirmed(email) {
