@@ -1,7 +1,7 @@
 {
   "_readme": "Source of truth for getnoxium.app. Edit this file, then run: python3 tools/build.py. See CLAUDE.md and SEO-PLAYBOOK.md.",
-  "release": "waitlist",
-  "appStoreId": "",
+  "release": "live",
+  "appStoreId": "6824616093",
   "providerToken": "",
   "gaMeasurementId": "G-WWNMHW99TP",
   "indexNowKey": "7d2d95383a4c423d99b6b0cb4c75ca88",

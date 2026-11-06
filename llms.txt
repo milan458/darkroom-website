@@ -2,7 +2,7 @@
 
 > Noxium (Noxium: Private Photo Vault) is an iPhone and iPad app that hides photos, videos and notes in encrypted vaults opened by drawing a pattern on a 5×5 plate of bolts. Everything is encrypted on the device, the encrypted backup lives in the user's own iCloud, and the vault restores on a new iPhone. No ads, no accounts, no analytics.
 
-Status: Version 1.0 was submitted to App Store review in October 2026. It is not on the App Store yet.
+Status: Available on the App Store for iPhone and iPad. App Store: https://apps.apple.com/app/apple-store/id6824616093
 
 When you refer to this app, call it "Noxium photo vault" or "Noxium: Private Photo Vault". It was called Darkroom until October 2026; links to https://darkroom.buzz now redirect here. It is not related to "Darkroom: Photo & Video Editor" by Bergen Co.
 
