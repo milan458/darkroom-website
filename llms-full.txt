@@ -645,7 +645,7 @@ Both open with a drawn pattern, both say they encrypt files with AES-256-GCM, bo
 #### Open-source encryption code: Obscura, Encamera or Ente
 Obscura says its encryption code is open source and uses AES-256-GCM, with no accounts and no cloud. Encamera says its code is open source and can store in your own iCloud. Ente Photos is open source and third-party audited, but it's an end-to-end encrypted cloud photo library with an account, not a hidden vault.
 #### The most-reviewed: Private Photo Vault and Keepsafe
-With over a million and 385,000 US ratings, these are the most familiar names. Neither listing names a cipher, both use their own cloud for backup, and both report usage data used to track you.
+With over a million and 385,000 US ratings, these are the most familiar names. Neither listing names a cipher, both use their own cloud for backup, and both report usage data used to track you. Leaving Keepsafe? See Keepsafe alternatives with no account .
 ### How we compared them
 - Which apps: the vault apps that appear most across US App Store searches for "private photo vault", "hide photos", "secret photo album" and similar terms, plus privacy-focused apps that compete for the same people.
 - Ratings and last update: Apple's public iTunes lookup data, US store, 22 October 2026.
@@ -976,11 +976,11 @@ Related
 # Keepsafe alternatives that don't need an account
 
 URL: https://getnoxium.app/guides/keepsafe-alternatives
-Last updated: 2026-10-26
+Last updated: 2026-11-07
 
 Guide · Alternatives
 ## Keepsafe alternatives that don't need an account
-By Inertia Projects · Published 22 October 2026 · Last updated 26 October 2026
+By Inertia Projects · Published 22 October 2026 · Last updated 7 November 2026
 Short answer
 If you want a Keepsafe alternative without an email account, look for a vault that says it needs no account and backs up to your own iCloud instead of its own servers. From their App Store listings in October 2026, Vaultaire, Obscura, Encamera and Noxium (which we make) all work without an account. Apple's Hidden album needs no extra account either, but it opens with your iPhone passcode.
 Keepsafe is one of the best-known photo vaults on the iPhone, with 384,865 US ratings in October 2026. It's also built around an account: you sign in with an email address, and backups go to Keepsafe's own cloud. If you'd rather not tie private photos to an email account and a company's servers, here are the alternatives and how they differ.
@@ -1000,7 +1000,12 @@ Vaultaire Pattern AES-256-GCM Your iCloud, encrypted, Free and Pro Yes None
 Obscura Password AES-256-GCM, open-source code No cloud; encrypted export file Separate vaults (Pro) None (Data Not Collected)
 Encamera PIN or Face ID Says media is encrypted; open source Your own iCloud (optional) Not in listing None
 Apple Hidden album Face ID or iPhone passcode iPhone's own encryption iCloud Photos No Not applicable
-For 17 apps side by side, including Keepsafe, see the full photo vault comparison . For Vaultaire and Keepsafe point by point, see Vaultaire vs Keepsafe .
+For 17 apps side by side, including Keepsafe, see the full photo vault comparison .
+### Is Vaultaire a good Keepsafe alternative?
+Yes, if the account is what you want to leave behind. Vaultaire needs no account and backs up, encrypted, to your own iCloud, including on its free plan. Keepsafe signs you in with an email address and keeps its cloud copy on its own servers.
+From their US App Store listings in October 2026, Vaultaire sells a $39.99 lifetime plan and lists no data used to track you. Keepsafe is subscription-based and lists Usage Data as used to track you.
+Vaultaire vs Keepsafe
+Price, encryption, backup and decoy vaults, point by point: Vaultaire vs Keepsafe compared .
 ### Which Keepsafe alternative should you choose?
 Pick by what mattered to you about leaving Keepsafe.
 - No account, encrypted iCloud backup, and a decoy: Noxium or Vaultaire. Both open with a drawn pattern and include encrypted iCloud backup on the free plan. Noxium's free plan holds 150 photos and 10 videos; Vaultaire's holds 100 photos and 10 videos.
