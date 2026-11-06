@@ -251,7 +251,7 @@ Statuses: To do → Drafting → Draft, needs review → Live → Refreshed (dat
 
 | Date | Page | Change | Result after 4 weeks |
 |---|---|---|---|
-| | | | |
+| 2026-11-07 | /guides/keepsafe-alternatives | Before: 100 impressions, position ~9, 0 clicks; "vaultaire vs keepsafe" 58 impressions at 7.7 landing here. New description naming the apps, new "Is Vaultaire a good Keepsafe alternative?" section with a callout to /guides/vaultaire-vs-keepsafe (Google hasn't discovered that page yet), in-body link from /best-photo-vault-apps-iphone. | |
 
 ---
 
