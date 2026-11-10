@@ -30,6 +30,7 @@
   },
   "app": {
     "version": "1.0",
+    "sameAs": ["https://www.producthunt.com/products/noxium-private-photo-vault"],
     "operatingSystem": "iOS 17.0 or later, iPadOS 17.0 or later",
     "applicationCategory": "MultimediaApplication",
     "applicationSubCategory": "Photo & Video",

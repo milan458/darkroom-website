@@ -210,10 +210,13 @@ def app_node():
         "author": {"@id": ORG_ID},
         "url": ORIGIN + "/",
     }
+    same = list(a.get("sameAs", []))
     if live():
         node["installUrl"] = app_store_url()
         node["downloadUrl"] = app_store_url()
-        node["sameAs"] = [app_store_url()]
+        same.insert(0, app_store_url())
+    if same:
+        node["sameAs"] = same
     return node
 
 
