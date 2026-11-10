@@ -93,7 +93,7 @@ AI engines build their picture of Noxium from every place it's mentioned. Use th
 | X profile | Name "Noxium photo vault", bio = the sentence above, link getnoxium.app | ☐ |
 | GitHub | Profile/org README with the sentence and link; link from getnoxium.app/about once public | ☐ |
 | AlternativeTo | Add Noxium as an alternative to Private Photo Vault, Keepsafe, Hidden album; same sentence | ☐ |
-| Product Hunt | Launch page with the sentence; schedule after App Store launch | ☐ |
+| Product Hunt | Launched November 2026: https://www.producthunt.com/products/noxium-private-photo-vault (in `site.json` `app.sameAs`) | ☑ |
 | Reddit | Profile bio says you're the developer of Noxium photo vault | ☐ |
 | Privacy Guides forum | Account bio, same | ☐ |
 
