@@ -173,7 +173,7 @@ def check_plan(errors):
         if t.get("type") != "expand":
             if tag in seen_paths:
                 errors.append(f"plan {tag}: path listed twice")
-            if tag in site_paths and t.get("status") == "todo":
+            if tag in site_paths and t.get("status") == "todo" and not t.get("hub"):
                 errors.append(f"plan {tag}: already a page in site.json but still \"todo\"")
             kw = t.get("keyword", "").lower()
             if kw in seen_kw:

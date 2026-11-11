@@ -1,0 +1,50 @@
+# After a push to main, tell Bing and the other IndexNow engines which pages changed.
+# Cloudflare Workers Builds deploys main on its own; this waits until the changed pages are live first.
+# Google doesn't use IndexNow: request indexing for new pages in Search Console (SEO-PLAYBOOK.md).
+name: IndexNow
+
+on:
+  push:
+    branches: [main]
+    paths: ["**.html", "site.json"]
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Find changed public pages
+        id: pages
+        run: |
+          paths=$(python3 - <<'PY'
+          import json, subprocess
+          site = json.load(open("site.json"))
+          changed = set(subprocess.run(["git", "diff", "--name-only", "HEAD~1", "HEAD"],
+                                       capture_output=True, text=True).stdout.split())
+          by_file = {p["file"]: p for p in site["pages"]}
+          print(" ".join(p["path"] for f, p in by_file.items() if f in changed and not p.get("draft")))
+          PY
+          )
+          echo "paths=$paths" >> "$GITHUB_OUTPUT"
+          echo "Changed public pages: ${paths:-none}"
+
+      - name: Wait for the deploy
+        if: steps.pages.outputs.paths != ''
+        run: |
+          sleep 90
+          origin=$(python3 -c "import json;print(json.load(open('site.json'))['origin'].rstrip('/'))")
+          for p in ${{ steps.pages.outputs.paths }}; do
+            for i in $(seq 1 30); do
+              code=$(curl -s -o /dev/null -w '%{http_code}' "$origin$p")
+              [ "$code" = "200" ] && break
+              echo "$p: HTTP $code, waiting"; sleep 20
+            done
+          done
+
+      - name: Ping IndexNow
+        if: steps.pages.outputs.paths != ''
+        run: python3 tools/indexnow.py ${{ steps.pages.outputs.paths }}
