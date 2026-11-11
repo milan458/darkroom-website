@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#FAF9F6" media="(prefers-color-scheme: light)">
+  <!-- build:meta -->
+  <!-- /build:meta -->
+
+  <link rel="icon" type="image/svg+xml" href="/assets/noxium-logo.svg">
+  <link rel="apple-touch-icon" href="/assets/noxium-icon-180.png">
+
+  <link rel="preload" href="/assets/fonts/instrument-serif-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/fonts/fonts.css">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/pages.css">
+
+  <!-- build:jsonld -->
+  <!-- /build:jsonld -->
+</head>
+<body>
+  <!-- build:header -->
+  <!-- /build:header -->
+
+  <main id="main-content" tabindex="-1">
+    <!--
+      FEATURE TEMPLATE. Copy to features/<slug>.html (slug describes the feature, no brand name).
+      site.json: type "feature", path "/features/<slug>", ct "f-<topic>", crumb, title ≤ 60, headline,
+      description ≤ 155, summary, published, updated, image, keyword, cluster.
+      EVERY claim about Noxium must match site.json "facts" or the app code (~/dev/darkroom or the
+      milan458/darkroom repo). If a fact is missing from "facts", add it there first, then write.
+      Say what the feature does NOT protect. Then: python3 tools/build.py && python3 tools/check_content.py features/<slug>.html
+    -->
+    <div class="page-hero">
+      <div class="container">
+        <!-- build:breadcrumbs -->
+        <!-- /build:breadcrumbs -->
+        <p class="eyebrow"><span class="dot dot-ink" aria-hidden="true"></span>Feature</p>
+        <h1>HEADLINE (same as site.json "headline")</h1>
+        <!-- build:byline -->
+        <!-- /build:byline -->
+        <div class="answer">
+          <span class="answer-label">Short answer</span>
+          <p>WHAT THE FEATURE DOES, IN 2–3 SENTENCES, FROM site.json FACTS.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container article-layout">
+      <article class="prose">
+        <p>ONE-PARAGRAPH INTRO: the problem this feature solves, for whom.</p>
+
+        <h2 id="how">How does IT work?</h2>
+        <p>ANSWER FIRST. Then the mechanism, in plain English (link /guides/how-encrypted-photo-vaults-work for crypto detail).</p>
+
+        <h2 id="setup">How do you set it up?</h2>
+        <ol class="steps">
+          <li><strong>STEP.</strong> Exact in-app path, e.g. <span class="path">Settings › Security › …</span> (checked against the app).</li>
+        </ol>
+        <figure class="shot">
+          <img src="/assets/guides/noxium-IMAGE.jpg" alt="WHAT THE SCREENSHOT SHOWS" width="559" height="1216" loading="lazy" decoding="async">
+          <figcaption>CAPTION. Real app screenshots only.</figcaption>
+        </figure>
+
+        <h2 id="limits">What doesn't it protect?</h2>
+        <p>THE HONEST LIMITS. Every feature page has this section.</p>
+
+        <h2 id="plans">Is it free or Pro?</h2>
+        <p>FROM site.json FACTS ("Free plan" / "Noxium Pro").</p>
+
+        <div class="cta-card">
+          <p class="cta-card-title">CTA HEADLINE THAT FITS THIS PAGE</p>
+          <p>ONE SENTENCE, ONLY FROM site.json "facts".</p>
+          <a href="/#waitlist" class="btn btn-primary" data-cta="body" data-label-waitlist="Join the Early Tester List" data-label-live="Download on the App Store">Join the Early Tester List</a>
+          <!-- build:status -->
+          <!-- /build:status -->
+        </div>
+
+        <h2 id="faq">Questions people ask</h2>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>QUESTION FROM "PEOPLE ALSO ASK"?</span></span></summary>
+            <div class="faq-body"><p>DIRECT ANSWER.</p></div>
+          </details>
+        </div>
+
+        <p><em>Something wrong or out of date? Email <a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a> and we'll fix it.</em></p>
+      </article>
+
+      <aside class="article-aside" aria-label="On this page">
+        <nav class="toc" aria-label="Table of contents">
+          <p class="toc-title">On this page</p>
+          <ol>
+            <li><a href="#how">How it works</a></li>
+            <li><a href="#setup">Set it up</a></li>
+            <li><a href="#limits">What it doesn't protect</a></li>
+            <li><a href="#plans">Free or Pro</a></li>
+            <li><a href="#faq">Questions people ask</a></li>
+          </ol>
+        </nav>
+        <!-- build:related -->
+        <!-- /build:related -->
+      </aside>
+    </div>
+  </main>
+
+  <!-- build:footer -->
+  <!-- /build:footer -->
+
+  <script src="/app.js" defer></script>
+</body>
+</html>

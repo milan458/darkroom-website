@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#FAF9F6" media="(prefers-color-scheme: light)">
+  <!-- build:meta -->
+  <!-- /build:meta -->
+
+  <link rel="icon" type="image/svg+xml" href="/assets/noxium-logo.svg">
+  <link rel="apple-touch-icon" href="/assets/noxium-icon-180.png">
+
+  <link rel="preload" href="/assets/fonts/instrument-serif-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/fonts/fonts.css">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/pages.css">
+
+  <!-- build:jsonld -->
+  <!-- /build:jsonld -->
+</head>
+<body>
+  <!-- build:header -->
+  <!-- /build:header -->
+
+  <main id="main-content" tabindex="-1">
+    <!--
+      SCENARIO TEMPLATE. Copy to scenarios/<slug>.html.
+      site.json: type "scenario", path "/scenarios/<slug>", ct "s-<topic>", crumb, title, headline,
+      description, summary, published, updated, keyword, cluster, and "sensitive": true for any page about
+      abuse, stalking, sextortion or intimate images, custody, immigration, borders, health, protest,
+      legal disputes, minors, or anyone at risk of harm.
+
+      SENSITIVE PAGES (SEO-PLAYBOOK.md, "Scenario safety protocol"):
+        - Keep the "If you're in danger" callout (id="safety") as the first thing in the article.
+        - Sources only from established organizations (Apple Personal Safety User Guide, NNEDV Safety Net,
+          Coalition Against Stalkerware, StopNCII.org, NCMEC Take It Down, EFF, ACLU). At least 2.
+        - Warn when a step could alert someone who monitors the phone (Apple Safety Check guidance).
+        - No legal advice ("talk to a lawyer"). Never suggest deleting or altering evidence.
+        - Delete the cta-card. Mention Noxium only as one neutral option, or not at all.
+        - Anything involving images of minors: point only to NCMEC Take It Down and the police.
+      EVERYDAY PAGES: delete the safety callout; the CTA card is fine.
+      Then: python3 tools/build.py && python3 tools/check_content.py scenarios/<slug>.html
+    -->
+    <div class="page-hero">
+      <div class="container">
+        <!-- build:breadcrumbs -->
+        <!-- /build:breadcrumbs -->
+        <p class="eyebrow"><span class="dot dot-ink" aria-hidden="true"></span>Scenario</p>
+        <h1>HEADLINE (same as site.json "headline")</h1>
+        <!-- build:byline -->
+        <!-- /build:byline -->
+        <div class="answer">
+          <span class="answer-label">Short answer</span>
+          <p>WHAT TO DO FIRST, IN 2–3 SENTENCES.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container article-layout">
+      <article class="prose">
+        <div class="callout is-warn" id="safety">
+          <span class="callout-title">If you're in danger right now</span>
+          <p>CALL LOCAL EMERGENCY SERVICES. LINK THE RIGHT ORGANIZATION FOR THIS SITUATION. If someone may be monitoring this phone, read this on a device they can't access.</p>
+        </div>
+
+        <p>ONE-PARAGRAPH INTRO: the situation, in the reader's words.</p>
+
+        <h2 id="first">What should you do first?</h2>
+        <ol class="steps">
+          <li><strong>STEP.</strong> …</li>
+        </ol>
+
+        <h2 id="protect">How do you protect the photos from here on?</h2>
+        <p>ANSWER FIRST. Options, and what each does and doesn't protect.</p>
+
+        <h2 id="help">Where can you get help?</h2>
+        <ul>
+          <li><a href="https://ORGANIZATION">ORGANIZATION</a>: what they help with.</li>
+        </ul>
+        <p><em>This page is general information, not legal advice. For your situation, talk to a lawyer or one of the organizations above.</em></p>
+
+        <div class="cta-card">
+          <p class="cta-card-title">CTA HEADLINE THAT FITS THIS PAGE</p>
+          <p>ONE SENTENCE, ONLY FROM site.json "facts".</p>
+          <a href="/#waitlist" class="btn btn-primary" data-cta="body" data-label-waitlist="Join the Early Tester List" data-label-live="Download on the App Store">Join the Early Tester List</a>
+          <!-- build:status -->
+          <!-- /build:status -->
+        </div>
+
+        <h2 id="faq">Questions people ask</h2>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>QUESTION FROM "PEOPLE ALSO ASK"?</span></span></summary>
+            <div class="faq-body"><p>DIRECT ANSWER.</p></div>
+          </details>
+        </div>
+
+        <h2 id="sources">Sources</h2>
+        <ol class="sources">
+          <li>ORGANIZATION, <a href="https://…">PAGE TITLE</a>, checked DATE.</li>
+        </ol>
+        <p><em>Something wrong or out of date? Email <a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a> and we'll fix it.</em></p>
+      </article>
+
+      <aside class="article-aside" aria-label="On this page">
+        <nav class="toc" aria-label="Table of contents">
+          <p class="toc-title">On this page</p>
+          <ol>
+            <li><a href="#first">What to do first</a></li>
+            <li><a href="#protect">Protect the photos</a></li>
+            <li><a href="#help">Get help</a></li>
+            <li><a href="#faq">Questions people ask</a></li>
+            <li><a href="#sources">Sources</a></li>
+          </ol>
+        </nav>
+        <!-- build:related -->
+        <!-- /build:related -->
+      </aside>
+    </div>
+  </main>
+
+  <!-- build:footer -->
+  <!-- /build:footer -->
+
+  <script src="/app.js" defer></script>
+</body>
+</html>
