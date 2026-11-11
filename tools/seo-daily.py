@@ -144,6 +144,29 @@ def table(header, body):
     return "\n".join(lines) + "\n"
 
 
+def pace_check(results, origin, today):
+    """SEO-PLAYBOOK.md pace rule: if more than 25% of pages published 14+ days ago aren't indexed,
+    drop to 2 pages a day. Uses "published" dates from site.json when this script runs from the repo."""
+    site_file = Path(__file__).resolve().parent.parent / "site.json"
+    if not site_file.exists():
+        return ""
+    site = json.loads(site_file.read_text(encoding="utf-8"))
+    if site.get("origin", "").rstrip("/") != origin:
+        return ""
+    cutoff = today - dt.timedelta(days=14)
+    old = [origin + p["path"] for p in site["pages"]
+           if not p.get("draft") and p.get("published") and dt.date.fromisoformat(p["published"]) <= cutoff]
+    checked = [u for u in old if u in results]
+    if not checked:
+        return "**Pace rule:** no pages published 14+ days ago to check yet."
+    missing = [u for u in checked if results[u].get("verdict") != "PASS"]
+    share = len(missing) / len(checked)
+    verdict = ("**over 25%: drop to 2 pages a day** and improve the weakest pages (SEO-PLAYBOOK.md, Pace rule)"
+               if share > 0.25 else "under 25%: keep 4 pages a day")
+    return (f"**Pace rule:** {len(missing)} of {len(checked)} pages published 14+ days ago aren't indexed "
+            f"({share:.0%}), {verdict}.")
+
+
 # ---------- report ----------
 
 def run(args):
@@ -195,7 +218,7 @@ def run(args):
         key=lambda x: -sum(v["impressions"] for _, v in x[1]))
     cannibal = [(q, ps) for q, ps in cannibal if len(ps) >= 2]
 
-    not_indexed, inspect_note = [], ""
+    not_indexed, inspect_note, pace_note = [], "", ""
     if args.inspect:
         try:
             urls = sitemap_urls(args.sitemap)
@@ -211,6 +234,7 @@ def run(args):
             save("url-inspection", results)
             not_indexed = [(u, v) for u, v in results.items() if v.get("verdict") != "PASS"]
             inspect_note = f"{len(urls) - len(not_indexed)} of {len(urls)} sitemap URLs indexed."
+            pace_note = pace_check(results, origin, today)
         except GumError as e:
             inspect_note = f"Indexing check failed: {e}"
     else:
@@ -248,7 +272,7 @@ def run(args):
           table(["Query", "Pages (impressions, position)"],
                 [[q, "; ".join(f"{short(p, origin)} ({v['impressions']}, {v['position']:.1f})" for p, v in ps)]
                  for q, ps in cannibal[:15]]),
-          "## Indexing", "", inspect_note, "",
+          "## Indexing", "", inspect_note, "", pace_note, "",
           table(["URL", "Verdict", "Coverage"], [[short(u, origin), v.get("verdict"), v.get("coverageState")] for u, v in not_indexed])
           if not_indexed else ""]
     report = "\n".join(md)

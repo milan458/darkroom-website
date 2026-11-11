@@ -4,16 +4,20 @@ Static marketing site for Noxium, an encrypted iPhone/iPad photo vault (app repo
 
 ## Ground rules
 - **Never push, merge or deploy without asking Milan.** Work on a branch, commit in small logical commits.
-- Read `SEO-PLAYBOOK.md` before SEO or content work. It has the weekly routine, the publish-a-guide checklist and the keyword backlog.
+- Read `SEO-PLAYBOOK.md` before SEO or content work. It has the daily publishing run, the safety protocol for sensitive pages, the publish-a-page checklist and the keyword backlog.
+- New pages arrive in one PR per day ("Pages for <date>", from `content-plan.json`). That PR is Milan's review: pages in it are written to go live (`"draft": false`) when he merges it. Never merge it yourself.
 
 ## How the site is built
 - `site.json` is the source of truth: release mode (`waitlist` / `live`), App Store ID, campaign token, the facts block, and every page's title, description, dates and draft flag.
 - After any change run `python3 tools/build.py`. It fills the `<!-- build:NAME -->…<!-- /build:NAME -->` regions (meta, jsonld, header, footer, breadcrumbs, byline, facts, status, guide-list), rewrites every `<a data-cta="…">` to the waitlist or an App Store campaign link (`ct` = page `ct` + button name), toggles `data-release-only` blocks, and writes `sitemap.xml`, `llms.txt`, `llms-full.txt`. Never hand-edit those regions or generated files.
 - The build must finish with no warnings: titles ≤ 60 characters, descriptions ≤ 155, no duplicates.
 - Preview: `python3 tools/serve.py` (clean URLs, like Cloudflare: `/about` → `about.html`).
-- New pages: copy the skeleton of an existing subpage (or `templates/guide.html` for guides), add the page to `site.json`, build.
+- Sections: `site.json` `"sections"` maps each content type to its hub: `guide` → `/guides/`, `feature` → `/features/`, `compare` → `/compare/`, `scenario` → `/scenarios/`. Breadcrumbs, JSON-LD, hub lists (`build:list`) and `llms.txt` follow the section. A hub stays `"draft": true` until it lists 3 published pages.
+- Every content page has one target `"keyword"` (the build refuses two pages with the same one) and a `"cluster"`. The `build:related` box lists the page's `"related"` paths, then pages from its cluster, then the hub. Don't hand-write Related boxes.
+- New pages: copy `templates/guide.html`, `feature.html`, `compare.html` or `scenario.html`, add the page to `site.json`, build, then run `python3 tools/check_content.py <file>`. It must pass with no errors.
+- Competitor facts come from `data/competitors.json` (`python3 tools/appstore_facts.py <slug>` refreshes them, with the date). `data/`, `content-plan.json` and `i18n/` are repo-only (`.assetsignore`).
 - URLs have no `.html` and no brand name in the slug. Links between pages are root-relative (`/guides/…`).
-- After publishing: `python3 tools/indexnow.py <path>` (Bing and other IndexNow engines).
+- After publishing: the IndexNow GitHub Action pings Bing and the other IndexNow engines for changed pages once Cloudflare has deployed them. `python3 tools/indexnow.py <path>` does it by hand.
 
 ## Design
 - Follow `design-system/nocturne/MASTER.md` (Nocturne, the app's look). Tokens live in `styles.css` (`:root` is Dark, `@media (prefers-color-scheme: light)` is Light; there is no theme toggle). Subpage components are in `pages.css` and use only those tokens.
@@ -26,7 +30,8 @@ Static marketing site for Noxium, an encrypted iPhone/iPad photo vault (app repo
 - **No unverifiable claims**: no invented testimonials, ratings, user counts, audits or performance numbers. No `aggregateRating` until real App Store ratings exist.
 - Facts about Noxium come from `site.json` `facts` (also mirrored in `llms.txt` and JSON-LD). If the app changes, update `site.json` first. Check claims against the app code in `~/dev/darkroom` when unsure (e.g. the free tier is in `App/Core/AppEnvironment.swift`).
 - Competitor statements must be factual, dated and sourced (their App Store listing or a cited page). Never copy competitor text or screenshots.
-- Guides: direct answer in the first 1–2 sentences under every heading, a "Short answer" box, steps, FAQ, 2–3 internal links, a named author and dates (from `site.json`), and Noxium mentioned only where it honestly fits ("which we make"). New guides start with `"draft": true` (noindex, out of the sitemap) until Milan reviews them.
+- Guides: direct answer in the first 1–2 sentences under every heading, a "Short answer" box, steps, FAQ (3+), 2–3 internal links in the text, a named author and dates (from `site.json`), and Noxium mentioned only where it honestly fits ("which we make").
+- Feature pages: every claim matches `site.json` `facts` or the app code, and each page says what the feature doesn't protect. Comparison pages: fair (strengths first), dated, sourced, with a Sources list. Scenario pages marked `"sensitive": true` follow the safety protocol in `SEO-PLAYBOOK.md` (danger callout first, established organizations only, no legal advice, no CTA card); `check_content.py` enforces it.
 - Use "Noxium photo vault" as the entity phrase. The app was called Darkroom until October 2026; "Darkroom" alone is Bergen Co.'s unrelated photo editor, so don't use the old name except to explain the rename.
 
 ## Launch switch

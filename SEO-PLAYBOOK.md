@@ -123,9 +123,47 @@ Answer **one** real question about hiding, locking, backing up or moving private
 
 Act on the report weekly, not daily: positions move day to day, and a page change needs 1–4 weeks to show. Daily, just look for anything not indexed or a sudden drop.
 
+### Daily publishing (30-day plan, from November 2026)
+
+Goal: close the gap with Vaultaire (256 English pages, 33 languages) by publishing **4 pages a day** from `content-plan.json`: features, comparisons, guides and scenarios, in that order. Milan reviews every page; merging the day's PR publishes it.
+
+**The daily run** (a scheduled cloud task does this each morning; anyone can run it by hand):
+
+1. `git switch main && git pull`, then a branch `pages/<YYYY-MM-DD>`.
+2. Take the next 4 topics in `content-plan.json` with `"status": "todo"`, lowest `order` first. Skip a topic whose page already exists. A hub topic (`"hub": true`) only means "set the hub's `draft` to false" once 3 of its pages are live; it doesn't use up one of the 4.
+3. For each topic, research before writing:
+   - Google's "People also ask" questions and related searches for the `keyword` (web search).
+   - The matching Vaultaire page (`"vaultaire"`): note what it covers. Cover more, answer better, never copy text or structure.
+   - Apple Support for every iOS menu path (exact wording, current iOS).
+   - `data/competitors.json` for any competitor fact. Run `python3 tools/appstore_facts.py <slug>` first if its `checked` date is older than 14 days.
+   - For feature pages: `site.json` `facts` and the app code (milan458/darkroom) for in-app paths. If a needed fact isn't in `facts`, add it there first and say so in the PR.
+4. Write from the template for the type (`templates/*.html`), add the page to `site.json` (title ≤ 60 with the keyword near the start, description ≤ 155, `keyword`, `cluster`, `published` and `updated` = today, `competitor` on comparisons, `sensitive` on sensitive scenarios). `"expand"` topics improve the existing page instead, and bump its `updated`.
+5. Link it in: 2–3 links in the text to related pages, and add a link to the new page from at least 2 existing pages (the build fills Related boxes from the cluster on its own).
+6. `python3 tools/build.py` (no warnings) and `python3 tools/check_content.py <new and changed files>` (no errors). Check one new page at 375 px.
+7. Set the 4 topics to `"status": "in-review"`, commit, push, and open a PR titled "Pages for <date>" listing each page, its keyword, the Vaultaire page it answers, and anything Milan should check (new facts, sensitive pages, claims you couldn't verify).
+
+**Milan's review** (about 15–20 minutes a page): read it on a phone; check every claim about Noxium; check one menu path against your iPhone; for comparisons, check the competitor is treated fairly; for sensitive scenarios, read the safety box and the help links first. Comment or edit on the PR, then merge. After merging, set the topics to `"live"` (the next daily run does it if you don't), request indexing for the new URLs in Search Console, and IndexNow runs on its own.
+
+**Scenario safety protocol** (every page marked `"sensitive": true`; `check_content.py` enforces the first four):
+
+- The "If you're in danger right now" callout comes first, with local emergency services and the right organization for the situation.
+- At least 2 sources from established organizations: Apple's Personal Safety User Guide and Safety Check, NNEDV Safety Net (techsafety.org), Coalition Against Stalkerware, StopNCII.org, NCMEC Take It Down, EFF Surveillance Self-Defense, ACLU, and official government pages.
+- No CTA card. Noxium appears only as one neutral option, or not at all.
+- The page says it is general information, not legal advice.
+- Where a step could alert someone monitoring the phone (changing a passcode, Safety Check, removing an app), say so before the step, as Apple's guide does.
+- Never suggest deleting, altering or hiding evidence from police or a court. Suggest keeping copies safe instead.
+- Anything about images of minors: point only to NCMEC Take It Down and the police. No other advice.
+- Sensitive scenarios stay English-only until a native speaker can review translations.
+
+**Pace rule:** the daily report (`~/seo-data/getnoxium-app/reports/latest.md`) shows which sitemap URLs aren't indexed. If more than 25% of pages published 14 or more days ago are still "Crawled" or "Discovered – currently not indexed", drop to 2 pages a day and improve the weakest pages (more original detail, better internal links) before going back to 4. Google treats a fast flood of thin pages on a new domain as scaled content abuse; this rule is the brake.
+
+**Translations** (from day 10, after the language build is in place): the 8 languages are de, fr, es, pt-br, it, ja, ko and zh-hans. A page is translated once it has been live 7 days. Titles and descriptions are written for the local search phrase, menu paths use Apple's localized names from support.apple.com/<locale>, comparison prices come from that country's App Store (`appstore_facts.py --country de`). Each translation PR includes a back-translation summary. Rules for the build are added with the language PR.
+
 ---
 
 ## 5. Weekly (about 4–5 hours)
+
+While the 30-day plan runs, Monday's keyword pick and Tuesday–Wednesday's writing are replaced by the daily run above. Thursday's page improvements and Friday's link-earning action still apply.
 
 | Day | Task | Time |
 |---|---|---|
@@ -192,7 +230,7 @@ These are starting targets, not forecasts. Adjust them after month 1 with real d
 
 1. **Keyword:** pick it from the backlog (section 10). Write down the exact question and 3–5 People Also Ask questions.
 2. **Copy the template:** `cp templates/guide.html guides/<slug>.html`. The slug describes the question, no brand name: `how-to-hide-videos-on-iphone`.
-3. **Add it to `site.json` `pages`:** `type: "guide"`, `path: "/guides/<slug>"`, `ct` (short, e.g. `g-hide-videos`), `crumb`, `title` (≤60, the main query near the start), `headline`, `description` (≤155, answers the question), `summary`, `published`, `updated`, `image`, and `"draft": true`.
+3. **Add it to `site.json` `pages`:** `type: "guide"`, `path: "/guides/<slug>"`, `ct` (short, e.g. `g-hide-videos`), `crumb`, `title` (≤60, the main query near the start), `headline`, `description` (≤155, answers the question), `summary`, `published`, `updated`, `image`, `keyword` (one per page; the build refuses duplicates) and `cluster`. Pages written outside the daily PR start with `"draft": true`.
 4. **Write it** (1,200–2,000 words):
    - Short answer box: 2–3 sentences that stand alone. This is what gets quoted.
    - Every H2 is a question or a task; the answer is the first 1–2 sentences under it.
@@ -203,7 +241,7 @@ These are starting targets, not forecasts. Adjust them after month 1 with real d
    - 2–3 internal links (other guides, the comparison page).
    - FAQ: 4–6 real People Also Ask questions. FAQPage JSON-LD is generated from it.
 5. **Screenshots:** iOS screenshots from a real device on the current iOS, cropped to the relevant part, saved as JPEG ~560 px wide in `/assets/guides/`, with real alt text and `width`/`height` set.
-6. **Build:** `python3 tools/build.py`. Fix any warnings. Preview with `python3 tools/serve.py`.
+6. **Build and check:** `python3 tools/build.py` (fix any warnings), then `python3 tools/check_content.py guides/<slug>.html` (fix any errors). Preview with `python3 tools/serve.py`.
 7. **Review:** check every step on a real iPhone. Then set `"draft": false` and rebuild (adds it to the sitemap, llms.txt and the guides index, removes noindex).
 8. **Internal links in:** link to the new guide from at least 2 existing pages (related lists, a sentence in a relevant guide).
 9. **Deploy**, then `python3 tools/indexnow.py /guides/<slug>`.
