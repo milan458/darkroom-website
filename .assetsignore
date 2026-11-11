@@ -25,3 +25,7 @@ templates
 site.json
 CLAUDE.md
 SEO-PLAYBOOK.md
+# Content operations (see SEO-PLAYBOOK.md): competitor data, the topic queue, translations
+data
+content-plan.json
+i18n

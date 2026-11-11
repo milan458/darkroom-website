@@ -1,0 +1,748 @@
+{
+  "_readme": "Competitor App Store facts, with the date each was checked. Filled by tools/appstore_facts.py. Repo-only (in .assetsignore).",
+  "apps": {
+    "noxium": {
+      "id": "6824616093",
+      "name": "Noxium: Private Photo Vault",
+      "listings": {
+        "us": {
+          "name": "Noxium: Private Photo Vault",
+          "developer": "Milan Sharma",
+          "price": "Free",
+          "rating": null,
+          "ratingCount": 0,
+          "version": "1.0",
+          "lastUpdate": "2026-11-06",
+          "minimumOs": "17.0",
+          "url": "https://apps.apple.com/us/app/noxium-private-photo-vault/id6824616093",
+          "privacyLabel": [
+            "Data Not Collected"
+          ],
+          "inAppPurchases": [
+            {
+              "name": "Noxium Pro Yearly",
+              "price": "$17.99"
+            },
+            {
+              "name": "Noxium Pro Weekly",
+              "price": "$2.99"
+            },
+            {
+              "name": "Darkroom Pro – Lifetime",
+              "price": "$39.99"
+            },
+            {
+              "name": "Noxium Pro Monthly",
+              "price": "$2.99"
+            }
+          ],
+          "checked": "2026-11-11"
+        }
+      }
+    },
+    "keepsafe": {
+      "id": "510873505",
+      "name": "Secret Photo Vault: Keepsafe",
+      "listings": {
+        "us": {
+          "name": "Secret Photo Vault: Keepsafe",
+          "developer": "KeepSafe Software, Inc",
+          "price": "Free",
+          "rating": 4.7,
+          "ratingCount": 386101,
+          "version": "13.35.0",
+          "lastUpdate": "2026-10-26",
+          "minimumOs": "17.0",
+          "url": "https://apps.apple.com/us/app/secret-photo-vault-keepsafe/id510873505",
+          "privacyLabel": [
+            "Data Used to Track You",
+            "Data Not Linked to You"
+          ],
+          "inAppPurchases": [
+            {
+              "name": "Keepsafe Yearly Premium",
+              "price": "$23.99"
+            },
+            {
+              "name": "Keepsafe Monthly Premium",
+              "price": "$9.99"
+            },
+            {
+              "name": "KeepSafe Premium",
+              "price": "$23.99"
+            },
+            {
+              "name": "Keepsafe Premium",
+              "price": "$12.99"
+            },
+            {
+              "name": "Keepsafe Premium: Cloud Hider",
+              "price": "$35.99"
+            },
+            {
+              "name": "KeepSafe Premium",
+              "price": "$4.99"
+            },
+            {
+              "name": "KeepSafe Premium",
+              "price": "$5.99"
+            },
+            {
+              "name": "KeepSafe Premium",
+              "price": "$35.99"
+            }
+          ],
+          "checked": "2026-11-11"
+        }
+      }
+    },
+    "private-photo-vault": {
+      "id": "417571834",
+      "name": "Private Photo Vault - Pic Safe",
+      "listings": {
+        "us": {
+          "name": "Private Photo Vault - Pic Safe",
+          "developer": "Legendary Software Labs LLC",
+          "price": "Free",
+          "rating": 4.8,
+          "ratingCount": 1019620,
+          "version": "26.1",
+          "lastUpdate": "2026-11-05",
+          "minimumOs": "15.0",
+          "url": "https://apps.apple.com/us/app/private-photo-vault-pic-safe/id417571834",
+          "privacyLabel": [
+            "Data Used to Track You",
+            "Data Linked to You"
+          ],
+          "inAppPurchases": [
+            {
+              "name": "Private Photo Vault Upgrade",
+              "price": "$39.99"
+            },
+            {
+              "name": "Private Photo Vault Premium",
+              "price": "$12.99"
+            },
+            {
+              "name": "Private Photo Vault Premium",
+              "price": "$35.99"
+            },
+            {
+              "name": "Private Photo Vault Premium",
+              "price": "$39.99"
+            },
+            {
+              "name": "Private Photo Vault Premium",
+              "price": "$6.99"
+            }
+          ],
+          "checked": "2026-11-11"
+        }
+      }
+    },
+    "privault": {
+      "id": "1186436980",
+      "name": "Privault",
+      "listings": {
+        "us": {
+          "name": "Privault - Private Photo Vault",
+          "developer": "Binspir Technologies Co., Ltd.",
+          "price": "Free",
+          "rating": 4.7,
+          "ratingCount": 76577,
+          "version": "10.2",
+          "lastUpdate": "2025-02-28",
+          "minimumOs": "11",
+          "url": "https://apps.apple.com/us/app/privault-private-photo-vault/id1186436980",
+          "privacyLabel": [
+            "Data Used to Track You",
+            "Data Linked to You",
+            "Data Not Linked to You"
+          ],
+          "inAppPurchases": [
+            {
+              "name": "Pro Service/Month",
+              "price": "$3.49"
+            },
+            {
+              "name": "Permanent Pro",
+              "price": "$45.99"
+            },
+            {
+              "name": "Pro Service/Year",
+              "price": "$24.99"
+            },
+            {
+              "name": "Remove ADs",
+              "price": "$2.99"
+            }
+          ],
+          "checked": "2026-11-11"
+        }
+      }
+    },
+    "vaultaire": {
+      "id": "6758529311",
+      "name": "Photo Vault - Vaultaire",
+      "listings": {
+        "us": {
+          "name": "Photo Vault - Vaultaire",
+          "developer": "Wraxle LLC",
+          "price": "Free",
+          "rating": 4.7,
+          "ratingCount": 65,
+          "version": "1.1.2",
+          "lastUpdate": "2026-10-23",
+          "minimumOs": "17.0",
+          "url": "https://apps.apple.com/us/app/photo-vault-vaultaire/id6758529311",
+          "privacyLabel": [
+            "Data Linked to You",
+            "Data Not Linked to You"
+          ],
+          "inAppPurchases": [
+            {
+              "name": "Vaultaire Pro Family Lifetime Lifetime Pro access for your Apple family",
+              "price": "$99.99"
+            }
+          ],
+          "checked": "2026-11-11"
+        }
+      }
+    },
+    "calculator-hide-photos": {
+      "id": "1165276801",
+      "name": "Calculator# Hide Photos Videos",
+      "listings": {
+        "us": {
+          "name": "Calculator# Hide Photos Videos",
+          "developer": "Salman Ashraf",
+          "price": "Free",
+          "rating": 4.4,
+          "ratingCount": 28950,
+          "version": "3.4.13",
+          "lastUpdate": "2026-10-30",
+          "minimumOs": "15.0",
+          "url": "https://apps.apple.com/us/app/calculator-hide-photos-videos/id1165276801",
+          "privacyLabel": [
+            "Data Used to Track You",
+            "Data Not Linked to You"
+          ],
+          "inAppPurchases": [
+            {
+              "name": "Yearly Subscription",
+              "price": "$4.99"
+            },
+            {
+              "name": "Premium Features Pack",
+              "price": "$4.99"
+            }
+          ],
+          "checked": "2026-11-11"
+        }
+      }
+    },
+    "hide-it-pro": {
+      "id": "523488488",
+      "name": "Hide Photos Video - Hide it Pro",
+      "listings": {
+        "us": {
+          "name": "Hide Photos Video -Hide it Pro",
+          "developer": "Anuj Tenani",
+          "price": "Free",
+          "rating": 4.7,
+          "ratingCount": 24810,
+          "version": "6.3.0",
+          "lastUpdate": "2026-01-11",
+          "minimumOs": "15.6",
+          "url": "https://apps.apple.com/us/app/hide-photos-video-hide-it-pro/id523488488",
+          "privacyLabel": [
+            "Data Not Linked to You"
+          ],
+          "inAppPurchases": [
+            {
+              "name": "Cloud Storage",
+              "price": "$9.99"
+            },
+            {
+              "name": "Password Reset",
+              "price": "$4.99"
+            }
+          ],
+          "checked": "2026-11-11"
+        }
+      }
+    },
+    "secret-photo-vault": {
+      "id": "448033053",
+      "name": "Secret Photo Vault - Lock Photos",
+      "listings": {
+        "us": {
+          "name": "Secret Photo Vault Lock Photos",
+          "developer": "伟林 莫",
+          "price": "Free",
+          "rating": 4.6,
+          "ratingCount": 27393,
+          "version": "8.3.8",
+          "lastUpdate": "2025-04-25",
+          "minimumOs": "12.0",
+          "url": "https://apps.apple.com/us/app/secret-photo-vault-lock-photos/id448033053",
+          "privacyLabel": [
+            "Data Not Collected"
+          ],
+          "inAppPurchases": [
+            {
+              "name": "Pro Version",
+              "price": "$6.99"
+            }
+          ],
+          "checked": "2026-11-11"
+        }
+      }
+    },
+    "spv": {
+      "id": "1449239240",
+      "name": "SPV - Secret Photo Vault",
+      "listings": {
+        "us": {
+          "name": "SPV - Secret Photo Vault",
+          "developer": "MAPLE LABS COMPANY LIMITED",
+          "price": "Free",
+          "rating": 4.6,
+          "ratingCount": 70136,
+          "version": "7.6.1",
+          "lastUpdate": "2026-08-30",
+          "minimumOs": "15.0",
+          "url": "https://apps.apple.com/us/app/spv-secret-photo-vault/id1449239240",
+          "privacyLabel": [
+            "Data Used to Track You",
+            "Data Not Linked to You"
+          ],
+          "inAppPurchases": [
+            {
+              "name": "Premium",
+              "price": "$4.99"
+            },
+            {
+              "name": "Premium",
+              "price": "$29.99"
+            },
+            {
+              "name": "Premium",
+              "price": "$35.99"
+            },
+            {
+              "name": "Premium",
+              "price": "$12.99"
+            },
+            {
+              "name": "Premium",
+              "price": "$39.99"
+            },
+            {
+              "name": "Premium",
+              "price": "$6.99"
+            }
+          ],
+          "checked": "2026-11-11"
+        }
+      }
+    },
+    "pv-secret-photo-album": {
+      "id": "867586326",
+      "name": "PV - Secret Photo Album",
+      "listings": {
+        "us": {
+          "name": "PV - Secret Photo Album",
+          "developer": "Haibin Jiao",
+          "price": "Free",
+          "rating": 4.7,
+          "ratingCount": 30312,
+          "version": "7.7.9",
+          "lastUpdate": "2026-10-26",
+          "minimumOs": "17.0",
+          "url": "https://apps.apple.com/us/app/pv-secret-photo-album/id867586326",
+          "privacyLabel": [
+            "Data Used to Track You",
+            "Data Linked to You",
+            "Data Not Linked to You"
+          ],
+          "inAppPurchases": [
+            {
+              "name": "PV Pro - Monthly",
+              "price": "$3.99"
+            },
+            {
+              "name": "PV Pro - Yearly",
+              "price": "$17.99"
+            },
+            {
+              "name": "Super Member Yearly 20G",
+              "price": "$29.99"
+            },
+            {
+              "name": "PV Permenent Membership",
+              "price": "$41.99"
+            },
+            {
+              "name": "Auto cloud backup 20G yearly",
+              "price": "$12.99"
+            },
+            {
+              "name": "Super Member Yearly 100G",
+              "price": "$79.99"
+            },
+            {
+              "name": "Auto Cloud Backup 100G Yearly",
+              "price": "$49.99"
+            }
+          ],
+          "checked": "2026-11-11"
+        }
+      }
+    },
+    "encamera": {
+      "id": "1639202616",
+      "name": "Encamera",
+      "listings": {
+        "us": {
+          "name": "Encamera Encrypted Photo Vault",
+          "developer": "Encamera LLC",
+          "price": "Free",
+          "rating": 4.5,
+          "ratingCount": 148,
+          "version": "2.10.0",
+          "lastUpdate": "2026-09-08",
+          "minimumOs": "17.0",
+          "url": "https://apps.apple.com/us/app/encamera-encrypted-photo-vault/id1639202616",
+          "privacyLabel": [
+            "Data Not Linked to You"
+          ],
+          "inAppPurchases": [
+            {
+              "name": "1 Month",
+              "price": "$3.99"
+            },
+            {
+              "name": "12 Months",
+              "price": "$19.99"
+            },
+            {
+              "name": "1 Week",
+              "price": "$1.99"
+            },
+            {
+              "name": "Lifetime",
+              "price": "$99.99"
+            },
+            {
+              "name": "Premium Monthly",
+              "price": "$2.99"
+            },
+            {
+              "name": "Limited Lifetime",
+              "price": "$49.99"
+            },
+            {
+              "name": "Premium Yearly",
+              "price": "$17.99"
+            }
+          ],
+          "checked": "2026-11-11"
+        }
+      }
+    },
+    "obscura": {
+      "id": "6759755376",
+      "name": "Obscura Photo Vault",
+      "listings": {
+        "us": {
+          "name": "Obscura: Encrypted Photo Vault",
+          "developer": "Orlio Inc",
+          "price": "Free",
+          "rating": 4.4,
+          "ratingCount": 28,
+          "version": "1.20.0",
+          "lastUpdate": "2026-11-09",
+          "minimumOs": "18.2",
+          "url": "https://apps.apple.com/us/app/obscura-encrypted-photo-vault/id6759755376",
+          "privacyLabel": [
+            "Data Not Collected"
+          ],
+          "inAppPurchases": [
+            {
+              "name": "Obscura Pro",
+              "price": "$39.99"
+            },
+            {
+              "name": "Obscura Pro Yearly",
+              "price": "$29.99"
+            },
+            {
+              "name": "Obscura Pro Monthly",
+              "price": "$6.99"
+            }
+          ],
+          "checked": "2026-11-11"
+        }
+      }
+    },
+    "hiddenvault": {
+      "id": "1519673105",
+      "name": "HiddenVault",
+      "listings": {
+        "us": {
+          "name": "HiddenVault Secret Photo Vault",
+          "developer": "Kyle Allen",
+          "price": "Free",
+          "rating": 4.6,
+          "ratingCount": 2107,
+          "version": "3.43",
+          "lastUpdate": "2026-06-17",
+          "minimumOs": "14.0",
+          "url": "https://apps.apple.com/us/app/hiddenvault-secret-photo-vault/id1519673105",
+          "privacyLabel": [
+            "Data Used to Track You",
+            "Data Linked to You",
+            "Data Not Linked to You"
+          ],
+          "inAppPurchases": [],
+          "checked": "2026-11-11"
+        }
+      }
+    },
+    "safe-lock": {
+      "id": "1195429570",
+      "name": "Safe Lock - Hidden Photo Vault",
+      "listings": {
+        "us": {
+          "name": "Safe Lock - Hidden Photo Vault",
+          "developer": "Katerina Akhlebinina",
+          "price": "Free",
+          "rating": 4.8,
+          "ratingCount": 24960,
+          "version": "3.1",
+          "lastUpdate": "2026-08-17",
+          "minimumOs": "12.0",
+          "url": "https://apps.apple.com/us/app/safe-lock-hidden-photo-vault/id1195429570",
+          "privacyLabel": [
+            "Data Not Collected"
+          ],
+          "inAppPurchases": [
+            {
+              "name": "Premium Account",
+              "price": "$4.99"
+            },
+            {
+              "name": "Premium Account",
+              "price": "$29.99"
+            },
+            {
+              "name": "Premium Account",
+              "price": "$19.99"
+            }
+          ],
+          "checked": "2026-11-11"
+        }
+      }
+    },
+    "maxvault": {
+      "id": "645754521",
+      "name": "MaxVault",
+      "listings": {
+        "us": {
+          "name": "Photo & Video Vault - MaxVault",
+          "developer": "Rambax, LLC",
+          "price": "Free",
+          "rating": 4.7,
+          "ratingCount": 3475,
+          "version": "8.0.15",
+          "lastUpdate": "2026-11-11",
+          "minimumOs": "15.5",
+          "url": "https://apps.apple.com/us/app/photo-video-vault-maxvault/id645754521",
+          "privacyLabel": [
+            "Data Linked to You"
+          ],
+          "inAppPurchases": [
+            {
+              "name": "Monthly Premium",
+              "price": "$7.99"
+            },
+            {
+              "name": "Yearly Premium",
+              "price": "$29.99"
+            },
+            {
+              "name": "Lifetime Premium",
+              "price": "$79.99"
+            },
+            {
+              "name": "Lifetime Premium",
+              "price": "$99.99"
+            },
+            {
+              "name": "Generous Tip",
+              "price": "$9.99"
+            },
+            {
+              "name": "Small Tip",
+              "price": "$4.99"
+            }
+          ],
+          "checked": "2026-11-11"
+        }
+      }
+    },
+    "kyms": {
+      "id": "471303390",
+      "name": "KYMS",
+      "listings": {
+        "us": {
+          "name": "Secret photos - KYMS",
+          "developer": "IdeaSolutions S.r.l.",
+          "price": "Free",
+          "rating": 4.7,
+          "ratingCount": 17327,
+          "version": "3.6.5",
+          "lastUpdate": "2025-06-10",
+          "minimumOs": "12.0",
+          "url": "https://apps.apple.com/us/app/secret-photos-kyms/id471303390",
+          "privacyLabel": [
+            "Data Used to Track You",
+            "Data Not Linked to You"
+          ],
+          "inAppPurchases": [
+            {
+              "name": "Remove advertising",
+              "price": "$4.99"
+            },
+            {
+              "name": "Premium features",
+              "price": "$4.99"
+            }
+          ],
+          "checked": "2026-11-11"
+        }
+      }
+    },
+    "secret-photo-album": {
+      "id": "1174964304",
+      "name": "Secret Photo Album SA",
+      "listings": {
+        "us": {
+          "name": "Secret Photo Album - SA",
+          "developer": "BP Mobile LLC",
+          "price": "Free",
+          "rating": 4.6,
+          "ratingCount": 38916,
+          "version": "2.18",
+          "lastUpdate": "2026-10-06",
+          "minimumOs": "15.0",
+          "url": "https://apps.apple.com/us/app/secret-photo-album-sa/id1174964304",
+          "privacyLabel": [
+            "Data Used to Track You",
+            "Data Linked to You"
+          ],
+          "inAppPurchases": [
+            {
+              "name": "Premium",
+              "price": "$1.99"
+            },
+            {
+              "name": "Secret Album Premium",
+              "price": "$9.99"
+            },
+            {
+              "name": "Secret Calculator Photo Vault",
+              "price": "$9.99"
+            },
+            {
+              "name": "Premium",
+              "price": "$6.99"
+            },
+            {
+              "name": "Premium",
+              "price": "$2.99"
+            },
+            {
+              "name": "Premium",
+              "price": "$49.99"
+            },
+            {
+              "name": "Secret Album Premium",
+              "price": "$51.99"
+            },
+            {
+              "name": "Secret Album Premium",
+              "price": "$39.99"
+            },
+            {
+              "name": "Premium",
+              "price": "$19.99"
+            }
+          ],
+          "checked": "2026-11-11"
+        }
+      }
+    },
+    "ente-photos": {
+      "id": "1542026904",
+      "name": "Ente Photos",
+      "listings": {
+        "us": {
+          "name": "Ente Photos",
+          "developer": "Ente Technologies, Inc.",
+          "price": "Free",
+          "rating": 4.7,
+          "ratingCount": 290,
+          "version": "v1.3.67",
+          "lastUpdate": "2026-10-30",
+          "minimumOs": "15.1",
+          "url": "https://apps.apple.com/us/app/ente-photos/id1542026904",
+          "privacyLabel": [
+            "Data Linked to You",
+            "Data Not Linked to You"
+          ],
+          "inAppPurchases": [
+            {
+              "name": "200 GB",
+              "price": "$5.99"
+            },
+            {
+              "name": "50 GB",
+              "price": "$2.99"
+            },
+            {
+              "name": "1000 GB",
+              "price": "$11.99"
+            },
+            {
+              "name": "200 GB",
+              "price": "$59.90"
+            },
+            {
+              "name": "50 GB",
+              "price": "$29.90"
+            },
+            {
+              "name": "10 GB",
+              "price": "$0.99"
+            },
+            {
+              "name": "100 GB",
+              "price": "$4.99"
+            },
+            {
+              "name": "1000 GB",
+              "price": "$119.99"
+            },
+            {
+              "name": "2000 GB",
+              "price": "$23.99"
+            }
+          ],
+          "checked": "2026-11-11"
+        }
+      }
+    }
+  }
+}
