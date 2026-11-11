@@ -339,7 +339,9 @@ def render_guide_list():
 
 def render_partial(name, page):
     text = (ROOT / "partials" / name).read_text(encoding="utf-8")
-    guide_links = "\n".join(f'<li><a href="{g["path"]}">{esc(g["crumb"])}</a></li>' for g in GUIDES[:5])
+    # Guides marked "footer": true in site.json, in site.json order (the first 5 guides if none are).
+    footer_guides = [g for g in GUIDES if g.get("footer") and not g.get("draft")] or GUIDES[:5]
+    guide_links = "\n".join(f'<li><a href="{g["path"]}">{esc(g["crumb"])}</a></li>' for g in footer_guides)
     return text.replace("{{guide_links}}", guide_links).replace("{{year}}", page["updated"][:4])
 
 
