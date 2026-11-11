@@ -1,13 +1,16 @@
 // Sends the old domain (and www) to https://getnoxium.app with a permanent redirect, keeping the
 // path and query, so links and search rankings from darkroom.buzz carry over. Everything else is
-// served from the static files. Preview hosts (*.workers.dev) are left alone.
+// served from the static files. Plain http on getnoxium.app also gets a 301 to https, because
+// Google had indexed http://getnoxium.app/ as a separate URL (Search Console, November 2026).
+// Preview hosts (*.workers.dev) and local dev are left alone.
 const CANONICAL = "getnoxium.app";
 const REDIRECT_HOSTS = new Set(["darkroom.buzz", "www.darkroom.buzz", "www.getnoxium.app"]);
 
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
-    if (REDIRECT_HOSTS.has(url.hostname)) {
+    const insecureCanonical = url.hostname === CANONICAL && url.protocol === "http:";
+    if (REDIRECT_HOSTS.has(url.hostname) || insecureCanonical) {
       url.hostname = CANONICAL;
       url.protocol = "https:";
       url.port = "";
