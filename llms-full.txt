@@ -397,7 +397,7 @@ Encrypts photos and videos on your device and keeps them on your iPhone or in yo
 - App Store, Encamera Encrypted Photo Vault
 - App Store, Photo Vault – Vaultaire (description checked 22 October 2026)
 Apps change. If anything here is out of date, email business@inertiaprojects.info and we’ll fix it. App names are trademarks of their owners and are used only to identify their apps.
-See all 17 apps →
+See all 17 apps → Vaultaire vs Keepsafe → Keepsafe alternatives with no account →
 Pricing
 ### Start free. Upgrade for room.
 #### Free
@@ -663,6 +663,10 @@ Related guides
 - How to hide photos on iPhone
 - Is the Hidden album private?
 - Move a vault to a new iPhone
+- Keepsafe alternatives
+- Vaultaire vs Keepsafe
+- Vaults without subscriptions or ads
+- Are photo vault apps safe?
 
 ---
 
@@ -752,6 +756,8 @@ Related
 - Is the Hidden album private?
 - Move a vault to a new iPhone
 - Photo vault apps compared
+- How to hide videos on iPhone
+- Lock photos with Face ID or a pattern
 
 ---
 
@@ -819,6 +825,7 @@ Related
 - How to hide photos on iPhone
 - Move a vault to a new iPhone
 - Photo vault apps compared
+- Lock photos with Face ID or a pattern
 
 ---
 
@@ -898,20 +905,22 @@ Related
 - How to hide photos on iPhone
 - Is the Hidden album private?
 - Photo vault apps compared
+- Photo vault lost your photos?
 
 ---
 
 # Your photo vault app lost your photos: what to do now
 
 URL: https://getnoxium.app/guides/photo-vault-lost-photos
-Last updated: 2026-10-26
+Last updated: 2026-11-11
 
 Guide · Missing photos
 ## Your photo vault app lost your photos: what to do now
-By Inertia Projects · Published 22 October 2026 · Last updated 26 October 2026
+By Inertia Projects · Published 22 October 2026 · Last updated 11 November 2026
 Short answer
 Stop and don't delete, reinstall or reset anything yet. Photos that vanish from a vault app are often still on the old phone, in the app's own cloud, or in a backup, and reinstalling can erase the last local copy. Check those places in order, then contact the developer with your app version and what happened.
 Lost or missing photos are one of the most common complaints about vault apps. In the most recent one- and two-star App Store reviews of eight popular vault apps, which we read in October 2026, missing photos came up 47 times. The good news: "missing" often means "not where you're looking". This guide walks through what to do, in order, without making things worse.
+Locked out rather than missing photos? See how to unlock a photo vault when you forgot the password .
 ### What should you not do when vault photos go missing?
 Don't delete the app, reinstall it, or reset your iPhone. A vault app keeps its files inside its own storage on the phone. Deleting the app deletes that storage, and reinstalling gives you an empty vault.
 - Don't delete or reinstall the vault app , on any device.
@@ -984,6 +993,7 @@ By Inertia Projects · Published 22 October 2026 · Last updated 7 November 2026
 Short answer
 If you want a Keepsafe alternative without an email account, look for a vault that says it needs no account and backs up to your own iCloud instead of its own servers. From their App Store listings in October 2026, Vaultaire, Obscura, Encamera and Noxium (which we make) all work without an account. Apple's Hidden album needs no extra account either, but it opens with your iPhone passcode.
 Keepsafe is one of the best-known photo vaults on the iPhone, with 384,865 US ratings in October 2026. It's also built around an account: you sign in with an email address, and backups go to Keepsafe's own cloud. If you'd rather not tie private photos to an email account and a company's servers, here are the alternatives and how they differ.
+Only deciding between Vaultaire and Keepsafe? See Vaultaire vs Keepsafe , compared point by point.
 ### Why do people look for Keepsafe alternatives?
 Usually because of the account, the cloud, or the price. These are the points Keepsafe's own pages and App Store listing describe:
 - An email account. Keepsafe uses an account tied to your email; its help center has a page on what to do if you lose access to that email ( Keepsafe Help Center ).
@@ -1005,7 +1015,7 @@ For 17 apps side by side, including Keepsafe, see the full photo vault compariso
 Yes, if the account is what you want to leave behind. Vaultaire needs no account and backs up, encrypted, to your own iCloud, including on its free plan. Keepsafe signs you in with an email address and keeps its cloud copy on its own servers.
 From their US App Store listings in October 2026, Vaultaire sells a $39.99 lifetime plan and lists no data used to track you. Keepsafe is subscription-based and lists Usage Data as used to track you.
 Vaultaire vs Keepsafe
-Price, encryption, backup and decoy vaults, point by point: Vaultaire vs Keepsafe compared .
+Price, encryption, backup and decoy vaults side by side: Vaultaire vs Keepsafe compared .
 ### Which Keepsafe alternative should you choose?
 Pick by what mattered to you about leaving Keepsafe.
 - No account, encrypted iCloud backup, and a decoy: Noxium or Vaultaire. Both open with a drawn pattern and include encrypted iCloud backup on the free plan. Noxium's free plan holds 150 photos and 10 videos; Vaultaire's holds 100 photos and 10 videos.
@@ -1188,6 +1198,8 @@ Related
 - How to hide photos on iPhone
 - Is the Hidden album private?
 - How encrypted vaults work
+- How to hide videos on iPhone
+- What is a decoy vault?
 
 ---
 
@@ -1259,6 +1271,7 @@ Related
 - Lock photos with Face ID or a pattern
 - How encrypted vaults work
 - Photo vault apps compared
+- Are photo vault apps safe?
 
 ---
 
@@ -1323,6 +1336,7 @@ Related
 - How to hide photos on iPhone
 - Photo vault lost your photos?
 - Photo vault apps compared
+- Lock photos with Face ID or a pattern
 
 ---
 
@@ -1396,17 +1410,18 @@ Related
 - Photo vault apps compared
 - Keepsafe alternatives
 - Are photo vault apps safe?
+- Vaultaire vs Keepsafe
 
 ---
 
 # Forgot your photo vault password or PIN? What you can still do
 
 URL: https://getnoxium.app/guides/forgot-photo-vault-password
-Last updated: 2026-10-26
+Last updated: 2026-11-11
 
 Guide · Locked out
 ## Forgot your photo vault password or PIN? What you can still do
-By Inertia Projects · Published 22 October 2026 · Last updated 26 October 2026
+By Inertia Projects · Published 22 October 2026 · Last updated 11 November 2026
 Short answer
 First, don't delete or reinstall the app; that can erase the vault for good. Then find out how your app handles recovery: some reset by email, some use a recovery phrase or key you saved at setup, and some truly encrypted vaults can't be opened by anyone without the code. Look in the app's lock screen and settings, check your email and notes for a recovery code, and contact the developer.
 Getting locked out of a vault app is one of the most common complaints in vault reviews: in the most recent one- and two-star reviews of eight popular vault apps, which we read in October 2026, it came up 27 times. What you can do depends almost entirely on how the app was built, so this guide starts with what's safe to try, then explains each kind of recovery.
@@ -1447,7 +1462,7 @@ Otherwise, the only way back is to erase the iPhone with a computer or in Recove
 - Save the code in Apple's Passwords app or a password manager, with a note of which app it's for.
 - Set up recovery now, whatever your app offers, and test it once.
 - Write a recovery phrase on paper and keep it somewhere safe, away from the phone.
-- Keep a backup you understand, so a lockout isn't also a loss. See what to do if a vault loses photos .
+- Keep a backup you understand, so a lockout isn't also a loss. See how to recover photos a vault app lost .
 Never locked out, never reset by anyone else
 Noxium has you write down a recovery phrase at setup. It opens your vault if you forget your pattern, and nobody else, including us, can reset it.
 Download on the App Store
@@ -1540,6 +1555,7 @@ Related
 - Are photo vault apps safe?
 - Forgot your vault password
 - Photo vault apps compared
+- What is a decoy vault?
 
 ---
 
@@ -1570,7 +1586,7 @@ Name AES-256-GCM 2 of 17
 Report "Data Not Collected" 3 of 17
 Not mentioning encryption doesn't prove an app doesn't encrypt, and privacy labels are self-reported. But a vault that protects your photos well usually says how. App-by-app details are in our comparison .
 ### What should you check before trusting a photo vault?
-- Encryption, named and on-device. Look for a specific cipher (AES-256) and a statement that photos are encrypted on the phone. "Secure" and "military-grade" alone tell you nothing. Our plain-English encryption guide explains what to look for.
+- Encryption, named and on-device. Look for a specific cipher (AES-256) and a statement that photos are encrypted on the phone. "Secure" and "military-grade" alone tell you nothing. Our plain-English guide to how photo vault apps work explains what to look for.
 - A backup you can restore. Where does it go, is it encrypted with your key, and how do you restore on a new iPhone? Is backup included in the free plan?
 - Recovery that doesn't weaken privacy. A recovery phrase or key you keep is safer than an email reset the developer controls. No recovery at all is private but unforgiving.
 - The privacy label. On the App Store page, check "Data Used to Track You". For a vault, the best answer is "Data Not Collected".
@@ -1609,6 +1625,8 @@ Related
 - How encrypted vaults work
 - Is the Hidden album private?
 - Photo vault apps compared
+- What is a decoy vault?
+- Vaults without subscriptions or ads
 
 ---
 

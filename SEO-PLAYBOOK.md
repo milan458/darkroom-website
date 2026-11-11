@@ -93,7 +93,7 @@ AI engines build their picture of Noxium from every place it's mentioned. Use th
 | X profile | Name "Noxium photo vault", bio = the sentence above, link getnoxium.app | ☐ |
 | GitHub | Profile/org README with the sentence and link; link from getnoxium.app/about once public | ☐ |
 | AlternativeTo | Add Noxium as an alternative to Private Photo Vault, Keepsafe, Hidden album; same sentence | ☐ |
-| Product Hunt | Launch page with the sentence; schedule after App Store launch | ☐ |
+| Product Hunt | Launched November 2026: https://www.producthunt.com/products/noxium-private-photo-vault (in `site.json` `app.sameAs`) | ☑ |
 | Reddit | Profile bio says you're the developer of Noxium photo vault | ☐ |
 | Privacy Guides forum | Account bio, same | ☐ |
 
@@ -110,6 +110,18 @@ Answer **one** real question about hiding, locking, backing up or moving private
 - **Always disclose** when you mention Noxium: "I'm the developer of Noxium, a photo vault app, so I'm biased, but…".
 - Link only when the link genuinely answers more than the reply can (usually a guide, not the homepage). Follow each subreddit's self-promotion rules.
 - Note the exact question wording in the backlog (section 10). Real questions are the best guide topics.
+
+### Automated: daily Search Console report
+
+`tools/seo-daily.py` pulls Search Console data every morning through [gum](https://gumcli.dev) and writes a report. It runs on the Mac where gum is signed in; reports stay outside the repo (this repo is public).
+
+- **Install once:** `python3 tools/seo-daily.py --install` (runs daily at 09:07; if the Mac is asleep, when it wakes). Test it right away: `launchctl kickstart gui/$(id -u)/app.getnoxium.seo-daily.getnoxium-app`.
+- **Read it:** `~/seo-data/getnoxium-app/reports/latest.md` (one dated file per day next to it). A macOS notification shows the headline numbers.
+- **What it shows:** clicks and impressions week over week; queries at positions 4–20 (the Thursday list in section 6); biggest movers; new queries; queries where two of our pages compete; any sitemap URL that isn't indexed.
+- **If it fails** with `AUTH_REFRESH_FAILED` or `SCOPE_MISSING`: `gum auth login --scope https://www.googleapis.com/auth/webmasters.readonly`. If the sign-in expires every 7 days, the OAuth app in Google Cloud is still in Testing: publish it (Google Auth Platform → Audience → Publish app).
+- **Stop it:** `python3 tools/seo-daily.py --uninstall`. Other sites: add `--site sc-domain:example.com --sitemap https://example.com/sitemap.xml` to both commands.
+
+Act on the report weekly, not daily: positions move day to day, and a page change needs 1–4 weeks to show. Daily, just look for anything not indexed or a sudden drop.
 
 ---
 
@@ -222,7 +234,8 @@ Sources for new rows: Search Console queries, Google autocomplete and People Als
 | 14 | How to hide photos on iPad | How-to | /guides/how-to-hide-photos-on-ipad | To do |
 | 15 | Calculator vault apps: do they actually hide anything? | Question | /guides/calculator-vault-apps | To do |
 | 16 | How to hide apps on iPhone (iOS 18+) | How-to | /guides/how-to-hide-apps-on-iphone | To do |
-| 17 | Vaultaire vs Keepsafe (Search Console: 13 impressions, position 9.5, Oct 2026) | Comparison | /guides/vaultaire-vs-keepsafe | Live 26 Oct 2026 |
+| 17 | Vaultaire vs Keepsafe (Search Console: 13 impressions, position 9.5, Oct 2026; 64 impressions, position 7.3 by 9 Nov, but Google shows /guides/keepsafe-alternatives for it) | Comparison | /guides/vaultaire-vs-keepsafe | Live 26 Oct 2026; internal links added 11 Nov 2026 |
+| 18 | Photo vault recovery (recover deleted photos from a vault app, vault recovery photos; positions 60–86, split across two guides, Nov 2026) | Problem | /guides/photo-vault-lost-photos | Retitled 11 Nov 2026 |
 
 Statuses: To do → Drafting → Draft, needs review → Live → Refreshed (date).
 
@@ -252,6 +265,13 @@ Statuses: To do → Drafting → Draft, needs review → Live → Refreshed (dat
 | Date | Page | Change | Result after 4 weeks |
 |---|---|---|---|
 | 2026-11-07 | /guides/keepsafe-alternatives | Before: 100 impressions, position ~9, 0 clicks; "vaultaire vs keepsafe" 58 impressions at 7.7 landing here. New description naming the apps, new "Is Vaultaire a good Keepsafe alternative?" section with a callout to /guides/vaultaire-vs-keepsafe (Google hasn't discovered that page yet), in-body link from /best-photo-vault-apps-iphone. | |
+| 2026-11-11 | /guides/vaultaire-vs-keepsafe | Linked from the footer on every page, the homepage, the Keepsafe alternatives intro, the comparison page and the no-subscription guide (3 → 18 linking pages). Goal: Google shows this page, not /guides/keepsafe-alternatives, for "vaultaire vs keepsafe" (64 impr., pos. 7.3). | |
+| 2026-11-11 | /guides/keepsafe-alternatives | Linked from the homepage and the comparison page. Target: "keepsafe alternative(s)" (39 impr., pos. 8.9–9.5) into the top 5. | |
+| 2026-11-11 | /guides/photo-vault-lost-photos | Title → "Photo Vault Recovery: Find Lost or Deleted Vault Photos", description reworded; in-body link to the forgot-password guide. Target: "photo vault recovery" queries (pos. 60–86). | |
+| 2026-11-11 | /guides/forgot-photo-vault-password | Title → "Forgot Your Photo Vault Password? Unlock and Recovery"; link to the lost-photos guide reads "how to recover photos a vault app lost". Keep "forgot vault password" (pos. 8). | |
+| 2026-11-11 | /guides/are-photo-vault-apps-safe | Link to the encryption guide now reads "how photo vault apps work" (Google showed this page at pos. 40 for "how does vault app work"). | |
+| 2026-11-11 | Related boxes | Added links to the weakly linked guides: hide videos (1 → 3 linking pages), lock with Face ID (2 → 5), decoy vault (3 → 6), no-subscription (3 → 5), safe (3 → 5). | |
+| 2026-11-11 | worker/index.js | http://getnoxium.app now 301s to https (Google had indexed the http homepage separately). | |
 
 ---
 
