@@ -77,6 +77,32 @@ PAGES = SITE["pages"]
 BY_PATH = {p["path"]: p for p in PAGES}
 GUIDES = [p for p in PAGES if p["type"] == "guide"]
 
+# Content sections: each page type with its own hub page (site.json "sections").
+SECTIONS = SITE.get("sections", {"guide": {"hub": "/guides/", "label": "Guides"}})
+CONTENT_TYPES = set(SECTIONS)
+RELATED_MAX = 4
+
+
+def pages_of(kind):
+    return [p for p in PAGES if p["type"] == kind]
+
+
+def hub_of(page):
+    """The hub page a content page belongs to (e.g. /guides/ for a guide), or None."""
+    section = SECTIONS.get(page["type"])
+    if not section or page["path"] == section["hub"]:
+        return None
+    return BY_PATH.get(section["hub"])
+
+
+def crumb_trail(page):
+    """Breadcrumb ancestors, home first, not including the page itself."""
+    trail = [("Noxium", "/")]
+    hub = hub_of(page)
+    if hub:
+        trail.append((hub["crumb"], hub["path"]))
+    return trail
+
 
 # ---------- Regions ----------
 
@@ -221,10 +247,7 @@ def app_node():
 
 
 def breadcrumb_node(page):
-    items = [("Noxium", "/")]
-    if page["path"].startswith("/guides/") and page["path"] != "/guides/":
-        items.append((BY_PATH["/guides/"]["crumb"], "/guides/"))
-    items.append((page.get("crumb", page["title"]), page["path"]))
+    items = crumb_trail(page) + [(page.get("crumb", page["title"]), page["path"])]
     return {
         "@type": "BreadcrumbList",
         "itemListElement": [
@@ -255,16 +278,36 @@ def render_jsonld(page, text):
         graph.append({"@type": "WebSite", "@id": SITE_ID, "url": ORIGIN + "/", "name": SITE["siteName"],
                       "alternateName": SITE["entityPhrase"], "publisher": {"@id": ORG_ID}, "inLanguage": "en-US"})
         graph.append(app_node())
-    elif page["type"] == "guide" or "published" in page:
+    elif page.get("listType"):
+        # Hub page: the list of pages in its section.
+        items = [p for p in pages_of(page["listType"]) if not p.get("draft")]
         graph.append({
+            "@type": "CollectionPage", "@id": url + "#webpage", "url": url, "name": page["title"],
+            "description": page["description"], "isPartOf": {"@id": SITE_ID},
+            "dateModified": page["updated"], "publisher": {"@id": ORG_ID}, "inLanguage": "en-US",
+            "mainEntity": {"@type": "ItemList", "itemListElement": [
+                {"@type": "ListItem", "position": i + 1, "url": absolute(p["path"]), "name": p.get("headline", p["title"])}
+                for i, p in enumerate(items)]},
+        })
+        graph.append(breadcrumb_node(page))
+    elif page["type"] in CONTENT_TYPES or "published" in page:
+        # Feature and comparison pages (and the standalone comparison) are about the app; guides and
+        # scenarios are about the reader's problem.
+        about_app = page["type"] in ("feature", "compare") or page["type"] not in CONTENT_TYPES
+        article = {
             "@type": "Article", "@id": url + "#article", "headline": page.get("headline", page["title"])[:110],
             "description": page["description"], "url": url, "mainEntityOfPage": url,
             "image": absolute(page.get("image", SITE["defaultOgImage"])),
             "datePublished": page.get("published", page["updated"]), "dateModified": page["updated"],
             "author": author_node(), "publisher": {"@id": ORG_ID}, "inLanguage": "en-US",
-            "isPartOf": {"@id": SITE_ID}, "about": {"@id": APP_ID} if page["type"] != "guide" else None,
-        })
-        graph[-1] = {k: v for k, v in graph[-1].items() if v is not None}
+            "isPartOf": {"@id": SITE_ID},
+        }
+        if about_app:
+            article["about"] = {"@id": APP_ID}
+        if page.get("competitor"):
+            article["mentions"] = {"@type": "MobileApplication", "name": page["competitor"],
+                                   "operatingSystem": "iOS", "applicationCategory": "MultimediaApplication"}
+        graph.append(article)
         graph.append(breadcrumb_node(page))
     else:
         kind = {"/about": "AboutPage", "/support": "ContactPage"}.get(page["path"], "WebPage")
@@ -283,11 +326,8 @@ def render_jsonld(page, text):
 # ---------- Visible blocks ----------
 
 def render_breadcrumbs(page):
-    crumbs = [("Noxium", "/")]
-    if page["path"].startswith("/guides/") and page["path"] != "/guides/":
-        crumbs.append((BY_PATH["/guides/"]["crumb"], "/guides/"))
     out = ['<nav class="crumbs" aria-label="Breadcrumb">', "  <ol>"]
-    for name, path in crumbs:
+    for name, path in crumb_trail(page):
         out.append(f'    <li><a href="{path}">{esc(name)}</a></li>')
     out.append(f'    <li aria-current="page">{esc(page.get("crumb", page["title"]))}</li>')
     out += ["  </ol>", "</nav>"]
@@ -321,8 +361,13 @@ def render_status():
 
 
 def render_guide_list():
+    return render_list("guide")
+
+
+def render_list(kind):
+    """Cards for every page of one type (a hub's "listType"). Drafts show with a Draft pill."""
     out = ['<ul class="guide-list" role="list">']
-    for g in GUIDES:
+    for g in pages_of(kind):
         draft = ' <span class="tag-pill">Draft</span>' if g.get("draft") else ""
         out += [
             '  <li class="guide-card">',
@@ -342,7 +387,44 @@ def render_partial(name, page):
     # Guides marked "footer": true in site.json, in site.json order (the first 5 guides if none are).
     footer_guides = [g for g in GUIDES if g.get("footer") and not g.get("draft")] or GUIDES[:5]
     guide_links = "\n".join(f'<li><a href="{g["path"]}">{esc(g["crumb"])}</a></li>' for g in footer_guides)
-    return text.replace("{{guide_links}}", guide_links).replace("{{year}}", page["updated"][:4])
+    # Hubs other than /guides/ appear once they're published (not drafts).
+    hubs = [BY_PATH.get(s["hub"]) for k, s in SECTIONS.items() if k != "guide"]
+    hub_links = "\n".join(f'<li><a href="{h["path"]}">{esc(h["crumb"])}</a></li>'
+                          for h in hubs if h and not h.get("draft"))
+    if not hub_links:
+        text = re.sub(r"[ \t]*\{\{hub_links\}\}\n", "", text)
+    return (text.replace("{{guide_links}}", guide_links).replace("{{hub_links}}", hub_links)
+            .replace("{{year}}", page["updated"][:4]))
+
+
+def render_related(page):
+    """The aside's Related box: the page's own "related" paths first, then pages from the same
+    "cluster", then a link to the section hub. Public pages never link to drafts."""
+    picked = []
+    for path in page.get("related", []):
+        target = BY_PATH.get(path)
+        if not target:
+            warn(f"{page['file']}: related path {path} isn't in site.json")
+        elif path != page["path"] and (page.get("draft") or not target.get("draft")):
+            picked.append(target)
+    limit = max(RELATED_MAX, len(picked))
+    if page.get("cluster"):
+        for p in PAGES:
+            if len(picked) >= limit:
+                break
+            if (p.get("cluster") == page["cluster"] and p["path"] != page["path"] and p not in picked
+                    and p["type"] in CONTENT_TYPES and not p.get("draft")):
+                picked.append(p)
+    hub = hub_of(page)
+    items = [(p["path"], p.get("crumb", p["title"])) for p in picked]
+    if hub and not hub.get("draft"):
+        items.append((hub["path"], f'All {hub["crumb"].lower()}'))
+    if not items:
+        warn(f"{page['file']}: Related box is empty (add \"related\" or \"cluster\" in site.json)")
+    out = ['<div class="related">', '  <p class="toc-title">Related</p>', '  <ul role="list">']
+    out += [f'    <li><a href="{path}">{esc(label)}</a></li>' for path, label in items]
+    out += ["  </ul>", "</div>"]
+    return "\n".join(out)
 
 
 # ---------- CTAs and release toggles ----------
@@ -384,6 +466,10 @@ def toggle_release(text):
 # ---------- Pages ----------
 
 def check_page(page):
+    if page["type"] in CONTENT_TYPES and page["path"] != SECTIONS[page["type"]]["hub"]:
+        for key in ("keyword", "cluster"):
+            if not page.get(key):
+                warn(f"{page['file']}: no \"{key}\" in site.json (needed for related links and the keyword check)")
     if len(page["title"]) > 60:
         warn(f"{page['file']}: title is {len(page['title'])} chars (max 60)")
     if len(page["description"]) > 155:
@@ -407,6 +493,8 @@ def build_page(page):
         "facts": render_facts,
         "status": render_status,
         "guide-list": render_guide_list,
+        "list": lambda: render_list(page.get("listType", "guide")),
+        "related": lambda: render_related(page),
     }
     out = fill_regions(text, renderers, page)
     out = rewrite_ctas(out, page)
@@ -470,12 +558,15 @@ def build_llms(public, rendered):
     head += [f"- {k}: {v}" for k, v in SITE["facts"]]
     head += ["", "## Pages", ""]
     for p in public:
-        if p["type"] != "guide":
+        if p["type"] not in CONTENT_TYPES:
             head.append(f"- [{p['title']}]({absolute(p['path'])}): {p.get('summary', p['description'])}")
-    head += ["", "## Guides", ""]
-    for p in public:
-        if p["type"] == "guide":
-            head.append(f"- [{p.get('headline', p['title'])}]({absolute(p['path'])}): {p['summary']}")
+    for kind, section in SECTIONS.items():
+        listed = [p for p in public if p["type"] == kind]
+        if not listed:
+            continue
+        head += ["", f"## {section['label']}", ""]
+        for p in listed:
+            head.append(f"- [{p.get('headline', p['title'])}]({absolute(p['path'])}): {p.get('summary', p['description'])}")
     head += ["", "## Optional", "", f"- [Full text of the main pages and guides]({ORIGIN}/llms-full.txt)", ""]
     write("llms.txt", "\n".join(head))
 
@@ -499,7 +590,16 @@ def main():
             if page[key] in seen:
                 warn(f"{page['file']}: duplicate {key} with {seen[page[key]]}")
             seen[page[key]] = page["file"]
-    public = [p for p in PAGES if not p.get("draft") and p["path"] in rendered]
+    # Two pages chasing the same query split Google's attention (Search Console showed this for
+    # "vaultaire vs keepsafe" and "photo vault recovery"). One target keyword per page.
+    keywords = {}
+    for page in PAGES:
+        kw = page.get("keyword", "").strip().lower()
+        if kw:
+            if kw in keywords:
+                warn(f"{page['file']}: keyword \"{kw}\" is already the target of {keywords[kw]}")
+            keywords[kw] = page["file"]
+    public =[p for p in PAGES if not p.get("draft") and p["path"] in rendered]
     build_sitemap(public)
     build_llms(public, rendered)
     drafts = [p["file"] for p in PAGES if p.get("draft")]

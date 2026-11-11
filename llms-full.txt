@@ -659,10 +659,10 @@ Try Noxium free
 150 photos, 10 videos, a decoy vault and full encrypted iCloud backup, free. No ads, no account.
 Download on the App Store
 Available on the App Store for iPhone and iPad.
-Related guides
+Related
 - How to hide photos on iPhone
 - Is the Hidden album private?
-- Move a vault to a new iPhone
+- Move a photo vault to a new iPhone
 - Keepsafe alternatives
 - Vaultaire vs Keepsafe
 - Vaults without subscriptions or ads
@@ -754,10 +754,11 @@ Yes. Go to Settings › Apps › Photos and turn off Show Hidden Album. The albu
 Something wrong or out of date? Email business@inertiaprojects.info and we'll fix it.
 Related
 - Is the Hidden album private?
-- Move a vault to a new iPhone
+- Move a photo vault to a new iPhone
 - Photo vault apps compared
 - How to hide videos on iPhone
-- Lock photos with Face ID or a pattern
+- Lock photos with Face ID
+- All guides
 
 ---
 
@@ -823,9 +824,10 @@ No. Turning off Show Hidden Album only hides the album from view. The photos sta
 Something wrong or out of date? Email business@inertiaprojects.info and we'll fix it.
 Related
 - How to hide photos on iPhone
-- Move a vault to a new iPhone
+- Move a photo vault to a new iPhone
 - Photo vault apps compared
-- Lock photos with Face ID or a pattern
+- Lock photos with Face ID
+- All guides
 
 ---
 
@@ -905,7 +907,8 @@ Related
 - How to hide photos on iPhone
 - Is the Hidden album private?
 - Photo vault apps compared
-- Photo vault lost your photos?
+- Photo vault lost your photos
+- All guides
 
 ---
 
@@ -976,9 +979,10 @@ I see thumbnails but the photos won't open. Are they lost?
 Not necessarily. Many vaults download full-size photos from the cloud in the background. Keep the app open on Wi-Fi and power for a while, and check your iCloud or the app's cloud storage isn't full.
 Something wrong or out of date? Email business@inertiaprojects.info and we'll fix it.
 Related
-- Move a vault to a new iPhone
+- Move a photo vault to a new iPhone
 - Forgot your vault password
 - Photo vault apps compared
+- All guides
 
 ---
 
@@ -1047,6 +1051,7 @@ Related
 - Vaults without subscriptions or ads
 - Vaultaire vs Keepsafe
 - Forgot your vault password
+- All guides
 
 ---
 
@@ -1123,6 +1128,8 @@ Related
 - Keepsafe alternatives
 - Photo vault apps compared
 - What is a decoy vault?
+- Vaults without subscriptions or ads
+- All guides
 
 ---
 
@@ -1195,6 +1202,7 @@ Related
 - How encrypted vaults work
 - How to hide videos on iPhone
 - What is a decoy vault?
+- All guides
 
 ---
 
@@ -1263,10 +1271,11 @@ Is a decoy vault the same as a duress code?
 No. A decoy only opens a harmless vault. A duress or emergency erase code also deletes your other vaults, which can't be undone.
 Something wrong or out of date? Email business@inertiaprojects.info and we'll fix it.
 Related
-- Lock photos with Face ID or a pattern
+- Lock photos with Face ID
 - How encrypted vaults work
 - Photo vault apps compared
 - Are photo vault apps safe?
+- All guides
 
 ---
 
@@ -1329,9 +1338,10 @@ Yes. Hidden videos in Photos count toward iCloud Photos, and videos in a vault t
 Something wrong or out of date? Email business@inertiaprojects.info and we'll fix it.
 Related
 - How to hide photos on iPhone
-- Photo vault lost your photos?
+- Photo vault lost your photos
 - Photo vault apps compared
-- Lock photos with Face ID or a pattern
+- Lock photos with Face ID
+- All guides
 
 ---
 
@@ -1406,6 +1416,7 @@ Related
 - Keepsafe alternatives
 - Are photo vault apps safe?
 - Vaultaire vs Keepsafe
+- All guides
 
 ---
 
@@ -1473,9 +1484,11 @@ What if I forgot my Noxium pattern?
 Tap "Use recovery phrase" on the lock screen and enter the phrase you wrote down at setup. If you've lost both, nobody can open the vault, including us.
 Something wrong or out of date? Email business@inertiaprojects.info and we'll fix it.
 Related
-- Photo vault lost your photos?
+- Photo vault lost your photos
 - How encrypted vaults work
 - Keepsafe alternatives
+- Move a photo vault to a new iPhone
+- All guides
 
 ---
 
@@ -1551,6 +1564,7 @@ Related
 - Forgot your vault password
 - Photo vault apps compared
 - What is a decoy vault?
+- All guides
 
 ---
 
@@ -1622,6 +1636,7 @@ Related
 - Photo vault apps compared
 - What is a decoy vault?
 - Vaults without subscriptions or ads
+- All guides
 
 ---
 
