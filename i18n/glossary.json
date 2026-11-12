@@ -1,5 +1,5 @@
 {
-  "_readme": "Use these words for Noxium's own features in every translated page, so the same thing always has the same name. If the Noxium app is localized into a language, the app's own strings win: update this file to match them. Apple's feature names (Hidden album, Settings paths, App Store privacy labels) are never taken from here: copy them from support.apple.com/<locale> and the localized App Store page each time.",
+  "_readme": "Use these words for Noxium's own features in every translated page, so the same thing always has the same name. If the Noxium app is localized into a language, the app's own strings win: update this file to match them. Apple's feature names (Hidden album, Settings paths, App Store privacy labels) are never taken from here: copy them from support.apple.com/<locale> and the localized App Store page each time. zh-hant (Taiwan, Hong Kong) was converted from zh-hans with OpenCC s2twp and corrected for Taiwan usage; the Noxium app ships Traditional Chinese, so align with its strings when available.",
   "keep": [
     "Noxium",
     "Noxium Pro",
@@ -20,7 +20,7 @@
       "it": "cassaforte",
       "ja": "保管庫",
       "ko": "보관함",
-      "zh-hans": "保险箱"
+      "zh-hant": "保險箱"
     },
     "photo vault": {
       "de": "Foto-Tresor",
@@ -30,7 +30,7 @@
       "it": "cassaforte per foto",
       "ja": "写真保管庫",
       "ko": "사진 보관함",
-      "zh-hans": "照片保险箱"
+      "zh-hant": "照片保險箱"
     },
     "pattern": {
       "de": "Muster",
@@ -40,7 +40,7 @@
       "it": "sequenza",
       "ja": "パターン",
       "ko": "패턴",
-      "zh-hans": "图案"
+      "zh-hant": "圖案"
     },
     "decoy vault": {
       "de": "Ablenkungs-Tresor",
@@ -50,7 +50,7 @@
       "it": "cassaforte esca",
       "ja": "ダミー保管庫",
       "ko": "위장 보관함",
-      "zh-hans": "诱饵保险箱"
+      "zh-hant": "誘餌保險箱"
     },
     "recovery phrase": {
       "de": "Wiederherstellungsphrase",
@@ -60,7 +60,7 @@
       "it": "frase di recupero",
       "ja": "リカバリーフレーズ",
       "ko": "복구 문구",
-      "zh-hans": "恢复短语"
+      "zh-hant": "復原短語"
     },
     "emergency erase": {
       "de": "Notfall-Löschung",
@@ -70,7 +70,7 @@
       "it": "cancellazione di emergenza",
       "ja": "緊急消去",
       "ko": "긴급 삭제",
-      "zh-hans": "紧急擦除"
+      "zh-hant": "緊急清除"
     },
     "5×5 plate of bolts": {
       "de": "5×5-Platte mit Bolzen",
@@ -80,7 +80,7 @@
       "it": "piastra di 5×5 bulloni",
       "ja": "5×5 のボルトプレート",
       "ko": "5×5 볼트 판",
-      "zh-hans": "5×5 螺栓板"
+      "zh-hant": "5×5 螺栓板"
     },
     "Data Not Collected (App Store label)": {
       "de": "Keine Daten erfasst",
@@ -90,8 +90,8 @@
       "it": "Dati non raccolti",
       "ja": "データの収集なし",
       "ko": "데이터가 수집되지 않음",
-      "zh-hans": "未收集数据",
-      "_verify": "de, es, pt-br, it, ja, ko checked on Noxium's own localized App Store page and zh-hans on another app's China store page, 12 November 2026. fr not checked: Noxium isn't sold in the French store."
+      "_verify": "de, es, pt-br, it, ja, ko checked on Noxium's own localized App Store page and zh-hans on another app's China store page, 12 November 2026. fr not checked: Noxium isn't sold in the French store.",
+      "zh-hant": "未收集資料"
     }
   }
 }

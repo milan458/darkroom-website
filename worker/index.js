@@ -16,6 +16,13 @@ export default {
       url.port = "";
       return Response.redirect(url.toString(), 301);
     }
+    // Simplified Chinese pages were live for a few hours on 12 Nov 2026, then replaced by Traditional
+    // Chinese (/zh-hant/), because Noxium isn't sold in the mainland China App Store. Send old links
+    // to the English page.
+    if (url.pathname === "/zh-hans" || url.pathname.startsWith("/zh-hans/")) {
+      url.pathname = url.pathname.slice("/zh-hans".length) || "/";
+      return Response.redirect(url.toString(), 301);
+    }
     const response = await env.ASSETS.fetch(request);
     // Static assets answer trailing-slash fixes (/guides → /guides/, /about/ → /about) with a
     // temporary 307. Make them permanent so search engines index only the canonical URL.

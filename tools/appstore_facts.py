@@ -56,16 +56,18 @@ def lookup(app_id, country):
     }
 
 
-def page_facts(url):
-    """Privacy label headings and in-app purchases from the App Store web page (best effort)."""
-    raw = get(url)
+def page_facts(url, country="us"):
+    """Privacy label headings and in-app purchases from the App Store web page (best effort).
+    Other stores' pages are requested in English (?l=en-GB) so the labels parse; prices stay local."""
+    raw = get(url if country == "us" else url + "?l=en-GB")
     text = html.unescape(re.sub(r"<[^>]+>", " ", re.sub(r"(?s)<(script|style)[^>]*>.*?</\1>", " ", raw)))
     text = re.sub(r"\s+", " ", text)
     labels = [l for l in LABELS if l in text]
     iaps = []
-    m = re.search(r"In-App Purchases (?:Yes )?(.*?)(?:Learn More|Copyright|Developer Website)", text)
+    m = re.search(r"In-App Purchases Yes (.*?)(?:Learn More|Copyright|Developer Website)", text)
     if m:
-        for name, price in re.findall(r"(.+?) ([$€£¥₩]\s?[\d.,]+|[\d.,]+\s?[$€£¥₩]|R\$\s?[\d.,]+)\s*", m.group(1)):
+        price_re = r"(?:[A-Z]{1,3}\$|[$€£¥₩￦])\s?[\d.,]+|[\d.,]+\s?[€$₩]"
+        for name, price in re.findall(rf"(.+?) ({price_re})\s*", m.group(1)):
             item = {"name": name.strip(), "price": price.strip()}
             if item not in iaps:
                 iaps.append(item)
@@ -101,7 +103,7 @@ def main():
                 app.setdefault("listings", {})[country] = {"checked": today, "available": False}
                 continue
             try:
-                facts.update(page_facts(facts["url"]))
+                facts.update(page_facts(facts["url"], country))
             except Exception as e:  # the page layout can change; keep the API facts
                 facts["pageError"] = str(e)[:120]
             facts["checked"] = today
