@@ -36,7 +36,7 @@
               "price": "$2.99"
             }
           ],
-          "checked": "2026-11-11"
+          "checked": "2026-11-12"
         },
         "de": {
           "name": "Noxium: Privater Foto-Tresor",
@@ -53,11 +53,11 @@
           ],
           "inAppPurchases": [
             {
-              "name": "Noxium Pro jährlich",
+              "name": "Noxium Pro Yearly",
               "price": "19,99 €"
             },
             {
-              "name": "Noxium Pro wöchentlich",
+              "name": "Noxium Pro Weekly",
               "price": "2,99 €"
             },
             {
@@ -65,12 +65,11 @@
               "price": "44,99 €"
             },
             {
-              "name": "Noxium Pro monatlich",
+              "name": "Noxium Pro Monthly",
               "price": "2,99 €"
             }
           ],
-          "checked": "2026-11-12",
-          "pageParsedBy": "hand, localized page (tool parser reads English pages only)"
+          "checked": "2026-11-12"
         },
         "fr": {
           "checked": "2026-11-12",
@@ -125,11 +124,11 @@
           ],
           "inAppPurchases": [
             {
-              "name": "Noxium Pro anual",
+              "name": "Noxium Pro Yearly",
               "price": "R$ 119,90"
             },
             {
-              "name": "Noxium Pro semanal",
+              "name": "Noxium Pro Weekly",
               "price": "R$ 19,90"
             },
             {
@@ -137,12 +136,11 @@
               "price": "R$ 249,90"
             },
             {
-              "name": "Noxium Pro mensal",
+              "name": "Noxium Pro Monthly",
               "price": "R$ 19,90"
             }
           ],
-          "checked": "2026-11-12",
-          "pageParsedBy": "hand, localized page (tool parser reads English pages only)"
+          "checked": "2026-11-12"
         },
         "it": {
           "name": "Noxium: Cassaforte per foto",
@@ -249,6 +247,39 @@
         "cn": {
           "checked": "2026-11-12",
           "available": false
+        },
+        "tw": {
+          "name": "Noxium：私密相簿保險箱",
+          "developer": "Milan Sharma",
+          "price": "免費",
+          "rating": null,
+          "ratingCount": 0,
+          "version": "1.0",
+          "lastUpdate": "2026-11-06",
+          "minimumOs": "17.0",
+          "url": "https://apps.apple.com/tw/app/noxium-%E7%A7%81%E5%AF%86%E7%9B%B8%E7%B0%BF%E4%BF%9D%E9%9A%AA%E7%AE%B1/id6824616093",
+          "privacyLabel": [
+            "Data Not Collected"
+          ],
+          "inAppPurchases": [
+            {
+              "name": "Noxium Pro Yearly",
+              "price": "NT$590.00"
+            },
+            {
+              "name": "Noxium Pro Weekly",
+              "price": "NT$90.00"
+            },
+            {
+              "name": "Darkroom Pro – Lifetime",
+              "price": "NT$1,290.00"
+            },
+            {
+              "name": "Noxium Pro Monthly",
+              "price": "NT$90.00"
+            }
+          ],
+          "checked": "2026-11-12"
         }
       }
     },
