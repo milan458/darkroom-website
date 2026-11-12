@@ -46,7 +46,7 @@
     "Company": "Empresa",
     "Privacy policy": "Política de privacidade",
     "Terms of use": "Termos de uso",
-    "Noxium. Made by Inertia Projects, an independent developer. App Store privacy label: Data Not Collected.": "Noxium. Feito pela Inertia Projects, um desenvolvedor independente. Rótulo de privacidade da App Store: Nenhum dado coletado.",
+    "Noxium. Made by Inertia Projects, an independent developer. App Store privacy label: Data Not Collected.": "Noxium. Feito pela Inertia Projects, um desenvolvedor independente. Rótulo de privacidade da App Store: Dados não coletados.",
     "Apple, the Apple logo, iPhone, iPad and Face ID are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc.": "Apple, o logotipo da Apple, iPhone, iPad e Face ID são marcas comerciais da Apple Inc., registradas nos EUA e em outros países. App Store é uma marca de serviço da Apple Inc.",
     "Breadcrumb": "Trilha de navegação",
     "By": "Por",
@@ -59,5 +59,71 @@
     "All {name}": "Todos os {name}",
     "Language": "Idioma"
   },
-  "pages": {}
+  "pages": {},
+  "facts": [
+    [
+      "O que é",
+      "Um app para iPhone e iPad que esconde fotos, vídeos e notas em cofres criptografados."
+    ],
+    [
+      "Como abrir",
+      "Desenhe um padrão que passe por pelo menos 6 parafusos de uma placa de 5×5 parafusos. O Face ID pode abrir o cofre principal."
+    ],
+    [
+      "Criptografia",
+      "Tudo é criptografado no aparelho. As chaves vêm do seu padrão via Argon2id (libsodium); os arquivos são selados com AES-256-GCM (Apple CryptoKit). Nomes, datas e locais também são criptografados. O padrão nunca é armazenado."
+    ],
+    [
+      "Backup",
+      "Um backup criptografado vai para o seu próprio iCloud privado (CloudKit). Num iPhone novo, desenhe seu padrão e o cofre é restaurado. Só dados criptografados saem do aparelho."
+    ],
+    [
+      "Esqueceu o padrão",
+      "Na configuração, você anota uma frase de recuperação, e ela abre o seu cofre. Ninguém consegue redefinir um padrão: nem o desenvolvedor, nem a Apple."
+    ],
+    [
+      "Cofre de fachada",
+      "Um segundo padrão abre um cofre separado e inofensivo. O plano gratuito inclui 1."
+    ],
+    [
+      "Apagamento de emergência (Pro)",
+      "Um terceiro padrão abre um cofre inofensivo e apaga os outros."
+    ],
+    [
+      "Esconder o app",
+      "Troque o ícone do app por um que imita Calculadora, Notas ou Tempo (Pro). O conteúdo do cofre fica escondido no alternador de apps e durante a gravação de tela."
+    ],
+    [
+      "Organização",
+      "Álbuns, álbuns dentro de álbuns e álbuns com padrão próprio (Pro). Notas criptografadas. A coleção Apagados guarda os itens por 30 dias."
+    ],
+    [
+      "Importar e exportar",
+      "Importa HEIC, ProRAW e Live Photos. Câmera embutida. \"Enviar para o Noxium\" na planilha de compartilhamento. Exporta em qualidade total, com as datas originais."
+    ],
+    [
+      "Privacidade",
+      "Sem anúncios, sem conta, sem análises. Rótulo de privacidade da App Store: Dados não coletados."
+    ],
+    [
+      "Plano gratuito",
+      "150 fotos, 10 vídeos, notas ilimitadas, 1 cofre de fachada, backup e restauração completos no iCloud."
+    ],
+    [
+      "Noxium Pro",
+      "R$ 19,90 por semana, R$ 119,90 por ano (R$ 9,99 por mês) ou R$ 249,90 uma única vez (App Store do Brasil, consultada em 12 de novembro de 2026). Libera itens ilimitados, apagamento de emergência, sincronização entre iPhone e iPad, ícones personalizados, padrões por álbum e cofres compartilhados."
+    ],
+    [
+      "Se o Pro acabar",
+      "Você continua com acesso completo para ver, exportar e fazer backup de tudo o que já está no cofre."
+    ],
+    [
+      "Requisitos",
+      "iOS 17 ou iPadOS 17 e posterior."
+    ],
+    [
+      "Feito por",
+      "Inertia Projects, um desenvolvedor independente. Contato: business@inertiaprojects.info."
+    ]
+  ]
 }

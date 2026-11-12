@@ -59,5 +59,71 @@
     "All {name}": "Tous les {name}",
     "Language": "Langue"
   },
-  "pages": {}
+  "pages": {},
+  "facts": [
+    [
+      "Ce que c’est",
+      "Une app pour iPhone et iPad qui cache photos, vidéos et notes dans des coffres-forts chiffrés."
+    ],
+    [
+      "Comment l’ouvrir",
+      "Tracez un schéma passant par au moins 6 boulons sur une plaque de 5×5 boulons. Face ID peut ouvrir le coffre-fort principal."
+    ],
+    [
+      "Chiffrement",
+      "Tout est chiffré sur l’appareil. Les clés sont dérivées de votre schéma avec Argon2id (libsodium) ; les fichiers sont scellés en AES-256-GCM (Apple CryptoKit). Les noms, dates et lieux sont chiffrés aussi. Le schéma n’est jamais enregistré."
+    ],
+    [
+      "Sauvegarde",
+      "Une sauvegarde chiffrée part dans votre propre iCloud privé (CloudKit). Sur un nouvel iPhone, tracez votre schéma et le coffre-fort se restaure. Seules des données chiffrées quittent l’appareil."
+    ],
+    [
+      "Schéma oublié",
+      "Vous notez une phrase de récupération lors de la configuration, et elle ouvre votre coffre-fort. Personne ne peut réinitialiser un schéma : ni le développeur, ni Apple."
+    ],
+    [
+      "Coffre-fort leurre",
+      "Un deuxième schéma ouvre un coffre-fort séparé et anodin. L’offre gratuite en inclut 1."
+    ],
+    [
+      "Effacement d’urgence (Pro)",
+      "Un troisième schéma ouvre un coffre-fort anodin et efface les autres."
+    ],
+    [
+      "Cacher l’app",
+      "Remplacez l’icône de l’app par une fausse Calculette, Notes ou Météo (Pro). Le contenu du coffre-fort est masqué dans le sélecteur d’apps et pendant l’enregistrement de l’écran."
+    ],
+    [
+      "Organisation",
+      "Albums, albums dans des albums, et albums avec leur propre schéma (Pro). Notes chiffrées. « Supprimés récemment » conserve les éléments 30 jours."
+    ],
+    [
+      "Import et export",
+      "Importe les HEIC, ProRAW et Live Photos. Appareil photo intégré. « Envoyer vers Noxium » depuis la feuille de partage. Export en qualité d’origine, avec les dates d’origine."
+    ],
+    [
+      "Confidentialité",
+      "Pas de publicité, pas de compte, pas d’analyses. Étiquette de confidentialité de l’App Store : Aucune donnée collectée."
+    ],
+    [
+      "Offre gratuite",
+      "150 photos, 10 vidéos, notes illimitées, 1 coffre-fort leurre, sauvegarde et restauration iCloud complètes."
+    ],
+    [
+      "Noxium Pro",
+      "2,99 $ par semaine, 17,99 $ par an (1,49 $ par mois) ou 39,99 $ en une fois, prix de l’App Store américain. Au 12 novembre 2026, Noxium n’est pas proposée sur l’App Store français ; elle l’est en Belgique, en Suisse, au Luxembourg et au Canada, au prix local. Ajoute les éléments illimités, l’effacement d’urgence, la synchro iPhone et iPad, les icônes personnalisées, les schémas d’album et les coffres-forts partagés."
+    ],
+    [
+      "Si Pro s’arrête",
+      "Vous gardez un accès complet pour consulter, exporter et sauvegarder tout ce qui est déjà dans votre coffre-fort."
+    ],
+    [
+      "Configuration requise",
+      "iOS 17 ou iPadOS 17 et versions ultérieures."
+    ],
+    [
+      "Conçue par",
+      "Inertia Projects, un développeur indépendant. Contact : business@inertiaprojects.info."
+    ]
+  ]
 }

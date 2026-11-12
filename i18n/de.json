@@ -59,5 +59,71 @@
     "All {name}": "Alle {name}",
     "Language": "Sprache"
   },
-  "pages": {}
+  "pages": {},
+  "facts": [
+    [
+      "Was es ist",
+      "Eine App für iPhone und iPad, die Fotos, Videos und Notizen in verschlüsselten Tresoren versteckt."
+    ],
+    [
+      "Wie du ihn öffnest",
+      "Zeichne ein Muster über mindestens 6 Bolzen auf einer 5×5-Platte mit 25 Bolzen. Face ID kann den Haupttresor öffnen."
+    ],
+    [
+      "Verschlüsselung",
+      "Alles wird auf dem Gerät verschlüsselt. Die Schlüssel entstehen aus deinem Muster per Argon2id (libsodium); Dateien werden mit AES-256-GCM (Apple CryptoKit) versiegelt. Auch Namen, Daten und Orte sind verschlüsselt. Das Muster wird nie gespeichert."
+    ],
+    [
+      "Backup",
+      "Ein verschlüsseltes Backup landet in deiner eigenen privaten iCloud (CloudKit). Auf einem neuen iPhone zeichnest du dein Muster, und der Tresor wird wiederhergestellt. Nur verschlüsselte Daten verlassen das Gerät."
+    ],
+    [
+      "Muster vergessen",
+      "Bei der Einrichtung schreibst du eine Wiederherstellungsphrase auf, und sie öffnet deinen Tresor. Niemand kann ein Muster zurücksetzen: nicht der Entwickler, nicht Apple."
+    ],
+    [
+      "Ablenkungs-Tresor",
+      "Ein zweites Muster öffnet einen separaten, harmlosen Tresor. Im kostenlosen Plan ist 1 enthalten."
+    ],
+    [
+      "Notfall-Löschung (Pro)",
+      "Ein drittes Muster öffnet einen harmlosen Tresor und löscht die anderen."
+    ],
+    [
+      "App verstecken",
+      "Ändere das App-Symbol in ein Rechner-, Notizen- oder Wetter-Symbol (Pro). Tresorinhalte sind im App-Umschalter und bei Bildschirmaufnahmen verborgen."
+    ],
+    [
+      "Ordnen",
+      "Alben, Alben in Alben und Alben mit eigenem Muster (Pro). Verschlüsselte Notizen. „Zuletzt gelöscht“ behält Objekte 30 Tage lang."
+    ],
+    [
+      "Import und Export",
+      "Importiert HEIC, ProRAW und Live Photos. Eingebaute Kamera. „An Noxium senden“ im Teilen-Menü. Export in voller Qualität mit Originaldatum."
+    ],
+    [
+      "Datenschutz",
+      "Keine Werbung, keine Accounts, keine Analysen. App-Store-Datenschutzangabe: Keine Daten erfasst."
+    ],
+    [
+      "Kostenloser Plan",
+      "150 Fotos, 10 Videos, unbegrenzt Notizen, 1 Ablenkungs-Tresor, volles iCloud-Backup und Wiederherstellung."
+    ],
+    [
+      "Noxium Pro",
+      "2,99 € pro Woche, 19,99 € im Jahr (1,66 € im Monat) oder einmalig 44,99 € (deutscher App Store, Stand 12. November 2026). Bringt unbegrenzt viele Objekte, Notfall-Löschung, Sync zwischen iPhone und iPad, eigene App-Symbole, Album-Muster und geteilte Tresore."
+    ],
+    [
+      "Wenn Pro endet",
+      "Du kannst alles, was schon in deinem Tresor liegt, weiterhin ansehen, exportieren und sichern."
+    ],
+    [
+      "Voraussetzungen",
+      "iOS 17 oder iPadOS 17 und neuer."
+    ],
+    [
+      "Entwickelt von",
+      "Inertia Projects, einem unabhängigen Entwickler. Kontakt: business@inertiaprojects.info."
+    ]
+  ]
 }

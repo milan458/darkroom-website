@@ -46,7 +46,7 @@
     "Company": "Azienda",
     "Privacy policy": "Informativa sulla privacy",
     "Terms of use": "Condizioni d’uso",
-    "Noxium. Made by Inertia Projects, an independent developer. App Store privacy label: Data Not Collected.": "Noxium. Realizzata da Inertia Projects, uno sviluppatore indipendente. Etichetta privacy dell’App Store: Nessun dato raccolto.",
+    "Noxium. Made by Inertia Projects, an independent developer. App Store privacy label: Data Not Collected.": "Noxium. Realizzata da Inertia Projects, uno sviluppatore indipendente. Etichetta privacy dell’App Store: Dati non raccolti.",
     "Apple, the Apple logo, iPhone, iPad and Face ID are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc.": "Apple, il logo Apple, iPhone, iPad e Face ID sono marchi di Apple Inc., registrati negli Stati Uniti e in altri Paesi. App Store è un marchio di servizio di Apple Inc.",
     "Breadcrumb": "Percorso di navigazione",
     "By": "Di",
@@ -59,5 +59,71 @@
     "All {name}": "Tutte le {name}",
     "Language": "Lingua"
   },
-  "pages": {}
+  "pages": {},
+  "facts": [
+    [
+      "Che cos’è",
+      "Un’app per iPhone e iPad che nasconde foto, video e note in casseforti cifrate."
+    ],
+    [
+      "Come si apre",
+      "Traccia una sequenza che passi per almeno 6 bulloni su una piastra di 5×5 bulloni. Face ID può aprire la cassaforte principale."
+    ],
+    [
+      "Crittografia",
+      "Tutto viene cifrato sul dispositivo. Le chiavi derivano dalla tua sequenza tramite Argon2id (libsodium); i file sono sigillati con AES-256-GCM (Apple CryptoKit). Anche nomi, date e luoghi sono cifrati. La sequenza non viene mai salvata."
+    ],
+    [
+      "Backup",
+      "Un backup cifrato va nel tuo iCloud privato (CloudKit). Su un nuovo iPhone tracci la tua sequenza e la cassaforte si ripristina. Dal dispositivo escono solo dati cifrati."
+    ],
+    [
+      "Sequenza dimenticata",
+      "Durante la configurazione scrivi una frase di recupero, che apre la tua cassaforte. Nessuno può reimpostare una sequenza: né lo sviluppatore, né Apple."
+    ],
+    [
+      "Cassaforte esca",
+      "Una seconda sequenza apre una cassaforte separata e innocua. Il piano gratuito ne include 1."
+    ],
+    [
+      "Cancellazione di emergenza (Pro)",
+      "Una terza sequenza apre una cassaforte innocua e cancella le altre."
+    ],
+    [
+      "Nascondere l’app",
+      "Cambia l’icona dell’app con una che imita Calcolatrice, Note o Meteo (Pro). Il contenuto della cassaforte è nascosto nel selettore delle app e durante la registrazione dello schermo."
+    ],
+    [
+      "Organizzazione",
+      "Album, album dentro album e album con una sequenza propria (Pro). Note cifrate. “Eliminati di recente” conserva gli elementi per 30 giorni."
+    ],
+    [
+      "Importazione ed esportazione",
+      "Importa HEIC, ProRAW e Live Photo. Fotocamera integrata. “Invia a Noxium” dal menu Condividi. Esporta a piena qualità con le date originali."
+    ],
+    [
+      "Privacy",
+      "Niente pubblicità, niente account, niente analisi. Etichetta privacy dell’App Store: Dati non raccolti."
+    ],
+    [
+      "Piano gratuito",
+      "150 foto, 10 video, note illimitate, 1 cassaforte esca, backup e ripristino iCloud completi."
+    ],
+    [
+      "Noxium Pro",
+      "2,99 € a settimana, 19,99 € all’anno (1,66 € al mese) oppure 44,99 € una tantum (App Store italiano, verificato il 12 novembre 2026). Aggiunge elementi illimitati, cancellazione di emergenza, sincronizzazione tra iPhone e iPad, icone personalizzate, sequenze per album e casseforti condivise."
+    ],
+    [
+      "Se Pro scade",
+      "Mantieni l’accesso completo per vedere, esportare e salvare in backup tutto ciò che è già nella cassaforte."
+    ],
+    [
+      "Requisiti",
+      "iOS 17 o iPadOS 17 e versioni successive."
+    ],
+    [
+      "Realizzata da",
+      "Inertia Projects, uno sviluppatore indipendente. Contatti: business@inertiaprojects.info."
+    ]
+  ]
 }

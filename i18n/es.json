@@ -59,5 +59,71 @@
     "All {name}": "Todas las {name}",
     "Language": "Idioma"
   },
-  "pages": {}
+  "pages": {},
+  "facts": [
+    [
+      "Qué es",
+      "Una app para iPhone y iPad que oculta fotos, vídeos y notas en bóvedas cifradas."
+    ],
+    [
+      "Cómo se abre",
+      "Dibuja un patrón que pase por al menos 6 pernos en una placa de 5×5 pernos. Face ID puede abrir la bóveda principal."
+    ],
+    [
+      "Cifrado",
+      "Todo se cifra en el dispositivo. Las claves salen de tu patrón mediante Argon2id (libsodium); los archivos se sellan con AES-256-GCM (Apple CryptoKit). Los nombres, fechas y lugares también se cifran. El patrón nunca se guarda."
+    ],
+    [
+      "Copia de seguridad",
+      "Una copia cifrada va a tu propio iCloud privado (CloudKit). En un iPhone nuevo, dibuja tu patrón y la bóveda se restaura. Solo salen del dispositivo datos cifrados."
+    ],
+    [
+      "Si olvidas el patrón",
+      "Al configurarla apuntas una frase de recuperación, y esa frase abre tu bóveda. Nadie puede restablecer un patrón: ni el desarrollador ni Apple."
+    ],
+    [
+      "Bóveda señuelo",
+      "Un segundo patrón abre una bóveda aparte e inofensiva. El plan gratuito incluye 1."
+    ],
+    [
+      "Borrado de emergencia (Pro)",
+      "Un tercer patrón abre una bóveda inofensiva y borra las demás."
+    ],
+    [
+      "Ocultar la app",
+      "Cambia el icono de la app por uno que imita a Calculadora, Notas o Tiempo (Pro). El contenido de la bóveda se oculta en el selector de apps y al grabar la pantalla."
+    ],
+    [
+      "Organización",
+      "Álbumes, álbumes dentro de álbumes y álbumes con su propio patrón (Pro). Notas cifradas. «Eliminados» conserva los elementos durante 30 días."
+    ],
+    [
+      "Importar y exportar",
+      "Importa HEIC, ProRAW y Live Photos. Cámara integrada. «Enviar a Noxium» desde el menú Compartir. Exporta a calidad completa con las fechas originales."
+    ],
+    [
+      "Privacidad",
+      "Sin anuncios, sin cuentas, sin analíticas. Etiqueta de privacidad del App Store: No se recopilan datos."
+    ],
+    [
+      "Plan gratuito",
+      "150 fotos, 10 vídeos, notas ilimitadas, 1 bóveda señuelo, copia de seguridad y restauración completas en iCloud."
+    ],
+    [
+      "Noxium Pro",
+      "2,99 € a la semana, 19,99 € al año (1,66 € al mes) o 44,99 € en un solo pago (App Store de España, consultado el 12 de noviembre de 2026). Añade elementos ilimitados, borrado de emergencia, sincronización entre iPhone y iPad, iconos personalizados, patrones por álbum y bóvedas compartidas."
+    ],
+    [
+      "Si Pro termina",
+      "Sigues teniendo acceso completo para ver, exportar y guardar en copia todo lo que ya está en tu bóveda."
+    ],
+    [
+      "Requisitos",
+      "iOS 17 o iPadOS 17 y posteriores."
+    ],
+    [
+      "Creada por",
+      "Inertia Projects, un desarrollador independiente. Contacto: business@inertiaprojects.info."
+    ]
+  ]
 }
