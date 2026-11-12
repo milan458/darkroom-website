@@ -70,6 +70,17 @@
       "keyword": "keepsafe 代わり",
       "published": "2026-11-12",
       "updated": "2026-11-12"
+    },
+    "/guides/how-to-hide-photos-on-iphone": {
+      "source": "2026-10-26",
+      "title": "iPhoneで写真を隠す方法：全手段と守れる範囲（iOS 26）",
+      "description": "iOS 26のiPhoneで写真を隠す方法を全部解説。「非表示」アルバム、メモのロック、アプリのロック、保管庫アプリで何が守れて何が守れないか。",
+      "headline": "iPhone で写真を隠す方法：すべての方法と、それぞれが守れる範囲",
+      "summary": "「非表示」アルバムから暗号化保管庫アプリまで、iPhone で写真を隠すすべての方法と、それぞれが本当に守れる範囲。",
+      "crumb": "iPhone で写真を隠す方法",
+      "keyword": "iphone 写真 隠す",
+      "published": "2026-11-12",
+      "updated": "2026-11-12"
     }
   },
   "facts": [
