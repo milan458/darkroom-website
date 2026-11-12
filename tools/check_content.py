@@ -21,6 +21,31 @@ ROOT = Path(__file__).resolve().parent.parent
 SITE = json.loads((ROOT / "site.json").read_text(encoding="utf-8"))
 SECTIONS = SITE.get("sections", {"guide": {"hub": "/guides/"}})
 HUBS = {s["hub"] for s in SECTIONS.values()}
+LOCALES = SITE.get("locales", {"en": {"prefix": ""}})
+CJK = {"ja", "ko", "zh-hans", "zh-hant"}
+I18N = {}
+for _lang in LOCALES:
+    _f = ROOT / "i18n" / f"{_lang}.json"
+    if _lang != "en" and _f.exists():
+        I18N[_lang] = json.loads(_f.read_text(encoding="utf-8"))
+
+
+def translated_pages():
+    """site.json pages as they exist in other languages (same type, flags; translated file and path)."""
+    by_path = {p["path"]: p for p in SITE["pages"]}
+    out = []
+    for lang, data in I18N.items():
+        for src, tr in data.get("pages", {}).items():
+            base = by_path.get(src)
+            if base:
+                page = dict(base)
+                page.update(tr)
+                page.update({"_lang": lang, "file": f"{lang}/{base['file']}", "path": LOCALES[lang]["prefix"] + src})
+                out.append(page)
+    return out
+
+
+ALL_PAGES = SITE["pages"] + translated_pages()
 
 MIN_WORDS = {"guide": 900, "feature": 700, "compare": 1200, "scenario": 700}
 MIN_FAQ = 3
@@ -45,13 +70,17 @@ def strip(s):
     return re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", s))).strip()
 
 
-def facts_text():
-    return " ".join(v for _, v in SITE["facts"])
+def facts_text(lang="en"):
+    facts = I18N.get(lang, {}).get("facts") if lang != "en" else SITE["facts"]
+    return " ".join(v for _, v in facts) if facts else None
 
 
-def check_noxium_claims(text, errors):
-    """Prices and free-plan limits in any sentence that names Noxium must match site.json facts."""
-    facts = facts_text()
+def check_noxium_claims(text, errors, lang="en"):
+    """Prices and free-plan limits in any sentence that names Noxium must match the facts for that
+    language (site.json facts, or i18n/<lang>.json facts with that country's App Store prices)."""
+    facts = facts_text(lang)
+    if facts is None:
+        return
     fact_prices = set(re.findall(r"\$\d+(?:\.\d\d)?", facts))
     fact_counts = set(re.findall(r"(\d+) (?:photos|videos)", facts))
     for sentence in re.split(r"(?<=[.!?])\s+", text):
@@ -75,6 +104,7 @@ def check_page(page, errors, warnings):
     raw = path.read_text(encoding="utf-8")
     src = re.sub(r"<!--.*?-->", " ", raw, flags=re.S)
     kind = page["type"]
+    lang = page.get("_lang", "en")
     m = re.search(r'<article class="prose">(.*?)</article>', src, re.S)
     article = m.group(1) if m else ""
     main = re.search(r"<main\b.*?</main>", src, re.S)
@@ -87,9 +117,11 @@ def check_page(page, errors, warnings):
         errors.append("needs exactly one <h1>")
     if 'class="answer"' not in main:
         errors.append('no "Short answer" box (<div class="answer">)')
-    words = len(text.split())
+    # CJK text has no spaces between words: count characters, about 2 per English word.
+    words = len(re.sub(r"\s", "", text)) // 2 if lang in CJK else len(text.split())
     if words < MIN_WORDS.get(kind, 0):
-        errors.append(f"{words} words in the article; {kind} pages need at least {MIN_WORDS[kind]}")
+        unit = "words (characters / 2)" if lang in CJK else "words"
+        errors.append(f"{words} {unit} in the article; {kind} pages need at least {MIN_WORDS[kind]}")
     faqs = len(re.findall(r'<details class="faq-item"', article))
     if faqs < MIN_FAQ:
         errors.append(f"{faqs} FAQ items; need at least {MIN_FAQ}")
@@ -98,18 +130,23 @@ def check_page(page, errors, warnings):
         errors.append(f"{len(internal)} internal links in the article text; need at least {MIN_INTERNAL_LINKS}")
     for p in sorted(internal):
         target = p.rstrip("/") or "/"
-        known = {x["path"].rstrip("/") or "/" for x in SITE["pages"]}
+        known = {x["path"].rstrip("/") or "/" for x in ALL_PAGES}
         if target not in known and not p.startswith("/assets/"):
             errors.append(f"internal link {p} isn't a page in site.json")
     hits = PLACEHOLDERS.findall(strip(main))
     if hits or re.search(r"<td>…</td>", main):
         errors.append(f"template placeholders left: {', '.join(sorted(set(hits))) or '…'}")
     lower = text.lower()
+    if lang != "en":
+        if page.get("sensitive"):
+            errors.append("sensitive scenarios stay English-only until a native speaker reviews them (SEO-PLAYBOOK.md)")
+        if facts_text(lang) is None and "Noxium" in text and re.search(r"\d", text):
+            warnings.append(f"i18n/{lang}.json has no \"facts\" yet, so Noxium prices on this page aren't checked")
     # Quoting a phrase to debunk it ("military-grade" alone tells you nothing) is fine, and so is a
     # question about what it means.
     claims = re.sub(r'["“][^"”]{0,60}["”]', " ", lower)
     claims = " ".join(s for s in re.split(r"(?<=[.!?])\s+", claims) if not (s.endswith("?") and "mean" in s))
-    for b in BANNED:
+    for b in (BANNED if lang == "en" else []):
         if b in claims:
             errors.append(f'banned phrase "{b}" (SEO-PLAYBOOK.md section 11)')
     for img in re.findall(r"<img\b[^>]*>", main):
@@ -117,10 +154,10 @@ def check_page(page, errors, warnings):
             errors.append(f"image without alt: {img[:80]}")
         if "width=" not in img or "height=" not in img:
             errors.append(f"image without width/height: {img[:80]}")
-    check_noxium_claims(text, errors)
+    check_noxium_claims(text, errors, lang)
 
     kw = page.get("keyword", "")
-    if kw:
+    if kw and lang == "en":
         words_kw = [w for w in re.findall(r"[a-z0-9]+", kw.lower()) if len(w) > 2]
         title = page["title"].lower()
         if words_kw and not any(w in title for w in words_kw):
@@ -132,7 +169,7 @@ def check_page(page, errors, warnings):
         src_m = re.search(r'id="sources".*?</ol>', article, re.S)
         if not src_m or not re.search(r'href="https?://', src_m.group(0)):
             errors.append("comparison needs a Sources list (id=\"sources\") with at least one external link")
-        if not re.search(MONTHS + r" \d{4}|\d{4}-\d\d-\d\d", text):
+        if not re.search((MONTHS + r" \d{4}|\d{4}-\d\d-\d\d") if lang == "en" else r"20\d\d", text):
             errors.append("comparison has no date for when competitor facts were checked")
 
     if kind == "scenario" and page.get("sensitive"):
@@ -146,7 +183,7 @@ def check_page(page, errors, warnings):
         orgs = {l for l in links if any(o in l for o in SAFETY_ORGS)}
         if len(orgs) < 2:
             errors.append(f"sensitive scenario: link at least 2 established organizations (found {len(orgs)})")
-        if "not legal advice" not in lower:
+        if lang == "en" and "not legal advice" not in lower:
             errors.append('sensitive scenario: say it is "not legal advice"')
     if kind == "scenario" and not page.get("sensitive") and 'id="safety"' in article:
         warnings.append('safety callout on a page not marked "sensitive": true (intended?)')
@@ -188,7 +225,7 @@ def check_plan(errors):
 
 def main():
     args = [a for a in sys.argv[1:] if not a.startswith("--")]
-    by_file = {p["file"]: p for p in SITE["pages"]}
+    by_file = {p["file"]: p for p in ALL_PAGES}
     if args:
         pages = []
         for a in args:
@@ -198,7 +235,7 @@ def main():
                 return 1
             pages.append(by_file[rel])
     else:
-        pages = [p for p in SITE["pages"] if p["type"] in SECTIONS and p["path"] not in HUBS]
+        pages = [p for p in ALL_PAGES if p["type"] in SECTIONS and p["path"].removeprefix(LOCALES.get(p.get("_lang", "en"), {}).get("prefix", "")) not in HUBS]
     failed = 0
     for page in pages:
         errors, warnings = [], []

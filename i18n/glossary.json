@@ -1,0 +1,97 @@
+{
+  "_readme": "Use these words for Noxium's own features in every translated page, so the same thing always has the same name. If the Noxium app is localized into a language, the app's own strings win: update this file to match them. Apple's feature names (Hidden album, Settings paths, App Store privacy labels) are never taken from here: copy them from support.apple.com/<locale> and the localized App Store page each time.",
+  "keep": [
+    "Noxium",
+    "Noxium Pro",
+    "Face ID",
+    "iCloud",
+    "iPhone",
+    "iPad",
+    "AES-256-GCM",
+    "Argon2id",
+    "CloudKit"
+  ],
+  "terms": {
+    "vault": {
+      "de": "Tresor",
+      "fr": "coffre-fort",
+      "es": "bóveda",
+      "pt-br": "cofre",
+      "it": "cassaforte",
+      "ja": "保管庫",
+      "ko": "보관함",
+      "zh-hans": "保险箱"
+    },
+    "photo vault": {
+      "de": "Foto-Tresor",
+      "fr": "coffre-fort photo",
+      "es": "bóveda de fotos",
+      "pt-br": "cofre de fotos",
+      "it": "cassaforte per foto",
+      "ja": "写真保管庫",
+      "ko": "사진 보관함",
+      "zh-hans": "照片保险箱"
+    },
+    "pattern": {
+      "de": "Muster",
+      "fr": "schéma",
+      "es": "patrón",
+      "pt-br": "padrão",
+      "it": "sequenza",
+      "ja": "パターン",
+      "ko": "패턴",
+      "zh-hans": "图案"
+    },
+    "decoy vault": {
+      "de": "Ablenkungs-Tresor",
+      "fr": "coffre-fort leurre",
+      "es": "bóveda señuelo",
+      "pt-br": "cofre de fachada",
+      "it": "cassaforte esca",
+      "ja": "ダミー保管庫",
+      "ko": "위장 보관함",
+      "zh-hans": "诱饵保险箱"
+    },
+    "recovery phrase": {
+      "de": "Wiederherstellungsphrase",
+      "fr": "phrase de récupération",
+      "es": "frase de recuperación",
+      "pt-br": "frase de recuperação",
+      "it": "frase di recupero",
+      "ja": "リカバリーフレーズ",
+      "ko": "복구 문구",
+      "zh-hans": "恢复短语"
+    },
+    "emergency erase": {
+      "de": "Notfall-Löschung",
+      "fr": "effacement d’urgence",
+      "es": "borrado de emergencia",
+      "pt-br": "apagamento de emergência",
+      "it": "cancellazione di emergenza",
+      "ja": "緊急消去",
+      "ko": "긴급 삭제",
+      "zh-hans": "紧急擦除"
+    },
+    "5×5 plate of bolts": {
+      "de": "5×5-Platte mit Bolzen",
+      "fr": "plaque de 5×5 boulons",
+      "es": "placa de 5×5 pernos",
+      "pt-br": "placa de 5×5 parafusos",
+      "it": "piastra di 5×5 bulloni",
+      "ja": "5×5 のボルトプレート",
+      "ko": "5×5 볼트 판",
+      "zh-hans": "5×5 螺栓板"
+    },
+    "Data Not Collected (App Store label)": {
+      "de": "Keine Daten erfasst",
+      "fr": "Aucune donnée collectée",
+      "es": "No se recopilan datos",
+      "pt-br": "Nenhum dado coletado",
+      "it": "Nessun dato raccolto",
+      "ja": "データの収集なし",
+      "ko": "데이터가 수집되지 않음",
+      "zh-hans": "未收集数据",
+      "_verify": "Check against the localized App Store page."
+    }
+  }
+}

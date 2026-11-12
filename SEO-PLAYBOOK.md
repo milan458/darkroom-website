@@ -157,7 +157,17 @@ Goal: close the gap with Vaultaire (256 English pages, 33 languages) by publishi
 
 **Pace rule:** the daily report (`~/seo-data/getnoxium-app/reports/latest.md`) shows which sitemap URLs aren't indexed. If more than 25% of pages published 14 or more days ago are still "Crawled" or "Discovered – currently not indexed", drop to 2 pages a day and improve the weakest pages (more original detail, better internal links) before going back to 4. Google treats a fast flood of thin pages on a new domain as scaled content abuse; this rule is the brake.
 
-**Translations** (from day 10, after the language build is in place): the 8 languages are de, fr, es, pt-br, it, ja, ko and zh-hans. A page is translated once it has been live 7 days. Titles and descriptions are written for the local search phrase, menu paths use Apple's localized names from support.apple.com/<locale>, comparison prices come from that country's App Store (`appstore_facts.py --country de`). Each translation PR includes a back-translation summary. Rules for the build are added with the language PR.
+**Translations** (from day 10): 8 languages, set in `site.json` `"locales"`: de, fr, es, pt-br, it, ja, ko, zh-hans. Translate an English page once it has been live 7 days, the strongest pages first (most impressions in the daily report, then comparisons and features). To translate one page into one language:
+
+1. Copy the English file to `<lang>/<same path>` (e.g. `de/guides/what-is-a-decoy-vault.html`) and translate everything inside `<main>`: headings, the "Short answer" label, FAQ, captions, alt text. Leave the `build:` regions alone; the build fills them in that language. Keep links root-relative English paths (`/guides/…`): the build points them at the translated page when one exists.
+2. Write for that market, not word for word. The title and description target the phrase people search there (check Google's suggestions in that language). Title ≤ 60 characters, description ≤ 155; for ja, ko and zh-hans ≤ 32 and ≤ 80.
+3. Use `i18n/glossary.json` for Noxium's own words. Take Apple's names (Hidden album, Settings paths, privacy-label wording) from support.apple.com/<locale> and the localized App Store page, never from memory.
+4. Prices: Noxium and competitor prices come from that country's App Store: `python3 tools/appstore_facts.py --country <store>` (the `store` code in `"locales"`). The first translated homepage or About page in a language adds `"facts"` to `i18n/<lang>.json` with those prices; `check_content.py` then checks every Noxium price on that language's pages.
+5. Add the page to `i18n/<lang>.json` `"pages"` under its English path: `source` (the English page's `updated`), `title`, `description`, `headline`, `summary`, `crumb`, `keyword` (in that language), `published`, `updated`. Translate a section's hub once 3 of its pages exist in that language; a hub can set `allLabel` for its "All …" link when the language needs a different form.
+6. `python3 tools/build.py` (no warnings) and `python3 tools/check_content.py <lang>/<file>` (no errors). When an English page changes after it was translated, the build prints a `note:`; re-translate the changed parts and update `source`.
+7. The PR lists each page with a back-translation summary (what it says, in English, in 3–4 lines) so Milan can review languages he doesn't read. For ja, ko and zh-hans, have a native speaker spot-check the first ~10 pages.
+
+Sensitive scenarios stay English-only (`check_content.py` blocks translated ones) until a native speaker can review them.
 
 ---
 

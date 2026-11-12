@@ -83,21 +83,148 @@ CONTENT_TYPES = set(SECTIONS)
 RELATED_MAX = 4
 
 
-def pages_of(kind):
-    return [p for p in PAGES if p["type"] == kind]
+# ---------- Languages ----------
+# English pages live at the root. Each other language in site.json "locales" lives under its prefix
+# (/de/…) with the same slugs. A page exists in a language when i18n/<lang>.json lists it under
+# "pages" (translated title, description, …) and the file <lang>/<english file> exists.
+
+DEFAULT_LANG = "en"
+# Google cuts titles and descriptions by width; CJK characters are about twice as wide.
+CJK = {"ja", "ko", "zh-hans", "zh-hant"}
+LOCALES = SITE.get("locales", {"en": {"hreflang": "en", "inLanguage": "en-US", "og": "en_US",
+                                      "label": "English", "prefix": ""}})
+I18N = {}
+for _lang in LOCALES:
+    if _lang != DEFAULT_LANG:
+        _f = ROOT / "i18n" / f"{_lang}.json"
+        I18N[_lang] = json.loads(_f.read_text(encoding="utf-8")) if _f.exists() else {}
+
+TRANSLATED_FIELDS = ("title", "description", "headline", "summary", "crumb", "keyword", "published",
+                     "updated", "draft", "image", "ogImage", "allLabel")
+notes = []  # printed, but don't fail the build (e.g. a translation older than its English page)
+
+for _p in PAGES:
+    _p["_lang"], _p["_src"] = DEFAULT_LANG, _p["path"]
+LPAGES = {DEFAULT_LANG: BY_PATH}  # lang -> {English path -> page in that language}
+for _lang, _data in I18N.items():
+    LPAGES[_lang] = {}
+    for _src, _tr in _data.get("pages", {}).items():
+        _base = BY_PATH.get(_src)
+        if not _base:
+            problems.append(f"i18n/{_lang}.json: {_src} isn't a page in site.json")
+            continue
+        _page = dict(_base)
+        _page.update({k: v for k, v in _tr.items() if k in TRANSLATED_FIELDS})
+        _page.update({"_lang": _lang, "_src": _src, "file": f"{_lang}/{_base['file']}",
+                      "path": LOCALES[_lang]["prefix"] + _src, "source": _tr.get("source")})
+        if not (ROOT / _page["file"]).exists():
+            problems.append(f"i18n/{_lang}.json lists {_src}, but {_page['file']} doesn't exist")
+            continue
+        if not _tr.get("source"):
+            problems.append(f"i18n/{_lang}.json {_src}: add \"source\" (the English \"updated\" date it was translated from)")
+        elif _tr["source"] < _base["updated"]:
+            notes.append(f"{_page['file']}: translated from the {_tr['source']} English version; English was updated {_base['updated']}")
+        LPAGES[_lang][_src] = _page
+ALL_PAGES = PAGES + [p for lang in I18N for p in LPAGES[lang].values()]
+_missing_ui = set()
+
+
+def lang_of(page):
+    return page.get("_lang", DEFAULT_LANG)
+
+
+def t(key, lang=DEFAULT_LANG):
+    """A UI string. English keys are the English text itself; i18n/<lang>.json "ui" translates them."""
+    if lang == DEFAULT_LANG:
+        return key
+    value = I18N.get(lang, {}).get("ui", {}).get(key)
+    if value is None:
+        if (lang, key) not in _missing_ui:
+            _missing_ui.add((lang, key))
+            problems.append(f"i18n/{lang}.json: no \"ui\" translation for \"{key}\"")
+        return key
+    return value
+
+
+def version(src, lang):
+    """The page at English path `src` in `lang`, or None if it isn't translated."""
+    return LPAGES.get(lang, {}).get(src)
+
+
+def best(src, lang):
+    """The page in `lang` if it's translated and published, else the English page (for structural links)."""
+    page = version(src, lang)
+    if page and not page.get("draft"):
+        return page
+    return BY_PATH.get(src)
+
+
+def versions(page):
+    """Every published language version of a page, the page itself included, keyed by language."""
+    out = {}
+    for lang in LOCALES:
+        v = version(page["_src"], lang)
+        if v and not v.get("draft"):
+            out[lang] = v
+    return out
+
+
+def localize_href(href, lang):
+    """Point a root-relative link at the same page in `lang` when that page is translated."""
+    if lang == DEFAULT_LANG or not href.startswith("/"):
+        return href
+    path, sep, frag = href.partition("#")
+    target = version(path or "/", lang)
+    if target and not target.get("draft"):
+        return target["path"] + (sep + frag if sep else "")
+    return href
+
+
+def human_date_l(iso, lang):
+    if lang == DEFAULT_LANG:
+        return human_date(iso)
+    fmt = I18N.get(lang, {}).get("dateFormat")
+    months = I18N.get(lang, {}).get("months")
+    if not fmt or not months:
+        problems.append(f"i18n/{lang}.json: needs \"dateFormat\" and \"months\"")
+        return iso
+    y, m, d = iso.split("-")
+    return fmt.format(d=int(d), month=months[int(m) - 1], m=int(m), y=y)
+
+
+def facts_for(lang):
+    if lang != DEFAULT_LANG and I18N.get(lang, {}).get("facts"):
+        return I18N[lang]["facts"]
+    return SITE["facts"]
+
+
+def status_text(lang):
+    return I18N.get(lang, {}).get("statusText", SITE["statusText"]).get(RELEASE, SITE["statusText"][RELEASE])
+
+
+def pages_of(kind, lang=DEFAULT_LANG):
+    """Pages of one type in `lang`, in site.json order."""
+    out = []
+    for p in PAGES:
+        if p["type"] == kind:
+            v = version(p["path"], lang)
+            if v:
+                out.append(v)
+    return out
 
 
 def hub_of(page):
-    """The hub page a content page belongs to (e.g. /guides/ for a guide), or None."""
+    """The hub page a content page belongs to (e.g. /guides/ for a guide), or None.
+    For a translated page, the translated hub if there is one, else the English hub."""
     section = SECTIONS.get(page["type"])
-    if not section or page["path"] == section["hub"]:
+    if not section or page["_src"] == section["hub"]:
         return None
-    return BY_PATH.get(section["hub"])
+    return best(section["hub"], lang_of(page))
 
 
 def crumb_trail(page):
     """Breadcrumb ancestors, home first, not including the page itself."""
-    trail = [("Noxium", "/")]
+    trail = [("Noxium", best("/", lang_of(page))["path"])]
     hub = hub_of(page)
     if hub:
         trail.append((hub["crumb"], hub["path"]))
@@ -149,6 +276,12 @@ def render_meta(page):
         lines.append('<meta name="robots" content="noindex, follow">')
     else:
         lines.append('<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">')
+        alts = versions(page)
+        if len(alts) > 1:  # hreflang only when the page has another language version
+            for lang, v in alts.items():
+                lines.append(f'<link rel="alternate" hreflang="{LOCALES[lang]["hreflang"]}" href="{absolute(v["path"])}">')
+            if DEFAULT_LANG in alts:
+                lines.append(f'<link rel="alternate" hreflang="x-default" href="{absolute(alts[DEFAULT_LANG]["path"])}">')
     lines += [
         f'<meta property="og:type" content="{"article" if is_article else "website"}">',
         f'<meta property="og:site_name" content="{esc(SITE["siteName"])}">',
@@ -159,7 +292,7 @@ def render_meta(page):
         '<meta property="og:image:width" content="1200">',
         '<meta property="og:image:height" content="630">',
         f'<meta property="og:image:alt" content="{esc(SITE["ogImageAlt"])}">',
-        '<meta property="og:locale" content="en_US">',
+        f'<meta property="og:locale" content="{LOCALES[lang_of(page)]["og"]}">',
     ]
     if is_article:
         lines.append(f'<meta property="article:published_time" content="{page.get("published", page["updated"])}">')
@@ -273,18 +406,19 @@ def faq_node(text, page):
 
 def render_jsonld(page, text):
     url = absolute(page["path"])
+    in_lang = LOCALES[lang_of(page)].get("inLanguage", LOCALES[lang_of(page)]["hreflang"])
     graph = [org_node()]
     if page["type"] == "home":
         graph.append({"@type": "WebSite", "@id": SITE_ID, "url": ORIGIN + "/", "name": SITE["siteName"],
-                      "alternateName": SITE["entityPhrase"], "publisher": {"@id": ORG_ID}, "inLanguage": "en-US"})
+                      "alternateName": SITE["entityPhrase"], "publisher": {"@id": ORG_ID}, "inLanguage": in_lang})
         graph.append(app_node())
     elif page.get("listType"):
         # Hub page: the list of pages in its section.
-        items = [p for p in pages_of(page["listType"]) if not p.get("draft")]
+        items = [p for p in pages_of(page["listType"], lang_of(page)) if not p.get("draft")]
         graph.append({
             "@type": "CollectionPage", "@id": url + "#webpage", "url": url, "name": page["title"],
             "description": page["description"], "isPartOf": {"@id": SITE_ID},
-            "dateModified": page["updated"], "publisher": {"@id": ORG_ID}, "inLanguage": "en-US",
+            "dateModified": page["updated"], "publisher": {"@id": ORG_ID}, "inLanguage": in_lang,
             "mainEntity": {"@type": "ItemList", "itemListElement": [
                 {"@type": "ListItem", "position": i + 1, "url": absolute(p["path"]), "name": p.get("headline", p["title"])}
                 for i, p in enumerate(items)]},
@@ -299,7 +433,7 @@ def render_jsonld(page, text):
             "description": page["description"], "url": url, "mainEntityOfPage": url,
             "image": absolute(page.get("image", SITE["defaultOgImage"])),
             "datePublished": page.get("published", page["updated"]), "dateModified": page["updated"],
-            "author": author_node(), "publisher": {"@id": ORG_ID}, "inLanguage": "en-US",
+            "author": author_node(), "publisher": {"@id": ORG_ID}, "inLanguage": in_lang,
             "isPartOf": {"@id": SITE_ID},
         }
         if about_app:
@@ -313,7 +447,7 @@ def render_jsonld(page, text):
         kind = {"/about": "AboutPage", "/support": "ContactPage"}.get(page["path"], "WebPage")
         graph.append({"@type": kind, "@id": url + "#webpage", "url": url, "name": page["title"],
                       "description": page["description"], "isPartOf": {"@id": SITE_ID},
-                      "dateModified": page["updated"], "publisher": {"@id": ORG_ID}, "inLanguage": "en-US"})
+                      "dateModified": page["updated"], "publisher": {"@id": ORG_ID}, "inLanguage": in_lang})
         graph.append(breadcrumb_node(page))
     faq = faq_node(text, page)
     if faq:
@@ -326,7 +460,7 @@ def render_jsonld(page, text):
 # ---------- Visible blocks ----------
 
 def render_breadcrumbs(page):
-    out = ['<nav class="crumbs" aria-label="Breadcrumb">', "  <ol>"]
+    out = [f'<nav class="crumbs" aria-label="{esc(t("Breadcrumb", lang_of(page)))}">', "  <ol>"]
     for name, path in crumb_trail(page):
         out.append(f'    <li><a href="{path}">{esc(name)}</a></li>')
     out.append(f'    <li aria-current="page">{esc(page.get("crumb", page["title"]))}</li>')
@@ -340,39 +474,40 @@ def render_byline(page):
     if a.get("jobTitle"):
         who += f", {esc(a['jobTitle'])}"
     pub, upd = page.get("published", page["updated"]), page["updated"]
-    parts = [f'<span>By {who}</span>']
+    lang = lang_of(page)
+    sp = "" if lang in CJK else " "  # CJK labels end in a full-width colon
+    parts = [f'<span>{esc(t("By", lang))}{sp}{who}</span>']
     if pub != upd:
-        parts.append(f'<span>Published <time datetime="{pub}">{human_date(pub)}</time></span>')
-    parts.append(f'<span>Last updated <time datetime="{upd}">{human_date(upd)}</time></span>')
+        parts.append(f'<span>{esc(t("Published", lang))}{sp}<time datetime="{pub}">{human_date_l(pub, lang)}</time></span>')
+    parts.append(f'<span>{esc(t("Last updated", lang))}{sp}<time datetime="{upd}">{human_date_l(upd, lang)}</time></span>')
     return '<p class="byline">' + '<span aria-hidden="true">·</span>'.join(parts) + "</p>"
 
 
-def render_facts():
+def render_facts(page):
+    lang = lang_of(page)
+    if lang != DEFAULT_LANG and not I18N.get(lang, {}).get("facts"):
+        problems.append(f"{page['file']}: uses the facts block, but i18n/{lang}.json has no \"facts\"")
     out = ['<dl class="facts-list">']
-    for k, v in SITE["facts"]:
+    for k, v in facts_for(lang):
         out += ['  <div class="facts-row">', f"    <dt>{esc(k)}</dt>", f"    <dd>{esc(v)}</dd>", "  </div>"]
-    out.append(f'  <div class="facts-row">\n    <dt>Status</dt>\n    <dd>{esc(SITE["statusText"][RELEASE])}</dd>\n  </div>')
+    out.append(f'  <div class="facts-row">\n    <dt>{esc(t("Status", lang))}</dt>\n    <dd>{esc(status_text(lang))}</dd>\n  </div>')
     out.append("</dl>")
     return "\n".join(out)
 
 
-def render_status():
-    return f'<span class="release-status">{esc(SITE["statusText"][RELEASE])}</span>'
+def render_status(page):
+    return f'<span class="release-status">{esc(status_text(lang_of(page)))}</span>'
 
 
-def render_guide_list():
-    return render_list("guide")
-
-
-def render_list(kind):
+def render_list(kind, lang=DEFAULT_LANG):
     """Cards for every page of one type (a hub's "listType"). Drafts show with a Draft pill."""
     out = ['<ul class="guide-list" role="list">']
-    for g in pages_of(kind):
-        draft = ' <span class="tag-pill">Draft</span>' if g.get("draft") else ""
+    for g in pages_of(kind, lang):
+        draft = f' <span class="tag-pill">{esc(t("Draft", lang))}</span>' if g.get("draft") else ""
         out += [
             '  <li class="guide-card">',
             f'    <a href="{g["path"]}">',
-            f'      <span class="guide-card-date">Updated <time datetime="{g["updated"]}">{human_date(g["updated"])}</time>{draft}</span>',
+            f'      <span class="guide-card-date">{esc(t("Updated", lang))}{"" if lang in CJK else " "}<time datetime="{g["updated"]}">{human_date_l(g["updated"], lang)}</time>{draft}</span>',
             f'      <span class="guide-card-title">{esc(g.get("headline", g["title"]))}</span>',
             f'      <span class="guide-card-summary">{esc(g["summary"])}</span>',
             "    </a>",
@@ -383,45 +518,74 @@ def render_list(kind):
 
 
 def render_partial(name, page):
+    lang = lang_of(page)
     text = (ROOT / "partials" / name).read_text(encoding="utf-8")
     # Guides marked "footer": true in site.json, in site.json order (the first 5 guides if none are).
+    # A translated page lists the ones translated into its language, or the English ones if none are yet.
     footer_guides = [g for g in GUIDES if g.get("footer") and not g.get("draft")] or GUIDES[:5]
+    if lang != DEFAULT_LANG:
+        translated = [v for v in (version(g["path"], lang) for g in footer_guides) if v and not v.get("draft")]
+        footer_guides = translated or footer_guides
     guide_links = "\n".join(f'<li><a href="{g["path"]}">{esc(g["crumb"])}</a></li>' for g in footer_guides)
     # Hubs other than /guides/ appear once they're published (not drafts).
-    hubs = [BY_PATH.get(s["hub"]) for k, s in SECTIONS.items() if k != "guide"]
+    hubs = [best(s["hub"], lang) for k, s in SECTIONS.items() if k != "guide"]
     hub_links = "\n".join(f'<li><a href="{h["path"]}">{esc(h["crumb"])}</a></li>'
                           for h in hubs if h and not h.get("draft"))
     if not hub_links:
         text = re.sub(r"[ \t]*\{\{hub_links\}\}\n", "", text)
+    languages = render_languages(page)
+    if not languages:
+        text = re.sub(r"[ \t]*\{\{languages\}\}\n", "", text)
+    text = re.sub(r"\{\{t:(.+?)\}\}", lambda m: esc(t(m.group(1), lang)) if lang != DEFAULT_LANG else m.group(1), text)
+    text = re.sub(r'href="(/[^"]*)"', lambda m: f'href="{localize_href(m.group(1), lang)}"', text)
     return (text.replace("{{guide_links}}", guide_links).replace("{{hub_links}}", hub_links)
-            .replace("{{year}}", page["updated"][:4]))
+            .replace("{{languages}}", languages).replace("{{year}}", page["updated"][:4]))
+
+
+def render_languages(page):
+    """Links to this page in its other languages (footer). Empty while the page has only one."""
+    alts = versions(page)
+    if len(alts) < 2:
+        return ""
+    lang = lang_of(page)
+    links = []
+    for code, v in alts.items():
+        loc = LOCALES[code]
+        current = ' aria-current="true"' if code == lang else ""
+        links.append(f'<a href="{v["path"]}" hreflang="{loc["hreflang"]}" lang="{loc["hreflang"]}"{current}>{esc(loc["label"])}</a>')
+    return f'<nav class="lang-list" aria-label="{esc(t("Language", lang))}">' + "".join(links) + "</nav>"
 
 
 def render_related(page):
     """The aside's Related box: the page's own "related" paths first, then pages from the same
     "cluster", then a link to the section hub. Public pages never link to drafts."""
+    lang = lang_of(page)
     picked = []
     for path in page.get("related", []):
-        target = BY_PATH.get(path)
-        if not target:
+        if path not in BY_PATH:
             warn(f"{page['file']}: related path {path} isn't in site.json")
-        elif path != page["path"] and (page.get("draft") or not target.get("draft")):
+            continue
+        target = version(path, lang)  # a translated page only links to pages in its language
+        if target and path != page["_src"] and (page.get("draft") or not target.get("draft")):
             picked.append(target)
     limit = max(RELATED_MAX, len(picked))
     if page.get("cluster"):
-        for p in PAGES:
+        for src in PAGES:
             if len(picked) >= limit:
                 break
-            if (p.get("cluster") == page["cluster"] and p["path"] != page["path"] and p not in picked
+            p = version(src["path"], lang)
+            if (p and p.get("cluster") == page["cluster"] and p["_src"] != page["_src"] and p not in picked
                     and p["type"] in CONTENT_TYPES and not p.get("draft")):
                 picked.append(p)
     hub = hub_of(page)
     items = [(p["path"], p.get("crumb", p["title"])) for p in picked]
     if hub and not hub.get("draft"):
-        items.append((hub["path"], f'All {hub["crumb"].lower()}'))
+        # A hub can name its own "All …" link ("allLabel"), for languages where the words agree in gender.
+        name = hub["crumb"] if lang in {"de"} | CJK else hub["crumb"].lower()
+        items.append((hub["path"], hub.get("allLabel") or t("All {name}", lang).replace("{name}", name)))
     if not items:
         warn(f"{page['file']}: Related box is empty (add \"related\" or \"cluster\" in site.json)")
-    out = ['<div class="related">', '  <p class="toc-title">Related</p>', '  <ul role="list">']
+    out = ['<div class="related">', f'  <p class="toc-title">{esc(t("Related", lang))}</p>', '  <ul role="list">']
     out += [f'    <li><a href="{path}">{esc(label)}</a></li>' for path, label in items]
     out += ["  </ul>", "</div>"]
     return "\n".join(out)
@@ -435,13 +599,13 @@ CTA = re.compile(r'<a\b([^>]*?\bdata-cta="([a-z0-9-]+)"[^>]*)>(.*?)</a>', re.S)
 def rewrite_ctas(text, page):
     def sub(m):
         attrs, name, inner = m.group(1), m.group(2), m.group(3)
-        ct = f"{page['ct']}-{name}"
+        ct = f"{page['ct']}-{name}" + ("" if lang_of(page) == DEFAULT_LANG else f"-{lang_of(page)}")
         if len(ct) > 40:
             warn(f"{page['file']}: campaign token '{ct}' is over 40 characters")
         if live():
             href = app_store_url(ct)
         else:
-            href = "#waitlist" if page["type"] == "home" else "/#waitlist"
+            href = "#waitlist" if page["type"] == "home" else best("/", lang_of(page))["path"] + "#waitlist"
         attrs = re.sub(r'\shref="[^"]*"', "", attrs)
         attrs = f' href="{esc(href)}"' + attrs
         label = re.search(rf'\bdata-label-{RELEASE}="([^"]*)"', attrs)
@@ -466,14 +630,16 @@ def toggle_release(text):
 # ---------- Pages ----------
 
 def check_page(page):
-    if page["type"] in CONTENT_TYPES and page["path"] != SECTIONS[page["type"]]["hub"]:
+    wide = lang_of(page) in CJK
+    max_title, max_desc = (32, 80) if wide else (60, 155)
+    if page["type"] in CONTENT_TYPES and page["_src"] != SECTIONS[page["type"]]["hub"]:
         for key in ("keyword", "cluster"):
             if not page.get(key):
                 warn(f"{page['file']}: no \"{key}\" in site.json (needed for related links and the keyword check)")
-    if len(page["title"]) > 60:
-        warn(f"{page['file']}: title is {len(page['title'])} chars (max 60)")
-    if len(page["description"]) > 155:
-        warn(f"{page['file']}: description is {len(page['description'])} chars (max 155)")
+    if len(page["title"]) > max_title:
+        warn(f"{page['file']}: title is {len(page['title'])} chars (max {max_title})")
+    if len(page["description"]) > max_desc:
+        warn(f"{page['file']}: description is {len(page['description'])} chars (max {max_desc})")
 
 
 def build_page(page):
@@ -490,13 +656,20 @@ def build_page(page):
         "footer": lambda: render_partial("footer.html", page),
         "breadcrumbs": lambda: render_breadcrumbs(page),
         "byline": lambda: render_byline(page),
-        "facts": render_facts,
-        "status": render_status,
-        "guide-list": render_guide_list,
-        "list": lambda: render_list(page.get("listType", "guide")),
+        "facts": lambda: render_facts(page),
+        "status": lambda: render_status(page),
+        "guide-list": lambda: render_list("guide", lang_of(page)),
+        "list": lambda: render_list(page.get("listType", "guide"), lang_of(page)),
+        "languages": lambda: render_languages(page),
         "related": lambda: render_related(page),
     }
     out = fill_regions(text, renderers, page)
+    if lang_of(page) != DEFAULT_LANG:
+        # Links in a translated page's body go to the translated page when there is one.
+        out = re.sub(r"<main\b.*?</main>", lambda m: re.sub(
+            r'href="(/[^"]*)"', lambda h: f'href="{localize_href(h.group(1), lang_of(page))}"', m.group(0)), out, flags=re.S)
+    html_lang = LOCALES[lang_of(page)]["hreflang"]
+    out = re.sub(r'<html lang="[^"]*"', f'<html lang="{html_lang}"', out, count=1)
     out = rewrite_ctas(out, page)
     out = toggle_release(out)
     if "<!-- build:meta -->" not in out:
@@ -527,11 +700,21 @@ def write(name, content):
 
 
 def build_sitemap(public):
+    alternates = {p["path"]: versions(p) for p in public}
+    multilingual = any(len(a) > 1 for a in alternates.values())
+    xhtml = ' xmlns:xhtml="http://www.w3.org/1999/xhtml"' if multilingual else ""
     out = ['<?xml version="1.0" encoding="UTF-8"?>',
-           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+           f'<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"{xhtml}>']
     for p in public:
         out += ["  <url>", f"    <loc>{absolute(p['path'])}</loc>", f"    <lastmod>{p['updated']}</lastmod>",
-                f"    <priority>{p.get('priority', '0.5')}</priority>", "  </url>"]
+                f"    <priority>{p.get('priority', '0.5')}</priority>"]
+        alts = alternates[p["path"]]
+        if len(alts) > 1:
+            for lang, v in alts.items():
+                out.append(f'    <xhtml:link rel="alternate" hreflang="{LOCALES[lang]["hreflang"]}" href="{absolute(v["path"])}"/>')
+            if DEFAULT_LANG in alts:
+                out.append(f'    <xhtml:link rel="alternate" hreflang="x-default" href="{absolute(alts[DEFAULT_LANG]["path"])}"/>')
+        out.append("  </url>")
     out.append("</urlset>")
     write("sitemap.xml", "\n".join(out) + "\n")
 
@@ -580,31 +763,36 @@ def build_llms(public, rendered):
 
 
 def main():
-    titles, descs = {}, {}
     rendered = {}
-    for page in PAGES:
+    seen = {}  # (lang, field, value) -> file
+    for page in ALL_PAGES:
         out = build_page(page)
         if out is not None:
             rendered[page["path"]] = out
-        for seen, key in ((titles, "title"), (descs, "description")):
-            if page[key] in seen:
-                warn(f"{page['file']}: duplicate {key} with {seen[page[key]]}")
-            seen[page[key]] = page["file"]
-    # Two pages chasing the same query split Google's attention (Search Console showed this for
-    # "vaultaire vs keepsafe" and "photo vault recovery"). One target keyword per page.
-    keywords = {}
-    for page in PAGES:
+        lang = lang_of(page)
+        for key in ("title", "description"):
+            k = (lang, key, page[key])
+            if k in seen:
+                warn(f"{page['file']}: duplicate {key} with {seen[k]}")
+            seen[k] = page["file"]
+        # Two pages chasing the same query split Google's attention (Search Console showed this for
+        # "vaultaire vs keepsafe" and "photo vault recovery"). One target keyword per page, per language.
         kw = page.get("keyword", "").strip().lower()
         if kw:
-            if kw in keywords:
-                warn(f"{page['file']}: keyword \"{kw}\" is already the target of {keywords[kw]}")
-            keywords[kw] = page["file"]
-    public =[p for p in PAGES if not p.get("draft") and p["path"] in rendered]
+            k = (lang, "keyword", kw)
+            if k in seen:
+                warn(f"{page['file']}: keyword \"{kw}\" is already the target of {seen[k]}")
+            seen[k] = page["file"]
+    public = [p for p in ALL_PAGES if not p.get("draft") and p["path"] in rendered]
     build_sitemap(public)
-    build_llms(public, rendered)
-    drafts = [p["file"] for p in PAGES if p.get("draft")]
+    build_llms([p for p in public if lang_of(p) == DEFAULT_LANG], rendered)
+    drafts = [p["file"] for p in ALL_PAGES if p.get("draft")]
     print(f"release: {RELEASE}{' (no appStoreId yet, CTAs stay on the waitlist)' if RELEASE == 'live' and not live() else ''}")
     print(f"pages: {len(rendered)}, in sitemap: {len(public)}, drafts (noindex): {', '.join(drafts) or 'none'}")
+    if I18N:
+        print("translated: " + ", ".join(f"{lang} {len(LPAGES[lang])}" for lang in I18N))
+    for n in notes:
+        print("note:", n)
     for p in problems:
         print("WARNING:", p)
     return 1 if problems else 0
