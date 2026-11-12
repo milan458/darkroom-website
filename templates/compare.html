@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#FAF9F6" media="(prefers-color-scheme: light)">
+  <!-- build:meta -->
+  <!-- /build:meta -->
+
+  <link rel="icon" type="image/svg+xml" href="/assets/noxium-logo.svg">
+  <link rel="apple-touch-icon" href="/assets/noxium-icon-180.png">
+
+  <link rel="preload" href="/assets/fonts/instrument-serif-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/fonts/fonts.css">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/pages.css">
+
+  <!-- build:jsonld -->
+  <!-- /build:jsonld -->
+</head>
+<body>
+  <!-- build:header -->
+  <!-- /build:header -->
+
+  <main id="main-content" tabindex="-1">
+    <!--
+      COMPARE TEMPLATE ("Noxium vs COMPETITOR", plus a fair review of the competitor). Copy to compare/<competitor-slug>.html.
+      site.json: type "compare", path "/compare/<competitor-slug>", ct "c-<competitor>", crumb "Noxium vs X",
+      competitor "Exact App Store name", keyword (e.g. "x review"), cluster "choose-vault", title, headline,
+      description, summary, published, updated.
+      Competitor facts ONLY from data/competitors.json (python3 tools/appstore_facts.py), their App Store
+      listing or a page of theirs you cite, each with the date checked. Never copy their text or screenshots.
+      Be fair: say what they do well. Then: python3 tools/build.py && python3 tools/check_content.py compare/<slug>.html
+    -->
+    <div class="page-hero">
+      <div class="container">
+        <!-- build:breadcrumbs -->
+        <!-- /build:breadcrumbs -->
+        <p class="eyebrow"><span class="dot dot-ink" aria-hidden="true"></span>Compare</p>
+        <h1>HEADLINE (same as site.json "headline")</h1>
+        <!-- build:byline -->
+        <!-- /build:byline -->
+        <div class="answer">
+          <span class="answer-label">Short answer</span>
+          <p>WHO SHOULD PICK WHICH, IN 2–3 SENTENCES. Name the real difference (account, backup, encryption, price).</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container article-layout">
+      <article class="prose">
+        <p>ONE-PARAGRAPH INTRO. Say plainly that we make Noxium, so the reader can weigh that.</p>
+
+        <h2 id="glance">Noxium vs COMPETITOR at a glance</h2>
+        <div class="data-table-wrap" tabindex="0" role="region" aria-labelledby="glance-caption">
+          <table class="data-table">
+            <caption id="glance-caption">Source: each app's US App Store listing, checked DATE. Noxium: site.json facts.</caption>
+            <thead><tr><th scope="col"></th><th scope="col">Noxium</th><th scope="col">COMPETITOR</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Account needed</th><td>No</td><td>…</td></tr>
+              <tr><th scope="row">Opens with</th><td>Pattern on a 5×5 plate; Face ID optional</td><td>…</td></tr>
+              <tr><th scope="row">Encryption named</th><td>AES-256-GCM, key from your pattern (Argon2id)</td><td>…</td></tr>
+              <tr><th scope="row">Backup</th><td>Your own iCloud, encrypted, free</td><td>…</td></tr>
+              <tr><th scope="row">Decoy vault</th><td>Yes, 1 free</td><td>…</td></tr>
+              <tr><th scope="row">Ads</th><td>None</td><td>…</td></tr>
+              <tr><th scope="row">Price (US)</th><td>Free; Pro $2.99/month, $19.99/year or $44.99 once</td><td>…</td></tr>
+              <tr><th scope="row">Privacy label</th><td>Data Not Collected</td><td>…</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 id="review">What does COMPETITOR do well, and where does it fall short?</h2>
+        <p>A FAIR REVIEW FROM THEIR LISTING AND DOCS. Strengths first.</p>
+
+        <h2 id="differences">How are they different?</h2>
+        <p>ANSWER FIRST. Then account, backup and restore, encryption, decoys, price, one short subsection each.</p>
+
+        <h2 id="choose">Which should you choose?</h2>
+        <ul>
+          <li><strong>Pick COMPETITOR if</strong> … (honest cases).</li>
+          <li><strong>Pick Noxium if</strong> …</li>
+        </ul>
+
+        <h2 id="switch">How do you switch without losing photos?</h2>
+        <ol class="steps">
+          <li><strong>Export</strong> from COMPETITOR … (their documented path, cited).</li>
+          <li><strong>Check</strong> counts and quality before deleting anything.</li>
+        </ol>
+
+        <div class="cta-card">
+          <p class="cta-card-title">CTA HEADLINE THAT FITS THIS PAGE</p>
+          <p>ONE SENTENCE, ONLY FROM site.json "facts".</p>
+          <a href="/#waitlist" class="btn btn-primary" data-cta="body" data-label-waitlist="Join the Early Tester List" data-label-live="Download on the App Store">Join the Early Tester List</a>
+          <!-- build:status -->
+          <!-- /build:status -->
+        </div>
+
+        <h2 id="faq">Questions people ask</h2>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>QUESTION FROM "PEOPLE ALSO ASK"?</span></span></summary>
+            <div class="faq-body"><p>DIRECT ANSWER.</p></div>
+          </details>
+        </div>
+
+        <h2 id="sources">Sources</h2>
+        <ol class="sources">
+          <li>COMPETITOR, <a href="https://apps.apple.com/app/idNNN">App Store listing</a>, checked DATE.</li>
+        </ol>
+        <p><em>App names are trademarks of their owners and are used only to identify their apps.</em></p>
+        <p><em>Something wrong or out of date? Email <a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a> and we'll fix it.</em></p>
+      </article>
+
+      <aside class="article-aside" aria-label="On this page">
+        <nav class="toc" aria-label="Table of contents">
+          <p class="toc-title">On this page</p>
+          <ol>
+            <li><a href="#glance">At a glance</a></li>
+            <li><a href="#review">Review</a></li>
+            <li><a href="#differences">Differences</a></li>
+            <li><a href="#choose">Which to choose</a></li>
+            <li><a href="#switch">How to switch</a></li>
+            <li><a href="#faq">Questions people ask</a></li>
+            <li><a href="#sources">Sources</a></li>
+          </ol>
+        </nav>
+        <!-- build:related -->
+        <!-- /build:related -->
+      </aside>
+    </div>
+  </main>
+
+  <!-- build:footer -->
+  <!-- /build:footer -->
+
+  <script src="/app.js" defer></script>
+</body>
+</html>

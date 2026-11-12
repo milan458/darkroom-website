@@ -29,12 +29,14 @@
       GUIDE TEMPLATE. Copy this file to guides/<slug>.html, then:
         1. Add the page to site.json "pages" (type "guide", path "/guides/<slug>", a short "ct" like "g-<topic>",
            "crumb", "title" ≤ 60 chars, "headline", "description" ≤ 155 chars, "summary", "published",
-           "updated", "image", and "draft": true until it's reviewed).
+           "updated", "image", "keyword" (the one query this page targets; the build refuses duplicates),
+           "cluster" (fills the Related box), optional "related" (paths to list first)).
         2. Write the content below. Replace every UPPERCASE placeholder. Keep the structure.
         3. Run: python3 tools/build.py   (fills meta, JSON-LD, header, footer, breadcrumbs, byline, CTA link)
         4. Follow "Publish a new guide" in SEO-PLAYBOOK.md.
       Rules: direct answer in the first 1–2 sentences under every question heading. Short paragraphs.
-      Numbers and dates, not adjectives. Mention Noxium only where it honestly fits. 2–3 internal links.
+      Numbers and dates, not adjectives. Mention Noxium only where it honestly fits. 2–3 internal links in the text.
+      Then run: python3 tools/check_content.py guides/<slug>.html
     -->
     <div class="page-hero">
       <div class="container">
@@ -103,14 +105,8 @@
             <li><a href="#faq">Questions people ask</a></li>
           </ol>
         </nav>
-        <div class="related">
-          <p class="toc-title">Related</p>
-          <ul role="list">
-            <li><a href="/guides/RELATED-1">RELATED GUIDE 1</a></li>
-            <li><a href="/guides/RELATED-2">RELATED GUIDE 2</a></li>
-            <li><a href="/best-photo-vault-apps-iphone">Photo vault apps compared</a></li>
-          </ul>
-        </div>
+        <!-- build:related -->
+        <!-- /build:related -->
       </aside>
     </div>
   </main>
