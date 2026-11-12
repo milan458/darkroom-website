@@ -128,6 +128,17 @@
       "Inertia Projects, an independent developer. Contact: business@inertiaprojects.info."
     ]
   ],
+  "locales": {
+    "en": { "hreflang": "en", "inLanguage": "en-US", "og": "en_US", "label": "English", "prefix": "" },
+    "de": { "hreflang": "de", "inLanguage": "de-DE", "og": "de_DE", "label": "Deutsch", "prefix": "/de", "store": "de" },
+    "fr": { "hreflang": "fr", "inLanguage": "fr-FR", "og": "fr_FR", "label": "Français", "prefix": "/fr", "store": "fr" },
+    "es": { "hreflang": "es", "inLanguage": "es-ES", "og": "es_ES", "label": "Español", "prefix": "/es", "store": "es" },
+    "pt-br": { "hreflang": "pt-BR", "inLanguage": "pt-BR", "og": "pt_BR", "label": "Português (Brasil)", "prefix": "/pt-br", "store": "br" },
+    "it": { "hreflang": "it", "inLanguage": "it-IT", "og": "it_IT", "label": "Italiano", "prefix": "/it", "store": "it" },
+    "ja": { "hreflang": "ja", "inLanguage": "ja-JP", "og": "ja_JP", "label": "日本語", "prefix": "/ja", "store": "jp" },
+    "ko": { "hreflang": "ko", "inLanguage": "ko-KR", "og": "ko_KR", "label": "한국어", "prefix": "/ko", "store": "kr" },
+    "zh-hans": { "hreflang": "zh-Hans", "inLanguage": "zh-Hans", "og": "zh_CN", "label": "简体中文", "prefix": "/zh-hans", "store": "cn" }
+  },
   "sections": {
     "guide": { "hub": "/guides/", "label": "Guides" },
     "feature": { "hub": "/features/", "label": "Features" },

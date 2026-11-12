@@ -2170,6 +2170,11 @@ main:focus { outline: none; }
 }
 
 .footer-bottom p { max-width: 70ch; }
+/* Language list: links to this page in its other languages (built from site.json "locales"). */
+.lang-list { display: flex; flex-wrap: wrap; gap: 6px 16px; }
+.lang-list a { color: var(--muted); text-decoration: none; }
+.lang-list a:hover { color: var(--text); text-decoration: underline; text-underline-offset: 3px; }
+.lang-list a[aria-current="true"] { color: var(--text); }
 
 @media (max-width: 760px) {
   .footer-groups { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); width: 100%; }
