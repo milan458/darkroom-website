@@ -1,0 +1,129 @@
+{
+  "_readme": "Translations for /zh-hant/. \"ui\" translates the English UI strings (keys are the English text). \"pages\" lists translated pages: English path -> {source, title, description, headline, summary, crumb, keyword, published, updated}. \"source\" is the English page's \"updated\" date the translation was made from. \"facts\" (same shape as site.json facts, with this store's prices) is added with the first translated homepage or About page. See SEO-PLAYBOOK.md, Translations.",
+  "dateFormat": "{y}年{m}月{d}日",
+  "months": [
+    "1月",
+    "2月",
+    "3月",
+    "4月",
+    "5月",
+    "6月",
+    "7月",
+    "8月",
+    "9月",
+    "10月",
+    "11月",
+    "12月"
+  ],
+  "statusText": {
+    "waitlist": "1.0 版已於 2026 年 10 月提交 App Store 審核，尚未在 App Store 上架。",
+    "live": "可在 App Store 下載，支援 iPhone 和 iPad。"
+  },
+  "ui": {
+    "Skip to main content": "跳至主要內容",
+    "Primary": "主要導覽",
+    "Noxium home": "Noxium 首頁",
+    "Features": "功能",
+    "Security": "安全性",
+    "Pricing": "價格",
+    "Compare": "比較",
+    "Guides": "指南",
+    "Join the beta": "加入 Beta 測試",
+    "Get Noxium": "下載 Noxium",
+    "Menu": "選單",
+    "Mobile": "行動版",
+    "Compare vault apps": "比較保險箱 App",
+    "About": "關於",
+    "Support": "支援",
+    "A private vault for photos, videos and notes.": "照片、影片和備忘錄的私密保險箱。",
+    "Footer": "頁尾",
+    "Product": "產品",
+    "How the encryption works": "加密原理",
+    "Free vs Pro": "免費版與 Pro 版",
+    "Photo vault apps compared": "照片保險箱 App 比較",
+    "FAQ": "常見問題",
+    "All guides": "全部指南",
+    "Company": "公司",
+    "Privacy policy": "隱私政策",
+    "Terms of use": "使用條款",
+    "Noxium. Made by Inertia Projects, an independent developer. App Store privacy label: Data Not Collected.": "Noxium。由獨立開發者 Inertia Projects 開發。App Store 隱私標籤：未收集資料。",
+    "Apple, the Apple logo, iPhone, iPad and Face ID are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc.": "Apple、Apple 標誌、iPhone、iPad 和 Face ID 是 Apple Inc. 在美國和其他國家和地區註冊的商標。App Store 是 Apple Inc. 的服務商標。",
+    "Breadcrumb": "導覽路徑",
+    "By": "作者：",
+    "Published": "發表於",
+    "Last updated": "最後更新：",
+    "Status": "狀態",
+    "Updated": "更新於",
+    "Draft": "草稿",
+    "Related": "相關頁面",
+    "All {name}": "全部{name}",
+    "Language": "語言"
+  },
+  "facts": [
+    [
+      "簡介",
+      "一款 iPhone 和 iPad 應用，把照片、影片和備忘錄藏進加密保險箱。"
+    ],
+    [
+      "如何開啟",
+      "在由 25 顆螺栓組成的 5×5 螺栓板上，畫出一個至少經過 6 顆螺栓的圖案。主保險箱也可以用面容 ID 開啟。"
+    ],
+    [
+      "加密",
+      "所有內容都在裝置上加密。金鑰由你的圖案經 Argon2id（libsodium）生成；檔案用 AES-256-GCM（Apple CryptoKit）封存。名稱、日期和地點同樣加密。圖案從不儲存。"
+    ],
+    [
+      "備份",
+      "加密備份存放在你自己的私人 iCloud（CloudKit）中。換新 iPhone 時，畫出圖案，保險箱就會恢復。離開裝置的只有加密資料。"
+    ],
+    [
+      "忘記圖案",
+      "設定時你會抄下一段復原短語，用它可以開啟保險箱。沒有人能重置圖案：開發者不能，Apple 也不能。"
+    ],
+    [
+      "誘餌保險箱",
+      "第二個圖案會開啟一個獨立、無關緊要的保險箱。免費版包含 1 個。"
+    ],
+    [
+      "緊急清除（Pro）",
+      "第三個圖案會開啟一個無關緊要的保險箱，同時清除其他保險箱。"
+    ],
+    [
+      "隱藏 App",
+      "可把應用圖示換成仿計算器、備忘錄或天氣的圖示（Pro）。在 App 切換器和螢幕錄製中，保險箱內容會被隱藏。"
+    ],
+    [
+      "整理",
+      "相簿、相簿中的相簿，以及有獨立圖案的相簿（Pro）。加密備忘錄。“最近刪除”會保留專案 30 天。"
+    ],
+    [
+      "匯入與匯出",
+      "支援匯入 HEIC、ProRAW 和實況照片。內建相機。可在共享表單中選擇“傳送到 Noxium”。以原始畫質和原始日期匯出。"
+    ],
+    [
+      "隱私",
+      "無廣告、無賬戶、無分析。App Store 隱私標籤：未收集資料。"
+    ],
+    [
+      "免費版",
+      "150 張照片、10 個影片、不限數量的備忘錄、1 個誘餌保險箱，完整的 iCloud 備份與恢復。"
+    ],
+    [
+      "Noxium Pro",
+      "每週 NT$90、每年 NT$590（每月約 NT$49）或一次買斷 NT$1,290（台灣 App Store，2026 年 11 月 12 日查詢）。Pro 解鎖無限項目、緊急清除、iPhone 與 iPad 同步、自訂圖示、相簿圖案和共享保險箱。"
+    ],
+    [
+      "Pro 到期後",
+      "保險箱裡已有的內容仍可完整檢視、匯出和備份。"
+    ],
+    [
+      "系統需求",
+      "iOS 17 或 iPadOS 17 及更高版本。"
+    ],
+    [
+      "開發者",
+      "獨立開發者 Inertia Projects。聯絡郵箱：business@inertiaprojects.info"
+    ]
+  ],
+  "pages": {}
+}
