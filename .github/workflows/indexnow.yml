@@ -34,14 +34,17 @@ jobs:
 
       - name: Wait for the deploy
         if: steps.pages.outputs.paths != ''
+        timeout-minutes: 8
         run: |
-          sleep 90
+          # Cloudflare usually deploys within 2 minutes. Only a 404 means "not live yet" (a new page);
+          # any other answer, including a bot challenge to GitHub's servers (403/503), means go ahead.
+          sleep 120
           origin=$(python3 -c "import json;print(json.load(open('site.json'))['origin'].rstrip('/'))")
           for p in ${{ steps.pages.outputs.paths }}; do
-            for i in $(seq 1 30); do
-              code=$(curl -s -o /dev/null -w '%{http_code}' "$origin$p")
-              [ "$code" = "200" ] && break
-              echo "$p: HTTP $code, waiting"; sleep 20
+            for i in $(seq 1 12); do
+              code=$(curl -s -m 15 -o /dev/null -w '%{http_code}' "$origin$p")
+              [ "$code" != "404" ] && { echo "$p: HTTP $code"; break; }
+              echo "$p: HTTP 404, waiting"; sleep 20
             done
           done
 
