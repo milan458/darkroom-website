@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://getnoxium.app/</loc>
     <lastmod>2026-11-12</lastmod>
@@ -19,6 +19,16 @@
     <loc>https://getnoxium.app/guides/how-to-hide-photos-on-iphone</loc>
     <lastmod>2026-10-26</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://getnoxium.app/zh-hans/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/guides/how-to-hide-photos-on-iphone"/>
   </url>
   <url>
     <loc>https://getnoxium.app/guides/is-iphone-hidden-album-private</loc>
@@ -39,6 +49,16 @@
     <loc>https://getnoxium.app/guides/keepsafe-alternatives</loc>
     <lastmod>2026-10-26</lastmod>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://getnoxium.app/zh-hans/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/guides/keepsafe-alternatives"/>
   </url>
   <url>
     <loc>https://getnoxium.app/guides/vaultaire-vs-keepsafe</loc>
@@ -94,5 +114,245 @@
     <loc>https://getnoxium.app/privacy</loc>
     <lastmod>2026-11-06</lastmod>
     <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/de/guides/keepsafe-alternatives</loc>
+    <lastmod>2026-11-12</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://getnoxium.app/zh-hans/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/guides/keepsafe-alternatives"/>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/de/guides/how-to-hide-photos-on-iphone</loc>
+    <lastmod>2026-11-12</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://getnoxium.app/zh-hans/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/guides/how-to-hide-photos-on-iphone"/>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/fr/guides/keepsafe-alternatives</loc>
+    <lastmod>2026-11-12</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://getnoxium.app/zh-hans/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/guides/keepsafe-alternatives"/>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/fr/guides/how-to-hide-photos-on-iphone</loc>
+    <lastmod>2026-11-12</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://getnoxium.app/zh-hans/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/guides/how-to-hide-photos-on-iphone"/>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/es/guides/keepsafe-alternatives</loc>
+    <lastmod>2026-11-12</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://getnoxium.app/zh-hans/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/guides/keepsafe-alternatives"/>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/es/guides/how-to-hide-photos-on-iphone</loc>
+    <lastmod>2026-11-12</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://getnoxium.app/zh-hans/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/guides/how-to-hide-photos-on-iphone"/>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/pt-br/guides/keepsafe-alternatives</loc>
+    <lastmod>2026-11-12</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://getnoxium.app/zh-hans/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/guides/keepsafe-alternatives"/>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/pt-br/guides/how-to-hide-photos-on-iphone</loc>
+    <lastmod>2026-11-12</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://getnoxium.app/zh-hans/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/guides/how-to-hide-photos-on-iphone"/>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/it/guides/keepsafe-alternatives</loc>
+    <lastmod>2026-11-12</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://getnoxium.app/zh-hans/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/guides/keepsafe-alternatives"/>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/it/guides/how-to-hide-photos-on-iphone</loc>
+    <lastmod>2026-11-12</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://getnoxium.app/zh-hans/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/guides/how-to-hide-photos-on-iphone"/>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/ja/guides/keepsafe-alternatives</loc>
+    <lastmod>2026-11-12</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://getnoxium.app/zh-hans/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/guides/keepsafe-alternatives"/>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/ja/guides/how-to-hide-photos-on-iphone</loc>
+    <lastmod>2026-11-12</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://getnoxium.app/zh-hans/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/guides/how-to-hide-photos-on-iphone"/>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/ko/guides/keepsafe-alternatives</loc>
+    <lastmod>2026-11-12</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://getnoxium.app/zh-hans/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/guides/keepsafe-alternatives"/>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/ko/guides/how-to-hide-photos-on-iphone</loc>
+    <lastmod>2026-11-12</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://getnoxium.app/zh-hans/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/guides/how-to-hide-photos-on-iphone"/>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/zh-hans/guides/keepsafe-alternatives</loc>
+    <lastmod>2026-11-12</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://getnoxium.app/zh-hans/guides/keepsafe-alternatives"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/guides/keepsafe-alternatives"/>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/zh-hans/guides/how-to-hide-photos-on-iphone</loc>
+    <lastmod>2026-11-12</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://getnoxium.app/zh-hans/guides/how-to-hide-photos-on-iphone"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/guides/how-to-hide-photos-on-iphone"/>
   </url>
 </urlset>

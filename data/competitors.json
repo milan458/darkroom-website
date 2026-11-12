@@ -37,6 +37,218 @@
             }
           ],
           "checked": "2026-11-11"
+        },
+        "de": {
+          "name": "Noxium: Privater Foto-Tresor",
+          "developer": "Milan Sharma",
+          "price": "Gratis",
+          "rating": null,
+          "ratingCount": 0,
+          "version": "1.0",
+          "lastUpdate": "2026-11-06",
+          "minimumOs": "17.0",
+          "url": "https://apps.apple.com/de/app/noxium-privater-foto-tresor/id6824616093",
+          "privacyLabel": [
+            "Data Not Collected"
+          ],
+          "inAppPurchases": [
+            {
+              "name": "Noxium Pro jährlich",
+              "price": "19,99 €"
+            },
+            {
+              "name": "Noxium Pro wöchentlich",
+              "price": "2,99 €"
+            },
+            {
+              "name": "Darkroom Pro – Lifetime",
+              "price": "44,99 €"
+            },
+            {
+              "name": "Noxium Pro monatlich",
+              "price": "2,99 €"
+            }
+          ],
+          "checked": "2026-11-12",
+          "pageParsedBy": "hand, localized page (tool parser reads English pages only)"
+        },
+        "fr": {
+          "checked": "2026-11-12",
+          "available": false
+        },
+        "es": {
+          "name": "Noxium: Caja fuerte de fotos",
+          "developer": "Milan Sharma",
+          "price": "Gratis",
+          "rating": null,
+          "ratingCount": 0,
+          "version": "1.0",
+          "lastUpdate": "2026-11-06",
+          "minimumOs": "17.0",
+          "url": "https://apps.apple.com/es/app/noxium-caja-fuerte-de-fotos/id6824616093",
+          "privacyLabel": [
+            "Data Not Collected"
+          ],
+          "inAppPurchases": [
+            {
+              "name": "Noxium Pro anual",
+              "price": "19,99 €"
+            },
+            {
+              "name": "Noxium Pro semanal",
+              "price": "2,99 €"
+            },
+            {
+              "name": "Darkroom Pro – Lifetime",
+              "price": "44,99 €"
+            },
+            {
+              "name": "Noxium Pro mensual",
+              "price": "2,99 €"
+            }
+          ],
+          "checked": "2026-11-12",
+          "pageParsedBy": "hand, localized page (tool parser reads English pages only)"
+        },
+        "br": {
+          "name": "Noxium: Cofre de Fotos Privado",
+          "developer": "Milan Sharma",
+          "price": "Grátis",
+          "rating": null,
+          "ratingCount": 0,
+          "version": "1.0",
+          "lastUpdate": "2026-11-06",
+          "minimumOs": "17.0",
+          "url": "https://apps.apple.com/br/app/noxium-cofre-de-fotos-privado/id6824616093",
+          "privacyLabel": [
+            "Data Not Collected"
+          ],
+          "inAppPurchases": [
+            {
+              "name": "Noxium Pro anual",
+              "price": "R$ 119,90"
+            },
+            {
+              "name": "Noxium Pro semanal",
+              "price": "R$ 19,90"
+            },
+            {
+              "name": "Darkroom Pro – Lifetime",
+              "price": "R$ 249,90"
+            },
+            {
+              "name": "Noxium Pro mensal",
+              "price": "R$ 19,90"
+            }
+          ],
+          "checked": "2026-11-12",
+          "pageParsedBy": "hand, localized page (tool parser reads English pages only)"
+        },
+        "it": {
+          "name": "Noxium: Cassaforte per foto",
+          "developer": "Milan Sharma",
+          "price": "Gratis",
+          "rating": null,
+          "ratingCount": 0,
+          "version": "1.0",
+          "lastUpdate": "2026-11-06",
+          "minimumOs": "17.0",
+          "url": "https://apps.apple.com/it/app/noxium-cassaforte-per-foto/id6824616093",
+          "privacyLabel": [
+            "Data Not Collected"
+          ],
+          "inAppPurchases": [
+            {
+              "name": "Noxium Pro annuale",
+              "price": "19,99 €"
+            },
+            {
+              "name": "Noxium Pro settimanale",
+              "price": "2,99 €"
+            },
+            {
+              "name": "Darkroom Pro – Lifetime",
+              "price": "44,99 €"
+            },
+            {
+              "name": "Noxium Pro mensile",
+              "price": "2,99 €"
+            }
+          ],
+          "checked": "2026-11-12",
+          "pageParsedBy": "hand, localized page (tool parser reads English pages only)"
+        },
+        "jp": {
+          "name": "Noxium: 写真と動画の秘密保管庫",
+          "developer": "Milan Sharma",
+          "price": "無料",
+          "rating": null,
+          "ratingCount": 0,
+          "version": "1.0",
+          "lastUpdate": "2026-11-06",
+          "minimumOs": "17.0",
+          "url": "https://apps.apple.com/jp/app/noxium-%E5%86%99%E7%9C%9F%E3%81%A8%E5%8B%95%E7%94%BB%E3%81%AE%E7%A7%98%E5%AF%86%E4%BF%9D%E7%AE%A1%E5%BA%AB/id6824616093",
+          "privacyLabel": [
+            "Data Not Collected"
+          ],
+          "inAppPurchases": [
+            {
+              "name": "Noxium Pro（年間）",
+              "price": "¥3,000"
+            },
+            {
+              "name": "Noxium Pro（週間）",
+              "price": "¥500"
+            },
+            {
+              "name": "Darkroom Pro – Lifetime",
+              "price": "¥6,000"
+            },
+            {
+              "name": "Noxium Pro（月間）",
+              "price": "¥500"
+            }
+          ],
+          "checked": "2026-11-12",
+          "pageParsedBy": "hand, localized page (tool parser reads English pages only)"
+        },
+        "kr": {
+          "name": "Noxium: 사진 비밀 금고",
+          "developer": "Milan Sharma",
+          "price": "무료",
+          "rating": null,
+          "ratingCount": 0,
+          "version": "1.0",
+          "lastUpdate": "2026-11-06",
+          "minimumOs": "17.0",
+          "url": "https://apps.apple.com/kr/app/noxium-%EC%82%AC%EC%A7%84-%EB%B9%84%EB%B0%80-%EA%B8%88%EA%B3%A0/id6824616093",
+          "privacyLabel": [
+            "Data Not Collected"
+          ],
+          "inAppPurchases": [
+            {
+              "name": "Noxium Pro 연간",
+              "price": "￦29,000"
+            },
+            {
+              "name": "Noxium Pro 주간",
+              "price": "￦4,400"
+            },
+            {
+              "name": "Darkroom Pro – Lifetime",
+              "price": "￦66,000"
+            },
+            {
+              "name": "Noxium Pro 월간",
+              "price": "￦4,400"
+            }
+          ],
+          "checked": "2026-11-12",
+          "pageParsedBy": "hand, localized page (tool parser reads English pages only)"
+        },
+        "cn": {
+          "checked": "2026-11-12",
+          "available": false
         }
       }
     },
@@ -93,6 +305,286 @@
             }
           ],
           "checked": "2026-11-11"
+        },
+        "de": {
+          "name": "Keepsafe - Bilder Verstecken",
+          "developer": "KeepSafe Software, Inc",
+          "price": "Gratis",
+          "rating": 4.6,
+          "ratingCount": 25263,
+          "version": "13.35.0",
+          "lastUpdate": "2026-10-26",
+          "minimumOs": "17.0",
+          "url": "https://apps.apple.com/de/app/keepsafe-bilder-verstecken/id510873505",
+          "privacyLabel": [
+            "Data Used to Track You",
+            "Data Not Linked to You"
+          ],
+          "inAppPurchases": [
+            {
+              "name": "Keepsafe Jährliche Prämie",
+              "price": "26,49 €"
+            },
+            {
+              "name": "Keepsafe Monatliche Prämie",
+              "price": "10,99 €"
+            },
+            {
+              "name": "KeepSafe Premium",
+              "price": "4,99 €"
+            },
+            {
+              "name": "Keepsafe Premium: Cloud Hider",
+              "price": "38,99 €"
+            }
+          ],
+          "checked": "2026-11-12",
+          "pageParsedBy": "hand: yearly, monthly, lowest and highest of the IAPs the localized page shows"
+        },
+        "fr": {
+          "name": "Dossier Photo Secret Keepsafe",
+          "developer": "KeepSafe Software, Inc",
+          "price": "Gratuit",
+          "rating": 4.6,
+          "ratingCount": 25162,
+          "version": "13.35.0",
+          "lastUpdate": "2026-10-26",
+          "minimumOs": "17.0",
+          "url": "https://apps.apple.com/fr/app/dossier-photo-secret-keepsafe/id510873505",
+          "privacyLabel": [
+            "Data Used to Track You",
+            "Data Not Linked to You"
+          ],
+          "inAppPurchases": [
+            {
+              "name": "Keepsafe Prime Annuelle",
+              "price": "26,49 €"
+            },
+            {
+              "name": "Keepsafe Prime Mensuelle",
+              "price": "10,99 €"
+            },
+            {
+              "name": "KeepSafe Premium",
+              "price": "4,99 €"
+            },
+            {
+              "name": "Keepsafe Premium: Cloud Hider",
+              "price": "39,99 €"
+            }
+          ],
+          "checked": "2026-11-12",
+          "pageParsedBy": "hand: yearly, monthly, lowest and highest of the IAPs the localized page shows"
+        },
+        "es": {
+          "name": "Keepsafe-Protege Fotos, Videos",
+          "developer": "KeepSafe Software, Inc",
+          "price": "Gratis",
+          "rating": 4.7,
+          "ratingCount": 10990,
+          "version": "13.35.0",
+          "lastUpdate": "2026-10-26",
+          "minimumOs": "17.0",
+          "url": "https://apps.apple.com/es/app/keepsafe-protege-fotos-videos/id510873505",
+          "privacyLabel": [
+            "Data Used to Track You",
+            "Data Not Linked to You"
+          ],
+          "inAppPurchases": [
+            {
+              "name": "Keepsafe Prima Anual",
+              "price": "26,49 €"
+            },
+            {
+              "name": "Keepsafe Prima Mensual",
+              "price": "10,99 €"
+            },
+            {
+              "name": "KeepSafe Premium",
+              "price": "4,99 €"
+            },
+            {
+              "name": "Keepsafe Premium: Cloud Hider",
+              "price": "39,99 €"
+            }
+          ],
+          "checked": "2026-11-12",
+          "pageParsedBy": "hand: yearly, monthly, lowest and highest of the IAPs the localized page shows"
+        },
+        "br": {
+          "name": "Keepsafe: Foto e Pasta Secreta",
+          "developer": "KeepSafe Software, Inc",
+          "price": "Grátis",
+          "rating": 4.8,
+          "ratingCount": 51866,
+          "version": "13.35.0",
+          "lastUpdate": "2026-10-26",
+          "minimumOs": "17.0",
+          "url": "https://apps.apple.com/br/app/keepsafe-foto-e-pasta-secreta/id510873505",
+          "privacyLabel": [
+            "Data Used to Track You",
+            "Data Not Linked to You"
+          ],
+          "inAppPurchases": [
+            {
+              "name": "Keepsafe Prémio Anual",
+              "price": "R$ 77,90"
+            },
+            {
+              "name": "Keepsafe Prêmio Mensal",
+              "price": "R$ 31,90"
+            },
+            {
+              "name": "KeepSafe Premium",
+              "price": "R$ 15,90"
+            },
+            {
+              "name": "Keepsafe Premium: Cloud Hider",
+              "price": "R$ 177,90"
+            }
+          ],
+          "checked": "2026-11-12",
+          "pageParsedBy": "hand: yearly, monthly, lowest and highest of the IAPs the localized page shows"
+        },
+        "it": {
+          "name": "Keepsafe Nascondi Foto Segrete",
+          "developer": "KeepSafe Software, Inc",
+          "price": "Gratis",
+          "rating": 4.6,
+          "ratingCount": 7024,
+          "version": "13.35.0",
+          "lastUpdate": "2026-10-26",
+          "minimumOs": "17.0",
+          "url": "https://apps.apple.com/it/app/keepsafe-nascondi-foto-segrete/id510873505",
+          "privacyLabel": [
+            "Data Used to Track You",
+            "Data Not Linked to You"
+          ],
+          "inAppPurchases": [
+            {
+              "name": "Keepsafe Premium Annuo",
+              "price": "26,49 €"
+            },
+            {
+              "name": "Keepsafe Mensile Premium",
+              "price": "10,99 €"
+            },
+            {
+              "name": "KeepSafe Premium",
+              "price": "4,99 €"
+            },
+            {
+              "name": "Keepsafe Premium: Cloud Hider",
+              "price": "39,99 €"
+            }
+          ],
+          "checked": "2026-11-12",
+          "pageParsedBy": "hand: yearly, monthly, lowest and highest of the IAPs the localized page shows"
+        },
+        "jp": {
+          "name": "パスワードでシークレット写真･動画も安心: Keepsafe",
+          "developer": "KeepSafe Software, Inc",
+          "price": "無料",
+          "rating": 4.4,
+          "ratingCount": 12717,
+          "version": "13.35.0",
+          "lastUpdate": "2026-10-26",
+          "minimumOs": "17.0",
+          "url": "https://apps.apple.com/jp/app/%E3%83%91%E3%82%B9%E3%83%AF%E3%83%BC%E3%83%89%E3%81%A7%E3%82%B7%E3%83%BC%E3%82%AF%E3%83%AC%E3%83%83%E3%83%88%E5%86%99%E7%9C%9F-%E5%8B%95%E7%94%BB%E3%82%82%E5%AE%89%E5%BF%83-keepsafe/id510873505",
+          "privacyLabel": [
+            "Data Used to Track You",
+            "Data Not Linked to You"
+          ],
+          "inAppPurchases": [
+            {
+              "name": "Keepsafe 毎年プレミアム",
+              "price": "¥2,700"
+            },
+            {
+              "name": "Keepsafe毎月プレミアムー写真の保管場所",
+              "price": "¥1,100"
+            },
+            {
+              "name": "KeepSafe Premium",
+              "price": "¥600"
+            },
+            {
+              "name": "Keepsafe Premium: Cloud Hider",
+              "price": "¥4,300"
+            }
+          ],
+          "checked": "2026-11-12",
+          "pageParsedBy": "hand: yearly, monthly, lowest and highest of the IAPs the localized page shows"
+        },
+        "kr": {
+          "name": "Keepsafe 개인적인 사진 비디오 숨기는 잠금 앨범",
+          "developer": "KeepSafe Software, Inc",
+          "price": "무료",
+          "rating": 4.6,
+          "ratingCount": 4111,
+          "version": "13.35.0",
+          "lastUpdate": "2026-10-26",
+          "minimumOs": "17.0",
+          "url": "https://apps.apple.com/kr/app/keepsafe-%EA%B0%9C%EC%9D%B8%EC%A0%81%EC%9D%B8-%EC%82%AC%EC%A7%84-%EB%B9%84%EB%94%94%EC%98%A4-%EC%88%A8%EA%B8%B0%EB%8A%94-%EC%9E%A0%EA%B8%88-%EC%95%A8%EB%B2%94/id510873505",
+          "privacyLabel": [
+            "Data Used to Track You",
+            "Data Not Linked to You"
+          ],
+          "inAppPurchases": [
+            {
+              "name": "Keepsafe 연간 프리미엄 — 사진 숨기기",
+              "price": "￦29,000"
+            },
+            {
+              "name": "Keepsafe 월 보험료 — 사진 숨기기",
+              "price": "￦12,000"
+            },
+            {
+              "name": "KeepSafe Premium",
+              "price": "￦6,000"
+            },
+            {
+              "name": "Keepsafe 평생 프리미엄",
+              "price": "￦229,000"
+            }
+          ],
+          "checked": "2026-11-12",
+          "pageParsedBy": "hand: yearly, monthly, lowest and highest of the IAPs the localized page shows"
+        },
+        "cn": {
+          "name": "秘密照片库 -  Keepsafe",
+          "developer": "KeepSafe Software, Inc",
+          "price": "免费",
+          "rating": 4.5,
+          "ratingCount": 1225,
+          "version": "13.35.0",
+          "lastUpdate": "2026-10-26",
+          "minimumOs": "17.0",
+          "url": "https://apps.apple.com/cn/app/%E7%A7%98%E5%AF%86%E7%85%A7%E7%89%87%E5%BA%93-keepsafe/id510873505",
+          "privacyLabel": [
+            "Data Used to Track You",
+            "Data Not Linked to You"
+          ],
+          "inAppPurchases": [
+            {
+              "name": "Keepsafe 年保费 — 隐藏照片",
+              "price": "¥168.00"
+            },
+            {
+              "name": "Keepsafe 每月保费 — 隐藏照片",
+              "price": "¥70.00"
+            },
+            {
+              "name": "KeepSafe Premium",
+              "price": "¥30.00"
+            },
+            {
+              "name": "Keepsafe终身高级一生订阅",
+              "price": "¥998.00"
+            }
+          ],
+          "checked": "2026-11-12",
+          "pageParsedBy": "hand: yearly, monthly, lowest and highest of the IAPs the localized page shows"
         }
       }
     },
