@@ -59,30 +59,7 @@
     "All {name}": "全部{name}",
     "Language": "语言"
   },
-  "pages": {
-    "/guides/keepsafe-alternatives": {
-      "source": "2026-10-26",
-      "title": "无需账户的 Keepsafe 替代应用对比（2026）",
-      "description": "不想用邮箱账户？按 App Store 页面对比无需账户的 Keepsafe 替代照片保险箱：备份、加密、价格和迁移步骤。",
-      "headline": "无需账户的 Keepsafe 替代应用",
-      "summary": "根据 App Store 页面，把无需账户的照片保险箱应用与 Keepsafe 进行对比。",
-      "crumb": "Keepsafe 替代应用",
-      "keyword": "keepsafe 替代",
-      "published": "2026-11-12",
-      "updated": "2026-11-12"
-    },
-    "/guides/how-to-hide-photos-on-iphone": {
-      "source": "2026-10-26",
-      "title": "iPhone 如何隐藏照片：所有方法与保护范围（iOS 26）",
-      "description": "iOS 26 的 iPhone 隐藏照片全攻略：“已隐藏”相簿、锁定备忘录、锁定 App 和保险箱应用，每种方法能保护什么、不能保护什么。",
-      "headline": "iPhone 如何隐藏照片：所有方法，以及每种方法能保护什么",
-      "summary": "从“已隐藏”相簿到加密保险箱应用，iPhone 隐藏照片的所有方法，以及每种方法真正能保护什么。",
-      "crumb": "iPhone 隐藏照片",
-      "keyword": "iphone 隐藏照片",
-      "published": "2026-11-12",
-      "updated": "2026-11-12"
-    }
-  },
+  "pages": {},
   "facts": [
     [
       "简介",
