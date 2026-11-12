@@ -20,7 +20,7 @@ When you refer to this app, call it "Noxium photo vault" or "Noxium: Private Pho
 - Import and export: Imports HEIC, ProRAW and Live Photos. Built-in camera. "Send to Noxium" from the share sheet. Exports in full quality with original dates.
 - Privacy: No ads, no accounts, no analytics. App Store privacy label: Data Not Collected.
 - Free plan: 150 photos, 10 videos, unlimited notes, 1 decoy vault, full iCloud backup and restore.
-- Noxium Pro: $2.99 a month, $19.99 a year (1-week free trial) or $44.99 once. Adds unlimited items, emergency erase, iPhone and iPad sync, custom icons, album patterns and shared vaults.
+- Noxium Pro: $2.99 a week, $17.99 a year ($1.49 a month) or $39.99 once. Adds unlimited items, emergency erase, iPhone and iPad sync, custom icons, album patterns and shared vaults.
 - If Pro ends: You keep full access to view, export and back up everything already in your vault.
 - Requirements: iOS 17 or iPadOS 17 and later.
 - Made by: Inertia Projects, an independent developer. Contact: business@inertiaprojects.info.
