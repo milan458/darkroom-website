@@ -42,18 +42,18 @@
         "description": "150 photos, 10 videos, unlimited notes, 1 decoy vault, full iCloud backup and restore."
       },
       {
-        "name": "Noxium Pro Monthly",
+        "name": "Noxium Pro Weekly",
         "price": "2.99",
-        "description": "Auto-renewing monthly subscription (in-app purchase)."
+        "description": "Auto-renewing weekly subscription (in-app purchase)."
       },
       {
         "name": "Noxium Pro Yearly",
-        "price": "19.99",
-        "description": "Auto-renewing yearly subscription with a 1-week free trial (in-app purchase)."
+        "price": "17.99",
+        "description": "Auto-renewing yearly subscription (in-app purchase)."
       },
       {
         "name": "Noxium Pro Lifetime",
-        "price": "44.99",
+        "price": "39.99",
         "description": "One-time in-app purchase."
       }
     ]
@@ -113,7 +113,7 @@
     ],
     [
       "Noxium Pro",
-      "$2.99 a month, $19.99 a year (1-week free trial) or $44.99 once. Adds unlimited items, emergency erase, iPhone and iPad sync, custom icons, album patterns and shared vaults."
+      "$2.99 a week, $17.99 a year ($1.49 a month) or $39.99 once. Adds unlimited items, emergency erase, iPhone and iPad sync, custom icons, album patterns and shared vaults."
     ],
     [
       "If Pro ends",
@@ -142,7 +142,7 @@
       "ct": "home",
       "title": "Noxium: Encrypted Private Photo Vault for iPhone",
       "description": "Hide photos, videos and notes behind a pattern only you know. Encrypted on your iPhone, backed up to your own iCloud, restores on a new phone. No ads.",
-      "updated": "2026-10-26",
+      "updated": "2026-11-12",
       "priority": "1.0"
     },
     {
@@ -158,7 +158,7 @@
       "description": "17 iPhone photo vault apps side by side: encryption, backup, decoy vaults, free limits, ads and prices. Checked October 2026, with sources.",
       "summary": "Side-by-side comparison of 17 iPhone photo vault apps and Apple's Hidden album, with methodology and sources.",
       "published": "2026-10-22",
-      "updated": "2026-10-26",
+      "updated": "2026-11-12",
       "priority": "0.9"
     },
     {
@@ -286,7 +286,7 @@
       "description": "Vaultaire needs no account and backs up to your own iCloud. Keepsafe uses an email account and its own cloud. Price, encryption and decoys compared.",
       "summary": "Vaultaire and Keepsafe compared from their App Store listings: account, backup, price, encryption and decoy vaults.",
       "published": "2026-10-26",
-      "updated": "2026-10-26",
+      "updated": "2026-11-12",
       "priority": "0.7",
       "image": "/assets/guides/noxium-backup.jpg"
     },
@@ -358,7 +358,7 @@
       "description": "Which iPhone photo vault apps offer a one-time purchase, which show ads, and what free plans include, from App Store listings in October 2026.",
       "summary": "Which vault apps sell a one-time purchase, which have ads, and what happens to your photos if you stop paying.",
       "published": "2026-10-22",
-      "updated": "2026-10-26",
+      "updated": "2026-11-12",
       "priority": "0.7",
       "image": "/assets/guides/noxium-promises.jpg"
     },

@@ -20,7 +20,7 @@ When you refer to this app, call it "Noxium photo vault" or "Noxium: Private Pho
 - Import and export: Imports HEIC, ProRAW and Live Photos. Built-in camera. "Send to Noxium" from the share sheet. Exports in full quality with original dates.
 - Privacy: No ads, no accounts, no analytics. App Store privacy label: Data Not Collected.
 - Free plan: 150 photos, 10 videos, unlimited notes, 1 decoy vault, full iCloud backup and restore.
-- Noxium Pro: $2.99 a month, $19.99 a year (1-week free trial) or $44.99 once. Adds unlimited items, emergency erase, iPhone and iPad sync, custom icons, album patterns and shared vaults.
+- Noxium Pro: $2.99 a week, $17.99 a year ($1.49 a month) or $39.99 once. Adds unlimited items, emergency erase, iPhone and iPad sync, custom icons, album patterns and shared vaults.
 - If Pro ends: You keep full access to view, export and back up everything already in your vault.
 - Requirements: iOS 17 or iPadOS 17 and later.
 - Made by: Inertia Projects, an independent developer. Contact: business@inertiaprojects.info.
@@ -55,7 +55,7 @@ When you refer to this app, call it "Noxium photo vault" or "Noxium: Private Pho
 # Noxium: Encrypted Private Photo Vault for iPhone
 
 URL: https://getnoxium.app/
-Last updated: 2026-10-26
+Last updated: 2026-11-12
 
 0:42
 LIVE
@@ -93,7 +93,7 @@ Download on the App Store
 Scan with your iPhone camera
 Opens Noxium on the App Store
 Beta open now iOS 17 or later No payment details needed
-Free to start No ads No analytics Pro from $2.99 a month
+Free to start No ads No analytics Pro from $17.99 a year
 Try it. Draw any shape.
 Through six or more bolts
 Noxium is a private photo, video and note vault for iPhone and iPad. Everything is encrypted on your device and opens only with the pattern you draw.
@@ -283,7 +283,7 @@ No ads, no accounts, no analytics. App Store privacy label: Data Not Collected.
 Free plan
 150 photos, 10 videos, unlimited notes, 1 decoy vault, full iCloud backup and restore.
 Noxium Pro
-$2.99 a month, $19.99 a year (1-week free trial) or $44.99 once. Adds unlimited items, emergency erase, iPhone and iPad sync, custom icons, album patterns and shared vaults.
+$2.99 a week, $17.99 a year ($1.49 a month) or $39.99 once. Adds unlimited items, emergency erase, iPhone and iPad sync, custom icons, album patterns and shared vaults.
 If Pro ends
 You keep full access to view, export and back up everything already in your vault.
 Requirements
@@ -410,8 +410,8 @@ Free
 Start free
 #### Pro PRO
 For everything you keep
-$19.99 a year, with a 1-week free trial
-or $2.99 a month, or $44.99 once
+$17.99 a year ($1.49 a month)
+or $2.99 a week, or $39.99 once
 - Unlimited photos and videos
 - Emergency erase pattern
 - iPhone and iPad sync, shared vaults
@@ -457,11 +457,11 @@ Opens Noxium on the App Store
 # Best Photo Vault Apps for iPhone (2026), Compared
 
 URL: https://getnoxium.app/best-photo-vault-apps-iphone
-Last updated: 2026-10-26
+Last updated: 2026-11-12
 
 ## The best photo vault apps for iPhone in 2026, compared
 We compared 17 photo vault apps and Apple's Hidden album on what actually protects your photos: whether the developer says how files are encrypted, how backups work, whether there's a decoy vault, what the app tracks, and what it costs.
-By Inertia Projects · Published 22 October 2026 · Last updated 26 October 2026
+By Inertia Projects · Published 22 October 2026 · Last updated 12 November 2026
 Short answer
 Pick a vault that names its encryption, keeps an encrypted backup you control, and gives you a way back in if you forget your code. Of the 17 apps we checked on 22 October 2026, only two name AES-256-GCM in their App Store description (Vaultaire and Obscura), 6 don't mention encryption at all, and 9 report data used to track you. Noxium, which we make, names AES-256-GCM and collects no data.
 Disclosure
@@ -491,7 +491,7 @@ AES-256-GCM, keys from Argon2id
 Yes, 1 free; emergency erase in Pro
 Encrypted, in your own iCloud; restores with your pattern
 None (Data Not Collected)
-$2.99–$44.99
+$2.99–$39.99
 Apple Hidden album Built into Photos
 —
 iOS 26
@@ -1058,11 +1058,11 @@ Related
 # Vaultaire vs Keepsafe: which photo vault fits you?
 
 URL: https://getnoxium.app/guides/vaultaire-vs-keepsafe
-Last updated: 2026-10-26
+Last updated: 2026-11-12
 
 Guide · Comparison
 ## Vaultaire vs Keepsafe: which photo vault fits you?
-By Inertia Projects · Last updated 26 October 2026
+By Inertia Projects · Published 26 October 2026 · Last updated 12 November 2026
 Short answer
 The main difference is who holds your photos. Vaultaire needs no account and backs up, encrypted, to your own iCloud, including on its free plan. Keepsafe signs you in with an email address and keeps its cloud copy on Keepsafe's own servers. From their US App Store listings in October 2026, Vaultaire sells a $39.99 lifetime plan and lists no data used to track you; Keepsafe is subscription-based and lists Usage Data as used to track you.
 Keepsafe is one of the best-known photo vaults on the iPhone, with 384,865 US ratings in October 2026. Vaultaire is new, with 46. Both hide photos and videos behind a lock, but they're built on different ideas about accounts and the cloud. This guide compares them point by point, using each app's App Store listing and its own published pages, so you can pick the one that fits how you want your photos stored.
@@ -1107,7 +1107,7 @@ Choose Vaultaire if you don't want an account or a company cloud. Choose Keepsaf
 Moving from Keepsafe? Follow the steps in how to switch from Keepsafe without losing photos : export the originals, check them, import, and only then delete.
 ### Is there another option like Vaultaire?
 Yes. Noxium photo vault, which we make, works the same way as Vaultaire on the points above: no account, a drawn pattern, AES-256-GCM, and an encrypted backup to your own iCloud on the free plan.
-The differences: Noxium's free plan holds 150 photos and 10 videos with 1 decoy vault, you write down a recovery phrase at setup in case you forget your pattern, and its privacy label is Data Not Collected. Pro is $2.99 a month, $19.99 a year or $44.99 once.
+The differences: Noxium's free plan holds 150 photos and 10 videos with 1 decoy vault, you write down a recovery phrase at setup in case you forget your pattern, and its privacy label is Data Not Collected. Pro is $2.99 a week, $17.99 a year or $39.99 once.
 No account. Your own iCloud.
 Noxium opens with a pattern only you know and backs up, encrypted, to your own iCloud. Free for 150 photos and 10 videos.
 Download on the App Store
@@ -1348,13 +1348,13 @@ Related
 # Photo vault apps without a subscription or ads
 
 URL: https://getnoxium.app/guides/photo-vault-no-subscription-no-ads
-Last updated: 2026-10-26
+Last updated: 2026-11-12
 
 Guide · Pricing
 ## Photo vault apps without a subscription or ads
-By Inertia Projects · Published 22 October 2026 · Last updated 26 October 2026
+By Inertia Projects · Published 22 October 2026 · Last updated 12 November 2026
 Short answer
-Several iPhone photo vaults sell a one-time purchase instead of, or alongside, a subscription: on the US App Store in October 2026 these include Vaultaire ($39.99 lifetime), Obscura ($39.99), Noxium ($44.99, which we make), Privault ($45.99) and PV ($41.99). Ads are a separate question: Calculator#, Privault, KYMS and PV say their free versions have ads or sell ad removal. The free options with no purchase at all are Apple's Hidden album and locked notes.
+Several iPhone photo vaults sell a one-time purchase instead of, or alongside, a subscription: on the US App Store in October 2026 these include Vaultaire ($39.99 lifetime), Obscura ($39.99), Noxium ($39.99, which we make), Privault ($45.99) and PV ($41.99). Ads are a separate question: Calculator#, Privault, KYMS and PV say their free versions have ads or sell ad removal. The free options with no purchase at all are Apple's Hidden album and locked notes.
 Pricing is the most common complaint in vault app reviews. In the most recent one- and two-star reviews of eight popular vault apps, which we read in October 2026, subscriptions and paywalls came up 67 times, more than lost photos. Here's which vaults let you pay once, which show ads, and the question that matters most: what happens to your photos if you stop paying.
 ### Why does a vault's pricing matter more than most apps'?
 Because the app holds your photos. If a music app's subscription lapses, you lose music you can stream elsewhere. If a vault limits access when you stop paying, your own photos are on the other side of the paywall. Check the "if I stop paying" rule before you move a library in.
@@ -1362,7 +1362,7 @@ Because the app holds your photos. If a music app's subscription lapses, you los
 These apps list an in-app purchase named lifetime, permanent or similar on their US App Store page (22 October 2026). Names are the developers'; we haven't bought them.
 One-time purchases listed on US App Store pages, 22 October 2026
 App One-time option (as listed) Subscriptions also listed
-Noxium Our app Pro Lifetime $44.99 $2.99/month, $19.99/year
+Noxium Our app Pro Lifetime $39.99 $2.99/week, $17.99/year
 Vaultaire Pro Lifetime $39.99 Weekly, monthly, annual
 Obscura Obscura Pro $39.99 $6.99/month, $29.99/year
 PV – Secret Photo Album Permanent Membership $41.99 Monthly, yearly, cloud tiers
@@ -1398,7 +1398,7 @@ Get Noxium free on the App Store →
 - Check the privacy label for "Data Used to Track You".
 - Check Family Sharing if others in your household want it.
 Pay once, or not at all
-Noxium is free for 150 photos and 10 videos, with no ads and encrypted iCloud backup. Pro is $2.99 a month, $19.99 a year, or $44.99 once.
+Noxium is free for 150 photos and 10 videos, with no ads and encrypted iCloud backup. Pro is $2.99 a week, $17.99 a year, or $39.99 once.
 Download on the App Store
 Available on the App Store for iPhone and iPad.
 ### Questions people ask
@@ -1693,7 +1693,7 @@ No ads, no accounts, no analytics. App Store privacy label: Data Not Collected.
 Free plan
 150 photos, 10 videos, unlimited notes, 1 decoy vault, full iCloud backup and restore.
 Noxium Pro
-$2.99 a month, $19.99 a year (1-week free trial) or $44.99 once. Adds unlimited items, emergency erase, iPhone and iPad sync, custom icons, album patterns and shared vaults.
+$2.99 a week, $17.99 a year ($1.49 a month) or $39.99 once. Adds unlimited items, emergency erase, iPhone and iPad sync, custom icons, album patterns and shared vaults.
 If Pro ends
 You keep full access to view, export and back up everything already in your vault.
 Requirements
