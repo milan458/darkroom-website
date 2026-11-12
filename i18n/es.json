@@ -59,7 +59,19 @@
     "All {name}": "Todas las {name}",
     "Language": "Idioma"
   },
-  "pages": {},
+  "pages": {
+    "/guides/keepsafe-alternatives": {
+      "source": "2026-10-26",
+      "title": "Alternativas a Keepsafe sin cuenta (2026)",
+      "description": "¿Buscas una alternativa a Keepsafe sin cuenta de correo ni su nube? Bóvedas de fotos que no piden cuenta, comparadas según sus fichas del App Store.",
+      "headline": "Alternativas a Keepsafe que no necesitan cuenta",
+      "summary": "Bóvedas de fotos que funcionan sin cuenta, comparadas con Keepsafe según sus fichas del App Store.",
+      "crumb": "Alternativas a Keepsafe",
+      "keyword": "alternativa a keepsafe",
+      "published": "2026-11-12",
+      "updated": "2026-11-12"
+    }
+  },
   "facts": [
     [
       "Qué es",

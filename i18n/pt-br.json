@@ -59,7 +59,19 @@
     "All {name}": "Todos os {name}",
     "Language": "Idioma"
   },
-  "pages": {},
+  "pages": {
+    "/guides/keepsafe-alternatives": {
+      "source": "2026-10-26",
+      "title": "Alternativas ao Keepsafe sem conta (2026)",
+      "description": "Quer uma alternativa ao Keepsafe sem conta de e-mail nem nuvem da empresa? Cofres de fotos que não pedem conta, comparados pelas páginas da App Store.",
+      "headline": "Alternativas ao Keepsafe que não pedem conta",
+      "summary": "Cofres de fotos que funcionam sem conta, comparados com o Keepsafe pelas páginas da App Store.",
+      "crumb": "Alternativas ao Keepsafe",
+      "keyword": "alternativa ao keepsafe",
+      "published": "2026-11-12",
+      "updated": "2026-11-12"
+    }
+  },
   "facts": [
     [
       "O que é",

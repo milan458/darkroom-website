@@ -59,7 +59,19 @@
     "All {name}": "Alle {name}",
     "Language": "Sprache"
   },
-  "pages": {},
+  "pages": {
+    "/guides/keepsafe-alternatives": {
+      "source": "2026-10-26",
+      "title": "Keepsafe-Alternativen ohne Konto (2026)",
+      "description": "Keepsafe-Alternative ohne E-Mail-Konto und ohne fremde Cloud gesucht? Foto-Tresore, die kein Konto brauchen, verglichen anhand ihrer App-Store-Einträge.",
+      "headline": "Keepsafe-Alternativen, die kein Konto brauchen",
+      "summary": "Foto-Tresor-Apps, die ohne Konto funktionieren, mit Keepsafe verglichen anhand ihrer App-Store-Einträge.",
+      "crumb": "Keepsafe-Alternativen",
+      "keyword": "keepsafe alternative",
+      "published": "2026-11-12",
+      "updated": "2026-11-12"
+    }
+  },
   "facts": [
     [
       "Was es ist",

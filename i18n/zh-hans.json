@@ -59,7 +59,19 @@
     "All {name}": "全部{name}",
     "Language": "语言"
   },
-  "pages": {},
+  "pages": {
+    "/guides/keepsafe-alternatives": {
+      "source": "2026-10-26",
+      "title": "无需账户的 Keepsafe 替代应用对比（2026）",
+      "description": "不想用邮箱账户？按 App Store 页面对比无需账户的 Keepsafe 替代照片保险箱：备份、加密、价格和迁移步骤。",
+      "headline": "无需账户的 Keepsafe 替代应用",
+      "summary": "根据 App Store 页面，把无需账户的照片保险箱应用与 Keepsafe 进行对比。",
+      "crumb": "Keepsafe 替代应用",
+      "keyword": "keepsafe 替代",
+      "published": "2026-11-12",
+      "updated": "2026-11-12"
+    }
+  },
   "facts": [
     [
       "简介",
