@@ -244,7 +244,7 @@
           <li><strong>PBKDF2</strong> is older and still common. It's slow, but cheaper to attack with specialised hardware.</li>
           <li><strong>A plain hash, or nothing,</strong> means guesses are nearly free.</li>
         </ul>
-        <p>Noxium, which we make, uses Argon2id with 64 MiB of memory and 3 passes, plus a random 256-bit salt so the same pattern never produces the same key twice.</p>
+        <p>Noxium, which we make, uses Argon2id with 64 MiB of memory and 3 passes, plus a random 128-bit salt so the same pattern never produces the same key twice. Our page on <a href="/features/pattern-lock">Noxium's pattern lock</a> shows how many patterns the 5×5 plate allows.</p>
 
         <h2 id="aes">What does AES-256-GCM mean?</h2>
         <p>It's the cipher that scrambles the photos, in a mode that also detects tampering.</p>
@@ -262,7 +262,7 @@
           <li>The wrapping key unlocks a random <strong>vault key</strong>, stored only in encrypted form.</li>
           <li>The vault key unlocks a separate random <strong>file key</strong> for every photo, video and note.</li>
         </ol>
-        <p>Changing your code only re-wraps the vault key. A recovery phrase works the same way: it's a second wrapping of the same vault key, so either the code or the phrase opens the vault. Large videos are often encrypted in chunks, so they can play without decrypting the whole file first. Noxium uses 1 MiB chunks, each with its own authentication tag. The full key hierarchy is on our <a href="/#security">security section</a>.</p>
+        <p>Changing your code only re-wraps the vault key. A recovery phrase works the same way: it's a second wrapping of the same vault key, so either the code or the phrase opens the vault. Large videos are often encrypted in chunks, so they can play without decrypting the whole file first. Noxium uses 1 MiB chunks, each with its own authentication tag. The full key hierarchy is on our <a href="/#security">security section</a>, and every layer is explained on our <a href="/features/on-device-encryption">on-device encryption</a> page.</p>
 
         <h2 id="backup">How does an encrypted backup stay private?</h2>
         <p>By encrypting on the phone before anything is uploaded, so the cloud only ever stores scrambled data. This is called end-to-end encryption.</p>
