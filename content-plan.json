@@ -54,7 +54,7 @@
       "status": "in-review"
     },
     {
-      "order": 6,
+      "order": 15,
       "week": 1,
       "type": "feature",
       "path": "/features/decoy-vault",
@@ -64,7 +64,7 @@
       "status": "todo"
     },
     {
-      "order": 7,
+      "order": 16,
       "week": 1,
       "type": "feature",
       "path": "/features/emergency-erase",
@@ -74,7 +74,7 @@
       "status": "todo"
     },
     {
-      "order": 8,
+      "order": 17,
       "week": 1,
       "type": "feature",
       "path": "/features/custom-app-icons",
@@ -84,7 +84,7 @@
       "status": "todo"
     },
     {
-      "order": 9,
+      "order": 18,
       "week": 1,
       "type": "feature",
       "path": "/features/album-patterns",
@@ -93,7 +93,7 @@
       "status": "todo"
     },
     {
-      "order": 10,
+      "order": 19,
       "week": 1,
       "type": "feature",
       "path": "/features/iphone-ipad-sync",
@@ -103,7 +103,7 @@
       "status": "todo"
     },
     {
-      "order": 11,
+      "order": 20,
       "week": 1,
       "type": "feature",
       "path": "/features/shared-vaults",
@@ -113,7 +113,7 @@
       "status": "todo"
     },
     {
-      "order": 12,
+      "order": 21,
       "week": 1,
       "type": "feature",
       "path": "/features/import-export",
@@ -122,7 +122,7 @@
       "status": "todo"
     },
     {
-      "order": 13,
+      "order": 22,
       "week": 1,
       "type": "feature",
       "path": "/features/encrypted-notes",
@@ -131,7 +131,7 @@
       "status": "todo"
     },
     {
-      "order": 14,
+      "order": 6,
       "week": 1,
       "type": "compare",
       "path": "/compare/",
@@ -142,7 +142,7 @@
       "status": "todo"
     },
     {
-      "order": 15,
+      "order": 7,
       "week": 1,
       "type": "compare",
       "path": "/compare/privault",
@@ -153,7 +153,7 @@
       "status": "todo"
     },
     {
-      "order": 16,
+      "order": 8,
       "week": 1,
       "type": "compare",
       "path": "/compare/keepsafe",
@@ -164,7 +164,7 @@
       "status": "todo"
     },
     {
-      "order": 17,
+      "order": 9,
       "week": 1,
       "type": "compare",
       "path": "/compare/private-photo-vault",
@@ -175,7 +175,7 @@
       "status": "todo"
     },
     {
-      "order": 18,
+      "order": 10,
       "week": 1,
       "type": "compare",
       "path": "/compare/vaultaire",
@@ -185,7 +185,7 @@
       "status": "todo"
     },
     {
-      "order": 19,
+      "order": 11,
       "week": 1,
       "type": "compare",
       "path": "/compare/apple-hidden-album",
@@ -196,7 +196,7 @@
       "status": "todo"
     },
     {
-      "order": 20,
+      "order": 12,
       "week": 1,
       "type": "compare",
       "path": "/compare/calculator-hide-photos",
@@ -207,7 +207,7 @@
       "status": "todo"
     },
     {
-      "order": 21,
+      "order": 13,
       "week": 1,
       "type": "compare",
       "path": "/compare/hide-it-pro",
@@ -218,7 +218,7 @@
       "status": "todo"
     },
     {
-      "order": 22,
+      "order": 14,
       "week": 1,
       "type": "compare",
       "path": "/compare/secret-photo-vault",
