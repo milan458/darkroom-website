@@ -312,6 +312,7 @@ Statuses: To do → Drafting → Draft, needs review → Live → Refreshed (dat
 
 | Date | Page | Change | Result after 4 weeks |
 |---|---|---|---|
+| 2026-11-07 | /guides/keepsafe-alternatives | Before: 100 impressions, position ~9, 0 clicks; "vaultaire vs keepsafe" 58 impressions at 7.7 landing here. New description naming the apps, new "Is Vaultaire a good Keepsafe alternative?" section with a callout to /guides/vaultaire-vs-keepsafe (Google hasn't discovered that page yet), in-body link from /best-photo-vault-apps-iphone. | |
 | 2026-11-11 | /guides/vaultaire-vs-keepsafe | Linked from the footer on every page, the homepage, the Keepsafe alternatives intro, the comparison page and the no-subscription guide (3 → 18 linking pages). Goal: Google shows this page, not /guides/keepsafe-alternatives, for "vaultaire vs keepsafe" (64 impr., pos. 7.3). | |
 | 2026-11-11 | /guides/keepsafe-alternatives | Linked from the homepage and the comparison page. Target: "keepsafe alternative(s)" (39 impr., pos. 8.9–9.5) into the top 5. | |
 | 2026-11-11 | /guides/photo-vault-lost-photos | Title → "Photo Vault Recovery: Find Lost or Deleted Vault Photos", description reworded; in-body link to the forgot-password guide. Target: "photo vault recovery" queries (pos. 60–86). | |
