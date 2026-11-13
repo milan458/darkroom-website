@@ -81,6 +81,25 @@
       "keyword": "cacher des photos sur iphone",
       "published": "2026-11-12",
       "updated": "2026-11-12"
+    },
+    "/guides/is-iphone-hidden-album-private": {
+      "source": "2026-10-26",
+      "title": "L’album Masquées de l’iPhone est-il vraiment privé?",
+      "description": "L’album Masquées se verrouille avec Face ID, mais votre code l’ouvre et il se synchronise sur vos appareils. Ce qu’il protège, et ce qu’il ne protège pas.",
+      "headline": "L’album Masquées de l’iPhone est-il vraiment privé?",
+      "summary": "Ce que l’album Masquées de Photos protège, ce qu’il ne protège pas, et comment le rendre plus strict.",
+      "crumb": "L’album Masquées est-il privé?",
+      "keyword": "album masquées iphone sécurisé",
+      "published": "2026-11-13",
+      "updated": "2026-11-13"
+    },
+    "/guides/": {
+      "source": "2026-10-26",
+      "title": "Guides : protéger vos photos privées sur iPhone",
+      "description": "Des guides clairs pour cacher, verrouiller, sauvegarder et transférer vos photos privées sur iPhone et iPad, par l’équipe du coffre photo Noxium.",
+      "crumb": "Guides",
+      "published": "2026-11-13",
+      "updated": "2026-11-13"
     }
   },
   "facts": [

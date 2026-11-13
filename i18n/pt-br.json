@@ -81,6 +81,25 @@
       "keyword": "como esconder fotos no iphone",
       "published": "2026-11-12",
       "updated": "2026-11-12"
+    },
+    "/guides/is-iphone-hidden-album-private": {
+      "source": "2026-10-26",
+      "title": "O álbum Itens Ocultos do iPhone é seguro mesmo?",
+      "description": "O álbum Itens Ocultos bloqueia com Face ID, mas o seu código abre e ele sincroniza com seus aparelhos. O que ele protege e o que não protege.",
+      "headline": "O álbum Itens Ocultos do iPhone é privado mesmo?",
+      "summary": "O que o álbum Itens Ocultos do Fotos protege, o que não protege e como deixá-lo mais rígido.",
+      "crumb": "Itens Ocultos é privado?",
+      "keyword": "itens ocultos iphone é seguro",
+      "published": "2026-11-13",
+      "updated": "2026-11-13"
+    },
+    "/guides/": {
+      "source": "2026-10-26",
+      "title": "Guias para proteger suas fotos privadas no iPhone",
+      "description": "Guias diretos para esconder, bloquear, fazer backup e passar fotos íntimas no iPhone e no iPad, da equipe do cofre de fotos Noxium.",
+      "crumb": "Guias",
+      "published": "2026-11-13",
+      "updated": "2026-11-13"
     }
   },
   "facts": [

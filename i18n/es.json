@@ -81,6 +81,25 @@
       "keyword": "ocultar fotos iphone",
       "published": "2026-11-12",
       "updated": "2026-11-12"
+    },
+    "/guides/is-iphone-hidden-album-private": {
+      "source": "2026-10-26",
+      "title": "¿Es seguro el álbum Oculto del iPhone? Lo que protege",
+      "description": "El álbum Oculto se bloquea con Face ID, pero tu código lo abre y se sincroniza con tus dispositivos. Qué protege y qué no.",
+      "headline": "¿Es realmente privado el álbum Oculto del iPhone?",
+      "summary": "Qué protege el álbum Oculto de Fotos, qué no protege y cómo hacerlo más estricto.",
+      "crumb": "¿Es privado el álbum Oculto?",
+      "keyword": "álbum oculto iphone es seguro",
+      "published": "2026-11-13",
+      "updated": "2026-11-13"
+    },
+    "/guides/": {
+      "source": "2026-10-26",
+      "title": "Guías para proteger tus fotos privadas en el iPhone",
+      "description": "Guías claras para ocultar, bloquear, guardar y pasar fotos privadas en iPhone y iPad, del equipo de la caja fuerte de fotos Noxium.",
+      "crumb": "Guías",
+      "published": "2026-11-13",
+      "updated": "2026-11-13"
     }
   },
   "facts": [
