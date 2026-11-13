@@ -131,7 +131,7 @@
   "locales": {
     "en": { "hreflang": "en", "inLanguage": "en-US", "og": "en_US", "label": "English", "prefix": "" },
     "de": { "hreflang": "de", "inLanguage": "de-DE", "og": "de_DE", "label": "Deutsch", "prefix": "/de", "store": "de" },
-    "fr": { "hreflang": "fr", "inLanguage": "fr-FR", "og": "fr_FR", "label": "Français", "prefix": "/fr", "store": "fr" },
+    "fr": { "hreflang": "fr", "inLanguage": "fr-CA", "og": "fr_CA", "label": "Français", "prefix": "/fr", "store": "ca" },
     "es": { "hreflang": "es", "inLanguage": "es-ES", "og": "es_ES", "label": "Español", "prefix": "/es", "store": "es" },
     "pt-br": { "hreflang": "pt-BR", "inLanguage": "pt-BR", "og": "pt_BR", "label": "Português (Brasil)", "prefix": "/pt-br", "store": "br" },
     "it": { "hreflang": "it", "inLanguage": "it-IT", "og": "it_IT", "label": "Italiano", "prefix": "/it", "store": "it" },

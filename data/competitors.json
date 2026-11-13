@@ -280,6 +280,40 @@
             }
           ],
           "checked": "2026-11-12"
+        },
+        "ca": {
+          "name": "Noxium: Private Photo Vault",
+          "developer": "Milan Sharma",
+          "price": "Free",
+          "rating": null,
+          "ratingCount": 0,
+          "version": "1.0",
+          "lastUpdate": "2026-11-06",
+          "minimumOs": "17.0",
+          "url": "https://apps.apple.com/ca/app/noxium-private-photo-vault/id6824616093",
+          "privacyLabel": [
+            "Data Not Collected"
+          ],
+          "inAppPurchases": [
+            {
+              "name": "Noxium Pro Yearly",
+              "price": "$24.99"
+            },
+            {
+              "name": "Noxium Pro Weekly",
+              "price": "$3.99"
+            },
+            {
+              "name": "Darkroom Pro – Lifetime",
+              "price": "$49.99"
+            },
+            {
+              "name": "Noxium Pro Monthly",
+              "price": "$3.99"
+            }
+          ],
+          "checked": "2026-11-12",
+          "note": "Prices in CAD. Privacy label wording on the fr-CA page: Données non recueillies."
         }
       }
     },
@@ -616,6 +650,65 @@
           ],
           "checked": "2026-11-12",
           "pageParsedBy": "hand: yearly, monthly, lowest and highest of the IAPs the localized page shows"
+        },
+        "ca": {
+          "name": "Photo Vault by Keepsafe",
+          "developer": "KeepSafe Software, Inc",
+          "price": "Free",
+          "rating": 4.7,
+          "ratingCount": 17039,
+          "version": "13.35.0",
+          "lastUpdate": "2026-10-26",
+          "minimumOs": "17.0",
+          "url": "https://apps.apple.com/ca/app/photo-vault-by-keepsafe/id510873505",
+          "privacyLabel": [
+            "Data Used to Track You",
+            "Data Not Linked to You"
+          ],
+          "inAppPurchases": [
+            {
+              "name": "Keepsafe Yearly Premium",
+              "price": "$32.99"
+            },
+            {
+              "name": "Keepsafe Monthly Premium",
+              "price": "$13.49"
+            },
+            {
+              "name": "Keepsafe Premium",
+              "price": "$16.49"
+            },
+            {
+              "name": "KeepSafe Premium",
+              "price": "$32.99"
+            },
+            {
+              "name": "Keepsafe Premium: Annual",
+              "price": "$44.99"
+            },
+            {
+              "name": "KeepSafe Premium",
+              "price": "$6.99"
+            },
+            {
+              "name": "Keepsafe Premium: Cloud Hider",
+              "price": "$44.99"
+            },
+            {
+              "name": "KeepSafe Premium",
+              "price": "$8.49"
+            },
+            {
+              "name": "Keepsafe Premium",
+              "price": "$15.99"
+            },
+            {
+              "name": "Keepsafe Premium",
+              "price": "$38.99"
+            }
+          ],
+          "checked": "2026-11-12",
+          "note": "Prices in CAD. Privacy label wording on the fr-CA page: Données utilisées à des fins de traçage."
         }
       }
     },

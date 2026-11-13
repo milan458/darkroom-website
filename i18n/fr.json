@@ -17,7 +17,7 @@
   ],
   "statusText": {
     "waitlist": "La version 1.0 a été soumise à l’examen de l’App Store en octobre 2026. Elle n’est pas encore sur l’App Store.",
-    "live": "Disponible sur l’App Store pour iPhone et iPad."
+    "live": "Disponible sur l’App Store pour iPhone et iPad (sauf en France)."
   },
   "ui": {
     "Skip to main content": "Aller au contenu principal",
@@ -46,7 +46,7 @@
     "Company": "Entreprise",
     "Privacy policy": "Politique de confidentialité",
     "Terms of use": "Conditions d’utilisation",
-    "Noxium. Made by Inertia Projects, an independent developer. App Store privacy label: Data Not Collected.": "Noxium. Conçu par Inertia Projects, un développeur indépendant. Étiquette de confidentialité de l’App Store : Aucune donnée collectée.",
+    "Noxium. Made by Inertia Projects, an independent developer. App Store privacy label: Data Not Collected.": "Noxium. Conçu par Inertia Projects, un développeur indépendant. Étiquette de confidentialité de l’App Store : Données non recueillies.",
     "Apple, the Apple logo, iPhone, iPad and Face ID are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc.": "Apple, le logo Apple, iPhone, iPad et Face ID sont des marques d’Apple Inc., déposées aux États-Unis et dans d’autres pays. App Store est une marque de service d’Apple Inc.",
     "Breadcrumb": "Fil d’Ariane",
     "By": "Par",
@@ -63,7 +63,7 @@
     "/guides/keepsafe-alternatives": {
       "source": "2026-10-26",
       "title": "Alternatives à Keepsafe sans compte (2026)",
-      "description": "Une alternative à Keepsafe sans compte e-mail ni cloud imposé ? Les coffres-forts photo qui fonctionnent sans compte, comparés d’après l’App Store.",
+      "description": "Une alternative à Keepsafe sans compte courriel ni cloud imposé? Les coffres-forts photo qui fonctionnent sans compte, comparés d’après l’App Store.",
       "headline": "Alternatives à Keepsafe qui ne demandent pas de compte",
       "summary": "Les coffres-forts photo qui fonctionnent sans compte, comparés à Keepsafe d’après leurs fiches App Store.",
       "crumb": "Alternatives à Keepsafe",
@@ -126,7 +126,7 @@
     ],
     [
       "Confidentialité",
-      "Pas de publicité, pas de compte, pas d’analyses. Étiquette de confidentialité de l’App Store : Aucune donnée collectée."
+      "Pas de publicité, pas de compte, pas d’analyses. Étiquette de confidentialité de l’App Store : Données non recueillies."
     ],
     [
       "Offre gratuite",
@@ -134,7 +134,7 @@
     ],
     [
       "Noxium Pro",
-      "2,99 $ par semaine, 17,99 $ par an (1,49 $ par mois) ou 39,99 $ en une fois, prix de l’App Store américain. Au 12 novembre 2026, Noxium n’est pas proposée sur l’App Store français ; elle l’est en Belgique, en Suisse, au Luxembourg et au Canada, au prix local. Ajoute les éléments illimités, l’effacement d’urgence, la synchronisation iPhone et iPad, les icônes d’app personnalisées, les schémas d’album et les coffres partagés."
+      "3,99 $ par semaine, 24,99 $ par an (2,08 $ par mois) ou 49,99 $ en une fois, en dollars canadiens (App Store canadien, relevé du 12 novembre 2026). Noxium n’est pas offerte sur l’App Store en France ; elle l’est aussi en Belgique, en Suisse et au Luxembourg, au prix local. Ajoute les éléments illimités, l’effacement d’urgence, la synchronisation iPhone et iPad, les icônes d’app personnalisées, les schémas d’album et les coffres partagés."
     ],
     [
       "Si Pro s’arrête",

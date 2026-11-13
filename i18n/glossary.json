@@ -192,13 +192,13 @@
     },
     "Data Not Collected (App Store label)": {
       "de": "Keine Daten erfasst",
-      "fr": "Aucune donnée collectée",
+      "fr": "Données non recueillies",
       "es": "No se recopilan datos",
       "pt-br": "Dados não coletados",
       "it": "Dati non raccolti",
       "ja": "データの収集なし",
       "ko": "데이터가 수집되지 않음",
-      "_verify": "de, es, pt-br, it, ja, ko checked on Noxium's own localized App Store page and zh-hans on another app's China store page, 12 November 2026. fr not checked: Noxium isn't sold in the French store.",
+      "_verify": "de, es, pt-br, it, ja, ko checked on Noxium's own localized App Store page and zh-hans on another app's China store page, 12 November 2026. fr: the Canadian store's French wording (the French pages target Canada; Noxium isn't sold in France), checked 12 November 2026.",
       "zh-hant": "未收集資料"
     }
   }
