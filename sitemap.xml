@@ -99,6 +99,26 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://getnoxium.app/features/pattern-lock</loc>
+    <lastmod>2026-11-13</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/features/on-device-encryption</loc>
+    <lastmod>2026-11-13</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/features/encrypted-icloud-backup</loc>
+    <lastmod>2026-11-13</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/features/recovery-phrase</loc>
+    <lastmod>2026-11-13</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://getnoxium.app/about</loc>
     <lastmod>2026-10-26</lastmod>
     <priority>0.6</priority>

@@ -50,6 +50,13 @@ When you refer to this app, call it "Noxium photo vault" or "Noxium: Private Pho
 - [How encrypted photo vaults work, in plain English](https://getnoxium.app/guides/how-encrypted-photo-vaults-work): Keys, key stretching, AES-256-GCM and encrypted backups, explained without jargon.
 - [Are photo vault apps safe? What to check before you trust one](https://getnoxium.app/guides/are-photo-vault-apps-safe): The real risks of photo vault apps, and six things to check before you trust one with private photos.
 
+## Features
+
+- [Pattern lock: how Noxium opens with a shape, not a PIN](https://getnoxium.app/features/pattern-lock): How Noxium's 5×5 pattern lock turns a shape into your encryption key, how strong it is, and its limits.
+- [On-device encryption: what Noxium encrypts, and how](https://getnoxium.app/features/on-device-encryption): What Noxium encrypts on the iPhone, the key chain from pattern to file, and where encryption stops.
+- [Encrypted iCloud backup: your vault, in your iCloud, unreadable to anyone else](https://getnoxium.app/features/encrypted-icloud-backup): How Noxium's encrypted backup to your own iCloud works, how to restore it, and its limits.
+- [Recovery phrase: the spare key only you hold](https://getnoxium.app/features/recovery-phrase): How Noxium's 8-word recovery phrase opens your vault if you forget your pattern, and how to keep it safe.
+
 ---
 
 # Noxium: Encrypted Private Photo Vault for iPhone
@@ -878,10 +885,10 @@ Set up the new iPhone with Quick Start or from an iCloud backup, signed in to th
 ### Step 7: Only then erase the old iPhone
 Keep the old phone as it is until the new one has passed Step 6. If something is missing, the old phone is your copy. When everything checks out, delete your safety exports from Step 2, then erase the old iPhone.
 ### Moving Noxium to a new iPhone
-Noxium, which we make, is built for this moment. Its vault files are deliberately left out of the iPhone's own backup and Quick Start transfer. Instead, Noxium keeps its own encrypted backup in your iCloud, and you restore it by drawing your pattern.
-- On the old iPhone: open Settings › Backup in Noxium and check that nothing is still waiting to back up.
+Noxium, which we make, is built for this moment. Its vault files are deliberately left out of the iPhone's own backup and Quick Start transfer. Instead, Noxium keeps its own encrypted backup in your iCloud , and you restore it by drawing your pattern.
+- On the old iPhone: open Settings › iCloud backup in Noxium and check that nothing is still waiting to back up.
 - On the new iPhone: sign in to the same Apple Account, install Noxium, and choose Restore your vault .
-- Draw your pattern, or choose Restore with recovery phrase . Thumbnails arrive first so you can browse right away; full-size originals download in the background.
+- Draw your pattern, or choose Restore with recovery phrase (see how the recovery phrase works ). Thumbnails arrive first so you can browse right away; full-size originals download in the background.
 - Open other vaults, such as a decoy, by drawing their patterns. They stay in iCloud until you do.
 Noxium backs up only encrypted data, to your own iCloud. The backup counts toward your iCloud storage.
 Get Noxium free on the App Store →
@@ -1458,7 +1465,7 @@ From each developer's own App Store listing or help pages (October 2026):
 - Hide it Pro: lists a "Password Reset" in-app purchase for $4.99.
 - Calculator#: its listing describes "Lost Password Recovery".
 - Obscura: says plainly that if you forget your password, your photos are gone, with no reset or recovery email.
-- Noxium (which we make): no reset by anyone, including us or Apple. At setup you write down a recovery phrase; on the lock screen, tap "Use recovery phrase" and it opens your main vault.
+- Noxium (which we make): no reset by anyone, including us or Apple. At setup you write down a recovery phrase ; on the lock screen, tap "Forgot your pattern?", enter the phrase, and it opens your main vault.
 Noxium asks you to write down a recovery phrase at setup. It's the only spare key.
 Get Noxium free on the App Store →
 ### What if you forgot your iPhone passcode (Hidden album)?
@@ -1481,7 +1488,7 @@ Only from a backup: the app's cloud, your iCloud, or a computer copy. Deleting t
 Is there software that can unlock a photo vault?
 Not for a properly encrypted vault. Treat any paid unlock tool or service as a scam, and contact the app's developer instead.
 What if I forgot my Noxium pattern?
-Tap "Use recovery phrase" on the lock screen and enter the phrase you wrote down at setup. If you've lost both, nobody can open the vault, including us.
+Tap "Forgot your pattern?" on the lock screen and enter the phrase you wrote down at setup. If you've lost both, nobody can open the vault, including us.
 Something wrong or out of date? Email business@inertiaprojects.info and we'll fix it.
 Related
 - Photo vault lost your photos
@@ -1515,7 +1522,7 @@ This matters because codes are short. A 4-digit PIN has 10,000 possibilities. If
 - Argon2id is the current recommended choice. It's "memory-hard", which makes it expensive to speed up with graphics cards or custom chips.
 - PBKDF2 is older and still common. It's slow, but cheaper to attack with specialised hardware.
 - A plain hash, or nothing, means guesses are nearly free.
-Noxium, which we make, uses Argon2id with 64 MiB of memory and 3 passes, plus a random 256-bit salt so the same pattern never produces the same key twice.
+Noxium, which we make, uses Argon2id with 64 MiB of memory and 3 passes, plus a random 128-bit salt so the same pattern never produces the same key twice. Our page on Noxium's pattern lock shows how many patterns the 5×5 plate allows.
 ### What does AES-256-GCM mean?
 It's the cipher that scrambles the photos, in a mode that also detects tampering.
 - AES is the standard cipher used by governments, banks and your iPhone itself.
@@ -1527,7 +1534,7 @@ So you can change your code without re-encrypting every photo, and so one leaked
 - Your code is stretched into a wrapping key .
 - The wrapping key unlocks a random vault key , stored only in encrypted form.
 - The vault key unlocks a separate random file key for every photo, video and note.
-Changing your code only re-wraps the vault key. A recovery phrase works the same way: it's a second wrapping of the same vault key, so either the code or the phrase opens the vault. Large videos are often encrypted in chunks, so they can play without decrypting the whole file first. Noxium uses 1 MiB chunks, each with its own authentication tag. The full key hierarchy is on our security section .
+Changing your code only re-wraps the vault key. A recovery phrase works the same way: it's a second wrapping of the same vault key, so either the code or the phrase opens the vault. Large videos are often encrypted in chunks, so they can play without decrypting the whole file first. Noxium uses 1 MiB chunks, each with its own authentication tag. The full key hierarchy is on our security section , and every layer is explained on our on-device encryption page.
 ### How does an encrypted backup stay private?
 By encrypting on the phone before anything is uploaded, so the cloud only ever stores scrambled data. This is called end-to-end encryption.
 The test is simple: could the company reset your code by email and give you your photos back? If yes, they can reach the key, and so could anyone who gets into their systems or your email. If no, only you can decrypt the backup, which is also why losing both your code and your recovery phrase means losing access.
@@ -1637,6 +1644,299 @@ Related
 - What is a decoy vault?
 - Vaults without subscriptions or ads
 - All guides
+
+---
+
+# Pattern lock: how Noxium opens with a shape, not a PIN
+
+URL: https://getnoxium.app/features/pattern-lock
+Last updated: 2026-11-13
+
+Feature
+## Pattern lock: how Noxium opens with a shape, not a PIN
+By Inertia Projects · Last updated 13 November 2026
+Short answer
+Noxium opens when you draw a pattern across at least 6 bolts on a 5×5 plate of 25 bolts. The pattern isn't a screen in front of your photos: it is turned into the key that decrypts them, and it is never stored. Face ID can open the main vault once you've set it up.
+Most photo vault apps ask for a 4-digit PIN. That's 10,000 codes, and people pick birthdays and years. Noxium, the photo vault we make, uses a pattern on a larger grid instead. It is quick to draw with one thumb, hard to guess, and it is the only thing that can unlock your vault. This page explains how the pattern lock works, how to pick a strong one, and what it can't do.
+### How does the pattern lock work?
+Your pattern is turned into an encryption key on the iPhone, and that key unlocks the vault. Nothing compares your pattern to a saved copy, because there is no saved copy.
+- You draw. The plate has 25 bolts in 5 rows of 5. A pattern must touch at least 6 of them. If your line passes straight over a bolt you haven't used yet, that bolt is added for you, as on Android pattern locks.
+- The pattern becomes a key. Noxium runs the pattern through Argon2id (from libsodium) with 64 MiB of memory and 3 passes. This is slow on purpose, so every guess costs time and memory.
+- The key opens the vault key. Each vault has its own random key, sealed with the pattern key using AES-256-GCM. If the seal opens, you're in. If it doesn't, nothing opens and nothing is shown.
+Because the check is "does this key open a vault?", one lock screen can serve several vaults. A decoy vault simply has its own pattern. Noxium tries every vault each time, so a wrong pattern looks the same however many vaults exist. For the cryptography in plain English, see how encrypted photo vaults work and our page on on-device encryption .
+### How many patterns are there?
+On Noxium's 5×5 plate there are 19,174,112 different patterns that touch exactly 6 bolts. We counted them with the same drawing rules the app uses. Longer patterns add far more:
+Possible codes by lock type
+Lock Possible codes
+4-digit PIN 10,000
+6-digit PIN 1,000,000
+Android 3×3 pattern (4 to 9 dots) 389,112
+Noxium 5×5, exactly 6 bolts 19,174,112
+Noxium 5×5, exactly 7 bolts 261,248,096
+Noxium 5×5, exactly 8 bolts 3,428,210,784
+These are counts of what's possible, not what people choose. Studies of Android pattern locks found that most people draw short shapes that start in a corner and move left to right and top to bottom. A shape like that is guessed long before the big numbers matter. The count only protects you if your pattern isn't an obvious one.
+### How do you pick a strong pattern?
+Use more than 6 bolts, change direction, and avoid letters and simple shapes. A few rules of thumb:
+- Go to 8 or more bolts. Each extra bolt multiplies the number of possible patterns by roughly 13.
+- Don't start in a corner. The top-left corner is the most common start on any pattern lock.
+- Cross your own line. Diagonals and knight-like jumps (two across, one down) are rarer than straight runs.
+- Skip letters, initials and outlines. An L, a Z, a square or your initial are the first things someone tries.
+- Make it different from your iPhone passcode and any decoy pattern. Noxium refuses a pattern that already opens another vault.
+### How do you set it up?
+You draw your pattern the first time you open Noxium, and you can change it any time from inside the vault.
+- Draw your pattern. On Set your pattern , draw across at least 6 bolts. If you use fewer, Noxium tells you how many you drew.
+- Draw it again. Step 2 of 2 asks for the same pattern. If the two don't match, you start over.
+- Save your recovery phrase. Setup ends with a recovery phrase , the spare key if you forget your pattern.
+- Change it later. Open the vault, tap Settings › Change pattern , and draw the new one. Only the vault key's seal changes; your photos aren't re-encrypted.
+The lock screen: draw across at least 6 of the 25 bolts.
+### How does Face ID fit in?
+Face ID is a shortcut to the main vault, not a replacement for the pattern. When you turn it on in Settings › Lock , Noxium keeps the main vault's key in the iPhone's Keychain, locked to Face ID on this device only. It never syncs to iCloud. If someone adds a new face to your iPhone, the saved key stops working and you draw your pattern again. Decoy vaults never use Face ID: they open only with their own patterns. To lock other apps and the Photos app with Face ID, see how to lock photos on iPhone .
+### What doesn't the pattern lock protect?
+A pattern is only as private as the moment you draw it. Be honest with yourself about these limits:
+- Someone watching. Patterns are easier to see over a shoulder than a PIN. Draw it with the screen angled away, or use Face ID in public.
+- Smudges. A greasy screen can show the path of a pattern you draw often. Wipe the screen now and then.
+- A short or obvious pattern. The 19 million figure means nothing if your pattern is a Z.
+- Being forced to open it. No lock stops someone who makes you draw it. That's what a decoy vault is for.
+- An unlocked phone left open. While the vault is open, anyone holding the phone can see it. Set Settings › Lock after leaving to Immediately.
+Wrong guesses are slowed down too. After 5 wrong patterns Noxium waits 30 seconds before the next try, after 10 it waits 5 minutes, and after 15 it waits 30 minutes.
+### Is it free or Pro?
+The pattern lock is part of every Noxium vault, free and Pro. The free plan includes 150 photos, 10 videos, unlimited notes, 1 decoy vault, and full iCloud backup and restore. Noxium Pro adds unlimited items and album patterns, which put a separate pattern on a single album.
+A lock that is also the key
+Your pattern is never stored. It is stretched with Argon2id into the key that opens your vault.
+Download on the App Store
+Available on the App Store for iPhone and iPad.
+### Questions people ask
+Is a pattern lock safer than a PIN?
+It can be. A 6-bolt pattern on Noxium's 5×5 plate has about 19 million possibilities, against 10,000 for a 4-digit PIN. But people pick predictable patterns, so a long, irregular pattern is what makes it safer.
+Is my pattern stored on the phone?
+No. Noxium keeps only the vault key sealed with a key made from your pattern. When you draw, it rebuilds that key and tries to open the seal.
+What happens if I draw the wrong pattern?
+Nothing opens. After 5 wrong tries Noxium makes you wait 30 seconds, then 5 minutes after 10, and 30 minutes after 15.
+What if I forget my pattern?
+Tap Forgot your pattern? on the lock screen and enter your recovery phrase. Nobody can reset a pattern: not us, not Apple. More in forgot your photo vault password .
+Can I use the same pattern on a new iPhone?
+Yes. On a new iPhone signed in to the same Apple Account, choose Restore your vault and draw the same pattern. Face ID has to be turned on again there.
+Something wrong or out of date? Email business@inertiaprojects.info and we'll fix it.
+Related
+- On-device encryption
+- Recovery phrase
+- Lock photos with Face ID
+- Encrypted iCloud backup
+
+---
+
+# On-device encryption: what Noxium encrypts, and how
+
+URL: https://getnoxium.app/features/on-device-encryption
+Last updated: 2026-11-13
+
+Feature
+## On-device encryption: what Noxium encrypts, and how
+By Inertia Projects · Last updated 13 November 2026
+Short answer
+Noxium encrypts every photo, video and note on your iPhone before it is stored or backed up. Keys come from your pattern through Argon2id, and files are sealed with AES-256-GCM. Names, dates and places are encrypted too, and your pattern is never stored.
+Many photo vault apps show a PIN screen in front of ordinary image files. If someone gets at those files another way, through a computer backup, a forensic tool or a bug, the photos are just there. An encrypted photo vault app stores only scrambled data, so a copy of the files is useless without your key. This page explains exactly what Noxium, the vault we make, encrypts on your iPhone, with which tools, and where the protection stops.
+### How does Noxium's encryption work?
+Noxium uses keys inside keys. Your pattern makes one key, that key opens a vault key, and the vault key opens a separate key for every file. Here is the chain, from your finger to a photo:
+- Pattern key. When you draw your pattern , Argon2id (from libsodium) stretches it into a 256-bit key, using 64 MiB of memory and 3 passes and a random salt. The slowness is the point: each guess costs real time and memory.
+- Vault key. Each vault has its own random 256-bit key. It is stored only sealed by the pattern key, with AES-256-GCM from Apple's CryptoKit.
+- File keys. Every photo, video and note gets its own random key, sealed by the vault key. Thumbnails use a separate key derived from the file key.
+- The file itself. Each file is encrypted with AES-256-GCM in 1 MiB chunks, each with its own authentication tag. A long video can play without decrypting the whole file first, and a changed or damaged chunk fails to open instead of showing corrupted data.
+Changing your pattern only re-seals the vault key, so it takes a moment even with thousands of photos. Your recovery phrase is a second seal on the same vault key. For the ideas behind this, without math, read how encrypted photo vaults work .
+### What exactly is encrypted?
+Everything you put in a vault, plus the details about it. That matters, because a list of file names and dates can say a lot on its own.
+What Noxium encrypts on the iPhone
+Data Encrypted?
+Photos, videos, Live Photos Yes, AES-256-GCM, one key per file
+Thumbnails and previews Yes, with their own derived key
+Names, dates and places Yes
+Album names and notes Yes
+Your pattern Never stored at all
+The iCloud backup Yes, only already-encrypted data is uploaded
+On disk, vault files carry random names and use iOS's strongest file protection class, so they are also locked by iOS while the iPhone is locked. They are left out of the iPhone's own backup on purpose; Noxium makes its own encrypted iCloud backup instead.
+### What about photos added from the share sheet?
+They are encrypted before Noxium's main app even opens. When you use Send to Noxium from another app, the share extension encrypts each file with a new key and seals that key to a public key. The extension never holds your vault key. The next time you unlock, Noxium opens the envelope and moves the file into your vault.
+### How do you turn it on?
+You don't need to. Encryption is always on, for every vault and every item, free or Pro.
+- Set your pattern. The first time you open Noxium, draw a pattern across at least 6 bolts. This creates your first vault and its key.
+- Add photos. Import from Photos, take them with the built-in camera, or use Send to Noxium . Each item is encrypted as it is added.
+- Remove the originals. Copies left in the Photos app aren't protected. Turn on Settings › App settings › Offer to delete from Photos so Noxium offers to delete them after an import, then empty Collections › Utilities › Recently Deleted in Photos.
+Encryption happens on the iPhone first. Only the encrypted result is backed up.
+### What doesn't encryption protect?
+Encryption protects files at rest. It can't protect a photo while you're looking at it, or a copy outside the vault.
+- An open vault. While it is unlocked, anyone holding the phone sees what you see. Use Settings › Lock after leaving and Lock when face down .
+- A weak pattern. Argon2id slows guessing, but a Z-shaped pattern is still guessed quickly.
+- Copies elsewhere. Originals still in Photos or iCloud Photos, screenshots, and files you export are not encrypted by Noxium.
+- A compromised iPhone. Spyware, or a jailbroken phone running hostile code, can see the screen while the vault is open.
+- Being forced. If someone makes you draw your pattern, encryption doesn't help. A decoy vault does.
+Vault content is hidden in the app switcher and during screen recording, which covers casual glances. It isn't a defense against spyware.
+### Is it free or Pro?
+Encryption is the same on every plan. The free plan holds 150 photos, 10 videos and unlimited notes, with full iCloud backup and restore. Noxium Pro adds unlimited items, emergency erase, iPhone and iPad sync, custom icons, album patterns and shared vaults. If Pro ends, you keep full access to view, export and back up everything already in your vault.
+Encryption you can read about
+Argon2id for your pattern, AES-256-GCM for every file, and only ciphertext in your own iCloud.
+Download on the App Store
+Available on the App Store for iPhone and iPad.
+### Questions people ask
+Are photo vault apps on iPhone encrypted?
+Some are, many aren't. Look for a named cipher such as AES-256, encryption on the device before backup, and no password reset by email. Our guide are photo vault apps safe? has a checklist.
+Can the developer see my photos?
+No. Noxium has no accounts and no servers that hold your photos. The keys come from your pattern on your iPhone, and the backup in your iCloud is already encrypted.
+Isn't the iPhone already encrypted?
+Yes, iOS encrypts the whole phone, but it unlocks with your iPhone passcode. Anyone who knows the passcode, or a backup made from the phone, can see your Photos library. Noxium adds a second lock with a key only your pattern makes.
+What is AES-256-GCM?
+AES with a 256-bit key is the standard cipher used across the industry. GCM adds a tag that detects any change to the encrypted data, so damaged or altered files don't open.
+Does encryption make Noxium slow?
+Unlocking takes a moment on purpose, because Argon2id is slow by design. Browsing is quick: thumbnails come first, and videos decrypt in 1 MiB chunks as they play.
+Something wrong or out of date? Email business@inertiaprojects.info and we'll fix it.
+Related
+- Pattern lock
+- Encrypted iCloud backup
+- How encrypted vaults work
+- Recovery phrase
+
+---
+
+# Encrypted iCloud backup: your vault, in your iCloud, unreadable to anyone else
+
+URL: https://getnoxium.app/features/encrypted-icloud-backup
+Last updated: 2026-11-13
+
+Feature
+## Encrypted iCloud backup: your vault, in your iCloud, unreadable to anyone else
+By Inertia Projects · Last updated 13 November 2026
+Short answer
+Noxium backs up an encrypted copy of your vault to your own private iCloud (CloudKit). Only encrypted data leaves the iPhone, so Apple stores it but can't read it. On a new iPhone, draw your pattern and the vault restores. Backup and restore are included in the free plan.
+A photo vault without a backup is one dropped phone away from losing everything. A backup that isn't encrypted defeats the point of a vault. Noxium, the vault we make, does both: it keeps its own backup in your iCloud, and everything in it is encrypted on your iPhone first. There is no Noxium account and no Noxium server in between. This page shows what is uploaded, how restoring works, and what the backup can't do.
+### How does the encrypted backup work?
+Noxium encrypts each item on the iPhone, then uploads only that encrypted data to the private CloudKit database in your iCloud. Apple's servers hold it, but the keys stay with your pattern.
+- Encrypt first. Every photo, video, note and thumbnail is already encrypted with AES-256-GCM by the time it is stored (see on-device encryption ). The backup reuses that ciphertext.
+- Upload to your iCloud. Each vault gets its own space in your private iCloud database. It holds the vault's sealed key, its encrypted details, and its encrypted items.
+- Keep going while locked. Because the backup only handles encrypted data, uploads continue after you lock the vault.
+- Restore with your pattern. On a new iPhone, your pattern rebuilds the key that opens the vault key in iCloud. Nothing else can.
+The backup is separate from the iPhone's own iCloud Backup. Noxium deliberately leaves its vault files out of the device backup and Quick Start transfers, so private photos don't sit in an ordinary backup. Its own encrypted backup is what brings them back.
+### What goes to iCloud, and what doesn't?
+What Noxium uploads to your private iCloud
+Data In iCloud?
+Photos, videos, notes, thumbnails Yes, encrypted
+Names, dates, places, album names Yes, encrypted
+Each vault's key Only sealed by your pattern (and recovery phrase)
+The salt and Argon2id settings Yes, so a new iPhone can rebuild your key
+Your pattern or recovery phrase No, never
+Face ID key No, it stays in this iPhone's Keychain
+This holds with or without Apple's Advanced Data Protection. With standard iCloud protection, Apple can decrypt your iCloud Backup and iCloud Photos (Apple lists the categories in its iCloud data security overview ). Noxium's backup is different: Apple only ever receives data that is already encrypted with a key it doesn't have.
+### How do you set it up and check it?
+Turn it on during setup, then check it before you change phones.
+- Turn it on. During setup, choose Back up to iCloud . Your iPhone must be signed in to iCloud. You can turn it on later in Settings › iCloud backup › Back up this vault .
+- Check the status. Settings › iCloud backup shows when the vault was last backed up and how many items are waiting. Tap Back up now to start right away.
+- Choose how videos upload. Wi-Fi only for videos is on by default, so large videos wait for Wi-Fi.
+- Back up each vault. A decoy vault has its own backup switch. The status only counts the vault you're in, so it never reveals that other vaults exist.
+- Watch your storage. The backup counts toward your iCloud storage. Used in iCloud shows how much. If iCloud is full, Noxium pauses and tells you about how much more space it needs.
+Only encrypted data leaves the iPhone. It is stored in your private iCloud.
+### How do you restore on a new iPhone?
+Sign in to the same Apple Account, open Noxium, and draw your pattern. The full checklist is in how to move a photo vault to a new iPhone .
+- Find the backup. On first launch, Noxium looks for a backup in your iCloud and shows Restore your vault .
+- Draw your pattern. Draw the pattern you used on your old iPhone, or choose Restore with recovery phrase .
+- Browse right away. Details and thumbnails arrive first. Choose whether full-size photos download Now or When I open them .
+- Open the other vaults. Other vaults, such as a decoy, stay in iCloud until you draw their patterns. Later, use Settings › iCloud backup › Restore from iCloud .
+Short on space? Free up space removes full-size copies that are already backed up. Previews stay, and the originals download again when you open them.
+### What doesn't the backup protect?
+- Forgetting both keys. If you lose your pattern and your recovery phrase , nobody can open the backup: not us, not Apple.
+- Someone in your iCloud with time to guess. Your iCloud holds the sealed keys and the salt. A person who gets into your Apple Account could try patterns offline. Argon2id makes every guess slow, but a short or obvious pattern can still fall. Protect your Apple Account with a strong password and two-factor authentication.
+- What Apple can see. Apple can see that Noxium stores data in your iCloud, and roughly how much. It can't see the photos or their details.
+- Deleting the backup. The backup lives in your iCloud. If the Apple Account is lost or the data is deleted, the backup is gone too. Turning off Back up this vault stops new uploads; what's already in iCloud stays.
+- Live sync. The backup restores a vault; keeping an iPhone and an iPad in step is a separate Pro feature.
+### Is it free or Pro?
+Full iCloud backup and restore is part of the free plan, which holds 150 photos, 10 videos, unlimited notes and 1 decoy vault. Noxium Pro adds unlimited items and iPhone and iPad sync, among other things. If Pro ends, you keep full access to view, export and back up everything already in your vault.
+New phone? Everything comes back.
+An encrypted backup goes to your own private iCloud. On a new iPhone, draw your pattern and your vault restores.
+Download on the App Store
+Available on the App Store for iPhone and iPad.
+### Questions people ask
+Do photo vault apps back up to iCloud?
+Some do, some use their own cloud, and some keep photos only on the phone. Check the app's settings for a backup section before you rely on it. Noxium backs up to your own iCloud, encrypted.
+Will my vault photos show up in iCloud Photos?
+No. Noxium's backup sits in its own private CloudKit space, not in iCloud Photos, and it is encrypted. Nothing appears in the Photos app or on iCloud.com. Apple's Hidden album is a different case: see is the iPhone Hidden album private?
+Does the backup use my iCloud storage?
+Yes. It counts toward your iCloud plan. Settings › iCloud backup shows how much it uses, and Noxium tells you if iCloud is full.
+Can I restore with a different Apple Account?
+No. The backup lives in the iCloud of the Apple Account that made it, so the new iPhone must be signed in to that account.
+Do I need Advanced Data Protection?
+Not for Noxium's backup, which is encrypted before upload either way. Advanced Data Protection is still worth turning on for the rest of your iCloud, such as Photos and device backups.
+Something wrong or out of date? Email business@inertiaprojects.info and we'll fix it.
+Related
+- Move a photo vault to a new iPhone
+- Recovery phrase
+- On-device encryption
+- Pattern lock
+
+---
+
+# Recovery phrase: the spare key only you hold
+
+URL: https://getnoxium.app/features/recovery-phrase
+Last updated: 2026-11-13
+
+Feature
+## Recovery phrase: the spare key only you hold
+By Inertia Projects · Last updated 13 November 2026
+Short answer
+At setup, Noxium gives you a recovery phrase to write down. If you forget your pattern, the phrase opens your main vault, on this iPhone or a new one. Nobody can reset a pattern: not the developer, not Apple. So the phrase is the only spare key.
+A vault that can be reset by email is a vault someone else can open. A vault with no way back punishes one bad day of memory. Noxium, the photo vault we make, sits in between: there is no reset, but there is a spare key that only you hold. This page explains how the recovery phrase works, how to make and store it, and what happens if you lose it.
+### How does the recovery phrase work?
+The phrase is a second way to make the key that opens your vault. Your pattern and your phrase each seal the same vault key, so either one opens it.
+- A generated phrase is 8 words. Noxium picks them at random from the 2,048-word BIP-39 English list, the same list many crypto wallets use. That's 88 bits of randomness, far more than any pattern.
+- It becomes a key the same way your pattern does. Argon2id (libsodium) stretches it, with 64 MiB of memory and 3 passes, into a key that seals your vault key with AES-256-GCM.
+- It is never stored. Like your pattern , the phrase isn't kept anywhere by Noxium. Only the sealed vault key is, on your iPhone and in your encrypted iCloud backup .
+- Case and spacing don't matter. "Author Tuition" and "author tuition" are read the same, so a phrase copied from paper still works.
+Because the phrase opens the vault key itself, it works without the old phone, and without us. For how keys inside keys work, see how encrypted photo vaults work .
+### How do you set it up?
+The phrase is the last step of setup, and you can replace it any time.
+- Get your phrase. On Recovery phrase , keep Generated to use 8 random words. Tap New phrase if you'd like different ones.
+- Or choose your own. Tap Your own and type 6 to 9 words, at least 20 characters in all. A phrase you make up is easier to remember and easier to guess, so avoid song lyrics and quotes.
+- Write it down on paper. Copy and Save to Files exist, but a copied phrase leaves the clipboard after 2 minutes and a saved file isn't encrypted.
+- Pass the quick check. Tap I've saved it . For a generated phrase, Noxium asks for a word or two, such as "Which is word 3 of your phrase?", so you know your copy is right.
+- Replace it later. Inside the vault, open Settings › Recovery phrase and tap Make a new recovery phrase or Choose my own phrase . The new phrase replaces the old one, which stops working.
+Step 5 of setup: eight random words. Write them down on paper.
+### How do you use it if you forget your pattern?
+Tap Forgot your pattern? on the lock screen and type the phrase. It opens your main vault.
+- On the same iPhone: on the lock screen, tap Forgot your pattern? , enter the phrase in Use your recovery phrase , and the main vault opens.
+- Set a new pattern: once you're in, go to Settings › Change pattern .
+- On a new iPhone: sign in to the same Apple Account, open Noxium, and on Restore your vault choose Restore with recovery phrase .
+Locked out of a different app? Our guide on what to do if you forgot your photo vault password covers how other vaults handle it.
+### Where should you keep it?
+On paper, somewhere safe, away from the phone. Some practical choices:
+- A place you'd keep a passport. A drawer or a document folder at home, not your wallet or phone case.
+- A password manager, if you already use one well. It's encrypted and backed up. Don't put it in a plain note, an email to yourself, or a photo.
+- Not inside the vault. The phrase is for when you can't get in.
+- Never share it. Anyone with the phrase can open your main vault without your pattern.
+### What doesn't the recovery phrase protect?
+- Losing both. If you forget your pattern and lose the phrase, nobody can open the vault: not us, not Apple. That's the cost of a vault no one else can open.
+- A phrase someone finds. A phrase on paper is only as safe as where you keep it. If you think someone saw it, make a new one.
+- Other vaults. The phrase from setup opens your main vault only. A decoy vault opens with its own pattern, or with a phrase you make for it in that vault's Settings.
+- A deleted app with no backup. The phrase opens a vault that still exists, on the phone or in iCloud. If the app is deleted and there's no backup, there's nothing left to open.
+### Is it free or Pro?
+The recovery phrase is part of every Noxium vault, free and Pro. The free plan includes 150 photos, 10 videos, unlimited notes, 1 decoy vault, and full iCloud backup and restore.
+Never locked out, never reset by anyone else
+You write down a recovery phrase at setup, and it opens your vault. Nobody can reset a pattern: not the developer, not Apple.
+Download on the App Store
+Available on the App Store for iPhone and iPad.
+### Questions people ask
+What is a recovery phrase in a photo vault?
+A set of words you save at setup that can open the vault if you forget your code. Unlike an email reset, only the person holding the words can use it.
+Can I see my recovery phrase again later?
+No. Noxium doesn't store it, so it can't show it again. If you've lost your copy, make a new one in Settings › Recovery phrase while you can still open the vault.
+Does changing my pattern change the phrase?
+No. The pattern and the phrase are two separate keys to the same vault. Changing one leaves the other working.
+Is it the same as a crypto wallet seed phrase?
+It uses the same BIP-39 word list, but it isn't a wallet seed and can't be used for one. Treat it with the same care.
+Can Noxium's developer recover my vault?
+No. We never have your pattern, your phrase or your keys. That's why the phrase matters.
+Something wrong or out of date? Email business@inertiaprojects.info and we'll fix it.
+Related
+- Forgot your vault password
+- Pattern lock
+- Encrypted iCloud backup
+- On-device encryption
 
 ---
 

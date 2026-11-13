@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#FAF9F6" media="(prefers-color-scheme: light)">
+  <!-- build:meta -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WWNMHW99TP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-WWNMHW99TP');
+  </script>
+  <title>Photo Vault Recovery Phrase: Noxium&#x27;s Spare Key</title>
+  <meta name="description" content="Forgot your pattern? Noxium&#x27;s recovery phrase opens your vault, and nobody can reset it for you. How it works, how to store it, and its limits.">
+  <link rel="canonical" href="https://getnoxium.app/features/recovery-phrase">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Noxium">
+  <meta property="og:title" content="Photo Vault Recovery Phrase: Noxium&#x27;s Spare Key">
+  <meta property="og:description" content="Forgot your pattern? Noxium&#x27;s recovery phrase opens your vault, and nobody can reset it for you. How it works, how to store it, and its limits.">
+  <meta property="og:url" content="https://getnoxium.app/features/recovery-phrase">
+  <meta property="og:image" content="https://getnoxium.app/assets/og/noxium-og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Noxium photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
+  <meta property="og:locale" content="en_US">
+  <meta property="article:published_time" content="2026-11-13">
+  <meta property="article:modified_time" content="2026-11-13">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Photo Vault Recovery Phrase: Noxium&#x27;s Spare Key">
+  <meta name="twitter:description" content="Forgot your pattern? Noxium&#x27;s recovery phrase opens your vault, and nobody can reset it for you. How it works, how to store it, and its limits.">
+  <meta name="twitter:image" content="https://getnoxium.app/assets/og/noxium-og.png">
+  <meta name="twitter:image:alt" content="Noxium photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
+  <meta name="apple-itunes-app" content="app-id=6824616093">
+  <!-- /build:meta -->
+
+  <link rel="icon" type="image/svg+xml" href="/assets/noxium-logo.svg">
+  <link rel="apple-touch-icon" href="/assets/noxium-icon-180.png">
+
+  <link rel="preload" href="/assets/fonts/instrument-serif-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/fonts/fonts.css">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/pages.css">
+
+  <!-- build:jsonld -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://getnoxium.app/#org",
+        "name": "Inertia Projects",
+        "url": "https://getnoxium.app/about",
+        "email": "business@inertiaprojects.info",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://getnoxium.app/assets/noxium-icon-512.png"
+        },
+        "brand": {
+          "@type": "Brand",
+          "name": "Noxium"
+        },
+        "sameAs": [
+          "https://apps.apple.com/app/apple-store/id6824616093"
+        ]
+      },
+      {
+        "@type": "Article",
+        "@id": "https://getnoxium.app/features/recovery-phrase#article",
+        "headline": "Recovery phrase: the spare key only you hold",
+        "description": "Forgot your pattern? Noxium's recovery phrase opens your vault, and nobody can reset it for you. How it works, how to store it, and its limits.",
+        "url": "https://getnoxium.app/features/recovery-phrase",
+        "mainEntityOfPage": "https://getnoxium.app/features/recovery-phrase",
+        "image": "https://getnoxium.app/assets/guides/noxium-recovery.jpg",
+        "datePublished": "2026-11-13",
+        "dateModified": "2026-11-13",
+        "author": {
+          "@id": "https://getnoxium.app/#org"
+        },
+        "publisher": {
+          "@id": "https://getnoxium.app/#org"
+        },
+        "inLanguage": "en-US",
+        "isPartOf": {
+          "@id": "https://getnoxium.app/#website"
+        },
+        "about": {
+          "@id": "https://getnoxium.app/#app"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Noxium",
+            "item": "https://getnoxium.app/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Features",
+            "item": "https://getnoxium.app/features/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Recovery phrase",
+            "item": "https://getnoxium.app/features/recovery-phrase"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://getnoxium.app/features/recovery-phrase#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is a recovery phrase in a photo vault?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A set of words you save at setup that can open the vault if you forget your code. Unlike an email reset, only the person holding the words can use it."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I see my recovery phrase again later?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Noxium doesn't store it, so it can't show it again. If you've lost your copy, make a new one in Settings › Recovery phrase while you can still open the vault."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does changing my pattern change the phrase?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. The pattern and the phrase are two separate keys to the same vault. Changing one leaves the other working."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is it the same as a crypto wallet seed phrase?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It uses the same BIP-39 word list, but it isn't a wallet seed and can't be used for one. Treat it with the same care."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can Noxium's developer recover my vault?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. We never have your pattern, your phrase or your keys. That's why the phrase matters."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <!-- /build:jsonld -->
+</head>
+<body>
+  <!-- build:header -->
+  <!-- Shared header (homepage and subpages). Edit partials/header.html, then run python3 tools/build.py. -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <nav class="nav glass" aria-label="Primary">
+        <a href="/" class="wordmark" aria-label="Noxium home">Noxium<span aria-hidden="true">.</span></a>
+
+        <div class="nav-links">
+          <a href="/#features">Features</a>
+          <a href="/#security">Security</a>
+          <a href="/#pricing">Pricing</a>
+          <a href="/best-photo-vault-apps-iphone">Compare</a>
+          <a href="/guides/">Guides</a>
+        </div>
+
+        <div class="nav-actions">
+          <a href="https://apps.apple.com/app/apple-store/id6824616093" class="btn btn-ink btn-nav nav-cta" data-cta="nav" data-label-waitlist="Join the beta" data-label-live="Get Noxium">Get Noxium</a>
+          <button type="button" class="mobile-menu-btn" id="mobile-menu-btn" aria-expanded="false" aria-controls="mobile-drawer" aria-label="Menu">
+            <svg class="icon icon-menu" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 9h14M5 15h14"/></svg>
+            <svg class="icon icon-close" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <div class="mobile-drawer glass" id="mobile-drawer" hidden>
+      <nav class="mobile-drawer-list" aria-label="Mobile">
+        <a href="/#features">Features</a>
+        <a href="/#security">Security</a>
+        <a href="/#pricing">Pricing</a>
+        <a href="/best-photo-vault-apps-iphone">Compare vault apps</a>
+        <a href="/guides/">Guides</a>
+        <a href="/about">About</a>
+        <a href="/support">Support</a>
+      </nav>
+    </div>
+  </header>
+  <!-- /build:header -->
+
+  <main id="main-content" tabindex="-1">
+    <div class="page-hero">
+      <div class="container">
+        <!-- build:breadcrumbs -->
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="/">Noxium</a></li>
+            <li><a href="/features/">Features</a></li>
+            <li aria-current="page">Recovery phrase</li>
+          </ol>
+        </nav>
+        <!-- /build:breadcrumbs -->
+        <p class="eyebrow"><span class="dot dot-ink" aria-hidden="true"></span>Feature</p>
+        <h1>Recovery phrase: the spare key only you hold</h1>
+        <!-- build:byline -->
+        <p class="byline"><span>By <a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>Last updated <time datetime="2026-11-13">13 November 2026</time></span></p>
+        <!-- /build:byline -->
+        <div class="answer">
+          <span class="answer-label">Short answer</span>
+          <p>At setup, Noxium gives you a recovery phrase to write down. If you forget your pattern, the phrase opens your main vault, on this iPhone or a new one. Nobody can reset a pattern: not the developer, not Apple. So the phrase is the only spare key.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container article-layout">
+      <article class="prose">
+        <p>A vault that can be reset by email is a vault someone else can open. A vault with no way back punishes one bad day of memory. Noxium, the photo vault we make, sits in between: there is no reset, but there is a spare key that only you hold. This page explains how the recovery phrase works, how to make and store it, and what happens if you lose it.</p>
+
+        <h2 id="how">How does the recovery phrase work?</h2>
+        <p>The phrase is a second way to make the key that opens your vault. Your pattern and your phrase each seal the same vault key, so either one opens it.</p>
+        <ol class="steps">
+          <li><strong>A generated phrase is 8 words.</strong> Noxium picks them at random from the 2,048-word BIP-39 English list, the same list many crypto wallets use. That's 88 bits of randomness, far more than any pattern.</li>
+          <li><strong>It becomes a key the same way your pattern does.</strong> Argon2id (libsodium) stretches it, with 64 MiB of memory and 3 passes, into a key that seals your vault key with AES-256-GCM.</li>
+          <li><strong>It is never stored.</strong> Like your <a href="/features/pattern-lock">pattern</a>, the phrase isn't kept anywhere by Noxium. Only the sealed vault key is, on your iPhone and in your <a href="/features/encrypted-icloud-backup">encrypted iCloud backup</a>.</li>
+          <li><strong>Case and spacing don't matter.</strong> "Author Tuition" and "author  tuition" are read the same, so a phrase copied from paper still works.</li>
+        </ol>
+        <p>Because the phrase opens the vault key itself, it works without the old phone, and without us. For how keys inside keys work, see <a href="/guides/how-encrypted-photo-vaults-work">how encrypted photo vaults work</a>.</p>
+
+        <h2 id="setup">How do you set it up?</h2>
+        <p>The phrase is the last step of setup, and you can replace it any time.</p>
+        <ol class="steps">
+          <li><strong>Get your phrase.</strong> On <span class="path">Recovery phrase</span>, keep <span class="path">Generated</span> to use 8 random words. Tap <span class="path">New phrase</span> if you'd like different ones.</li>
+          <li><strong>Or choose your own.</strong> Tap <span class="path">Your own</span> and type 6 to 9 words, at least 20 characters in all. A phrase you make up is easier to remember and easier to guess, so avoid song lyrics and quotes.</li>
+          <li><strong>Write it down on paper.</strong> <span class="path">Copy</span> and <span class="path">Save to Files</span> exist, but a copied phrase leaves the clipboard after 2 minutes and a saved file isn't encrypted.</li>
+          <li><strong>Pass the quick check.</strong> Tap <span class="path">I've saved it</span>. For a generated phrase, Noxium asks for a word or two, such as "Which is word 3 of your phrase?", so you know your copy is right.</li>
+          <li><strong>Replace it later.</strong> Inside the vault, open <span class="path">Settings › Recovery phrase</span> and tap <span class="path">Make a new recovery phrase</span> or <span class="path">Choose my own phrase</span>. The new phrase replaces the old one, which stops working.</li>
+        </ol>
+        <figure class="shot">
+          <img src="/assets/guides/noxium-recovery.jpg" alt="Noxium's recovery phrase screen at step 5 of 5: eight generated words, with Copy and Save to Files buttons and an I've saved it button" width="559" height="1216" loading="lazy" decoding="async">
+          <figcaption>Step 5 of setup: eight random words. Write them down on paper.</figcaption>
+        </figure>
+
+        <h2 id="use">How do you use it if you forget your pattern?</h2>
+        <p>Tap <span class="path">Forgot your pattern?</span> on the lock screen and type the phrase. It opens your main vault.</p>
+        <ol class="steps">
+          <li><strong>On the same iPhone:</strong> on the lock screen, tap <span class="path">Forgot your pattern?</span>, enter the phrase in <span class="path">Use your recovery phrase</span>, and the main vault opens.</li>
+          <li><strong>Set a new pattern:</strong> once you're in, go to <span class="path">Settings › Change pattern</span>.</li>
+          <li><strong>On a new iPhone:</strong> sign in to the same Apple Account, open Noxium, and on <span class="path">Restore your vault</span> choose <span class="path">Restore with recovery phrase</span>.</li>
+        </ol>
+        <p>Locked out of a different app? Our guide on what to do if you <a href="/guides/forgot-photo-vault-password">forgot your photo vault password</a> covers how other vaults handle it.</p>
+
+        <h2 id="store">Where should you keep it?</h2>
+        <p>On paper, somewhere safe, away from the phone. Some practical choices:</p>
+        <ul>
+          <li><strong>A place you'd keep a passport.</strong> A drawer or a document folder at home, not your wallet or phone case.</li>
+          <li><strong>A password manager, if you already use one well.</strong> It's encrypted and backed up. Don't put it in a plain note, an email to yourself, or a photo.</li>
+          <li><strong>Not inside the vault.</strong> The phrase is for when you can't get in.</li>
+          <li><strong>Never share it.</strong> Anyone with the phrase can open your main vault without your pattern.</li>
+        </ul>
+
+        <h2 id="limits">What doesn't the recovery phrase protect?</h2>
+        <ul>
+          <li><strong>Losing both.</strong> If you forget your pattern and lose the phrase, nobody can open the vault: not us, not Apple. That's the cost of a vault no one else can open.</li>
+          <li><strong>A phrase someone finds.</strong> A phrase on paper is only as safe as where you keep it. If you think someone saw it, make a new one.</li>
+          <li><strong>Other vaults.</strong> The phrase from setup opens your main vault only. A <a href="/guides/what-is-a-decoy-vault">decoy vault</a> opens with its own pattern, or with a phrase you make for it in that vault's Settings.</li>
+          <li><strong>A deleted app with no backup.</strong> The phrase opens a vault that still exists, on the phone or in iCloud. If the app is deleted and there's no backup, there's nothing left to open.</li>
+        </ul>
+
+        <h2 id="plans">Is it free or Pro?</h2>
+        <p>The recovery phrase is part of every Noxium vault, free and Pro. The free plan includes 150 photos, 10 videos, unlimited notes, 1 decoy vault, and full iCloud backup and restore.</p>
+
+        <div class="cta-card">
+          <p class="cta-card-title">Never locked out, never reset by anyone else</p>
+          <p>You write down a recovery phrase at setup, and it opens your vault. Nobody can reset a pattern: not the developer, not Apple.</p>
+          <a href="https://apps.apple.com/app/apple-store/id6824616093" class="btn btn-primary" data-cta="body" data-label-waitlist="Join the Early Tester List" data-label-live="Download on the App Store">Download on the App Store</a>
+          <!-- build:status -->
+          <span class="release-status">Available on the App Store for iPhone and iPad.</span>
+          <!-- /build:status -->
+        </div>
+
+        <h2 id="faq">Questions people ask</h2>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>What is a recovery phrase in a photo vault?</span></span></summary>
+            <div class="faq-body"><p>A set of words you save at setup that can open the vault if you forget your code. Unlike an email reset, only the person holding the words can use it.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Can I see my recovery phrase again later?</span></span></summary>
+            <div class="faq-body"><p>No. Noxium doesn't store it, so it can't show it again. If you've lost your copy, make a new one in Settings › Recovery phrase while you can still open the vault.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Does changing my pattern change the phrase?</span></span></summary>
+            <div class="faq-body"><p>No. The pattern and the phrase are two separate keys to the same vault. Changing one leaves the other working.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Is it the same as a crypto wallet seed phrase?</span></span></summary>
+            <div class="faq-body"><p>It uses the same BIP-39 word list, but it isn't a wallet seed and can't be used for one. Treat it with the same care.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Can Noxium's developer recover my vault?</span></span></summary>
+            <div class="faq-body"><p>No. We never have your pattern, your phrase or your keys. That's why the phrase matters.</p></div>
+          </details>
+        </div>
+
+        <p><em>Something wrong or out of date? Email <a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a> and we'll fix it.</em></p>
+      </article>
+
+      <aside class="article-aside" aria-label="On this page">
+        <nav class="toc" aria-label="Table of contents">
+          <p class="toc-title">On this page</p>
+          <ol>
+            <li><a href="#how">How it works</a></li>
+            <li><a href="#setup">Set it up</a></li>
+            <li><a href="#use">Use it</a></li>
+            <li><a href="#store">Where to keep it</a></li>
+            <li><a href="#limits">What it doesn't protect</a></li>
+            <li><a href="#plans">Free or Pro</a></li>
+            <li><a href="#faq">Questions people ask</a></li>
+          </ol>
+        </nav>
+        <!-- build:related -->
+        <div class="related">
+          <p class="toc-title">Related</p>
+          <ul role="list">
+            <li><a href="/guides/forgot-photo-vault-password">Forgot your vault password</a></li>
+            <li><a href="/features/pattern-lock">Pattern lock</a></li>
+            <li><a href="/features/encrypted-icloud-backup">Encrypted iCloud backup</a></li>
+            <li><a href="/features/on-device-encryption">On-device encryption</a></li>
+          </ul>
+        </div>
+        <!-- /build:related -->
+      </aside>
+    </div>
+  </main>
+
+  <!-- build:footer -->
+  <!-- Shared footer for subpages (the homepage has its own copy with build:status). Edit partials/footer.html, then run python3 tools/build.py. -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="/" class="wordmark" aria-label="Noxium home">Noxium<span aria-hidden="true">.</span></a>
+          <p>A private vault for photos, videos and notes.</p>
+        </div>
+
+        <nav class="footer-groups" aria-label="Footer">
+          <div>
+            <h2 class="footer-heading">Product</h2>
+            <ul role="list">
+              <li><a href="/#features">Features</a></li>
+              <li><a href="/#security">How the encryption works</a></li>
+              <li><a href="/#pricing">Free vs Pro</a></li>
+              <li><a href="/best-photo-vault-apps-iphone">Photo vault apps compared</a></li>
+              <li><a href="/#faq">FAQ</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="footer-heading">Guides</h2>
+            <ul role="list">
+              <li><a href="/guides/how-to-hide-photos-on-iphone">How to hide photos on iPhone</a></li>
+  <li><a href="/guides/is-iphone-hidden-album-private">Is the Hidden album private?</a></li>
+  <li><a href="/guides/move-photo-vault-to-new-iphone">Move a photo vault to a new iPhone</a></li>
+  <li><a href="/guides/photo-vault-lost-photos">Photo vault lost your photos</a></li>
+  <li><a href="/guides/keepsafe-alternatives">Keepsafe alternatives</a></li>
+  <li><a href="/guides/vaultaire-vs-keepsafe">Vaultaire vs Keepsafe</a></li>
+              <li><a href="/guides/">All guides</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="footer-heading">Company</h2>
+            <ul role="list">
+              <li><a href="/about">About</a></li>
+              <li><a href="/support">Support</a></li>
+              <li><a href="/privacy">Privacy policy</a></li>
+              <li><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener">Terms of use</a></li>
+              <li><a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Noxium. Made by Inertia Projects, an independent developer. App Store privacy label: Data Not Collected.</p>
+        <p>Apple, the Apple logo, iPhone, iPad and Face ID are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc.</p>
+      </div>
+    </div>
+  </footer>
+  <!-- /build:footer -->
+
+  <script src="/app.js" defer></script>
+</body>
+</html>
