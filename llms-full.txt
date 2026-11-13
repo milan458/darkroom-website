@@ -996,11 +996,11 @@ Related
 # Keepsafe alternatives that don't need an account
 
 URL: https://getnoxium.app/guides/keepsafe-alternatives
-Last updated: 2026-11-07
+Last updated: 2026-11-13
 
 Guide · Alternatives
 ## Keepsafe alternatives that don't need an account
-By Inertia Projects · Published 22 October 2026 · Last updated 7 November 2026
+By Inertia Projects · Published 22 October 2026 · Last updated 13 November 2026
 Short answer
 If you want a Keepsafe alternative without an email account, look for a vault that says it needs no account and backs up to your own iCloud instead of its own servers. From their App Store listings in October 2026, Vaultaire, Obscura, Encamera and Noxium (which we make) all work without an account. Apple's Hidden album needs no extra account either, but it opens with your iPhone passcode.
 Keepsafe is one of the best-known photo vaults on the iPhone, with 384,865 US ratings in October 2026. It's also built around an account: you sign in with an email address, and backups go to Keepsafe's own cloud. If you'd rather not tie private photos to an email account and a company's servers, here are the alternatives and how they differ.
