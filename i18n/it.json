@@ -90,8 +90,16 @@
       "summary": "Cosa protegge l’album Nascosti di Foto, cosa no e come renderlo più rigoroso.",
       "crumb": "L’album Nascosti è privato?",
       "keyword": "album nascosti iphone sicuro",
-      "published": "2026-11-12",
-      "updated": "2026-11-12"
+      "published": "2026-11-13",
+      "updated": "2026-11-13"
+    },
+    "/guides/": {
+      "source": "2026-10-26",
+      "title": "Guide per proteggere le foto private su iPhone",
+      "description": "Guide chiare per nascondere, bloccare, salvare e trasferire le foto private su iPhone e iPad, dal team della cassaforte per foto Noxium.",
+      "crumb": "Guide",
+      "published": "2026-11-13",
+      "updated": "2026-11-13"
     }
   },
   "facts": [

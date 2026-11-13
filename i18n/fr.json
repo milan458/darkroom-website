@@ -90,8 +90,16 @@
       "summary": "Ce que l’album Masquées de Photos protège, ce qu’il ne protège pas, et comment le rendre plus strict.",
       "crumb": "L’album Masquées est-il privé?",
       "keyword": "album masquées iphone sécurisé",
-      "published": "2026-11-12",
-      "updated": "2026-11-12"
+      "published": "2026-11-13",
+      "updated": "2026-11-13"
+    },
+    "/guides/": {
+      "source": "2026-10-26",
+      "title": "Guides : protéger vos photos privées sur iPhone",
+      "description": "Des guides clairs pour cacher, verrouiller, sauvegarder et transférer vos photos privées sur iPhone et iPad, par l’équipe du coffre photo Noxium.",
+      "crumb": "Guides",
+      "published": "2026-11-13",
+      "updated": "2026-11-13"
     }
   },
   "facts": [
