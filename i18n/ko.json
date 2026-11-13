@@ -81,6 +81,17 @@
       "keyword": "아이폰 사진 숨기기",
       "published": "2026-11-12",
       "updated": "2026-11-12"
+    },
+    "/guides/is-iphone-hidden-album-private": {
+      "source": "2026-10-26",
+      "title": "아이폰 가려진 항목 앨범, 정말 안전할까?",
+      "description": "가려진 항목 앨범은 Face ID로 잠기지만 암호로 열리고 다른 기기에도 동기화됩니다. 지켜 주는 것과 못 지키는 것.",
+      "headline": "iPhone '가려진 항목' 앨범은 정말 안전할까?",
+      "summary": "사진 앱의 '가려진 항목' 앨범이 지켜 주는 것과 못 지키는 것, 더 엄격하게 설정하는 방법.",
+      "crumb": "'가려진 항목'은 안전할까?",
+      "keyword": "아이폰 가려진 항목 안전",
+      "published": "2026-11-12",
+      "updated": "2026-11-12"
     }
   },
   "facts": [

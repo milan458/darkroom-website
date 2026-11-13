@@ -147,6 +147,17 @@
       "keyword": "iphone 隱藏照片",
       "published": "2026-11-12",
       "updated": "2026-11-12"
+    },
+    "/guides/is-iphone-hidden-album-private": {
+      "source": "2026-10-26",
+      "title": "iPhone「已隱藏」相簿安全嗎？能保護什麼",
+      "description": "「已隱藏」相簿用 Face ID 鎖定，但密碼就能打開，還會同步到你的其他裝置。它能保護什麼、不能保護什麼。",
+      "headline": "iPhone 的「已隱藏」相簿真的私密嗎？",
+      "summary": "「照片」中的「已隱藏」相簿能保護什麼、不能保護什麼，以及怎麼設定得更嚴格。",
+      "crumb": "「已隱藏」相簿安全嗎？",
+      "keyword": "iphone 已隱藏相簿 安全",
+      "published": "2026-11-12",
+      "updated": "2026-11-12"
     }
   }
 }

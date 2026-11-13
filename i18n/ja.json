@@ -81,6 +81,17 @@
       "keyword": "iphone 写真 隠す",
       "published": "2026-11-12",
       "updated": "2026-11-12"
+    },
+    "/guides/is-iphone-hidden-album-private": {
+      "source": "2026-10-26",
+      "title": "iPhoneの「非表示」アルバムは安全？守れる範囲を解説",
+      "description": "「非表示」アルバムはFace IDでロックされますが、パスコードで開けて、ほかのデバイスにも同期されます。守れることと守れないこと。",
+      "headline": "iPhone の「非表示」アルバムは本当にプライベート？",
+      "summary": "写真アプリの「非表示」アルバムが守れること、守れないこと、そしてもっと厳しく設定する方法。",
+      "crumb": "「非表示」アルバムは安全？",
+      "keyword": "iphone 非表示アルバム 安全",
+      "published": "2026-11-12",
+      "updated": "2026-11-12"
     }
   },
   "facts": [
