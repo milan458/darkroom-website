@@ -322,6 +322,7 @@ Statuses: To do → Drafting → Draft, needs review → Live → Refreshed (dat
 | 2026-11-11 | worker/index.js | http://getnoxium.app now 301s to https (Google had indexed the http homepage separately). | |
 | 2026-11-13 | content-plan.json | Comparisons (orders 6–14, with the /compare/ hub) moved ahead of the remaining features (now 15–22). Search Console (25 Oct – 10 Nov) shows comparison queries: "vaultaire vs keepsafe" 64 impr. pos. 7.3, "keepsafe alternative(s)" 40 impr. pos. ~9, "privault" 7 impr. pos. 6.3 with no page for it. | |
 | 2026-11-13 | / (JSON-LD, llms.txt) | App name → "Private Photo Vault - Noxium", version 1.1, to match the App Store listing renamed on 13 Nov. Goal: "noxium" (132 impr., pos. 6.5) into the top 3. | |
+| 2026-11-13 | /guides/keepsafe-alternatives | Title → "4 Keepsafe Alternatives With No Account or Email (2026)": a number, and the "email" worry people search with. Target: "keepsafe alternative(s)" (40 impr., pos. ~9) into the top 5, with a better click rate. | |
 
 ---
 
