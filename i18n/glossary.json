@@ -1,5 +1,5 @@
 {
-  "_readme": "Use these words for Noxium's own features in every translated page, so the same thing always has the same name. If the Noxium app is localized into a language, the app's own strings win: update this file to match them. Apple's feature names (Hidden album, Settings paths, App Store privacy labels) are never taken from here: copy them from support.apple.com/<locale> and the localized App Store page each time. zh-hant (Taiwan, Hong Kong) was converted from zh-hans with OpenCC s2twp and corrected for Taiwan usage; the Noxium app ships Traditional Chinese, so align with its strings when available.",
+  "_readme": "Use these words for Noxium's own features in every translated page, so the same thing always has the same name. The app's own strings win: every term with an \"_app\" key is copied from the Noxium app's string catalog (milan458/darkroom, App/Localizable.xcstrings; \"_app\" is the English source key), checked on 13 November 2026 at app commit f4a8dba. When the app changes a string, update this file first, then the facts and UI strings in i18n/<lang>.json, then the pages. The website adds spaces between Latin and CJK text (\"Noxium に送信\"); the app doesn't. That spacing is the only intended difference. These words name Noxium's features. Generic phrases for the app category (\"photo vault apps\") in titles and keywords may follow what people search in that market. Apple's feature names (Hidden album, Photos' Recently Deleted, Settings paths, App Store privacy labels) are never taken from here: copy them from support.apple.com/<locale> and the localized App Store page each time. The app ships 15 languages besides English; the website uses 8 of them. The other 7 (ar, nl, hi, pl, ru, tr, zh-hans) have app strings ready when the website adds them.",
   "keep": [
     "Noxium",
     "Noxium Pro",
@@ -13,26 +13,41 @@
   ],
   "terms": {
     "vault": {
+      "_app": "Vaults / This vault / Restore your vault",
+      "_note": "es: the app says “caja fuerte”, shortened to “caja” in compounds (caja señuelo, caja compartida, caja principal). ko: not 보관함, which is Apple’s name for the Photos Library.",
       "de": "Tresor",
-      "fr": "coffre-fort",
-      "es": "bóveda",
+      "fr": "coffre",
+      "es": "caja fuerte",
       "pt-br": "cofre",
       "it": "cassaforte",
       "ja": "保管庫",
-      "ko": "보관함",
-      "zh-hant": "保險箱"
+      "ko": "금고",
+      "zh-hant": "保險庫"
     },
     "photo vault": {
+      "_source": "App Store listing names (AppStore/listing/metadata/*/name.txt): “Privater Foto-Tresor”, “Coffre photo privé”, “Caja fuerte de fotos” (es-ES), “Cofre de Fotos Privado”, “Cassaforte per foto”, “写真と動画の秘密保管庫”, “사진 비밀 금고”. The zh-Hant listing name says “私密相簿保險箱”, but the app itself says 保險庫, so 照片保險庫 follows the app.",
       "de": "Foto-Tresor",
-      "fr": "coffre-fort photo",
-      "es": "bóveda de fotos",
+      "fr": "coffre photo",
+      "es": "caja fuerte de fotos",
       "pt-br": "cofre de fotos",
       "it": "cassaforte per foto",
       "ja": "写真保管庫",
-      "ko": "사진 보관함",
-      "zh-hant": "照片保險箱"
+      "ko": "사진 금고",
+      "zh-hant": "照片保險庫"
+    },
+    "main vault": {
+      "_app": "Main vault + %lld decoy vault",
+      "de": "Haupttresor",
+      "fr": "coffre principal",
+      "es": "caja fuerte principal",
+      "pt-br": "cofre principal",
+      "it": "cassaforte principale",
+      "ja": "メイン保管庫",
+      "ko": "기본 금고",
+      "zh-hant": "主要保險庫"
     },
     "pattern": {
+      "_app": "Draw pattern / Your pattern",
       "de": "Muster",
       "fr": "schéma",
       "es": "patrón",
@@ -40,39 +55,21 @@
       "it": "sequenza",
       "ja": "パターン",
       "ko": "패턴",
-      "zh-hant": "圖案"
+      "zh-hant": "圖形"
     },
-    "decoy vault": {
-      "de": "Ablenkungs-Tresor",
-      "fr": "coffre-fort leurre",
-      "es": "bóveda señuelo",
-      "pt-br": "cofre de fachada",
-      "it": "cassaforte esca",
-      "ja": "ダミー保管庫",
-      "ko": "위장 보관함",
-      "zh-hant": "誘餌保險箱"
-    },
-    "recovery phrase": {
-      "de": "Wiederherstellungsphrase",
-      "fr": "phrase de récupération",
-      "es": "frase de recuperación",
-      "pt-br": "frase de recuperação",
-      "it": "frase di recupero",
-      "ja": "リカバリーフレーズ",
-      "ko": "복구 문구",
-      "zh-hant": "復原短語"
-    },
-    "emergency erase": {
-      "de": "Notfall-Löschung",
-      "fr": "effacement d’urgence",
-      "es": "borrado de emergencia",
-      "pt-br": "apagamento de emergência",
-      "it": "cancellazione di emergenza",
-      "ja": "緊急消去",
-      "ko": "긴급 삭제",
-      "zh-hant": "緊急清除"
+    "pattern grid": {
+      "_app": "Pattern grid",
+      "de": "Musterraster",
+      "fr": "grille du schéma",
+      "es": "cuadrícula del patrón",
+      "pt-br": "grade do padrão",
+      "it": "griglia della sequenza",
+      "ja": "パターングリッド",
+      "ko": "패턴 격자",
+      "zh-hant": "圖形格線"
     },
     "5×5 plate of bolts": {
+      "_note": "Website wording only: the app’s screens never name the plate or the bolts (they say “pattern”, and VoiceOver says “Pattern grid”). Keep it to descriptions of the lock screen.",
       "de": "5×5-Platte mit Bolzen",
       "fr": "plaque de 5×5 boulons",
       "es": "placa de 5×5 pernos",
@@ -81,6 +78,117 @@
       "ja": "5×5 のボルトプレート",
       "ko": "5×5 볼트 판",
       "zh-hant": "5×5 螺栓板"
+    },
+    "decoy vault": {
+      "_app": "Decoy vault",
+      "de": "Tarntresor",
+      "fr": "coffre leurre",
+      "es": "caja señuelo",
+      "pt-br": "cofre isca",
+      "it": "cassaforte esca",
+      "ja": "おとり保管庫",
+      "ko": "위장 금고",
+      "zh-hant": "偽裝保險庫"
+    },
+    "recovery phrase": {
+      "_app": "Recovery phrase",
+      "de": "Wiederherstellungsphrase",
+      "fr": "phrase de récupération",
+      "es": "frase de recuperación",
+      "pt-br": "frase de recuperação",
+      "it": "frase di recupero",
+      "ja": "復元フレーズ",
+      "ko": "복구 문구",
+      "zh-hant": "復原短語"
+    },
+    "emergency erase pattern": {
+      "_app": "Emergency erase pattern",
+      "de": "Notlöschmuster",
+      "fr": "schéma d’effacement d’urgence",
+      "es": "patrón de borrado de emergencia",
+      "pt-br": "padrão de apagamento de emergência",
+      "it": "sequenza di cancellazione d’emergenza",
+      "ja": "緊急消去パターン",
+      "ko": "긴급 삭제 패턴",
+      "zh-hant": "緊急清除圖形"
+    },
+    "emergency erase": {
+      "_note": "Short form, cut from the app’s “emergency erase pattern”. Prefer the full name when it fits.",
+      "de": "Notlöschung",
+      "fr": "effacement d’urgence",
+      "es": "borrado de emergencia",
+      "pt-br": "apagamento de emergência",
+      "it": "cancellazione d’emergenza",
+      "ja": "緊急消去",
+      "ko": "긴급 삭제",
+      "zh-hant": "緊急清除"
+    },
+    "album pattern": {
+      "_app": "Album pattern / Album with its own pattern",
+      "de": "Albummuster",
+      "fr": "schéma de l’album",
+      "es": "patrón del álbum",
+      "pt-br": "padrão do álbum",
+      "it": "sequenza album",
+      "ja": "アルバムのパターン",
+      "ko": "앨범 패턴",
+      "zh-hant": "相簿圖形"
+    },
+    "custom app icons": {
+      "_app": "Custom app icons",
+      "de": "eigene App-Symbole",
+      "fr": "icônes d’app personnalisées",
+      "es": "iconos de app personalizados",
+      "pt-br": "ícones de app personalizados",
+      "it": "icone app personalizzate",
+      "ja": "カスタム App アイコン",
+      "ko": "사용자 설정 앱 아이콘",
+      "zh-hant": "自訂 App 圖像"
+    },
+    "shared vault": {
+      "_app": "Shared vault",
+      "de": "geteilter Tresor",
+      "fr": "coffre partagé",
+      "es": "caja compartida",
+      "pt-br": "cofre compartilhado",
+      "it": "cassaforte condivisa",
+      "ja": "共有保管庫",
+      "ko": "공유 금고",
+      "zh-hant": "共享保險庫"
+    },
+    "iPhone and iPad sync": {
+      "_app": "iPhone and iPad sync",
+      "de": "iPhone- und iPad-Synchronisierung",
+      "fr": "synchronisation iPhone et iPad",
+      "es": "sincronización con iPhone y iPad",
+      "pt-br": "sincronização entre iPhone e iPad",
+      "it": "sincronizzazione iPhone e iPad",
+      "ja": "iPhone と iPad の同期",
+      "ko": "iPhone 및 iPad 동기화",
+      "zh-hant": "iPhone 和 iPad 同步"
+    },
+    "Recently Deleted (in Noxium)": {
+      "_app": "Recently Deleted",
+      "_note": "Noxium’s own bin. For Apple Photos’ album, take the name from support.apple.com/<locale>.",
+      "de": "Zuletzt gelöscht",
+      "fr": "Suppressions récentes",
+      "es": "Eliminado",
+      "pt-br": "Apagados",
+      "it": "Eliminati di recente",
+      "ja": "最近削除した項目",
+      "ko": "최근 삭제된 항목",
+      "zh-hant": "最近刪除"
+    },
+    "Send to Noxium (Share Sheet)": {
+      "_app": "Send to Noxium",
+      "de": "An Noxium senden",
+      "fr": "Envoyer à Noxium",
+      "es": "Enviar a Noxium",
+      "pt-br": "Enviar ao Noxium",
+      "it": "Invia a Noxium",
+      "ja": "Noxium に送信",
+      "ko": "Noxium으로 보내기",
+      "zh-hant": "傳送到 Noxium"
     },
     "Data Not Collected (App Store label)": {
       "de": "Keine Daten erfasst",
