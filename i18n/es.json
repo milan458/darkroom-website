@@ -32,15 +32,15 @@
     "Get Noxium": "Descargar Noxium",
     "Menu": "Menú",
     "Mobile": "Móvil",
-    "Compare vault apps": "Comparar apps de bóveda",
+    "Compare vault apps": "Comparar apps de caja fuerte",
     "About": "Acerca de",
     "Support": "Soporte",
-    "A private vault for photos, videos and notes.": "Una bóveda privada para fotos, vídeos y notas.",
+    "A private vault for photos, videos and notes.": "Una caja fuerte privada para fotos, vídeos y notas.",
     "Footer": "Pie de página",
     "Product": "Producto",
     "How the encryption works": "Cómo funciona el cifrado",
     "Free vs Pro": "Gratis o Pro",
-    "Photo vault apps compared": "Comparativa de apps de bóveda de fotos",
+    "Photo vault apps compared": "Comparativa de apps de caja fuerte de fotos",
     "FAQ": "Preguntas frecuentes",
     "All guides": "Todas las guías",
     "Company": "Empresa",
@@ -86,11 +86,11 @@
   "facts": [
     [
       "Qué es",
-      "Una app para iPhone y iPad que oculta fotos, vídeos y notas en bóvedas cifradas."
+      "Una app para iPhone y iPad que oculta fotos, vídeos y notas en cajas fuertes cifradas."
     ],
     [
       "Cómo se abre",
-      "Dibuja un patrón que pase por al menos 6 pernos en una placa de 5×5 pernos. Face ID puede abrir la bóveda principal."
+      "Dibuja un patrón que pase por al menos 6 pernos en una placa de 5×5 pernos. Face ID puede abrir la caja fuerte principal."
     ],
     [
       "Cifrado",
@@ -98,27 +98,27 @@
     ],
     [
       "Copia de seguridad",
-      "Una copia cifrada va a tu propio iCloud privado (CloudKit). En un iPhone nuevo, dibuja tu patrón y la bóveda se restaura. Solo salen del dispositivo datos cifrados."
+      "Una copia cifrada va a tu propio iCloud privado (CloudKit). En un iPhone nuevo, dibuja tu patrón y la caja fuerte se restaura. Solo salen del dispositivo datos cifrados."
     ],
     [
       "Si olvidas el patrón",
-      "Al configurarla apuntas una frase de recuperación, y esa frase abre tu bóveda. Nadie puede restablecer un patrón: ni el desarrollador ni Apple."
+      "Al configurarla apuntas una frase de recuperación, y esa frase abre tu caja fuerte. Nadie puede restablecer un patrón: ni el desarrollador ni Apple."
     ],
     [
-      "Bóveda señuelo",
-      "Un segundo patrón abre una bóveda aparte e inofensiva. El plan gratuito incluye 1."
+      "Caja señuelo",
+      "Un segundo patrón abre una caja fuerte aparte e inofensiva. El plan gratuito incluye 1."
     ],
     [
       "Borrado de emergencia (Pro)",
-      "Un tercer patrón abre una bóveda inofensiva y borra las demás."
+      "Un tercer patrón abre una caja inofensiva y borra las demás."
     ],
     [
       "Ocultar la app",
-      "Cambia el icono de la app por uno que imita a Calculadora, Notas o Tiempo (Pro). El contenido de la bóveda se oculta en el selector de apps y al grabar la pantalla."
+      "Cambia el icono de la app por uno que imita a Calculadora, Notas o Tiempo (Pro). El contenido de la caja fuerte se oculta en el selector de apps y al grabar la pantalla."
     ],
     [
       "Organización",
-      "Álbumes, álbumes dentro de álbumes y álbumes con su propio patrón (Pro). Notas cifradas. «Eliminados» conserva los elementos durante 30 días."
+      "Álbumes, álbumes dentro de álbumes y álbumes con su propio patrón (Pro). Notas cifradas. «Eliminado» conserva los elementos durante 30 días."
     ],
     [
       "Importar y exportar",
@@ -130,15 +130,15 @@
     ],
     [
       "Plan gratuito",
-      "150 fotos, 10 vídeos, notas ilimitadas, 1 bóveda señuelo, copia de seguridad y restauración completas en iCloud."
+      "150 fotos, 10 vídeos, notas ilimitadas, 1 caja señuelo, copia de seguridad y restauración completas en iCloud."
     ],
     [
       "Noxium Pro",
-      "2,99 € a la semana, 19,99 € al año (1,66 € al mes) o 44,99 € en un solo pago (App Store de España, consultado el 12 de noviembre de 2026). Añade elementos ilimitados, borrado de emergencia, sincronización entre iPhone y iPad, iconos personalizados, patrones por álbum y bóvedas compartidas."
+      "2,99 € a la semana, 19,99 € al año (1,66 € al mes) o 44,99 € en un solo pago (App Store de España, consultado el 12 de noviembre de 2026). Añade elementos ilimitados, borrado de emergencia, sincronización con iPhone y iPad, iconos de app personalizados, patrones por álbum y cajas compartidas."
     ],
     [
       "Si Pro termina",
-      "Sigues teniendo acceso completo para ver, exportar y guardar en copia todo lo que ya está en tu bóveda."
+      "Sigues teniendo acceso completo para ver, exportar y guardar en copia todo lo que ya está en tu caja fuerte."
     ],
     [
       "Requisitos",
