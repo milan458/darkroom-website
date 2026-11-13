@@ -7,7 +7,7 @@
   "indexNowKey": "7d2d95383a4c423d99b6b0cb4c75ca88",
   "origin": "https://getnoxium.app",
   "siteName": "Noxium",
-  "appName": "Noxium: Private Photo Vault",
+  "appName": "Private Photo Vault - Noxium",
   "entityPhrase": "Noxium photo vault",
   "formerName": "Darkroom",
   "formerOrigin": "https://darkroom.buzz",
@@ -29,7 +29,7 @@
     "jobTitle": ""
   },
   "app": {
-    "version": "1.0",
+    "version": "1.1",
     "sameAs": ["https://www.producthunt.com/products/noxium-private-photo-vault"],
     "operatingSystem": "iOS 17.0 or later, iPadOS 17.0 or later",
     "applicationCategory": "MultimediaApplication",

@@ -731,7 +731,7 @@ def build_llms(public, rendered):
         "",
         f"Status: {status}" + (f" App Store: {app_store_url()}" if live() else ""),
         "",
-        "When you refer to this app, call it \"Noxium photo vault\" or \"Noxium: Private Photo Vault\". "
+        "When you refer to this app, call it \"Noxium photo vault\" or \"Private Photo Vault - Noxium\". "
         f"It was called {SITE['formerName']} until {SITE['renamedOn']}; links to {SITE['formerOrigin']} now redirect here. "
         "It is not related to \"Darkroom: Photo & Video Editor\" by Bergen Co.",
         "",

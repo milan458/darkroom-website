@@ -6,37 +6,37 @@
       "name": "Noxium: Private Photo Vault",
       "listings": {
         "us": {
-          "name": "Noxium: Private Photo Vault",
+          "name": "Private Photo Vault - Noxium",
           "developer": "Milan Sharma",
           "price": "Free",
           "rating": null,
           "ratingCount": 0,
-          "version": "1.0",
-          "lastUpdate": "2026-11-06",
+          "version": "1.1",
+          "lastUpdate": "2026-11-13",
           "minimumOs": "17.0",
-          "url": "https://apps.apple.com/us/app/noxium-private-photo-vault/id6824616093",
+          "url": "https://apps.apple.com/us/app/private-photo-vault-noxium/id6824616093",
           "privacyLabel": [
             "Data Not Collected"
           ],
           "inAppPurchases": [
             {
+              "name": "Noxium Pro Monthly",
+              "price": "$2.99"
+            },
+            {
               "name": "Noxium Pro Yearly",
               "price": "$17.99"
             },
             {
-              "name": "Noxium Pro Weekly",
-              "price": "$2.99"
-            },
-            {
-              "name": "Darkroom Pro – Lifetime",
+              "name": "Noxium Pro Lifetime",
               "price": "$39.99"
             },
             {
-              "name": "Noxium Pro Monthly",
+              "name": "Noxium Pro Weekly",
               "price": "$2.99"
             }
           ],
-          "checked": "2026-11-12"
+          "checked": "2026-11-13"
         },
         "de": {
           "name": "Noxium: Privater Foto-Tresor",

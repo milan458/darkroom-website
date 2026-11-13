@@ -125,7 +125,7 @@ Act on the report weekly, not daily: positions move day to day, and a page chang
 
 ### Daily publishing (30-day plan, from November 2026)
 
-Goal: close the gap with Vaultaire (256 English pages, 33 languages) by publishing **4 pages a day** from `content-plan.json`: features, comparisons, guides and scenarios, in that order. Milan reviews every page; merging the day's PR publishes it.
+Goal: close the gap with Vaultaire (256 English pages, 33 languages) by publishing **4 pages a day** from `content-plan.json`: the first features, then comparisons, the remaining features, guides and scenarios, in `order`. Milan reviews every page; merging the day's PR publishes it.
 
 **The daily run** (a scheduled cloud task does this each morning; anyone can run it by hand):
 
@@ -320,6 +320,8 @@ Statuses: To do → Drafting → Draft, needs review → Live → Refreshed (dat
 | 2026-11-11 | /guides/are-photo-vault-apps-safe | Link to the encryption guide now reads "how photo vault apps work" (Google showed this page at pos. 40 for "how does vault app work"). | |
 | 2026-11-11 | Related boxes | Added links to the weakly linked guides: hide videos (1 → 3 linking pages), lock with Face ID (2 → 5), decoy vault (3 → 6), no-subscription (3 → 5), safe (3 → 5). | |
 | 2026-11-11 | worker/index.js | http://getnoxium.app now 301s to https (Google had indexed the http homepage separately). | |
+| 2026-11-13 | content-plan.json | Comparisons (orders 6–14, with the /compare/ hub) moved ahead of the remaining features (now 15–22). Search Console (25 Oct – 10 Nov) shows comparison queries: "vaultaire vs keepsafe" 64 impr. pos. 7.3, "keepsafe alternative(s)" 40 impr. pos. ~9, "privault" 7 impr. pos. 6.3 with no page for it. | |
+| 2026-11-13 | / (JSON-LD, llms.txt) | App name → "Private Photo Vault - Noxium", version 1.1, to match the App Store listing renamed on 13 Nov. Goal: "noxium" (132 impr., pos. 6.5) into the top 3. | |
 
 ---
 
