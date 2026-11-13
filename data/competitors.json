@@ -249,15 +249,15 @@
           "available": false
         },
         "tw": {
-          "name": "Noxium：私密相簿保險箱",
+          "name": "私密照片保險庫 - Noxium",
           "developer": "Milan Sharma",
           "price": "免費",
           "rating": null,
           "ratingCount": 0,
-          "version": "1.0",
-          "lastUpdate": "2026-11-06",
+          "version": "1.1",
+          "lastUpdate": "2026-11-13",
           "minimumOs": "17.0",
-          "url": "https://apps.apple.com/tw/app/noxium-%E7%A7%81%E5%AF%86%E7%9B%B8%E7%B0%BF%E4%BF%9D%E9%9A%AA%E7%AE%B1/id6824616093",
+          "url": "https://apps.apple.com/tw/app/%E7%A7%81%E5%AF%86%E7%85%A7%E7%89%87%E4%BF%9D%E9%9A%AA%E5%BA%AB-noxium/id6824616093",
           "privacyLabel": [
             "Data Not Collected"
           ],
@@ -271,7 +271,7 @@
               "price": "NT$90.00"
             },
             {
-              "name": "Darkroom Pro – Lifetime",
+              "name": "Noxium Pro Lifetime",
               "price": "NT$1,290.00"
             },
             {
@@ -279,7 +279,7 @@
               "price": "NT$90.00"
             }
           ],
-          "checked": "2026-11-12"
+          "checked": "2026-11-13"
         },
         "ca": {
           "name": "Noxium: Private Photo Vault",
@@ -709,6 +709,64 @@
           ],
           "checked": "2026-11-12",
           "note": "Prices in CAD. Privacy label wording on the fr-CA page: Données utilisées à des fins de traçage."
+        },
+        "tw": {
+          "name": "秘密照片庫 -  Keepsafe",
+          "developer": "KeepSafe Software, Inc",
+          "price": "免費",
+          "rating": 4.6,
+          "ratingCount": 983,
+          "version": "13.36.0",
+          "lastUpdate": "2026-11-12",
+          "minimumOs": "17.0",
+          "url": "https://apps.apple.com/tw/app/%E7%A7%98%E5%AF%86%E7%85%A7%E7%89%87%E5%BA%AB-keepsafe/id510873505",
+          "privacyLabel": [
+            "Data Used to Track You",
+            "Data Not Linked to You"
+          ],
+          "inAppPurchases": [
+            {
+              "name": "Keepsafe Yearly Premium",
+              "price": "NT$760.00"
+            },
+            {
+              "name": "KeepSafe Premium",
+              "price": "NT$720.00"
+            },
+            {
+              "name": "Keepsafe Premium",
+              "price": "NT$400.00"
+            },
+            {
+              "name": "Keepsafe Premium: Cloud Hider",
+              "price": "NT$1,120.00"
+            },
+            {
+              "name": "Keepsafe Monthly Premium",
+              "price": "NT$320.00"
+            },
+            {
+              "name": "KeepSafe Premium",
+              "price": "NT$150.00"
+            },
+            {
+              "name": "KeepSafe Premium",
+              "price": "NT$1,090.00"
+            },
+            {
+              "name": "Keepsafe Premium",
+              "price": "NT$720.00"
+            },
+            {
+              "name": "Lifetime Of Keepsafe Premium",
+              "price": "NT$4,990.00"
+            },
+            {
+              "name": "Keepsafe Premium",
+              "price": "NT$370.00"
+            }
+          ],
+          "checked": "2026-11-13"
         }
       }
     },
