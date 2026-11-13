@@ -21,7 +21,7 @@
       "keyword": "pattern lock photo vault",
       "cluster": "features",
       "vaultaire": "https://vaultaire.app/features/pattern-encryption/",
-      "status": "todo"
+      "status": "in-review"
     },
     {
       "order": 3,
@@ -31,7 +31,7 @@
       "keyword": "encrypted photo vault app iphone",
       "cluster": "features",
       "vaultaire": "https://vaultaire.app/features/security-features/",
-      "status": "todo"
+      "status": "in-review"
     },
     {
       "order": 4,
@@ -41,7 +41,7 @@
       "keyword": "photo vault icloud backup",
       "cluster": "features",
       "vaultaire": "https://vaultaire.app/features/encrypted-icloud-backup/",
-      "status": "todo"
+      "status": "in-review"
     },
     {
       "order": 5,
@@ -51,7 +51,7 @@
       "keyword": "photo vault recovery phrase",
       "cluster": "features",
       "vaultaire": "https://vaultaire.app/features/secret-phrase/",
-      "status": "todo"
+      "status": "in-review"
     },
     {
       "order": 6,

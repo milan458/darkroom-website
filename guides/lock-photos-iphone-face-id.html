@@ -267,7 +267,7 @@
         <h2 id="pattern">Can you lock photos with a pattern on iPhone?</h2>
         <p>Not with built-in features. iOS uses Face ID, Touch ID and passcodes; a drawn pattern lock comes only from vault apps. Private Photo Vault, Vaultaire and Noxium, among others, offer a pattern according to their App Store listings and websites.</p>
         <p>A pattern is only as good as what's behind it. In some apps it just opens a screen in front of normal files; in others it's used to derive the encryption key. Ask how the app uses it before you trust it (we explain the difference in <a href="/guides/how-encrypted-photo-vaults-work">how encrypted photo vaults work</a>).</p>
-        <p>In Noxium, which we make, you draw a pattern across at least 6 of the 25 bolts on a 5×5 plate. The pattern is never stored: it's stretched with Argon2id into the key that opens your vault, and every photo is encrypted on the iPhone with AES-256-GCM. Face ID can open the main vault for convenience, but never a decoy vault.</p>
+        <p>In Noxium, which we make, you draw a <a href="/features/pattern-lock">pattern across at least 6 of the 25 bolts</a> on a 5×5 plate. The pattern is never stored: it's stretched with Argon2id into the key that opens your vault, and every photo is encrypted on the iPhone with AES-256-GCM. Face ID can open the main vault for convenience, but never a decoy vault.</p>
         <figure class="shot">
           <img src="/assets/guides/noxium-lock.jpg" alt="Noxium's lock screen: a 5×5 plate of bolts with a pattern drawn across it" width="559" height="1216" loading="lazy" decoding="async">
           <figcaption>Noxium's lock: a pattern across a 5×5 plate of bolts, separate from your iPhone passcode.</figcaption>

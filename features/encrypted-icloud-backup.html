@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#FAF9F6" media="(prefers-color-scheme: light)">
+  <!-- build:meta -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WWNMHW99TP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-WWNMHW99TP');
+  </script>
+  <title>Photo Vault iCloud Backup, Encrypted: How Noxium Does It</title>
+  <meta name="description" content="Noxium backs up an encrypted copy of your vault to your own iCloud. What&#x27;s uploaded, how to restore on a new iPhone, and what the backup can&#x27;t do.">
+  <link rel="canonical" href="https://getnoxium.app/features/encrypted-icloud-backup">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Noxium">
+  <meta property="og:title" content="Photo Vault iCloud Backup, Encrypted: How Noxium Does It">
+  <meta property="og:description" content="Noxium backs up an encrypted copy of your vault to your own iCloud. What&#x27;s uploaded, how to restore on a new iPhone, and what the backup can&#x27;t do.">
+  <meta property="og:url" content="https://getnoxium.app/features/encrypted-icloud-backup">
+  <meta property="og:image" content="https://getnoxium.app/assets/og/noxium-og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Noxium photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
+  <meta property="og:locale" content="en_US">
+  <meta property="article:published_time" content="2026-11-13">
+  <meta property="article:modified_time" content="2026-11-13">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Photo Vault iCloud Backup, Encrypted: How Noxium Does It">
+  <meta name="twitter:description" content="Noxium backs up an encrypted copy of your vault to your own iCloud. What&#x27;s uploaded, how to restore on a new iPhone, and what the backup can&#x27;t do.">
+  <meta name="twitter:image" content="https://getnoxium.app/assets/og/noxium-og.png">
+  <meta name="twitter:image:alt" content="Noxium photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
+  <meta name="apple-itunes-app" content="app-id=6824616093">
+  <!-- /build:meta -->
+
+  <link rel="icon" type="image/svg+xml" href="/assets/noxium-logo.svg">
+  <link rel="apple-touch-icon" href="/assets/noxium-icon-180.png">
+
+  <link rel="preload" href="/assets/fonts/instrument-serif-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/fonts/fonts.css">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/pages.css">
+
+  <!-- build:jsonld -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://getnoxium.app/#org",
+        "name": "Inertia Projects",
+        "url": "https://getnoxium.app/about",
+        "email": "business@inertiaprojects.info",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://getnoxium.app/assets/noxium-icon-512.png"
+        },
+        "brand": {
+          "@type": "Brand",
+          "name": "Noxium"
+        },
+        "sameAs": [
+          "https://apps.apple.com/app/apple-store/id6824616093"
+        ]
+      },
+      {
+        "@type": "Article",
+        "@id": "https://getnoxium.app/features/encrypted-icloud-backup#article",
+        "headline": "Encrypted iCloud backup: your vault, in your iCloud, unreadable to anyone else",
+        "description": "Noxium backs up an encrypted copy of your vault to your own iCloud. What's uploaded, how to restore on a new iPhone, and what the backup can't do.",
+        "url": "https://getnoxium.app/features/encrypted-icloud-backup",
+        "mainEntityOfPage": "https://getnoxium.app/features/encrypted-icloud-backup",
+        "image": "https://getnoxium.app/assets/guides/noxium-backup.jpg",
+        "datePublished": "2026-11-13",
+        "dateModified": "2026-11-13",
+        "author": {
+          "@id": "https://getnoxium.app/#org"
+        },
+        "publisher": {
+          "@id": "https://getnoxium.app/#org"
+        },
+        "inLanguage": "en-US",
+        "isPartOf": {
+          "@id": "https://getnoxium.app/#website"
+        },
+        "about": {
+          "@id": "https://getnoxium.app/#app"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Noxium",
+            "item": "https://getnoxium.app/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Features",
+            "item": "https://getnoxium.app/features/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Encrypted iCloud backup",
+            "item": "https://getnoxium.app/features/encrypted-icloud-backup"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://getnoxium.app/features/encrypted-icloud-backup#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Do photo vault apps back up to iCloud?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Some do, some use their own cloud, and some keep photos only on the phone. Check the app's settings for a backup section before you rely on it. Noxium backs up to your own iCloud, encrypted."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Will my vault photos show up in iCloud Photos?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Noxium's backup sits in its own private CloudKit space, not in iCloud Photos, and it is encrypted. Nothing appears in the Photos app or on iCloud.com. Apple's Hidden album is a different case: see is the iPhone Hidden album private?"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does the backup use my iCloud storage?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. It counts toward your iCloud plan. Settings › iCloud backup shows how much it uses, and Noxium tells you if iCloud is full."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I restore with a different Apple Account?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. The backup lives in the iCloud of the Apple Account that made it, so the new iPhone must be signed in to that account."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need Advanced Data Protection?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Not for Noxium's backup, which is encrypted before upload either way. Advanced Data Protection is still worth turning on for the rest of your iCloud, such as Photos and device backups."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <!-- /build:jsonld -->
+</head>
+<body>
+  <!-- build:header -->
+  <!-- Shared header (homepage and subpages). Edit partials/header.html, then run python3 tools/build.py. -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <nav class="nav glass" aria-label="Primary">
+        <a href="/" class="wordmark" aria-label="Noxium home">Noxium<span aria-hidden="true">.</span></a>
+
+        <div class="nav-links">
+          <a href="/#features">Features</a>
+          <a href="/#security">Security</a>
+          <a href="/#pricing">Pricing</a>
+          <a href="/best-photo-vault-apps-iphone">Compare</a>
+          <a href="/guides/">Guides</a>
+        </div>
+
+        <div class="nav-actions">
+          <a href="https://apps.apple.com/app/apple-store/id6824616093" class="btn btn-ink btn-nav nav-cta" data-cta="nav" data-label-waitlist="Join the beta" data-label-live="Get Noxium">Get Noxium</a>
+          <button type="button" class="mobile-menu-btn" id="mobile-menu-btn" aria-expanded="false" aria-controls="mobile-drawer" aria-label="Menu">
+            <svg class="icon icon-menu" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 9h14M5 15h14"/></svg>
+            <svg class="icon icon-close" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <div class="mobile-drawer glass" id="mobile-drawer" hidden>
+      <nav class="mobile-drawer-list" aria-label="Mobile">
+        <a href="/#features">Features</a>
+        <a href="/#security">Security</a>
+        <a href="/#pricing">Pricing</a>
+        <a href="/best-photo-vault-apps-iphone">Compare vault apps</a>
+        <a href="/guides/">Guides</a>
+        <a href="/about">About</a>
+        <a href="/support">Support</a>
+      </nav>
+    </div>
+  </header>
+  <!-- /build:header -->
+
+  <main id="main-content" tabindex="-1">
+    <div class="page-hero">
+      <div class="container">
+        <!-- build:breadcrumbs -->
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="/">Noxium</a></li>
+            <li><a href="/features/">Features</a></li>
+            <li aria-current="page">Encrypted iCloud backup</li>
+          </ol>
+        </nav>
+        <!-- /build:breadcrumbs -->
+        <p class="eyebrow"><span class="dot dot-ink" aria-hidden="true"></span>Feature</p>
+        <h1>Encrypted iCloud backup: your vault, in your iCloud, unreadable to anyone else</h1>
+        <!-- build:byline -->
+        <p class="byline"><span>By <a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>Last updated <time datetime="2026-11-13">13 November 2026</time></span></p>
+        <!-- /build:byline -->
+        <div class="answer">
+          <span class="answer-label">Short answer</span>
+          <p>Noxium backs up an encrypted copy of your vault to your own private iCloud (CloudKit). Only encrypted data leaves the iPhone, so Apple stores it but can't read it. On a new iPhone, draw your pattern and the vault restores. Backup and restore are included in the free plan.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container article-layout">
+      <article class="prose">
+        <p>A photo vault without a backup is one dropped phone away from losing everything. A backup that isn't encrypted defeats the point of a vault. Noxium, the vault we make, does both: it keeps its own backup in your iCloud, and everything in it is encrypted on your iPhone first. There is no Noxium account and no Noxium server in between. This page shows what is uploaded, how restoring works, and what the backup can't do.</p>
+
+        <h2 id="how">How does the encrypted backup work?</h2>
+        <p>Noxium encrypts each item on the iPhone, then uploads only that encrypted data to the private CloudKit database in your iCloud. Apple's servers hold it, but the keys stay with your pattern.</p>
+        <ol class="steps">
+          <li><strong>Encrypt first.</strong> Every photo, video, note and thumbnail is already encrypted with AES-256-GCM by the time it is stored (see <a href="/features/on-device-encryption">on-device encryption</a>). The backup reuses that ciphertext.</li>
+          <li><strong>Upload to your iCloud.</strong> Each vault gets its own space in your private iCloud database. It holds the vault's sealed key, its encrypted details, and its encrypted items.</li>
+          <li><strong>Keep going while locked.</strong> Because the backup only handles encrypted data, uploads continue after you lock the vault.</li>
+          <li><strong>Restore with your pattern.</strong> On a new iPhone, your pattern rebuilds the key that opens the vault key in iCloud. Nothing else can.</li>
+        </ol>
+        <p>The backup is separate from the iPhone's own iCloud Backup. Noxium deliberately leaves its vault files out of the device backup and Quick Start transfers, so private photos don't sit in an ordinary backup. Its own encrypted backup is what brings them back.</p>
+
+        <h2 id="what">What goes to iCloud, and what doesn't?</h2>
+        <div class="data-table-wrap" tabindex="0" role="region" aria-labelledby="up-caption">
+          <table class="data-table">
+            <caption id="up-caption">What Noxium uploads to your private iCloud</caption>
+            <thead><tr><th scope="col">Data</th><th scope="col">In iCloud?</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Photos, videos, notes, thumbnails</th><td>Yes, encrypted</td></tr>
+              <tr><th scope="row">Names, dates, places, album names</th><td>Yes, encrypted</td></tr>
+              <tr><th scope="row">Each vault's key</th><td>Only sealed by your pattern (and recovery phrase)</td></tr>
+              <tr><th scope="row">The salt and Argon2id settings</th><td>Yes, so a new iPhone can rebuild your key</td></tr>
+              <tr><th scope="row">Your pattern or recovery phrase</th><td>No, never</td></tr>
+              <tr><th scope="row">Face ID key</th><td>No, it stays in this iPhone's Keychain</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>This holds with or without Apple's Advanced Data Protection. With standard iCloud protection, Apple can decrypt your iCloud Backup and iCloud Photos (Apple lists the categories in its <a href="https://support.apple.com/en-us/102651" rel="noopener">iCloud data security overview</a>). Noxium's backup is different: Apple only ever receives data that is already encrypted with a key it doesn't have.</p>
+
+        <h2 id="setup">How do you set it up and check it?</h2>
+        <p>Turn it on during setup, then check it before you change phones.</p>
+        <ol class="steps">
+          <li><strong>Turn it on.</strong> During setup, choose <span class="path">Back up to iCloud</span>. Your iPhone must be signed in to iCloud. You can turn it on later in <span class="path">Settings › iCloud backup › Back up this vault</span>.</li>
+          <li><strong>Check the status.</strong> <span class="path">Settings › iCloud backup</span> shows when the vault was last backed up and how many items are waiting. Tap <span class="path">Back up now</span> to start right away.</li>
+          <li><strong>Choose how videos upload.</strong> <span class="path">Wi-Fi only for videos</span> is on by default, so large videos wait for Wi-Fi.</li>
+          <li><strong>Back up each vault.</strong> A decoy vault has its own backup switch. The status only counts the vault you're in, so it never reveals that other vaults exist.</li>
+          <li><strong>Watch your storage.</strong> The backup counts toward your iCloud storage. <span class="path">Used in iCloud</span> shows how much. If iCloud is full, Noxium pauses and tells you about how much more space it needs.</li>
+        </ol>
+        <figure class="shot">
+          <img src="/assets/guides/noxium-backup.jpg" alt="Noxium's backup screen: the vault is encrypted on the iPhone and backed up privately to the user's iCloud" width="559" height="1216" loading="lazy" decoding="async">
+          <figcaption>Only encrypted data leaves the iPhone. It is stored in your private iCloud.</figcaption>
+        </figure>
+
+        <h2 id="restore">How do you restore on a new iPhone?</h2>
+        <p>Sign in to the same Apple Account, open Noxium, and draw your pattern. The full checklist is in <a href="/guides/move-photo-vault-to-new-iphone">how to move a photo vault to a new iPhone</a>.</p>
+        <ol class="steps">
+          <li><strong>Find the backup.</strong> On first launch, Noxium looks for a backup in your iCloud and shows <span class="path">Restore your vault</span>.</li>
+          <li><strong>Draw your pattern.</strong> Draw the pattern you used on your old iPhone, or choose <span class="path">Restore with recovery phrase</span>.</li>
+          <li><strong>Browse right away.</strong> Details and thumbnails arrive first. Choose whether full-size photos download <span class="path">Now</span> or <span class="path">When I open them</span>.</li>
+          <li><strong>Open the other vaults.</strong> Other vaults, such as a decoy, stay in iCloud until you draw their patterns. Later, use <span class="path">Settings › iCloud backup › Restore from iCloud</span>.</li>
+        </ol>
+        <p>Short on space? <span class="path">Free up space</span> removes full-size copies that are already backed up. Previews stay, and the originals download again when you open them.</p>
+
+        <h2 id="limits">What doesn't the backup protect?</h2>
+        <ul>
+          <li><strong>Forgetting both keys.</strong> If you lose your pattern and your <a href="/features/recovery-phrase">recovery phrase</a>, nobody can open the backup: not us, not Apple.</li>
+          <li><strong>Someone in your iCloud with time to guess.</strong> Your iCloud holds the sealed keys and the salt. A person who gets into your Apple Account could try patterns offline. Argon2id makes every guess slow, but a short or obvious pattern can still fall. Protect your Apple Account with a strong password and two-factor authentication.</li>
+          <li><strong>What Apple can see.</strong> Apple can see that Noxium stores data in your iCloud, and roughly how much. It can't see the photos or their details.</li>
+          <li><strong>Deleting the backup.</strong> The backup lives in your iCloud. If the Apple Account is lost or the data is deleted, the backup is gone too. Turning off <span class="path">Back up this vault</span> stops new uploads; what's already in iCloud stays.</li>
+          <li><strong>Live sync.</strong> The backup restores a vault; keeping an iPhone and an iPad in step is a separate Pro feature.</li>
+        </ul>
+
+        <h2 id="plans">Is it free or Pro?</h2>
+        <p>Full iCloud backup and restore is part of the free plan, which holds 150 photos, 10 videos, unlimited notes and 1 decoy vault. Noxium Pro adds unlimited items and iPhone and iPad sync, among other things. If Pro ends, you keep full access to view, export and back up everything already in your vault.</p>
+
+        <div class="cta-card">
+          <p class="cta-card-title">New phone? Everything comes back.</p>
+          <p>An encrypted backup goes to your own private iCloud. On a new iPhone, draw your pattern and your vault restores.</p>
+          <a href="https://apps.apple.com/app/apple-store/id6824616093" class="btn btn-primary" data-cta="body" data-label-waitlist="Join the Early Tester List" data-label-live="Download on the App Store">Download on the App Store</a>
+          <!-- build:status -->
+          <span class="release-status">Available on the App Store for iPhone and iPad.</span>
+          <!-- /build:status -->
+        </div>
+
+        <h2 id="faq">Questions people ask</h2>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Do photo vault apps back up to iCloud?</span></span></summary>
+            <div class="faq-body"><p>Some do, some use their own cloud, and some keep photos only on the phone. Check the app's settings for a backup section before you rely on it. Noxium backs up to your own iCloud, encrypted.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Will my vault photos show up in iCloud Photos?</span></span></summary>
+            <div class="faq-body"><p>No. Noxium's backup sits in its own private CloudKit space, not in iCloud Photos, and it is encrypted. Nothing appears in the Photos app or on iCloud.com. Apple's Hidden album is a different case: see <a href="/guides/is-iphone-hidden-album-private">is the iPhone Hidden album private?</a></p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Does the backup use my iCloud storage?</span></span></summary>
+            <div class="faq-body"><p>Yes. It counts toward your iCloud plan. Settings › iCloud backup shows how much it uses, and Noxium tells you if iCloud is full.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Can I restore with a different Apple Account?</span></span></summary>
+            <div class="faq-body"><p>No. The backup lives in the iCloud of the Apple Account that made it, so the new iPhone must be signed in to that account.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Do I need Advanced Data Protection?</span></span></summary>
+            <div class="faq-body"><p>Not for Noxium's backup, which is encrypted before upload either way. Advanced Data Protection is still worth turning on for the rest of your iCloud, such as Photos and device backups.</p></div>
+          </details>
+        </div>
+
+        <p><em>Something wrong or out of date? Email <a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a> and we'll fix it.</em></p>
+      </article>
+
+      <aside class="article-aside" aria-label="On this page">
+        <nav class="toc" aria-label="Table of contents">
+          <p class="toc-title">On this page</p>
+          <ol>
+            <li><a href="#how">How it works</a></li>
+            <li><a href="#what">What goes to iCloud</a></li>
+            <li><a href="#setup">Set it up</a></li>
+            <li><a href="#restore">Restore on a new iPhone</a></li>
+            <li><a href="#limits">What it doesn't protect</a></li>
+            <li><a href="#plans">Free or Pro</a></li>
+            <li><a href="#faq">Questions people ask</a></li>
+          </ol>
+        </nav>
+        <!-- build:related -->
+        <div class="related">
+          <p class="toc-title">Related</p>
+          <ul role="list">
+            <li><a href="/guides/move-photo-vault-to-new-iphone">Move a photo vault to a new iPhone</a></li>
+            <li><a href="/features/recovery-phrase">Recovery phrase</a></li>
+            <li><a href="/features/on-device-encryption">On-device encryption</a></li>
+            <li><a href="/features/pattern-lock">Pattern lock</a></li>
+          </ul>
+        </div>
+        <!-- /build:related -->
+      </aside>
+    </div>
+  </main>
+
+  <!-- build:footer -->
+  <!-- Shared footer for subpages (the homepage has its own copy with build:status). Edit partials/footer.html, then run python3 tools/build.py. -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="/" class="wordmark" aria-label="Noxium home">Noxium<span aria-hidden="true">.</span></a>
+          <p>A private vault for photos, videos and notes.</p>
+        </div>
+
+        <nav class="footer-groups" aria-label="Footer">
+          <div>
+            <h2 class="footer-heading">Product</h2>
+            <ul role="list">
+              <li><a href="/#features">Features</a></li>
+              <li><a href="/#security">How the encryption works</a></li>
+              <li><a href="/#pricing">Free vs Pro</a></li>
+              <li><a href="/best-photo-vault-apps-iphone">Photo vault apps compared</a></li>
+              <li><a href="/#faq">FAQ</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="footer-heading">Guides</h2>
+            <ul role="list">
+              <li><a href="/guides/how-to-hide-photos-on-iphone">How to hide photos on iPhone</a></li>
+  <li><a href="/guides/is-iphone-hidden-album-private">Is the Hidden album private?</a></li>
+  <li><a href="/guides/move-photo-vault-to-new-iphone">Move a photo vault to a new iPhone</a></li>
+  <li><a href="/guides/photo-vault-lost-photos">Photo vault lost your photos</a></li>
+  <li><a href="/guides/keepsafe-alternatives">Keepsafe alternatives</a></li>
+  <li><a href="/guides/vaultaire-vs-keepsafe">Vaultaire vs Keepsafe</a></li>
+              <li><a href="/guides/">All guides</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="footer-heading">Company</h2>
+            <ul role="list">
+              <li><a href="/about">About</a></li>
+              <li><a href="/support">Support</a></li>
+              <li><a href="/privacy">Privacy policy</a></li>
+              <li><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener">Terms of use</a></li>
+              <li><a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Noxium. Made by Inertia Projects, an independent developer. App Store privacy label: Data Not Collected.</p>
+        <p>Apple, the Apple logo, iPhone, iPad and Face ID are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc.</p>
+      </div>
+    </div>
+  </footer>
+  <!-- /build:footer -->
+
+  <script src="/app.js" defer></script>
+</body>
+</html>
