@@ -880,6 +880,374 @@
             }
           ],
           "checked": "2026-11-11"
+        },
+        "de": {
+          "name": "Fototresor - Vaultaire",
+          "developer": "Wraxle LLC",
+          "price": "Gratis",
+          "rating": 4.6,
+          "ratingCount": 14,
+          "version": "1.1.2",
+          "lastUpdate": "2026-10-23",
+          "minimumOs": "17.0",
+          "url": "https://apps.apple.com/de/app/fototresor-vaultaire/id6758529311",
+          "privacyLabel": [
+            "Data Linked to You",
+            "Data Not Linked to You"
+          ],
+          "inAppPurchases": [
+            {
+              "name": "Vaultaire Pro Annual",
+              "price": "22,99 €"
+            },
+            {
+              "name": "Vaultaire Pro Weekly",
+              "price": "1,99 €"
+            },
+            {
+              "name": "Vaultaire Pro Lifetime",
+              "price": "44,99 €"
+            },
+            {
+              "name": "Vaultaire Pro Annual Offer",
+              "price": "22,99 €"
+            },
+            {
+              "name": "Vaultaire Pro Monthly",
+              "price": "6,99 €"
+            },
+            {
+              "name": "Vaultaire Pro Family Lifetime",
+              "price": "99,99 €"
+            },
+            {
+              "name": "Vaultaire Pro Family Annual",
+              "price": "59,99 €"
+            }
+          ],
+          "checked": "2026-11-14"
+        },
+        "ca": {
+          "name": "Photo Vault - Vaultaire",
+          "developer": "Wraxle LLC",
+          "price": "Free",
+          "rating": 4.1,
+          "ratingCount": 12,
+          "version": "1.1.2",
+          "lastUpdate": "2026-10-23",
+          "minimumOs": "17.0",
+          "url": "https://apps.apple.com/ca/app/photo-vault-vaultaire/id6758529311",
+          "privacyLabel": [
+            "Data Linked to You",
+            "Data Not Linked to You"
+          ],
+          "inAppPurchases": [
+            {
+              "name": "Vaultaire Pro Annual",
+              "price": "$24.99"
+            },
+            {
+              "name": "Vaultaire Pro Lifetime",
+              "price": "$49.99"
+            },
+            {
+              "name": "Vaultaire Pro Annual Offer",
+              "price": "$24.99"
+            },
+            {
+              "name": "Vaultaire Pro Family Lifetime",
+              "price": "$129.99"
+            },
+            {
+              "name": "Vaultaire Pro Family Annual",
+              "price": "$69.99"
+            },
+            {
+              "name": "Vaultaire Pro Weekly",
+              "price": "$2.99"
+            },
+            {
+              "name": "Vaultaire Pro Monthly",
+              "price": "$7.99"
+            }
+          ],
+          "checked": "2026-11-14"
+        },
+        "es": {
+          "name": "Bóveda de Fotos - Vaultaire",
+          "developer": "Wraxle LLC",
+          "price": "Gratis",
+          "rating": 5,
+          "ratingCount": 3,
+          "version": "1.1.2",
+          "lastUpdate": "2026-10-23",
+          "minimumOs": "17.0",
+          "url": "https://apps.apple.com/es/app/b%C3%B3veda-de-fotos-vaultaire/id6758529311",
+          "privacyLabel": [
+            "Data Linked to You",
+            "Data Not Linked to You"
+          ],
+          "inAppPurchases": [
+            {
+              "name": "Vaultaire Pro Annual",
+              "price": "22,99 €"
+            },
+            {
+              "name": "Vaultaire Pro Lifetime",
+              "price": "44,99 €"
+            },
+            {
+              "name": "Vaultaire Pro Annual Offer",
+              "price": "22,99 €"
+            },
+            {
+              "name": "Vaultaire Pro Family Lifetime",
+              "price": "99,99 €"
+            },
+            {
+              "name": "Vaultaire Pro Family Annual",
+              "price": "59,99 €"
+            },
+            {
+              "name": "Vaultaire Pro Weekly",
+              "price": "1,99 €"
+            },
+            {
+              "name": "Vaultaire Pro Monthly",
+              "price": "6,99 €"
+            }
+          ],
+          "checked": "2026-11-14"
+        },
+        "br": {
+          "name": "Cofre de Fotos - Vaultaire",
+          "developer": "Wraxle LLC",
+          "price": "Grátis",
+          "rating": 5,
+          "ratingCount": 3,
+          "version": "1.1.2",
+          "lastUpdate": "2026-10-23",
+          "minimumOs": "17.0",
+          "url": "https://apps.apple.com/br/app/cofre-de-fotos-vaultaire/id6758529311",
+          "privacyLabel": [
+            "Data Linked to You",
+            "Data Not Linked to You"
+          ],
+          "inAppPurchases": [
+            {
+              "name": "Vaultaire Pro Annual",
+              "price": "R$ 129,90"
+            },
+            {
+              "name": "Vaultaire Pro Monthly",
+              "price": "R$ 39,90"
+            },
+            {
+              "name": "Vaultaire Pro Lifetime",
+              "price": "R$ 249,90"
+            },
+            {
+              "name": "Vaultaire Pro Annual Offer",
+              "price": "R$ 129,90"
+            },
+            {
+              "name": "Vaultaire Pro Family Lifetime",
+              "price": "R$ 599,90"
+            },
+            {
+              "name": "Vaultaire Pro Family Annual",
+              "price": "R$ 299,90"
+            },
+            {
+              "name": "Vaultaire Pro Weekly",
+              "price": "R$ 12,90"
+            }
+          ],
+          "checked": "2026-11-14"
+        },
+        "it": {
+          "name": "Caveau Foto - Vaultaire",
+          "developer": "Wraxle LLC",
+          "price": "Gratis",
+          "rating": 5,
+          "ratingCount": 5,
+          "version": "1.1.2",
+          "lastUpdate": "2026-10-23",
+          "minimumOs": "17.0",
+          "url": "https://apps.apple.com/it/app/caveau-foto-vaultaire/id6758529311",
+          "privacyLabel": [
+            "Data Linked to You",
+            "Data Not Linked to You"
+          ],
+          "inAppPurchases": [
+            {
+              "name": "Vaultaire Pro Annual",
+              "price": "22,99 €"
+            },
+            {
+              "name": "Vaultaire Pro Lifetime",
+              "price": "44,99 €"
+            },
+            {
+              "name": "Vaultaire Pro Weekly",
+              "price": "1,99 €"
+            },
+            {
+              "name": "Vaultaire Pro Monthly",
+              "price": "6,99 €"
+            },
+            {
+              "name": "Vaultaire Pro Annual Offer",
+              "price": "22,99 €"
+            },
+            {
+              "name": "Vaultaire Pro Family Lifetime",
+              "price": "99,99 €"
+            },
+            {
+              "name": "Vaultaire Pro Family Annual",
+              "price": "59,99 €"
+            }
+          ],
+          "checked": "2026-11-14"
+        },
+        "jp": {
+          "name": "写真保存 - Vaultaire",
+          "developer": "Wraxle LLC",
+          "price": "無料",
+          "rating": 4.5,
+          "ratingCount": 2,
+          "version": "1.1.2",
+          "lastUpdate": "2026-10-23",
+          "minimumOs": "17.0",
+          "url": "https://apps.apple.com/jp/app/%E5%86%99%E7%9C%9F%E4%BF%9D%E5%AD%98-vaultaire/id6758529311",
+          "privacyLabel": [
+            "Data Linked to You",
+            "Data Not Linked to You"
+          ],
+          "inAppPurchases": [
+            {
+              "name": "Vaultaire Pro Annual",
+              "price": "¥3,000"
+            },
+            {
+              "name": "Vaultaire Pro Monthly",
+              "price": "¥1,000"
+            },
+            {
+              "name": "Vaultaire Pro Lifetime",
+              "price": "¥6,000"
+            },
+            {
+              "name": "Vaultaire Pro Annual Offer",
+              "price": "¥3,000"
+            },
+            {
+              "name": "Vaultaire Pro Family Lifetime",
+              "price": "¥15,000"
+            },
+            {
+              "name": "Vaultaire Pro Family Annual",
+              "price": "¥8,000"
+            },
+            {
+              "name": "Vaultaire Pro Weekly",
+              "price": "¥300"
+            }
+          ],
+          "checked": "2026-11-14"
+        },
+        "kr": {
+          "name": "사진 금고 - Vaultaire",
+          "developer": "Wraxle LLC",
+          "price": "무료",
+          "rating": null,
+          "ratingCount": 0,
+          "version": "1.1.2",
+          "lastUpdate": "2026-10-23",
+          "minimumOs": "17.0",
+          "url": "https://apps.apple.com/kr/app/%EC%82%AC%EC%A7%84-%EA%B8%88%EA%B3%A0-vaultaire/id6758529311",
+          "privacyLabel": [
+            "Data Linked to You",
+            "Data Not Linked to You"
+          ],
+          "inAppPurchases": [
+            {
+              "name": "Vaultaire Pro Annual",
+              "price": "￦33,000"
+            },
+            {
+              "name": "Vaultaire Pro Lifetime",
+              "price": "￦66,000"
+            },
+            {
+              "name": "Vaultaire Pro Annual Offer",
+              "price": "￦33,000"
+            },
+            {
+              "name": "Vaultaire Pro Family Lifetime",
+              "price": "￦149,000"
+            },
+            {
+              "name": "Vaultaire Pro Family Annual",
+              "price": "￦77,000"
+            },
+            {
+              "name": "Vaultaire Pro Weekly",
+              "price": "￦3,300"
+            },
+            {
+              "name": "Vaultaire Pro Monthly",
+              "price": "￦9,900"
+            }
+          ],
+          "checked": "2026-11-14"
+        },
+        "tw": {
+          "name": "相片保險庫：Vaultaire",
+          "developer": "Wraxle LLC",
+          "price": "免費",
+          "rating": null,
+          "ratingCount": 0,
+          "version": "1.1.2",
+          "lastUpdate": "2026-10-23",
+          "minimumOs": "17.0",
+          "url": "https://apps.apple.com/tw/app/%E7%9B%B8%E7%89%87%E4%BF%9D%E9%9A%AA%E5%BA%AB-vaultaire/id6758529311",
+          "privacyLabel": [
+            "Data Linked to You",
+            "Data Not Linked to You"
+          ],
+          "inAppPurchases": [
+            {
+              "name": "Vaultaire Pro Annual",
+              "price": "NT$690.00"
+            },
+            {
+              "name": "Vaultaire Pro Lifetime",
+              "price": "NT$1,290.00"
+            },
+            {
+              "name": "Vaultaire Pro Annual Offer",
+              "price": "NT$690.00"
+            },
+            {
+              "name": "Vaultaire Pro Family Lifetime",
+              "price": "NT$2,990.00"
+            },
+            {
+              "name": "Vaultaire Pro Family Annual",
+              "price": "NT$1,490.00"
+            },
+            {
+              "name": "Vaultaire Pro Weekly",
+              "price": "NT$60.00"
+            },
+            {
+              "name": "Vaultaire Pro Monthly",
+              "price": "NT$190.00"
+            }
+          ],
+          "checked": "2026-11-14"
         }
       }
     },

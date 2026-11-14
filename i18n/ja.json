@@ -61,15 +61,15 @@
   },
   "pages": {
     "/guides/keepsafe-alternatives": {
-      "source": "2026-10-26",
-      "title": "Keepsafeの代わりになる写真保管庫アプリ（2026）",
-      "description": "アカウント不要でKeepsafeの代わりになる写真保管庫アプリを、App Storeの掲載情報で比較。バックアップ先、暗号化、料金、乗り換え手順まで。",
+      "source": "2026-11-13",
+      "title": "Keepsafeの代わり4選：アカウント・メール不要（2026）",
+      "description": "アカウントもメールも不要なKeepsafeの代わりを比較。Vaultaire、Obscura、Encamera、Noxiumの暗号化とiCloudバックアップ。",
       "headline": "アカウント不要で使える、Keepsafe の代わりになる写真保管庫",
       "summary": "アカウントなしで使える写真保管庫アプリを、App Store の掲載情報をもとに Keepsafe と比較します。",
       "crumb": "Keepsafe の代わり",
       "keyword": "keepsafe 代わり",
       "published": "2026-11-12",
-      "updated": "2026-11-12"
+      "updated": "2026-11-14"
     },
     "/guides/how-to-hide-photos-on-iphone": {
       "source": "2026-10-26",
@@ -80,7 +80,7 @@
       "crumb": "iPhone で写真を隠す方法",
       "keyword": "iphone 写真 隠す",
       "published": "2026-11-12",
-      "updated": "2026-11-12"
+      "updated": "2026-11-14"
     },
     "/guides/is-iphone-hidden-album-private": {
       "source": "2026-10-26",

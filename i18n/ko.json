@@ -61,15 +61,15 @@
   },
   "pages": {
     "/guides/keepsafe-alternatives": {
-      "source": "2026-10-26",
-      "title": "계정 없는 Keepsafe 대체 앱 비교 (2026)",
-      "description": "이메일 계정 없이 쓰는 Keepsafe 대체 사진 보관함 앱을 App Store 정보로 비교했습니다. 백업, 암호화, 가격, 옮기는 방법까지.",
+      "source": "2026-11-13",
+      "title": "계정·이메일 없는 Keepsafe 대체 앱 4선",
+      "description": "계정·이메일 없는 Keepsafe 대체 앱 비교: Vaultaire, Obscura, Encamera, Noxium의 암호화와 백업.",
       "headline": "계정 없이 쓰는 Keepsafe 대체 앱",
       "summary": "계정 없이 쓰는 사진 보관함 앱을 App Store 정보를 바탕으로 Keepsafe와 비교합니다.",
       "crumb": "Keepsafe 대체 앱",
       "keyword": "keepsafe 대체 앱",
       "published": "2026-11-12",
-      "updated": "2026-11-12"
+      "updated": "2026-11-14"
     },
     "/guides/how-to-hide-photos-on-iphone": {
       "source": "2026-10-26",
@@ -80,7 +80,7 @@
       "crumb": "iPhone 사진 숨기기",
       "keyword": "아이폰 사진 숨기기",
       "published": "2026-11-12",
-      "updated": "2026-11-12"
+      "updated": "2026-11-14"
     },
     "/guides/is-iphone-hidden-album-private": {
       "source": "2026-10-26",
