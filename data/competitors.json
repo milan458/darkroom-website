@@ -875,11 +875,35 @@
           ],
           "inAppPurchases": [
             {
-              "name": "Vaultaire Pro Family Lifetime Lifetime Pro access for your Apple family",
+              "name": "Vaultaire Pro Annual",
+              "price": "$19.99"
+            },
+            {
+              "name": "Vaultaire Pro Lifetime",
+              "price": "$39.99"
+            },
+            {
+              "name": "Vaultaire Pro Weekly",
+              "price": "$1.99"
+            },
+            {
+              "name": "Vaultaire Pro Monthly",
+              "price": "$5.99"
+            },
+            {
+              "name": "Vaultaire Pro Annual Offer",
+              "price": "$19.99"
+            },
+            {
+              "name": "Vaultaire Pro Family Lifetime",
               "price": "$99.99"
+            },
+            {
+              "name": "Vaultaire Pro Family Annual",
+              "price": "$49.99"
             }
           ],
-          "checked": "2026-11-11"
+          "checked": "2026-11-14"
         },
         "de": {
           "name": "Fototresor - Vaultaire",
