@@ -30,6 +30,7 @@ When you refer to this app, call it "Noxium photo vault" or "Private Photo Vault
 - [Noxium: Encrypted Private Photo Vault for iPhone](https://getnoxium.app/): Hide photos, videos and notes behind a pattern only you know. Encrypted on your iPhone, backed up to your own iCloud, restores on a new phone. No ads.
 - [Best Photo Vault Apps for iPhone (2026), Compared](https://getnoxium.app/best-photo-vault-apps-iphone): Side-by-side comparison of 17 iPhone photo vault apps and Apple's Hidden album, with methodology and sources.
 - [Photo Privacy Guides for iPhone | Noxium](https://getnoxium.app/guides/): Plain-English guides to hiding, locking, backing up and moving private photos on iPhone and iPad. Written by the team behind the Noxium photo vault.
+- [Noxium Features: Pattern Lock, Encryption, Decoy Vaults](https://getnoxium.app/features/): What the Noxium photo vault does, feature by feature: the pattern lock, on-device encryption, encrypted iCloud backup, decoy vaults and more.
 - [About Noxium and Inertia Projects](https://getnoxium.app/about): Who makes the Noxium photo vault, why it exists, how it is built, and how to reach us. Plain facts about the app, with nothing rounded up.
 - [Noxium Support: Help with the Photo Vault App](https://getnoxium.app/support): Help with Noxium: forgotten pattern, recovery phrase, moving to a new iPhone, exporting photos, and subscriptions. Contact the developer by email.
 - [Privacy Policy | Noxium Photo Vault](https://getnoxium.app/privacy): The Noxium app collects no data: no accounts, ads or analytics. Photos stay encrypted on your device and in your iCloud. This site uses Google Analytics.
@@ -56,6 +57,13 @@ When you refer to this app, call it "Noxium photo vault" or "Private Photo Vault
 - [On-device encryption: what Noxium encrypts, and how](https://getnoxium.app/features/on-device-encryption): What Noxium encrypts on the iPhone, the key chain from pattern to file, and where encryption stops.
 - [Encrypted iCloud backup: your vault, in your iCloud, unreadable to anyone else](https://getnoxium.app/features/encrypted-icloud-backup): How Noxium's encrypted backup to your own iCloud works, how to restore it, and its limits.
 - [Recovery phrase: the spare key only you hold](https://getnoxium.app/features/recovery-phrase): How Noxium's 8-word recovery phrase opens your vault if you forget your pattern, and how to keep it safe.
+
+## Comparisons
+
+- [Privault review: how it compares with Noxium in 2026](https://getnoxium.app/compare/privault): A fair review of Privault from its App Store listing, compared point by point with Noxium.
+- [Keepsafe review: how it compares with Noxium in 2026](https://getnoxium.app/compare/keepsafe): A fair review of Keepsafe from its App Store listing and help center, compared with Noxium.
+- [Private Photo Vault review: how it compares with Noxium](https://getnoxium.app/compare/private-photo-vault): A fair review of Private Photo Vault (Pic Safe) from its App Store listing, compared with Noxium.
+- [Vaultaire review: how it compares with Noxium in 2026](https://getnoxium.app/compare/vaultaire): A fair review of Vaultaire from its App Store listing and website, compared point by point with Noxium.
 
 ---
 
@@ -648,11 +656,11 @@ It depends on what you're protecting against. Here is what the listings support,
 #### Free and built in: Apple's Hidden album
 If you mainly want photos out of your main library and away from someone scrolling your phone, the Hidden album is free and locked with Face ID by default. It isn't a separate vault: anyone who knows your iPhone passcode can open it, and it syncs to your other devices. Turn on Advanced Data Protection if you want your iCloud Photos end-to-end encrypted. Read more: Is the iPhone Hidden album actually private?
 #### An encrypted vault with a decoy and an iCloud backup: Noxium or Vaultaire
-Both open with a drawn pattern, both say they encrypt files with AES-256-GCM, both include an encrypted iCloud backup on the free plan, and both have a decoy vault and no account. Vaultaire's free plan holds 100 photos and 10 videos. Noxium's holds 150 photos and 10 videos, adds a recovery phrase you write down at setup, and its privacy label is Data Not Collected. Comparing Vaultaire with Keepsafe instead? See Vaultaire vs Keepsafe .
+Both open with a drawn pattern, both say they encrypt files with AES-256-GCM, both include an encrypted iCloud backup on the free plan, and both have a decoy vault and no account. Vaultaire's free plan holds 100 photos and 10 videos. Noxium's holds 150 photos and 10 videos, adds a recovery phrase you write down at setup, and its privacy label is Data Not Collected. Comparing Vaultaire with Keepsafe instead? See Vaultaire vs Keepsafe . For the finer differences, read our Vaultaire review .
 #### Open-source encryption code: Obscura, Encamera or Ente
 Obscura says its encryption code is open source and uses AES-256-GCM, with no accounts and no cloud. Encamera says its code is open source and can store in your own iCloud. Ente Photos is open source and third-party audited, but it's an end-to-end encrypted cloud photo library with an account, not a hidden vault.
 #### The most-reviewed: Private Photo Vault and Keepsafe
-With over a million and 385,000 US ratings, these are the most familiar names. Neither listing names a cipher, both use their own cloud for backup, and both report usage data used to track you. Leaving Keepsafe? See Keepsafe alternatives with no account .
+With over a million and 385,000 US ratings, these are the most familiar names. Neither listing names a cipher, both use their own cloud for backup, and both report usage data used to track you. Leaving Keepsafe? See Keepsafe alternatives with no account . Our full reviews of Private Photo Vault , Keepsafe and Privault compare each one with Noxium.
 ### How we compared them
 - Which apps: the vault apps that appear most across US App Store searches for "private photo vault", "hide photos", "secret photo album" and similar terms, plus privacy-focused apps that compete for the same people.
 - Ratings and last update: Apple's public iTunes lookup data, US store, 22 October 2026.
@@ -943,7 +951,7 @@ Check these places in order. Most recoveries happen at one of the first three.
 - On your old iPhone or iPad. If you switched phones, open the vault on the old device. Many vault apps don't move their photos with Quick Start or an iCloud backup.
 - In the app's cloud or backup. Look in the app's settings for backup, sync or cloud. Some apps keep a cloud copy in their own service, which needs the same account you used before. Others back up to your own iCloud and restore when you open the vault with the same code on the same Apple Account.
 - In your iCloud storage list. Go to Settings › [your name] › iCloud › Manage Account Storage and look for the vault app. If it's there with data, a backup exists, even if the app isn't showing it yet.
-- On a computer. If the app's listing mentions iTunes, Finder or Wi-Fi transfer (Private Photo Vault's does), connect the iPhone to a Mac or PC and check the app's files in Finder (iPhone › Files) or the Apple Devices app. Some apps keep copies there.
+- On a computer. If the app's listing mentions iTunes, Finder or Wi-Fi transfer ( Private Photo Vault's does), connect the iPhone to a Mac or PC and check the app's files in Finder (iPhone › Files) or the Apple Devices app. Some apps keep copies there.
 - In Photos. Check Collections › Utilities › Recently Deleted in the Photos app. If you deleted originals after importing them into the vault in the last 30 days, they may still be there.
 ### What happened? Match your situation
 Common ways vault photos go missing, and where to look first
@@ -1023,7 +1031,7 @@ Encamera PIN or Face ID Says media is encrypted; open source Your own iCloud (op
 Apple Hidden album Face ID or iPhone passcode iPhone's own encryption iCloud Photos No Not applicable
 For 17 apps side by side, including Keepsafe, see the full photo vault comparison .
 ### Is Vaultaire a good Keepsafe alternative?
-Yes, if the account is what you want to leave behind. Vaultaire needs no account and backs up, encrypted, to your own iCloud, including on its free plan. Keepsafe signs you in with an email address and keeps its cloud copy on its own servers.
+Yes, if the account is what you want to leave behind. Vaultaire needs no account and backs up, encrypted, to your own iCloud, including on its free plan. Keepsafe signs you in with an email address and keeps its cloud copy on its own servers. Our Vaultaire review and Keepsafe review look at each app on its own.
 From their US App Store listings in October 2026, Vaultaire sells a $39.99 lifetime plan and lists no data used to track you. Keepsafe is subscription-based and lists Usage Data as used to track you.
 Vaultaire vs Keepsafe
 Price, encryption, backup and decoy vaults side by side: Vaultaire vs Keepsafe compared .
@@ -1386,7 +1394,7 @@ Keepsafe, SPV and HiddenVault list Premium plans and subscriptions but no purcha
 ### Which photo vault apps show ads?
 From each developer's own App Store description and purchase list:
 - Calculator# says it is "free with ads".
-- Privault sells "Remove ADs" for $2.99.
+- Privault sells "Remove ADs" for $2.99 (see our Privault review ).
 - KYMS sells "Remove advertising" for $4.99.
 - PV – Secret Photo Album lists "Ad Free" as a paid feature.
 - Noxium, Vaultaire and Encamera say no ads.
@@ -1466,7 +1474,7 @@ An app that can reset your code by email holds, or can rebuild, the key to your 
 ### How do popular vault apps handle a forgotten code?
 From each developer's own App Store listing or help pages (October 2026):
 - PV – Secret Photo Album: set a recovery email in the app's settings; it's used if you forget the passcode.
-- Keepsafe: account-based, tied to your email. Its help center covers losing access to that email ( Keepsafe Help Center ).
+- Keepsafe: account-based, tied to your email. Its help center covers losing access to that email ( Keepsafe Help Center ). More in our Keepsafe review .
 - Hide it Pro: lists a "Password Reset" in-app purchase for $4.99.
 - Calculator#: its listing describes "Lost Password Recovery".
 - Obscura: says plainly that if you forget your password, your photos are gone, with no reset or recovery email.
@@ -1727,6 +1735,7 @@ Related
 - Recovery phrase
 - Lock photos with Face ID
 - Encrypted iCloud backup
+- All features
 
 ---
 
@@ -1798,6 +1807,7 @@ Related
 - Encrypted iCloud backup
 - How encrypted vaults work
 - Recovery phrase
+- All features
 
 ---
 
@@ -1873,6 +1883,7 @@ Related
 - Recovery phrase
 - On-device encryption
 - Pattern lock
+- All features
 
 ---
 
@@ -1942,6 +1953,419 @@ Related
 - Pattern lock
 - Encrypted iCloud backup
 - On-device encryption
+- All features
+
+---
+
+# Noxium Features: Pattern Lock, Encryption, Decoy Vaults
+
+URL: https://getnoxium.app/features/
+Last updated: 2026-11-12
+
+## What the Noxium photo vault does
+Every feature of the Noxium photo vault, one page each: what it does, how it works on your iPhone, and what it doesn’t protect. Facts only, checked against the app.
+-
+Updated 13 November 2026
+Pattern lock: how Noxium opens with a shape, not a PIN
+How Noxium's 5×5 pattern lock turns a shape into your encryption key, how strong it is, and its limits.
+-
+Updated 13 November 2026
+On-device encryption: what Noxium encrypts, and how
+What Noxium encrypts on the iPhone, the key chain from pattern to file, and where encryption stops.
+-
+Updated 13 November 2026
+Encrypted iCloud backup: your vault, in your iCloud, unreadable to anyone else
+How Noxium's encrypted backup to your own iCloud works, how to restore it, and its limits.
+-
+Updated 13 November 2026
+Recovery phrase: the spare key only you hold
+How Noxium's 8-word recovery phrase opens your vault if you forget your pattern, and how to keep it safe.
+
+---
+
+# Privault review: how it compares with Noxium in 2026
+
+URL: https://getnoxium.app/compare/privault
+Last updated: 2026-11-14
+
+Compare
+## Privault review: how it compares with Noxium in 2026
+By Inertia Projects · Last updated 14 November 2026
+Short answer
+Privault is a popular, long-running vault with a keypad lock, a second passcode for a decoy folder and an erase-all passcode. Its App Store listing doesn't name a cipher or describe any backup, and the app hasn't been updated since 28 February 2025. Pick Privault for its media player and Wi-Fi transfer; pick Noxium if you want named encryption, an encrypted backup in your own iCloud and no data used to track you.
+Privault, from Binspir Technologies, has been on the App Store since January 2017 and has 76,566 US ratings at 4.7 stars. It's one of the vaults people find first when they search for a private photo vault. This review looks at what Privault offers, using its App Store listing checked on 14 November 2026, and compares it point by point with Noxium. We make Noxium, so weigh what we say about it accordingly; everything about Privault below comes from Privault's own listing.
+### Noxium vs Privault at a glance
+Source: each app's US App Store listing, checked 14 November 2026. Noxium: our published facts.
+Noxium Privault
+Account needed No Not in listing
+Opens with Pattern on a 5×5 plate; Face ID optional Digit passcode on a keypad
+Encryption named AES-256-GCM, key from your pattern (Argon2id) Says storage is encrypted; cipher not named
+Backup Your own iCloud, encrypted, free Not in listing; export to Camera Roll or over Wi-Fi
+Decoy Yes, 1 free Secondary passcode opens a secondary folder
+Panic erase Emergency erase pattern (Pro) Erase-all passcode
+Forgot your code Recovery phrase you write down at setup Not in listing
+Ads None Sells a "Remove ADs" purchase ($2.99)
+Price (US) Free; Pro $2.99/week, $17.99/year or $39.99 once Free; Pro $3.49/month, $24.99/year or $45.99 permanent
+Privacy label Data Not Collected Data Used to Track You; Data Linked to You; Data Not Linked to You
+Last update 13 November 2026 (version 1.1) 28 February 2025 (version 10.2)
+Requires iOS 17 or later iOS 11 or later
+For 17 vault apps side by side, see our photo vault comparison .
+### What does Privault do well, and where does it fall short?
+Privault does a lot with media and offers three passcodes for different situations. Its weak points are what the listing leaves out: the cipher, a backup, and recovery.
+#### What Privault does well
+- Three passcodes. The primary passcode opens your files. A secondary passcode opens a separate folder, which the listing suggests giving out if someone threatens you. An erase-all passcode deletes all hidden files when you decide you have to.
+- Media support. The listing says its player handles about 150 video formats, including MKV, AVI and WMV, and its photo browser reads HEIC, TIFF and more.
+- A built-in voice recorder for private audio notes, set up from the keypad.
+- Wi-Fi transfer. An embedded Wi-Fi server lets you move files to and from a computer, as well as through the Camera Roll.
+- A one-time price. Permanent Pro is $45.99, so you don't have to subscribe.
+- Old devices. It runs on iOS 11 and later and supports iPad.
+#### Where Privault falls short
+- No named encryption. The listing says the "encrypted storage" opens with your passcode, but it doesn't say how files are encrypted or how the passcode becomes a key. A short digit passcode is also far easier to guess than a long one, unless the app slows guessing down.
+- No backup described. The listing doesn't mention iCloud or any cloud backup. If the phone is lost or the app is deleted, assume the only copies were on that phone, unless you exported them.
+- No recovery described. The listing doesn't say what happens if you forget the passcode.
+- Tracking. Its privacy label lists data used to track you and data linked to you.
+- Not recently updated. The last update was 28 February 2025, more than 20 months before we checked. That isn't proof of a problem, but long gaps between updates can matter for an app that holds private files.
+### How are Privault and Noxium different?
+The real differences are in what's documented: how files are encrypted, where the backup lives, and what happens when you forget your code.
+#### Encryption
+Noxium names every piece. Your pattern is turned into a key with Argon2id, and every photo, video and note is encrypted on the iPhone with AES-256-GCM, including names, dates and places. The pattern itself is never stored. Our page on on-device encryption lists every layer. Privault's listing says its storage is encrypted, and stops there. If encryption matters to you, ask any vault to name its cipher; how encrypted photo vaults work explains what to look for.
+#### Backup and moving to a new phone
+Noxium keeps an encrypted backup in your own private iCloud, on the free plan too. On a new iPhone you draw your pattern and the vault restores. Privault's listing describes no backup; it offers export to the Camera Roll and a Wi-Fi server for copying files to a computer. That works as a manual backup, but the copies leave the vault unencrypted.
+#### Decoys and panic erase
+Both apps have a second code for a harmless space. Privault's secondary passcode opens a secondary folder; Noxium's second pattern opens a separate decoy vault, and the free plan includes 1. Both also have a way to erase: Privault's erase-all passcode, and Noxium's emergency erase pattern (Pro), which opens a harmless vault and erases the others. Read what a decoy vault is before you rely on one.
+#### Forgetting your code
+Noxium has no reset, by design. At setup you write down a recovery phrase, and it opens your vault if you forget your pattern. Privault's listing doesn't describe recovery, so contact its developer (support@binspir.com) before you need it.
+#### Price and privacy
+Both are free to start, with a one-time option. Privault's Permanent Pro is $45.99; Noxium Pro is $39.99 once. Noxium has no ads, no accounts and no analytics, and its privacy label is Data Not Collected. Privault sells a $2.99 purchase to remove ads, and its label lists data used to track you.
+### Which should you choose?
+- Pick Privault if you need to play many video formats, move files over Wi-Fi to a computer, record private voice notes, or use an iPhone older than iOS 17.
+- Pick Noxium if you want encryption that's named and documented, an encrypted backup in your own iCloud that restores with your pattern, a recovery phrase, and no ads or tracking.
+### How do you switch from Privault without losing photos?
+Export from Privault, check the copies, import them into the new vault, and only then delete anything. Privault's listing says you can export through the Camera Roll or its Wi-Fi server.
+- Count what you have. Note how many photos and videos are in each Privault folder, including the secondary folder.
+- Export to the Camera Roll from inside Privault, folder by folder. For large videos, the Wi-Fi server to a computer may be quicker.
+- Check the copies in Photos: counts match, videos play, quality is full size.
+- Import into Noxium. Turn on Settings › App settings › Offer to delete from Photos so it offers to remove the copies from Photos after import. Then empty Recently Deleted in Photos.
+- Check the backup in Settings › iCloud backup : nothing waiting.
+- Only then delete files from Privault, and cancel any subscription in Settings › [your name] › Subscriptions .
+Watch out
+Exported photos sit unencrypted in your Photos library until the new vault imports them. Do the move in one sitting, on a phone only you are using. More tips: moving a vault without losing photos .
+Encryption you can read about
+Noxium encrypts everything on your iPhone with AES-256-GCM and backs up only encrypted data to your own iCloud. Free for 150 photos and 10 videos.
+Download on the App Store
+Available on the App Store for iPhone and iPad.
+### Questions people ask
+Is Privault safe?
+It hides files behind a passcode and says its storage is encrypted, but its listing doesn't name the cipher, describe a backup or explain recovery, and it was last updated on 28 February 2025. Our checklist in are photo vault apps safe? covers what to check.
+Is Privault free?
+Yes, to download. On the US App Store, Pro costs $3.49 a month, $24.99 a year or $45.99 once, and removing ads is a $2.99 purchase.
+Does Privault back up to iCloud?
+Its App Store listing doesn't mention iCloud or any cloud backup. It describes export to the Camera Roll and a Wi-Fi server for copying files to a computer.
+What is Privault's secondary passcode?
+A second passcode that opens a separate folder instead of your main files. The listing suggests giving it out if someone forces you to open the app.
+What if I forget my Privault passcode?
+The listing doesn't describe recovery. Don't delete the app, and contact the developer at support@binspir.com. Our guide to a forgotten vault password explains what's safe to try.
+### Sources
+- Privault - Private Photo Vault, US App Store listing : description, ratings, version history, in-app purchases and privacy label, checked 14 November 2026.
+- Private Photo Vault - Noxium, US App Store listing , checked 14 November 2026.
+App names are trademarks of their owners and are used only to identify their apps.
+Something wrong or out of date? Email business@inertiaprojects.info and we'll fix it.
+Related
+- Photo vault apps compared
+- On-device encryption
+- What is a decoy vault?
+- Keepsafe alternatives
+
+---
+
+# Keepsafe review: how it compares with Noxium in 2026
+
+URL: https://getnoxium.app/compare/keepsafe
+Last updated: 2026-11-14
+
+Compare
+## Keepsafe review: how it compares with Noxium in 2026
+By Inertia Projects · Last updated 14 November 2026
+Short answer
+Keepsafe is a polished, actively updated vault that syncs across iPhone and Android through an email account and its own Private Cloud. Its free plan is supported by ads, and Premium is a subscription. Pick Keepsafe if you want an email account to recover through and Android support; pick Noxium if you want no account, a backup encrypted in your own iCloud and a one-time price.
+Keepsafe has been on the App Store since April 2012 and has 386,264 US ratings at 4.7 stars, which makes it one of the best-known photo vaults there is. This review looks at what Keepsafe does well and where it falls short, using its App Store listing (checked on 14 November 2026) and its help center, then compares it with Noxium. We make Noxium, so weigh what we say about our own app accordingly.
+Already decided to leave Keepsafe? Our list of Keepsafe alternatives with no account compares four of them, and Vaultaire vs Keepsafe covers that pair.
+### Noxium vs Keepsafe at a glance
+Source: each app's US App Store listing, checked 14 November 2026, and the Keepsafe Help Center. Noxium: our published facts.
+Noxium Keepsafe
+Account needed No Yes, an email account
+Opens with Pattern on a 5×5 plate; Face ID optional PIN; Touch ID (listing)
+Encryption named AES-256-GCM, key from your pattern (Argon2id) Listing: "military-grade". Help center: AES-256
+Backup Your own iCloud, encrypted, free Keepsafe's Private Cloud: first 200 items free, up to 10,000 with Premium
+Platforms iPhone and iPad iPhone, iPad and Android, synced through your account
+Decoy Yes, 1 free Not in listing (the help center has a decoy vault article)
+Forgot your code Recovery phrase you write down at setup Through your email account
+Ads None Free plan is ad-supported; Premium is ad-free
+Price (US) Free; Pro $2.99/week, $17.99/year or $39.99 once Free; Premium $9.99/month or $23.99/year (purchases $4.99–$35.99)
+Privacy label Data Not Collected Data Used to Track You; Data Not Linked to You
+Last update 13 November 2026 12 November 2026
+### What does Keepsafe do well, and where does it fall short?
+Keepsafe is mature, well designed and works across platforms. Its trade-offs come from the account, the company cloud and the ads.
+#### What Keepsafe does well
+- It's actively maintained. Version 13.36.0 came out on 12 November 2026.
+- Android and iPhone. The listing says your items sync to all your Keepsafe installations on any platform. If you switch between iPhone and Android, that's rare among vaults.
+- Recovery through email. Because there's an account, there's a way back in if you forget your PIN, and the help center explains what to do if you lose access to that email.
+- Useful extras. Album Lock gives single albums their own PIN (Premium), Safe Send shares a photo for a limited time, and Trash Recovery brings back items you deleted by mistake (Premium).
+- Space Saver. Premium can keep small copies on the phone and the originals in the cloud, which frees space on a full iPhone.
+- A built-in camera , albums, slideshows, and iPad support.
+#### Where Keepsafe falls short
+- An account and a company cloud. Your vault is tied to an email address, and your backup lives on Keepsafe's servers, not in your own iCloud.
+- Vague encryption claims in the listing. "Military-grade" says little; the help center is more specific and names AES-256.
+- Ads on the free plan , and its privacy label lists data used to track you.
+- Subscription only. The listing shows monthly and yearly Premium, with no lifetime option, and the free plan backs up only your first 200 items.
+- Space Saver's catch. With it on, the full-size originals exist only in Keepsafe's cloud. Leaving later means downloading them first.
+### How are Keepsafe and Noxium different?
+The main difference is who holds your account and your backup. With Keepsafe, the company does. With Noxium, there is no account, and the backup sits in your own iCloud, encrypted with a key only your pattern makes.
+#### Account and recovery
+Keepsafe signs you in with an email address, which gives you a reset path. Noxium has no account and no reset by anyone, including us or Apple. Instead, you write down a recovery phrase at setup, and it opens your vault if you forget your pattern. Lose both and nobody can open the vault, which is also why nobody else can.
+#### Backup
+Keepsafe backs up to its Private Cloud: the first 200 items on the free plan, up to 10,000 with Premium. Noxium backs up everything, free, to your own private iCloud, and only encrypted data leaves the phone. See encrypted iCloud backup for what's uploaded and how restore works.
+#### Encryption
+Both say they use AES-256. Noxium names the whole chain: Argon2id turns your pattern into a key, every file is sealed with AES-256-GCM on the iPhone, and names, dates and places are encrypted too. With Keepsafe, a copy of your files also lives on the company's servers, tied to your account.
+#### Decoys and lock
+Noxium opens with a pattern across a 5×5 plate, and a second pattern opens a separate decoy vault, 1 on the free plan. Keepsafe opens with a PIN, and its listing mentions Touch ID. Its listing doesn't mention a decoy, though its help center has an article about moving content out of a "Decoy Vault".
+#### Price and privacy
+Over a year, Keepsafe Premium is $23.99; Noxium Pro is $17.99. Noxium also sells Pro once for $39.99; Keepsafe's listing shows no lifetime plan. Noxium has no ads and no analytics, and its privacy label is Data Not Collected.
+### Which should you choose?
+- Pick Keepsafe if you use Android too, you want an email account to recover through, or you want Space Saver to free up phone storage.
+- Pick Noxium if you don't want an account or a company cloud, you want your backup in your own iCloud, encrypted, and you'd rather pay once than subscribe.
+### How do you switch from Keepsafe without losing photos?
+Export from Keepsafe to your Photos library, check everything arrived at full quality, import it into the new vault, and only then delete Keepsafe's copies.
+- Mind Space Saver. If you use it, the originals are in Keepsafe's cloud. Make sure what you export is full size: export a few photos first and check them before you go on.
+- Export album by album. Keepsafe's help center describes it: open an album, select the items, tap the send icon at the bottom left, and choose Export to Camera Roll .
+- Check the export in Photos: counts match, videos play, and a few photos open at full size. Exported photos return to the date they were taken, so look further back in your library.
+- Import into Noxium with Settings › App settings › Offer to delete from Photos turned on. Then empty Recently Deleted in Photos.
+- Check Noxium's backup in Settings › iCloud backup .
+- Only then delete items from Keepsafe and cancel Premium in Settings › [your name] › Subscriptions .
+Watch out
+Exported photos sit unencrypted in your Photos library until the new vault imports them. Do the move in one sitting, on a phone only you are using.
+No account. Your own iCloud.
+Noxium opens with a pattern only you know and backs up, encrypted, to your own iCloud. Free for 150 photos and 10 videos.
+Download on the App Store
+Available on the App Store for iPhone and iPad.
+### Questions people ask
+Is Keepsafe safe to use?
+It's a long-running, actively updated app, and its help center says it encrypts files with AES-256. The trade-off is that your account and your cloud copy sit with Keepsafe, and the free plan shows ads. Our checklist: are photo vault apps safe?
+Is Keepsafe free?
+It has a free, ad-supported plan that backs up your first 200 items. Premium costs $9.99 a month or $23.99 a year on the US App Store in November 2026.
+Does Keepsafe store my photos on its servers?
+Its backup does. Private Cloud stores your backed-up items with Keepsafe, and with Space Saver on, the full-size originals are only there.
+Does Keepsafe work on Android?
+Yes. Its listing says items sync to your Keepsafe installations on any platform, through your account. Noxium is for iPhone and iPad only.
+How do I get my photos out of Keepsafe?
+Select them in an album, tap the send icon and choose Export to Camera Roll. If you use Space Saver, check that the exported photos are full size.
+### Sources
+- Secret Photo Vault: Keepsafe, US App Store listing : description, ratings, version, in-app purchases and privacy label, checked 14 November 2026.
+- Keepsafe Help Center, How does Keepsafe protect my data? (AES-256).
+- Keepsafe Help Center, Keepsafe Subscriptions (free backup of the first 200 items).
+- Keepsafe Help Center, I lost access to my Keepsafe email address .
+- Keepsafe Help Center, Exporting Photos from Photo Vault and Moving Decoy Vault content to your real vault .
+- Private Photo Vault - Noxium, US App Store listing , checked 14 November 2026.
+App names are trademarks of their owners and are used only to identify their apps.
+Something wrong or out of date? Email business@inertiaprojects.info and we'll fix it.
+Related
+- Keepsafe alternatives
+- Vaultaire vs Keepsafe
+- Encrypted iCloud backup
+- Vaults without subscriptions or ads
+
+---
+
+# Private Photo Vault review: how it compares with Noxium
+
+URL: https://getnoxium.app/compare/private-photo-vault
+Last updated: 2026-11-14
+
+Compare
+## Private Photo Vault review: how it compares with Noxium
+By Inertia Projects · Last updated 14 November 2026
+Short answer
+Private Photo Vault (Pic Safe) is the most-reviewed vault on the US App Store, with over a million ratings, a break-in report, a decoy password and a private browser. Its encrypted Cloud Vault backup is a Premium feature in its own cloud; the free version doesn't back up. Pick it for its features and track record; pick Noxium if you want a free encrypted backup in your own iCloud and no data used to track you.
+Private Photo Vault, from Legendary Software Labs, has been on the App Store since February 2011. With 1,019,778 US ratings at 4.8 stars, it's the most familiar name in photo vaults. This review covers what it does well and where it falls short, from its App Store listing checked on 14 November 2026, and compares it with Noxium. We make Noxium, so weigh what we say about our own app accordingly.
+### Noxium vs Private Photo Vault at a glance
+Source: each app's US App Store listing, checked 14 November 2026. Noxium: our published facts.
+Noxium Private Photo Vault
+Account needed No Not in listing; Cloud Vault needs a Cloud Vault Password
+Opens with Pattern on a 5×5 plate; Face ID optional PIN or pattern lock
+Encryption named AES-256-GCM on the device, key from your pattern (Argon2id) Cloud backup called "encrypted"; cipher not named
+Backup Your own iCloud, encrypted, free Cloud Vault in its own cloud, Premium only
+Decoy Yes, 1 free Decoy password
+Break-in report No Photo + GPS of break-in attempts
+Lock when face down Yes Yes
+Forgot your code Recovery phrase you write down at setup Not in listing for the app lock; a lost Cloud Vault Password can't be recovered
+Price (US) Free; Pro $2.99/week, $17.99/year or $39.99 once Free; Premium purchases $6.99–$39.99
+Privacy label Data Not Collected Data Used to Track You; Data Linked to You
+Last update 13 November 2026 12 November 2026 (version 30.0)
+Requires iOS 17 or later iOS 15 or later
+For 17 vault apps in one table, see the full photo vault comparison .
+### What does Private Photo Vault do well, and where does it fall short?
+It has more features than almost any vault and a 15-year track record. Its gaps are in what's free and in what the listing says about encryption on the phone.
+#### What Private Photo Vault does well
+- Track record. On the App Store since 2011, still updated (version 30.0 came out on 12 November 2026), and rated 4.8 by over a million people.
+- Choice of lock. A PIN or a pattern, plus a separate password for individual albums.
+- Break-in report. The listing describes a photo plus GPS location of break-in attempts. Noxium doesn't have this.
+- Decoy password and face-down lock , for when someone grabs the phone or makes you open it.
+- A Cloud Vault that the company can't read. The listing says your Cloud Vault Password is never backed up to its servers and is what encrypts your files, so its employees can't view them.
+- Extras : a private web browser that saves straight to the vault, wireless transfer, iTunes syncing, and iPad support.
+#### Where Private Photo Vault falls short
+- No backup on the free version. The listing says so directly and asks free users to back up their own photos. Lose the phone and the vault goes with it.
+- Encryption on the phone isn't described. The listing describes the Cloud Vault as encrypted but says nothing about how files stored on the iPhone are protected, beyond the passcode.
+- Its own cloud, not yours. Cloud Vault backups live with the developer, protected by your Cloud Vault Password. Forget that password and the listing says you can't view your Cloud Vault data.
+- Tracking. Its privacy label lists data used to track you and data linked to you.
+- Unclear pricing. The listing shows Premium purchases from $6.99 to $39.99 without saying which is which.
+### How are Private Photo Vault and Noxium different?
+The biggest difference is the backup: Noxium's is free and goes to your own iCloud, while Private Photo Vault's is Premium and goes to its own cloud. After that, it's how much each says about encryption, and what each tracks.
+#### Backup and restore
+Noxium backs up everything to your own private iCloud on the free plan, and only encrypted data leaves the phone. On a new iPhone you draw your pattern and the vault restores; see encrypted iCloud backup . Private Photo Vault's Cloud Vault also encrypts with a secret only you know, which is good, but it needs Premium and lives on the developer's servers.
+#### Encryption on the phone
+Noxium encrypts every photo, video and note on the iPhone with AES-256-GCM, with a key made from your pattern through Argon2id. Names, dates and places are encrypted too, and the pattern is never stored. Private Photo Vault's listing names no cipher and doesn't describe encryption of the files on the phone. Our page on on-device encryption explains why that part matters.
+#### Locks, decoys and alerts
+Both offer a pattern lock, a decoy and a face-down lock. Private Photo Vault adds a break-in report and per-album passwords. Noxium adds album patterns (Pro) and an emergency erase pattern (Pro), which opens a harmless vault and erases the others.
+#### Forgetting your code
+Noxium can't be reset by anyone. You write down a recovery phrase at setup, and it opens your vault on this iPhone or a new one. Private Photo Vault's listing warns that a forgotten Cloud Vault Password means losing access to that cloud data; it doesn't describe recovery for the app lock itself.
+#### Price and privacy
+Noxium Pro is $2.99 a week, $17.99 a year or $39.99 once, and the free plan includes 150 photos, 10 videos and full backup. Noxium has no ads, no accounts and no analytics; its privacy label is Data Not Collected.
+### Which should you choose?
+- Pick Private Photo Vault if you want a break-in report, a private browser, a long track record, or an iPhone on iOS 15 or 16.
+- Pick Noxium if you want a free encrypted backup in your own iCloud, encryption on the phone that's named and documented, a recovery phrase, and no data used to track you.
+### How do you switch from Private Photo Vault without losing photos?
+Export to the Photos app, check the copies, import them into the new vault, and only then delete anything. Private Photo Vault's listing says it can import from and export to the Photos app.
+- Count what you have in each album, including any album with its own password and the decoy.
+- Export each album to Photos from inside Private Photo Vault. If you use Cloud Vault with Space Saver, make sure the full-size originals are on the phone first.
+- Check the copies in Photos: counts match, videos play, photos are full size.
+- Import into Noxium. With Settings › App settings › Offer to delete from Photos on, it offers to remove the copies from Photos. Then empty Recently Deleted .
+- Check the backup in Noxium's Settings › iCloud backup .
+- Only then delete from Private Photo Vault and cancel Premium in Settings › [your name] › Subscriptions .
+Watch out
+Photos you export are unencrypted in your library until the new vault imports them. Move them in one sitting, on a phone only you are using. More on this in moving a vault without losing photos .
+Backup included. In your own iCloud.
+Noxium backs up an encrypted copy of your vault to your own iCloud, on the free plan. On a new iPhone, draw your pattern and it restores.
+Download on the App Store
+Available on the App Store for iPhone and iPad.
+### Questions people ask
+Is Private Photo Vault safe?
+It's a long-running, actively updated app with a Cloud Vault the company says it can't read. Its listing doesn't describe encryption of files on the phone, the free version has no backup, and its privacy label lists data used to track you. See are photo vault apps safe?
+Does Private Photo Vault back up my photos?
+Only with Premium. Its listing says the free version doesn't back up to Cloud Vault and asks you to keep your own backups.
+What is the break-in report?
+Its listing describes it as a photo plus GPS location recorded when someone tries to get in with the wrong code, so you can see who tried and where.
+What happens if I forget my Cloud Vault Password?
+Its listing says you won't be able to view your Cloud Vault data, because the password is never stored on its servers. Write it down somewhere safe.
+Is Private Photo Vault the same as Keepsafe?
+No. They're different apps from different companies. Our Keepsafe review compares that one with Noxium.
+### Sources
+- Private Photo Vault - Pic Safe, US App Store listing : description, ratings, version, in-app purchases and privacy label, checked 14 November 2026.
+- Private Photo Vault - Noxium, US App Store listing , checked 14 November 2026.
+App names are trademarks of their owners and are used only to identify their apps.
+Something wrong or out of date? Email business@inertiaprojects.info and we'll fix it.
+Related
+- Photo vault apps compared
+- Encrypted iCloud backup
+- Noxium vs Keepsafe
+- Keepsafe alternatives
+
+---
+
+# Vaultaire review: how it compares with Noxium in 2026
+
+URL: https://getnoxium.app/compare/vaultaire
+Last updated: 2026-11-14
+
+Compare
+## Vaultaire review: how it compares with Noxium in 2026
+By Inertia Projects · Last updated 14 November 2026
+Short answer
+Vaultaire is a well-built, encrypted vault: AES-256-GCM, a 5×5 pattern lock, no account, decoy vaults and an encrypted iCloud backup on its free plan. Noxium works the same way on those points. Pick Vaultaire for 3 free vaults, 31 languages and family plans; pick Noxium for a bigger free plan, Argon2id key stretching, cheaper yearly Pro and a Data Not Collected privacy label.
+Vaultaire, from Wraxle LLC, came to the App Store in March 2026 and has 65 US ratings at 4.7 stars. Of all the vaults we compare, it's the one most like Noxium: both encrypt on the iPhone, both open with a pattern on a 5×5 grid, and both back up to your own iCloud without an account. That makes the differences smaller and more technical. We make Noxium, so weigh what we say about our own app accordingly. Everything about Vaultaire here comes from its App Store listing (checked 14 November 2026) and its own feature pages.
+### Noxium vs Vaultaire at a glance
+Source: each app's US App Store listing, checked 14 November 2026, and vaultaire.app. Noxium: our published facts.
+Noxium Vaultaire
+Account needed No No
+Opens with Pattern across 6+ of 25 bolts (5×5); Face ID optional Pattern across 6+ of 25 dots (5×5)
+File encryption AES-256-GCM AES-256-GCM
+Pattern to key Argon2id, 64 MiB, 3 passes PBKDF2-HMAC-SHA512, 600,000 iterations
+Backup Your own iCloud, encrypted, free Your own iCloud, encrypted, free; on by default
+Free plan 150 photos, 10 videos, unlimited notes, 1 decoy vault Up to 3 vaults, 100 photos and 10 videos in total
+Panic option (Pro) Emergency erase: erases the other vaults Duress vault: removes access to the other vaults on this device
+Recovery 8-word phrase (BIP-39 words), shown once 9-word sentence, viewable later in settings
+Price (US) Pro $2.99/week, $17.99/year or $39.99 once Pro $1.99/week, $5.99/month, $19.99/year or $39.99 lifetime; family plans $49.99/year or $99.99 lifetime
+Privacy label Data Not Collected Data Linked to You; Data Not Linked to You (none used to track you)
+App languages 16 31
+US ratings None yet (released November 2026) 65, 4.7★
+### What does Vaultaire do well, and where does it fall short?
+Vaultaire gets the important things right: real encryption on the device, no account, a free encrypted backup and decoys. Its trade-offs are a smaller free plan, a faster-to-compute key derivation, and some data collection.
+#### What Vaultaire does well
+- Encryption it explains. The listing names AES-256-GCM, and its website describes how the pattern becomes a key and how backups are protected. Few vaults publish this much.
+- No account, no ads, no tracking. Its privacy label lists no data used to track you, and the listing says there are no ads.
+- Free backup. Encrypted iCloud backup is included on the free plan and turned on by default.
+- 3 vaults on the free plan , so a decoy plus two more without paying.
+- Family plans. Pro for your Apple family, at $49.99 a year or $99.99 for life. Noxium doesn't sell one.
+- 31 languages , against Noxium's 16, and import from Files and by drag and drop as well as from Photos.
+- A head start. Eight months on the App Store, with ratings and reviews you can read.
+#### Where Vaultaire falls short
+- A smaller free plan : 100 photos and 10 videos in total, across all vaults.
+- PBKDF2 rather than a memory-hard function. 600,000 iterations of PBKDF2-HMAC-SHA512 is a reasonable, standard choice, but it uses almost no memory, so it is cheaper to run in bulk on graphics cards than Argon2id, which is designed to need a lot of memory for every guess.
+- The recovery sentence can be viewed later from the open vault's settings, which Vaultaire's own page notes means anyone who gets into the vault may see it.
+- Some data collected. Its privacy label lists data linked to you and data not linked to you; it doesn't say "Data Not Collected".
+- Optimized imports by default. Vaultaire's own guide says imports default to an Optimized setting that can convert or downscale photos and videos, with an Original setting you can choose instead.
+### How are Vaultaire and Noxium different?
+On the big things they match: no account, AES-256-GCM on the device, a 5×5 pattern, decoys, and a free encrypted backup in your own iCloud. The differences are in how the pattern becomes a key, how recovery works, the free plan, price and data collection.
+#### How the pattern becomes a key
+Noxium stretches your pattern with Argon2id using 64 MiB of memory and 3 passes, and the pattern itself is never stored. Vaultaire uses PBKDF2-HMAC-SHA512 with 600,000 iterations and, its site says, keeps the pattern inside an encrypted database in the iOS Keychain. Both are sound designs; Argon2id is the newer standard because the memory it needs makes mass guessing more expensive. For the background, see how encrypted photo vaults work and our pattern lock page.
+#### Recovery
+Both give you a phrase in case you forget your pattern, and both work on a new iPhone through the iCloud backup. Noxium's is 8 random words from the BIP-39 list (or 6–9 words of your own), shown once at setup and never stored, so it can't be shown again; you can make a new one in Settings. Vaultaire's is a 9-word generated sentence that you can view again later in settings. One is safer if someone gets into your vault; the other is easier if you lose your paper copy. More on ours: recovery phrase .
+#### Decoys and panic options
+Both open a decoy vault with a second pattern. With Pro, both have a pattern for when you're forced to open the app: Noxium's emergency erase opens a harmless vault and erases the others; Vaultaire's duress vault removes access to the other vaults on that device. Read what a decoy vault is for the limits of both.
+#### Free plan and price
+Noxium's free plan holds 150 photos, 10 videos and unlimited notes, with 1 decoy vault. Vaultaire's holds 100 photos and 10 videos across up to 3 vaults. For Pro, Vaultaire's yearly plan is $19.99; Noxium's is $17.99. Both sell lifetime Pro for $39.99. Vaultaire's weekly plan is cheaper: $1.99, against Noxium's $2.99. If Noxium Pro ends, you keep full access to view, export and back up everything already in your vault.
+#### Privacy label
+Noxium has no ads, no accounts and no analytics, and its label is Data Not Collected. Vaultaire lists no tracking but does list data linked to you and data not linked to you.
+### Which should you choose?
+- Pick Vaultaire if you want 3 vaults without paying, a family plan, the app in a language Noxium doesn't offer yet, or an app with a few months of reviews behind it.
+- Pick Noxium if you want a bigger free plan, Argon2id key stretching, a recovery phrase that is never stored, a cheaper yearly Pro, and a Data Not Collected label.
+### How do you switch from Vaultaire without losing photos?
+Export to Photos, check the copies, import into the new vault, and only then delete anything. Vaultaire says you can export files back into Photos.
+- Check your import setting. If photos went into Vaultaire under its Optimized setting, the export can't bring back the original size. Compare a few with the originals if you still have them.
+- Export each vault to Photos , one at a time, including any decoy you want to keep. Note how many items each holds.
+- Check the copies : counts match, videos play, dates look right.
+- Import into Noxium with Settings › App settings › Offer to delete from Photos on, then empty Recently Deleted in Photos.
+- Wait for Noxium's backup to finish in Settings › iCloud backup .
+- Only then delete from Vaultaire, including its iCloud backup if you no longer want it, and cancel Pro in Settings › [your name] › Subscriptions .
+Watch out
+Exported photos are unencrypted in your library until the new vault imports them. Do the move in one sitting, on a phone only you are using.
+Same idea, more room on the free plan
+Noxium is free for 150 photos, 10 videos and unlimited notes, with full encrypted iCloud backup and restore.
+Download on the App Store
+Available on the App Store for iPhone and iPad.
+### Questions people ask
+Is Vaultaire safe?
+It encrypts files on the device with AES-256-GCM, needs no account, and its iCloud backup is encrypted before upload. Like any vault, it's only as strong as your pattern, so use a long one.
+Is Vaultaire free?
+Yes, for up to 3 vaults, 100 photos and 10 videos, with encrypted iCloud backup. Pro starts at $1.99 a week on the US App Store; lifetime is $39.99.
+Does Vaultaire need an account?
+No. It works without an account, and its backups go to your own iCloud. Noxium works the same way.
+What if I forget my Vaultaire pattern?
+Use the 9-word recovery sentence from setup. Vaultaire says that if you lose both the pattern and the sentence, nobody can restore the vault.
+Vaultaire or Keepsafe?
+They're built differently: Vaultaire has no account and backs up to your iCloud; Keepsafe uses an email account and its own cloud. See Vaultaire vs Keepsafe .
+### Sources
+- Photo Vault - Vaultaire, US App Store listing : description, ratings, version, in-app purchases, languages and privacy label, checked 14 November 2026.
+- Vaultaire, Pattern encryption (5×5 grid, PBKDF2-HMAC-SHA512, 600,000 iterations), checked 14 November 2026.
+- Vaultaire, Secret phrase (9-word sentence, viewable in settings), checked 14 November 2026.
+- Vaultaire, Export photos from a vault app (Optimized and Original import settings), checked 14 November 2026.
+- Private Photo Vault - Noxium, US App Store listing , checked 14 November 2026.
+App names are trademarks of their owners and are used only to identify their apps.
+Something wrong or out of date? Email business@inertiaprojects.info and we'll fix it.
+Related
+- Vaultaire vs Keepsafe
+- Pattern lock
+- Recovery phrase
+- Keepsafe alternatives
 
 ---
 
