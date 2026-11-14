@@ -100,6 +100,17 @@
       "crumb": "Guide",
       "published": "2026-11-13",
       "updated": "2026-11-13"
+    },
+    "/guides/photo-vault-lost-photos": {
+      "source": "2026-11-11",
+      "title": "Cassaforte per foto: recuperare foto perse o eliminate",
+      "description": "Foto sparite da Private Photo Vault, Keepsafe o un’altra app cassaforte? Dove possono essere ancora, come recuperarle e cosa evitare.",
+      "headline": "La tua app cassaforte ha perso le foto: cosa fare adesso",
+      "summary": "Cosa fare, e cosa no, quando le foto spariscono da un’app cassaforte, e dove potrebbero essere ancora.",
+      "crumb": "Foto sparite dalla cassaforte",
+      "keyword": "recuperare foto cassaforte app",
+      "published": "2026-11-13",
+      "updated": "2026-11-13"
     }
   },
   "facts": [

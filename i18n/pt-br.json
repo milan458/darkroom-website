@@ -100,6 +100,17 @@
       "crumb": "Guias",
       "published": "2026-11-13",
       "updated": "2026-11-13"
+    },
+    "/guides/photo-vault-lost-photos": {
+      "source": "2026-11-11",
+      "title": "Cofre de fotos: como recuperar fotos sumidas ou apagadas",
+      "description": "Fotos sumiram do Private Photo Vault, do Keepsafe ou de outro app de cofre? Onde elas ainda podem estar, como recuperar e o que evitar.",
+      "headline": "Seu app de cofre de fotos perdeu suas fotos: o que fazer agora",
+      "summary": "O que fazer, e o que não fazer, quando fotos somem de um app de cofre, e onde elas ainda podem estar.",
+      "crumb": "Fotos sumidas do cofre",
+      "keyword": "recuperar fotos cofre de fotos",
+      "published": "2026-11-13",
+      "updated": "2026-11-13"
     }
   },
   "facts": [

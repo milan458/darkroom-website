@@ -100,6 +100,17 @@
       "crumb": "Guides",
       "published": "2026-11-13",
       "updated": "2026-11-13"
+    },
+    "/guides/photo-vault-lost-photos": {
+      "source": "2026-11-11",
+      "title": "Coffre photo : récupérer des photos perdues ou supprimées",
+      "description": "Des photos ont disparu de Private Photo Vault, Keepsafe ou d’une autre app de coffre? Où elles peuvent encore être, comment les récupérer, quoi éviter.",
+      "headline": "Votre app de coffre photo a perdu vos photos : quoi faire maintenant",
+      "summary": "Quoi faire, et ne pas faire, quand des photos disparaissent d’une app de coffre, et où elles pourraient encore être.",
+      "crumb": "Photos perdues dans un coffre",
+      "keyword": "récupérer photos coffre photo",
+      "published": "2026-11-13",
+      "updated": "2026-11-13"
     }
   },
   "facts": [

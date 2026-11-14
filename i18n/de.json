@@ -100,6 +100,17 @@
       "crumb": "Anleitungen",
       "published": "2026-11-13",
       "updated": "2026-11-13"
+    },
+    "/guides/photo-vault-lost-photos": {
+      "source": "2026-11-11",
+      "title": "Foto-Tresor: verlorene Fotos wiederherstellen",
+      "description": "Fotos aus Private Photo Vault, Keepsafe oder einer anderen Tresor-App weg? Wo sie noch sein können, wie du sie zurückholst und was du vermeiden solltest.",
+      "headline": "Deine Foto-Tresor-App hat deine Fotos verloren: Was du jetzt tun solltest",
+      "summary": "Was du tun solltest, und was nicht, wenn Fotos aus einer Tresor-App verschwinden, und wo sie noch sein könnten.",
+      "crumb": "Fotos im Tresor verloren",
+      "keyword": "foto tresor fotos wiederherstellen",
+      "published": "2026-11-13",
+      "updated": "2026-11-13"
     }
   },
   "facts": [

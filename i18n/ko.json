@@ -100,6 +100,17 @@
       "crumb": "가이드",
       "published": "2026-11-13",
       "updated": "2026-11-13"
+    },
+    "/guides/photo-vault-lost-photos": {
+      "source": "2026-11-11",
+      "title": "사진 금고 앱에서 사라진 사진 복구 방법",
+      "description": "Private Photo Vault, Keepsafe 등 금고 앱에서 사진이 사라졌다면. 남아 있을 만한 곳, 복구 순서, 하면 안 되는 일.",
+      "headline": "사진 금고 앱에서 사진이 사라졌다면: 지금 해야 할 일",
+      "summary": "금고 앱에서 사진이 사라졌을 때 해야 할 일과 하지 말아야 할 일, 사진이 남아 있을 만한 곳.",
+      "crumb": "금고 사진이 사라졌을 때",
+      "keyword": "사진 금고 앱 사진 복구",
+      "published": "2026-11-13",
+      "updated": "2026-11-13"
     }
   },
   "facts": [

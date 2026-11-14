@@ -166,6 +166,17 @@
       "crumb": "指南",
       "published": "2026-11-13",
       "updated": "2026-11-13"
+    },
+    "/guides/photo-vault-lost-photos": {
+      "source": "2026-11-11",
+      "title": "照片保險庫 App 照片不見了？救回方法",
+      "description": "Private Photo Vault、Keepsafe 等保險庫 App 的照片不見了？照片可能還在哪裡、怎麼救回，以及不能做的事。",
+      "headline": "照片保險庫 App 弄丟了你的照片：現在該怎麼辦",
+      "summary": "保險庫 App 的照片不見時該做和不該做的事，以及照片可能還在的地方。",
+      "crumb": "保險庫照片不見了",
+      "keyword": "照片保險庫 照片不見",
+      "published": "2026-11-13",
+      "updated": "2026-11-13"
     }
   }
 }

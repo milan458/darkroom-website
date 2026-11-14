@@ -64,6 +64,16 @@
     <loc>https://getnoxium.app/guides/photo-vault-lost-photos</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/guides/photo-vault-lost-photos"/>
   </url>
   <url>
     <loc>https://getnoxium.app/guides/keepsafe-alternatives</loc>
@@ -216,6 +226,21 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/guides/"/>
   </url>
   <url>
+    <loc>https://getnoxium.app/de/guides/photo-vault-lost-photos</loc>
+    <lastmod>2026-11-13</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/guides/photo-vault-lost-photos"/>
+  </url>
+  <url>
     <loc>https://getnoxium.app/fr/guides/keepsafe-alternatives</loc>
     <lastmod>2026-11-14</lastmod>
     <priority>0.7</priority>
@@ -274,6 +299,21 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/guides/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/guides/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/guides/"/>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/fr/guides/photo-vault-lost-photos</loc>
+    <lastmod>2026-11-13</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/guides/photo-vault-lost-photos"/>
   </url>
   <url>
     <loc>https://getnoxium.app/es/guides/keepsafe-alternatives</loc>
@@ -336,6 +376,21 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/guides/"/>
   </url>
   <url>
+    <loc>https://getnoxium.app/es/guides/photo-vault-lost-photos</loc>
+    <lastmod>2026-11-13</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/guides/photo-vault-lost-photos"/>
+  </url>
+  <url>
     <loc>https://getnoxium.app/pt-br/guides/keepsafe-alternatives</loc>
     <lastmod>2026-11-14</lastmod>
     <priority>0.7</priority>
@@ -394,6 +449,21 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/guides/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/guides/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/guides/"/>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/pt-br/guides/photo-vault-lost-photos</loc>
+    <lastmod>2026-11-13</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/guides/photo-vault-lost-photos"/>
   </url>
   <url>
     <loc>https://getnoxium.app/it/guides/keepsafe-alternatives</loc>
@@ -456,6 +526,21 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/guides/"/>
   </url>
   <url>
+    <loc>https://getnoxium.app/it/guides/photo-vault-lost-photos</loc>
+    <lastmod>2026-11-13</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/guides/photo-vault-lost-photos"/>
+  </url>
+  <url>
     <loc>https://getnoxium.app/ja/guides/keepsafe-alternatives</loc>
     <lastmod>2026-11-14</lastmod>
     <priority>0.7</priority>
@@ -514,6 +599,21 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/guides/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/guides/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/guides/"/>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/ja/guides/photo-vault-lost-photos</loc>
+    <lastmod>2026-11-13</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/guides/photo-vault-lost-photos"/>
   </url>
   <url>
     <loc>https://getnoxium.app/ko/guides/keepsafe-alternatives</loc>
@@ -576,6 +676,21 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/guides/"/>
   </url>
   <url>
+    <loc>https://getnoxium.app/ko/guides/photo-vault-lost-photos</loc>
+    <lastmod>2026-11-13</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/guides/photo-vault-lost-photos"/>
+  </url>
+  <url>
     <loc>https://getnoxium.app/zh-hant/guides/keepsafe-alternatives</loc>
     <lastmod>2026-11-14</lastmod>
     <priority>0.7</priority>
@@ -634,5 +749,20 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/guides/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/guides/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/guides/"/>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/zh-hant/guides/photo-vault-lost-photos</loc>
+    <lastmod>2026-11-13</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/guides/photo-vault-lost-photos"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/guides/photo-vault-lost-photos"/>
   </url>
 </urlset>

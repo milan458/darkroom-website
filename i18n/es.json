@@ -100,6 +100,17 @@
       "crumb": "Guías",
       "published": "2026-11-13",
       "updated": "2026-11-13"
+    },
+    "/guides/photo-vault-lost-photos": {
+      "source": "2026-11-11",
+      "title": "Caja fuerte de fotos: recuperar fotos perdidas o borradas",
+      "description": "¿Faltan fotos en Private Photo Vault, Keepsafe u otra app de caja fuerte? Dónde pueden seguir, cómo recuperarlas y qué no hacer.",
+      "headline": "Tu app de caja fuerte de fotos ha perdido tus fotos: qué hacer ahora",
+      "summary": "Qué hacer, y qué no, cuando desaparecen fotos de una app de caja fuerte, y dónde pueden seguir.",
+      "crumb": "Fotos perdidas en la caja fuerte",
+      "keyword": "recuperar fotos caja fuerte de fotos",
+      "published": "2026-11-13",
+      "updated": "2026-11-13"
     }
   },
   "facts": [
