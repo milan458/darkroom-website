@@ -326,9 +326,9 @@
           "developer": "KeepSafe Software, Inc",
           "price": "Free",
           "rating": 4.7,
-          "ratingCount": 386101,
-          "version": "13.35.0",
-          "lastUpdate": "2026-10-26",
+          "ratingCount": 386264,
+          "version": "13.36.0",
+          "lastUpdate": "2026-11-12",
           "minimumOs": "17.0",
           "url": "https://apps.apple.com/us/app/secret-photo-vault-keepsafe/id510873505",
           "privacyLabel": [
@@ -345,12 +345,12 @@
               "price": "$9.99"
             },
             {
-              "name": "KeepSafe Premium",
-              "price": "$23.99"
-            },
-            {
               "name": "Keepsafe Premium",
               "price": "$12.99"
+            },
+            {
+              "name": "KeepSafe Premium",
+              "price": "$23.99"
             },
             {
               "name": "Keepsafe Premium: Cloud Hider",
@@ -369,7 +369,7 @@
               "price": "$35.99"
             }
           ],
-          "checked": "2026-11-11"
+          "checked": "2026-11-14"
         },
         "de": {
           "name": "Keepsafe - Bilder Verstecken",
@@ -779,9 +779,9 @@
           "developer": "Legendary Software Labs LLC",
           "price": "Free",
           "rating": 4.8,
-          "ratingCount": 1019620,
-          "version": "26.1",
-          "lastUpdate": "2026-11-05",
+          "ratingCount": 1019778,
+          "version": "30.0",
+          "lastUpdate": "2026-11-12",
           "minimumOs": "15.0",
           "url": "https://apps.apple.com/us/app/private-photo-vault-pic-safe/id417571834",
           "privacyLabel": [
@@ -810,7 +810,7 @@
               "price": "$6.99"
             }
           ],
-          "checked": "2026-11-11"
+          "checked": "2026-11-14"
         }
       }
     },
@@ -823,7 +823,7 @@
           "developer": "Binspir Technologies Co., Ltd.",
           "price": "Free",
           "rating": 4.7,
-          "ratingCount": 76577,
+          "ratingCount": 76566,
           "version": "10.2",
           "lastUpdate": "2025-02-28",
           "minimumOs": "11",
@@ -851,7 +851,7 @@
               "price": "$2.99"
             }
           ],
-          "checked": "2026-11-11"
+          "checked": "2026-11-14"
         }
       }
     },
@@ -875,11 +875,35 @@
           ],
           "inAppPurchases": [
             {
-              "name": "Vaultaire Pro Family Lifetime Lifetime Pro access for your Apple family",
+              "name": "Vaultaire Pro Annual",
+              "price": "$19.99"
+            },
+            {
+              "name": "Vaultaire Pro Lifetime",
+              "price": "$39.99"
+            },
+            {
+              "name": "Vaultaire Pro Weekly",
+              "price": "$1.99"
+            },
+            {
+              "name": "Vaultaire Pro Monthly",
+              "price": "$5.99"
+            },
+            {
+              "name": "Vaultaire Pro Annual Offer",
+              "price": "$19.99"
+            },
+            {
+              "name": "Vaultaire Pro Family Lifetime",
               "price": "$99.99"
+            },
+            {
+              "name": "Vaultaire Pro Family Annual",
+              "price": "$49.99"
             }
           ],
-          "checked": "2026-11-11"
+          "checked": "2026-11-14"
         }
       }
     },
