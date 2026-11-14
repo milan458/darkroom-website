@@ -11,7 +11,7 @@
       "cluster": "features",
       "hub": true,
       "note": "Publish the hub (set draft false) once 3 feature pages are live.",
-      "status": "todo"
+      "status": "live"
     },
     {
       "order": 2,
@@ -21,7 +21,7 @@
       "keyword": "pattern lock photo vault",
       "cluster": "features",
       "vaultaire": "https://vaultaire.app/features/pattern-encryption/",
-      "status": "in-review"
+      "status": "live"
     },
     {
       "order": 3,
@@ -31,7 +31,7 @@
       "keyword": "encrypted photo vault app iphone",
       "cluster": "features",
       "vaultaire": "https://vaultaire.app/features/security-features/",
-      "status": "in-review"
+      "status": "live"
     },
     {
       "order": 4,
@@ -41,7 +41,7 @@
       "keyword": "photo vault icloud backup",
       "cluster": "features",
       "vaultaire": "https://vaultaire.app/features/encrypted-icloud-backup/",
-      "status": "in-review"
+      "status": "live"
     },
     {
       "order": 5,
@@ -51,7 +51,7 @@
       "keyword": "photo vault recovery phrase",
       "cluster": "features",
       "vaultaire": "https://vaultaire.app/features/secret-phrase/",
-      "status": "in-review"
+      "status": "live"
     },
     {
       "order": 15,
@@ -150,7 +150,7 @@
       "cluster": "choose-vault",
       "vaultaire": "https://vaultaire.app/compare/vaultaire-vs-privault/",
       "competitor": "Privault",
-      "status": "todo"
+      "status": "in-review"
     },
     {
       "order": 8,
@@ -161,7 +161,7 @@
       "cluster": "choose-vault",
       "vaultaire": "https://vaultaire.app/compare/vaultaire-vs-keepsafe/",
       "competitor": "Secret Photo Vault: Keepsafe",
-      "status": "todo"
+      "status": "in-review"
     },
     {
       "order": 9,
@@ -172,7 +172,7 @@
       "cluster": "choose-vault",
       "vaultaire": "https://vaultaire.app/compare/vaultaire-vs-private-photo-vault/",
       "competitor": "Private Photo Vault - Pic Safe",
-      "status": "todo"
+      "status": "in-review"
     },
     {
       "order": 10,
@@ -182,7 +182,7 @@
       "keyword": "vaultaire review",
       "cluster": "choose-vault",
       "competitor": "Photo Vault - Vaultaire",
-      "status": "todo"
+      "status": "in-review"
     },
     {
       "order": 11,
