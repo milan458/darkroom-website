@@ -61,15 +61,15 @@
   },
   "pages": {
     "/guides/keepsafe-alternatives": {
-      "source": "2026-10-26",
-      "title": "Keepsafe-Alternativen ohne Konto (2026)",
-      "description": "Keepsafe-Alternative ohne E-Mail-Konto und ohne fremde Cloud gesucht? Foto-Tresore, die kein Konto brauchen, verglichen anhand ihrer App-Store-Einträge.",
+      "source": "2026-11-13",
+      "title": "4 Keepsafe-Alternativen ohne Konto und E-Mail (2026)",
+      "description": "Keepsafe-Alternative ohne Konto und E-Mail gesucht? Vaultaire, Obscura, Encamera und Noxium im Vergleich: Verschlüsselung, iCloud-Backup, Tarntresor.",
       "headline": "Keepsafe-Alternativen, die kein Konto brauchen",
       "summary": "Foto-Tresor-Apps, die ohne Konto funktionieren, mit Keepsafe verglichen anhand ihrer App-Store-Einträge.",
       "crumb": "Keepsafe-Alternativen",
       "keyword": "keepsafe alternative",
       "published": "2026-11-12",
-      "updated": "2026-11-12"
+      "updated": "2026-11-14"
     },
     "/guides/how-to-hide-photos-on-iphone": {
       "source": "2026-10-26",
@@ -98,6 +98,17 @@
       "title": "Anleitungen: private Fotos auf dem iPhone schützen",
       "description": "Klare Anleitungen zum Verstecken, Sperren, Sichern und Umziehen privater Fotos auf iPhone und iPad. Vom Team hinter dem Noxium Foto-Tresor.",
       "crumb": "Anleitungen",
+      "published": "2026-11-13",
+      "updated": "2026-11-13"
+    },
+    "/guides/photo-vault-lost-photos": {
+      "source": "2026-11-11",
+      "title": "Foto-Tresor: verlorene Fotos wiederherstellen",
+      "description": "Fotos aus Private Photo Vault, Keepsafe oder einer anderen Tresor-App weg? Wo sie noch sein können, wie du sie zurückholst und was du vermeiden solltest.",
+      "headline": "Deine Foto-Tresor-App hat deine Fotos verloren: Was du jetzt tun solltest",
+      "summary": "Was du tun solltest, und was nicht, wenn Fotos aus einer Tresor-App verschwinden, und wo sie noch sein könnten.",
+      "crumb": "Fotos im Tresor verloren",
+      "keyword": "foto tresor fotos wiederherstellen",
       "published": "2026-11-13",
       "updated": "2026-11-13"
     }

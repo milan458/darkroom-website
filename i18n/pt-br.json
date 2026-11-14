@@ -61,15 +61,15 @@
   },
   "pages": {
     "/guides/keepsafe-alternatives": {
-      "source": "2026-10-26",
-      "title": "Alternativas ao Keepsafe sem conta (2026)",
-      "description": "Quer uma alternativa ao Keepsafe sem conta de e-mail nem nuvem da empresa? Cofres de fotos que não pedem conta, comparados pelas páginas da App Store.",
+      "source": "2026-11-13",
+      "title": "4 alternativas ao Keepsafe sem conta nem e-mail (2026)",
+      "description": "Procurando uma alternativa ao Keepsafe sem conta nem e-mail? Vaultaire, Obscura, Encamera e Noxium comparados: criptografia, backup no iCloud e iscas.",
       "headline": "Alternativas ao Keepsafe que não pedem conta",
       "summary": "Cofres de fotos que funcionam sem conta, comparados com o Keepsafe pelas páginas da App Store.",
       "crumb": "Alternativas ao Keepsafe",
       "keyword": "alternativa ao keepsafe",
       "published": "2026-11-12",
-      "updated": "2026-11-12"
+      "updated": "2026-11-14"
     },
     "/guides/how-to-hide-photos-on-iphone": {
       "source": "2026-10-26",
@@ -98,6 +98,17 @@
       "title": "Guias para proteger suas fotos privadas no iPhone",
       "description": "Guias diretos para esconder, bloquear, fazer backup e passar fotos íntimas no iPhone e no iPad, da equipe do cofre de fotos Noxium.",
       "crumb": "Guias",
+      "published": "2026-11-13",
+      "updated": "2026-11-13"
+    },
+    "/guides/photo-vault-lost-photos": {
+      "source": "2026-11-11",
+      "title": "Cofre de fotos: como recuperar fotos sumidas ou apagadas",
+      "description": "Fotos sumiram do Private Photo Vault, do Keepsafe ou de outro app de cofre? Onde elas ainda podem estar, como recuperar e o que evitar.",
+      "headline": "Seu app de cofre de fotos perdeu suas fotos: o que fazer agora",
+      "summary": "O que fazer, e o que não fazer, quando fotos somem de um app de cofre, e onde elas ainda podem estar.",
+      "crumb": "Fotos sumidas do cofre",
+      "keyword": "recuperar fotos cofre de fotos",
       "published": "2026-11-13",
       "updated": "2026-11-13"
     }

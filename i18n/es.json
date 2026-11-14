@@ -61,15 +61,15 @@
   },
   "pages": {
     "/guides/keepsafe-alternatives": {
-      "source": "2026-10-26",
-      "title": "Alternativas a Keepsafe sin cuenta (2026)",
-      "description": "¿Buscas una alternativa a Keepsafe sin cuenta de correo ni su nube? Bóvedas de fotos que no piden cuenta, comparadas según sus fichas del App Store.",
+      "source": "2026-11-13",
+      "title": "4 alternativas a Keepsafe sin cuenta ni correo (2026)",
+      "description": "¿Buscas una alternativa a Keepsafe sin cuenta ni correo? Vaultaire, Obscura, Encamera y Noxium comparadas: cifrado, copia en iCloud y señuelos.",
       "headline": "Alternativas a Keepsafe que no necesitan cuenta",
       "summary": "Bóvedas de fotos que funcionan sin cuenta, comparadas con Keepsafe según sus fichas del App Store.",
       "crumb": "Alternativas a Keepsafe",
       "keyword": "alternativa a keepsafe",
       "published": "2026-11-12",
-      "updated": "2026-11-12"
+      "updated": "2026-11-14"
     },
     "/guides/how-to-hide-photos-on-iphone": {
       "source": "2026-10-26",
@@ -80,7 +80,7 @@
       "crumb": "Ocultar fotos en el iPhone",
       "keyword": "ocultar fotos iphone",
       "published": "2026-11-12",
-      "updated": "2026-11-12"
+      "updated": "2026-11-14"
     },
     "/guides/is-iphone-hidden-album-private": {
       "source": "2026-10-26",
@@ -98,6 +98,17 @@
       "title": "Guías para proteger tus fotos privadas en el iPhone",
       "description": "Guías claras para ocultar, bloquear, guardar y pasar fotos privadas en iPhone y iPad, del equipo de la caja fuerte de fotos Noxium.",
       "crumb": "Guías",
+      "published": "2026-11-13",
+      "updated": "2026-11-13"
+    },
+    "/guides/photo-vault-lost-photos": {
+      "source": "2026-11-11",
+      "title": "Caja fuerte de fotos: recuperar fotos perdidas o borradas",
+      "description": "¿Faltan fotos en Private Photo Vault, Keepsafe u otra app de caja fuerte? Dónde pueden seguir, cómo recuperarlas y qué no hacer.",
+      "headline": "Tu app de caja fuerte de fotos ha perdido tus fotos: qué hacer ahora",
+      "summary": "Qué hacer, y qué no, cuando desaparecen fotos de una app de caja fuerte, y dónde pueden seguir.",
+      "crumb": "Fotos perdidas en la caja fuerte",
+      "keyword": "recuperar fotos caja fuerte de fotos",
       "published": "2026-11-13",
       "updated": "2026-11-13"
     }

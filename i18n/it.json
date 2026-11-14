@@ -61,15 +61,15 @@
   },
   "pages": {
     "/guides/keepsafe-alternatives": {
-      "source": "2026-10-26",
-      "title": "Alternative a Keepsafe senza account (2026)",
-      "description": "Cerchi un’alternativa a Keepsafe senza account email né il suo cloud? Le casseforti per foto che non chiedono un account, confrontate dall’App Store.",
+      "source": "2026-11-13",
+      "title": "4 alternative a Keepsafe senza account né email (2026)",
+      "description": "Cerchi un’alternativa a Keepsafe senza account né email? Vaultaire, Obscura, Encamera e Noxium a confronto: crittografia, backup iCloud ed esche.",
       "headline": "Alternative a Keepsafe che non chiedono un account",
       "summary": "Casseforti per foto che funzionano senza account, confrontate con Keepsafe in base alle schede dell’App Store.",
       "crumb": "Alternative a Keepsafe",
       "keyword": "alternativa a keepsafe",
       "published": "2026-11-12",
-      "updated": "2026-11-12"
+      "updated": "2026-11-14"
     },
     "/guides/how-to-hide-photos-on-iphone": {
       "source": "2026-10-26",
@@ -98,6 +98,17 @@
       "title": "Guide per proteggere le foto private su iPhone",
       "description": "Guide chiare per nascondere, bloccare, salvare e trasferire le foto private su iPhone e iPad, dal team della cassaforte per foto Noxium.",
       "crumb": "Guide",
+      "published": "2026-11-13",
+      "updated": "2026-11-13"
+    },
+    "/guides/photo-vault-lost-photos": {
+      "source": "2026-11-11",
+      "title": "Cassaforte per foto: recuperare foto perse o eliminate",
+      "description": "Foto sparite da Private Photo Vault, Keepsafe o un’altra app cassaforte? Dove possono essere ancora, come recuperarle e cosa evitare.",
+      "headline": "La tua app cassaforte ha perso le foto: cosa fare adesso",
+      "summary": "Cosa fare, e cosa no, quando le foto spariscono da un’app cassaforte, e dove potrebbero essere ancora.",
+      "crumb": "Foto sparite dalla cassaforte",
+      "keyword": "recuperare foto cassaforte app",
       "published": "2026-11-13",
       "updated": "2026-11-13"
     }

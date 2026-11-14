@@ -61,15 +61,15 @@
   },
   "pages": {
     "/guides/keepsafe-alternatives": {
-      "source": "2026-10-26",
-      "title": "Alternatives à Keepsafe sans compte (2026)",
-      "description": "Une alternative à Keepsafe sans compte courriel ni cloud imposé? Les coffres-forts photo qui fonctionnent sans compte, comparés d’après l’App Store.",
+      "source": "2026-11-13",
+      "title": "4 alternatives à Keepsafe sans compte ni courriel (2026)",
+      "description": "Une alternative à Keepsafe sans compte ni courriel? Vaultaire, Obscura, Encamera et Noxium comparées : chiffrement, sauvegarde iCloud et leurres.",
       "headline": "Alternatives à Keepsafe qui ne demandent pas de compte",
       "summary": "Les coffres-forts photo qui fonctionnent sans compte, comparés à Keepsafe d’après leurs fiches App Store.",
       "crumb": "Alternatives à Keepsafe",
       "keyword": "alternative à keepsafe",
       "published": "2026-11-12",
-      "updated": "2026-11-12"
+      "updated": "2026-11-14"
     },
     "/guides/how-to-hide-photos-on-iphone": {
       "source": "2026-10-26",
@@ -80,7 +80,7 @@
       "crumb": "Cacher des photos sur iPhone",
       "keyword": "cacher des photos sur iphone",
       "published": "2026-11-12",
-      "updated": "2026-11-12"
+      "updated": "2026-11-14"
     },
     "/guides/is-iphone-hidden-album-private": {
       "source": "2026-10-26",
@@ -98,6 +98,17 @@
       "title": "Guides : protéger vos photos privées sur iPhone",
       "description": "Des guides clairs pour cacher, verrouiller, sauvegarder et transférer vos photos privées sur iPhone et iPad, par l’équipe du coffre photo Noxium.",
       "crumb": "Guides",
+      "published": "2026-11-13",
+      "updated": "2026-11-13"
+    },
+    "/guides/photo-vault-lost-photos": {
+      "source": "2026-11-11",
+      "title": "Coffre photo : récupérer des photos perdues ou supprimées",
+      "description": "Des photos ont disparu de Private Photo Vault, Keepsafe ou d’une autre app de coffre? Où elles peuvent encore être, comment les récupérer, quoi éviter.",
+      "headline": "Votre app de coffre photo a perdu vos photos : quoi faire maintenant",
+      "summary": "Quoi faire, et ne pas faire, quand des photos disparaissent d’une app de coffre, et où elles pourraient encore être.",
+      "crumb": "Photos perdues dans un coffre",
+      "keyword": "récupérer photos coffre photo",
       "published": "2026-11-13",
       "updated": "2026-11-13"
     }
