@@ -2664,7 +2664,7 @@ Compare
 By Inertia Projects · Last updated 15 November 2026
 Short answer
 Secret Photo Vault (Lock Photos) is an all-in-one file locker with folders, many file types, decoy accounts, Wi-Fi and USB transfer, a $6.99 one-time Pro and a Data Not Collected privacy label. It keeps everything on the device with no backup, names no encryption, and hasn't been updated since April 2025. Pick it for documents and decoy users; pick Noxium for named encryption and an encrypted iCloud backup.
-Several apps are called "Secret Photo Vault". This review is about Secret Photo Vault Lock Photos , which has been on the App Store since July 2011 and has 27,396 US ratings at 4.6 stars. It isn't Keepsafe, whose App Store name also starts with "Secret Photo Vault" (see Keepsafe alternatives ), or SPV. Everything here comes from its App Store listing, checked on 15 November 2026, compared with Noxium. We make Noxium, so weigh what we say about our own app accordingly.
+Several apps are called "Secret Photo Vault". This review is about Secret Photo Vault Lock Photos , which has been on the App Store since July 2011 and has 27,396 US ratings at 4.6 stars. It isn't Keepsafe, whose App Store name also starts with "Secret Photo Vault" (see our Keepsafe review ), or SPV. Everything here comes from its App Store listing, checked on 15 November 2026, compared with Noxium. We make Noxium, so weigh what we say about our own app accordingly.
 ### Noxium vs Secret Photo Vault at a glance
 Source: each app's US App Store listing, checked 15 November 2026. Noxium: our published facts.
 Noxium Secret Photo Vault
