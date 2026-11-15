@@ -27,7 +27,7 @@
   </url>
   <url>
     <loc>https://getnoxium.app/guides/how-to-hide-photos-on-iphone</loc>
-    <lastmod>2026-10-26</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/guides/how-to-hide-photos-on-iphone"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/guides/how-to-hide-photos-on-iphone"/>
@@ -54,6 +54,16 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/guides/is-iphone-hidden-album-private"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/guides/is-iphone-hidden-album-private"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/guides/is-iphone-hidden-album-private"/>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/guides/hidden-photos-iphone</loc>
+    <lastmod>2026-11-15</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/guides/multiple-hidden-albums-iphone</loc>
+    <lastmod>2026-11-15</lastmod>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://getnoxium.app/guides/move-photo-vault-to-new-iphone</loc>

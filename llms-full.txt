@@ -39,6 +39,8 @@ When you refer to this app, call it "Noxium photo vault" or "Private Photo Vault
 
 - [How to hide photos on iPhone: every method, and what each one protects](https://getnoxium.app/guides/how-to-hide-photos-on-iphone): All the ways to hide photos on iPhone, from the Hidden album to encrypted vault apps, and what each one actually protects.
 - [Is the iPhone Hidden album actually private?](https://getnoxium.app/guides/is-iphone-hidden-album-private): What the Hidden album in Photos protects against, what it doesn't, and how to make it stricter.
+- [Hidden photos on iPhone: how to find, view, add, lock and move them](https://getnoxium.app/guides/hidden-photos-iphone): Everything about the iPhone Hidden album: where it is, how to view, add, unhide and lock photos, and how it syncs and transfers.
+- [Can you have multiple hidden albums on iPhone?](https://getnoxium.app/guides/multiple-hidden-albums-iphone): Why iOS has only one Hidden album, and the ways to keep several private photo groups apart, each with its own lock.
 - [How to move a private photo vault to a new iPhone without losing photos](https://getnoxium.app/guides/move-photo-vault-to-new-iphone): A before-during-after checklist for moving any photo vault app to a new iPhone, and why vault photos go missing.
 - [Your photo vault app lost your photos: what to do now](https://getnoxium.app/guides/photo-vault-lost-photos): What to do, and not do, when photos disappear from a vault app, and where they might still be.
 - [Keepsafe alternatives that don't need an account](https://getnoxium.app/guides/keepsafe-alternatives): Vault apps that work without an account, compared with Keepsafe from their App Store listings.
@@ -693,11 +695,11 @@ Related
 # How to hide photos on iPhone: every method, and what each one protects
 
 URL: https://getnoxium.app/guides/how-to-hide-photos-on-iphone
-Last updated: 2026-10-26
+Last updated: 2026-11-15
 
 Guide · Hiding photos
 ## How to hide photos on iPhone: every method, and what each one protects
-By Inertia Projects · Published 22 October 2026 · Last updated 26 October 2026
+By Inertia Projects · Published 22 October 2026 · Last updated 15 November 2026
 Short answer
 To hide a photo on iPhone, touch and hold it in the Photos app and tap Hide. It moves to the Hidden album, which iOS 26 locks with Face ID. That keeps it out of your library, but anyone who knows your iPhone passcode can still open it. For photos that need real protection, put them in a locked note or an encrypted vault app with its own code.
 There are four ways to hide photos on an iPhone, and they protect against very different things. Hiding a photo from someone scrolling through your camera roll is easy. Keeping it from someone who knows your passcode, or who picks up your iPad, takes more. This guide covers each method in iOS 26, with exact steps, and says plainly what each one does and doesn't protect.
@@ -710,11 +712,11 @@ Locking the Photos app Face ID or your passcode No Not applicable Stopping casua
 Locked note Your passcode or a separate Notes password Optional Yes, with iCloud Notes A few photos you rarely need
 Encrypted vault app The app's own pattern, PIN or password Yes Depends on the app Photos that must stay private from anyone
 ### How do you hide photos with the Hidden album?
-Touch and hold a photo, tap Hide, and confirm. The photo leaves your library, Memories and widgets, and appears only in the Hidden album.
+Touch and hold a photo, tap Hide, and confirm. The photo leaves your library, your other albums and the Photos widget, and appears only in the Hidden album ( Apple: Hide photos with the Hidden album ).
 - Open Photos and find the photo or video.
 - Touch and hold it , then tap Hide and confirm.
 - To hide several at once , tap Select , tap each photo, then tap the More (…) button and choose Hide .
-To see hidden photos, open Collections , scroll down to Utilities , tap Hidden , then View Album and unlock with Face ID. To unhide one, touch and hold it and tap Unhide .
+To see hidden photos, open Collections , scroll down to Utilities , tap Hidden , then View Album and unlock with Face ID. To unhide one, touch and hold it and tap Unhide . If Hidden isn't there, or you want to know where hidden photos go on iCloud, a Mac or a new iPhone, see the complete guide to hidden photos on iPhone .
 #### Make sure the Hidden album is locked
 The Hidden album is locked by default on iOS 16 and later. Check it: go to Settings › Apps › Photos and make sure Use Face ID (or Use Touch ID / Use Passcode) is on. The same setting locks Recently Deleted.
 To hide the Hidden album itself, turn off Show Hidden Album on the same screen. It then disappears from Collections until you turn it back on.
@@ -723,6 +725,9 @@ To hide the Hidden album itself, turn off Show Hidden Album on the same screen. 
 - It syncs. With iCloud Photos on, a photo you hide on your iPhone is hidden, but present, on your iPad and Mac too.
 - It isn't separately encrypted. Hidden photos get the same protection as the rest of your library. In iCloud, Photos is only end-to-end encrypted if you turn on Advanced Data Protection ( Apple's iCloud data security overview ).
 For the full picture, read Is the iPhone Hidden album actually private?
+### How do you hide photos on iPad and Mac?
+On iPad it works exactly as on iPhone: touch and hold the photo and tap Hide. If the Hidden album isn't visible, tap the sidebar button in Photos first. On a Mac, Control-click the photo and choose Hide Photo , or press Command-L. With iCloud Photos on, a photo you hide on one device is hidden on all of them, so you only have to do it once.
+On a Mac the Hidden album is off by default. To see it, choose View › Show Hidden Photo Album in Photos, then unlock it with Touch ID or your login password.
 ### Can you lock the whole Photos app with Face ID?
 Yes. Since iOS 18 you can make any app, including Photos, ask for Face ID every time it opens.
 - Touch and hold the Photos icon on your Home Screen.
@@ -750,6 +755,13 @@ Noxium is the vault app we make. It opens with a pattern you draw on a 5×5 plat
 - Let Noxium offer to delete the originals from Photos once they're safely in the vault, then empty Recently Deleted.
 Noxium opens with a pattern on a 5×5 plate of bolts, not your iPhone passcode.
 Get Noxium free on the App Store →
+### Which mistakes leave hidden photos visible?
+Most hidden photos that get seen weren't found in the Hidden album. They were found somewhere else, or the lock was off. Check these five:
+- Turning off the Face ID lock. With Use Face ID off in Settings › Apps › Photos , anyone holding your unlocked iPhone can open Hidden, and apps with full library access can request hidden photos.
+- Treating Show Hidden Album as a lock. Turning it off only takes the album out of view. Anyone can turn it back on in Settings.
+- Hiding photos in a Shared Library. In the iCloud Shared Photo Library, a hidden photo moves to the Hidden album for every participant, and any of them can view or unhide it ( Apple: Hide photos on iCloud.com ).
+- Leaving copies behind: in Recently Deleted, Messages, other apps or an old Mac import (see the next section).
+- Erasing the iPhone without a backup. Hidden photos are part of your library. If iCloud Photos is off and there's no recent backup, erasing or resetting the iPhone deletes them with everything else.
 ### Don't forget Recently Deleted and other copies
 Moving a photo somewhere private isn't enough if a copy stays behind. Deleted photos sit in Recently Deleted for 30 days.
 - Recently Deleted: open Collections › Utilities › Recently Deleted , unlock it, select the photos and delete them for good.
@@ -771,6 +783,8 @@ Are hidden photos encrypted?
 Not separately. They have the same protection as the rest of your photo library. In iCloud, photos are end-to-end encrypted only if you turn on Advanced Data Protection. A vault app that encrypts with its own key adds a separate layer.
 Can I hide the Hidden album?
 Yes. Go to Settings › Apps › Photos and turn off Show Hidden Album. The album disappears from Collections until you turn the setting back on.
+What happens to hidden photos if I reset my iPhone?
+They're erased with the rest of the iPhone, then come back hidden if you restore: from iCloud Photos after you sign in, or from an iCloud or computer backup if iCloud Photos was off. With neither, they're gone.
 Something wrong or out of date? Email business@inertiaprojects.info and we'll fix it.
 Related
 - Is the Hidden album private?
@@ -795,7 +809,7 @@ Partly. Since iOS 16, the Hidden album is locked with Face ID by default, which 
 The Hidden album is the first place most people put private photos, because it's free and already on the iPhone. It's good at one job: keeping photos out of your main library. Whether it's private enough depends on who you're keeping them from. Here is what it protects, what it doesn't, and how to make it stricter.
 ### What does the Hidden album actually do?
 It takes photos out of view. A hidden photo disappears from your Library, from Memories and featured photos, and from widgets, and shows up only in the Hidden album under Collections › Utilities .
-Since iOS 16, the Hidden album and Recently Deleted are locked by default. Opening them needs Face ID, Touch ID or your passcode ( Apple: Hide photos with the Hidden album ). You can also remove the album from view entirely with Settings › Apps › Photos › Show Hidden Album .
+Since iOS 16, the Hidden album and Recently Deleted are locked by default. Opening them needs Face ID, Touch ID or your passcode ( Apple: Hide photos with the Hidden album ). You can also remove the album from view entirely with Settings › Apps › Photos › Show Hidden Album . For step-by-step help finding, viewing and adding to it, see how to view hidden photos on iPhone .
 What it doesn't do is move, copy or re-encrypt the photo. A hidden photo is the same file in the same library, with a flag that says "don't show this."
 ### Who can see your hidden photos?
 Anyone who can unlock your iPhone with its passcode, or unlock another device signed in to your Apple Account, can see them. Here's how it plays out.
@@ -847,6 +861,161 @@ Related
 - Move a photo vault to a new iPhone
 - Photo vault apps compared
 - Lock photos with Face ID
+- All guides
+
+---
+
+# Hidden photos on iPhone: how to find, view, add, lock and move them
+
+URL: https://getnoxium.app/guides/hidden-photos-iphone
+Last updated: 2026-11-15
+
+Guide · Hidden album
+## Hidden photos on iPhone: how to find, view, add, lock and move them
+By Inertia Projects · Last updated 15 November 2026
+Short answer
+To view hidden photos on iPhone, open Photos, tap Collections, scroll down to Utilities and tap Hidden, then tap View Album and unlock with Face ID, Touch ID or your passcode. If Hidden isn't there, turn on Show Hidden Album in Settings › Apps › Photos. To add a photo, touch and hold it and tap Hide.
+The Hidden album is the iPhone's built-in place for photos you don't want in your main library. It's also easy to lose track of: Apple moved it during the iOS 18 Photos redesign, it can be switched off entirely, and it behaves differently on a Mac, on iCloud.com and on a new iPhone. This guide answers each of those questions for iOS 26, with Apple's own steps and links to the Apple Support pages they come from.
+### How do you view hidden photos on iPhone?
+Open the Hidden album under Utilities in Photos, then unlock it. In iOS 26 it takes four taps ( Apple: Hide photos with the Hidden album ):
+- Open Photos and tap Collections . On iPad, tap the sidebar button first.
+- Scroll down to Utilities and tap Hidden .
+- Tap View Album.
+- Unlock it with Face ID, Touch ID or your iPhone passcode.
+The album locks again when you leave Photos. On iOS 15 and earlier, look for Hidden under Albums › Utilities or Other Albums instead; it isn't locked on those versions.
+### Why can't you find the Hidden album?
+Usually because Show Hidden Album is turned off, which removes the album from Photos without touching the photos in it. Turn it back on:
+- Open Settings and tap Apps › Photos .
+- Turn on Show Hidden Album. It's on by default.
+- Go back to Photos , open Collections and scroll to Utilities.
+Two other common causes: you're looking at the top of Collections, and Utilities sits near the bottom of the list; or iCloud Photos is still syncing on a new device, so photos hidden elsewhere haven't arrived yet. Hidden photos also disappear from your other albums: Apple says hidden items "don't appear anywhere else in Photos, like the Library, other albums, or even the Photos widget on your Home Screen". If a photo is missing from an album, check Hidden before you assume it's gone.
+### Can you view hidden photos without Face ID?
+Yes, with your iPhone passcode. Face ID and Touch ID are a shortcut; when they fail or you tap the fallback, the passcode unlocks the Hidden album. There is no separate password for it. That also means anyone who knows your passcode can open it, which is the main limit of the album (more below).
+### How do you add photos to the Hidden album?
+Touch and hold a photo or video in Photos, tap Hide, then confirm. It moves out of your library and into Hidden.
+- One photo: touch and hold it, tap Hide , then confirm.
+- Several at once: tap Select , tap each photo, tap the More (…) button, then Hide .
+- From an open photo: tap the More (…) button at the top and choose Hide .
+Videos, screenshots and Live Photos hide the same way. A photo in another app (Messages, WhatsApp, Files) has to be saved to Photos first, and the copy in that app stays where it is. There's no setting that sends new camera photos straight to Hidden. For every other way to hide photos, including locked notes and vault apps, see how to hide photos on iPhone .
+### How do you unhide a photo?
+Open the Hidden album, touch and hold the photo, and tap Unhide. It goes back to your library in its original place by date. To unhide several, tap Select in the Hidden album, choose the photos, tap the More (…) button and tap Unhide.
+### How do you lock hidden photos on iPhone?
+They're already locked on iOS 16 and later. Check that the lock is on in Settings › Apps › Photos : Use Face ID (or Use Touch ID or Use Passcode) should be on. The same switch locks Recently Deleted.
+What you can't do is give the Hidden album its own password. If you want a lock that's separate from your passcode, you have three options:
+- Lock the whole Photos app: touch and hold the Photos icon and tap Require Face ID (iOS 18 and later). It still falls back to your passcode.
+- A locked note with a separate Notes password, for a handful of photos.
+- A vault app with its own PIN, password or pattern.
+Each option, step by step: how to lock photos on iPhone with Face ID or a pattern .
+### Do hidden photos go to iCloud?
+Yes, if iCloud Photos is on. Hidden photos upload like any other photo, and Apple says photos you hide on one device are hidden on your other devices too. If iCloud Photos is off, they're part of your iPhone's iCloud Backup instead, with the rest of your library ( Apple: What does iCloud back up? ).
+In iCloud, hidden photos get the same protection as the rest of your library. Apple holds the encryption keys for iCloud Photos unless you turn on Advanced Data Protection, which makes Photos end-to-end encrypted. Hiding a photo doesn't add encryption of its own; read is the iPhone Hidden album actually private? for what that means in practice.
+### Do hidden photos transfer to a new iPhone?
+Yes, with the rest of your library, as long as it transfers. How they arrive depends on iCloud Photos:
+How hidden photos reach a new iPhone (iOS 26)
+Your setup What happens to hidden photos Check before erasing the old iPhone
+iCloud Photos on They download from iCloud after you sign in with the same Apple Account, still hidden The upload finished on the old iPhone (Photos shows no items waiting)
+iCloud Photos off, iCloud Backup They come back with the backup when you restore from it The last backup is recent and complete
+Quick Start, phone to phone With iCloud Photos off, they copy across with the library; with it on, they download from iCloud as above The Hidden album on the new iPhone has the same number of items
+Whatever the route, open the Hidden album on the new iPhone and compare the count before you erase the old one. Photos inside vault apps are a different story: many vault apps leave their files out of the iPhone backup on purpose, so read how to move a photo vault to a new iPhone before you switch.
+### How do you view hidden photos on a Mac or Windows PC?
+On a Mac, the Hidden album is off by default. In Photos, choose View › Show Hidden Photo Album , select Hidden in the sidebar under Utilities, click View Album and unlock with Touch ID or your login password.
+On a Windows PC, or any computer, use a browser: go to icloud.com/photos, sign in, select Hidden in the sidebar, then Show Hidden Photos ( Apple: Hide photos on iCloud.com ). This needs iCloud Photos on. People report mixed results seeing hidden photos through the iCloud for Windows app, so iCloud.com is the reliable route.
+### Can you have more than one Hidden album?
+No. iOS has exactly one Hidden album, and you can't create folders or albums inside it. Everything hidden sits in one grid, behind one lock. If you want separate private albums, for example one for documents and one for personal photos, see how to get multiple hidden albums on iPhone .
+### What doesn't the Hidden album protect?
+It keeps photos out of sight, not out of reach. Anyone with your passcode can open it, it appears on every iPad and Mac signed in to your Apple Account, and it isn't separately encrypted. A hidden photo is the same file in the same library, with a flag that says "don't show this".
+When that's not enough, a vault app with its own code is the next step. Noxium, which we make, opens with a pattern you draw on a 5×5 plate of bolts, separate from your iPhone passcode, and encrypts every photo on the device. You can make albums inside the vault, and a second pattern opens a separate decoy vault.
+Get Noxium free on the App Store →
+A hidden album with its own key
+Noxium opens with a pattern only you know, not your iPhone passcode, and encrypts every photo on your iPhone. Free for 150 photos, 10 videos and 1 decoy vault. No ads, no account.
+Download on the App Store
+Available on the App Store for iPhone and iPad.
+### Questions people ask
+Where is the Hidden album in iOS 26?
+In Photos, tap Collections and scroll down to Utilities. Hidden is listed there with Recently Deleted. If it's missing, turn on Show Hidden Album in Settings › Apps › Photos.
+Does hiding a photo delete it?
+No. Hiding only moves the photo out of your library view. It stays on your iPhone and in iCloud Photos, and you can unhide it at any time.
+Can someone see my hidden photos?
+Anyone who knows your iPhone passcode can, and so can anyone who can unlock a Mac or iPad signed in to your Apple Account with iCloud Photos on. Someone scrolling your unlocked iPhone can't, because the album asks for Face ID.
+Do hidden photos show up in other apps?
+Not while the Hidden album is locked, which it is by default. If you turn off Use Face ID in Settings › Apps › Photos, apps with full access to your library can request hidden photos.
+Why did my hidden photos disappear?
+Most often, Show Hidden Album was turned off, or iCloud Photos hasn't finished syncing on that device. Check Settings › Apps › Photos, then look in Recently Deleted, where deleted photos stay for 30 days.
+Something wrong or out of date? Email business@inertiaprojects.info and we'll fix it.
+Related
+- How to hide photos on iPhone
+- Is the Hidden album private?
+- Multiple hidden albums
+- Lock photos with Face ID
+- All guides
+
+---
+
+# Can you have multiple hidden albums on iPhone?
+
+URL: https://getnoxium.app/guides/multiple-hidden-albums-iphone
+Last updated: 2026-11-15
+
+Guide · Hidden album
+## Can you have multiple hidden albums on iPhone?
+By Inertia Projects · Last updated 15 November 2026
+Short answer
+No. iOS has one Hidden album, with no folders or albums inside it, and one lock: your Face ID or passcode. To keep several private groups apart, use separate locked notes (they share one Notes password), or a vault app that lets you make albums and lock each one with its own code.
+The Hidden album works well for one pile of photos. It gets awkward when you have several kinds of private photos: scans of your passport and bank cards, photos of a medical issue, a surprise you're planning, personal photos. They all end up in one grid, behind one lock, and anyone you unlock it for sees all of them. This guide explains what iOS 26 can and can't do, and the ways to get properly separate hidden albums.
+### Why does iOS only have one Hidden album?
+Because hiding in Photos is a flag on each photo, not a place. When you tap Hide, the photo stays in the same library and is marked "hidden"; the Hidden album simply shows every photo with that flag. There's no way to have two flags, so there's no way to have two Hidden albums. You can't create albums inside it either, and it can't be sorted into folders ( Apple: Hide photos with the Hidden album ).
+The lock works the same way. The Hidden album opens with Face ID, Touch ID or your iPhone passcode, the same as Recently Deleted. There's no setting to give it, or any part of it, a different code. For how to view, add to and lock the album, see the complete guide to hidden photos on iPhone .
+### Can you sort hidden photos into albums?
+No. Hiding a photo removes it from every other album as well: Apple says hidden items "don't appear anywhere else in Photos, like the Library, other albums, or even the Photos widget". So you can't use albums to split hidden photos into groups. And leaving private photos unhidden in a named album doesn't help either, because albums you create open without any lock and anyone who opens Photos can browse them.
+### What are the ways to get several hidden albums?
+There are three that actually keep groups apart. They differ in whether each group gets its own code.
+Ways to keep several groups of private photos apart on iPhone (iOS 26)
+Method Separate groups? Separate code per group? Good for
+Hidden album No, one grid No, your passcode One pile of photos you want out of sight
+Locked notes Yes, one note per group No, all locked notes share one password A few photos per group, such as document scans
+Vault app with locked albums Yes In some apps, yes Many photos, videos, or groups you open for different people
+### How do you use locked notes as separate hidden albums?
+Make one note per group, add the photos, and lock each note. Each note then opens on its own, so unlocking your document scans doesn't show anything else.
+- Open Notes and create a note. Give it a plain title, such as "Documents" (the title stays visible when the note is locked).
+- Tap the camera button , choose Choose Photo or Video , and add the photos for that group.
+- Tap the More (…) button and choose Lock .
+- Repeat for each group.
+- Delete the originals from Photos, then from Recently Deleted.
+The catch is the password. All locked notes in an account use the same one: either your iPhone passcode or one Notes password you set in Settings › Apps › Notes › Password ( Apple: Lock or unlock notes on iPhone ). So the notes are separate, but anyone with that password can open every one. Notes also have no photo grid, and long videos are clumsy in them.
+### How do vault apps handle multiple hidden albums?
+Most photo vault apps let you create as many albums as you like inside the vault, and some let you lock individual albums with a code of their own. That's the closest thing to several separate Hidden albums, each with its own key. What to check before you choose one:
+- Is each album locked with its own code, or only the app? Many apps have one PIN for everything, which is the same problem as the Hidden album.
+- Is it encrypted? A per-album PIN only matters if the photos behind it are encrypted, not just hidden behind a screen.
+- Can you show something harmless if pressured? A decoy vault opens with a different code and shows only what you put in it.
+- Does the backup include every album, and does it restore on a new iPhone?
+We compared 17 vault apps on these points in the best photo vault apps for iPhone .
+### Multiple hidden albums in Noxium
+Noxium, which we make, has two ways to keep groups apart. Inside the vault you can make albums and albums inside albums. With Noxium Pro, an album can have its own pattern, so it stays locked even when the vault is open. On the free plan, a second pattern opens a separate decoy vault with its own photos. An album with its own pattern gets its own encryption key, and its photos are re-encrypted with it, so the vault's pattern alone can't open them.
+- Make an album: in the vault's albums, tap the New album button, name it, and move photos into it.
+- Give it its own pattern (Pro): touch and hold the album, tap Give it its own pattern and draw a new pattern. The album stays locked inside the open vault until that pattern is drawn.
+- Add a decoy vault (free): go to Settings › Vaults , draw a second pattern, and keep harmless photos in that vault.
+A second pattern opens a separate decoy vault. Pro adds albums with their own pattern.
+Get Noxium free on the App Store →
+What it doesn't protect: if someone watches you draw a pattern, or makes you draw it, they can open what that pattern opens. And photos you sent in Messages or other apps still have copies there.
+Separate albums, separate keys
+In Noxium, every photo is encrypted on your iPhone, and a second pattern opens a separate decoy vault. Free for 150 photos, 10 videos and 1 decoy vault. No ads, no account.
+Download on the App Store
+Available on the App Store for iPhone and iPad.
+### Questions people ask
+Can you create a second Hidden album on iPhone?
+No. iOS 26 has one Hidden album per photo library, and you can't add albums or folders inside it.
+Can you password-protect a single album in Photos?
+Not in Apple's Photos app. Only the Hidden album and Recently Deleted are locked, both with Face ID or your passcode. To lock a single album with its own code, you need a vault app that supports it.
+Can different locked notes have different passwords?
+No. All locked notes in one account use the same password: your iPhone passcode or a single Notes password. If you forget a separate Notes password, Apple can't recover the notes locked with it.
+Does the iCloud Shared Photo Library have its own Hidden album?
+It shares one. If you hide a photo in the Shared Library, it moves to the Hidden album for every participant, and any of them can view or unhide it.
+Something wrong or out of date? Email business@inertiaprojects.info and we'll fix it.
+Related
+- Hidden photos on iPhone
+- Lock photos with Face ID
+- What is a decoy vault?
+- How to hide photos on iPhone
 - All guides
 
 ---
@@ -1132,7 +1301,7 @@ Choose Vaultaire if you don't want an account or a company cloud. Choose Keepsaf
 Moving from Keepsafe? Follow the steps in how to switch from Keepsafe without losing photos : export the originals, check them, import, and only then delete.
 ### Is there another option like Vaultaire?
 Yes. Noxium photo vault, which we make, works the same way as Vaultaire on the points above: no account, a drawn pattern, AES-256-GCM, and an encrypted backup to your own iCloud on the free plan.
-The differences: Noxium's free plan holds 150 photos and 10 videos with 1 decoy vault, you write down a recovery phrase at setup in case you forget your pattern, and its privacy label is Data Not Collected. Pro is $2.99 a week, $17.99 a year or $39.99 once.
+The differences: Noxium's free plan holds 150 photos and 10 videos with 1 decoy vault, you write down a recovery phrase at setup in case you forget your pattern, and its privacy label is Data Not Collected. Pro is $2.99 a week, $17.99 a year or $39.99 once. For the full side-by-side, read our Vaultaire review, compared with Noxium .
 No account. Your own iCloud.
 Noxium opens with a pattern only you know and backs up, encrypted, to your own iCloud. Free for 150 photos and 10 videos.
 Download on the App Store
@@ -1174,6 +1343,7 @@ Hide the photos, then make sure the Hidden album's Face ID lock is on. It's on b
 - Hide the photos: in Photos, touch and hold a photo and tap Hide . For several, tap Select , choose them, tap More (…) and Hide .
 - Check the lock: go to Settings › Apps › Photos and turn on Use Face ID (or Use Touch ID / Use Passcode). This locks both Hidden and Recently Deleted.
 - Optional: turn off Show Hidden Album so the album doesn't appear in Collections at all.
+Where the Hidden album is, how to view and unhide photos, and what happens to them on iCloud and a new iPhone: hidden photos on iPhone, the complete guide .
 Photos can't lock other albums. Only Hidden and Recently Deleted have a lock. And the lock accepts your iPhone passcode, so anyone who knows it can open the album ( Apple Support ).
 ### How do you lock the whole Photos app?
 Since iOS 18, you can make any app ask for Face ID before it opens.

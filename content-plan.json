@@ -146,10 +146,10 @@
       "type": "guide",
       "path": "/guides/hidden-photos-iphone",
       "keyword": "how to view hidden photos on iphone",
-      "cluster": "hidden-album",
+      "cluster": "hide-lock",
       "vaultaire": "https://vaultaire.app/guides/hidden-photos-iphone/",
       "note": "Pillar for the hidden-album cluster (12,100 worldwide / 6,600 US for view/find, KD 3; keyword data Nov 2026). One H2 per question: view/access, where to find, add to, unhide, lock, iCloud, new iPhone, Mac/PC. Replaces the planned where-are-hidden-photos, do-hidden-photos-go-to-icloud and do-hidden-photos-transfer-to-new-iphone topics, and 'how to add photos to hidden album' (5,400 worldwide).",
-      "status": "todo"
+      "status": "in-review"
     },
     {
       "order": 16,
@@ -160,7 +160,7 @@
       "cluster": "existing",
       "vaultaire": "https://vaultaire.app/guides/hide-photos-iphone/",
       "note": "Priority (22,200 worldwide / 6,600 US, KD 5-8, but position 88 in Search Console, Nov 2026). Expand to ~2,000 words: cover the questions Vaultaire's page answers that ours doesn't; link the hidden-photos pillar.",
-      "status": "todo"
+      "status": "in-review"
     },
     {
       "order": 17,
@@ -168,9 +168,9 @@
       "type": "guide",
       "path": "/guides/multiple-hidden-albums-iphone",
       "keyword": "multiple hidden albums iphone",
-      "cluster": "hidden-album",
+      "cluster": "hide-lock",
       "note": "260 US, KD 0. iOS has one Hidden album; the workarounds and where a vault with several locked albums fits (features: album patterns).",
-      "status": "todo"
+      "status": "in-review"
     },
     {
       "order": 18,
