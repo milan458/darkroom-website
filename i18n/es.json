@@ -111,6 +111,17 @@
       "keyword": "recuperar fotos caja fuerte de fotos",
       "published": "2026-11-13",
       "updated": "2026-11-13"
+    },
+    "/guides/forgot-photo-vault-password": {
+      "source": "2026-11-11",
+      "title": "¿Olvidaste la contraseña de tu caja fuerte de fotos?",
+      "description": "¿No puedes entrar en tu caja fuerte de fotos? Cómo desbloquearla con la recuperación que ofrece, qué probar primero y qué no hacer para no perder fotos.",
+      "headline": "¿Has olvidado la contraseña o el PIN de tu caja fuerte de fotos? Lo que aún puedes hacer",
+      "summary": "Qué hacer si olvidas el PIN, la contraseña o el patrón de una app de caja fuerte, y cómo funciona cada tipo de recuperación.",
+      "crumb": "Contraseña olvidada",
+      "keyword": "olvidé contraseña caja fuerte fotos",
+      "published": "2026-11-13",
+      "updated": "2026-11-13"
     }
   },
   "facts": [

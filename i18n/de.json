@@ -111,6 +111,17 @@
       "keyword": "foto tresor fotos wiederherstellen",
       "published": "2026-11-13",
       "updated": "2026-11-13"
+    },
+    "/guides/forgot-photo-vault-password": {
+      "source": "2026-11-11",
+      "title": "Foto-Tresor-Passwort vergessen? So kommst du wieder rein",
+      "description": "Aus einer Foto-Tresor-App ausgesperrt? So kommst du mit der Wiederherstellung der App wieder rein, was du zuerst versuchst und was du lassen solltest.",
+      "headline": "Passwort oder PIN vom Foto-Tresor vergessen? Was du jetzt noch tun kannst",
+      "summary": "Was du tun kannst, wenn du PIN, Passwort oder Muster einer Tresor-App vergessen hast, und wie jede Art der Wiederherstellung funktioniert.",
+      "crumb": "Tresor-Passwort vergessen",
+      "keyword": "foto tresor passwort vergessen",
+      "published": "2026-11-13",
+      "updated": "2026-11-13"
     }
   },
   "facts": [

@@ -177,6 +177,17 @@
       "keyword": "照片保險庫 照片不見",
       "published": "2026-11-13",
       "updated": "2026-11-13"
+    },
+    "/guides/forgot-photo-vault-password": {
+      "source": "2026-11-11",
+      "title": "忘記照片保險庫密碼？解鎖與復原方法",
+      "description": "打不開照片保險庫 App？各 App 的復原方式、應該先試什麼，以及為了不弄丟照片不能做的事。",
+      "headline": "忘記照片保險庫的密碼或 PIN 碼？你還能做的事",
+      "summary": "忘記保險庫 App 的 PIN 碼、密碼或圖形時能做的事，以及各種復原方式的原理。",
+      "crumb": "忘記保險庫密碼",
+      "keyword": "照片保險庫 忘記密碼",
+      "published": "2026-11-13",
+      "updated": "2026-11-13"
     }
   }
 }

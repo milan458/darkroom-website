@@ -111,6 +111,17 @@
       "keyword": "récupérer photos coffre photo",
       "published": "2026-11-13",
       "updated": "2026-11-13"
+    },
+    "/guides/forgot-photo-vault-password": {
+      "source": "2026-11-11",
+      "title": "Mot de passe du coffre photo oublié? Déverrouiller l’app",
+      "description": "Bloqué hors de votre app de coffre photo? Comment la déverrouiller avec sa récupération, quoi essayer d’abord et quoi éviter pour garder vos photos.",
+      "headline": "Mot de passe ou NIP de votre coffre photo oublié? Ce que vous pouvez encore faire",
+      "summary": "Quoi faire quand vous oubliez le NIP, le mot de passe ou le schéma d’une app de coffre, et comment fonctionne chaque type de récupération.",
+      "crumb": "Mot de passe du coffre oublié",
+      "keyword": "mot de passe coffre photo oublié",
+      "published": "2026-11-13",
+      "updated": "2026-11-13"
     }
   },
   "facts": [
