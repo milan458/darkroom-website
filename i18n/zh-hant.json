@@ -199,6 +199,17 @@
       "keyword": "照片保險庫 換手機 移轉",
       "published": "2026-11-15",
       "updated": "2026-11-15"
+    },
+    "/guides/hidden-photos-iphone": {
+      "source": "2026-11-15",
+      "title": "如何查看 iPhone 隱藏的照片（iOS 26）",
+      "description": "在 iPhone 上找到並查看隱藏的照片、把照片加入「已隱藏」、鎖定相簿，以及在 iCloud、Mac 和新 iPhone 上會發生什麼。",
+      "headline": "iPhone 隱藏的照片：怎麼找、怎麼看、怎麼加入、鎖定和移到新手機",
+      "summary": "「已隱藏」相簿的一切：在哪裡、怎麼查看、隱藏、取消隱藏和鎖定照片，以及同步與移轉方式。",
+      "crumb": "隱藏的照片",
+      "keyword": "iphone 隱藏的照片 怎麼看",
+      "published": "2026-11-15",
+      "updated": "2026-11-15"
     }
   }
 }

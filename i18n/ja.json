@@ -133,6 +133,17 @@
       "keyword": "写真保管庫 機種変更 引き継ぎ",
       "published": "2026-11-15",
       "updated": "2026-11-15"
+    },
+    "/guides/hidden-photos-iphone": {
+      "source": "2026-11-15",
+      "title": "iPhone の非表示の写真を見る方法（iOS 26）",
+      "description": "iPhone で非表示にした写真の見つけ方と見方、「非表示」への追加、ロック、iCloud・Mac・新しい iPhone でどうなるかをまとめました。",
+      "headline": "iPhone の非表示の写真：見つけ方・見方・追加・ロック・引き継ぎ",
+      "summary": "「非表示」アルバムのすべて：場所、写真の表示・非表示・解除・ロック、同期と引き継ぎの仕組み。",
+      "crumb": "非表示の写真",
+      "keyword": "iphone 非表示 写真 見方",
+      "published": "2026-11-15",
+      "updated": "2026-11-15"
     }
   },
   "facts": [

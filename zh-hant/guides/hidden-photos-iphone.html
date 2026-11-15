@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#FAF9F6" media="(prefers-color-scheme: light)">
+  <!-- build:meta -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WWNMHW99TP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-WWNMHW99TP');
+  </script>
+  <title>如何查看 iPhone 隱藏的照片（iOS 26）</title>
+  <meta name="description" content="在 iPhone 上找到並查看隱藏的照片、把照片加入「已隱藏」、鎖定相簿，以及在 iCloud、Mac 和新 iPhone 上會發生什麼。">
+  <link rel="canonical" href="https://getnoxium.app/zh-hant/guides/hidden-photos-iphone">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <link rel="alternate" hreflang="en" href="https://getnoxium.app/guides/hidden-photos-iphone">
+  <link rel="alternate" hreflang="de" href="https://getnoxium.app/de/guides/hidden-photos-iphone">
+  <link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/guides/hidden-photos-iphone">
+  <link rel="alternate" hreflang="es" href="https://getnoxium.app/es/guides/hidden-photos-iphone">
+  <link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/guides/hidden-photos-iphone">
+  <link rel="alternate" hreflang="it" href="https://getnoxium.app/it/guides/hidden-photos-iphone">
+  <link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/guides/hidden-photos-iphone">
+  <link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/guides/hidden-photos-iphone">
+  <link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/guides/hidden-photos-iphone">
+  <link rel="alternate" hreflang="x-default" href="https://getnoxium.app/guides/hidden-photos-iphone">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Noxium">
+  <meta property="og:title" content="如何查看 iPhone 隱藏的照片（iOS 26）">
+  <meta property="og:description" content="在 iPhone 上找到並查看隱藏的照片、把照片加入「已隱藏」、鎖定相簿，以及在 iCloud、Mac 和新 iPhone 上會發生什麼。">
+  <meta property="og:url" content="https://getnoxium.app/zh-hant/guides/hidden-photos-iphone">
+  <meta property="og:image" content="https://getnoxium.app/assets/og/noxium-og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Noxium photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="article:published_time" content="2026-11-15">
+  <meta property="article:modified_time" content="2026-11-15">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="如何查看 iPhone 隱藏的照片（iOS 26）">
+  <meta name="twitter:description" content="在 iPhone 上找到並查看隱藏的照片、把照片加入「已隱藏」、鎖定相簿，以及在 iCloud、Mac 和新 iPhone 上會發生什麼。">
+  <meta name="twitter:image" content="https://getnoxium.app/assets/og/noxium-og.png">
+  <meta name="twitter:image:alt" content="Noxium photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
+  <meta name="apple-itunes-app" content="app-id=6824616093">
+  <!-- /build:meta -->
+
+  <link rel="icon" type="image/svg+xml" href="/assets/noxium-logo.svg">
+  <link rel="apple-touch-icon" href="/assets/noxium-icon-180.png">
+
+  <link rel="preload" href="/assets/fonts/instrument-serif-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/fonts/fonts.css">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/pages.css">
+
+  <!-- build:jsonld -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://getnoxium.app/#org",
+        "name": "Inertia Projects",
+        "url": "https://getnoxium.app/about",
+        "email": "business@inertiaprojects.info",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://getnoxium.app/assets/noxium-icon-512.png"
+        },
+        "brand": {
+          "@type": "Brand",
+          "name": "Noxium"
+        },
+        "sameAs": [
+          "https://apps.apple.com/app/apple-store/id6824616093"
+        ]
+      },
+      {
+        "@type": "Article",
+        "@id": "https://getnoxium.app/zh-hant/guides/hidden-photos-iphone#article",
+        "headline": "iPhone 隱藏的照片：怎麼找、怎麼看、怎麼加入、鎖定和移到新手機",
+        "description": "在 iPhone 上找到並查看隱藏的照片、把照片加入「已隱藏」、鎖定相簿，以及在 iCloud、Mac 和新 iPhone 上會發生什麼。",
+        "url": "https://getnoxium.app/zh-hant/guides/hidden-photos-iphone",
+        "mainEntityOfPage": "https://getnoxium.app/zh-hant/guides/hidden-photos-iphone",
+        "image": "https://getnoxium.app/assets/guides/noxium-library.jpg",
+        "datePublished": "2026-11-15",
+        "dateModified": "2026-11-15",
+        "author": {
+          "@id": "https://getnoxium.app/#org"
+        },
+        "publisher": {
+          "@id": "https://getnoxium.app/#org"
+        },
+        "inLanguage": "zh-Hant",
+        "isPartOf": {
+          "@id": "https://getnoxium.app/#website"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Noxium",
+            "item": "https://getnoxium.app/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "指南",
+            "item": "https://getnoxium.app/zh-hant/guides/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "隱藏的照片",
+            "item": "https://getnoxium.app/zh-hant/guides/hidden-photos-iphone"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://getnoxium.app/zh-hant/guides/hidden-photos-iphone#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "iOS 26 的「已隱藏」相簿在哪裡？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "在「照片」中點一下「選集」，捲動到「更多項目」，「已隱藏」就和「最近刪除」放在一起。如果沒看到，請到「設定」›「App」›「照片」開啟「顯示『已隱藏』相簿」。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "隱藏照片會把照片刪掉嗎？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "不會。隱藏只是讓照片不顯示在圖庫中。它還在你的 iPhone 和 iCloud 照片裡，隨時都能取消隱藏。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "別人看得到我隱藏的照片嗎？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "知道你 iPhone 密碼的人看得到，能解鎖登入你 Apple 帳號且開啟 iCloud 照片的 Mac 或 iPad 的人也看得到。只是在你解鎖的 iPhone 上滑照片的人看不到，因為相簿會要求 Face ID。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "其他 App 看得到隱藏的照片嗎？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "相簿鎖定時看不到，而它預設就是鎖定的。如果你在「設定」›「App」›「照片」關閉「使用 Face ID」，擁有完整圖庫取用權的 App 就能要求讀取隱藏的照片。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "為什麼我隱藏的照片不見了？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "最常見的原因是「顯示『已隱藏』相簿」被關閉了，或那部裝置上的 iCloud 照片還沒同步完。請檢查「設定」›「App」›「照片」，再看看「最近刪除」，刪除的照片會在那裡保留 30 天。"
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <!-- /build:jsonld -->
+</head>
+<body>
+  <!-- build:header -->
+  <!-- Shared header (homepage and subpages). Edit partials/header.html, then run python3 tools/build.py. -->
+  <a href="#main-content" class="skip-link">跳至主要內容</a>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <nav class="nav glass" aria-label="主要導覽">
+        <a href="/" class="wordmark" aria-label="Noxium 首頁">Noxium<span aria-hidden="true">.</span></a>
+
+        <div class="nav-links">
+          <a href="/#features">功能</a>
+          <a href="/#security">安全性</a>
+          <a href="/#pricing">價格</a>
+          <a href="/best-photo-vault-apps-iphone">比較</a>
+          <a href="/zh-hant/guides/">指南</a>
+        </div>
+
+        <div class="nav-actions">
+          <a href="https://apps.apple.com/app/apple-store/id6824616093" class="btn btn-ink btn-nav nav-cta" data-cta="nav" data-label-waitlist="加入 Beta 測試" data-label-live="下載 Noxium">下載 Noxium</a>
+          <button type="button" class="mobile-menu-btn" id="mobile-menu-btn" aria-expanded="false" aria-controls="mobile-drawer" aria-label="選單">
+            <svg class="icon icon-menu" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 9h14M5 15h14"/></svg>
+            <svg class="icon icon-close" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <div class="mobile-drawer glass" id="mobile-drawer" hidden>
+      <nav class="mobile-drawer-list" aria-label="行動版">
+        <a href="/#features">功能</a>
+        <a href="/#security">安全性</a>
+        <a href="/#pricing">價格</a>
+        <a href="/best-photo-vault-apps-iphone">比較保險庫 App</a>
+        <a href="/zh-hant/guides/">指南</a>
+        <a href="/about">關於</a>
+        <a href="/support">支援</a>
+      </nav>
+    </div>
+  </header>
+  <!-- /build:header -->
+
+  <main id="main-content" tabindex="-1">
+    <div class="page-hero">
+      <div class="container">
+        <!-- build:breadcrumbs -->
+        <nav class="crumbs" aria-label="導覽路徑">
+          <ol>
+            <li><a href="/">Noxium</a></li>
+            <li><a href="/zh-hant/guides/">指南</a></li>
+            <li aria-current="page">隱藏的照片</li>
+          </ol>
+        </nav>
+        <!-- /build:breadcrumbs -->
+        <p class="eyebrow"><span class="dot dot-ink" aria-hidden="true"></span>指南 · 「已隱藏」相簿</p>
+        <h1>iPhone 隱藏的照片：怎麼找、怎麼看、怎麼加入、鎖定和移到新手機</h1>
+        <!-- build:byline -->
+        <p class="byline"><span>作者：<a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>最後更新：<time datetime="2026-11-15">2026年11月15日</time></span></p>
+        <!-- /build:byline -->
+        <div class="answer">
+          <span class="answer-label">簡短回答</span>
+          <p>要在 iPhone 上查看隱藏的照片，打開「照片」，點一下「選集」，捲動到「更多項目」，再點一下「已隱藏」。接著點一下「檢視相簿」，用 Face ID、Touch ID 或密碼解鎖。如果找不到這個相簿，請到「設定」›「App」›「照片」開啟「顯示『已隱藏』相簿」。要隱藏照片，按住照片再點一下「隱藏」。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container article-layout">
+      <article class="prose">
+        <p>「已隱藏」相簿是 iPhone 內建、用來放不想出現在圖庫裡的照片的地方。但它也很容易找不到：Apple 在 iOS 18 改版「照片」時換了它的位置，它可以整個關掉，在 Mac、iCloud.com 和新 iPhone 上的表現也都不太一樣。這篇指南以 iOS 26 為準，逐一回答這些問題，步驟來自 Apple，並附上出處的 Apple 支援頁面連結。</p>
+
+        <h2 id="view">怎麼在 iPhone 上查看隱藏的照片？</h2>
+        <p>在「照片」的「更多項目」打開「已隱藏」相簿並解鎖。iOS 26 只要四個步驟（<a href="https://support.apple.com/zh-tw/104987">Apple：使用「已隱藏」相簿隱藏照片</a>）：</p>
+        <ol class="steps">
+          <li><strong>打開「照片」，</strong>點一下<span class="path">選集</span>。在 iPad 上，先點一下側邊欄按鈕。</li>
+          <li><strong>捲動到「更多項目」，</strong>點一下<span class="path">已隱藏</span>。</li>
+          <li><strong>點一下「檢視相簿」。</strong></li>
+          <li><strong>解鎖：</strong>使用 Face ID、Touch ID 或 iPhone 密碼。</li>
+        </ol>
+        <p>離開「照片」後，相簿會再次鎖定。在 iOS 15 以前的版本，「已隱藏」位於「相簿」分頁下方，而且沒有上鎖。</p>
+
+        <h2 id="cant-find">為什麼找不到「已隱藏」相簿？</h2>
+        <p>通常是因為「顯示『已隱藏』相簿」被關掉了。關掉後相簿會從「照片」中消失，但裡面的照片都還在。重新開啟的方法：</p>
+        <ol class="steps">
+          <li><strong>打開「設定」，</strong>點一下<span class="path">App › 照片</span>。</li>
+          <li><strong>開啟「顯示『已隱藏』相簿」。</strong>預設是開啟的。</li>
+          <li><strong>回到「照片」，</strong>打開「選集」並捲動到「更多項目」。</li>
+        </ol>
+        <p>另外還有兩個常見原因：你在「選集」上方找，但「更多項目」幾乎在最底下；或是新裝置上的 iCloud 照片還在同步，在其他裝置隱藏的照片還沒過來。隱藏的照片也會從其他相簿消失：Apple 表示，這些項目「不會出現在『照片』的任何其他位置，例如『圖庫』、其他相簿，或甚至主畫面的『照片』小工具」。如果某個相簿少了照片，先到「已隱藏」看看，再判斷是不是真的不見了。</p>
+
+        <h2 id="without-face-id">沒有 Face ID 也能看隱藏的照片嗎？</h2>
+        <p>可以，用 iPhone 密碼。Face ID 和 Touch ID 只是捷徑：辨識失敗或改用其他方式時，密碼就能解鎖相簿。這個相簿沒有專屬密碼。這也代表知道你密碼的人都打得開，這正是它最大的限制（下面會再說明）。</p>
+
+        <h2 id="add">怎麼把照片加入「已隱藏」相簿？</h2>
+        <p>在「照片」中按住照片或影片，點一下「隱藏」並確認。它就會離開圖庫，移到「已隱藏」。</p>
+        <ol class="steps">
+          <li><strong>一張照片：</strong>按住後點一下<span class="path">隱藏</span>，再確認。</li>
+          <li><strong>一次多張：</strong>點一下<span class="path">選取</span>，點選每張照片，點一下「更多」按鈕（…），再點一下<span class="path">隱藏</span>。</li>
+          <li><strong>在打開的照片中：</strong>點一下上方的「更多」按鈕（…），選擇<span class="path">隱藏</span>。</li>
+        </ol>
+        <p>影片、截圖和原況照片也用同樣的方法隱藏。在其他 App（訊息、LINE、檔案）裡的照片，要先儲存到「照片」，而那個 App 裡的副本會留在原處。沒有任何設定能把相機新拍的照片直接放進「已隱藏」。其他隱藏照片的方法，包括鎖定的備忘錄和保險庫 App，請看<a href="/zh-hant/guides/how-to-hide-photos-on-iphone">如何在 iPhone 上隱藏照片</a>。</p>
+
+        <h2 id="unhide">怎麼取消隱藏照片？</h2>
+        <p>打開「已隱藏」相簿，按住照片，點一下「取消隱藏」。照片會回到圖庫中依日期排列的原位置。要一次取消多張，在「已隱藏」中點一下「選取」，選好照片，再點一下「更多」按鈕（…）並選「取消隱藏」。</p>
+
+        <h2 id="lock">怎麼鎖定 iPhone 上隱藏的照片？</h2>
+        <p>從 iOS 16 開始，它們本來就是鎖定的。請到<span class="path">設定 › App › 照片</span>確認鎖定有開啟：「使用 Face ID」（或 Touch ID、密碼）應該是開啟的。同一個開關也會鎖定「最近刪除」。</p>
+        <p>做不到的是替「已隱藏」相簿設一組專屬密碼。如果你想要和密碼分開的鎖，有三種做法：</p>
+        <ul>
+          <li><strong>鎖定整個「照片」App：</strong>按住「照片」圖像，點一下「需要 Face ID」（iOS 18 以上）。不過最後還是能用密碼打開。</li>
+          <li><strong>鎖定的備忘錄：</strong>設定一組備忘錄專用密碼，適合少量照片。</li>
+          <li><strong>保險庫 App：</strong>選一款用自己的 PIN 碼、密碼或圖形打開的 App。</li>
+        </ul>
+        <p>每種做法的步驟請看<a href="/guides/lock-photos-iphone-face-id">如何用 Face ID 或圖形鎖定 iPhone 照片</a>。</p>
+
+        <h2 id="icloud">隱藏的照片會上傳到 iCloud 嗎？</h2>
+        <p>如果開啟了 iCloud 照片，就會。隱藏的照片和其他照片一樣會上傳，而且 Apple 表示，在一部裝置上隱藏的照片，在其他裝置上也會隱藏。如果 iCloud 照片是關閉的，它們會和圖庫其他內容一起包含在 iPhone 的 iCloud 備份裡（<a href="https://support.apple.com/zh-tw/108770">Apple：iCloud 會備份哪些內容？</a>）。</p>
+        <p>在 iCloud 中，隱藏的照片和圖庫其他照片受到一樣的保護。除非你開啟「進階資料保護」讓「照片」採用端對端加密，否則 iCloud 照片的加密金鑰由 Apple 持有。隱藏照片並不會多加一層加密；實際代表什麼，請看<a href="/zh-hant/guides/is-iphone-hidden-album-private">iPhone 的「已隱藏」相簿真的私密嗎？</a></p>
+
+        <h2 id="new-iphone">隱藏的照片會移到新 iPhone 嗎？</h2>
+        <p>會，只要圖庫有移過去，它們就會一起過去。怎麼過去取決於 iCloud 照片：</p>
+        <div class="data-table-wrap" tabindex="0" role="region" aria-labelledby="transfer-caption">
+          <table class="data-table">
+            <caption id="transfer-caption">隱藏的照片如何到新 iPhone（iOS 26）</caption>
+            <thead><tr><th scope="col">你的設定</th><th scope="col">隱藏的照片會怎樣</th><th scope="col">清除舊 iPhone 前要確認</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">iCloud 照片開啟</th><td>登入同一個 Apple 帳號後從 iCloud 下載，而且仍是隱藏狀態</td><td>舊 iPhone 已上傳完畢（「照片」沒有等待中的項目）</td></tr>
+              <tr><th scope="row">iCloud 照片關閉，使用 iCloud 備份</th><td>從那份備份回復時一起回來</td><td>最後一次備份是最近的，而且完整</td></tr>
+              <tr><th scope="row">「快速開始」，手機對手機</th><td>iCloud 照片關閉時，會隨圖庫一起拷貝；開啟時，則和上面一樣從 iCloud 下載</td><td>新 iPhone 的「已隱藏」項目數量相同</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>不管用哪種方式，清除舊 iPhone 前，都要在新 iPhone 上打開「已隱藏」核對數量。保險庫 App 裡的照片則是另一回事：很多保險庫 App 刻意把檔案排除在 iPhone 備份之外，所以換手機前請先看<a href="/zh-hant/guides/move-photo-vault-to-new-iphone">怎麼把照片保險庫移到新 iPhone</a>。</p>
+
+        <h2 id="mac-pc">怎麼在 Mac 或 Windows 電腦上看隱藏的照片？</h2>
+        <p>在 Mac 上，「已隱藏」相簿預設是關閉的。在「照片」中選擇<span class="path">顯示方式 › 顯示『已隱藏』相簿</span>，在側邊欄的「更多項目」下方選取「已隱藏」，按一下「檢視相簿」，再用 Touch ID 或登入密碼解鎖。</p>
+        <p>在 Windows 電腦或任何電腦上，用瀏覽器：前往 icloud.com/photos 並登入，在側邊欄選取<span class="path">已隱藏</span>，再顯示隱藏的照片（<a href="https://support.apple.com/zh-tw/guide/icloud/mmea67686c65/icloud">Apple：在 iCloud.com 上隱藏照片</a>）。這需要開啟 iCloud 照片。有使用者回報用 Windows 版 iCloud App 看到的結果不一致，所以 iCloud.com 是比較可靠的方式。</p>
+
+        <h2 id="multiple">可以有不只一個「已隱藏」相簿嗎？</h2>
+        <p>不行。iOS 只有一個「已隱藏」相簿，裡面也不能建立資料夾或相簿。所有隱藏的內容都在同一個格狀畫面裡，鎖在同一道鎖後面。如果你想要分開的私密相簿，例如一個放證件、一個放個人照片，請看<a href="/guides/multiple-hidden-albums-iphone">如何在 iPhone 上擁有多個隱藏相簿</a>（英文）。</p>
+
+        <h2 id="limits">「已隱藏」相簿保護不了什麼？</h2>
+        <p>它只是讓照片不被看到，並沒有讓照片拿不到。知道你密碼的人就能打開它，它會出現在每一台登入你 Apple 帳號的 iPad 和 Mac 上，而且沒有額外加密。隱藏的照片是同一個圖庫裡的同一個檔案，只是多了一個「不要顯示」的標記。</p>
+        <p>如果這樣還不夠，下一步就是用自己密碼打開的保險庫 App。Noxium 是我們開發的 App，用你在 5×5 螺栓板上畫出的圖形打開，和 iPhone 密碼分開，並在裝置上加密每一張照片。你可以在保險庫裡建立相簿，第二組圖形則會打開另一個偽裝保險庫。</p>
+        <p class="inline-cta"><a href="https://apps.apple.com/app/apple-store/id6824616093" data-cta="inline" data-label-waitlist="免費試用 Noxium：加入測試 →" data-label-live="在 App Store 免費下載 Noxium →">在 App Store 免費下載 Noxium →</a></p>
+
+        <div class="cta-card">
+          <p class="cta-card-title">有專屬金鑰的隱藏相簿</p>
+          <p>Noxium 用只有你知道的圖形打開，而不是 iPhone 密碼，並在 iPhone 上加密每一張照片。免費方案可存 150 張照片、10 部影片和 1 個偽裝保險庫。沒有廣告，不需帳號。</p>
+          <a href="https://apps.apple.com/app/apple-store/id6824616093" class="btn btn-primary" data-cta="body" data-label-waitlist="加入測試" data-label-live="在 App Store 下載">在 App Store 下載</a>
+          <!-- build:status -->
+          <span class="release-status">可在 App Store 下載，支援 iPhone 和 iPad。</span>
+          <!-- /build:status -->
+        </div>
+
+        <h2 id="faq">常見問題</h2>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>iOS 26 的「已隱藏」相簿在哪裡？</span></span></summary>
+            <div class="faq-body"><p>在「照片」中點一下「選集」，捲動到「更多項目」，「已隱藏」就和「最近刪除」放在一起。如果沒看到，請到「設定」›「App」›「照片」開啟「顯示『已隱藏』相簿」。</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>隱藏照片會把照片刪掉嗎？</span></span></summary>
+            <div class="faq-body"><p>不會。隱藏只是讓照片不顯示在圖庫中。它還在你的 iPhone 和 iCloud 照片裡，隨時都能取消隱藏。</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>別人看得到我隱藏的照片嗎？</span></span></summary>
+            <div class="faq-body"><p>知道你 iPhone 密碼的人看得到，能解鎖登入你 Apple 帳號且開啟 iCloud 照片的 Mac 或 iPad 的人也看得到。只是在你解鎖的 iPhone 上滑照片的人看不到，因為相簿會要求 Face ID。</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>其他 App 看得到隱藏的照片嗎？</span></span></summary>
+            <div class="faq-body"><p>相簿鎖定時看不到，而它預設就是鎖定的。如果你在「設定」›「App」›「照片」關閉「使用 Face ID」，擁有完整圖庫取用權的 App 就能要求讀取隱藏的照片。</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>為什麼我隱藏的照片不見了？</span></span></summary>
+            <div class="faq-body"><p>最常見的原因是「顯示『已隱藏』相簿」被關閉了，或那部裝置上的 iCloud 照片還沒同步完。請檢查「設定」›「App」›「照片」，再看看「最近刪除」，刪除的照片會在那裡保留 30 天。</p></div>
+          </details>
+        </div>
+
+        <p><em>發現錯誤或過時的資訊？請寫信到 <a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a>，我們會修正。</em></p>
+      </article>
+
+      <aside class="article-aside" aria-label="本頁內容">
+        <nav class="toc" aria-label="目錄">
+          <p class="toc-title">本頁內容</p>
+          <ol>
+            <li><a href="#view">查看隱藏的照片</a></li>
+            <li><a href="#cant-find">找不到相簿</a></li>
+            <li><a href="#add">隱藏照片</a></li>
+            <li><a href="#unhide">取消隱藏</a></li>
+            <li><a href="#lock">鎖定隱藏的照片</a></li>
+            <li><a href="#icloud">隱藏的照片與 iCloud</a></li>
+            <li><a href="#new-iphone">在新 iPhone 上</a></li>
+            <li><a href="#mac-pc">在 Mac 或電腦上</a></li>
+            <li><a href="#multiple">多個隱藏相簿</a></li>
+            <li><a href="#limits">保護不了什麼</a></li>
+            <li><a href="#faq">常見問題</a></li>
+          </ol>
+        </nav>
+        <!-- build:related -->
+        <div class="related">
+          <p class="toc-title">相關頁面</p>
+          <ul role="list">
+            <li><a href="/zh-hant/guides/how-to-hide-photos-on-iphone">iPhone 隱藏照片</a></li>
+            <li><a href="/zh-hant/guides/is-iphone-hidden-album-private">「已隱藏」相簿安全嗎？</a></li>
+            <li><a href="/zh-hant/guides/">全部指南</a></li>
+          </ul>
+        </div>
+        <!-- /build:related -->
+      </aside>
+    </div>
+  </main>
+
+  <!-- build:footer -->
+  <!-- Shared footer for subpages (the homepage has its own copy with build:status). Edit partials/footer.html, then run python3 tools/build.py. -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="/" class="wordmark" aria-label="Noxium 首頁">Noxium<span aria-hidden="true">.</span></a>
+          <p>照片、影片和備忘錄的私密保險庫。</p>
+        </div>
+
+        <nav class="footer-groups" aria-label="頁尾">
+          <div>
+            <h2 class="footer-heading">產品</h2>
+            <ul role="list">
+              <li><a href="/#features">功能</a></li>
+              <li><a href="/#security">加密原理</a></li>
+              <li><a href="/#pricing">免費版與 Pro 版</a></li>
+              <li><a href="/best-photo-vault-apps-iphone">照片保險庫 App 比較</a></li>
+              <li><a href="/#faq">常見問題</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="footer-heading">指南</h2>
+            <ul role="list">
+              <li><a href="/zh-hant/guides/how-to-hide-photos-on-iphone">iPhone 隱藏照片</a></li>
+  <li><a href="/zh-hant/guides/is-iphone-hidden-album-private">「已隱藏」相簿安全嗎？</a></li>
+  <li><a href="/zh-hant/guides/hidden-photos-iphone">隱藏的照片</a></li>
+  <li><a href="/zh-hant/guides/move-photo-vault-to-new-iphone">保險庫移到新 iPhone</a></li>
+  <li><a href="/zh-hant/guides/photo-vault-lost-photos">保險庫照片不見了</a></li>
+  <li><a href="/zh-hant/guides/keepsafe-alternatives">Keepsafe 替代 App</a></li>
+              <li><a href="/zh-hant/guides/">全部指南</a></li>
+              <li><a href="/features/">Features</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="footer-heading">公司</h2>
+            <ul role="list">
+              <li><a href="/about">關於</a></li>
+              <li><a href="/support">支援</a></li>
+              <li><a href="/privacy">隱私政策</a></li>
+              <li><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener">使用條款</a></li>
+              <li><a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Noxium。由獨立開發者 Inertia Projects 開發。App Store 隱私標籤：未收集資料。</p>
+        <nav class="lang-list" aria-label="語言"><a href="/guides/hidden-photos-iphone" hreflang="en" lang="en">English</a><a href="/de/guides/hidden-photos-iphone" hreflang="de" lang="de">Deutsch</a><a href="/fr/guides/hidden-photos-iphone" hreflang="fr" lang="fr">Français</a><a href="/es/guides/hidden-photos-iphone" hreflang="es" lang="es">Español</a><a href="/pt-br/guides/hidden-photos-iphone" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a><a href="/it/guides/hidden-photos-iphone" hreflang="it" lang="it">Italiano</a><a href="/ja/guides/hidden-photos-iphone" hreflang="ja" lang="ja">日本語</a><a href="/ko/guides/hidden-photos-iphone" hreflang="ko" lang="ko">한국어</a><a href="/zh-hant/guides/hidden-photos-iphone" hreflang="zh-Hant" lang="zh-Hant" aria-current="true">繁體中文</a></nav>
+        <p>Apple、Apple 標誌、iPhone、iPad 和 Face ID 是 Apple Inc. 在美國和其他國家和地區註冊的商標。App Store 是 Apple Inc. 的服務商標。</p>
+      </div>
+    </div>
+  </footer>
+  <!-- /build:footer -->
+
+  <script src="/app.js" defer></script>
+</body>
+</html>
