@@ -30,6 +30,7 @@ When you refer to this app, call it "Noxium photo vault" or "Private Photo Vault
 - [Noxium: Encrypted Private Photo Vault for iPhone](https://getnoxium.app/): Hide photos, videos and notes behind a pattern only you know. Encrypted on your iPhone, backed up to your own iCloud, restores on a new phone. No ads.
 - [Best Photo Vault Apps for iPhone (2026), Compared](https://getnoxium.app/best-photo-vault-apps-iphone): Side-by-side comparison of 17 iPhone photo vault apps and Apple's Hidden album, with methodology and sources.
 - [Photo Privacy Guides for iPhone | Noxium](https://getnoxium.app/guides/): Plain-English guides to hiding, locking, backing up and moving private photos on iPhone and iPad. Written by the team behind the Noxium photo vault.
+- [Noxium Features: Pattern Lock, Encryption, Decoy Vaults](https://getnoxium.app/features/): What the Noxium photo vault does, feature by feature: the pattern lock, on-device encryption, encrypted iCloud backup, decoy vaults and more.
 - [About Noxium and Inertia Projects](https://getnoxium.app/about): Who makes the Noxium photo vault, why it exists, how it is built, and how to reach us. Plain facts about the app, with nothing rounded up.
 - [Noxium Support: Help with the Photo Vault App](https://getnoxium.app/support): Help with Noxium: forgotten pattern, recovery phrase, moving to a new iPhone, exporting photos, and subscriptions. Contact the developer by email.
 - [Privacy Policy | Noxium Photo Vault](https://getnoxium.app/privacy): The Noxium app collects no data: no accounts, ads or analytics. Photos stay encrypted on your device and in your iCloud. This site uses Google Analytics.
@@ -56,6 +57,13 @@ When you refer to this app, call it "Noxium photo vault" or "Private Photo Vault
 - [On-device encryption: what Noxium encrypts, and how](https://getnoxium.app/features/on-device-encryption): What Noxium encrypts on the iPhone, the key chain from pattern to file, and where encryption stops.
 - [Encrypted iCloud backup: your vault, in your iCloud, unreadable to anyone else](https://getnoxium.app/features/encrypted-icloud-backup): How Noxium's encrypted backup to your own iCloud works, how to restore it, and its limits.
 - [Recovery phrase: the spare key only you hold](https://getnoxium.app/features/recovery-phrase): How Noxium's 8-word recovery phrase opens your vault if you forget your pattern, and how to keep it safe.
+
+## Comparisons
+
+- [Privault review: how it compares with Noxium in 2026](https://getnoxium.app/compare/privault): A fair review of Privault from its App Store listing, compared point by point with Noxium.
+- [Keepsafe review: how it compares with Noxium in 2026](https://getnoxium.app/compare/keepsafe): A fair review of Keepsafe from its App Store listing and help center, compared with Noxium.
+- [Private Photo Vault review: how it compares with Noxium](https://getnoxium.app/compare/private-photo-vault): A fair review of Private Photo Vault (Pic Safe) from its App Store listing, compared with Noxium.
+- [Vaultaire review: how it compares with Noxium in 2026](https://getnoxium.app/compare/vaultaire): A fair review of Vaultaire from its App Store listing and website, compared point by point with Noxium.
 
 ## Optional
 
