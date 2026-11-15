@@ -193,7 +193,7 @@
       "cluster": "choose-vault",
       "vaultaire": "https://vaultaire.app/compare/vaultaire-vs-apple-hidden-album/",
       "competitor": "Apple Photos Hidden album",
-      "status": "todo"
+      "status": "in-review"
     },
     {
       "order": 12,
@@ -204,7 +204,7 @@
       "cluster": "choose-vault",
       "vaultaire": "https://vaultaire.app/compare/vaultaire-vs-calculator-hide-photos/",
       "competitor": "Calculator# Hide Photos Videos",
-      "status": "todo"
+      "status": "in-review"
     },
     {
       "order": 13,
@@ -215,7 +215,7 @@
       "cluster": "choose-vault",
       "vaultaire": "https://vaultaire.app/compare/vaultaire-vs-hide-it-pro/",
       "competitor": "Hide Photos Video - Hide it Pro",
-      "status": "todo"
+      "status": "in-review"
     },
     {
       "order": 14,
@@ -226,7 +226,7 @@
       "cluster": "choose-vault",
       "vaultaire": "https://vaultaire.app/compare/vaultaire-vs-secret-photo-vault/",
       "competitor": "Secret Photo Vault - Lock Photos",
-      "status": "todo"
+      "status": "in-review"
     },
     {
       "order": 23,
