@@ -109,8 +109,8 @@
       "summary": "O que fazer, e o que não fazer, quando fotos somem de um app de cofre, e onde elas ainda podem estar.",
       "crumb": "Fotos sumidas do cofre",
       "keyword": "recuperar fotos cofre de fotos",
-      "published": "2026-11-13",
-      "updated": "2026-11-13"
+      "published": "2026-11-14",
+      "updated": "2026-11-14"
     },
     "/guides/forgot-photo-vault-password": {
       "source": "2026-11-11",
@@ -120,8 +120,19 @@
       "summary": "O que fazer quando você esquece o PIN, a senha ou o padrão de um app de cofre, e como funciona cada tipo de recuperação.",
       "crumb": "Esqueceu a senha do cofre",
       "keyword": "esqueci a senha do cofre de fotos",
-      "published": "2026-11-13",
-      "updated": "2026-11-13"
+      "published": "2026-11-15",
+      "updated": "2026-11-15"
+    },
+    "/guides/move-photo-vault-to-new-iphone": {
+      "source": "2026-10-26",
+      "title": "Cofre de fotos para um iPhone novo sem perder fotos",
+      "description": "Por que apps de cofre perdem fotos na troca de celular, e um checklist passo a passo para passar o seu com segurança: antes, durante e depois.",
+      "headline": "Como passar um cofre de fotos para um iPhone novo sem perder fotos",
+      "summary": "Por que apps de cofre perdem fotos na troca de celular, e um checklist passo a passo para trocar com segurança.",
+      "crumb": "Cofre para um iPhone novo",
+      "keyword": "passar cofre de fotos para iphone novo",
+      "published": "2026-11-15",
+      "updated": "2026-11-15"
     }
   },
   "facts": [

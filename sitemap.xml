@@ -59,6 +59,16 @@
     <loc>https://getnoxium.app/guides/move-photo-vault-to-new-iphone</loc>
     <lastmod>2026-10-26</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/guides/move-photo-vault-to-new-iphone"/>
   </url>
   <url>
     <loc>https://getnoxium.app/guides/photo-vault-lost-photos</loc>
@@ -282,7 +292,7 @@
   </url>
   <url>
     <loc>https://getnoxium.app/de/guides/photo-vault-lost-photos</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/guides/photo-vault-lost-photos"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/guides/photo-vault-lost-photos"/>
@@ -297,7 +307,7 @@
   </url>
   <url>
     <loc>https://getnoxium.app/de/guides/forgot-photo-vault-password</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/guides/forgot-photo-vault-password"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/guides/forgot-photo-vault-password"/>
@@ -309,6 +319,21 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/guides/forgot-photo-vault-password"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/guides/forgot-photo-vault-password"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/guides/forgot-photo-vault-password"/>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/de/guides/move-photo-vault-to-new-iphone</loc>
+    <lastmod>2026-11-15</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/guides/move-photo-vault-to-new-iphone"/>
   </url>
   <url>
     <loc>https://getnoxium.app/fr/guides/keepsafe-alternatives</loc>
@@ -372,7 +397,7 @@
   </url>
   <url>
     <loc>https://getnoxium.app/fr/guides/photo-vault-lost-photos</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/guides/photo-vault-lost-photos"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/guides/photo-vault-lost-photos"/>
@@ -387,7 +412,7 @@
   </url>
   <url>
     <loc>https://getnoxium.app/fr/guides/forgot-photo-vault-password</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/guides/forgot-photo-vault-password"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/guides/forgot-photo-vault-password"/>
@@ -399,6 +424,21 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/guides/forgot-photo-vault-password"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/guides/forgot-photo-vault-password"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/guides/forgot-photo-vault-password"/>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/fr/guides/move-photo-vault-to-new-iphone</loc>
+    <lastmod>2026-11-15</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/guides/move-photo-vault-to-new-iphone"/>
   </url>
   <url>
     <loc>https://getnoxium.app/es/guides/keepsafe-alternatives</loc>
@@ -462,7 +502,7 @@
   </url>
   <url>
     <loc>https://getnoxium.app/es/guides/photo-vault-lost-photos</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/guides/photo-vault-lost-photos"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/guides/photo-vault-lost-photos"/>
@@ -477,7 +517,7 @@
   </url>
   <url>
     <loc>https://getnoxium.app/es/guides/forgot-photo-vault-password</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/guides/forgot-photo-vault-password"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/guides/forgot-photo-vault-password"/>
@@ -489,6 +529,21 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/guides/forgot-photo-vault-password"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/guides/forgot-photo-vault-password"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/guides/forgot-photo-vault-password"/>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/es/guides/move-photo-vault-to-new-iphone</loc>
+    <lastmod>2026-11-15</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/guides/move-photo-vault-to-new-iphone"/>
   </url>
   <url>
     <loc>https://getnoxium.app/pt-br/guides/keepsafe-alternatives</loc>
@@ -552,7 +607,7 @@
   </url>
   <url>
     <loc>https://getnoxium.app/pt-br/guides/photo-vault-lost-photos</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/guides/photo-vault-lost-photos"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/guides/photo-vault-lost-photos"/>
@@ -567,7 +622,7 @@
   </url>
   <url>
     <loc>https://getnoxium.app/pt-br/guides/forgot-photo-vault-password</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/guides/forgot-photo-vault-password"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/guides/forgot-photo-vault-password"/>
@@ -579,6 +634,21 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/guides/forgot-photo-vault-password"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/guides/forgot-photo-vault-password"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/guides/forgot-photo-vault-password"/>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/pt-br/guides/move-photo-vault-to-new-iphone</loc>
+    <lastmod>2026-11-15</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/guides/move-photo-vault-to-new-iphone"/>
   </url>
   <url>
     <loc>https://getnoxium.app/it/guides/keepsafe-alternatives</loc>
@@ -642,7 +712,7 @@
   </url>
   <url>
     <loc>https://getnoxium.app/it/guides/photo-vault-lost-photos</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/guides/photo-vault-lost-photos"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/guides/photo-vault-lost-photos"/>
@@ -657,7 +727,7 @@
   </url>
   <url>
     <loc>https://getnoxium.app/it/guides/forgot-photo-vault-password</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/guides/forgot-photo-vault-password"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/guides/forgot-photo-vault-password"/>
@@ -669,6 +739,21 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/guides/forgot-photo-vault-password"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/guides/forgot-photo-vault-password"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/guides/forgot-photo-vault-password"/>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/it/guides/move-photo-vault-to-new-iphone</loc>
+    <lastmod>2026-11-15</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/guides/move-photo-vault-to-new-iphone"/>
   </url>
   <url>
     <loc>https://getnoxium.app/ja/guides/keepsafe-alternatives</loc>
@@ -732,7 +817,7 @@
   </url>
   <url>
     <loc>https://getnoxium.app/ja/guides/photo-vault-lost-photos</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/guides/photo-vault-lost-photos"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/guides/photo-vault-lost-photos"/>
@@ -747,7 +832,7 @@
   </url>
   <url>
     <loc>https://getnoxium.app/ja/guides/forgot-photo-vault-password</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/guides/forgot-photo-vault-password"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/guides/forgot-photo-vault-password"/>
@@ -759,6 +844,21 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/guides/forgot-photo-vault-password"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/guides/forgot-photo-vault-password"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/guides/forgot-photo-vault-password"/>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/ja/guides/move-photo-vault-to-new-iphone</loc>
+    <lastmod>2026-11-15</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/guides/move-photo-vault-to-new-iphone"/>
   </url>
   <url>
     <loc>https://getnoxium.app/ko/guides/keepsafe-alternatives</loc>
@@ -822,7 +922,7 @@
   </url>
   <url>
     <loc>https://getnoxium.app/ko/guides/photo-vault-lost-photos</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/guides/photo-vault-lost-photos"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/guides/photo-vault-lost-photos"/>
@@ -837,7 +937,7 @@
   </url>
   <url>
     <loc>https://getnoxium.app/ko/guides/forgot-photo-vault-password</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/guides/forgot-photo-vault-password"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/guides/forgot-photo-vault-password"/>
@@ -849,6 +949,21 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/guides/forgot-photo-vault-password"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/guides/forgot-photo-vault-password"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/guides/forgot-photo-vault-password"/>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/ko/guides/move-photo-vault-to-new-iphone</loc>
+    <lastmod>2026-11-15</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/guides/move-photo-vault-to-new-iphone"/>
   </url>
   <url>
     <loc>https://getnoxium.app/zh-hant/guides/keepsafe-alternatives</loc>
@@ -912,7 +1027,7 @@
   </url>
   <url>
     <loc>https://getnoxium.app/zh-hant/guides/photo-vault-lost-photos</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/guides/photo-vault-lost-photos"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/guides/photo-vault-lost-photos"/>
@@ -927,7 +1042,7 @@
   </url>
   <url>
     <loc>https://getnoxium.app/zh-hant/guides/forgot-photo-vault-password</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/guides/forgot-photo-vault-password"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/guides/forgot-photo-vault-password"/>
@@ -939,5 +1054,20 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/guides/forgot-photo-vault-password"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/guides/forgot-photo-vault-password"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/guides/forgot-photo-vault-password"/>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/zh-hant/guides/move-photo-vault-to-new-iphone</loc>
+    <lastmod>2026-11-15</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/guides/move-photo-vault-to-new-iphone"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/guides/move-photo-vault-to-new-iphone"/>
   </url>
 </urlset>

@@ -109,8 +109,8 @@
       "summary": "Quoi faire, et ne pas faire, quand des photos disparaissent d’une app de coffre, et où elles pourraient encore être.",
       "crumb": "Photos perdues dans un coffre",
       "keyword": "récupérer photos coffre photo",
-      "published": "2026-11-13",
-      "updated": "2026-11-13"
+      "published": "2026-11-14",
+      "updated": "2026-11-14"
     },
     "/guides/forgot-photo-vault-password": {
       "source": "2026-11-11",
@@ -120,8 +120,19 @@
       "summary": "Quoi faire quand vous oubliez le NIP, le mot de passe ou le schéma d’une app de coffre, et comment fonctionne chaque type de récupération.",
       "crumb": "Mot de passe du coffre oublié",
       "keyword": "mot de passe coffre photo oublié",
-      "published": "2026-11-13",
-      "updated": "2026-11-13"
+      "published": "2026-11-15",
+      "updated": "2026-11-15"
+    },
+    "/guides/move-photo-vault-to-new-iphone": {
+      "source": "2026-10-26",
+      "title": "Coffre photo vers un nouvel iPhone, sans perdre de photos",
+      "description": "Pourquoi les apps de coffre perdent des photos quand on change de téléphone, et une liste pour transférer le vôtre en toute sécurité.",
+      "headline": "Transférer un coffre photo privé vers un nouvel iPhone sans perdre de photos",
+      "summary": "Pourquoi les apps de coffre perdent des photos lors d’un changement de téléphone, et une liste étape par étape pour un transfert sûr.",
+      "crumb": "Coffre vers un nouvel iPhone",
+      "keyword": "transférer coffre photo nouvel iphone",
+      "published": "2026-11-15",
+      "updated": "2026-11-15"
     }
   },
   "facts": [
