@@ -1284,7 +1284,7 @@
           "developer": "Salman Ashraf",
           "price": "Free",
           "rating": 4.4,
-          "ratingCount": 28950,
+          "ratingCount": 28955,
           "version": "3.4.13",
           "lastUpdate": "2026-10-30",
           "minimumOs": "15.0",
@@ -1303,7 +1303,7 @@
               "price": "$4.99"
             }
           ],
-          "checked": "2026-11-11"
+          "checked": "2026-11-15"
         }
       }
     },
@@ -1316,7 +1316,7 @@
           "developer": "Anuj Tenani",
           "price": "Free",
           "rating": 4.7,
-          "ratingCount": 24810,
+          "ratingCount": 24814,
           "version": "6.3.0",
           "lastUpdate": "2026-01-11",
           "minimumOs": "15.6",
@@ -1334,7 +1334,7 @@
               "price": "$4.99"
             }
           ],
-          "checked": "2026-11-11"
+          "checked": "2026-11-15"
         }
       }
     },
@@ -1347,7 +1347,7 @@
           "developer": "伟林 莫",
           "price": "Free",
           "rating": 4.6,
-          "ratingCount": 27393,
+          "ratingCount": 27396,
           "version": "8.3.8",
           "lastUpdate": "2025-04-25",
           "minimumOs": "12.0",
@@ -1361,7 +1361,7 @@
               "price": "$6.99"
             }
           ],
-          "checked": "2026-11-11"
+          "checked": "2026-11-15"
         }
       }
     },
