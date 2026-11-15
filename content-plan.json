@@ -54,94 +54,6 @@
       "status": "live"
     },
     {
-      "order": 15,
-      "week": 1,
-      "type": "feature",
-      "path": "/features/decoy-vault",
-      "keyword": "decoy vault app iphone",
-      "cluster": "features",
-      "vaultaire": "https://vaultaire.app/features/hidden-vaults/",
-      "status": "todo"
-    },
-    {
-      "order": 16,
-      "week": 1,
-      "type": "feature",
-      "path": "/features/emergency-erase",
-      "keyword": "photo vault panic erase",
-      "cluster": "features",
-      "vaultaire": "https://vaultaire.app/features/duress-mode/",
-      "status": "todo"
-    },
-    {
-      "order": 17,
-      "week": 1,
-      "type": "feature",
-      "path": "/features/custom-app-icons",
-      "keyword": "photo vault app that hides its icon",
-      "cluster": "features",
-      "vaultaire": "https://vaultaire.app/features/app-icons/",
-      "status": "todo"
-    },
-    {
-      "order": 18,
-      "week": 1,
-      "type": "feature",
-      "path": "/features/album-patterns",
-      "keyword": "lock individual albums iphone",
-      "cluster": "features",
-      "status": "todo"
-    },
-    {
-      "order": 19,
-      "week": 1,
-      "type": "feature",
-      "path": "/features/iphone-ipad-sync",
-      "keyword": "photo vault sync iphone ipad",
-      "cluster": "features",
-      "vaultaire": "https://vaultaire.app/features/device-sync/",
-      "status": "todo"
-    },
-    {
-      "order": 20,
-      "week": 1,
-      "type": "feature",
-      "path": "/features/shared-vaults",
-      "keyword": "shared photo vault app",
-      "cluster": "features",
-      "vaultaire": "https://vaultaire.app/features/secure-sharing/",
-      "status": "todo"
-    },
-    {
-      "order": 21,
-      "week": 1,
-      "type": "feature",
-      "path": "/features/import-export",
-      "keyword": "export photos from vault full quality",
-      "cluster": "features",
-      "status": "todo"
-    },
-    {
-      "order": 22,
-      "week": 1,
-      "type": "feature",
-      "path": "/features/encrypted-notes",
-      "keyword": "encrypted notes app iphone",
-      "cluster": "features",
-      "status": "todo"
-    },
-    {
-      "order": 6,
-      "week": 1,
-      "type": "compare",
-      "path": "/compare/",
-      "keyword": "photo vault app comparison",
-      "cluster": "compare-hub",
-      "hub": true,
-      "note": "Publish the hub once 3 comparisons are live; then point the header's Compare link here.",
-      "status": "todo"
-    },
-    {
       "order": 7,
       "week": 1,
       "type": "compare",
@@ -229,18 +141,138 @@
       "status": "in-review"
     },
     {
-      "order": 23,
+      "order": 15,
+      "week": 3,
+      "type": "guide",
+      "path": "/guides/hidden-photos-iphone",
+      "keyword": "how to view hidden photos on iphone",
+      "cluster": "hide-lock",
+      "vaultaire": "https://vaultaire.app/guides/hidden-photos-iphone/",
+      "note": "Pillar for the hidden-album cluster (12,100 worldwide / 6,600 US for view/find, KD 3; keyword data Nov 2026). One H2 per question: view/access, where to find, add to, unhide, lock, iCloud, new iPhone, Mac/PC. Replaces the planned where-are-hidden-photos, do-hidden-photos-go-to-icloud and do-hidden-photos-transfer-to-new-iphone topics, and 'how to add photos to hidden album' (5,400 worldwide).",
+      "status": "in-review"
+    },
+    {
+      "order": 16,
       "week": 1,
       "type": "expand",
       "path": "/guides/how-to-hide-photos-on-iphone",
       "keyword": "how to hide photos on iphone",
       "cluster": "existing",
       "vaultaire": "https://vaultaire.app/guides/hide-photos-iphone/",
-      "note": "Expand to ~2,000 words: cover the questions Vaultaire's page answers that ours doesn't.",
+      "note": "Priority (22,200 worldwide / 6,600 US, KD 5-8, but position 88 in Search Console, Nov 2026). Expand to ~2,000 words: cover the questions Vaultaire's page answers that ours doesn't; link the hidden-photos pillar.",
+      "status": "in-review"
+    },
+    {
+      "order": 17,
+      "week": 3,
+      "type": "guide",
+      "path": "/guides/multiple-hidden-albums-iphone",
+      "keyword": "multiple hidden albums iphone",
+      "cluster": "hide-lock",
+      "note": "260 US, KD 0. iOS has one Hidden album; the workarounds and where a vault with several locked albums fits (features: album patterns).",
+      "status": "in-review"
+    },
+    {
+      "order": 18,
+      "week": 2,
+      "type": "guide",
+      "path": "/guides/calculator-vault-apps",
+      "keyword": "calculator vault apps",
+      "cluster": "choose-vault",
+      "vaultaire": "https://vaultaire.app/guides/calculator-vault-apps/",
+      "status": "todo",
+      "note": "Moved up: 'calculator vault' 9,900 worldwide / 1,000 US, KD 19 (Nov 2026)."
+    },
+    {
+      "order": 19,
+      "week": 1,
+      "type": "compare",
+      "path": "/compare/",
+      "keyword": "photo vault app comparison",
+      "cluster": "compare-hub",
+      "hub": true,
+      "note": "Publish the hub once 3 comparisons are live; then point the header's Compare link here.",
+      "status": "todo"
+    },
+    {
+      "order": 20,
+      "week": 1,
+      "type": "feature",
+      "path": "/features/decoy-vault",
+      "keyword": "decoy vault app iphone",
+      "cluster": "features",
+      "vaultaire": "https://vaultaire.app/features/hidden-vaults/",
+      "status": "todo"
+    },
+    {
+      "order": 21,
+      "week": 1,
+      "type": "feature",
+      "path": "/features/emergency-erase",
+      "keyword": "photo vault panic erase",
+      "cluster": "features",
+      "vaultaire": "https://vaultaire.app/features/duress-mode/",
+      "status": "todo"
+    },
+    {
+      "order": 22,
+      "week": 1,
+      "type": "feature",
+      "path": "/features/custom-app-icons",
+      "keyword": "photo vault app that hides its icon",
+      "cluster": "features",
+      "vaultaire": "https://vaultaire.app/features/app-icons/",
+      "status": "todo"
+    },
+    {
+      "order": 23,
+      "week": 1,
+      "type": "feature",
+      "path": "/features/album-patterns",
+      "keyword": "lock individual albums iphone",
+      "cluster": "features",
       "status": "todo"
     },
     {
       "order": 24,
+      "week": 1,
+      "type": "feature",
+      "path": "/features/iphone-ipad-sync",
+      "keyword": "photo vault sync iphone ipad",
+      "cluster": "features",
+      "vaultaire": "https://vaultaire.app/features/device-sync/",
+      "status": "todo"
+    },
+    {
+      "order": 25,
+      "week": 1,
+      "type": "feature",
+      "path": "/features/shared-vaults",
+      "keyword": "shared photo vault app",
+      "cluster": "features",
+      "vaultaire": "https://vaultaire.app/features/secure-sharing/",
+      "status": "todo"
+    },
+    {
+      "order": 26,
+      "week": 1,
+      "type": "feature",
+      "path": "/features/import-export",
+      "keyword": "export photos from vault full quality",
+      "cluster": "features",
+      "status": "todo"
+    },
+    {
+      "order": 27,
+      "week": 1,
+      "type": "feature",
+      "path": "/features/encrypted-notes",
+      "keyword": "encrypted notes app iphone",
+      "cluster": "features",
+      "status": "todo"
+    },
+    {
+      "order": 28,
       "week": 1,
       "type": "expand",
       "path": "/guides/how-to-hide-videos-on-iphone",
@@ -251,29 +283,29 @@
       "status": "todo"
     },
     {
-      "order": 25,
+      "order": 29,
       "week": 1,
       "type": "expand",
       "path": "/guides/lock-photos-iphone-face-id",
       "keyword": "lock photos iphone",
       "cluster": "existing",
       "vaultaire": "https://vaultaire.app/guides/lock-photos-iphone/",
-      "note": "Expand; add 2+ in-text links (fails check_content today).",
+      "note": "Expand; add 2+ in-text links (fails check_content today). Add a section answering 'how to lock hidden photos on iphone' (2,400 worldwide / 1,000 US, KD 8) and link the hidden-photos pillar.",
       "status": "todo"
     },
     {
-      "order": 26,
+      "order": 30,
       "week": 1,
       "type": "expand",
       "path": "/best-photo-vault-apps-iphone",
       "keyword": "best photo vault app iphone",
       "cluster": "existing",
       "vaultaire": "https://vaultaire.app/guides/best-photo-vault-apps-iphone/",
-      "note": "Refresh from data/competitors.json; add per-app verdicts; link every /compare/ page as they go live.",
+      "note": "Refresh from data/competitors.json; add per-app verdicts; link every /compare/ page as they go live. Vaultaire's best-of page wins 'vault apps for iphone' (590, position 4) and 'photo vault for iphone' (210): use that wording in the intro and headings.",
       "status": "todo"
     },
     {
-      "order": 27,
+      "order": 31,
       "week": 1,
       "type": "expand",
       "path": "/guides/forgot-photo-vault-password",
@@ -284,7 +316,7 @@
       "status": "todo"
     },
     {
-      "order": 28,
+      "order": 32,
       "week": 1,
       "type": "expand",
       "path": "/guides/move-photo-vault-to-new-iphone",
@@ -294,7 +326,7 @@
       "status": "todo"
     },
     {
-      "order": 29,
+      "order": 33,
       "week": 1,
       "type": "expand",
       "path": "/guides/what-is-a-decoy-vault",
@@ -304,7 +336,7 @@
       "status": "todo"
     },
     {
-      "order": 30,
+      "order": 34,
       "week": 1,
       "type": "expand",
       "path": "/guides/photo-vault-no-subscription-no-ads",
@@ -314,7 +346,7 @@
       "status": "todo"
     },
     {
-      "order": 31,
+      "order": 35,
       "week": 1,
       "type": "expand",
       "path": "/guides/how-encrypted-photo-vaults-work",
@@ -324,17 +356,7 @@
       "status": "todo"
     },
     {
-      "order": 32,
-      "week": 1,
-      "type": "guide",
-      "path": "/guides/do-hidden-photos-go-to-icloud",
-      "keyword": "do hidden photos go to icloud",
-      "cluster": "hidden-album",
-      "vaultaire": "https://vaultaire.app/guides/hidden-photos-iphone/",
-      "status": "todo"
-    },
-    {
-      "order": 33,
+      "order": 36,
       "week": 2,
       "type": "compare",
       "path": "/compare/spv",
@@ -345,7 +367,7 @@
       "status": "todo"
     },
     {
-      "order": 34,
+      "order": 37,
       "week": 2,
       "type": "compare",
       "path": "/compare/pv-secret-photo-album",
@@ -356,7 +378,7 @@
       "status": "todo"
     },
     {
-      "order": 35,
+      "order": 38,
       "week": 2,
       "type": "compare",
       "path": "/compare/encamera",
@@ -367,7 +389,7 @@
       "status": "todo"
     },
     {
-      "order": 36,
+      "order": 39,
       "week": 2,
       "type": "compare",
       "path": "/compare/obscura",
@@ -378,7 +400,7 @@
       "status": "todo"
     },
     {
-      "order": 37,
+      "order": 40,
       "week": 2,
       "type": "compare",
       "path": "/compare/hiddenvault",
@@ -389,7 +411,7 @@
       "status": "todo"
     },
     {
-      "order": 38,
+      "order": 41,
       "week": 2,
       "type": "compare",
       "path": "/compare/safe-lock",
@@ -400,7 +422,7 @@
       "status": "todo"
     },
     {
-      "order": 39,
+      "order": 42,
       "week": 2,
       "type": "compare",
       "path": "/compare/maxvault",
@@ -410,7 +432,7 @@
       "status": "todo"
     },
     {
-      "order": 40,
+      "order": 43,
       "week": 2,
       "type": "compare",
       "path": "/compare/kyms",
@@ -420,16 +442,7 @@
       "status": "todo"
     },
     {
-      "order": 41,
-      "week": 2,
-      "type": "guide",
-      "path": "/guides/where-are-hidden-photos-on-iphone",
-      "keyword": "where are hidden photos on iphone",
-      "cluster": "hidden-album",
-      "status": "todo"
-    },
-    {
-      "order": 42,
+      "order": 44,
       "week": 2,
       "type": "guide",
       "path": "/guides/view-hidden-photos-on-mac",
@@ -439,7 +452,7 @@
       "status": "todo"
     },
     {
-      "order": 43,
+      "order": 45,
       "week": 2,
       "type": "guide",
       "path": "/guides/view-hidden-photos-on-windows-pc",
@@ -449,7 +462,7 @@
       "status": "todo"
     },
     {
-      "order": 44,
+      "order": 46,
       "week": 2,
       "type": "guide",
       "path": "/guides/can-someone-bypass-hidden-album-face-id",
@@ -459,7 +472,7 @@
       "status": "todo"
     },
     {
-      "order": 45,
+      "order": 47,
       "week": 2,
       "type": "guide",
       "path": "/guides/did-someone-open-my-hidden-album",
@@ -469,7 +482,7 @@
       "status": "todo"
     },
     {
-      "order": 46,
+      "order": 48,
       "week": 2,
       "type": "guide",
       "path": "/guides/change-hidden-album-password",
@@ -479,27 +492,18 @@
       "status": "todo"
     },
     {
-      "order": 47,
+      "order": 49,
       "week": 2,
       "type": "guide",
       "path": "/guides/hidden-photos-disappeared-iphone",
       "keyword": "hidden photos disappeared iphone",
       "cluster": "hidden-album",
       "vaultaire": "https://vaultaire.app/guides/hidden-photos-disappeared-iphone/",
-      "status": "todo"
+      "status": "todo",
+      "note": "Also answer 'hidden photos not showing in albums' (210 US, KD 0): Show Hidden Album off, iCloud Photos sync, Screen Time restrictions."
     },
     {
-      "order": 48,
-      "week": 2,
-      "type": "guide",
-      "path": "/guides/do-hidden-photos-transfer-to-new-iphone",
-      "keyword": "do hidden photos transfer to new iphone",
-      "cluster": "hidden-album",
-      "vaultaire": "https://vaultaire.app/guides/do-hidden-photos-transfer-to-new-iphone/",
-      "status": "todo"
-    },
-    {
-      "order": 49,
+      "order": 50,
       "week": 2,
       "type": "guide",
       "path": "/guides/hide-photos-from-memories-iphone",
@@ -509,7 +513,7 @@
       "status": "todo"
     },
     {
-      "order": 50,
+      "order": 51,
       "week": 2,
       "type": "guide",
       "path": "/guides/hide-photos-from-spotlight-search",
@@ -519,7 +523,7 @@
       "status": "todo"
     },
     {
-      "order": 51,
+      "order": 52,
       "week": 2,
       "type": "guide",
       "path": "/guides/does-deleting-vault-app-delete-photos",
@@ -529,7 +533,7 @@
       "status": "todo"
     },
     {
-      "order": 52,
+      "order": 53,
       "week": 2,
       "type": "guide",
       "path": "/guides/export-photos-from-vault-app",
@@ -539,7 +543,7 @@
       "status": "todo"
     },
     {
-      "order": 53,
+      "order": 54,
       "week": 2,
       "type": "guide",
       "path": "/guides/do-photo-vault-apps-back-up-to-icloud",
@@ -549,7 +553,7 @@
       "status": "todo"
     },
     {
-      "order": 54,
+      "order": 55,
       "week": 2,
       "type": "guide",
       "path": "/guides/photo-vault-full-resolution",
@@ -559,7 +563,7 @@
       "status": "todo"
     },
     {
-      "order": 55,
+      "order": 56,
       "week": 2,
       "type": "guide",
       "path": "/guides/move-photos-into-vault-app",
@@ -569,7 +573,7 @@
       "status": "todo"
     },
     {
-      "order": 56,
+      "order": 57,
       "week": 2,
       "type": "guide",
       "path": "/guides/photo-vault-screenshot-protection",
@@ -579,7 +583,7 @@
       "status": "todo"
     },
     {
-      "order": 57,
+      "order": 58,
       "week": 2,
       "type": "guide",
       "path": "/guides/photo-vault-storage-space",
@@ -589,7 +593,7 @@
       "status": "todo"
     },
     {
-      "order": 58,
+      "order": 59,
       "week": 2,
       "type": "guide",
       "path": "/guides/recover-deleted-photos-iphone",
@@ -599,23 +603,13 @@
       "status": "todo"
     },
     {
-      "order": 59,
+      "order": 60,
       "week": 2,
       "type": "guide",
       "path": "/guides/how-to-hide-photos-on-ipad",
       "keyword": "how to hide photos on ipad",
       "cluster": "hide-lock",
       "vaultaire": "https://vaultaire.app/guides/hide-photos-ipad/",
-      "status": "todo"
-    },
-    {
-      "order": 60,
-      "week": 2,
-      "type": "guide",
-      "path": "/guides/calculator-vault-apps",
-      "keyword": "calculator vault apps",
-      "cluster": "choose-vault",
-      "vaultaire": "https://vaultaire.app/guides/calculator-vault-apps/",
       "status": "todo"
     },
     {

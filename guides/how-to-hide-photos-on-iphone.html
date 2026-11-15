@@ -41,7 +41,7 @@
   <meta property="og:image:alt" content="Noxium photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
   <meta property="og:locale" content="en_US">
   <meta property="article:published_time" content="2026-10-22">
-  <meta property="article:modified_time" content="2026-10-26">
+  <meta property="article:modified_time" content="2026-11-15">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="How to Hide Photos on iPhone (Every Method, iOS 26)">
   <meta name="twitter:description" content="Every way to hide photos on iPhone in iOS 26: the Hidden album, locked notes, locked apps and vault apps. What each one protects, and what it doesn&#x27;t.">
@@ -90,7 +90,7 @@
         "mainEntityOfPage": "https://getnoxium.app/guides/how-to-hide-photos-on-iphone",
         "image": "https://getnoxium.app/assets/guides/noxium-lock.jpg",
         "datePublished": "2026-10-22",
-        "dateModified": "2026-10-26",
+        "dateModified": "2026-11-15",
         "author": {
           "@id": "https://getnoxium.app/#org"
         },
@@ -168,6 +168,14 @@
               "@type": "Answer",
               "text": "Yes. Go to Settings › Apps › Photos and turn off Show Hidden Album. The album disappears from Collections until you turn the setting back on."
             }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens to hidden photos if I reset my iPhone?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "They're erased with the rest of the iPhone, then come back hidden if you restore: from iCloud Photos after you sign in, or from an iCloud or computer backup if iCloud Photos was off. With neither, they're gone."
+            }
           }
         ]
       }
@@ -233,7 +241,7 @@
         <p class="eyebrow"><span class="dot dot-ink" aria-hidden="true"></span>Guide · Hiding photos</p>
         <h1>How to hide photos on iPhone: every method, and what each one protects</h1>
         <!-- build:byline -->
-        <p class="byline"><span>By <a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>Published <time datetime="2026-10-22">22 October 2026</time></span><span aria-hidden="true">·</span><span>Last updated <time datetime="2026-10-26">26 October 2026</time></span></p>
+        <p class="byline"><span>By <a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>Published <time datetime="2026-10-22">22 October 2026</time></span><span aria-hidden="true">·</span><span>Last updated <time datetime="2026-11-15">15 November 2026</time></span></p>
         <!-- /build:byline -->
         <div class="answer">
           <span class="answer-label">Short answer</span>
@@ -264,13 +272,13 @@
         </div>
 
         <h2 id="hidden-album">How do you hide photos with the Hidden album?</h2>
-        <p>Touch and hold a photo, tap Hide, and confirm. The photo leaves your library, Memories and widgets, and appears only in the Hidden album.</p>
+        <p>Touch and hold a photo, tap Hide, and confirm. The photo leaves your library, your other albums and the Photos widget, and appears only in the Hidden album (<a href="https://support.apple.com/en-us/104987">Apple: Hide photos with the Hidden album</a>).</p>
         <ol class="steps">
           <li><strong>Open Photos</strong> and find the photo or video.</li>
           <li><strong>Touch and hold it</strong>, then tap <span class="path">Hide</span> and confirm.</li>
           <li><strong>To hide several at once</strong>, tap <span class="path">Select</span>, tap each photo, then tap the <span class="path">More (…)</span> button and choose <span class="path">Hide</span>.</li>
         </ol>
-        <p>To see hidden photos, open <span class="path">Collections</span>, scroll down to <span class="path">Utilities</span>, tap <span class="path">Hidden</span>, then <span class="path">View Album</span> and unlock with Face ID. To unhide one, touch and hold it and tap <span class="path">Unhide</span>.</p>
+        <p>To see hidden photos, open <span class="path">Collections</span>, scroll down to <span class="path">Utilities</span>, tap <span class="path">Hidden</span>, then <span class="path">View Album</span> and unlock with Face ID. To unhide one, touch and hold it and tap <span class="path">Unhide</span>. If Hidden isn't there, or you want to know where hidden photos go on iCloud, a Mac or a new iPhone, see the <a href="/guides/hidden-photos-iphone">complete guide to hidden photos on iPhone</a>.</p>
         <!-- SCREENSHOT TODO (Milan): iOS 26 Photos, touch-and-hold menu on a photo with "Hide" visible. Save as /assets/guides/ios-photos-hide-menu.jpg -->
 
         <h3 id="lock-hidden-album">Make sure the Hidden album is locked</h3>
@@ -285,6 +293,10 @@
           <li><strong>It isn't separately encrypted.</strong> Hidden photos get the same protection as the rest of your library. In iCloud, Photos is only end-to-end encrypted if you turn on Advanced Data Protection (<a href="https://support.apple.com/en-us/102651">Apple's iCloud data security overview</a>).</li>
         </ul>
         <p>For the full picture, read <a href="/guides/is-iphone-hidden-album-private">Is the iPhone Hidden album actually private?</a></p>
+
+        <h2 id="ipad-mac">How do you hide photos on iPad and Mac?</h2>
+        <p>On iPad it works exactly as on iPhone: touch and hold the photo and tap Hide. If the Hidden album isn't visible, tap the sidebar button in Photos first. On a Mac, Control-click the photo and choose <span class="path">Hide Photo</span>, or press Command-L. With iCloud Photos on, a photo you hide on one device is hidden on all of them, so you only have to do it once.</p>
+        <p>On a Mac the Hidden album is off by default. To see it, choose <span class="path">View › Show Hidden Photo Album</span> in Photos, then unlock it with Touch ID or your login password.</p>
 
         <h2 id="lock-photos-app">Can you lock the whole Photos app with Face ID?</h2>
         <p>Yes. Since iOS 18 you can make any app, including Photos, ask for Face ID every time it opens.</p>
@@ -328,6 +340,16 @@
         </figure>
         <p class="inline-cta"><a href="https://apps.apple.com/app/apple-store/id6824616093" data-cta="inline" data-label-waitlist="Try Noxium free: join the beta →" data-label-live="Get Noxium free on the App Store →">Get Noxium free on the App Store →</a></p>
 
+        <h2 id="mistakes">Which mistakes leave hidden photos visible?</h2>
+        <p>Most hidden photos that get seen weren't found in the Hidden album. They were found somewhere else, or the lock was off. Check these five:</p>
+        <ol class="steps">
+          <li><strong>Turning off the Face ID lock.</strong> With Use Face ID off in <span class="path">Settings › Apps › Photos</span>, anyone holding your unlocked iPhone can open Hidden, and apps with full library access can request hidden photos.</li>
+          <li><strong>Treating Show Hidden Album as a lock.</strong> Turning it off only takes the album out of view. Anyone can turn it back on in Settings.</li>
+          <li><strong>Hiding photos in a Shared Library.</strong> In the iCloud Shared Photo Library, a hidden photo moves to the Hidden album for every participant, and any of them can view or unhide it (<a href="https://support.apple.com/guide/icloud/hide-your-photos-and-videos-mmea67686c65/icloud">Apple: Hide photos on iCloud.com</a>).</li>
+          <li><strong>Leaving copies behind:</strong> in Recently Deleted, Messages, other apps or an old Mac import (see the next section).</li>
+          <li><strong>Erasing the iPhone without a backup.</strong> Hidden photos are part of your library. If iCloud Photos is off and there's no recent backup, erasing or resetting the iPhone deletes them with everything else.</li>
+        </ol>
+
         <h2 id="recently-deleted">Don't forget Recently Deleted and other copies</h2>
         <p>Moving a photo somewhere private isn't enough if a copy stays behind. Deleted photos sit in Recently Deleted for 30 days.</p>
         <ul>
@@ -368,6 +390,10 @@
             <summary class="faq-summary"><span class="faq-summary-left"><span>Can I hide the Hidden album?</span></span></summary>
             <div class="faq-body"><p>Yes. Go to Settings › Apps › Photos and turn off Show Hidden Album. The album disappears from Collections until you turn the setting back on.</p></div>
           </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>What happens to hidden photos if I reset my iPhone?</span></span></summary>
+            <div class="faq-body"><p>They're erased with the rest of the iPhone, then come back hidden if you restore: from iCloud Photos after you sign in, or from an iCloud or computer backup if iCloud Photos was off. With neither, they're gone.</p></div>
+          </details>
         </div>
 
         <p><em>Something wrong or out of date? Email <a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a> and we'll fix it.</em></p>
@@ -379,9 +405,11 @@
           <ol>
             <li><a href="#compare">Which method to use</a></li>
             <li><a href="#hidden-album">The Hidden album</a></li>
+            <li><a href="#ipad-mac">On iPad and Mac</a></li>
             <li><a href="#lock-photos-app">Lock the Photos app</a></li>
             <li><a href="#locked-note">A locked note</a></li>
             <li><a href="#vault-app">A photo vault app</a></li>
+            <li><a href="#mistakes">Mistakes to avoid</a></li>
             <li><a href="#recently-deleted">Recently Deleted and copies</a></li>
             <li><a href="#faq">Questions people ask</a></li>
           </ol>
@@ -429,6 +457,7 @@
             <ul role="list">
               <li><a href="/guides/how-to-hide-photos-on-iphone">How to hide photos on iPhone</a></li>
   <li><a href="/guides/is-iphone-hidden-album-private">Is the Hidden album private?</a></li>
+  <li><a href="/guides/hidden-photos-iphone">Hidden photos on iPhone</a></li>
   <li><a href="/guides/move-photo-vault-to-new-iphone">Move a photo vault to a new iPhone</a></li>
   <li><a href="/guides/photo-vault-lost-photos">Photo vault lost your photos</a></li>
   <li><a href="/guides/keepsafe-alternatives">Keepsafe alternatives</a></li>
