@@ -658,7 +658,7 @@ $6.99–$39.99
 ### Which photo vault should you use?
 It depends on what you're protecting against. Here is what the listings support, by need.
 #### Free and built in: Apple's Hidden album
-If you mainly want photos out of your main library and away from someone scrolling your phone, the Hidden album is free and locked with Face ID by default. It isn't a separate vault: anyone who knows your iPhone passcode can open it, and it syncs to your other devices. Turn on Advanced Data Protection if you want your iCloud Photos end-to-end encrypted. Read more: Is the iPhone Hidden album actually private?
+If you mainly want photos out of your main library and away from someone scrolling your phone, the Hidden album is free and locked with Face ID by default. It isn't a separate vault: anyone who knows your iPhone passcode can open it, and it syncs to your other devices. Turn on Advanced Data Protection if you want your iCloud Photos end-to-end encrypted. Read more: Is the iPhone Hidden album actually private? For a point-by-point comparison, see Hidden album vs a photo vault app .
 #### An encrypted vault with a decoy and an iCloud backup: Noxium or Vaultaire
 Both open with a drawn pattern, both say they encrypt files with AES-256-GCM, both include an encrypted iCloud backup on the free plan, and both have a decoy vault and no account. Vaultaire's free plan holds 100 photos and 10 videos. Noxium's holds 150 photos and 10 videos, adds a recovery phrase you write down at setup, and its privacy label is Data Not Collected. Comparing Vaultaire with Keepsafe instead? See Vaultaire vs Keepsafe . For the finer differences, read our Vaultaire review .
 #### Open-source encryption code: Obscura, Encamera or Ente
@@ -673,6 +673,7 @@ With over a million and 385,000 US ratings, these are the most familiar names. N
 - In-app prices: the lowest and highest in-app purchase listed on the US product page. Some apps list several price points for the same plan.
 - Noxium's row describes our own app as submitted to the App Store.
 Apple sources: Hide photos with the Hidden album , iCloud data security overview .
+Full reviews of single apps, each compared with Noxium: Calculator# Hide Photos , Hide it Pro and Secret Photo Vault .
 We update this page monthly. If something here is wrong or out of date, email business@inertiaprojects.info and we will correct it.
 Try Noxium free
 150 photos, 10 videos, a decoy vault and full encrypted iCloud backup, free. No ads, no account.
@@ -1169,7 +1170,7 @@ Short answer
 iPhone can lock photos with Face ID in three built-in ways: hide them so they go into the Hidden album (locked by default), make the whole Photos app require Face ID, or put them in a locked note. All three fall back to your iPhone passcode. For a lock that's separate from your passcode, such as a pattern, you need a photo vault app.
 There's no "lock this album" button in the Photos app. Instead, iOS 26 gives you a few locks that work at different levels: one album, the whole app, or a single note. Here's how to set up each one, what it actually locks, and when you need something stronger.
 ### How do you lock photos in the Hidden album with Face ID?
-Hide the photos, then make sure the Hidden album's Face ID lock is on. It's on by default since iOS 16.
+Hide the photos, then make sure the Hidden album's Face ID lock is on. It's on by default since iOS 16. For how that compares with a separate vault, see Hidden album vs a photo vault app .
 - Hide the photos: in Photos, touch and hold a photo and tap Hide . For several, tap Select , choose them, tap More (…) and Hide .
 - Check the lock: go to Settings › Apps › Photos and turn on Use Face ID (or Use Touch ID / Use Passcode). This locks both Hidden and Recently Deleted.
 - Optional: turn off Show Hidden Album so the album doesn't appear in Collections at all.
@@ -1271,7 +1272,7 @@ Safe Lock Fake password that opens a fake gallery.
 KYMS Fake PIN for a decoy vault.
 Privault A secondary passcode opens a secondary folder.
 Apple Hidden album No decoy.
-Listings don't say which kind of decoy they are, so test it: open the decoy and look through every screen, including settings. If anything mentions another vault, so will the person looking. See all 17 apps in our comparison .
+Listings don't say which kind of decoy they are, so test it: open the decoy and look through every screen, including settings. If anything mentions another vault, so will the person looking. See all 17 apps in our comparison . Two more take different approaches: Secret Photo Vault has decoy accounts with their own passwords, and Hide it Pro has an escape code that opens the app looking empty.
 ### How do you set up a decoy vault well?
 - Pick a code you won't mix up with your real one, but can recall under stress.
 - Fill it with real, dull photos: food, a trip, screenshots, a pet. Dozens, not three.
@@ -1429,7 +1430,7 @@ Available on the App Store for iPhone and iPad.
 Is there a photo vault app with no subscription?
 Yes. Several sell a one-time purchase, including Vaultaire, Obscura, Noxium, Privault and PV, according to their App Store listings in October 2026. Apple's Hidden album and locked notes are free.
 Which photo vault app has no ads?
-Noxium, Vaultaire and Encamera say they have no ads. Apps such as Calculator#, Privault and KYMS show ads in their free versions or sell ad removal.
+Noxium, Vaultaire and Encamera say they have no ads. Apps such as Calculator#, Privault and KYMS show ads in their free versions or sell ad removal. Our Calculator# review covers that app in detail.
 Will I lose my photos if I cancel a vault subscription?
 It depends on the app. Some keep full access to existing photos; others limit access or features. Check the app's rule before you subscribe. In Noxium you keep full access to view, export and back up everything.
 Is a lifetime vault purchase worth it?
