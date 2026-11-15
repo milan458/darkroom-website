@@ -109,8 +109,30 @@
       "summary": "Was du tun solltest, und was nicht, wenn Fotos aus einer Tresor-App verschwinden, und wo sie noch sein könnten.",
       "crumb": "Fotos im Tresor verloren",
       "keyword": "foto tresor fotos wiederherstellen",
-      "published": "2026-11-13",
-      "updated": "2026-11-13"
+      "published": "2026-11-14",
+      "updated": "2026-11-14"
+    },
+    "/guides/forgot-photo-vault-password": {
+      "source": "2026-11-11",
+      "title": "Foto-Tresor-Passwort vergessen? So kommst du wieder rein",
+      "description": "Aus einer Foto-Tresor-App ausgesperrt? So kommst du mit der Wiederherstellung der App wieder rein, was du zuerst versuchst und was du lassen solltest.",
+      "headline": "Passwort oder PIN vom Foto-Tresor vergessen? Was du jetzt noch tun kannst",
+      "summary": "Was du tun kannst, wenn du PIN, Passwort oder Muster einer Tresor-App vergessen hast, und wie jede Art der Wiederherstellung funktioniert.",
+      "crumb": "Tresor-Passwort vergessen",
+      "keyword": "foto tresor passwort vergessen",
+      "published": "2026-11-15",
+      "updated": "2026-11-15"
+    },
+    "/guides/move-photo-vault-to-new-iphone": {
+      "source": "2026-10-26",
+      "title": "Foto-Tresor aufs neue iPhone, ohne Fotos zu verlieren",
+      "description": "Warum Tresor-Apps beim Handywechsel Fotos verlieren, und eine Checkliste, mit der dein Tresor sicher umzieht: vorher, dabei und danach.",
+      "headline": "Einen privaten Foto-Tresor aufs neue iPhone umziehen, ohne Fotos zu verlieren",
+      "summary": "Warum Tresor-Apps beim Handywechsel Fotos verlieren, und eine Schritt-für-Schritt-Checkliste für einen sicheren Umzug.",
+      "crumb": "Tresor aufs neue iPhone",
+      "keyword": "foto tresor neues iphone übertragen",
+      "published": "2026-11-15",
+      "updated": "2026-11-15"
     }
   },
   "facts": [

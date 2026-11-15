@@ -109,8 +109,30 @@
       "summary": "Qué hacer, y qué no, cuando desaparecen fotos de una app de caja fuerte, y dónde pueden seguir.",
       "crumb": "Fotos perdidas en la caja fuerte",
       "keyword": "recuperar fotos caja fuerte de fotos",
-      "published": "2026-11-13",
-      "updated": "2026-11-13"
+      "published": "2026-11-14",
+      "updated": "2026-11-14"
+    },
+    "/guides/forgot-photo-vault-password": {
+      "source": "2026-11-11",
+      "title": "¿Olvidaste la contraseña de tu caja fuerte de fotos?",
+      "description": "¿No puedes entrar en tu caja fuerte de fotos? Cómo desbloquearla con la recuperación que ofrece, qué probar primero y qué no hacer para no perder fotos.",
+      "headline": "¿Has olvidado la contraseña o el PIN de tu caja fuerte de fotos? Lo que aún puedes hacer",
+      "summary": "Qué hacer si olvidas el PIN, la contraseña o el patrón de una app de caja fuerte, y cómo funciona cada tipo de recuperación.",
+      "crumb": "Contraseña olvidada",
+      "keyword": "olvidé contraseña caja fuerte fotos",
+      "published": "2026-11-15",
+      "updated": "2026-11-15"
+    },
+    "/guides/move-photo-vault-to-new-iphone": {
+      "source": "2026-10-26",
+      "title": "Caja fuerte de fotos a un iPhone nuevo, sin perder fotos",
+      "description": "Por qué las apps de caja fuerte pierden fotos al cambiar de móvil, y una lista paso a paso para pasar la tuya sin riesgos: antes, durante y después.",
+      "headline": "Cómo pasar una caja fuerte de fotos a un iPhone nuevo sin perder fotos",
+      "summary": "Por qué las apps de caja fuerte pierden fotos al cambiar de móvil, y una lista paso a paso para hacer el cambio con seguridad.",
+      "crumb": "Caja fuerte a un iPhone nuevo",
+      "keyword": "pasar caja fuerte fotos iphone nuevo",
+      "published": "2026-11-15",
+      "updated": "2026-11-15"
     }
   },
   "facts": [

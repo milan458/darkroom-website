@@ -1335,6 +1335,206 @@
             }
           ],
           "checked": "2026-11-15"
+        },
+        "de": {
+          "name": "Fotos ausblenden - Hide it Pro",
+          "developer": "Anuj Tenani",
+          "price": "Gratis",
+          "rating": 4.6,
+          "ratingCount": 455,
+          "version": "6.3.0",
+          "lastUpdate": "2026-01-11",
+          "minimumOs": "15.6",
+          "url": "https://apps.apple.com/de/app/fotos-ausblenden-hide-it-pro/id523488488",
+          "privacyLabel": [
+            "Data Not Linked to You"
+          ],
+          "inAppPurchases": [
+            {
+              "name": "Cloud Storage",
+              "price": "9,99 €"
+            },
+            {
+              "name": "Password Reset",
+              "price": "5,99 €"
+            }
+          ],
+          "checked": "2026-11-15"
+        },
+        "ca": {
+          "name": "Hide Photos Video -Hide it Pro",
+          "developer": "Anuj Tenani",
+          "price": "Free",
+          "rating": 4.5,
+          "ratingCount": 759,
+          "version": "6.3.0",
+          "lastUpdate": "2026-01-11",
+          "minimumOs": "15.6",
+          "url": "https://apps.apple.com/ca/app/hide-photos-video-hide-it-pro/id523488488",
+          "privacyLabel": [
+            "Data Not Linked to You"
+          ],
+          "inAppPurchases": [
+            {
+              "name": "Password Reset",
+              "price": "$6.99"
+            },
+            {
+              "name": "Cloud Storage",
+              "price": "$12.99"
+            }
+          ],
+          "checked": "2026-11-15"
+        },
+        "es": {
+          "name": "Ocultar foto video Hide it Pro",
+          "developer": "Anuj Tenani",
+          "price": "Gratis",
+          "rating": 4.7,
+          "ratingCount": 179,
+          "version": "6.3.0",
+          "lastUpdate": "2026-01-11",
+          "minimumOs": "15.6",
+          "url": "https://apps.apple.com/es/app/ocultar-foto-video-hide-it-pro/id523488488",
+          "privacyLabel": [
+            "Data Not Linked to You"
+          ],
+          "inAppPurchases": [
+            {
+              "name": "Password Reset",
+              "price": "5,99 €"
+            },
+            {
+              "name": "Cloud Storage",
+              "price": "9,99 €"
+            }
+          ],
+          "checked": "2026-11-15"
+        },
+        "br": {
+          "name": "Ocultar fotos -Hide it Pro",
+          "developer": "Anuj Tenani",
+          "price": "Grátis",
+          "rating": 4.7,
+          "ratingCount": 1054,
+          "version": "6.3.0",
+          "lastUpdate": "2026-01-11",
+          "minimumOs": "15.6",
+          "url": "https://apps.apple.com/br/app/ocultar-fotos-hide-it-pro/id523488488",
+          "privacyLabel": [
+            "Data Not Linked to You"
+          ],
+          "inAppPurchases": [
+            {
+              "name": "Cloud Storage",
+              "price": "R$ 59,90"
+            },
+            {
+              "name": "Password Reset",
+              "price": "R$ 29,90"
+            }
+          ],
+          "checked": "2026-11-15"
+        },
+        "it": {
+          "name": "Hide Photos Video -Hide it Pro",
+          "developer": "Anuj Tenani",
+          "price": "Gratis",
+          "rating": 4.6,
+          "ratingCount": 262,
+          "version": "6.3.0",
+          "lastUpdate": "2026-01-11",
+          "minimumOs": "15.6",
+          "url": "https://apps.apple.com/it/app/hide-photos-video-hide-it-pro/id523488488",
+          "privacyLabel": [
+            "Data Not Linked to You"
+          ],
+          "inAppPurchases": [
+            {
+              "name": "Password Reset",
+              "price": "5,99 €"
+            },
+            {
+              "name": "Cloud Storage",
+              "price": "9,99 €"
+            }
+          ],
+          "checked": "2026-11-15"
+        },
+        "jp": {
+          "name": "Hide Photos Video -Hide it Pro",
+          "developer": "Anuj Tenani",
+          "price": "無料",
+          "rating": 4.5,
+          "ratingCount": 213,
+          "version": "6.3.0",
+          "lastUpdate": "2026-01-11",
+          "minimumOs": "15.6",
+          "url": "https://apps.apple.com/jp/app/hide-photos-video-hide-it-pro/id523488488",
+          "privacyLabel": [
+            "Data Not Linked to You"
+          ],
+          "inAppPurchases": [
+            {
+              "name": "Password Reset",
+              "price": "¥800"
+            },
+            {
+              "name": "Cloud Storage",
+              "price": "¥1,500"
+            }
+          ],
+          "checked": "2026-11-15"
+        },
+        "kr": {
+          "name": "사진, 비디오 숨기기 - Hide it Pro",
+          "developer": "Anuj Tenani",
+          "price": "무료",
+          "rating": 4.6,
+          "ratingCount": 255,
+          "version": "6.3.0",
+          "lastUpdate": "2026-01-11",
+          "minimumOs": "15.6",
+          "url": "https://apps.apple.com/kr/app/%EC%82%AC%EC%A7%84-%EB%B9%84%EB%94%94%EC%98%A4-%EC%88%A8%EA%B8%B0%EA%B8%B0-hide-it-pro/id523488488",
+          "privacyLabel": [
+            "Data Not Linked to You"
+          ],
+          "inAppPurchases": [
+            {
+              "name": "Password Reset",
+              "price": "￦7,700"
+            },
+            {
+              "name": "Cloud Storage",
+              "price": "￦14,000"
+            }
+          ],
+          "checked": "2026-11-15"
+        },
+        "tw": {
+          "name": "Hide Photos Video -Hide it Pro",
+          "developer": "Anuj Tenani",
+          "price": "免費",
+          "rating": 4.5,
+          "ratingCount": 28,
+          "version": "6.3.0",
+          "lastUpdate": "2026-01-11",
+          "minimumOs": "15.6",
+          "url": "https://apps.apple.com/tw/app/hide-photos-video-hide-it-pro/id523488488",
+          "privacyLabel": [
+            "Data Not Linked to You"
+          ],
+          "inAppPurchases": [
+            {
+              "name": "Cloud Storage",
+              "price": "NT$320.00"
+            },
+            {
+              "name": "Password Reset",
+              "price": "NT$150.00"
+            }
+          ],
+          "checked": "2026-11-15"
         }
       }
     },

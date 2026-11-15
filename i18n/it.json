@@ -109,8 +109,30 @@
       "summary": "Cosa fare, e cosa no, quando le foto spariscono da un’app cassaforte, e dove potrebbero essere ancora.",
       "crumb": "Foto sparite dalla cassaforte",
       "keyword": "recuperare foto cassaforte app",
-      "published": "2026-11-13",
-      "updated": "2026-11-13"
+      "published": "2026-11-14",
+      "updated": "2026-11-14"
+    },
+    "/guides/forgot-photo-vault-password": {
+      "source": "2026-11-11",
+      "title": "Password della cassaforte per foto dimenticata? Cosa fare",
+      "description": "Sei rimasto fuori dalla tua app cassaforte? Come sbloccarla con il recupero che offre, cosa provare per prima cosa e cosa non fare per non perdere le foto.",
+      "headline": "Hai dimenticato la password o il PIN della cassaforte per foto? Cosa puoi ancora fare",
+      "summary": "Cosa fare quando dimentichi PIN, password o sequenza di un’app cassaforte, e come funziona ogni tipo di recupero.",
+      "crumb": "Password dimenticata",
+      "keyword": "password cassaforte foto dimenticata",
+      "published": "2026-11-15",
+      "updated": "2026-11-15"
+    },
+    "/guides/move-photo-vault-to-new-iphone": {
+      "source": "2026-10-26",
+      "title": "Cassaforte per foto su un nuovo iPhone, senza perdere foto",
+      "description": "Perché le app cassaforte perdono foto quando cambi telefono, e una checklist passo per passo per spostare la tua in sicurezza.",
+      "headline": "Come spostare una cassaforte per foto su un nuovo iPhone senza perdere foto",
+      "summary": "Perché le app cassaforte perdono foto al cambio di telefono, e una checklist passo per passo per un passaggio sicuro.",
+      "crumb": "Cassaforte sul nuovo iPhone",
+      "keyword": "trasferire cassaforte foto nuovo iphone",
+      "published": "2026-11-15",
+      "updated": "2026-11-15"
     }
   },
   "facts": [
