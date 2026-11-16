@@ -2009,6 +2009,85 @@
           "checked": "2026-11-11"
         }
       }
+    },
+    "calculator-lock": {
+      "id": "6446200267",
+      "name": "Calculator Lock - Secure Vault",
+      "listings": {
+        "us": {
+          "name": "Calculator Lock - Secure Vault",
+          "developer": "Zipo Apps Ltd.",
+          "price": "Free",
+          "rating": 4.6,
+          "ratingCount": 6629,
+          "version": "3.8",
+          "lastUpdate": "2024-12-20",
+          "minimumOs": "13.0",
+          "url": "https://apps.apple.com/us/app/calculator-lock-secure-vault/id6446200267",
+          "privacyLabel": [
+            "Data Used to Track You",
+            "Data Not Linked to You"
+          ],
+          "inAppPurchases": [
+            {
+              "name": "Hide Photos & Videos",
+              "price": "$4.99"
+            },
+            {
+              "name": "Remove Ads",
+              "price": "$3.99"
+            },
+            {
+              "name": "Calculator Lock Pro Yearly",
+              "price": "$14.99"
+            },
+            {
+              "name": "Calculator Lock Pro Weekly",
+              "price": "$1.99"
+            },
+            {
+              "name": "Calculator Lock Pro (Lifetime)",
+              "price": "$29.99"
+            },
+            {
+              "name": "Calculator Lock (Remove Ads)",
+              "price": "$3.99"
+            },
+            {
+              "name": "Calculator Lock Pro (Discount)",
+              "price": "$14.99"
+            }
+          ],
+          "checked": "2026-11-16"
+        }
+      }
+    },
+    "private-photos-calculator": {
+      "id": "571206791",
+      "name": "Private Photos (Calculator%)",
+      "listings": {
+        "us": {
+          "name": "Private Photos (Calculator%)",
+          "developer": "Digital Mind Co., Ltd.",
+          "price": "Free",
+          "rating": 4.1,
+          "ratingCount": 457,
+          "version": "4.4",
+          "lastUpdate": "2021-06-24",
+          "minimumOs": "9.0",
+          "url": "https://apps.apple.com/us/app/private-photos-calculator/id571206791",
+          "privacyLabel": [
+            "Data Not Collected"
+          ],
+          "inAppPurchases": [
+            {
+              "name": "Unlock Photos limit",
+              "price": "$0.99"
+            }
+          ],
+          "checked": "2026-11-16"
+        }
+      }
     }
   }
 }
