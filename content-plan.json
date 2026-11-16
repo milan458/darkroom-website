@@ -62,7 +62,7 @@
       "cluster": "choose-vault",
       "vaultaire": "https://vaultaire.app/compare/vaultaire-vs-privault/",
       "competitor": "Privault",
-      "status": "in-review"
+      "status": "live"
     },
     {
       "order": 8,
@@ -73,7 +73,7 @@
       "cluster": "choose-vault",
       "vaultaire": "https://vaultaire.app/compare/vaultaire-vs-keepsafe/",
       "competitor": "Secret Photo Vault: Keepsafe",
-      "status": "in-review"
+      "status": "live"
     },
     {
       "order": 9,
@@ -84,7 +84,7 @@
       "cluster": "choose-vault",
       "vaultaire": "https://vaultaire.app/compare/vaultaire-vs-private-photo-vault/",
       "competitor": "Private Photo Vault - Pic Safe",
-      "status": "in-review"
+      "status": "live"
     },
     {
       "order": 10,
@@ -94,7 +94,7 @@
       "keyword": "vaultaire review",
       "cluster": "choose-vault",
       "competitor": "Photo Vault - Vaultaire",
-      "status": "in-review"
+      "status": "live"
     },
     {
       "order": 11,
@@ -105,7 +105,7 @@
       "cluster": "choose-vault",
       "vaultaire": "https://vaultaire.app/compare/vaultaire-vs-apple-hidden-album/",
       "competitor": "Apple Photos Hidden album",
-      "status": "in-review"
+      "status": "live"
     },
     {
       "order": 12,
@@ -116,7 +116,7 @@
       "cluster": "choose-vault",
       "vaultaire": "https://vaultaire.app/compare/vaultaire-vs-calculator-hide-photos/",
       "competitor": "Calculator# Hide Photos Videos",
-      "status": "in-review"
+      "status": "live"
     },
     {
       "order": 13,
@@ -127,7 +127,7 @@
       "cluster": "choose-vault",
       "vaultaire": "https://vaultaire.app/compare/vaultaire-vs-hide-it-pro/",
       "competitor": "Hide Photos Video - Hide it Pro",
-      "status": "in-review"
+      "status": "live"
     },
     {
       "order": 14,
@@ -138,7 +138,7 @@
       "cluster": "choose-vault",
       "vaultaire": "https://vaultaire.app/compare/vaultaire-vs-secret-photo-vault/",
       "competitor": "Secret Photo Vault - Lock Photos",
-      "status": "in-review"
+      "status": "live"
     },
     {
       "order": 15,
@@ -149,7 +149,7 @@
       "cluster": "hide-lock",
       "vaultaire": "https://vaultaire.app/guides/hidden-photos-iphone/",
       "note": "Pillar for the hidden-album cluster (12,100 worldwide / 6,600 US for view/find, KD 3; keyword data Nov 2026). One H2 per question: view/access, where to find, add to, unhide, lock, iCloud, new iPhone, Mac/PC. Replaces the planned where-are-hidden-photos, do-hidden-photos-go-to-icloud and do-hidden-photos-transfer-to-new-iphone topics, and 'how to add photos to hidden album' (5,400 worldwide).",
-      "status": "in-review"
+      "status": "live"
     },
     {
       "order": 16,
@@ -160,7 +160,7 @@
       "cluster": "existing",
       "vaultaire": "https://vaultaire.app/guides/hide-photos-iphone/",
       "note": "Priority (22,200 worldwide / 6,600 US, KD 5-8, but position 88 in Search Console, Nov 2026). Expand to ~2,000 words: cover the questions Vaultaire's page answers that ours doesn't; link the hidden-photos pillar.",
-      "status": "in-review"
+      "status": "live"
     },
     {
       "order": 17,
@@ -170,7 +170,7 @@
       "keyword": "multiple hidden albums iphone",
       "cluster": "hide-lock",
       "note": "260 US, KD 0. iOS has one Hidden album; the workarounds and where a vault with several locked albums fits (features: album patterns).",
-      "status": "in-review"
+      "status": "live"
     },
     {
       "order": 18,
@@ -192,7 +192,7 @@
       "cluster": "compare-hub",
       "hub": true,
       "note": "Publish the hub once 3 comparisons are live; then point the header's Compare link here.",
-      "status": "todo"
+      "status": "live"
     },
     {
       "order": 20,
