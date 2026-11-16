@@ -680,7 +680,7 @@ With over a million and 385,000 US ratings, these are the most familiar names. N
 - In-app prices: the lowest and highest in-app purchase listed on the US product page. Some apps list several price points for the same plan.
 - Noxium's row describes our own app as submitted to the App Store.
 Apple sources: Hide photos with the Hidden album , iCloud data security overview .
-Full reviews of single apps, each compared with Noxium: Calculator# Hide Photos , Hide it Pro and Secret Photo Vault .
+Full reviews of single apps, each compared with Noxium: Calculator# Hide Photos , Hide it Pro and Secret Photo Vault . For apps disguised as a calculator, see calculator vault apps .
 We update this page monthly. If something here is wrong or out of date, email business@inertiaprojects.info and we will correct it.
 Try Noxium free
 150 photos, 10 videos, a decoy vault and full encrypted iCloud backup, free. No ads, no account.
@@ -1457,7 +1457,7 @@ Listings don't say which kind of decoy they are, so test it: open the decoy and 
 In Noxium, which we make, each pattern derives its own key, so a decoy is a separate encrypted vault. Noxium never shows a list of vaults, nothing in the decoy marks it as a decoy, and Face ID only ever opens your main vault. You add one in Settings with "Add a decoy vault" and draw its pattern. The free plan includes one.
 In Noxium, a second pattern opens a decoy vault that looks like an ordinary Noxium.
 A second pattern, a harmless vault
-Noxium's decoy vault is a separate encrypted vault with its own pattern, included free. Face ID never opens it, and nothing in it points to your real one.
+Noxium's decoy vault is a separate encrypted vault with its own pattern, included free. Face ID never opens it, and nothing in it points to your real one. See how Noxium's decoy vault works , and Pro's emergency erase pattern .
 Download on the App Store
 Available on the App Store for iPhone and iPad.
 ### Questions people ask
@@ -2707,7 +2707,7 @@ Noxium encrypts every photo, video and note on the iPhone with AES-256-GCM, with
 #### Backup
 Calculator# lets you back up to iCloud, Dropbox, Google Drive or OneDrive. Its listing doesn't say whether those backups are encrypted first. Noxium backs up only encrypted data, to your own iCloud, and restores on a new iPhone with your pattern; see encrypted iCloud backup .
 #### Disguise
-Calculator# is a working calculator. Noxium Pro can change its Home Screen icon to a Calculator, Notes or Weather lookalike, and hides vault content in the app switcher and in screen recordings, but it opens to its own lock screen, not a working calculator.
+Calculator# is a working calculator. Noxium Pro can change its Home Screen icon to a Calculator, Notes or Weather lookalike , and hides vault content in the app switcher and in screen recordings, but it opens to its own lock screen, not a working calculator. For other apps with this disguise, see calculator vault apps .
 #### When someone makes you open it
 Noxium's second pattern opens a separate decoy vault, 1 on the free plan, and Pro adds an emergency erase pattern. Calculator#'s listing offers a panic switch and a fake crash message instead. See what a decoy vault is .
 #### Price and privacy
@@ -2801,7 +2801,7 @@ Noxium encrypts every photo, video and note on the iPhone with AES-256-GCM, usin
 #### Backup
 Noxium's backup is free, encrypted on the iPhone first, and stored in your own iCloud; on a new iPhone you draw your pattern and it restores. Hide it Pro offers backup to its cloud storage, with unlimited space on a monthly plan. For a checklist before you switch phones, see moving a vault to a new iPhone .
 #### Decoys
-Hide it Pro's escape code makes the app look empty. Noxium's second pattern opens a decoy vault with photos you choose, which can look more natural than an empty app. Pro adds an emergency erase pattern.
+Hide it Pro's escape code makes the app look empty. Noxium's second pattern opens a decoy vault with photos you choose, which can look more natural than an empty app. Pro adds an emergency erase pattern .
 #### Forgetting your code
 Noxium has no reset by anyone. You write down a recovery phrase at setup, and it opens your vault on this iPhone or a new one. Hide it Pro sells a password reset for $4.99.
 #### Price and privacy
