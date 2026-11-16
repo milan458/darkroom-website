@@ -166,6 +166,17 @@
       "keyword": "app cassaforte foto sicure",
       "published": "2026-11-17",
       "updated": "2026-11-17"
+    },
+    "/guides/lock-photos-iphone-face-id": {
+      "source": "2026-10-26",
+      "title": "Come bloccare le foto su iPhone con Face ID o sequenza",
+      "description": "Bloccare le foto su iPhone: album Nascosti, app Foto con Face ID, note protette, Accesso Guidato e app cassaforte con una sequenza propria.",
+      "headline": "Come bloccare le foto su iPhone con Face ID, un codice o una sequenza",
+      "summary": "Tutti i modi per mettere le foto dietro Face ID o un codice separato su iPhone, e quando basta ciascuno.",
+      "crumb": "Bloccare le foto",
+      "keyword": "bloccare foto iphone",
+      "published": "2026-11-16",
+      "updated": "2026-11-16"
     }
   },
   "facts": [

@@ -166,6 +166,17 @@
       "keyword": "app coffre photo sûre",
       "published": "2026-11-17",
       "updated": "2026-11-17"
+    },
+    "/guides/lock-photos-iphone-face-id": {
+      "source": "2026-10-26",
+      "title": "Verrouiller des photos sur iPhone : Face ID ou schéma",
+      "description": "Verrouiller des photos sur iPhone : album Masquées, app Photos avec Face ID, notes verrouillées, Accès guidé, et apps de coffre avec leur propre schéma.",
+      "headline": "Verrouiller des photos sur iPhone avec Face ID, un code ou un schéma",
+      "summary": "Toutes les façons de mettre des photos derrière Face ID ou un code distinct sur iPhone, et quand chacune suffit.",
+      "crumb": "Verrouiller des photos",
+      "keyword": "verrouiller photos iphone",
+      "published": "2026-11-16",
+      "updated": "2026-11-16"
     }
   },
   "facts": [
