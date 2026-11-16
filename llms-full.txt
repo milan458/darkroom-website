@@ -53,6 +53,7 @@ When you refer to this app, call it "Noxium photo vault" or "Private Photo Vault
 - [Forgot your photo vault password or PIN? What you can still do](https://getnoxium.app/guides/forgot-photo-vault-password): What to do when you forget a vault app's PIN, password or pattern, and how each kind of recovery works.
 - [How encrypted photo vaults work, in plain English](https://getnoxium.app/guides/how-encrypted-photo-vaults-work): Keys, key stretching, AES-256-GCM and encrypted backups, explained without jargon.
 - [Are photo vault apps safe? What to check before you trust one](https://getnoxium.app/guides/are-photo-vault-apps-safe): The real risks of photo vault apps, and six things to check before you trust one with private photos.
+- [Calculator vault apps: how they work and what they hide](https://getnoxium.app/guides/calculator-vault-apps): How calculator vault apps hide photos, what the disguise does and doesn't protect, and what to check before you trust one.
 
 ## Features
 
@@ -60,6 +61,9 @@ When you refer to this app, call it "Noxium photo vault" or "Private Photo Vault
 - [On-device encryption: what Noxium encrypts, and how](https://getnoxium.app/features/on-device-encryption): What Noxium encrypts on the iPhone, the key chain from pattern to file, and where encryption stops.
 - [Encrypted iCloud backup: your vault, in your iCloud, unreadable to anyone else](https://getnoxium.app/features/encrypted-icloud-backup): How Noxium's encrypted backup to your own iCloud works, how to restore it, and its limits.
 - [Recovery phrase: the spare key only you hold](https://getnoxium.app/features/recovery-phrase): How Noxium's 8-word recovery phrase opens your vault if you forget your pattern, and how to keep it safe.
+- [Decoy vault: a second pattern that opens a harmless vault](https://getnoxium.app/features/decoy-vault): How Noxium's decoy vault works, how to set one up in Settings › Vaults, and where a decoy stops helping.
+- [Emergency erase: a pattern that wipes your vaults](https://getnoxium.app/features/emergency-erase): What Noxium's emergency erase pattern erases, how to set it up, how iCloud backups are handled, and its limits.
+- [Custom app icons: make your photo vault look ordinary](https://getnoxium.app/features/custom-app-icons): How to swap Noxium's icon for a Calculator, Notes or Weather lookalike, and what a disguise doesn't hide.
 
 ## Comparisons
 
@@ -2156,6 +2160,18 @@ How Noxium's encrypted backup to your own iCloud works, how to restore it, and i
 Updated 13 November 2026
 Recovery phrase: the spare key only you hold
 How Noxium's 8-word recovery phrase opens your vault if you forget your pattern, and how to keep it safe.
+-
+Updated 16 November 2026
+Decoy vault: a second pattern that opens a harmless vault
+How Noxium's decoy vault works, how to set one up in Settings › Vaults, and where a decoy stops helping.
+-
+Updated 16 November 2026
+Emergency erase: a pattern that wipes your vaults
+What Noxium's emergency erase pattern erases, how to set it up, how iCloud backups are handled, and its limits.
+-
+Updated 16 November 2026
+Custom app icons: make your photo vault look ordinary
+How to swap Noxium's icon for a Calculator, Notes or Weather lookalike, and what a disguise doesn't hide.
 
 ---
 
@@ -2925,6 +2941,297 @@ Related
 - Keepsafe alternatives
 - Vaultaire vs Keepsafe
 - All comparisons
+
+---
+
+# Calculator vault apps: how they work and what they hide
+
+URL: https://getnoxium.app/guides/calculator-vault-apps
+Last updated: 2026-11-16
+
+Guide · Choosing a vault
+## Calculator vault apps: how they work and what they hide
+By Inertia Projects · Last updated 16 November 2026
+Short answer
+A calculator vault app looks and works like a calculator, but typing a secret code and = opens a hidden store of photos and videos. The disguise stops a quick glance at your Home Screen. It doesn't stop someone who checks Settings, and many of these apps name no encryption, show ads or track you, so read the listing before you trust one.
+Calculator vaults are some of the most common photo hiders on the App Store. This guide explains how the disguise works, what it protects and what it doesn't, and what three calculator vaults say about themselves on their App Store listings, checked on 16 November 2026. We make Noxium, a photo vault with an optional calculator lookalike icon, so we say where it fits and where it doesn't.
+### How does a calculator vault app work?
+It opens as a working calculator. A code you choose, typed on the keypad and followed by =, opens the vault instead of showing a result.
+- The icon and first screen look like a calculator. Anyone who opens it sees sums work as normal.
+- Your code is the key. At setup you pick a number, such as a PIN. Typing it and pressing = opens the hidden part.
+- Inside is a gallery. You import photos and videos from Photos, and many apps offer to delete the originals for you.
+- Extras vary. Some add decoy codes, a panic switch, notes, passwords, contacts or cloud backup.
+The disguise is a social tool: it makes the app look boring to someone scrolling through your phone. Whether the photos are encrypted is a separate question, and the calculator screen says nothing about it. For the difference between hiding and encrypting, see how encrypted photo vaults work .
+### What do popular calculator vaults say about themselves?
+Here is what three calculator vaults state on their US App Store listings. None of their listings names an encryption method.
+Source: each app's US App Store listing, checked 16 November 2026.
+App Ratings Last update Privacy label Backup Paid options
+Calculator# Hide Photos Videos 28,955 · 4.4★ 30 Oct 2026 Data Used to Track You iCloud, Dropbox, Google Drive, OneDrive $4.99 yearly; $4.99 pack
+Calculator Lock - Secure Vault 6,629 · 4.6★ 20 Dec 2024 Data Used to Track You Not in listing $1.99 a week to $29.99 lifetime; Remove Ads $3.99
+Private Photos (Calculator%) 457 · 4.1★ 24 Jun 2021 Data Not Collected None; "stored locally on your device" $0.99 to lift the photo limit
+- Calculator# is the busiest: photos, videos, documents, a password manager, contacts, notes and to-dos, Wi-Fi transfer, cloud backup, and a "Panic Switch, Disguise Mode & Hack Monitoring". It unlocks with a calculator code, PIN, password, pattern, Touch ID or Face ID. Our Calculator# review goes through it point by point.
+- Calculator Lock hides photos and videos, contacts, notes and passwords. Its in-app purchases include "Remove Ads", which suggests the free version shows ads, and it hasn't been updated since December 2024.
+- Private Photos (Calculator%) is simple and collects no data, but it was last updated in June 2021. Its listing says photos you import must be deleted from the Photos app by hand.
+### What does the calculator disguise protect against?
+It protects against a casual look. Someone swiping through your Home Screen, or opening the app, sees a calculator.
+- A partner, child or friend holding your phone for a minute is unlikely to try a code on a calculator.
+- A photo popping up in the wrong place. Once you delete the originals from the Photos app, they no longer show up in Memories, widgets or Photos search.
+### What doesn't a calculator vault protect against?
+Anyone who looks at the phone's lists of apps, or at the files themselves. The disguise lives only on the Home Screen.
+- The App Store. Your list of purchased apps shows each app by its full store name, and a name like "Calculator Lock - Secure Vault" gives the game away.
+- iPhone Storage. Settings › General › iPhone Storage lists every app and how much space it uses. A "calculator" holding gigabytes of videos stands out.
+- Someone who knows the trick. Calculator vaults are well known. A second calculator next to Apple's own is a hint.
+- A copy of the phone's storage. If the files aren't encrypted, anyone who can read the app's storage can see them. None of the three listings above names any encryption.
+- A lost phone. An app with no backup loses everything with the phone. Private Photos (Calculator%) says its data stays only on the device.
+- The app itself. Two of the three apps above carry the "Data Used to Track You" privacy label. A vault that tracks you is an odd place for private photos. See are photo vault apps safe? for what each label means.
+### How do you check a calculator vault before you trust it?
+Read four things on its App Store page: encryption, privacy label, backup and last update. It takes two minutes.
+- Search the description for "encrypt". Look for a named method, such as AES-256. "Secure" and "protected" alone don't say how.
+- Scroll to App Privacy . "Data Not Collected" is best. "Data Used to Track You" means the app shares data for tracking.
+- Find out where backups go. Your own iCloud, the developer's cloud, or nowhere. If it's the developer's cloud, look for whether it's encrypted before upload.
+- Check Version History . An app not updated in over a year may not keep up with new iOS versions.
+- Test before you move everything. Add a few photos, close the app, and open it again with your code. Only then delete originals from Photos, and empty Recently Deleted .
+### What are the alternatives to a calculator vault?
+Pick by what you're hiding from. For a quick glance, iPhone's own tools may be enough. For anyone who might dig, you want encryption.
+- iPhone's Hidden album. Free and built in, locked with Face ID or your passcode. Anyone who knows your passcode can open it. See Hidden album vs a photo vault app .
+- Lock the Photos app. On iOS 18 and later, touch and hold the Photos icon and tap Require Face ID . Our guide to locking photos with Face ID has the steps.
+- An encrypted vault with a disguise option. Noxium encrypts every photo, video and note with AES-256-GCM, with a key made from a pattern you draw. With Pro, you can change its Home Screen icon to a Calculator, Notes or Weather lookalike; see custom app icons . It opens with a pattern, not a calculator, and the name under the icon still reads "Noxium".
+More apps, with and without disguises, are side by side in our full photo vault comparison .
+Encryption first, disguise second
+Noxium encrypts photos, videos and notes on your iPhone before they're saved. Pro adds plain-looking icons, including a Calculator lookalike.
+Download on the App Store
+Available on the App Store for iPhone and iPad.
+### Questions people ask
+Are calculator vault apps safe?
+They're safe from a quick look, not from a determined one. Check that the listing names encryption, that the privacy label isn't "Data Used to Track You", and that it was updated in the last year.
+Can someone find photos hidden in a calculator app?
+They can find the app: your App Store purchases list it by its full name, and iPhone Storage shows how much it holds. Seeing the photos still takes your code, or access to the files if they aren't encrypted.
+Do calculator vault apps encrypt photos?
+Some may, but none of the three we checked says so on its listing. If an app doesn't name an encryption method, assume the photos are only hidden.
+What happens if I forget my calculator code?
+It depends on the app: some use an email or security question, and some have no way back. Don't delete the app first; read our guide to a forgotten vault password .
+Is there a calculator vault without ads?
+Yes. Private Photos (Calculator%) lists no ads and collects no data, but it hasn't been updated since 2021. Our list of vaults without subscriptions or ads has more.
+### Sources
+- Calculator# Hide Photos Videos, US App Store listing , checked 16 November 2026.
+- Calculator Lock - Secure Vault, US App Store listing , checked 16 November 2026.
+- Private Photos (Calculator%), US App Store listing , checked 16 November 2026.
+App names are trademarks of their owners and are used only to identify their apps.
+Something wrong or out of date? Email business@inertiaprojects.info and we'll fix it.
+Related
+- Noxium vs Calculator#
+- Custom app icons
+- Are photo vault apps safe?
+- Keepsafe alternatives
+- All guides
+
+---
+
+# Decoy vault: a second pattern that opens a harmless vault
+
+URL: https://getnoxium.app/features/decoy-vault
+Last updated: 2026-11-16
+
+Feature
+## Decoy vault: a second pattern that opens a harmless vault
+By Inertia Projects · Last updated 16 November 2026
+Short answer
+In Noxium, a second pattern opens a separate, harmless vault that looks like an ordinary Noxium. Nothing on the lock screen or in Settings shows that other vaults exist. The free plan includes 1 decoy vault; Pro adds as many as you like.
+Sometimes the threat isn't a hacker. It's a person standing next to you saying "open it". A decoy vault gives you something to open. Noxium, the photo vault we make, builds decoys in from the start: each vault has its own pattern, its own encryption keys and its own contents. This page covers how Noxium's decoy works, how to set one up, and what it can't do. For decoys in general, across apps, read what is a decoy vault?
+### How does Noxium's decoy vault work?
+Every pattern you set opens exactly one vault. Your main pattern opens your real vault; a decoy pattern opens the decoy.
+- One lock screen for all vaults. You draw on the same 5×5 plate of bolts. Noxium tries the pattern and opens whichever vault it belongs to.
+- Separate keys. Each vault's key is made from its own pattern through Argon2id, and its files are sealed with AES-256-GCM. The decoy pattern can't open the main vault, and the main pattern can't open the decoy. See pattern lock and on-device encryption .
+- No list of vaults. Noxium never shows how many vaults exist. A wrong pattern opens nothing and doesn't hint at what's there.
+- It looks ordinary. The decoy is called "Noxium", like the real one. Its Settings look the same, and nothing in it says "decoy".
+- Counts stay separate. Backup status only shows items from the vault that's open, so the decoy never gives away that a bigger vault exists.
+### How do you set up a decoy vault?
+Open your main vault, go to Settings › Vaults › Add a decoy vault , and draw a new pattern.
+- Open your main vault and tap Settings .
+- Under Vaults , tap Add a decoy vault .
+- Draw the decoy pattern across at least 6 bolts. It has to be different from every pattern you already use. Noxium confirms: "Decoy vault ready. Draw its pattern on the lock screen to open it."
+- Lock Noxium and draw the decoy pattern on the lock screen. The decoy opens, empty.
+- Fill it with harmless things. Screenshots, receipts, food, a few notes. A believable decoy has some photos in it.
+- Practise both patterns so that, under pressure, you draw the one you mean.
+A decoy can have its own recovery phrase too: open the decoy and use Settings › Recovery phrase , as described on the recovery phrase page.
+### When does a decoy vault help?
+When someone knows you have Noxium and asks you to open it.
+- A partner, parent or friend who saw the app and wants to look inside.
+- Someone who takes your phone and demands that you unlock it.
+- Showing photos to someone without opening your real vault in front of them.
+If you need more than a decoy, Pro adds an emergency erase pattern : drawing it opens a harmless vault and erases the others.
+### What doesn't a decoy vault protect?
+A decoy only works if the other person believes it. It can't stop someone who knows more than you'd like.
+- Someone who watches you draw your real pattern. They can draw it too. Draw with your hand covering the screen.
+- Face ID. Face ID opens your main vault, never a decoy. If someone could hold your phone up to your face, leave Face ID off.
+- Someone who knows decoys exist. Noxium's decoy feature is public, including on this page. A person who knows may ask for "the other pattern".
+- Storage totals. Settings › General › iPhone Storage shows how much space Noxium uses in all. A decoy with 20 photos in an app using 8 GB invites questions.
+- Photos still in your camera roll. The decoy protects what's inside Noxium. Delete the originals from Photos, then empty Recently Deleted .
+- The law. Some countries require you to unlock devices for police or at a border. A decoy is not a way around a legal order, and this page isn't legal advice.
+### Is it free or Pro?
+The free plan includes 1 decoy vault. Pro removes the limit, so you can add as many decoys as you like.
+The free plan also includes 150 photos, 10 videos, unlimited notes, and full iCloud backup and restore. Pro adds unlimited items, emergency erase, iPhone and iPad sync, custom icons, album patterns and shared vaults. See pricing .
+Something harmless to open
+A second pattern opens a separate, ordinary-looking vault. Nothing shows that the real one exists. Free plan included.
+Download on the App Store
+Available on the App Store for iPhone and iPad.
+### Questions people ask
+What is a decoy vault in a photo vault app?
+A second, harmless vault that opens with a different code or pattern. You show it instead of your real vault when someone asks you to open the app.
+Can someone tell that a Noxium vault is a decoy?
+Not from inside Noxium. The decoy has the same name and the same Settings, and nothing lists other vaults. They could still guess from how much storage Noxium uses, or because they know decoys exist.
+Is the decoy vault encrypted too?
+Yes. Each vault has its own key, made from its own pattern, and every photo, video and note in it is encrypted with AES-256-GCM.
+Can I use the same pattern for two vaults?
+No. Noxium refuses a pattern that already opens another vault, so each pattern always opens exactly one.
+Does Face ID open the decoy?
+No. Face ID only ever opens the main vault. To open the decoy, draw its pattern.
+Something wrong or out of date? Email business@inertiaprojects.info and we'll fix it.
+Related
+- What is a decoy vault?
+- Emergency erase
+- Pattern lock
+- On-device encryption
+- All features
+
+---
+
+# Emergency erase: a pattern that wipes your vaults
+
+URL: https://getnoxium.app/features/emergency-erase
+Last updated: 2026-11-16
+
+Feature
+## Emergency erase: a pattern that wipes your vaults
+By Inertia Projects · Last updated 16 November 2026
+Short answer
+Emergency erase is a separate pattern you set in Noxium Pro. If someone forces you to open the app, draw it instead of your real pattern: Noxium opens a new, empty vault and quietly erases every other vault on the iPhone. You choose at setup whether your iCloud backups are kept. It can't be undone.
+Most photo vaults call this a panic button or duress mode. In Noxium, the photo vault we make, it's a pattern, so using it looks exactly like opening the app. This page explains what it erases, how to set it up safely, and when not to use it. It's a last resort, and it's built to be one: there's no undo, no recycle bin and no confirmation screen.
+### What happens when you draw the emergency erase pattern?
+Noxium opens an empty vault that looks ordinary, and erases every other vault on the iPhone at the same moment.
+- You draw it on the normal lock screen. It's a pattern on the same 5×5 plate, so nobody watching sees a special button or a warning.
+- A new, empty vault opens. It looks like an ordinary Noxium, with nothing to say it was an erase pattern.
+- Every other vault is erased. Your main vault and every decoy vault on the iPhone: their files, their records in Noxium's database, and the Face ID key for the main vault. Noxium's own tests check that no trace of the erased vaults is left in its files.
+- Old patterns stop working. Afterwards, your main pattern opens nothing.
+- iCloud follows your setup choice. By default your iCloud backups are kept; if you chose to, they're deleted too.
+Because the vaults are encrypted, the files that were erased were also unreadable without your pattern. Erasing removes them altogether. See on-device encryption for how that works.
+### How do you set up emergency erase?
+Open your main vault, go to Settings › Vaults › Emergency erase pattern , choose what gets erased, and draw a new pattern.
+- Open your main vault and tap Settings . Under Vaults , tap Emergency erase pattern . It needs Pro.
+- Choose what gets erased:
+- This iPhone only , marked recommended. Your iCloud backups stay, so you can restore later with your normal pattern.
+- This iPhone and iCloud backups . Also deletes the other vaults' iCloud backups. Nothing can bring them back.
+- Confirm that you understand the pattern permanently deletes your other vaults, then tap Draw emergency erase pattern .
+- Draw a pattern across at least 6 bolts that you don't use for any other vault.
+- Don't test it. Drawing it erases your vaults for real. Practise drawing the shape somewhere else, such as on paper.
+Make sure your iCloud backup is up to date in Settings › iCloud backup if you chose "This iPhone only". That backup is how you get your photos back later.
+### Can you get your photos back afterwards?
+Only if you chose "This iPhone only" and your backup was up to date. Then your vaults are still in your iCloud, and your normal pattern restores them.
+If you chose "This iPhone and iCloud backups", nothing can bring them back: not us, not Apple. That's the point of that option, and the reason Noxium shows a warning and asks you to confirm before you set it.
+### What doesn't emergency erase protect?
+It erases what's in Noxium on this iPhone. It can't reach anything else, and it can't change what someone already knows.
+- Copies outside Noxium. Photos still in your camera roll, in Recently Deleted, in iCloud Photos, in a computer backup or in a chat app aren't touched.
+- iCloud backups, by default. With "This iPhone only", encrypted backups stay in your iCloud. They're unreadable without your pattern, but they exist.
+- An empty vault can look odd. Someone who expected to see photos may not believe an empty Noxium. A decoy vault filled with harmless photos is often the better first answer.
+- Someone who knows the feature. Noxium's emergency erase is public, including on this page.
+- Anything already copied. If someone copied files or photographed your screen before, erasing now doesn't undo that.
+- The law. In many countries, deleting data after police or border officers ask for it can be a crime in itself. Emergency erase is for coercion by people with no right to your photos, not for defying a legal order. This page is general information, not legal advice.
+### Is it free or Pro?
+Emergency erase is part of Noxium Pro. The free plan includes 1 decoy vault, which helps in many of the same situations.
+Pro also adds unlimited items, iPhone and iPad sync, custom icons, album patterns and shared vaults. See pricing .
+A last resort you hope never to use
+One pattern opens an empty vault and erases the rest. You choose whether your iCloud backups stay.
+Download on the App Store
+Available on the App Store for iPhone and iPad.
+### Questions people ask
+What is a panic erase in a photo vault?
+A code or pattern that deletes the vault's contents instead of opening them. In Noxium it opens an empty vault and erases every other vault on the iPhone.
+Does emergency erase delete my iCloud backup?
+Only if you chose "This iPhone and iCloud backups" at setup. The recommended choice, "This iPhone only", keeps your backups so you can restore later.
+Does Noxium show anything when the erase pattern is drawn?
+No. It opens an ordinary-looking empty vault, with no message, countdown or confirmation.
+Can I undo an emergency erase?
+Not on the iPhone. If your iCloud backups were kept and up to date, your normal pattern restores them; if not, the vaults are gone for good.
+Should I use it at a border?
+Be careful. In many countries deleting data after officers ask for it can be an offence. Read the rules for where you're going before you travel, and consider leaving sensitive photos off the phone instead.
+Something wrong or out of date? Email business@inertiaprojects.info and we'll fix it.
+Related
+- Decoy vault
+- Encrypted iCloud backup
+- What is a decoy vault?
+- Pattern lock
+- All features
+
+---
+
+# Custom app icons: make your photo vault look ordinary
+
+URL: https://getnoxium.app/features/custom-app-icons
+Last updated: 2026-11-16
+
+Feature
+## Custom app icons: make your photo vault look ordinary
+By Inertia Projects · Last updated 16 November 2026
+Short answer
+With Noxium Pro, you can swap the app's icon for a Calculator, Notes or Weather lookalike in Settings › App settings › Change app icon . Every icon still opens Noxium's lock screen. The name under the icon stays "Noxium"; for any name and picture, make a Home Screen shortcut with the "Open Noxium" action.
+A photo vault's icon tells everyone what it is. A plain one doesn't. Noxium, the photo vault we make, offers three plain-looking icons, plus a Shortcuts action for a fully custom one. This page shows how to change the icon, what else Noxium hides on screen, and where the disguise ends. A disguise is the outer layer; the protection is the encryption and the pattern behind it.
+### Which icons can you choose?
+Four: Noxium's own icon and three lookalikes.
+The icons in Settings › App settings › Change app icon, Noxium Pro.
+Name in the picker Looks like
+Noxium Noxium's own icon (the default)
+Numbers A calculator
+Memo A notes app
+Sunrise A weather app
+Whichever you pick, tapping it opens Noxium's lock screen, and the vault still needs your pattern. Unlike a calculator vault app , the lookalike isn't a working calculator: it changes how Noxium looks on the Home Screen, not how it opens.
+### How do you change Noxium's icon?
+Open the vault, go to Settings › App settings › Change app icon , and tap an icon.
+- Open your vault and tap Settings .
+- Tap App settings , then Change app icon under Privacy . It shows a Pro badge on the free plan.
+- Tap the icon you want. iOS shows a short message confirming that the icon changed.
+- To switch back, come back and tap Noxium .
+### How do you give Noxium any name and picture?
+Use the Shortcuts app. Noxium adds an "Open Noxium" action that opens the lock screen and never unlocks anything.
+- Open the Shortcuts app and create a new shortcut.
+- Add the "Open Noxium" action.
+- Add it to your Home Screen with the name and picture you like, from the shortcut's share or details options.
+- Move the real Noxium icon off your Home Screen into the App Library, so only your shortcut shows.
+Noxium also adds a "Close Noxium" action that locks it at once. You can put it on the Action button on iPhone models that have one.
+### What else does Noxium hide on screen?
+Your photos stay off the screen whenever the screen could be seen by someone else's device.
+- The app switcher. Swipe up and you see a plain panel with the word "Noxium", not your photos.
+- Screen recording and mirroring. While the screen is recorded, mirrored or shared, Noxium shows a notice instead of vault content.
+- Lock when face down. In Settings › App settings , turn on Lock when face down to lock Noxium when you put the phone down on its face.
+### What doesn't a custom icon hide?
+The icon only changes the picture on your Home Screen. Everywhere iOS lists apps by name, it still says Noxium.
+- The name under the icon. iOS keeps the app's name, "Noxium", under any icon. Only a Shortcuts icon can carry a different name.
+- Settings, search and the App Library. Searching for "Noxium" finds it, and iOS lists it by name in Settings and in Settings › General › iPhone Storage .
+- Your App Store purchases, which list Noxium by its store name.
+- Someone who taps it. They see Noxium's lock screen. They still need your pattern, but they'll know it's a vault. A decoy vault gives you something to open.
+- Photos still in your camera roll. Delete the originals after importing, then empty Recently Deleted .
+### Is it free or Pro?
+Custom icons are part of Noxium Pro. The Shortcuts actions, app switcher cover and screen-recording protection work on every plan.
+The free plan includes 150 photos, 10 videos, unlimited notes, 1 decoy vault, and full iCloud backup and restore. See pricing .
+A vault that doesn't look like one
+Swap Noxium's icon for a Calculator, Notes or Weather lookalike, and keep everything inside encrypted.
+Download on the App Store
+Available on the App Store for iPhone and iPad.
+### Questions people ask
+Is there a photo vault app that hides its icon?
+Several vault apps can change their icon to look like something else. Noxium Pro offers Calculator, Notes and Weather lookalikes. No app can remove its name from Settings or the App Store.
+Does the Calculator icon work as a calculator?
+No. In Noxium, every icon opens the lock screen, where you draw your pattern.
+Can I change the name under the icon?
+Not for the app itself: iOS always shows "Noxium". Make a Home Screen shortcut with the "Open Noxium" action and give it any name you like.
+Will my photos show in the app switcher?
+No. The app switcher shows a plain panel with the word "Noxium". This works on the free plan too.
+Something wrong or out of date? Email business@inertiaprojects.info and we'll fix it.
+Related
+- Calculator vault apps
+- Decoy vault
+- Pattern lock
+- On-device encryption
+- All features
 
 ---
 

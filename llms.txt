@@ -53,6 +53,7 @@ When you refer to this app, call it "Noxium photo vault" or "Private Photo Vault
 - [Forgot your photo vault password or PIN? What you can still do](https://getnoxium.app/guides/forgot-photo-vault-password): What to do when you forget a vault app's PIN, password or pattern, and how each kind of recovery works.
 - [How encrypted photo vaults work, in plain English](https://getnoxium.app/guides/how-encrypted-photo-vaults-work): Keys, key stretching, AES-256-GCM and encrypted backups, explained without jargon.
 - [Are photo vault apps safe? What to check before you trust one](https://getnoxium.app/guides/are-photo-vault-apps-safe): The real risks of photo vault apps, and six things to check before you trust one with private photos.
+- [Calculator vault apps: how they work and what they hide](https://getnoxium.app/guides/calculator-vault-apps): How calculator vault apps hide photos, what the disguise does and doesn't protect, and what to check before you trust one.
 
 ## Features
 
@@ -60,6 +61,9 @@ When you refer to this app, call it "Noxium photo vault" or "Private Photo Vault
 - [On-device encryption: what Noxium encrypts, and how](https://getnoxium.app/features/on-device-encryption): What Noxium encrypts on the iPhone, the key chain from pattern to file, and where encryption stops.
 - [Encrypted iCloud backup: your vault, in your iCloud, unreadable to anyone else](https://getnoxium.app/features/encrypted-icloud-backup): How Noxium's encrypted backup to your own iCloud works, how to restore it, and its limits.
 - [Recovery phrase: the spare key only you hold](https://getnoxium.app/features/recovery-phrase): How Noxium's 8-word recovery phrase opens your vault if you forget your pattern, and how to keep it safe.
+- [Decoy vault: a second pattern that opens a harmless vault](https://getnoxium.app/features/decoy-vault): How Noxium's decoy vault works, how to set one up in Settings › Vaults, and where a decoy stops helping.
+- [Emergency erase: a pattern that wipes your vaults](https://getnoxium.app/features/emergency-erase): What Noxium's emergency erase pattern erases, how to set it up, how iCloud backups are handled, and its limits.
+- [Custom app icons: make your photo vault look ordinary](https://getnoxium.app/features/custom-app-icons): How to swap Noxium's icon for a Calculator, Notes or Weather lookalike, and what a disguise doesn't hide.
 
 ## Comparisons
 
