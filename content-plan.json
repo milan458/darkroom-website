@@ -180,7 +180,7 @@
       "keyword": "calculator vault apps",
       "cluster": "choose-vault",
       "vaultaire": "https://vaultaire.app/guides/calculator-vault-apps/",
-      "status": "todo",
+      "status": "in-review",
       "note": "Moved up: 'calculator vault' 9,900 worldwide / 1,000 US, KD 19 (Nov 2026)."
     },
     {
@@ -202,7 +202,7 @@
       "keyword": "decoy vault app iphone",
       "cluster": "features",
       "vaultaire": "https://vaultaire.app/features/hidden-vaults/",
-      "status": "todo"
+      "status": "in-review"
     },
     {
       "order": 21,
@@ -212,7 +212,7 @@
       "keyword": "photo vault panic erase",
       "cluster": "features",
       "vaultaire": "https://vaultaire.app/features/duress-mode/",
-      "status": "todo"
+      "status": "in-review"
     },
     {
       "order": 22,
@@ -222,7 +222,7 @@
       "keyword": "photo vault app that hides its icon",
       "cluster": "features",
       "vaultaire": "https://vaultaire.app/features/app-icons/",
-      "status": "todo"
+      "status": "in-review"
     },
     {
       "order": 23,
