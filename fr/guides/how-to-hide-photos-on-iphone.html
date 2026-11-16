@@ -41,7 +41,7 @@
   <meta property="og:image:alt" content="Noxium photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
   <meta property="og:locale" content="fr_CA">
   <meta property="article:published_time" content="2026-11-12">
-  <meta property="article:modified_time" content="2026-11-14">
+  <meta property="article:modified_time" content="2026-11-16">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Cacher des photos sur iPhone : toutes les méthodes (iOS 26)">
   <meta name="twitter:description" content="Cacher des photos sur iPhone avec iOS 26 : album Masquées, note ou app verrouillée, coffre-fort. Ce que chaque méthode protège, et ses limites.">
@@ -90,7 +90,7 @@
         "mainEntityOfPage": "https://getnoxium.app/fr/guides/how-to-hide-photos-on-iphone",
         "image": "https://getnoxium.app/assets/guides/noxium-lock.jpg",
         "datePublished": "2026-11-12",
-        "dateModified": "2026-11-14",
+        "dateModified": "2026-11-16",
         "author": {
           "@id": "https://getnoxium.app/#org"
         },
@@ -168,6 +168,14 @@
               "@type": "Answer",
               "text": "Oui. Allez dans Réglages › Apps › Photos et désactivez Afficher l’album « Masquées ». L’album disparaît des Collections jusqu’à ce que vous réactiviez le réglage."
             }
+          },
+          {
+            "@type": "Question",
+            "name": "Qu’arrive-t-il aux photos masquées si je réinitialise mon iPhone?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Elles sont effacées avec le reste de l’iPhone, puis reviennent masquées si vous restaurez : depuis Photos iCloud une fois connecté, ou depuis une sauvegarde iCloud ou sur ordinateur si Photos iCloud était désactivé. Sans l’un ni l’autre, elles sont perdues."
+            }
           }
         ]
       }
@@ -233,7 +241,7 @@
         <p class="eyebrow"><span class="dot dot-ink" aria-hidden="true"></span>Guide · Cacher des photos</p>
         <h1>Cacher des photos sur iPhone : toutes les méthodes, et ce que chacune protège</h1>
         <!-- build:byline -->
-        <p class="byline"><span>Par <a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>Publié le <time datetime="2026-11-12">12 novembre 2026</time></span><span aria-hidden="true">·</span><span>Mis à jour le <time datetime="2026-11-14">14 novembre 2026</time></span></p>
+        <p class="byline"><span>Par <a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>Publié le <time datetime="2026-11-12">12 novembre 2026</time></span><span aria-hidden="true">·</span><span>Mis à jour le <time datetime="2026-11-16">16 novembre 2026</time></span></p>
         <!-- /build:byline -->
         <div class="answer">
           <span class="answer-label">En bref</span>
@@ -264,13 +272,13 @@
         </div>
 
         <h2 id="hidden-album">Comment cacher des photos avec l’album Masquées ?</h2>
-        <p>Maintenez le doigt sur une photo, touchez Masquer et confirmez. La photo quitte votre photothèque, les Souvenirs et les widgets, et n’apparaît plus que dans l’album Masquées.</p>
+        <p>Maintenez le doigt sur une photo, touchez Masquer et confirmez. La photo quitte votre photothèque, vos autres albums et le widget Photos, et n’apparaît plus que dans l’album Masquées (<a href="https://support.apple.com/fr-ca/104987">Apple : Masquer des photos avec l’album Masquées</a>).</p>
         <ol class="steps">
           <li><strong>Ouvrez Photos</strong> et trouvez la photo ou la vidéo.</li>
           <li><strong>Maintenez le doigt dessus</strong>, touchez <span class="path">Masquer</span> et confirmez.</li>
           <li><strong>Pour en masquer plusieurs d’un coup</strong>, touchez <span class="path">Sélectionner</span>, touchez chaque photo, puis le bouton <span class="path">Plus (…)</span>, et choisissez <span class="path">Masquer</span>.</li>
         </ol>
-        <p>Pour voir les photos masquées, ouvrez <span class="path">Collections</span>, faites défiler jusqu’à <span class="path">Utilitaires</span>, touchez <span class="path">Masquées</span>, puis <span class="path">Afficher l’album</span>, et déverrouillez avec Face ID. Pour réafficher une photo, maintenez le doigt dessus et touchez <span class="path">Afficher</span>.</p>
+        <p>Pour voir les photos masquées, ouvrez <span class="path">Collections</span>, faites défiler jusqu’à <span class="path">Utilitaires</span>, touchez <span class="path">Masquées</span>, puis <span class="path">Afficher l’album</span>, et déverrouillez avec Face ID. Pour réafficher une photo, maintenez le doigt dessus et touchez <span class="path">Afficher</span>. Si Masquées n’y est pas, ou si vous voulez savoir où vont les photos masquées sur iCloud, sur un Mac ou sur un nouvel iPhone, voyez le <a href="/fr/guides/hidden-photos-iphone">guide complet des photos masquées sur iPhone</a>.</p>
 
         <h3 id="lock-hidden-album">Vérifiez que l’album Masquées est verrouillé</h3>
         <p>Depuis iOS 16, l’album Masquées est verrouillé par défaut. Vérifiez quand même : allez dans <span class="path">Réglages › Apps › Photos</span> et assurez-vous que <span class="path">Utiliser Face ID</span> (ou « Utiliser Touch ID » / « Utiliser le code ») est activé. Le même réglage verrouille « Supprimées récemment ».</p>
@@ -283,6 +291,10 @@
           <li><strong>Il n’a pas de chiffrement à part.</strong> Les photos masquées ont la même protection que le reste de la photothèque. Dans iCloud, Photos n’est chiffré de bout en bout que si vous activez la Protection avancée des données (<a href="https://support.apple.com/fr-fr/102651">présentation de la sécurité des données iCloud par Apple</a>).</li>
         </ul>
         <p>Pour le tableau complet, lisez <a href="/fr/guides/is-iphone-hidden-album-private">l’album Masquées de l’iPhone est-il vraiment privé ?</a></p>
+
+        <h2 id="ipad-mac">Comment masquer des photos sur iPad et sur Mac?</h2>
+        <p>Sur iPad, c’est exactement comme sur iPhone : maintenez le doigt sur la photo et touchez Masquer. Si l’album Masquées n’est pas visible, touchez d’abord le bouton de la barre latérale dans Photos. Sur un Mac, cliquez sur la photo en maintenant la touche Contrôle et choisissez <span class="path">Masquer la photo</span>, ou appuyez sur Commande-L. Avec Photos iCloud, une photo masquée sur un appareil l’est sur tous : vous n’avez à le faire qu’une fois.</p>
+        <p>Sur un Mac, l’album Masquées est désactivé par défaut. Pour le voir, choisissez <span class="path">Présentation › Afficher l’album photo Masquées</span> dans Photos, puis déverrouillez-le avec Touch ID ou votre mot de passe de session.</p>
 
         <h2 id="lock-photos-app">Peut-on verrouiller toute l’app Photos avec Face ID ?</h2>
         <p>Oui. Depuis iOS 18, vous pouvez exiger Face ID à chaque ouverture de n’importe quelle app, Photos comprise.</p>
@@ -326,6 +338,16 @@
         </figure>
         <p class="inline-cta"><a href="https://apps.apple.com/app/apple-store/id6824616093" data-cta="inline" data-label-waitlist="Essayer Noxium gratuitement : rejoindre la bêta →" data-label-live="Obtenir Noxium gratuitement sur l’App Store →">Obtenir Noxium gratuitement sur l’App Store →</a></p>
 
+        <h2 id="mistakes">Quelles erreurs rendent les photos masquées visibles?</h2>
+        <p>La plupart des photos masquées qui se font voir n’ont pas été trouvées dans l’album Masquées. Elles l’ont été ailleurs, ou le verrou était désactivé. Vérifiez ces cinq points :</p>
+        <ol class="steps">
+          <li><strong>Désactiver le verrou Face ID.</strong> Si « Utiliser Face ID » est désactivé dans <span class="path">Réglages › Apps › Photos</span>, n’importe qui tenant votre iPhone déverrouillé peut ouvrir Masquées, et les apps qui ont un accès complet à la photothèque peuvent demander les photos masquées.</li>
+          <li><strong>Prendre « Afficher l’album Masquées » pour un verrou.</strong> Le désactiver retire seulement l’album de la vue. N’importe qui peut le réactiver dans Réglages.</li>
+          <li><strong>Masquer des photos dans une photothèque partagée.</strong> Dans la photothèque partagée iCloud, une photo masquée va dans l’album Masquées de tous les participants, et chacun peut la voir ou l’afficher de nouveau (<a href="https://support.apple.com/fr-ca/guide/icloud/mmea67686c65/icloud">Apple : Masquer des photos sur iCloud.com</a>).</li>
+          <li><strong>Laisser des copies derrière :</strong> dans Supprimées récemment, Messages, d’autres apps ou une ancienne importation sur Mac (voir la section suivante).</li>
+          <li><strong>Effacer l’iPhone sans sauvegarde.</strong> Les photos masquées font partie de votre photothèque. Si Photos iCloud est désactivé et qu’il n’y a pas de sauvegarde récente, effacer ou réinitialiser l’iPhone les supprime avec tout le reste.</li>
+        </ol>
+
         <h2 id="recently-deleted">N’oubliez pas « Supprimées récemment » et les autres copies</h2>
         <p>Mettre une photo à l’abri ne suffit pas si une copie traîne ailleurs. Les photos supprimées restent 30 jours dans « Supprimées récemment ».</p>
         <ul>
@@ -366,6 +388,10 @@
             <summary class="faq-summary"><span class="faq-summary-left"><span>Peut-on cacher l’album Masquées ?</span></span></summary>
             <div class="faq-body"><p>Oui. Allez dans Réglages › Apps › Photos et désactivez Afficher l’album « Masquées ». L’album disparaît des Collections jusqu’à ce que vous réactiviez le réglage.</p></div>
           </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Qu’arrive-t-il aux photos masquées si je réinitialise mon iPhone?</span></span></summary>
+            <div class="faq-body"><p>Elles sont effacées avec le reste de l’iPhone, puis reviennent masquées si vous restaurez : depuis Photos iCloud une fois connecté, ou depuis une sauvegarde iCloud ou sur ordinateur si Photos iCloud était désactivé. Sans l’un ni l’autre, elles sont perdues.</p></div>
+          </details>
         </div>
 
         <p><em>Une erreur ou une info périmée ? Écrivez à <a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a> et nous corrigerons.</em></p>
@@ -377,9 +403,11 @@
           <ol>
             <li><a href="#compare">Quelle méthode choisir</a></li>
             <li><a href="#hidden-album">L’album Masquées</a></li>
+            <li><a href="#ipad-mac">Sur iPad et Mac</a></li>
             <li><a href="#lock-photos-app">Verrouiller l’app Photos</a></li>
             <li><a href="#locked-note">Une note verrouillée</a></li>
             <li><a href="#vault-app">Une app de coffre-fort</a></li>
+            <li><a href="#mistakes">Erreurs à éviter</a></li>
             <li><a href="#recently-deleted">Supprimées récemment et copies</a></li>
             <li><a href="#faq">Questions fréquentes</a></li>
           </ol>

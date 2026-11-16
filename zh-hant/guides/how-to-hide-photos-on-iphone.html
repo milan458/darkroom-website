@@ -41,7 +41,7 @@
   <meta property="og:image:alt" content="Noxium photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
   <meta property="og:locale" content="zh_TW">
   <meta property="article:published_time" content="2026-11-13">
-  <meta property="article:modified_time" content="2026-11-13">
+  <meta property="article:modified_time" content="2026-11-16">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="iPhone 隱藏照片教學：所有方法與保護範圍（iOS 26）">
   <meta name="twitter:description" content="iOS 26 的 iPhone 隱藏照片完整教學：「已隱藏」相簿、鎖定備忘錄、鎖定 App 和保險庫 App，各能保護什麼、不能保護什麼。">
@@ -90,7 +90,7 @@
         "mainEntityOfPage": "https://getnoxium.app/zh-hant/guides/how-to-hide-photos-on-iphone",
         "image": "https://getnoxium.app/assets/guides/noxium-lock.jpg",
         "datePublished": "2026-11-13",
-        "dateModified": "2026-11-13",
+        "dateModified": "2026-11-16",
         "author": {
           "@id": "https://getnoxium.app/#org"
         },
@@ -168,6 +168,14 @@
               "@type": "Answer",
               "text": "可以。前往設定 › App › 照片，關閉「顯示『已隱藏』相簿」。在你重新開啟這個設定之前，該相簿不會出現在選集中。"
             }
+          },
+          {
+            "@type": "Question",
+            "name": "重置 iPhone 後，隱藏的照片會怎樣？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "它們會和 iPhone 其他資料一起被清除，回復後則會以隱藏狀態回來：登入後從 iCloud 照片回來，或是在 iCloud 照片關閉時，從 iCloud 或電腦備份回來。兩者都沒有的話，就會遺失。"
+            }
           }
         ]
       }
@@ -233,7 +241,7 @@
         <p class="eyebrow"><span class="dot dot-ink" aria-hidden="true"></span>指南 · 隱藏照片</p>
         <h1>iPhone 怎麼隱藏照片：所有方法，以及每種方法能保護什麼</h1>
         <!-- build:byline -->
-        <p class="byline"><span>作者：<a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>最後更新：<time datetime="2026-11-13">2026年11月13日</time></span></p>
+        <p class="byline"><span>作者：<a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>發表於<time datetime="2026-11-13">2026年11月13日</time></span><span aria-hidden="true">·</span><span>最後更新：<time datetime="2026-11-16">2026年11月16日</time></span></p>
         <!-- /build:byline -->
         <div class="answer">
           <span class="answer-label">簡短回答</span>
@@ -264,13 +272,13 @@
         </div>
 
         <h2 id="hidden-album">怎麼用「已隱藏」相簿隱藏照片？</h2>
-        <p>按住照片，點一下「隱藏」並確認。照片會從圖庫、回憶和小工具中消失，只會出現在「已隱藏」相簿裡。</p>
+        <p>按住照片，點一下「隱藏」並確認。照片會從圖庫、其他相簿和「照片」小工具中消失，只會出現在「已隱藏」相簿裡（<a href="https://support.apple.com/zh-tw/104987">Apple：使用「已隱藏」相簿隱藏照片</a>）。</p>
         <ol class="steps">
           <li><strong>打開「照片」</strong>，找到要隱藏的照片或影片。</li>
           <li><strong>按住它</strong>，點一下<span class="path">隱藏</span>並確認。</li>
           <li><strong>要一次隱藏好幾張</strong>，點一下<span class="path">選取</span>，逐一點選照片，再點一下<span class="path">「更多」按鈕（…）</span>，然後選擇<span class="path">隱藏</span>。</li>
         </ol>
-        <p>要查看已隱藏的照片，請打開<span class="path">選集</span>，向下捲動到<span class="path">更多項目</span>，依序點一下<span class="path">已隱藏</span>和<span class="path">檢視相簿</span>，再用 Face ID 解鎖。要取消隱藏，按住照片並點一下<span class="path">取消隱藏</span>。</p>
+        <p>要查看已隱藏的照片，請打開<span class="path">選集</span>，向下捲動到<span class="path">更多項目</span>，依序點一下<span class="path">已隱藏</span>和<span class="path">檢視相簿</span>，再用 Face ID 解鎖。要取消隱藏，按住照片並點一下<span class="path">取消隱藏</span>。如果找不到「已隱藏」，或想知道隱藏的照片在 iCloud、Mac 和新 iPhone 上會怎樣，請看<a href="/zh-hant/guides/hidden-photos-iphone">iPhone 隱藏照片完整指南</a>。</p>
 
         <h3 id="lock-hidden-album">確認「已隱藏」相簿有上鎖</h3>
         <p>從 iOS 16 開始，「已隱藏」相簿預設為鎖定。不過最好還是檢查一下：前往<span class="path">設定 › App › 照片</span>，確認<span class="path">使用 Face ID</span>（或「使用 Touch ID」／「使用密碼」）已開啟。同一個設定也會鎖住「最近刪除」。</p>
@@ -283,6 +291,10 @@
           <li><strong>它沒有另外加密。</strong>隱藏的照片和圖庫裡其他照片受到的保護相同。在 iCloud 中，只有開啟「進階資料保護」，照片才會端對端加密（<a href="https://support.apple.com/zh-tw/102651">Apple 的 iCloud 資料安全概覽</a>）。</li>
         </ul>
         <p>完整說明請看<a href="/zh-hant/guides/is-iphone-hidden-album-private">iPhone 的「已隱藏」相簿真的私密嗎？</a></p>
+
+        <h2 id="ipad-mac">怎麼在 iPad 和 Mac 上隱藏照片？</h2>
+        <p>在 iPad 上和 iPhone 完全一樣：按住照片，點一下「隱藏」。如果看不到「已隱藏」相簿，先在「照片」點一下側邊欄按鈕。在 Mac 上，按住 Control 鍵並按一下照片，選擇<span class="path">隱藏照片</span>，或按 Command-L。開啟 iCloud 照片時，在一部裝置上隱藏的照片在所有裝置上都會隱藏，所以只要做一次。</p>
+        <p>在 Mac 上，「已隱藏」相簿預設是關閉的。要查看，請在「照片」中選擇<span class="path">顯示方式 › 顯示『已隱藏』相簿</span>，再用 Touch ID 或登入密碼解鎖。</p>
 
         <h2 id="lock-photos-app">能用 Face ID 鎖住整個「照片」App 嗎？</h2>
         <p>可以。從 iOS 18 開始，你可以讓任何 App（包括「照片」）每次打開時都要求 Face ID。</p>
@@ -326,6 +338,16 @@
         </figure>
         <p class="inline-cta"><a href="https://apps.apple.com/app/apple-store/id6824616093" data-cta="inline" data-label-waitlist="免費試用 Noxium：加入測試 →" data-label-live="在 App Store 免費下載 Noxium →">在 App Store 免費下載 Noxium →</a></p>
 
+        <h2 id="mistakes">哪些錯誤會讓隱藏的照片被看到？</h2>
+        <p>被別人看到的隱藏照片，大多不是在「已隱藏」相簿裡被找到的，而是在別的地方，或是鎖根本沒開。請檢查這五點：</p>
+        <ol class="steps">
+          <li><strong>關掉 Face ID 鎖定。</strong>如果<span class="path">設定 › App › 照片</span>中的「使用 Face ID」是關閉的，任何拿著你已解鎖 iPhone 的人都能打開「已隱藏」，擁有完整圖庫取用權的 App 也能要求讀取隱藏的照片。</li>
+          <li><strong>把「顯示『已隱藏』相簿」當成鎖。</strong>關掉它只是讓相簿不顯示，任何人都能在「設定」中再打開。</li>
+          <li><strong>在共享圖庫中隱藏照片。</strong>在「iCloud 共享的照片圖庫」中隱藏的照片，會移到所有參與者的「已隱藏」相簿，每個參與者都能查看或取消隱藏（<a href="https://support.apple.com/zh-tw/guide/icloud/mmea67686c65/icloud">Apple：在 iCloud.com 上隱藏照片</a>）。</li>
+          <li><strong>留下副本：</strong>在「最近刪除」、「訊息」、其他 App，或以前匯入 Mac 的照片裡（請看下一節）。</li>
+          <li><strong>沒有備份就清除 iPhone。</strong>隱藏的照片是圖庫的一部分。如果 iCloud 照片是關閉的，又沒有最近的備份，清除或重置 iPhone 就會連同其他資料一起刪掉它們。</li>
+        </ol>
+
         <h2 id="recently-deleted">別忘了「最近刪除」和其他副本</h2>
         <p>把照片移到私密的地方還不夠，如果別的地方還留著副本，就等於沒藏。刪除的照片會在「最近刪除」中保留 30 天。</p>
         <ul>
@@ -366,6 +388,10 @@
             <summary class="faq-summary"><span class="faq-summary-left"><span>可以把「已隱藏」相簿也藏起來嗎？</span></span></summary>
             <div class="faq-body"><p>可以。前往設定 › App › 照片，關閉「顯示『已隱藏』相簿」。在你重新開啟這個設定之前，該相簿不會出現在選集中。</p></div>
           </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>重置 iPhone 後，隱藏的照片會怎樣？</span></span></summary>
+            <div class="faq-body"><p>它們會和 iPhone 其他資料一起被清除，回復後則會以隱藏狀態回來：登入後從 iCloud 照片回來，或是在 iCloud 照片關閉時，從 iCloud 或電腦備份回來。兩者都沒有的話，就會遺失。</p></div>
+          </details>
         </div>
 
         <p><em>發現錯誤或過時的資訊？請寫信到 <a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a>，我們會修正。</em></p>
@@ -377,9 +403,11 @@
           <ol>
             <li><a href="#compare">該用哪種方法</a></li>
             <li><a href="#hidden-album">「已隱藏」相簿</a></li>
+            <li><a href="#ipad-mac">在 iPad 和 Mac 上</a></li>
             <li><a href="#lock-photos-app">鎖定「照片」App</a></li>
             <li><a href="#locked-note">鎖定的備忘錄</a></li>
             <li><a href="#vault-app">照片保險庫 App</a></li>
+            <li><a href="#mistakes">要避免的錯誤</a></li>
             <li><a href="#recently-deleted">最近刪除與副本</a></li>
             <li><a href="#faq">常見問題</a></li>
           </ol>
