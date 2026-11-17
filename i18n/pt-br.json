@@ -144,6 +144,28 @@
       "keyword": "ver fotos ocultas iphone",
       "published": "2026-11-15",
       "updated": "2026-11-15"
+    },
+    "/guides/what-is-a-decoy-vault": {
+      "source": "2026-10-26",
+      "title": "O que é um cofre isca, e ele protege você de verdade?",
+      "description": "Um cofre isca é um segundo cofre, inofensivo, num app de cofre de fotos. Como funciona, quais apps têm e quais são os limites reais.",
+      "headline": "O que é um cofre isca, e ele protege você de verdade?",
+      "summary": "Como funcionam os cofres isca nos apps de cofre de fotos, os dois tipos, os limites e como configurar um bem.",
+      "crumb": "O que é um cofre isca?",
+      "keyword": "cofre isca app",
+      "published": "2026-11-17",
+      "updated": "2026-11-17"
+    },
+    "/guides/are-photo-vault-apps-safe": {
+      "source": "2026-10-26",
+      "title": "Apps de cofre de fotos são seguros? O que conferir",
+      "description": "Apps de cofre de fotos são seguros? Os riscos reais, o que 17 páginas da App Store mostram e um checklist antes de confiar suas fotos a um deles.",
+      "headline": "Apps de cofre de fotos são seguros? O que conferir antes de confiar em um",
+      "summary": "Os riscos reais dos apps de cofre de fotos, o que 17 páginas da App Store mostram e um checklist para conferir.",
+      "crumb": "Cofres de fotos são seguros?",
+      "keyword": "app de cofre de fotos é seguro",
+      "published": "2026-11-17",
+      "updated": "2026-11-17"
     }
   },
   "facts": [

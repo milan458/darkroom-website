@@ -144,6 +144,28 @@
       "keyword": "ver fotos ocultas iphone",
       "published": "2026-11-15",
       "updated": "2026-11-15"
+    },
+    "/guides/what-is-a-decoy-vault": {
+      "source": "2026-10-26",
+      "title": "¿Qué es una caja señuelo y de verdad te protege?",
+      "description": "Una caja señuelo es una segunda caja fuerte inofensiva en una app de fotos. Cómo funciona, qué apps la tienen y cuáles son sus límites reales.",
+      "headline": "¿Qué es una caja señuelo y de verdad te protege?",
+      "summary": "Cómo funcionan las cajas señuelo en las apps de caja fuerte de fotos, sus dos tipos, sus límites y cómo configurar una bien.",
+      "crumb": "¿Qué es una caja señuelo?",
+      "keyword": "caja fuerte señuelo app",
+      "published": "2026-11-17",
+      "updated": "2026-11-17"
+    },
+    "/guides/are-photo-vault-apps-safe": {
+      "source": "2026-10-26",
+      "title": "¿Son seguras las apps de caja fuerte de fotos?",
+      "description": "¿Son seguras las apps de caja fuerte de fotos? Los riesgos reales, lo que muestran 17 fichas del App Store y una lista para revisar antes de fiarte.",
+      "headline": "¿Son seguras las apps de caja fuerte de fotos? Qué comprobar antes de fiarte de una",
+      "summary": "Los riesgos reales de las apps de caja fuerte de fotos, lo que muestran 17 fichas del App Store y una lista de comprobación.",
+      "crumb": "¿Son seguras las cajas fuertes?",
+      "keyword": "son seguras las apps de caja fuerte de fotos",
+      "published": "2026-11-17",
+      "updated": "2026-11-17"
     }
   },
   "facts": [
