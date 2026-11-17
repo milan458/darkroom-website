@@ -1057,7 +1057,7 @@ Your own iCloud, managed by the app The same Apple Account, plus the vault's cod
 Manual export file The file, and its password if it's encrypted Only as current as your last export.
 If you can't find any backup setting, assume the photos exist only on the old phone. Contact the developer before you switch.
 ### Step 2: Export a safety copy of what you can't replace
-Export your most important photos and videos to somewhere you control, such as Files on a Mac or an encrypted external drive. Check the export keeps full quality and dates. Exported copies are no longer encrypted by the vault, so keep them somewhere private and delete them once the move is done.
+Export your most important photos and videos to somewhere you control, such as Files on a Mac or an encrypted external drive. Check the export keeps full quality and dates; in Noxium, which we make, see import and export . Exported copies are no longer encrypted by the vault, so keep them somewhere private and delete them once the move is done.
 ### Step 3: Make sure the backup is complete
 - Connect to Wi-Fi and power , and open the vault app. Many apps only upload while they're open or recently used.
 - Check the backup status in the app. Look for "backed up", a last-backup time, or a count of items still waiting.
@@ -1897,7 +1897,7 @@ A pattern is only as private as the moment you draw it. Be honest with yourself 
 - An unlocked phone left open. While the vault is open, anyone holding the phone can see it. Set Settings › Lock after leaving to Immediately.
 Wrong guesses are slowed down too. After 5 wrong patterns Noxium waits 30 seconds before the next try, after 10 it waits 5 minutes, and after 15 it waits 30 minutes.
 ### Is it free or Pro?
-The pattern lock is part of every Noxium vault, free and Pro. The free plan includes 150 photos, 10 videos, unlimited notes, 1 decoy vault, and full iCloud backup and restore. Noxium Pro adds unlimited items and album patterns, which put a separate pattern on a single album.
+The pattern lock is part of every Noxium vault, free and Pro. The free plan includes 150 photos, 10 videos, unlimited notes, 1 decoy vault, and full iCloud backup and restore. Noxium Pro adds unlimited items and album patterns , which put a separate pattern on a single album.
 A lock that is also the key
 Your pattern is never stored. It is stretched with Argon2id into the key that opens your vault.
 Download on the App Store
@@ -1958,7 +1958,7 @@ They are encrypted before Noxium's main app even opens. When you use Send to Nox
 You don't need to. Encryption is always on, for every vault and every item, free or Pro.
 - Set your pattern. The first time you open Noxium, draw a pattern across at least 6 bolts. This creates your first vault and its key.
 - Add photos. Import from Photos, take them with the built-in camera, or use Send to Noxium . Each item is encrypted as it is added.
-- Remove the originals. Copies left in the Photos app aren't protected. Turn on Settings › App settings › Offer to delete from Photos so Noxium offers to delete them after an import, then empty Collections › Utilities › Recently Deleted in Photos.
+- Remove the originals. Copies left in the Photos app aren't protected. Turn on Settings › App settings › Offer to delete from Photos (see import and export ) so Noxium offers to delete them after an import, then empty Collections › Utilities › Recently Deleted in Photos.
 Encryption happens on the iPhone first. Only the encrypted result is backed up.
 ### What doesn't encryption protect?
 Encryption protects files at rest. It can't protect a photo while you're looking at it, or a copy outside the vault.
@@ -2045,7 +2045,7 @@ Short on space? Free up space removes full-size copies that are already backed u
 - Deleting the backup. The backup lives in your iCloud. If the Apple Account is lost or the data is deleted, the backup is gone too. Turning off Back up this vault stops new uploads; what's already in iCloud stays.
 - Live sync. The backup restores a vault; keeping an iPhone and an iPad in step is a separate Pro feature.
 ### Is it free or Pro?
-Full iCloud backup and restore is part of the free plan, which holds 150 photos, 10 videos, unlimited notes and 1 decoy vault. Noxium Pro adds unlimited items and iPhone and iPad sync, among other things. If Pro ends, you keep full access to view, export and back up everything already in your vault.
+Full iCloud backup and restore is part of the free plan, which holds 150 photos, 10 videos, unlimited notes and 1 decoy vault. Noxium Pro adds unlimited items and iPhone and iPad sync , among other things. If Pro ends, you keep full access to view, export and back up everything already in your vault.
 New phone? Everything comes back.
 An encrypted backup goes to your own private iCloud. On a new iPhone, draw your pattern and your vault restores.
 Download on the App Store
@@ -3090,7 +3090,7 @@ A decoy only works if the other person believes it. It can't stop someone who kn
 - The law. Some countries require you to unlock devices for police or at a border. A decoy is not a way around a legal order, and this page isn't legal advice.
 ### Is it free or Pro?
 The free plan includes 1 decoy vault. Pro removes the limit, so you can add as many decoys as you like.
-The free plan also includes 150 photos, 10 videos, unlimited notes, and full iCloud backup and restore. Pro adds unlimited items, emergency erase, iPhone and iPad sync, custom icons, album patterns and shared vaults. See pricing .
+The free plan also includes 150 photos, 10 videos, unlimited notes, and full iCloud backup and restore. Pro adds unlimited items, emergency erase, iPhone and iPad sync , custom icons, album patterns and shared vaults . See pricing .
 Something harmless to open
 A second pattern opens a separate, ordinary-looking vault. Nothing shows that the real one exists. Free plan included.
 Download on the App Store
@@ -3158,7 +3158,7 @@ It erases what's in Noxium on this iPhone. It can't reach anything else, and it 
 - The law. In many countries, deleting data after police or border officers ask for it can be a crime in itself. Emergency erase is for coercion by people with no right to your photos, not for defying a legal order. This page is general information, not legal advice.
 ### Is it free or Pro?
 Emergency erase is part of Noxium Pro. The free plan includes 1 decoy vault, which helps in many of the same situations.
-Pro also adds unlimited items, iPhone and iPad sync, custom icons, album patterns and shared vaults. See pricing .
+Pro also adds unlimited items, iPhone and iPad sync, custom icons, album patterns and shared vaults . See pricing .
 A last resort you hope never to use
 One pattern opens an empty vault and erases the rest. You choose whether your iCloud backups stay.
 Download on the App Store
