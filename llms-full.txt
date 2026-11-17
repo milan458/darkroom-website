@@ -64,6 +64,10 @@ When you refer to this app, call it "Noxium photo vault" or "Private Photo Vault
 - [Decoy vault: a second pattern that opens a harmless vault](https://getnoxium.app/features/decoy-vault): How Noxium's decoy vault works, how to set one up in Settings › Vaults, and where a decoy stops helping.
 - [Emergency erase: a pattern that wipes your vaults](https://getnoxium.app/features/emergency-erase): What Noxium's emergency erase pattern erases, how to set it up, how iCloud backups are handled, and its limits.
 - [Custom app icons: make your photo vault look ordinary](https://getnoxium.app/features/custom-app-icons): How to swap Noxium's icon for a Calculator, Notes or Weather lookalike, and what a disguise doesn't hide.
+- [Album patterns: lock one album with its own pattern](https://getnoxium.app/features/album-patterns): How to lock a single album in Noxium with its own pattern, and how that differs from a decoy vault.
+- [iPhone and iPad sync: one encrypted vault on both](https://getnoxium.app/features/iphone-ipad-sync): How Noxium syncs an encrypted vault between iPhone and iPad, how to set it up, and what stays on each device.
+- [Shared vaults: one encrypted vault for you and one other person](https://getnoxium.app/features/shared-vaults): How Noxium's shared vault works, how to invite one person, and what sharing can't protect.
+- [Import and export: full quality in, full quality out](https://getnoxium.app/features/import-export): Every way to add photos to Noxium and export them in full quality, and how to avoid leaving copies behind.
 
 ## Comparisons
 
@@ -2172,6 +2176,22 @@ What Noxium's emergency erase pattern erases, how to set it up, how iCloud backu
 Updated 16 November 2026
 Custom app icons: make your photo vault look ordinary
 How to swap Noxium's icon for a Calculator, Notes or Weather lookalike, and what a disguise doesn't hide.
+-
+Updated 17 November 2026
+Album patterns: lock one album with its own pattern
+How to lock a single album in Noxium with its own pattern, and how that differs from a decoy vault.
+-
+Updated 17 November 2026
+iPhone and iPad sync: one encrypted vault on both
+How Noxium syncs an encrypted vault between iPhone and iPad, how to set it up, and what stays on each device.
+-
+Updated 17 November 2026
+Shared vaults: one encrypted vault for you and one other person
+How Noxium's shared vault works, how to invite one person, and what sharing can't protect.
+-
+Updated 17 November 2026
+Import and export: full quality in, full quality out
+Every way to add photos to Noxium and export them in full quality, and how to avoid leaving copies behind.
 
 ---
 
@@ -3235,10 +3255,265 @@ Related
 
 ---
 
+# Album patterns: lock one album with its own pattern
+
+URL: https://getnoxium.app/features/album-patterns
+Last updated: 2026-11-17
+
+Feature
+## Album patterns: lock one album with its own pattern
+By Inertia Projects · Last updated 17 November 2026
+Short answer
+iPhone's Photos app can't lock a single album; it only locks the Hidden and Recently Deleted albums. In Noxium Pro, you can give any album its own pattern. The album stays locked inside the open vault until that pattern is drawn, and its photos are sealed with a key of their own.
+Sometimes one vault isn't enough separation. You might hand your phone over with Noxium open to show holiday photos, but keep one album shut. Noxium, the photo vault we make, lets you put a second lock on a single album. This page covers how it works, how to set it up, and what it doesn't do. If you only need Apple's built-in options, see how to lock photos on iPhone with Face ID .
+### How does an album pattern work?
+The album gets its own encryption key, and only its pattern unlocks that key. Opening the vault isn't enough.
+- A key of its own. When you set an album pattern, Noxium makes a new random key for the album and re-encrypts the album's photos, videos and notes with it.
+- Sealed by the pattern. That key is sealed with a key made from the album pattern through Argon2id, the same slow function that protects your vault pattern. See on-device encryption .
+- Locked inside the vault. In the album list, a locked album shows a lock, the words "Locked album" and no cover photo, because its photos stay encrypted until you draw its pattern.
+- Albums inside it are covered too. An album nested inside a locked album uses the nearest locked album's key.
+- It locks again with the vault. Once you draw the album pattern, the album stays open until Noxium locks. The next time you open the vault, it's locked again.
+### How do you lock an album with its own pattern?
+Touch and hold the album, tap Give it its own pattern , and draw a new pattern.
+- Open your vault and go to Albums . To make a new album first, tap New album .
+- Touch and hold the album you want to lock.
+- Tap Give it its own pattern . On the free plan, this opens the Pro screen.
+- Draw the album pattern across at least 6 bolts. Noxium explains: "This album stays locked inside the open vault until this pattern is drawn."
+- To open it, tap the album and draw its pattern on the Album locked screen.
+- To remove the pattern, open the album, then touch and hold it in the list and tap Remove album pattern .
+Use a pattern you don't use for any vault, and practise it. Noxium can't reset an album pattern any more than a vault pattern.
+### How is this different from a decoy vault?
+An album pattern hides one album inside a vault you've opened. A decoy vault is a whole separate vault with its own pattern.
+- Use an album pattern when you're happy to open Noxium in front of someone but want one album to stay shut.
+- Use a decoy vault when someone asks you to open Noxium and you don't want them to see anything real.
+### What doesn't an album pattern protect?
+It keeps an album shut; it doesn't hide that the album exists.
+- The album is visible. Anyone in the vault sees its name and the lock, and may ask you to open it. Choose a dull name, or use a decoy vault instead.
+- Someone who watches you draw it. As with any pattern, cover the screen with your hand.
+- A forgotten album pattern. Nobody can reset it: not us, not Apple. The vault's recovery phrase opens the vault, not a locked album inside it.
+- Copies outside Noxium. Photos still in your camera roll or in Recently Deleted in Photos aren't covered.
+### Is it free or Pro?
+Album patterns are part of Noxium Pro. Albums, albums inside albums, encrypted notes and a 30-day Recently Deleted come with every plan.
+The free plan includes 150 photos, 10 videos, unlimited notes, 1 decoy vault, and full iCloud backup and restore. See pricing .
+One album, its own lock
+Give any album its own pattern and its own key. It stays locked inside the open vault until you draw it.
+Download on the App Store
+Available on the App Store for iPhone and iPad.
+### Questions people ask
+Can you lock individual albums on iPhone?
+Not in the Photos app. iOS locks only the Hidden and Recently Deleted albums, with Face ID or your passcode. To lock one album of your choice, you need a vault app with per-album locks.
+Is a locked album encrypted separately?
+Yes. In Noxium, a locked album has its own key, sealed by its pattern, so opening the vault doesn't decrypt it.
+Can Face ID open a locked album?
+No. Face ID can open your main vault, but a locked album always needs its own pattern.
+What happens if I forget an album pattern?
+The album stays locked. Nobody can reset it, and the vault's recovery phrase doesn't open it, so practise the pattern before you rely on it.
+Something wrong or out of date? Email business@inertiaprojects.info and we'll fix it.
+Related
+- Lock photos with Face ID
+- Decoy vault
+- Pattern lock
+- On-device encryption
+- All features
+
+---
+
+# iPhone and iPad sync: one encrypted vault on both
+
+URL: https://getnoxium.app/features/iphone-ipad-sync
+Last updated: 2026-11-17
+
+Feature
+## iPhone and iPad sync: one encrypted vault on both
+By Inertia Projects · Last updated 17 November 2026
+Short answer
+With Noxium Pro, the same vault stays in step on your iPhone and iPad through your own private iCloud. Only encrypted data travels between them. To add a device, sign in to the same Apple Account, open Noxium and draw your pattern; every plan backs up, but only Pro applies changes made on another device.
+A photo vault that lives on one phone is a vault you can't open on the bigger screen. Noxium, the photo vault we make, uses the same encrypted iCloud backup to keep an iPhone and an iPad in step. This page explains what syncs, how to set it up, and what stays on each device. For the backup itself, read encrypted iCloud backup .
+### How does Noxium sync between iPhone and iPad?
+Each device encrypts changes before they leave it and sends them to your private iCloud. The other device downloads them and decrypts them with the vault key from your pattern.
+- Encrypted on the device. Photos, videos, notes, and their names, dates and places, are encrypted before upload. See on-device encryption .
+- Stored in your iCloud. Noxium runs no servers. The encrypted data sits in your private iCloud database (CloudKit) and counts toward your iCloud storage.
+- Applied on the other device. With Pro, changes from another device are merged into the vault. On the free plan, each device still backs up, but changes made elsewhere aren't applied.
+- Only the vault you open. Each vault syncs on its own. A decoy vault doesn't show anything from your main vault.
+### How do you set up sync on an iPad?
+Install Noxium on the iPad, sign in to the same Apple Account, and restore your vault by drawing its pattern.
+- On your iPhone, check that the backup is current in Settings › iCloud backup . Tap Back up now if items are waiting.
+- On the iPad, sign in to the same Apple Account with iCloud turned on, and install Noxium. It needs iPadOS 17 or later.
+- Open Noxium. On Restore your vault , draw the pattern you use on your iPhone, or tap Use recovery phrase .
+- Choose whether to download full-size photos now or later.
+- Open your other vaults later. Noxium says: "Any other vaults stay safe in iCloud. Draw their patterns later to open them."
+- Pro on both devices. App Store purchases follow your Apple Account, so one Pro purchase can cover both.
+If Noxium is already set up on the iPad, use Settings › iCloud backup › Restore from iCloud instead. It brings a backed-up vault onto the device next to the vaults already there.
+### How do you save space on the iPad?
+Keep full-size copies in iCloud and small previews on the device.
+- Free up space in Settings › iCloud backup removes full-size copies from the device and keeps them in iCloud.
+- Download all full-size copies brings them back, for example before you travel.
+- Wi-Fi only for videos makes large videos wait for Wi-Fi.
+### What doesn't sync, and what doesn't it protect?
+Your vaults sync. Some settings and keys stay on each device on purpose.
+- Face ID. The Face ID key is kept in each device's Keychain and never syncs to iCloud. Turn it on separately on each device, or leave it off.
+- Other Apple Accounts. Sync only works between devices signed in to the same Apple Account. To share a vault with another person, use a shared vault .
+- Mac, Android and the web. Noxium runs on iPhone and iPad only.
+- A pattern someone has seen. Every synced device opens with the same pattern. If someone saw it, change it in Settings › Change pattern .
+- iCloud storage. Backups count toward your iCloud plan. If iCloud is full, backup pauses and Noxium says roughly how much more space it needs.
+### Is it free or Pro?
+Encrypted iCloud backup and restore are free. iPhone and iPad sync, which keeps both devices up to date with each other, is part of Noxium Pro.
+The free plan includes 150 photos, 10 videos, unlimited notes, 1 decoy vault, and full iCloud backup and restore. See pricing .
+The same vault on iPhone and iPad
+Encrypted on each device, synced through your own iCloud. Draw your pattern on the iPad and your vault is there.
+Download on the App Store
+Available on the App Store for iPhone and iPad.
+### Questions people ask
+Can a photo vault app sync between iPhone and iPad?
+Some can. Noxium Pro syncs the same encrypted vault through your private iCloud, so both devices show the same photos, videos and notes.
+Can Apple see my synced photos?
+Noxium encrypts everything on the device before upload, so iCloud holds only encrypted data. Without your pattern or recovery phrase, it can't be read.
+Do I need Pro on the iPad too?
+Pro is tied to your Apple Account through the App Store, so a purchase made on one device can be used on the other.
+What happens to sync if Pro ends?
+Each device keeps backing up, and you keep full access to view and export everything already in the vault. Changes made on one device stop appearing on the other.
+Something wrong or out of date? Email business@inertiaprojects.info and we'll fix it.
+Related
+- Encrypted iCloud backup
+- Move a photo vault to a new iPhone
+- Shared vaults
+- Pattern lock
+- All features
+
+---
+
+# Shared vaults: one encrypted vault for you and one other person
+
+URL: https://getnoxium.app/features/shared-vaults
+Last updated: 2026-11-17
+
+Feature
+## Shared vaults: one encrypted vault for you and one other person
+By Inertia Projects · Last updated 17 November 2026
+Short answer
+A shared vault in Noxium Pro is a separate encrypted vault you share with one person through iCloud. It opens with a password of 10 or more characters that you give them in person, never with your pattern, and it never touches your other vaults.
+Couples, families and friends sometimes need a private place for photos they both keep: documents, a child's medical photos, or pictures meant for just the two of you. Sending them over a chat app leaves copies everywhere. Noxium, the photo vault we make, lets you share one vault instead. This page covers how it works, how to set it up, and the risks of sharing anything private.
+### How does a shared vault work?
+It's a vault of its own, stored in your iCloud and shared through Apple's iCloud sharing. A password opens it, not a pattern.
+- Its own key. The shared vault's key is made from the password and a salt of its own, through Argon2id. Your pattern and your other vaults play no part.
+- Encrypted before upload. Like every Noxium vault, its photos, videos and notes are encrypted on the device with AES-256-GCM, so iCloud only holds encrypted data. See on-device encryption .
+- Shared through iCloud. Noxium uses Apple's iCloud sharing to invite the other person. They need Noxium and an Apple Account with iCloud.
+- The password is the key. An invitation alone doesn't open anything. The other person also needs the password, which you give them face to face.
+- Separate from everything else. Joining your shared vault doesn't give the other person any way into your main vault, your decoy vault or your pattern.
+### How do you create and share a vault?
+Go to Settings › Vaults › Shared vault , set a name and password, then tap Create and invite .
+- Open your main vault and tap Settings . Under Vaults , tap Shared vault . It needs Pro.
+- Name the vault and type a password of at least 10 characters, twice. It can't be one that already opens another vault.
+- Tap Create and invite . Apple's iCloud sharing screen opens. Choose how to send the invitation.
+- Tell the other person the password in person. Don't send it in the same message as the invitation.
+- The other person opens the invitation. Noxium shows "Someone shared a Noxium vault with you." They tap Enter password .
+- Either of you opens it later from the lock screen, with Open a shared vault .
+### When is a shared vault a good idea?
+When two people you trust both need the same private photos, and both of you have an iPhone or iPad.
+- Partners who keep photos meant only for each other.
+- Family documents: passports, insurance cards, medical photos for a child.
+- A carer or relative who needs a few documents in an emergency.
+### What doesn't a shared vault protect?
+Encryption protects the vault from outsiders. It can't control what the other person does once they've opened it.
+- The other person's choices. Anyone who can open the vault can view, export or screenshot what's in it. Only share with someone you trust with those photos.
+- A relationship that ends. Stopping sharing later doesn't remove copies someone already saved. Think about this before you add intimate photos.
+- A weak or leaked password. Use a long password you haven't used anywhere else, and never send it with the invitation.
+- Someone who has both. A person with the invitation link and the password can open the vault. Treat them like a key and the address together.
+If photos of you have been shared without your consent, StopNCII.org can help stop them spreading on participating platforms.
+### Is it free or Pro?
+Creating a shared vault is part of Noxium Pro. Noxium Pro also adds unlimited items, emergency erase, iPhone and iPad sync, custom icons and album patterns. See pricing .
+Share one vault, keep the rest yours
+A separate encrypted vault for you and one other person, opened with a password you give them in person.
+Download on the App Store
+Available on the App Store for iPhone and iPad.
+### Questions people ask
+Is there a shared photo vault app for couples?
+Yes. Noxium Pro can share one encrypted vault with one other person through iCloud. It opens with a password you give them in person, and your other vaults stay private.
+Can the other person see my main vault?
+No. The shared vault has its own key, made from its own password. It gives no way into your pattern or your other vaults.
+Does the other person need Noxium?
+Yes, on an iPhone or iPad with iCloud turned on. They open your invitation in Noxium and enter the password you gave them.
+Is a shared vault safer than sending photos in a chat app?
+It keeps the photos in one encrypted place instead of in chat history and backups on both phones. It can't stop the other person saving copies. See are photo vault apps safe?
+Something wrong or out of date? Email business@inertiaprojects.info and we'll fix it.
+Related
+- iPhone and iPad sync
+- Decoy vault
+- Are photo vault apps safe?
+- Pattern lock
+- All features
+
+---
+
+# Import and export: full quality in, full quality out
+
+URL: https://getnoxium.app/features/import-export
+Last updated: 2026-11-17
+
+Feature
+## Import and export: full quality in, full quality out
+By Inertia Projects · Last updated 17 November 2026
+Short answer
+Noxium imports from Photos, Files, its own camera and the share sheet, including HEIC, ProRAW and Live Photos. It exports to Photos or Files in full quality with the original date taken. Exported copies are no longer encrypted, so move them only when you need them out of the vault.
+A vault is only useful if photos go in without losing anything and come out the same way. Some vault apps shrink photos to save space, or strip the date. Noxium, the photo vault we make, keeps the original file and its date. This page covers every way in and out, and how to move photos without leaving copies behind. If you're switching from another app, see moving a vault to a new iPhone and photo vault lost photos .
+### How do you add photos to Noxium?
+Tap the add button in your vault and choose From Photos , From Files or Camera , or send items from any app's share sheet.
+- From Photos. HEIC, ProRAW and Live Photos come in as they are. With Settings › App settings › Offer to delete from Photos on, Noxium offers to delete the originals afterwards.
+- From Files. Photos and videos saved in Files, iCloud Drive or on a USB drive.
+- Camera. Photos and videos taken in Noxium's camera go straight into the vault. Nothing is saved to Photos.
+- "Send to Noxium". In any app's share sheet. Items are encrypted at once, even while Noxium is locked, and move into the vault you open next.
+- Notes. Write encrypted notes inside the vault.
+Every item is encrypted with AES-256-GCM on the iPhone before it's saved, with its name, date and place. See on-device encryption .
+### How do you move photos in without leaving copies?
+Add them, check them, then delete the originals and empty Recently Deleted.
+- Turn on Offer to delete from Photos in Settings › App settings .
+- Add the photos from Photos and wait until Noxium has finished adding them.
+- Check them in the vault: counts match, videos play, Live Photos move.
+- Let Noxium delete the originals, and confirm iOS's prompt.
+- Empty Recently Deleted in Photos. Otherwise iOS keeps the originals there for up to 30 days.
+"Send to Noxium" items go into whichever vault you open next, so open your main vault, not a decoy, after sending.
+### How do you export photos in full quality?
+Select the items, tap Export , and choose Save to Photos , Save to Files or Share… .
+- Save to Photos keeps full quality and the date the photo was taken, so it lands in the right place in your library.
+- Save to Files saves the original files to Files, iCloud Drive or an external drive.
+- Share… opens the iOS share sheet for AirDrop, Mail or another app.
+Noxium decrypts a temporary copy to export it and deletes that copy afterwards. If a photo's full-size copy is only in iCloud, use Settings › iCloud backup › Download all full-size copies first.
+### What doesn't import and export protect?
+Inside Noxium, items are encrypted. Outside, they're ordinary files again.
+- Exported copies. They're no longer encrypted. Anything you save to Photos or Files, or share, is outside the vault's protection.
+- Originals you forget to delete. Importing copies a photo. The original stays in Photos and Recently Deleted until you remove it.
+- Copies elsewhere. iCloud Photos, a computer backup or a chat app may still hold the photo.
+- Someone using your unlocked vault. If you don't want export to be possible, turn on Settings › App settings › Turn off sharing . It hides export and share, and stops "Send to Noxium".
+### Is it free or Pro?
+Import and export work on every plan. The free plan holds 150 photos, 10 videos and unlimited notes; Pro removes the limits.
+If Pro ends, you keep full access to view, export and back up everything already in your vault, so nothing is ever held hostage. See pricing .
+Your originals, kept as they were
+HEIC, ProRAW and Live Photos in; full quality and the original date out. Encrypted the whole time they're inside.
+Download on the App Store
+Available on the App Store for iPhone and iPad.
+### Questions people ask
+Do photo vault apps reduce photo quality?
+Some do, to save space. Noxium keeps the original file, including HEIC, ProRAW and Live Photos, and exports it in full quality.
+Will exported photos keep their original date?
+Yes. Save to Photos keeps the date the photo was taken, so it appears in the right place in your library.
+Can I export everything if I stop using Noxium?
+Yes. Exporting works on every plan, and if Pro ends you keep full access to export what's in your vault.
+Does importing delete photos from my camera roll?
+Only if you let it. With Offer to delete from Photos on, Noxium asks after adding; then empty Recently Deleted in Photos.
+Something wrong or out of date? Email business@inertiaprojects.info and we'll fix it.
+Related
+- Move a photo vault to a new iPhone
+- Photo vault lost your photos
+- Encrypted iCloud backup
+- Pattern lock
+- All features
+
+---
+
 # Noxium vs Other Photo Vault Apps, Compared
 
 URL: https://getnoxium.app/compare/
-Last updated: 2026-11-12
+Last updated: 2026-11-16
 
 ## Noxium compared with other photo vaults
 Noxium next to each popular iPhone photo vault, point by point: account, encryption, backup, decoys, ads and price. Taken from each app’s App Store listing, with the date we checked.
