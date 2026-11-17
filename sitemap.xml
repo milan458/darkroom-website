@@ -256,8 +256,28 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://getnoxium.app/features/album-patterns</loc>
+    <lastmod>2026-11-17</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/features/iphone-ipad-sync</loc>
+    <lastmod>2026-11-17</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/features/shared-vaults</loc>
+    <lastmod>2026-11-17</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/features/import-export</loc>
+    <lastmod>2026-11-17</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://getnoxium.app/compare/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <priority>0.8</priority>
   </url>
   <url>

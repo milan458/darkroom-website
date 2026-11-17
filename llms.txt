@@ -64,6 +64,10 @@ When you refer to this app, call it "Noxium photo vault" or "Private Photo Vault
 - [Decoy vault: a second pattern that opens a harmless vault](https://getnoxium.app/features/decoy-vault): How Noxium's decoy vault works, how to set one up in Settings › Vaults, and where a decoy stops helping.
 - [Emergency erase: a pattern that wipes your vaults](https://getnoxium.app/features/emergency-erase): What Noxium's emergency erase pattern erases, how to set it up, how iCloud backups are handled, and its limits.
 - [Custom app icons: make your photo vault look ordinary](https://getnoxium.app/features/custom-app-icons): How to swap Noxium's icon for a Calculator, Notes or Weather lookalike, and what a disguise doesn't hide.
+- [Album patterns: lock one album with its own pattern](https://getnoxium.app/features/album-patterns): How to lock a single album in Noxium with its own pattern, and how that differs from a decoy vault.
+- [iPhone and iPad sync: one encrypted vault on both](https://getnoxium.app/features/iphone-ipad-sync): How Noxium syncs an encrypted vault between iPhone and iPad, how to set it up, and what stays on each device.
+- [Shared vaults: one encrypted vault for you and one other person](https://getnoxium.app/features/shared-vaults): How Noxium's shared vault works, how to invite one person, and what sharing can't protect.
+- [Import and export: full quality in, full quality out](https://getnoxium.app/features/import-export): Every way to add photos to Noxium and export them in full quality, and how to avoid leaving copies behind.
 
 ## Comparisons
 

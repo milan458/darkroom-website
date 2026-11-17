@@ -180,7 +180,7 @@
       "keyword": "calculator vault apps",
       "cluster": "choose-vault",
       "vaultaire": "https://vaultaire.app/guides/calculator-vault-apps/",
-      "status": "in-review",
+      "status": "live",
       "note": "Moved up: 'calculator vault' 9,900 worldwide / 1,000 US, KD 19 (Nov 2026)."
     },
     {
@@ -202,7 +202,7 @@
       "keyword": "decoy vault app iphone",
       "cluster": "features",
       "vaultaire": "https://vaultaire.app/features/hidden-vaults/",
-      "status": "in-review"
+      "status": "live"
     },
     {
       "order": 21,
@@ -212,7 +212,7 @@
       "keyword": "photo vault panic erase",
       "cluster": "features",
       "vaultaire": "https://vaultaire.app/features/duress-mode/",
-      "status": "in-review"
+      "status": "live"
     },
     {
       "order": 22,
@@ -222,7 +222,7 @@
       "keyword": "photo vault app that hides its icon",
       "cluster": "features",
       "vaultaire": "https://vaultaire.app/features/app-icons/",
-      "status": "in-review"
+      "status": "live"
     },
     {
       "order": 23,
@@ -231,7 +231,7 @@
       "path": "/features/album-patterns",
       "keyword": "lock individual albums iphone",
       "cluster": "features",
-      "status": "todo"
+      "status": "in-review"
     },
     {
       "order": 24,
@@ -241,7 +241,7 @@
       "keyword": "photo vault sync iphone ipad",
       "cluster": "features",
       "vaultaire": "https://vaultaire.app/features/device-sync/",
-      "status": "todo"
+      "status": "in-review"
     },
     {
       "order": 25,
@@ -251,7 +251,7 @@
       "keyword": "shared photo vault app",
       "cluster": "features",
       "vaultaire": "https://vaultaire.app/features/secure-sharing/",
-      "status": "todo"
+      "status": "in-review"
     },
     {
       "order": 26,
@@ -260,7 +260,7 @@
       "path": "/features/import-export",
       "keyword": "export photos from vault full quality",
       "cluster": "features",
-      "status": "todo"
+      "status": "in-review"
     },
     {
       "order": 27,
