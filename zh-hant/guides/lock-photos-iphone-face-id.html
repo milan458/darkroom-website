@@ -41,7 +41,7 @@
   <meta property="og:image:alt" content="Noxium photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
   <meta property="og:locale" content="zh_TW">
   <meta property="article:published_time" content="2026-11-16">
-  <meta property="article:modified_time" content="2026-11-16">
+  <meta property="article:modified_time" content="2026-11-18">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="如何鎖定 iPhone 照片（Face ID、圖形）">
   <meta name="twitter:description" content="鎖定 iPhone 照片的方法：「已隱藏」相簿、需要 Face ID 的「照片」App、鎖定的備忘錄、引導使用模式，以及有自己圖形的保險庫 App。">
@@ -90,7 +90,7 @@
         "mainEntityOfPage": "https://getnoxium.app/zh-hant/guides/lock-photos-iphone-face-id",
         "image": "https://getnoxium.app/assets/guides/noxium-lock.jpg",
         "datePublished": "2026-11-16",
-        "dateModified": "2026-11-16",
+        "dateModified": "2026-11-18",
         "author": {
           "@id": "https://getnoxium.app/#org"
         },
@@ -129,6 +129,22 @@
         "@type": "FAQPage",
         "@id": "https://getnoxium.app/zh-hant/guides/lock-photos-iphone-face-id#faq",
         "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "沒有 Face ID，別人能打開我的「已隱藏」相簿嗎？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "如果對方知道你的 iPhone 密碼就能：這道鎖會改用密碼驗證。如果「照片」設定中的「使用 Face ID」是關閉的，則完全不會要求驗證。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "隱藏照片會把照片加密嗎？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "和其他照片一樣而已。iPhone 會加密整個儲存空間，而隱藏只是把照片移到上鎖的相簿，並不會多加一把金鑰。"
+            }
+          },
           {
             "@type": "Question",
             "name": "iPhone 可以只鎖定某一個相簿嗎？",
@@ -225,7 +241,7 @@
         <p class="eyebrow"><span class="dot dot-ink" aria-hidden="true"></span>指南 · 鎖定照片</p>
         <h1>如何用 Face ID、密碼或圖形鎖定 iPhone 照片</h1>
         <!-- build:byline -->
-        <p class="byline"><span>作者：<a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>最後更新：<time datetime="2026-11-16">2026年11月16日</time></span></p>
+        <p class="byline"><span>作者：<a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>發表於<time datetime="2026-11-16">2026年11月16日</time></span><span aria-hidden="true">·</span><span>最後更新：<time datetime="2026-11-18">2026年11月18日</time></span></p>
         <!-- /build:byline -->
         <div class="answer">
           <span class="answer-label">簡短回答</span>
@@ -248,6 +264,28 @@
         <p>「已隱藏」相簿在哪裡、怎麼查看和取消隱藏照片，以及它們在 iCloud 和新 iPhone 上會怎樣，請看<a href="/zh-hant/guides/hidden-photos-iphone">iPhone 隱藏照片完整指南</a>。</p>
         <p>「照片」無法鎖定其他相簿，只有「已隱藏」和「最近刪除」有鎖。而且這道鎖也接受 iPhone 密碼，所以知道密碼的人都能打開相簿（<a href="https://support.apple.com/zh-tw/104987">Apple 支援</a>）。</p>
 
+        <h2 id="lock-hidden">怎麼鎖定 iPhone 上隱藏的照片？</h2>
+        <p>在<span class="path">設定 › App › 照片</span>中開啟<span class="path">使用 Face ID</span>。開啟後，「已隱藏」相簿每次打開都會要求 Face ID、Touch ID 或密碼。</p>
+        <ol class="steps">
+          <li><strong>打開<span class="path">設定 › App › 照片</span>。</strong></li>
+          <li><strong>開啟<span class="path">使用 Face ID</span></strong>（沒有 Face ID 的 iPhone 則是 Touch ID 或密碼的選項）。</li>
+          <li><strong>測試一下：</strong>在「照片」中打開<span class="path">選集 › 更多項目 › 已隱藏</span>。在顯示任何內容前，應該會先要求 Face ID。</li>
+          <li><strong>想要的話，把相簿本身也藏起來：</strong>在同一個設定畫面關閉<span class="path">顯示『已隱藏』相簿</span>。</li>
+        </ol>
+        <p>如果相簿沒有要求任何驗證就打開了，代表開關是關閉的。開啟 iCloud 照片時，隱藏的照片仍會同步到登入你 Apple 帳號的每部裝置，而每部裝置都有各自的 Face ID 設定。</p>
+
+        <h2 id="lock-vs-hide">隱藏照片和鎖定照片有什麼不同？</h2>
+        <p>隱藏是把照片移出主要圖庫；鎖定則是在照片前面加一道關卡。「已隱藏」相簿兩者都做，但它的鎖就是 iPhone 本身的 Face ID 和密碼。</p>
+        <ul>
+          <li><strong>只隱藏：</strong>Face ID 開關關閉時，任何拿著你已解鎖手機的人都能打開「已隱藏」相簿。</li>
+          <li><strong>隱藏又鎖定：</strong>需要你的臉或 iPhone 密碼。</li>
+          <li><strong>用另一組密碼鎖定：</strong>另設備忘錄密碼的鎖定備忘錄，或有自己圖形或 PIN 碼的保險庫 App，即使對方知道你的密碼也打不開。</li>
+          <li><strong>用另一把金鑰加密：</strong>在會加密的保險庫 App 中，金鑰來自保險庫的密碼，沒有它檔案就無法讀取。請看<a href="/guides/how-encrypted-photo-vaults-work">加密照片保險庫是怎麼運作的</a>。</li>
+        </ul>
+
+        <h2 id="one-album">iPhone 可以只鎖定一個相簿嗎？</h2>
+        <p>在「照片」裡不行。iOS 只會鎖定「已隱藏」和「最近刪除」。想鎖定你選的相簿，需要能逐一鎖定相簿的保險庫 App；在 Noxium Pro 中，任何相簿都可以有<a href="/features/album-patterns">自己的圖形</a>，在畫出那組圖形之前，即使保險庫已打開，這個相簿仍會保持鎖定。</p>
+
         <h2 id="photos-app">怎麼鎖定整個「照片」App？</h2>
         <p>從 iOS 18 開始，任何 App 都可以設定成打開前要先通過 Face ID。</p>
         <ol class="steps">
@@ -257,7 +295,7 @@
         <p>現在每次打開「照片」都會要求 Face ID，拿到你已解鎖 iPhone 的人就無法翻看你的圖庫。不過這是全有或全無：你一天要解鎖整個圖庫很多次，而且密碼還是打得開。</p>
 
         <h2 id="notes">怎麼把照片放進備忘錄並鎖定？</h2>
-        <p>把照片加入一則備忘錄，然後鎖定這則備忘錄。備忘錄可以使用和 iPhone 密碼不同的另一組密碼，並以 Face ID 作為捷徑。</p>
+        <p>把照片加入一則備忘錄，然後鎖定這則備忘錄。備忘錄可以使用和 iPhone 密碼不同的另一組密碼，並以 Face ID 作為捷徑。（如果想要只能用保險庫圖形打開的備忘錄，請看我們開發的 <a href="/features/encrypted-notes">Noxium 加密備忘錄</a>。）</p>
         <ol class="steps">
           <li>在<strong>備忘錄</strong>中新增一則備忘錄，點一下<span class="path">相機</span>按鈕，選擇從圖庫加入照片或影片的選項。</li>
           <li>點一下<span class="path">「更多」按鈕（…）</span>，再選擇<span class="path">鎖定</span>。</li>
@@ -295,6 +333,7 @@
               <tr><th scope="row">「照片」需要 Face ID</th><td>整個「照片」App</td><td class="no">否</td><td>把手機交給別人時</td></tr>
               <tr><th scope="row">鎖定的備忘錄</th><td>一則備忘錄</td><td class="yes">是，使用備忘錄密碼</td><td>少量照片</td></tr>
               <tr><th scope="row">引導使用模式</th><td>目前的畫面</td><td class="yes">是</td><td>只給人看一張照片</td></tr>
+              <tr><th scope="row">能鎖定單一相簿的保險庫 App</th><td>保險庫裡的一個相簿</td><td class="yes">是</td><td>給人看其他相簿時，讓其中一個保持鎖定</td></tr>
               <tr><th scope="row">有自己密碼的保險庫 App</th><td>保險庫裡的照片和影片</td><td class="yes">是</td><td>不能讓任何人看到的照片</td></tr>
             </tbody>
           </table>
@@ -311,6 +350,14 @@
 
         <h2 id="faq">常見問題</h2>
         <div class="faq-list">
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>沒有 Face ID，別人能打開我的「已隱藏」相簿嗎？</span></span></summary>
+            <div class="faq-body"><p>如果對方知道你的 iPhone 密碼就能：這道鎖會改用密碼驗證。如果「照片」設定中的「使用 Face ID」是關閉的，則完全不會要求驗證。</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>隱藏照片會把照片加密嗎？</span></span></summary>
+            <div class="faq-body"><p>和其他照片一樣而已。iPhone 會加密整個儲存空間，而隱藏只是把照片移到上鎖的相簿，並不會多加一把金鑰。</p></div>
+          </details>
           <details class="faq-item">
             <summary class="faq-summary"><span class="faq-summary-left"><span>iPhone 可以只鎖定某一個相簿嗎？</span></span></summary>
             <div class="faq-body"><p>不行。「照片」App 只會鎖定「已隱藏」和「最近刪除」相簿。要鎖定其他照片，可以把它們隱藏、放進鎖定的備忘錄，或使用保險庫 App。</p></div>
@@ -337,6 +384,9 @@
           <p class="toc-title">本頁內容</p>
           <ol>
             <li><a href="#hidden-album">鎖定「已隱藏」</a></li>
+            <li><a href="#lock-hidden">鎖定隱藏的照片</a></li>
+            <li><a href="#lock-vs-hide">隱藏和鎖定的差別</a></li>
+            <li><a href="#one-album">只鎖定一個相簿</a></li>
             <li><a href="#photos-app">鎖定「照片」App</a></li>
             <li><a href="#notes">用備忘錄鎖照片</a></li>
             <li><a href="#guided-access">只給人看一張</a></li>

@@ -41,7 +41,7 @@
   <meta property="og:image:alt" content="Noxium photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
   <meta property="og:locale" content="es_ES">
   <meta property="article:published_time" content="2026-11-16">
-  <meta property="article:modified_time" content="2026-11-16">
+  <meta property="article:modified_time" content="2026-11-18">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Cómo bloquear fotos en el iPhone con Face ID o un patrón">
   <meta name="twitter:description" content="Bloquea fotos en el iPhone: el álbum Oculto, la app Fotos con Face ID, notas bloqueadas, Acceso guiado y apps de caja fuerte con su propio patrón.">
@@ -90,7 +90,7 @@
         "mainEntityOfPage": "https://getnoxium.app/es/guides/lock-photos-iphone-face-id",
         "image": "https://getnoxium.app/assets/guides/noxium-lock.jpg",
         "datePublished": "2026-11-16",
-        "dateModified": "2026-11-16",
+        "dateModified": "2026-11-18",
         "author": {
           "@id": "https://getnoxium.app/#org"
         },
@@ -129,6 +129,22 @@
         "@type": "FAQPage",
         "@id": "https://getnoxium.app/es/guides/lock-photos-iphone-face-id#faq",
         "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Alguien puede abrir mi álbum Oculto sin Face ID?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí, si sabe el código de tu iPhone: el bloqueo recurre a él. Si «Usar Face ID» está desactivado en los ajustes de Fotos, ni siquiera lo pide."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Ocultar una foto la cifra?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No más que cualquier otra foto. El iPhone cifra su almacenamiento en conjunto, y ocultar solo mueve la foto a un álbum bloqueado; no añade una clave aparte."
+            }
+          },
           {
             "@type": "Question",
             "name": "¿Se puede bloquear un álbum concreto en el iPhone?",
@@ -225,7 +241,7 @@
         <p class="eyebrow"><span class="dot dot-ink" aria-hidden="true"></span>Guía · Bloquear fotos</p>
         <h1>Cómo bloquear fotos en el iPhone con Face ID, un código o un patrón</h1>
         <!-- build:byline -->
-        <p class="byline"><span>Por <a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>Última actualización: <time datetime="2026-11-16">16 de noviembre de 2026</time></span></p>
+        <p class="byline"><span>Por <a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>Publicado el <time datetime="2026-11-16">16 de noviembre de 2026</time></span><span aria-hidden="true">·</span><span>Última actualización: <time datetime="2026-11-18">18 de noviembre de 2026</time></span></p>
         <!-- /build:byline -->
         <div class="answer">
           <span class="answer-label">Respuesta corta</span>
@@ -248,6 +264,28 @@
         <p>Dónde está el álbum Oculto, cómo ver y volver a mostrar las fotos y qué les pasa en iCloud y en un iPhone nuevo: <a href="/es/guides/hidden-photos-iphone">fotos ocultas en el iPhone, la guía completa</a>.</p>
         <p>Fotos no puede bloquear otros álbumes. Solo Oculto y Eliminado tienen bloqueo. Y ese bloqueo acepta el código del iPhone, así que quien lo sepa puede abrir el álbum (<a href="https://support.apple.com/es-es/104987">Soporte de Apple</a>).</p>
 
+        <h2 id="lock-hidden">¿Cómo se bloquean las fotos ocultas en el iPhone?</h2>
+        <p>Activa <span class="path">Usar Face ID</span> en <span class="path">Ajustes › Apps › Fotos</span>. Con eso, el álbum Oculto pide Face ID, Touch ID o tu código cada vez que se abre.</p>
+        <ol class="steps">
+          <li><strong>Abre <span class="path">Ajustes › Apps › Fotos</span>.</strong></li>
+          <li><strong>Activa <span class="path">Usar Face ID</span></strong> (la opción de Touch ID o código en iPhone sin Face ID).</li>
+          <li><strong>Pruébalo:</strong> en Fotos, abre <span class="path">Colecciones › Utilidades › Oculto</span>. Debería pedir Face ID antes de mostrar nada.</li>
+          <li><strong>Oculta el álbum en sí, si quieres,</strong> desactivando <span class="path">Mostrar el Álbum Oculto</span> en los mismos ajustes.</li>
+        </ol>
+        <p>Si el álbum se abre sin pedir nada, el interruptor está desactivado. Las fotos ocultas se siguen sincronizando con cada dispositivo de tu cuenta de Apple que tenga Fotos en iCloud, y cada uno tiene su propio ajuste de Face ID.</p>
+
+        <h2 id="lock-vs-hide">¿Qué diferencia hay entre ocultar y bloquear fotos?</h2>
+        <p>Ocultar saca una foto de tu fototeca principal; bloquear pone algo delante. El álbum Oculto hace las dos cosas, pero su bloqueo es el Face ID y el código de tu iPhone.</p>
+        <ul>
+          <li><strong>Solo oculta:</strong> con el interruptor de Face ID desactivado, cualquiera que tenga tu móvil desbloqueado puede abrir el álbum Oculto.</li>
+          <li><strong>Oculta y bloqueada:</strong> hace falta tu cara o el código del iPhone.</li>
+          <li><strong>Bloqueada con un código aparte:</strong> una nota bloqueada con su propia contraseña de Notas, o una app de caja fuerte con su propio patrón o PIN, sigue cerrada incluso para quien sabe tu código.</li>
+          <li><strong>Cifrada con una clave aparte:</strong> en una app de caja fuerte cifrada, la clave sale del código de la caja, y los archivos son ilegibles sin él. Consulta <a href="/guides/how-encrypted-photo-vaults-work">cómo funcionan las cajas fuertes de fotos cifradas</a>.</li>
+        </ul>
+
+        <h2 id="one-album">¿Se puede bloquear un solo álbum en el iPhone?</h2>
+        <p>En Fotos, no. iOS solo bloquea Oculto y Eliminado. Para bloquear el álbum que quieras, necesitas una app de caja fuerte con bloqueo por álbum; en Noxium Pro, cualquier álbum puede tener <a href="/features/album-patterns">su propio patrón</a>, y el álbum sigue bloqueado dentro de la caja abierta hasta que se dibuja ese patrón.</p>
+
         <h2 id="photos-app">¿Cómo se bloquea toda la app Fotos?</h2>
         <p>Desde iOS 18, puedes hacer que cualquier app pida Face ID antes de abrirse.</p>
         <ol class="steps">
@@ -257,7 +295,7 @@
         <p>Ahora Fotos pide Face ID cada vez que se abre, y así quien tenga tu iPhone desbloqueado en la mano no puede curiosear en tu fototeca. Pero es todo o nada: desbloquearás toda la fototeca muchas veces al día, y el código la sigue abriendo.</p>
 
         <h2 id="notes">¿Cómo se bloquean fotos en una nota?</h2>
-        <p>Añade fotos a una nota y bloquéala. Notas puede usar una contraseña distinta del código del iPhone, con Face ID como atajo.</p>
+        <p>Añade fotos a una nota y bloquéala. Notas puede usar una contraseña distinta del código del iPhone, con Face ID como atajo. (Para notas que solo se abren con un patrón de caja fuerte, consulta <a href="/features/encrypted-notes">las notas cifradas de Noxium</a>, la app que hacemos nosotros.)</p>
         <ol class="steps">
           <li>En <strong>Notas</strong>, crea una nota, toca el botón de la <span class="path">cámara</span> y elige la opción para añadir una foto o un vídeo de tu fototeca.</li>
           <li>Toca <span class="path">Más (…)</span> y luego <span class="path">Bloquear</span>.</li>
@@ -295,6 +333,7 @@
               <tr><th scope="row">Requerir Face ID en Fotos</th><td>Toda la app Fotos</td><td class="no">No</td><td>Dejarle el móvil a alguien</td></tr>
               <tr><th scope="row">Nota bloqueada</th><td>Una nota</td><td class="yes">Sí, con contraseña de Notas</td><td>Unas pocas fotos</td></tr>
               <tr><th scope="row">Acceso guiado</th><td>La pantalla en la que estás</td><td class="yes">Sí</td><td>Enseñar una sola foto</td></tr>
+              <tr><th scope="row">App de caja fuerte con bloqueo por álbum</th><td>Un álbum dentro de la caja</td><td class="yes">Sí</td><td>Mantener un álbum cerrado mientras enseñas otros</td></tr>
               <tr><th scope="row">App de caja fuerte con código propio</th><td>Las fotos y vídeos de la caja</td><td class="yes">Sí</td><td>Fotos que deben ser privadas para cualquiera</td></tr>
             </tbody>
           </table>
@@ -311,6 +350,14 @@
 
         <h2 id="faq">Preguntas frecuentes</h2>
         <div class="faq-list">
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>¿Alguien puede abrir mi álbum Oculto sin Face ID?</span></span></summary>
+            <div class="faq-body"><p>Sí, si sabe el código de tu iPhone: el bloqueo recurre a él. Si «Usar Face ID» está desactivado en los ajustes de Fotos, ni siquiera lo pide.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>¿Ocultar una foto la cifra?</span></span></summary>
+            <div class="faq-body"><p>No más que cualquier otra foto. El iPhone cifra su almacenamiento en conjunto, y ocultar solo mueve la foto a un álbum bloqueado; no añade una clave aparte.</p></div>
+          </details>
           <details class="faq-item">
             <summary class="faq-summary"><span class="faq-summary-left"><span>¿Se puede bloquear un álbum concreto en el iPhone?</span></span></summary>
             <div class="faq-body"><p>No. La app Fotos solo bloquea los álbumes Oculto y Eliminado. Para bloquear otras fotos, ocúltalas, mételas en una nota bloqueada o usa una app de caja fuerte.</p></div>
@@ -337,6 +384,9 @@
           <p class="toc-title">En esta página</p>
           <ol>
             <li><a href="#hidden-album">Bloquear el álbum Oculto</a></li>
+            <li><a href="#lock-hidden">Bloquear las fotos ocultas</a></li>
+            <li><a href="#lock-vs-hide">Ocultar o bloquear</a></li>
+            <li><a href="#one-album">Bloquear un álbum</a></li>
             <li><a href="#photos-app">Bloquear la app Fotos</a></li>
             <li><a href="#notes">Bloquear fotos en Notas</a></li>
             <li><a href="#guided-access">Enseñar una sola foto</a></li>

@@ -41,7 +41,7 @@
   <meta property="og:image:alt" content="Noxium photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
   <meta property="og:locale" content="it_IT">
   <meta property="article:published_time" content="2026-11-16">
-  <meta property="article:modified_time" content="2026-11-16">
+  <meta property="article:modified_time" content="2026-11-18">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Come bloccare le foto su iPhone con Face ID o sequenza">
   <meta name="twitter:description" content="Bloccare le foto su iPhone: album Nascosti, app Foto con Face ID, note protette, Accesso Guidato e app cassaforte con una sequenza propria.">
@@ -90,7 +90,7 @@
         "mainEntityOfPage": "https://getnoxium.app/it/guides/lock-photos-iphone-face-id",
         "image": "https://getnoxium.app/assets/guides/noxium-lock.jpg",
         "datePublished": "2026-11-16",
-        "dateModified": "2026-11-16",
+        "dateModified": "2026-11-18",
         "author": {
           "@id": "https://getnoxium.app/#org"
         },
@@ -129,6 +129,22 @@
         "@type": "FAQPage",
         "@id": "https://getnoxium.app/it/guides/lock-photos-iphone-face-id#faq",
         "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Qualcuno può aprire il mio album Nascosti senza Face ID?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sì, se conosce il codice del tuo iPhone: il blocco ripiega su quello. Se «Usa Face ID» è disattivato nelle impostazioni di Foto, non chiede proprio niente."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Nascondere una foto la cifra?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Non più di qualsiasi altra foto. L’iPhone cifra la memoria nel suo insieme, e nascondere sposta soltanto la foto in un album bloccato, senza aggiungere una chiave separata."
+            }
+          },
           {
             "@type": "Question",
             "name": "Si può bloccare un album specifico su iPhone?",
@@ -225,7 +241,7 @@
         <p class="eyebrow"><span class="dot dot-ink" aria-hidden="true"></span>Guida · Bloccare le foto</p>
         <h1>Come bloccare le foto su iPhone con Face ID, un codice o una sequenza</h1>
         <!-- build:byline -->
-        <p class="byline"><span>Di <a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>Aggiornato il <time datetime="2026-11-16">16 novembre 2026</time></span></p>
+        <p class="byline"><span>Di <a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>Pubblicato il <time datetime="2026-11-16">16 novembre 2026</time></span><span aria-hidden="true">·</span><span>Aggiornato il <time datetime="2026-11-18">18 novembre 2026</time></span></p>
         <!-- /build:byline -->
         <div class="answer">
           <span class="answer-label">In breve</span>
@@ -248,6 +264,28 @@
         <p>Dov’è l’album Nascosti, come vedere e rendere di nuovo visibili le foto e cosa succede su iCloud e su un nuovo iPhone: <a href="/it/guides/hidden-photos-iphone">foto nascoste su iPhone, la guida completa</a>.</p>
         <p>Foto non può bloccare altri album. Solo Nascosti ed Eliminati di recente hanno un blocco. E il blocco accetta il codice dell’iPhone, quindi chi lo conosce può aprire l’album (<a href="https://support.apple.com/it-it/104987">Supporto Apple</a>).</p>
 
+        <h2 id="lock-hidden">Come si bloccano le foto nascoste su iPhone?</h2>
+        <p>Attiva <span class="path">Usa Face ID</span> in <span class="path">Impostazioni › App › Foto</span>. Da quel momento l’album Nascosti chiede Face ID, Touch ID o il codice ogni volta che si apre.</p>
+        <ol class="steps">
+          <li><strong>Apri <span class="path">Impostazioni › App › Foto</span>.</strong></li>
+          <li><strong>Attiva <span class="path">Usa Face ID</span></strong> (l’opzione per Touch ID o il codice sugli iPhone senza Face ID).</li>
+          <li><strong>Provalo:</strong> in Foto, apri <span class="path">Raccolte › Altro › Nascosti</span>. Dovrebbe chiedere Face ID prima di mostrare qualsiasi cosa.</li>
+          <li><strong>Nascondi l’album stesso, se vuoi,</strong> disattivando <span class="path">Mostra l’album Nascosti</span> nelle stesse impostazioni.</li>
+        </ol>
+        <p>Se l’album si apre senza chiedere nulla, l’interruttore è spento. Le foto nascoste si sincronizzano comunque su ogni dispositivo del tuo Account Apple con Foto di iCloud, e ognuno ha la propria impostazione di Face ID.</p>
+
+        <h2 id="lock-vs-hide">Che differenza c’è tra nascondere e bloccare le foto?</h2>
+        <p>Nascondere toglie una foto dalla libreria principale; bloccare ci mette davanti qualcosa. L’album Nascosti fa entrambe le cose, ma il suo blocco è il Face ID e il codice del tuo iPhone.</p>
+        <ul>
+          <li><strong>Solo nascosta:</strong> con l’interruttore Face ID spento, chiunque abbia in mano il tuo iPhone sbloccato può aprire l’album Nascosti.</li>
+          <li><strong>Nascosta e bloccata:</strong> serve il tuo volto o il codice dell’iPhone.</li>
+          <li><strong>Bloccata con un codice separato:</strong> una nota protetta con una password di Note propria, o un’app cassaforte con sequenza o PIN propri, resta chiusa anche per chi conosce il tuo codice.</li>
+          <li><strong>Cifrata con una chiave separata:</strong> in un’app cassaforte cifrata, la chiave deriva dal codice della cassaforte e senza di esso i file sono illeggibili. Vedi <a href="/guides/how-encrypted-photo-vaults-work">come funzionano le casseforti per foto cifrate</a>.</li>
+        </ul>
+
+        <h2 id="one-album">Si può bloccare un solo album su iPhone?</h2>
+        <p>In Foto no. iOS blocca solo Nascosti ed Eliminati di recente. Per bloccare l’album che vuoi serve un’app cassaforte con blocchi per album; in Noxium Pro qualsiasi album può avere <a href="/features/album-patterns">la sua sequenza</a>, e l’album resta bloccato dentro la cassaforte aperta finché non viene tracciata quella sequenza.</p>
+
         <h2 id="photos-app">Come si blocca l’intera app Foto?</h2>
         <p>Da iOS 18 puoi far richiedere Face ID a qualsiasi app prima che si apra.</p>
         <ol class="steps">
@@ -257,7 +295,7 @@
         <p>Ora Foto chiede Face ID ogni volta che si apre, e chi ha in mano il tuo iPhone sbloccato non può sfogliare la libreria. Però è tutto o niente: sbloccherai l’intera libreria molte volte al giorno, e il codice la apre comunque.</p>
 
         <h2 id="notes">Come si bloccano le foto in una nota?</h2>
-        <p>Aggiungi le foto a una nota, poi proteggila. Note può usare una password diversa dal codice dell’iPhone, con Face ID come scorciatoia.</p>
+        <p>Aggiungi le foto a una nota, poi proteggila. Note può usare una password diversa dal codice dell’iPhone, con Face ID come scorciatoia. (Per note che si aprono solo con la sequenza di una cassaforte, vedi <a href="/features/encrypted-notes">le note cifrate di Noxium</a>, l’app che sviluppiamo noi.)</p>
         <ol class="steps">
           <li>In <strong>Note</strong>, crea una nota, tocca il pulsante della <span class="path">fotocamera</span> e scegli l’opzione per aggiungere foto o video dalla libreria.</li>
           <li>Tocca <span class="path">Altro (…)</span> e poi <span class="path">Proteggi</span>.</li>
@@ -295,6 +333,7 @@
               <tr><th scope="row">Richiedi Face ID per Foto</th><td>L’intera app Foto</td><td class="no">No</td><td>Prestare il telefono a qualcuno</td></tr>
               <tr><th scope="row">Nota protetta</th><td>Una nota</td><td class="yes">Sì, con una password di Note</td><td>Poche foto</td></tr>
               <tr><th scope="row">Accesso Guidato</th><td>La schermata aperta</td><td class="yes">Sì</td><td>Mostrare una sola foto</td></tr>
+              <tr><th scope="row">App cassaforte con blocco per album</th><td>Un album nella cassaforte</td><td class="yes">Sì</td><td>Tenere chiuso un album mentre ne mostri altri</td></tr>
               <tr><th scope="row">App cassaforte con codice proprio</th><td>Foto e video della cassaforte</td><td class="yes">Sì</td><td>Foto che devono restare private per chiunque</td></tr>
             </tbody>
           </table>
@@ -311,6 +350,14 @@
 
         <h2 id="faq">Domande frequenti</h2>
         <div class="faq-list">
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Qualcuno può aprire il mio album Nascosti senza Face ID?</span></span></summary>
+            <div class="faq-body"><p>Sì, se conosce il codice del tuo iPhone: il blocco ripiega su quello. Se «Usa Face ID» è disattivato nelle impostazioni di Foto, non chiede proprio niente.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Nascondere una foto la cifra?</span></span></summary>
+            <div class="faq-body"><p>Non più di qualsiasi altra foto. L’iPhone cifra la memoria nel suo insieme, e nascondere sposta soltanto la foto in un album bloccato, senza aggiungere una chiave separata.</p></div>
+          </details>
           <details class="faq-item">
             <summary class="faq-summary"><span class="faq-summary-left"><span>Si può bloccare un album specifico su iPhone?</span></span></summary>
             <div class="faq-body"><p>No. L’app Foto blocca solo gli album Nascosti ed Eliminati di recente. Per bloccare altre foto, nascondile, mettile in una nota protetta o usa un’app cassaforte.</p></div>
@@ -337,6 +384,9 @@
           <p class="toc-title">In questa pagina</p>
           <ol>
             <li><a href="#hidden-album">Bloccare Nascosti</a></li>
+            <li><a href="#lock-hidden">Bloccare le foto nascoste</a></li>
+            <li><a href="#lock-vs-hide">Nascondere o bloccare</a></li>
+            <li><a href="#one-album">Bloccare un album</a></li>
             <li><a href="#photos-app">Bloccare l’app Foto</a></li>
             <li><a href="#notes">Bloccare le foto in Note</a></li>
             <li><a href="#guided-access">Mostrare una sola foto</a></li>

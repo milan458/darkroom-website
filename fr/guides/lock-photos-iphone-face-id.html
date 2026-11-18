@@ -41,7 +41,7 @@
   <meta property="og:image:alt" content="Noxium photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
   <meta property="og:locale" content="fr_CA">
   <meta property="article:published_time" content="2026-11-16">
-  <meta property="article:modified_time" content="2026-11-16">
+  <meta property="article:modified_time" content="2026-11-18">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Verrouiller des photos sur iPhone : Face ID ou schéma">
   <meta name="twitter:description" content="Verrouiller des photos sur iPhone : album Masquées, app Photos avec Face ID, notes verrouillées, Accès guidé, et apps de coffre avec leur propre schéma.">
@@ -90,7 +90,7 @@
         "mainEntityOfPage": "https://getnoxium.app/fr/guides/lock-photos-iphone-face-id",
         "image": "https://getnoxium.app/assets/guides/noxium-lock.jpg",
         "datePublished": "2026-11-16",
-        "dateModified": "2026-11-16",
+        "dateModified": "2026-11-18",
         "author": {
           "@id": "https://getnoxium.app/#org"
         },
@@ -129,6 +129,22 @@
         "@type": "FAQPage",
         "@id": "https://getnoxium.app/fr/guides/lock-photos-iphone-face-id#faq",
         "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Quelqu’un peut-il ouvrir mon album Masquées sans Face ID?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Oui, s’il connaît le code de votre iPhone : le verrou se rabat sur lui. Si « Utiliser Face ID » est désactivé dans les réglages de Photos, rien n’est demandé du tout."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Masquer une photo la chiffre-t-il?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Pas plus que n’importe quelle autre photo. L’iPhone chiffre son stockage dans son ensemble, et masquer ne fait que déplacer la photo dans un album verrouillé, sans clé distincte."
+            }
+          },
           {
             "@type": "Question",
             "name": "Peut-on verrouiller un album précis sur iPhone?",
@@ -225,7 +241,7 @@
         <p class="eyebrow"><span class="dot dot-ink" aria-hidden="true"></span>Guide · Verrouiller des photos</p>
         <h1>Verrouiller des photos sur iPhone avec Face ID, un code ou un schéma</h1>
         <!-- build:byline -->
-        <p class="byline"><span>Par <a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>Mis à jour le <time datetime="2026-11-16">16 novembre 2026</time></span></p>
+        <p class="byline"><span>Par <a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>Publié le <time datetime="2026-11-16">16 novembre 2026</time></span><span aria-hidden="true">·</span><span>Mis à jour le <time datetime="2026-11-18">18 novembre 2026</time></span></p>
         <!-- /build:byline -->
         <div class="answer">
           <span class="answer-label">En bref</span>
@@ -248,6 +264,28 @@
         <p>Où se trouve l’album Masquées, comment voir et afficher de nouveau les photos, et ce qui leur arrive sur iCloud et sur un nouvel iPhone : <a href="/fr/guides/hidden-photos-iphone">photos masquées sur iPhone, le guide complet</a>.</p>
         <p>Photos ne peut pas verrouiller les autres albums. Seuls Masquées et Supprimées récemment ont un verrou. Et ce verrou accepte le code de votre iPhone : quiconque le connaît peut ouvrir l’album (<a href="https://support.apple.com/fr-ca/104987">Assistance Apple</a>).</p>
 
+        <h2 id="lock-hidden">Comment verrouiller les photos masquées sur iPhone?</h2>
+        <p>Activez <span class="path">Utiliser Face ID</span> dans <span class="path">Réglages › Apps › Photos</span>. L’album Masquées demande alors Face ID, Touch ID ou votre code à chaque ouverture.</p>
+        <ol class="steps">
+          <li><strong>Ouvrez <span class="path">Réglages › Apps › Photos</span>.</strong></li>
+          <li><strong>Activez <span class="path">Utiliser Face ID</span></strong> (l’option Touch ID ou code sur les iPhone sans Face ID).</li>
+          <li><strong>Testez :</strong> dans Photos, ouvrez <span class="path">Collections › Utilitaires › Masquées</span>. Face ID devrait être demandé avant que quoi que ce soit s’affiche.</li>
+          <li><strong>Masquez l’album lui-même, si vous voulez,</strong> en désactivant <span class="path">Afficher l’album Masquées</span> dans les mêmes réglages.</li>
+        </ol>
+        <p>Si l’album s’ouvre sans rien demander, l’interrupteur est désactivé. Les photos masquées se synchronisent quand même sur chaque appareil connecté à votre compte Apple avec Photos iCloud, et chacun a son propre réglage Face ID.</p>
+
+        <h2 id="lock-vs-hide">Quelle est la différence entre masquer et verrouiller des photos?</h2>
+        <p>Masquer retire une photo de votre photothèque principale; verrouiller met quelque chose devant. L’album Masquées fait les deux, mais son verrou, c’est le Face ID et le code de votre iPhone.</p>
+        <ul>
+          <li><strong>Masquée seulement :</strong> si l’interrupteur Face ID est désactivé, quiconque tient votre téléphone déverrouillé peut ouvrir l’album Masquées.</li>
+          <li><strong>Masquée et verrouillée :</strong> il faut votre visage ou le code de votre iPhone.</li>
+          <li><strong>Verrouillée avec un code distinct :</strong> une note verrouillée avec son propre mot de passe Notes, ou une app de coffre avec son propre schéma ou NIP, reste fermée même pour qui connaît votre code.</li>
+          <li><strong>Chiffrée avec une clé distincte :</strong> dans une app de coffre chiffrée, la clé vient du code du coffre, et les fichiers sont illisibles sans lui. Voyez <a href="/guides/how-encrypted-photo-vaults-work">comment fonctionnent les coffres photo chiffrés</a>.</li>
+        </ul>
+
+        <h2 id="one-album">Peut-on verrouiller un seul album sur iPhone?</h2>
+        <p>Pas dans Photos. iOS ne verrouille que Masquées et Supprimées récemment. Pour verrouiller l’album de votre choix, il faut une app de coffre qui verrouille album par album; dans Noxium Pro, n’importe quel album peut avoir <a href="/features/album-patterns">son propre schéma</a>, et l’album reste verrouillé dans le coffre ouvert tant que ce schéma n’est pas tracé.</p>
+
         <h2 id="photos-app">Comment verrouiller toute l’app Photos?</h2>
         <p>Depuis iOS 18, vous pouvez faire exiger Face ID à n’importe quelle app avant qu’elle s’ouvre.</p>
         <ol class="steps">
@@ -257,7 +295,7 @@
         <p>Photos demande maintenant Face ID chaque fois qu’elle s’ouvre, ce qui empêche la personne à qui vous tendez votre iPhone déverrouillé de parcourir votre photothèque. Mais c’est tout ou rien : vous déverrouillez toute votre photothèque plusieurs fois par jour, et le code l’ouvre quand même.</p>
 
         <h2 id="notes">Comment verrouiller des photos dans une note?</h2>
-        <p>Ajoutez des photos à une note, puis verrouillez la note. Notes peut utiliser un mot de passe distinct du code de votre iPhone, avec Face ID comme raccourci.</p>
+        <p>Ajoutez des photos à une note, puis verrouillez la note. Notes peut utiliser un mot de passe distinct du code de votre iPhone, avec Face ID comme raccourci. (Pour des notes qui ne s’ouvrent qu’avec un schéma de coffre, voyez <a href="/features/encrypted-notes">les notes chiffrées de Noxium</a>, l’app que nous développons.)</p>
         <ol class="steps">
           <li>Dans <strong>Notes</strong>, créez une note, touchez le bouton <span class="path">Appareil photo</span> et choisissez l’option pour ajouter une photo ou une vidéo de votre photothèque.</li>
           <li>Touchez <span class="path">Plus (…)</span>, puis <span class="path">Verrouiller</span>.</li>
@@ -295,6 +333,7 @@
               <tr><th scope="row">Exiger Face ID pour Photos</th><td>Toute l’app Photos</td><td class="no">Non</td><td>Prêter votre téléphone à quelqu’un</td></tr>
               <tr><th scope="row">Note verrouillée</th><td>Une note</td><td class="yes">Oui, avec un mot de passe Notes</td><td>Quelques photos</td></tr>
               <tr><th scope="row">Accès guidé</th><td>L’écran affiché</td><td class="yes">Oui</td><td>Montrer une seule photo</td></tr>
+              <tr><th scope="row">App de coffre avec verrou par album</th><td>Un album dans le coffre</td><td class="yes">Oui</td><td>Garder un album fermé tout en montrant les autres</td></tr>
               <tr><th scope="row">App de coffre avec son propre code</th><td>Les photos et vidéos du coffre</td><td class="yes">Oui</td><td>Des photos qui doivent rester privées pour tout le monde</td></tr>
             </tbody>
           </table>
@@ -311,6 +350,14 @@
 
         <h2 id="faq">Questions fréquentes</h2>
         <div class="faq-list">
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Quelqu’un peut-il ouvrir mon album Masquées sans Face ID?</span></span></summary>
+            <div class="faq-body"><p>Oui, s’il connaît le code de votre iPhone : le verrou se rabat sur lui. Si « Utiliser Face ID » est désactivé dans les réglages de Photos, rien n’est demandé du tout.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Masquer une photo la chiffre-t-il?</span></span></summary>
+            <div class="faq-body"><p>Pas plus que n’importe quelle autre photo. L’iPhone chiffre son stockage dans son ensemble, et masquer ne fait que déplacer la photo dans un album verrouillé, sans clé distincte.</p></div>
+          </details>
           <details class="faq-item">
             <summary class="faq-summary"><span class="faq-summary-left"><span>Peut-on verrouiller un album précis sur iPhone?</span></span></summary>
             <div class="faq-body"><p>Non. L’app Photos ne verrouille que les albums Masquées et Supprimées récemment. Pour verrouiller d’autres photos, masquez-les, mettez-les dans une note verrouillée ou utilisez une app de coffre.</p></div>
@@ -337,6 +384,9 @@
           <p class="toc-title">Sur cette page</p>
           <ol>
             <li><a href="#hidden-album">Verrouiller Masquées</a></li>
+            <li><a href="#lock-hidden">Verrouiller les photos masquées</a></li>
+            <li><a href="#lock-vs-hide">Masquer ou verrouiller</a></li>
+            <li><a href="#one-album">Verrouiller un album</a></li>
             <li><a href="#photos-app">Verrouiller l’app Photos</a></li>
             <li><a href="#notes">Verrouiller dans Notes</a></li>
             <li><a href="#guided-access">Montrer une seule photo</a></li>

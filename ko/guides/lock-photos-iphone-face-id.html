@@ -41,7 +41,7 @@
   <meta property="og:image:alt" content="Noxium photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
   <meta property="og:locale" content="ko_KR">
   <meta property="article:published_time" content="2026-11-16">
-  <meta property="article:modified_time" content="2026-11-16">
+  <meta property="article:modified_time" content="2026-11-18">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="iPhone 사진 잠그는 방법(Face ID·패턴)">
   <meta name="twitter:description" content="iPhone 사진 잠금: &#x27;가려진 항목&#x27; 앨범, Face ID로 여는 사진 앱, 잠긴 메모, 사용법 유도, 자체 패턴이 있는 금고 앱까지.">
@@ -90,7 +90,7 @@
         "mainEntityOfPage": "https://getnoxium.app/ko/guides/lock-photos-iphone-face-id",
         "image": "https://getnoxium.app/assets/guides/noxium-lock.jpg",
         "datePublished": "2026-11-16",
-        "dateModified": "2026-11-16",
+        "dateModified": "2026-11-18",
         "author": {
           "@id": "https://getnoxium.app/#org"
         },
@@ -129,6 +129,22 @@
         "@type": "FAQPage",
         "@id": "https://getnoxium.app/ko/guides/lock-photos-iphone-face-id#faq",
         "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Face ID 없이 누가 내 '가려진 항목' 앨범을 열 수 있나요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "iPhone 암호를 아는 사람이라면 열 수 있습니다. 잠금이 암호로 넘어가기 때문입니다. 사진 설정에서 'Face ID 사용'이 꺼져 있으면 아예 묻지도 않습니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "사진을 가리면 암호화되나요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "다른 사진과 똑같은 수준입니다. iPhone은 저장 공간 전체를 암호화하며, 가리기는 사진을 잠긴 앨범으로 옮길 뿐 별도의 키를 더하지 않습니다."
+            }
+          },
           {
             "@type": "Question",
             "name": "iPhone에서 특정 앨범만 잠글 수 있나요?",
@@ -225,7 +241,7 @@
         <p class="eyebrow"><span class="dot dot-ink" aria-hidden="true"></span>가이드 · 사진 잠그기</p>
         <h1>iPhone 사진을 Face ID, 암호, 패턴으로 잠그는 방법</h1>
         <!-- build:byline -->
-        <p class="byline"><span>작성:<a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>최종 업데이트:<time datetime="2026-11-16">2026년 11월 16일</time></span></p>
+        <p class="byline"><span>작성:<a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>게시일:<time datetime="2026-11-16">2026년 11월 16일</time></span><span aria-hidden="true">·</span><span>최종 업데이트:<time datetime="2026-11-18">2026년 11월 18일</time></span></p>
         <!-- /build:byline -->
         <div class="answer">
           <span class="answer-label">짧은 답변</span>
@@ -248,6 +264,28 @@
         <p>'가려진 항목' 앨범의 위치, 사진 보기와 가리기 해제, iCloud와 새 iPhone에서 어떻게 되는지는 <a href="/ko/guides/hidden-photos-iphone">iPhone 가려진 사진 완벽 가이드</a>에 정리했습니다.</p>
         <p>사진 앱은 다른 앨범을 잠글 수 없습니다. 잠금이 있는 것은 '가려진 항목'과 '최근 삭제된 항목'뿐입니다. 게다가 이 잠금은 iPhone 암호로도 풀리기 때문에, 암호를 아는 사람은 누구나 앨범을 열 수 있습니다(<a href="https://support.apple.com/ko-kr/104987">Apple 지원</a>).</p>
 
+        <h2 id="lock-hidden">iPhone에서 가려진 사진을 잠그려면?</h2>
+        <p><span class="path">설정 › 앱 › 사진</span>에서 <span class="path">Face ID 사용</span>을 켜세요. 켜면 '가려진 항목' 앨범이 열 때마다 Face ID, Touch ID 또는 암호를 요구합니다.</p>
+        <ol class="steps">
+          <li><strong><span class="path">설정 › 앱 › 사진</span>을 엽니다.</strong></li>
+          <li><strong><span class="path">Face ID 사용</span>을 켭니다</strong>(Face ID가 없는 iPhone에서는 Touch ID나 암호 항목).</li>
+          <li><strong>확인해 보기:</strong> 사진 앱에서 <span class="path">모음 › 기타 › 가려진 항목</span>을 엽니다. 무엇이든 보이기 전에 Face ID를 요구해야 합니다.</li>
+          <li><strong>원한다면 앨범 자체도 숨깁니다.</strong> 같은 설정에서 <span class="path">'가려진 항목' 앨범 보기</span>를 끕니다.</li>
+        </ol>
+        <p>아무것도 묻지 않고 앨범이 열린다면 스위치가 꺼져 있는 것입니다. 가려진 사진도 iCloud 사진을 쓰면 같은 Apple 계정의 모든 기기로 동기화되며, Face ID 설정은 기기마다 따로 있습니다.</p>
+
+        <h2 id="lock-vs-hide">사진을 '가리기'와 '잠그기'는 어떻게 다른가요?</h2>
+        <p>가리기는 사진을 메인 보관함에서 빼는 것이고, 잠그기는 그 앞에 무언가를 세우는 것입니다. '가려진 항목' 앨범은 둘 다 하지만, 그 잠금은 iPhone 자체의 Face ID와 암호입니다.</p>
+        <ul>
+          <li><strong>가리기만:</strong> Face ID 스위치가 꺼져 있으면 잠금이 풀린 폰을 든 사람은 누구나 '가려진 항목' 앨범을 열 수 있습니다.</li>
+          <li><strong>가리고 잠그기:</strong> 내 얼굴이나 iPhone 암호가 필요합니다.</li>
+          <li><strong>별도의 코드로 잠그기:</strong> 메모 전용 암호를 쓴 잠긴 메모, 또는 자체 패턴이나 PIN이 있는 금고 앱은 내 암호를 아는 사람에게도 열리지 않습니다.</li>
+          <li><strong>별도의 키로 암호화:</strong> 암호화하는 금고 앱에서는 금고 코드로 키를 만들기 때문에, 코드 없이는 파일을 읽을 수 없습니다. <a href="/guides/how-encrypted-photo-vaults-work">암호화된 사진 금고의 작동 방식</a>을 참고하세요.</li>
+        </ul>
+
+        <h2 id="one-album">iPhone에서 앨범 하나만 잠글 수 있나요?</h2>
+        <p>사진 앱에서는 안 됩니다. iOS는 '가려진 항목'과 '최근 삭제된 항목'만 잠급니다. 원하는 앨범을 잠그려면 앨범별 잠금이 있는 금고 앱이 필요합니다. Noxium Pro에서는 어떤 앨범이든 <a href="/features/album-patterns">자체 패턴</a>을 가질 수 있고, 그 패턴을 그리기 전까지는 열린 금고 안에서도 앨범이 잠긴 채로 남습니다.</p>
+
         <h2 id="photos-app">사진 앱 전체를 잠그려면?</h2>
         <p>iOS 18부터는 어떤 앱이든 열기 전에 Face ID를 요구하도록 설정할 수 있습니다.</p>
         <ol class="steps">
@@ -257,7 +295,7 @@
         <p>이제 사진 앱은 열 때마다 Face ID를 요구하므로, 잠금을 푼 iPhone을 건네받은 사람이 보관함을 둘러볼 수 없습니다. 다만 전부 아니면 전무입니다. 하루에도 여러 번 보관함 전체의 잠금을 풀어야 하고, 암호로도 여전히 열립니다.</p>
 
         <h2 id="notes">메모에 사진을 넣고 잠그려면?</h2>
-        <p>사진을 메모에 넣고 그 메모를 잠급니다. 메모에는 iPhone 암호와 다른 별도의 암호를 쓸 수 있고, Face ID를 지름길로 쓸 수 있습니다.</p>
+        <p>사진을 메모에 넣고 그 메모를 잠급니다. 메모에는 iPhone 암호와 다른 별도의 암호를 쓸 수 있고, Face ID를 지름길로 쓸 수 있습니다. (금고 패턴으로만 열리는 메모는 저희가 만드는 <a href="/features/encrypted-notes">Noxium의 암호화된 메모</a>를 참고하세요.)</p>
         <ol class="steps">
           <li><strong>메모</strong> 앱에서 새 메모를 만들고 <span class="path">카메라</span> 버튼을 탭한 뒤, 보관함에서 사진이나 비디오를 고르는 항목을 선택합니다.</li>
           <li><span class="path">더 보기(…)</span>를 탭하고 <span class="path">잠그기</span>를 선택합니다.</li>
@@ -295,6 +333,7 @@
               <tr><th scope="row">사진 앱에 Face ID 요구</th><td>사진 앱 전체</td><td class="no">아니요</td><td>폰을 다른 사람에게 건넬 때</td></tr>
               <tr><th scope="row">잠긴 메모</th><td>메모 하나</td><td class="yes">예(메모 암호)</td><td>사진 몇 장</td></tr>
               <tr><th scope="row">사용법 유도</th><td>지금 보이는 화면</td><td class="yes">예</td><td>사진 한 장만 보여 주기</td></tr>
+              <tr><th scope="row">앨범별 잠금이 있는 금고 앱</th><td>금고 안의 앨범 하나</td><td class="yes">예</td><td>다른 앨범은 보여 주고 하나만 닫아 두기</td></tr>
               <tr><th scope="row">자체 코드가 있는 금고 앱</th><td>금고 안의 사진과 비디오</td><td class="yes">예</td><td>누구에게도 보여선 안 되는 사진</td></tr>
             </tbody>
           </table>
@@ -311,6 +350,14 @@
 
         <h2 id="faq">자주 묻는 질문</h2>
         <div class="faq-list">
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Face ID 없이 누가 내 '가려진 항목' 앨범을 열 수 있나요?</span></span></summary>
+            <div class="faq-body"><p>iPhone 암호를 아는 사람이라면 열 수 있습니다. 잠금이 암호로 넘어가기 때문입니다. 사진 설정에서 'Face ID 사용'이 꺼져 있으면 아예 묻지도 않습니다.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>사진을 가리면 암호화되나요?</span></span></summary>
+            <div class="faq-body"><p>다른 사진과 똑같은 수준입니다. iPhone은 저장 공간 전체를 암호화하며, 가리기는 사진을 잠긴 앨범으로 옮길 뿐 별도의 키를 더하지 않습니다.</p></div>
+          </details>
           <details class="faq-item">
             <summary class="faq-summary"><span class="faq-summary-left"><span>iPhone에서 특정 앨범만 잠글 수 있나요?</span></span></summary>
             <div class="faq-body"><p>없습니다. 사진 앱은 '가려진 항목'과 '최근 삭제된 항목' 앨범만 잠급니다. 다른 사진을 잠그려면 가리거나, 잠긴 메모에 넣거나, 금고 앱을 쓰세요.</p></div>
@@ -337,6 +384,9 @@
           <p class="toc-title">이 페이지의 내용</p>
           <ol>
             <li><a href="#hidden-album">'가려진 항목' 잠그기</a></li>
+            <li><a href="#lock-hidden">가려진 사진 잠그기</a></li>
+            <li><a href="#lock-vs-hide">가리기와 잠그기</a></li>
+            <li><a href="#one-album">앨범 하나 잠그기</a></li>
             <li><a href="#photos-app">사진 앱 잠그기</a></li>
             <li><a href="#notes">메모로 사진 잠그기</a></li>
             <li><a href="#guided-access">한 장만 보여 주기</a></li>
