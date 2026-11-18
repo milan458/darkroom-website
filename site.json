@@ -169,7 +169,7 @@
       "description": "17 iPhone photo vault apps side by side: encryption, backup, decoy vaults, free limits, ads and prices. Checked October 2026, with sources.",
       "summary": "Side-by-side comparison of 17 iPhone photo vault apps and Apple's Hidden album, with methodology and sources.",
       "published": "2026-10-22",
-      "updated": "2026-11-12",
+      "updated": "2026-11-18",
       "priority": "0.9"
     },
     {
@@ -354,7 +354,7 @@
       "description": "Lock photos on iPhone with Face ID: the Hidden album, locking the Photos app, locked notes, Guided Access, and vault apps that use their own pattern.",
       "summary": "Every way to put photos behind Face ID or a separate code on iPhone, and when each one is enough.",
       "published": "2026-10-22",
-      "updated": "2026-10-26",
+      "updated": "2026-11-18",
       "priority": "0.7",
       "image": "/assets/guides/noxium-lock.jpg"
     },
@@ -390,7 +390,7 @@
       "description": "Hide videos on iPhone with the Hidden album, a locked note or a vault app. What changes for large 4K videos, Live Photos and iCloud storage.",
       "summary": "Ways to hide videos on iPhone, and what to check so large videos still import and play.",
       "published": "2026-10-22",
-      "updated": "2026-10-26",
+      "updated": "2026-11-18",
       "priority": "0.7",
       "image": "/assets/guides/noxium-library.jpg"
     },
@@ -823,6 +823,22 @@
       "summary": "Every way to add photos to Noxium and export them in full quality, and how to avoid leaving copies behind.",
       "published": "2026-11-17",
       "updated": "2026-11-17"
+    },
+    {
+      "path": "/features/encrypted-notes",
+      "file": "features/encrypted-notes.html",
+      "type": "feature",
+      "ct": "f-notes",
+      "crumb": "Encrypted notes",
+      "keyword": "encrypted notes app iphone",
+      "cluster": "features",
+      "related": ["/features/on-device-encryption", "/guides/lock-photos-iphone-face-id", "/features/album-patterns"],
+      "title": "Encrypted Notes App for iPhone: Notes in Noxium",
+      "headline": "Encrypted notes: private text next to your private photos",
+      "description": "Noxium encrypts notes on your iPhone with AES-256-GCM, next to your private photos, opened only by your pattern. How it compares with Apple Notes.",
+      "summary": "How Noxium's encrypted notes work, how to write one, and how they compare with locked notes in Apple Notes.",
+      "published": "2026-11-18",
+      "updated": "2026-11-18"
     },
     {
       "path": "/compare/",
