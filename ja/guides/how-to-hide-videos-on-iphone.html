@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#FAF9F6" media="(prefers-color-scheme: light)">
+  <!-- build:meta -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WWNMHW99TP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-WWNMHW99TP');
+  </script>
+  <title>iPhoneで動画を隠す方法（iOS 26）</title>
+  <meta name="description" content="iPhoneの動画を「非表示」アルバム、ロックしたメモ、保管庫アプリで隠す方法。4K動画、Live Photos、iCloudの容量で気をつけること。">
+  <link rel="canonical" href="https://getnoxium.app/ja/guides/how-to-hide-videos-on-iphone">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <link rel="alternate" hreflang="en" href="https://getnoxium.app/guides/how-to-hide-videos-on-iphone">
+  <link rel="alternate" hreflang="de" href="https://getnoxium.app/de/guides/how-to-hide-videos-on-iphone">
+  <link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/guides/how-to-hide-videos-on-iphone">
+  <link rel="alternate" hreflang="es" href="https://getnoxium.app/es/guides/how-to-hide-videos-on-iphone">
+  <link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/guides/how-to-hide-videos-on-iphone">
+  <link rel="alternate" hreflang="it" href="https://getnoxium.app/it/guides/how-to-hide-videos-on-iphone">
+  <link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/guides/how-to-hide-videos-on-iphone">
+  <link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/guides/how-to-hide-videos-on-iphone">
+  <link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/guides/how-to-hide-videos-on-iphone">
+  <link rel="alternate" hreflang="x-default" href="https://getnoxium.app/guides/how-to-hide-videos-on-iphone">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Noxium">
+  <meta property="og:title" content="iPhoneで動画を隠す方法（iOS 26）">
+  <meta property="og:description" content="iPhoneの動画を「非表示」アルバム、ロックしたメモ、保管庫アプリで隠す方法。4K動画、Live Photos、iCloudの容量で気をつけること。">
+  <meta property="og:url" content="https://getnoxium.app/ja/guides/how-to-hide-videos-on-iphone">
+  <meta property="og:image" content="https://getnoxium.app/assets/og/noxium-og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Noxium photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="article:published_time" content="2026-11-18">
+  <meta property="article:modified_time" content="2026-11-18">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="iPhoneで動画を隠す方法（iOS 26）">
+  <meta name="twitter:description" content="iPhoneの動画を「非表示」アルバム、ロックしたメモ、保管庫アプリで隠す方法。4K動画、Live Photos、iCloudの容量で気をつけること。">
+  <meta name="twitter:image" content="https://getnoxium.app/assets/og/noxium-og.png">
+  <meta name="twitter:image:alt" content="Noxium photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
+  <meta name="apple-itunes-app" content="app-id=6824616093">
+  <!-- /build:meta -->
+
+  <link rel="icon" type="image/svg+xml" href="/assets/noxium-logo.svg">
+  <link rel="apple-touch-icon" href="/assets/noxium-icon-180.png">
+
+  <link rel="preload" href="/assets/fonts/instrument-serif-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/fonts/fonts.css">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/pages.css">
+
+  <!-- build:jsonld -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://getnoxium.app/#org",
+        "name": "Inertia Projects",
+        "url": "https://getnoxium.app/about",
+        "email": "business@inertiaprojects.info",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://getnoxium.app/assets/noxium-icon-512.png"
+        },
+        "brand": {
+          "@type": "Brand",
+          "name": "Noxium"
+        },
+        "sameAs": [
+          "https://apps.apple.com/app/apple-store/id6824616093"
+        ]
+      },
+      {
+        "@type": "Article",
+        "@id": "https://getnoxium.app/ja/guides/how-to-hide-videos-on-iphone#article",
+        "headline": "iPhone でビデオを隠す方法：再生できる状態のまま",
+        "description": "iPhoneの動画を「非表示」アルバム、ロックしたメモ、保管庫アプリで隠す方法。4K動画、Live Photos、iCloudの容量で気をつけること。",
+        "url": "https://getnoxium.app/ja/guides/how-to-hide-videos-on-iphone",
+        "mainEntityOfPage": "https://getnoxium.app/ja/guides/how-to-hide-videos-on-iphone",
+        "image": "https://getnoxium.app/assets/guides/noxium-library.jpg",
+        "datePublished": "2026-11-18",
+        "dateModified": "2026-11-18",
+        "author": {
+          "@id": "https://getnoxium.app/#org"
+        },
+        "publisher": {
+          "@id": "https://getnoxium.app/#org"
+        },
+        "inLanguage": "ja-JP",
+        "isPartOf": {
+          "@id": "https://getnoxium.app/#website"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Noxium",
+            "item": "https://getnoxium.app/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "ガイド",
+            "item": "https://getnoxium.app/ja/guides/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "ビデオを隠す",
+            "item": "https://getnoxium.app/ja/guides/how-to-hide-videos-on-iphone"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://getnoxium.app/ja/guides/how-to-hide-videos-on-iphone#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "パスコードを知っている人に非表示のビデオを見られますか？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "見られます。「非表示」アルバムのロックは iPhone のパスコードでも開くからです。パスコードを知っている人にも見せたくないなら、独自のコードで開く保管庫アプリを使いましょう。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "アプリなしで iPhone のビデオを隠せますか？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "隠せます。「写真」でビデオを長押しして「非表示」をタップすると、Face ID かパスコードで開く「非表示」アルバムに移ります。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "非表示にしたビデオは画質が落ちますか？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "「写真」アプリでは落ちません。非表示にしてもファイルは変わりません。保管庫アプリにはビデオを圧縮したり、オリジナルをクラウドにしか置かなかったりするものもあるので、大きなビデオを移す前に確認しましょう。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "保管庫アプリでビデオが再生できないのはなぜですか？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "多くは、フルサイズのビデオがまだアプリのクラウドからダウンロード中か、読み込みが終わっていないか、アプリがファイル全体を先に復号する必要があるためです。Wi-Fi につないでアプリを開いたままにし、どうしても再生できないビデオがあれば開発元に連絡しましょう。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "非表示のビデオも iCloud の容量を使いますか？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "使います。「写真」で非表示にしたビデオは iCloud 写真の容量に含まれ、iCloud にバックアップする保管庫のビデオは iCloud の容量に含まれます。"
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <!-- /build:jsonld -->
+</head>
+<body>
+  <!-- build:header -->
+  <!-- Shared header (homepage and subpages). Edit partials/header.html, then run python3 tools/build.py. -->
+  <a href="#main-content" class="skip-link">メインコンテンツへスキップ</a>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <nav class="nav glass" aria-label="メインナビゲーション">
+        <a href="/" class="wordmark" aria-label="Noxium ホーム">Noxium<span aria-hidden="true">.</span></a>
+
+        <div class="nav-links">
+          <a href="/#features">機能</a>
+          <a href="/#security">セキュリティ</a>
+          <a href="/#pricing">料金</a>
+          <a href="/compare/">比較</a>
+          <a href="/ja/guides/">ガイド</a>
+        </div>
+
+        <div class="nav-actions">
+          <a href="https://apps.apple.com/app/apple-store/id6824616093" class="btn btn-ink btn-nav nav-cta" data-cta="nav" data-label-waitlist="ベータ版に参加" data-label-live="Noxium を入手">Noxium を入手</a>
+          <button type="button" class="mobile-menu-btn" id="mobile-menu-btn" aria-expanded="false" aria-controls="mobile-drawer" aria-label="メニュー">
+            <svg class="icon icon-menu" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 9h14M5 15h14"/></svg>
+            <svg class="icon icon-close" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <div class="mobile-drawer glass" id="mobile-drawer" hidden>
+      <nav class="mobile-drawer-list" aria-label="モバイル">
+        <a href="/#features">機能</a>
+        <a href="/#security">セキュリティ</a>
+        <a href="/#pricing">料金</a>
+        <a href="/ja/best-photo-vault-apps-iphone">保管庫アプリを比較</a>
+        <a href="/ja/guides/">ガイド</a>
+        <a href="/about">概要</a>
+        <a href="/support">サポート</a>
+      </nav>
+    </div>
+  </header>
+  <!-- /build:header -->
+
+  <main id="main-content" tabindex="-1">
+    <div class="page-hero">
+      <div class="container">
+        <!-- build:breadcrumbs -->
+        <nav class="crumbs" aria-label="パンくずリスト">
+          <ol>
+            <li><a href="/">Noxium</a></li>
+            <li><a href="/ja/guides/">ガイド</a></li>
+            <li aria-current="page">ビデオを隠す</li>
+          </ol>
+        </nav>
+        <!-- /build:breadcrumbs -->
+        <p class="eyebrow"><span class="dot dot-ink" aria-hidden="true"></span>ガイド · ビデオを隠す</p>
+        <h1>iPhone でビデオを隠す方法：再生できる状態のまま</h1>
+        <!-- build:byline -->
+        <p class="byline"><span>著者：<a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>最終更新日：<time datetime="2026-11-18">2026年11月18日</time></span></p>
+        <!-- /build:byline -->
+        <div class="answer">
+          <span class="answer-label">結論</span>
+          <p>iPhone でビデオを隠すには、「写真」でビデオを長押しして「非表示」をタップします。Face ID でロックされた「非表示」アルバムに移ります。パスコードを知っている人にも見せたくないビデオは、独自のコードで開く保管庫アプリに入れましょう。その際、ビデオを元の画質のまま保存し、大きなファイルも問題なく再生できるかを確認してください。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container article-layout">
+      <article class="prose">
+        <p>iPhone のビデオ（動画）を隠す手順は写真と同じですが、ビデオには特有の問題があります。サイズが大きく、iCloud を圧迫し、保管庫アプリが最もよく期待を裏切るのもビデオです。私たちが 2026 年 10 月に読んだ人気の保管庫アプリ 8 本の最近の星 1 つと星 2 つのレビューでは、ビデオの問題が 40 回出てきました。ここでは、再生できる状態を保ったままビデオを隠す方法を説明します。</p>
+
+        <h2 id="photos">「写真」アプリでビデオを隠すには？</h2>
+        <p>写真と同じで、長押しして「非表示」です。</p>
+        <ol class="steps">
+          <li><strong>「写真」を開き、</strong>ビデオを探します。「コレクション」には、ビデオだけを一覧できる項目があります。</li>
+          <li><strong>ビデオを長押しし、</strong><span class="path">非表示</span> をタップして確定します。まとめてなら <span class="path">選択</span> をタップしてビデオを選び、<span class="path">詳細（…）</span>から <span class="path">非表示</span> をタップします。</li>
+          <li><strong>ロックを確認：</strong><span class="path">設定 › アプリ › 写真</span> で <span class="path">Face IDを使用</span> がオンになっているか確かめます。</li>
+        </ol>
+        <p>ビデオは <span class="path">コレクション › ユーティリティ › 非表示</span> に移り、元の画質のまま普通に再生できます。写真と同じく、iPhone のパスコードで「非表示」アルバムは開き、iCloud 写真がオンなら非表示のビデオもほかのデバイスに同期されます。詳しくは<a href="/ja/guides/is-iphone-hidden-album-private">「非表示」アルバムはプライベート？</a>をご覧ください。</p>
+
+        <h2 id="find">非表示にしたビデオをあとで見つけるには？</h2>
+        <p>「写真」で <span class="path">コレクション › ユーティリティ › 非表示</span> を開き、Face ID でロックを解除します。非表示のビデオは、ビデオの一覧にもライブラリのほかの場所にも表示されません。</p>
+        <ol class="steps">
+          <li><strong>「写真」を開き、</strong>「コレクション」を <span class="path">ユーティリティ</span> までスクロールします。</li>
+          <li><strong><span class="path">非表示</span> をタップし、</strong>Face ID、Touch ID、またはパスコードでロックを解除します。</li>
+          <li><strong>見当たらないときは、</strong><span class="path">設定 › アプリ › 写真 › 非表示アルバムを表示</span> をオンにします。</li>
+          <li><strong>非表示を解除するには、</strong>ビデオを長押しして <span class="path">非表示を解除</span> をタップします。</li>
+        </ol>
+        <p>新しい iPhone でどうなるかなど、アルバムについてのそのほかのことは<a href="/ja/guides/hidden-photos-iphone">iPhone の非表示の写真</a>をご覧ください。</p>
+
+        <h2 id="notes">ロックしたメモにビデオを隠せる？</h2>
+        <p>隠せますが、実用的なのは短いクリップだけです。カメラボタンでビデオをメモに追加し、<span class="path">詳細（…） › ロック</span> でメモをロックします。大きなビデオがあるとメモを開くのも同期するのも遅くなり、一覧して見るためのギャラリーもありません。</p>
+
+        <h2 id="vault">保管庫アプリにビデオを隠すには？</h2>
+        <p>「写真」から保管庫に読み込み、再生できるか確認してから、「写真」と「最近削除した項目」の元のビデオを削除します。コピーを残さずに行う手順は<a href="/features/import-export">読み込みと書き出し</a>のページで説明しています。ビデオを保管庫に任せる前に、次の 4 点を確認しましょう。</p>
+        <ul>
+          <li><strong>元の画質を保てるか。</strong>ビデオを圧縮したり、オリジナルを自社のクラウドにしか置かなかったりする保管庫もあります。掲載情報に「元の画質」などの記載があるか探しましょう。</li>
+          <li><strong>大きなファイルを扱えるか。</strong>4K、HDR、スローモーション、長いビデオは数 GB になることがよくあります。試しに長いビデオを 1 本読み込んでみましょう。</li>
+          <li><strong>待たずに再生できるか。</strong>ファイル全体を復号してから再生する暗号化保管庫もあり、時間も容量もかかります。よいものは再生しながら復号します。</li>
+          <li><strong>無料プランにビデオが含まれるか。</strong>無料プランでは写真よりビデオの制限が厳しいことが多くあります。たとえば Noxium の無料プランはビデオ 10 本までです。</li>
+        </ul>
+        <p>私たちが開発している Noxium では、ビデオを iPhone 上で 1 MiB ずつのブロックに分けて AES-256-GCM で暗号化します。ブロックごとに単独で復号できるので、長い 4K ビデオでもすぐに再生が始まり、復号したコピーがストレージに書き込まれることもありません。ビデオは元の画質と日付を保ち、「写真」への書き出しも同じように行えます。保管庫のカメラで直接撮影すれば、カメラロールを一度も通りません。</p>
+        <figure class="shot">
+          <img src="/assets/guides/noxium-library.jpg" alt="Noxium のライブラリ：保管庫の中に並ぶ写真とビデオのプライベートなグリッド" width="559" height="1216" loading="lazy" decoding="async">
+          <figcaption>Noxium の保管庫にある写真とビデオ。iPhone 上で暗号化されています。</figcaption>
+        </figure>
+        <p class="inline-cta"><a href="https://apps.apple.com/app/apple-store/id6824616093" data-cta="inline" data-label-waitlist="Noxium を無料で試す：ベータに参加 →" data-label-live="Noxium を App Store で無料ダウンロード →">Noxium を App Store で無料ダウンロード →</a></p>
+
+        <h2 id="video-problems">保管庫アプリでビデオがトラブルになりやすいのはなぜ？</h2>
+        <p>主にサイズのせいです。4K ビデオは 1 分で数百 MB になることもあり、保管庫がビデオに対して行うこと（読み込み、暗号化、バックアップ、復元）は、写真より時間がかかり、失敗もしやすくなります。</p>
+        <ul>
+          <li><strong>読み込みが失敗したり止まったりする：</strong>途中でアプリが閉じられたり、空き容量が足りなくなったりしたときです。</li>
+          <li><strong>バックアップが追いつかない：</strong>特に Wi-Fi のときだけ動く設定だったり、iCloud がほぼいっぱいだったりすると、復元後に足りないのは決まって新しいビデオです。</li>
+          <li><strong>再生が止まる：</strong>アプリがファイル全体を先に復号する場合です。</li>
+          <li><strong>形式が失われる：</strong>アプリが再エンコードすると、Live Photos の動画部分が消えたり、HDR が平坦になったりします。</li>
+        </ul>
+        <p>読み込んだあとは、いくつかのビデオを最初、途中、最後で再生し、Live Photos が動くかも確認しましょう。</p>
+
+        <h2 id="backups">非表示のビデオはバックアップでどうなる？</h2>
+        <p>ほかのビデオと同じようにバックアップされます。非表示にしても、iCloud 写真や iCloud バックアップから外れるわけではありません。</p>
+        <ul>
+          <li><strong>iCloud 写真がオンなら、</strong>非表示のビデオはほかのデバイスに同期され、そこでも「非表示」アルバムに入ったままです。</li>
+          <li><strong>iCloud 写真がオフなら、</strong>写真とビデオは iPhone の iCloud バックアップに含まれます。</li>
+          <li><strong>保管庫アプリでは</strong>アプリ次第です。iPhone の中にしか置かないもの、自社クラウドにアップロードするもの、あなたの iCloud にバックアップするものがあります。Noxium は暗号化したデータだけをあなたのプライベートな iCloud にアップロードします。<a href="/features/encrypted-icloud-backup">暗号化 iCloud バックアップ</a>をご覧ください。</li>
+        </ul>
+
+        <h2 id="storage">非表示のビデオはどのくらい容量を使う？</h2>
+        <p>隠す前と同じで、一時的に倍になることもあります。「写真」で非表示にしてもサイズは変わりません。保管庫に移すと、元のビデオを削除するまでコピーが 2 つになるので、いちばん大きなビデオの分の空き容量を先に確保しておきましょう。</p>
+        <p>保管庫が iCloud にバックアップする場合、ビデオは iCloud の容量も使います。大量に読み込む前に <span class="path">設定 › [ユーザ名] › iCloud</span> を確認しましょう。Noxium では、バックアップ設定の <span class="path">ビデオはWi-Fiのみ</span> でビデオにモバイルデータ通信を使わせないようにできます。</p>
+
+        <h2 id="after">ビデオを隠したあとに片づけるべきものは？</h2>
+        <ul>
+          <li><strong>「最近削除した項目」：</strong>削除した元のビデオは 30 日間残ります。<span class="path">コレクション › ユーティリティ › 最近削除した項目</span> を開いてロックを解除し、完全に削除しましょう。</li>
+          <li><strong>メッセージやチャットアプリ：</strong>送ったり受け取ったりしたビデオは、そのやり取りの中に別のコピーがあります。</li>
+          <li><strong>共有アルバムと共有ライブラリ：</strong>共有した相手には引き続き見えます。</li>
+          <li><strong>パソコン：</strong>Mac や PC に以前読み込んだものも確認しましょう。</li>
+        </ul>
+
+        <div class="cta-card">
+          <p class="cta-card-title">大きなビデオも、すぐに再生</p>
+          <p>Noxium は iPhone 上でビデオを小さなブロックに分けて暗号化するので、長い 4K ビデオも待たずに元の画質で再生できます。ビデオ 10 本、写真 150 枚まで無料。</p>
+          <a href="https://apps.apple.com/app/apple-store/id6824616093" class="btn btn-primary" data-cta="body" data-label-waitlist="ベータに参加" data-label-live="App Store でダウンロード">App Store でダウンロード</a>
+          <!-- build:status -->
+          <span class="release-status">iPhone と iPad 向けに App Store で配信中。</span>
+          <!-- /build:status -->
+        </div>
+
+        <h2 id="faq">よくある質問</h2>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>パスコードを知っている人に非表示のビデオを見られますか？</span></span></summary>
+            <div class="faq-body"><p>見られます。「非表示」アルバムのロックは iPhone のパスコードでも開くからです。パスコードを知っている人にも見せたくないなら、独自のコードで開く保管庫アプリを使いましょう。</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>アプリなしで iPhone のビデオを隠せますか？</span></span></summary>
+            <div class="faq-body"><p>隠せます。「写真」でビデオを長押しして「非表示」をタップすると、Face ID かパスコードで開く「非表示」アルバムに移ります。</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>非表示にしたビデオは画質が落ちますか？</span></span></summary>
+            <div class="faq-body"><p>「写真」アプリでは落ちません。非表示にしてもファイルは変わりません。保管庫アプリにはビデオを圧縮したり、オリジナルをクラウドにしか置かなかったりするものもあるので、大きなビデオを移す前に確認しましょう。</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>保管庫アプリでビデオが再生できないのはなぜですか？</span></span></summary>
+            <div class="faq-body"><p>多くは、フルサイズのビデオがまだアプリのクラウドからダウンロード中か、読み込みが終わっていないか、アプリがファイル全体を先に復号する必要があるためです。Wi-Fi につないでアプリを開いたままにし、どうしても再生できないビデオがあれば開発元に連絡しましょう。</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>非表示のビデオも iCloud の容量を使いますか？</span></span></summary>
+            <div class="faq-body"><p>使います。「写真」で非表示にしたビデオは iCloud 写真の容量に含まれ、iCloud にバックアップする保管庫のビデオは iCloud の容量に含まれます。</p></div>
+          </details>
+        </div>
+
+        <p><em>誤りや古い情報を見つけたら、<a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a> までお知らせください。修正します。</em></p>
+      </article>
+
+      <aside class="article-aside" aria-label="このページの内容">
+        <nav class="toc" aria-label="目次">
+          <p class="toc-title">このページの内容</p>
+          <ol>
+            <li><a href="#photos">「写真」でビデオを隠す</a></li>
+            <li><a href="#find">非表示のビデオを探す</a></li>
+            <li><a href="#notes">メモにビデオを隠す</a></li>
+            <li><a href="#vault">保管庫アプリに隠す</a></li>
+            <li><a href="#video-problems">ビデオがトラブルになる理由</a></li>
+            <li><a href="#backups">非表示のビデオとバックアップ</a></li>
+            <li><a href="#storage">容量と iCloud</a></li>
+            <li><a href="#after">あとの片づけ</a></li>
+            <li><a href="#faq">よくある質問</a></li>
+          </ol>
+        </nav>
+        <!-- build:related -->
+        <div class="related">
+          <p class="toc-title">関連ページ</p>
+          <ul role="list">
+            <li><a href="/ja/guides/how-to-hide-photos-on-iphone">iPhone で写真を隠す方法</a></li>
+            <li><a href="/ja/guides/photo-vault-lost-photos">保管庫の写真が消えた</a></li>
+            <li><a href="/ja/best-photo-vault-apps-iphone">写真保管庫アプリ比較</a></li>
+            <li><a href="/ja/guides/lock-photos-iphone-face-id">写真をロック</a></li>
+            <li><a href="/ja/guides/">ガイド一覧</a></li>
+          </ul>
+        </div>
+        <!-- /build:related -->
+      </aside>
+    </div>
+  </main>
+
+  <!-- build:footer -->
+  <!-- Shared footer for subpages (the homepage has its own copy with build:status). Edit partials/footer.html, then run python3 tools/build.py. -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="/" class="wordmark" aria-label="Noxium ホーム">Noxium<span aria-hidden="true">.</span></a>
+          <p>写真・ビデオ・メモのためのプライベートな保管庫。</p>
+        </div>
+
+        <nav class="footer-groups" aria-label="フッター">
+          <div>
+            <h2 class="footer-heading">製品</h2>
+            <ul role="list">
+              <li><a href="/#features">機能</a></li>
+              <li><a href="/#security">暗号化のしくみ</a></li>
+              <li><a href="/#pricing">無料版と Pro</a></li>
+              <li><a href="/ja/best-photo-vault-apps-iphone">写真保管庫アプリの比較</a></li>
+              <li><a href="/#faq">よくある質問</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="footer-heading">ガイド</h2>
+            <ul role="list">
+              <li><a href="/ja/guides/how-to-hide-photos-on-iphone">iPhone で写真を隠す方法</a></li>
+  <li><a href="/ja/guides/is-iphone-hidden-album-private">「非表示」アルバムは安全？</a></li>
+  <li><a href="/ja/guides/hidden-photos-iphone">非表示の写真</a></li>
+  <li><a href="/ja/guides/move-photo-vault-to-new-iphone">保管庫を新しい iPhone へ</a></li>
+  <li><a href="/ja/guides/photo-vault-lost-photos">保管庫の写真が消えた</a></li>
+  <li><a href="/ja/guides/keepsafe-alternatives">Keepsafe の代わり</a></li>
+              <li><a href="/ja/guides/">すべてのガイド</a></li>
+              <li><a href="/features/">Features</a></li>
+  <li><a href="/compare/">Comparisons</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="footer-heading">会社情報</h2>
+            <ul role="list">
+              <li><a href="/about">概要</a></li>
+              <li><a href="/support">サポート</a></li>
+              <li><a href="/privacy">プライバシーポリシー</a></li>
+              <li><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener">利用規約</a></li>
+              <li><a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Noxium。独立系デベロッパ Inertia Projects が開発。App Store のプライバシーラベル：データの収集なし。</p>
+        <nav class="lang-list" aria-label="言語"><a href="/guides/how-to-hide-videos-on-iphone" hreflang="en" lang="en">English</a><a href="/de/guides/how-to-hide-videos-on-iphone" hreflang="de" lang="de">Deutsch</a><a href="/fr/guides/how-to-hide-videos-on-iphone" hreflang="fr" lang="fr">Français</a><a href="/es/guides/how-to-hide-videos-on-iphone" hreflang="es" lang="es">Español</a><a href="/pt-br/guides/how-to-hide-videos-on-iphone" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a><a href="/it/guides/how-to-hide-videos-on-iphone" hreflang="it" lang="it">Italiano</a><a href="/ja/guides/how-to-hide-videos-on-iphone" hreflang="ja" lang="ja" aria-current="true">日本語</a><a href="/ko/guides/how-to-hide-videos-on-iphone" hreflang="ko" lang="ko">한국어</a><a href="/zh-hant/guides/how-to-hide-videos-on-iphone" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></nav>
+        <p>Apple、Apple のロゴ、iPhone、iPad、Face ID は、米国およびその他の国や地域で登録された Apple Inc. の商標です。App Store は Apple Inc. のサービスマークです。</p>
+      </div>
+    </div>
+  </footer>
+  <!-- /build:footer -->
+
+  <script src="/app.js" defer></script>
+</body>
+</html>
