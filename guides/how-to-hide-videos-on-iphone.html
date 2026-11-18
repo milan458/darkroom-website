@@ -31,7 +31,7 @@
   <meta property="og:image:alt" content="Noxium photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
   <meta property="og:locale" content="en_US">
   <meta property="article:published_time" content="2026-10-22">
-  <meta property="article:modified_time" content="2026-10-26">
+  <meta property="article:modified_time" content="2026-11-18">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="How to Hide Videos on iPhone (iOS 26)">
   <meta name="twitter:description" content="Hide videos on iPhone with the Hidden album, a locked note or a vault app. What changes for large 4K videos, Live Photos and iCloud storage.">
@@ -80,7 +80,7 @@
         "mainEntityOfPage": "https://getnoxium.app/guides/how-to-hide-videos-on-iphone",
         "image": "https://getnoxium.app/assets/guides/noxium-library.jpg",
         "datePublished": "2026-10-22",
-        "dateModified": "2026-10-26",
+        "dateModified": "2026-11-18",
         "author": {
           "@id": "https://getnoxium.app/#org"
         },
@@ -119,6 +119,14 @@
         "@type": "FAQPage",
         "@id": "https://getnoxium.app/guides/how-to-hide-videos-on-iphone#faq",
         "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Can someone see my hidden videos if they know my passcode?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. The Hidden album's lock accepts your iPhone passcode. To keep videos private from someone who knows it, use a vault app with its own code."
+            }
+          },
           {
             "@type": "Question",
             "name": "Can you hide videos on iPhone without an app?",
@@ -215,7 +223,7 @@
         <p class="eyebrow"><span class="dot dot-ink" aria-hidden="true"></span>Guide · Hiding videos</p>
         <h1>How to hide videos on iPhone, and keep them playable</h1>
         <!-- build:byline -->
-        <p class="byline"><span>By <a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>Published <time datetime="2026-10-22">22 October 2026</time></span><span aria-hidden="true">·</span><span>Last updated <time datetime="2026-10-26">26 October 2026</time></span></p>
+        <p class="byline"><span>By <a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>Published <time datetime="2026-10-22">22 October 2026</time></span><span aria-hidden="true">·</span><span>Last updated <time datetime="2026-11-18">18 November 2026</time></span></p>
         <!-- /build:byline -->
         <div class="answer">
           <span class="answer-label">Short answer</span>
@@ -237,11 +245,21 @@
         </ol>
         <p>The video moves to <span class="path">Collections › Utilities › Hidden</span>, keeps its full quality, and plays as normal. As with photos, your iPhone passcode opens the Hidden album, and hidden videos sync to your other devices with iCloud Photos. More on that in <a href="/guides/is-iphone-hidden-album-private">is the Hidden album private?</a></p>
 
+        <h2 id="find">How do you find hidden videos later?</h2>
+        <p>Open <span class="path">Collections › Utilities › Hidden</span> in Photos and unlock it with Face ID. Hidden videos don't show in <span class="path">Media Types › Videos</span> or anywhere else in your library.</p>
+        <ol class="steps">
+          <li><strong>Open Photos</strong> and scroll to <span class="path">Utilities</span> in Collections.</li>
+          <li><strong>Tap <span class="path">Hidden</span></strong> and unlock it with Face ID, Touch ID or your passcode.</li>
+          <li><strong>Can't see it?</strong> Turn on <span class="path">Settings › Apps › Photos › Show Hidden Album</span>.</li>
+          <li><strong>To unhide a video,</strong> touch and hold it and tap <span class="path">Unhide</span>.</li>
+        </ol>
+        <p>For everything else about the album, including what happens on a new iPhone, see <a href="/guides/hidden-photos-iphone">hidden photos on iPhone</a>.</p>
+
         <h2 id="notes">Can you hide a video in a locked note?</h2>
         <p>Yes, but it's only practical for short clips. Add the video to a note with the camera button, then lock the note with <span class="path">More (…) › Lock</span>. Large videos make notes slow to open and sync, and there's no gallery to browse.</p>
 
         <h2 id="vault">How do you hide videos in a vault app?</h2>
-        <p>Import them from Photos into the vault, check they play, then delete the originals from Photos and Recently Deleted. Before you trust a vault with videos, check four things:</p>
+        <p>Import them from Photos into the vault, check they play, then delete the originals from Photos and Recently Deleted. Our <a href="/features/import-export">import and export</a> page walks through doing that without leaving copies. Before you trust a vault with videos, check four things:</p>
         <ul>
           <li><strong>Does it keep full quality?</strong> Some vaults compress videos, or keep originals only in their own cloud. Look for "original quality" or similar in the listing.</li>
           <li><strong>Does it handle big files?</strong> 4K, HDR, slow-motion and long videos are often several gigabytes. Import one long video as a test.</li>
@@ -264,6 +282,14 @@
           <li><strong>Formats get lost:</strong> Live Photos can lose their video part, and HDR can be flattened, if the app re-encodes.</li>
         </ul>
         <p>After importing, play a few videos from the start, middle and end, and check one Live Photo still moves.</p>
+
+        <h2 id="backups">What happens to hidden videos in backups?</h2>
+        <p>They're backed up like any other video. Hiding doesn't take a video out of iCloud Photos or an iCloud Backup.</p>
+        <ul>
+          <li><strong>With iCloud Photos on,</strong> hidden videos sync to your other devices and stay in the Hidden album there.</li>
+          <li><strong>With iCloud Photos off,</strong> your photos and videos are part of your iPhone's iCloud Backup instead.</li>
+          <li><strong>In a vault app,</strong> it depends on the app: some keep videos only on the phone, some upload to their own cloud, and some back up to your iCloud. Noxium uploads only encrypted data to your private iCloud; see <a href="/features/encrypted-icloud-backup">encrypted iCloud backup</a>.</li>
+        </ul>
 
         <h2 id="storage">How much storage do hidden videos take?</h2>
         <p>The same as before you hid them, and sometimes double for a while. Hiding in Photos doesn't change size. Moving videos into a vault creates a second copy until you delete the originals, so make sure you have free space for the largest videos first.</p>
@@ -288,6 +314,10 @@
 
         <h2 id="faq">Questions people ask</h2>
         <div class="faq-list">
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Can someone see my hidden videos if they know my passcode?</span></span></summary>
+            <div class="faq-body"><p>Yes. The Hidden album's lock accepts your iPhone passcode. To keep videos private from someone who knows it, use a vault app with its own code.</p></div>
+          </details>
           <details class="faq-item">
             <summary class="faq-summary"><span class="faq-summary-left"><span>Can you hide videos on iPhone without an app?</span></span></summary>
             <div class="faq-body"><p>Yes. Touch and hold the video in Photos and tap Hide. It moves to the Hidden album, which opens with Face ID or your passcode.</p></div>
@@ -314,9 +344,11 @@
           <p class="toc-title">On this page</p>
           <ol>
             <li><a href="#photos">Hide a video in Photos</a></li>
+            <li><a href="#find">Find hidden videos</a></li>
             <li><a href="#notes">Hide a video in Notes</a></li>
             <li><a href="#vault">Hide videos in a vault app</a></li>
             <li><a href="#video-problems">Why videos cause trouble</a></li>
+            <li><a href="#backups">Hidden videos in backups</a></li>
             <li><a href="#storage">Storage and iCloud</a></li>
             <li><a href="#after">Clean up afterwards</a></li>
             <li><a href="#faq">Questions people ask</a></li>
