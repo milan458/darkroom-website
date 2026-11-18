@@ -231,7 +231,7 @@
       "path": "/features/album-patterns",
       "keyword": "lock individual albums iphone",
       "cluster": "features",
-      "status": "in-review"
+      "status": "live"
     },
     {
       "order": 24,
@@ -241,7 +241,7 @@
       "keyword": "photo vault sync iphone ipad",
       "cluster": "features",
       "vaultaire": "https://vaultaire.app/features/device-sync/",
-      "status": "in-review"
+      "status": "live"
     },
     {
       "order": 25,
@@ -251,7 +251,7 @@
       "keyword": "shared photo vault app",
       "cluster": "features",
       "vaultaire": "https://vaultaire.app/features/secure-sharing/",
-      "status": "in-review"
+      "status": "live"
     },
     {
       "order": 26,
@@ -260,7 +260,7 @@
       "path": "/features/import-export",
       "keyword": "export photos from vault full quality",
       "cluster": "features",
-      "status": "in-review"
+      "status": "live"
     },
     {
       "order": 27,
