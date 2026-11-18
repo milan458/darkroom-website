@@ -41,7 +41,7 @@
   <meta property="og:image:alt" content="Noxium photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
   <meta property="og:locale" content="de_DE">
   <meta property="article:published_time" content="2026-11-16">
-  <meta property="article:modified_time" content="2026-11-16">
+  <meta property="article:modified_time" content="2026-11-18">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Fotos auf dem iPhone sperren: Face ID, Code oder Muster">
   <meta name="twitter:description" content="Fotos auf dem iPhone sperren: Album „Ausgeblendet“, Fotos-App mit Face ID, gesperrte Notizen, geführter Zugriff und Tresor-Apps mit eigenem Muster.">
@@ -90,7 +90,7 @@
         "mainEntityOfPage": "https://getnoxium.app/de/guides/lock-photos-iphone-face-id",
         "image": "https://getnoxium.app/assets/guides/noxium-lock.jpg",
         "datePublished": "2026-11-16",
-        "dateModified": "2026-11-16",
+        "dateModified": "2026-11-18",
         "author": {
           "@id": "https://getnoxium.app/#org"
         },
@@ -129,6 +129,22 @@
         "@type": "FAQPage",
         "@id": "https://getnoxium.app/de/guides/lock-photos-iphone-face-id#faq",
         "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Kann jemand mein Album „Ausgeblendet“ ohne Face ID öffnen?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ja, wenn er deinen iPhone-Code kennt: Die Sperre greift darauf zurück. Ist „Face ID verwenden“ in den Fotos-Einstellungen aus, wird gar nicht gefragt."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Wird ein Foto durch das Ausblenden verschlüsselt?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nicht stärker als jedes andere Foto. Das iPhone verschlüsselt seinen Speicher als Ganzes, und Ausblenden verschiebt das Foto nur in ein gesperrtes Album; einen eigenen Schlüssel gibt es dafür nicht."
+            }
+          },
           {
             "@type": "Question",
             "name": "Kann ich ein bestimmtes Album auf dem iPhone sperren?",
@@ -225,7 +241,7 @@
         <p class="eyebrow"><span class="dot dot-ink" aria-hidden="true"></span>Anleitung · Fotos sperren</p>
         <h1>Fotos auf dem iPhone sperren: mit Face ID, Code oder Muster</h1>
         <!-- build:byline -->
-        <p class="byline"><span>Von <a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>Zuletzt aktualisiert am <time datetime="2026-11-16">16. November 2026</time></span></p>
+        <p class="byline"><span>Von <a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>Veröffentlicht am <time datetime="2026-11-16">16. November 2026</time></span><span aria-hidden="true">·</span><span>Zuletzt aktualisiert am <time datetime="2026-11-18">18. November 2026</time></span></p>
         <!-- /build:byline -->
         <div class="answer">
           <span class="answer-label">Kurz gesagt</span>
@@ -248,6 +264,28 @@
         <p>Wo das Album „Ausgeblendet“ ist, wie du Fotos ansiehst und wieder einblendest und was mit ihnen in iCloud und auf einem neuen iPhone passiert: <a href="/de/guides/hidden-photos-iphone">Ausgeblendete Fotos auf dem iPhone, der komplette Ratgeber</a>.</p>
         <p>Andere Alben kann Fotos nicht sperren. Nur „Ausgeblendet“ und „Zuletzt gelöscht“ haben eine Sperre. Und die Sperre akzeptiert deinen iPhone-Code, also kann jeder, der ihn kennt, das Album öffnen (<a href="https://support.apple.com/de-de/104987">Apple Support</a>).</p>
 
+        <h2 id="lock-hidden">Wie sperrst du ausgeblendete Fotos auf dem iPhone?</h2>
+        <p>Schalte <span class="path">Face ID verwenden</span> in <span class="path">Einstellungen › Apps › Fotos</span> ein. Dann verlangt das Album „Ausgeblendet“ bei jedem Öffnen Face ID, Touch ID oder deinen Code.</p>
+        <ol class="steps">
+          <li><strong>Öffne <span class="path">Einstellungen › Apps › Fotos</span>.</strong></li>
+          <li><strong>Schalte <span class="path">Face ID verwenden</span> ein</strong> (auf iPhones ohne Face ID die Option für Touch ID oder den Code).</li>
+          <li><strong>Teste es:</strong> Öffne in Fotos <span class="path">Sammlungen › Dienstprogramme › Ausgeblendet</span>. Bevor etwas zu sehen ist, sollte Face ID gefragt werden.</li>
+          <li><strong>Blende das Album selbst aus, wenn du willst,</strong> indem du in denselben Einstellungen <span class="path">Album „Ausgeblendet“ einblenden</span> ausschaltest.</li>
+        </ol>
+        <p>Öffnet sich das Album ohne Abfrage, ist der Schalter aus. Ausgeblendete Fotos werden mit iCloud-Fotos trotzdem auf jedes Gerät mit deinem Apple Account synchronisiert, und jedes Gerät hat seine eigene Face-ID-Einstellung.</p>
+
+        <h2 id="lock-vs-hide">Was ist der Unterschied zwischen Ausblenden und Sperren?</h2>
+        <p>Ausblenden nimmt ein Foto aus deiner Mediathek; Sperren stellt etwas davor. Das Album „Ausgeblendet“ macht beides, aber seine Sperre ist die Face ID und der Code deines iPhone.</p>
+        <ul>
+          <li><strong>Nur ausgeblendet:</strong> Ist der Face-ID-Schalter aus, kann jeder mit deinem entsperrten iPhone das Album öffnen.</li>
+          <li><strong>Ausgeblendet und gesperrt:</strong> Man braucht dein Gesicht oder deinen iPhone-Code.</li>
+          <li><strong>Gesperrt mit eigenem Code:</strong> Eine gesperrte Notiz mit eigenem Notizen-Passwort oder eine Tresor-App mit eigenem Muster oder eigener PIN bleibt zu, auch für jemanden, der deinen Code kennt.</li>
+          <li><strong>Verschlüsselt mit eigenem Schlüssel:</strong> In einer verschlüsselnden Tresor-App entsteht der Schlüssel aus deinem Tresor-Code, ohne ihn sind die Dateien nicht lesbar. Siehe <a href="/guides/how-encrypted-photo-vaults-work">So funktionieren verschlüsselte Foto-Tresore</a>.</li>
+        </ul>
+
+        <h2 id="one-album">Kannst du auf dem iPhone ein einzelnes Album sperren?</h2>
+        <p>In Fotos nicht. iOS sperrt nur „Ausgeblendet“ und „Zuletzt gelöscht“. Um ein Album deiner Wahl zu sperren, brauchst du eine Tresor-App mit Sperren pro Album; in Noxium Pro kann jedes Album <a href="/features/album-patterns">sein eigenes Muster</a> haben, und das Album bleibt im geöffneten Tresor gesperrt, bis dieses Muster gezeichnet wird.</p>
+
         <h2 id="photos-app">Wie sperrst du die ganze Fotos-App?</h2>
         <p>Seit iOS 18 kannst du jede App Face ID verlangen lassen, bevor sie sich öffnet.</p>
         <ol class="steps">
@@ -257,7 +295,7 @@
         <p>Jetzt fragt Fotos bei jedem Öffnen nach Face ID. So kann niemand, dem du dein entsperrtes iPhone in die Hand drückst, durch deine Mediathek blättern. Es gilt aber alles oder nichts: Du entsperrst deine ganze Mediathek viele Male am Tag, und der Code öffnet sie trotzdem.</p>
 
         <h2 id="notes">Wie sperrst du Fotos in einer Notiz?</h2>
-        <p>Füg Fotos in eine Notiz ein und sperre die Notiz. Notizen können ein eigenes Passwort haben, getrennt von deinem iPhone-Code, mit Face ID als Abkürzung.</p>
+        <p>Füg Fotos in eine Notiz ein und sperre die Notiz. Notizen können ein eigenes Passwort haben, getrennt von deinem iPhone-Code, mit Face ID als Abkürzung. (Für Notizen, die sich nur mit einem Tresor-Muster öffnen, siehe <a href="/features/encrypted-notes">verschlüsselte Notizen in Noxium</a>, unserer App.)</p>
         <ol class="steps">
           <li>Leg in <strong>Notizen</strong> eine Notiz an, tippe auf die <span class="path">Kamerataste</span> und wähle die Option, um Fotos oder Videos aus deiner Mediathek hinzuzufügen.</li>
           <li>Tippe auf die <span class="path">Mehr-Taste (…)</span> und auf <span class="path">Sperren</span>.</li>
@@ -295,6 +333,7 @@
               <tr><th scope="row">„Face ID anfordern“ für Fotos</th><td>Die ganze Fotos-App</td><td class="no">Nein</td><td>Wenn du jemandem dein iPhone gibst</td></tr>
               <tr><th scope="row">Gesperrte Notiz</th><td>Eine Notiz</td><td class="yes">Ja, mit Notizen-Passwort</td><td>Ein paar Fotos</td></tr>
               <tr><th scope="row">Geführter Zugriff</th><td>Den aktuellen Bildschirm</td><td class="yes">Ja</td><td>Ein einzelnes Foto zeigen</td></tr>
+              <tr><th scope="row">Tresor-App mit Albumsperre</th><td>Ein Album im Tresor</td><td class="yes">Ja</td><td>Ein Album geschlossen halten, während du andere zeigst</td></tr>
               <tr><th scope="row">Tresor-App mit eigenem Code</th><td>Die Fotos und Videos im Tresor</td><td class="yes">Ja</td><td>Fotos, die vor jedem privat bleiben müssen</td></tr>
             </tbody>
           </table>
@@ -311,6 +350,14 @@
 
         <h2 id="faq">Häufige Fragen</h2>
         <div class="faq-list">
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Kann jemand mein Album „Ausgeblendet“ ohne Face ID öffnen?</span></span></summary>
+            <div class="faq-body"><p>Ja, wenn er deinen iPhone-Code kennt: Die Sperre greift darauf zurück. Ist „Face ID verwenden“ in den Fotos-Einstellungen aus, wird gar nicht gefragt.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Wird ein Foto durch das Ausblenden verschlüsselt?</span></span></summary>
+            <div class="faq-body"><p>Nicht stärker als jedes andere Foto. Das iPhone verschlüsselt seinen Speicher als Ganzes, und Ausblenden verschiebt das Foto nur in ein gesperrtes Album; einen eigenen Schlüssel gibt es dafür nicht.</p></div>
+          </details>
           <details class="faq-item">
             <summary class="faq-summary"><span class="faq-summary-left"><span>Kann ich ein bestimmtes Album auf dem iPhone sperren?</span></span></summary>
             <div class="faq-body"><p>Nein. Die Fotos-App sperrt nur „Ausgeblendet“ und „Zuletzt gelöscht“. Um andere Fotos zu sperren, blende sie aus, leg sie in eine gesperrte Notiz oder nutze eine Tresor-App.</p></div>
@@ -337,6 +384,9 @@
           <p class="toc-title">Auf dieser Seite</p>
           <ol>
             <li><a href="#hidden-album">„Ausgeblendet“ sperren</a></li>
+            <li><a href="#lock-hidden">Ausgeblendete Fotos sperren</a></li>
+            <li><a href="#lock-vs-hide">Ausblenden oder sperren</a></li>
+            <li><a href="#one-album">Ein Album sperren</a></li>
             <li><a href="#photos-app">Fotos-App sperren</a></li>
             <li><a href="#notes">Fotos in Notizen sperren</a></li>
             <li><a href="#guided-access">Ein Foto sicher zeigen</a></li>
