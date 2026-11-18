@@ -9,12 +9,20 @@ here). Standard library only; works with macOS's /usr/bin/python3.
     python3 tools/seo-daily.py --install       # run it every day at 09:07 (macOS launchd)
     python3 tools/seo-daily.py --install --hour 7 --minute 41
     python3 tools/seo-daily.py --uninstall     # stop the daily run
+    python3 tools/seo-daily.py --publish       # also push summary.json to the private data repo
+    python3 tools/seo-daily.py --install --publish
     python3 tools/seo-daily.py --site sc-domain:example.com --sitemap https://example.com/sitemap.xml
 
 Output (outside the repo, because this repo is public):
     ~/seo-data/<site>/reports/YYYY-MM-DD.md   the day's report (also reports/latest.md)
     ~/seo-data/<site>/raw/YYYY-MM-DD/*.json   raw gum responses, for later comparisons
     ~/seo-data/<site>/seen-queries.json       every query seen so far, to spot new ones
+    ~/seo-data/<site>/summary.json            compact numbers for the cloud runs (see below)
+
+--publish: if ~/seo-data is a git clone of a PRIVATE repo (e.g. milan458/noxium-seo-data), commit and
+push <site>/summary.json and <site>/reports/latest.md there after each run, so the daily cloud runs can
+read Search Console numbers without gum. Raw data, logs and query history stay on this Mac (.gitignore).
+Never point this at the public website repo.
 
 What the report covers (Search Console data lags 2-3 days, so windows end 3 days ago):
     - clicks and impressions, last 7 days vs the 7 before
@@ -188,6 +196,7 @@ def run(args):
 
     daily = save("daily-28d", search_analytics(args, start28, end, ["date"]))
     qp28 = save("query-page-28d", search_analytics(args, start28, end, ["query", "page"]))
+    pages28 = save("page-28d", search_analytics(args, start28, end, ["page"]))
     cur7 = save("query-7d", search_analytics(args, cur_start, end, ["query"]))
     prev7 = save("query-prev-7d", search_analytics(args, prev_start, prev_end, ["query"]))
 
@@ -280,12 +289,61 @@ def run(args):
     path.write_text(report, encoding="utf-8")
     (rep_dir / "latest.md").write_text(report, encoding="utf-8")
 
+    # Compact numbers for the cloud runs (they can't run gum): pages by impressions, top queries,
+    # striking distance, indexing. Paths are site-relative ("/guides/…").
+    def q_row(q, a):
+        page = short(max(a["pages"], key=lambda p: a["pages"][p]["impressions"]), origin) if a["pages"] else ""
+        return {"query": q, "page": page, "impressions": a["impressions"], "clicks": a["clicks"],
+                "position": round(a["position"], 1)}
+    summary_data = {
+        "site": origin, "generated": today.isoformat(),
+        "windows": {"last7": [cur_start.isoformat(), end.isoformat()], "prev7": [prev_start.isoformat(), prev_end.isoformat()],
+                    "last28": [start28.isoformat(), end.isoformat()]},
+        "totals": {"last7": t_cur, "prev7": t_prev},
+        "pages": sorted(({"page": short(r_["keys"][0], origin), "impressions": r_["impressions"], "clicks": r_["clicks"],
+                          "position": round(r_["position"], 1)} for r_ in rows(pages28)), key=lambda x: -x["impressions"]),
+        "queries": [q_row(q, a) for q, a in sorted(q28.items(), key=lambda x: -x[1]["impressions"])[:200]],
+        "striking": [q_row(q, a) for q, a in striking[:50]],
+        "competing": [{"query": q, "pages": [{"page": short(p, origin), **v} for p, v in ps]} for q, ps in cannibal[:30]],
+        "notIndexed": [{"page": short(u, origin), "verdict": v.get("verdict"), "coverage": v.get("coverageState")}
+                       for u, v in not_indexed],
+        "pace": re.sub(r"\*\*", "", pace_note) or None,
+    }
+    (out_dir / "summary.json").write_text(json.dumps(summary_data, indent=1, ensure_ascii=False), encoding="utf-8")
+    if args.publish:
+        publish(out_dir, today)
+
     summary = (f"{origin}: {t_cur['clicks']} clicks ({pct(t_cur['clicks'], t_prev['clicks'])}), "
                f"{t_cur['impressions']} impressions ({pct(t_cur['impressions'], t_prev['impressions'])}), "
                f"{len(striking)} striking-distance queries, {len(not_indexed)} not indexed")
     print(summary)
     print(f"Report: {path}")
     notify("SEO daily report", summary)
+
+
+def publish(out_dir, today):
+    """Commit and push summary.json and latest.md to the private data repo that ~/seo-data is a clone of."""
+    repo = out_dir.parent
+    if not (repo / ".git").exists():
+        print(f"--publish: {repo} isn't a git clone; skipped. See SEO-PLAYBOOK.md, 'Search Console data for the cloud runs'.")
+        return
+    ignore = repo / ".gitignore"
+    if not ignore.exists():
+        ignore.write_text("# Only summaries leave this Mac.\n*/raw/\n*/seen-queries.json\n*/launchd.log\n*/reports/20*.md\n",
+                          encoding="utf-8")
+    site = out_dir.name
+    git = lambda *a: subprocess.run(["git", "-C", str(repo), *a], capture_output=True, text=True)
+    git("add", ".gitignore", f"{site}/summary.json", f"{site}/reports/latest.md")
+    if git("diff", "--cached", "--quiet").returncode == 0:
+        print("--publish: nothing new to push.")
+        return
+    git("commit", "-q", "-m", f"{site}: Search Console summary {today.isoformat()}")
+    pushed = git("push", "-q", "-u", "origin", "HEAD")
+    if pushed.returncode != 0:
+        print(f"--publish: push failed: {pushed.stderr.strip()[-300:]}")
+        notify("SEO daily report", "Couldn't push the summary to GitHub (see launchd.log)")
+    else:
+        print(f"--publish: pushed {site}/summary.json")
 
 
 # ---------- macOS helpers ----------
@@ -321,6 +379,8 @@ def install(args):
         prog += ["--profile", args.profile]
     if not args.inspect:
         prog.append("--no-inspect")
+    if args.publish:
+        prog.append("--publish")
     esc = lambda s: s.replace("&", "&amp;").replace("<", "&lt;")
     plist.parent.mkdir(parents=True, exist_ok=True)
     plist.write_text(f"""<?xml version="1.0" encoding="UTF-8"?>
@@ -368,6 +428,7 @@ def main():
     ap.add_argument("--profile", default="", help="gum profile (default: gum's own default)")
     ap.add_argument("--out", default="", help="output folder (default: ~/seo-data/<site>)")
     ap.add_argument("--no-inspect", dest="inspect", action="store_false", help="skip URL Inspection")
+    ap.add_argument("--publish", action="store_true", help="push summary.json to the private data repo (~/seo-data)")
     ap.add_argument("--install", action="store_true", help="run daily via macOS launchd")
     ap.add_argument("--uninstall", action="store_true", help="remove the daily run")
     ap.add_argument("--hour", type=int, default=9)
