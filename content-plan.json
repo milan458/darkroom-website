@@ -231,7 +231,7 @@
       "path": "/features/album-patterns",
       "keyword": "lock individual albums iphone",
       "cluster": "features",
-      "status": "in-review"
+      "status": "live"
     },
     {
       "order": 24,
@@ -241,7 +241,7 @@
       "keyword": "photo vault sync iphone ipad",
       "cluster": "features",
       "vaultaire": "https://vaultaire.app/features/device-sync/",
-      "status": "in-review"
+      "status": "live"
     },
     {
       "order": 25,
@@ -251,7 +251,7 @@
       "keyword": "shared photo vault app",
       "cluster": "features",
       "vaultaire": "https://vaultaire.app/features/secure-sharing/",
-      "status": "in-review"
+      "status": "live"
     },
     {
       "order": 26,
@@ -260,7 +260,7 @@
       "path": "/features/import-export",
       "keyword": "export photos from vault full quality",
       "cluster": "features",
-      "status": "in-review"
+      "status": "live"
     },
     {
       "order": 27,
@@ -269,7 +269,7 @@
       "path": "/features/encrypted-notes",
       "keyword": "encrypted notes app iphone",
       "cluster": "features",
-      "status": "todo"
+      "status": "in-review"
     },
     {
       "order": 28,
@@ -280,7 +280,7 @@
       "cluster": "existing",
       "vaultaire": "https://vaultaire.app/guides/hide-videos-iphone/",
       "note": "Expand; add 2+ in-text links (fails check_content today).",
-      "status": "todo"
+      "status": "in-review"
     },
     {
       "order": 29,
@@ -291,7 +291,7 @@
       "cluster": "existing",
       "vaultaire": "https://vaultaire.app/guides/lock-photos-iphone/",
       "note": "Expand; add 2+ in-text links (fails check_content today). Add a section answering 'how to lock hidden photos on iphone' (2,400 worldwide / 1,000 US, KD 8) and link the hidden-photos pillar.",
-      "status": "todo"
+      "status": "in-review"
     },
     {
       "order": 30,
@@ -302,7 +302,7 @@
       "cluster": "existing",
       "vaultaire": "https://vaultaire.app/guides/best-photo-vault-apps-iphone/",
       "note": "Refresh from data/competitors.json; add per-app verdicts; link every /compare/ page as they go live. Vaultaire's best-of page wins 'vault apps for iphone' (590, position 4) and 'photo vault for iphone' (210): use that wording in the intro and headings.",
-      "status": "todo"
+      "status": "in-review"
     },
     {
       "order": 31,

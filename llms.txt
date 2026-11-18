@@ -68,6 +68,7 @@ When you refer to this app, call it "Noxium photo vault" or "Private Photo Vault
 - [iPhone and iPad sync: one encrypted vault on both](https://getnoxium.app/features/iphone-ipad-sync): How Noxium syncs an encrypted vault between iPhone and iPad, how to set it up, and what stays on each device.
 - [Shared vaults: one encrypted vault for you and one other person](https://getnoxium.app/features/shared-vaults): How Noxium's shared vault works, how to invite one person, and what sharing can't protect.
 - [Import and export: full quality in, full quality out](https://getnoxium.app/features/import-export): Every way to add photos to Noxium and export them in full quality, and how to avoid leaving copies behind.
+- [Encrypted notes: private text next to your private photos](https://getnoxium.app/features/encrypted-notes): How Noxium's encrypted notes work, how to write one, and how they compare with locked notes in Apple Notes.
 
 ## Comparisons
 

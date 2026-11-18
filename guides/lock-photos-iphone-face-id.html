@@ -31,7 +31,7 @@
   <meta property="og:image:alt" content="Noxium photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
   <meta property="og:locale" content="en_US">
   <meta property="article:published_time" content="2026-10-22">
-  <meta property="article:modified_time" content="2026-10-26">
+  <meta property="article:modified_time" content="2026-11-18">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="How to Lock Photos on iPhone With Face ID or a Pattern">
   <meta name="twitter:description" content="Lock photos on iPhone with Face ID: the Hidden album, locking the Photos app, locked notes, Guided Access, and vault apps that use their own pattern.">
@@ -80,7 +80,7 @@
         "mainEntityOfPage": "https://getnoxium.app/guides/lock-photos-iphone-face-id",
         "image": "https://getnoxium.app/assets/guides/noxium-lock.jpg",
         "datePublished": "2026-10-22",
-        "dateModified": "2026-10-26",
+        "dateModified": "2026-11-18",
         "author": {
           "@id": "https://getnoxium.app/#org"
         },
@@ -119,6 +119,22 @@
         "@type": "FAQPage",
         "@id": "https://getnoxium.app/guides/lock-photos-iphone-face-id#faq",
         "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Can someone open my Hidden album without Face ID?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, if they know your iPhone passcode: the lock falls back to it. If Use Face ID is off in Photos settings, it doesn't ask at all."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does hiding a photo encrypt it?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No more than any other photo. iPhone encrypts its storage as a whole, and hiding only moves the photo to a locked album; it doesn't add a separate key."
+            }
+          },
           {
             "@type": "Question",
             "name": "Can I lock a specific album on iPhone?",
@@ -215,7 +231,7 @@
         <p class="eyebrow"><span class="dot dot-ink" aria-hidden="true"></span>Guide · Locking photos</p>
         <h1>How to lock photos on iPhone with Face ID, a passcode or a pattern</h1>
         <!-- build:byline -->
-        <p class="byline"><span>By <a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>Published <time datetime="2026-10-22">22 October 2026</time></span><span aria-hidden="true">·</span><span>Last updated <time datetime="2026-10-26">26 October 2026</time></span></p>
+        <p class="byline"><span>By <a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>Published <time datetime="2026-10-22">22 October 2026</time></span><span aria-hidden="true">·</span><span>Last updated <time datetime="2026-11-18">18 November 2026</time></span></p>
         <!-- /build:byline -->
         <div class="answer">
           <span class="answer-label">Short answer</span>
@@ -238,6 +254,28 @@
         <p>Where the Hidden album is, how to view and unhide photos, and what happens to them on iCloud and a new iPhone: <a href="/guides/hidden-photos-iphone">hidden photos on iPhone, the complete guide</a>.</p>
         <p>Photos can't lock other albums. Only Hidden and Recently Deleted have a lock. And the lock accepts your iPhone passcode, so anyone who knows it can open the album (<a href="https://support.apple.com/en-us/104987">Apple Support</a>).</p>
 
+        <h2 id="lock-hidden">How do you lock hidden photos on iPhone?</h2>
+        <p>Turn on <span class="path">Use Face ID</span> in <span class="path">Settings › Apps › Photos</span>. Once it's on, the Hidden album asks for Face ID, Touch ID or your passcode every time it opens.</p>
+        <ol class="steps">
+          <li><strong>Open <span class="path">Settings › Apps › Photos</span>.</strong></li>
+          <li><strong>Turn on <span class="path">Use Face ID</span></strong> (Use Touch ID or Use Passcode on iPhones without Face ID).</li>
+          <li><strong>Test it:</strong> in Photos, open <span class="path">Collections › Utilities › Hidden</span>. It should ask for Face ID before showing anything.</li>
+          <li><strong>Hide the album itself, if you like,</strong> by turning off <span class="path">Show Hidden Album</span> in the same settings.</li>
+        </ol>
+        <p>If the album opens without asking, the switch is off. Hidden photos still sync to every device on your Apple Account with iCloud Photos, and each one has its own Face ID setting.</p>
+
+        <h2 id="lock-vs-hide">What's the difference between hiding and locking photos?</h2>
+        <p>Hiding moves a photo out of your main library; locking puts something in front of it. The Hidden album does both, but its lock is your iPhone's own Face ID and passcode.</p>
+        <ul>
+          <li><strong>Hidden only:</strong> with the Face ID switch off, anyone holding your unlocked phone can open the Hidden album.</li>
+          <li><strong>Hidden and locked:</strong> someone needs your face or your iPhone passcode.</li>
+          <li><strong>Locked with a separate code:</strong> a locked note with its own Notes password, or a vault app with its own pattern or PIN, stays shut even for someone who knows your passcode.</li>
+          <li><strong>Encrypted with a separate key:</strong> in an encrypted vault app, the key comes from your vault code, so the files are unreadable without it. See <a href="/guides/how-encrypted-photo-vaults-work">how encrypted photo vaults work</a>.</li>
+        </ul>
+
+        <h2 id="one-album">Can you lock one album on iPhone?</h2>
+        <p>Not in Photos. iOS locks only Hidden and Recently Deleted. To lock an album of your choice, use a vault app with per-album locks; in Noxium Pro, any album can have <a href="/features/album-patterns">its own pattern</a>, and the album stays locked inside the open vault until that pattern is drawn.</p>
+
         <h2 id="photos-app">How do you lock the whole Photos app?</h2>
         <p>Since iOS 18, you can make any app ask for Face ID before it opens.</p>
         <ol class="steps">
@@ -247,7 +285,7 @@
         <p>Now Photos asks for Face ID every time it opens, which stops someone you've handed your unlocked phone from browsing your library. It's all or nothing, though: you'll unlock your whole library many times a day, and the passcode still opens it.</p>
 
         <h2 id="notes">How do you lock photos in a note?</h2>
-        <p>Add photos to a note, then lock the note. Notes can use a separate password from your iPhone passcode, with Face ID as a shortcut.</p>
+        <p>Add photos to a note, then lock the note. Notes can use a separate password from your iPhone passcode, with Face ID as a shortcut. (For notes that open only with a vault pattern, see <a href="/features/encrypted-notes">encrypted notes in Noxium</a>, which we make.)</p>
         <ol class="steps">
           <li>In <strong>Notes</strong>, create a note, tap the <span class="path">camera</span> button and choose <span class="path">Choose Photo or Video</span>.</li>
           <li>Tap <span class="path">More (…)</span> and <span class="path">Lock</span>.</li>
@@ -285,6 +323,7 @@
               <tr><th scope="row">Require Face ID on Photos</th><td>The whole Photos app</td><td class="no">No</td><td>Handing your phone to someone</td></tr>
               <tr><th scope="row">Locked note</th><td>One note</td><td class="yes">Yes, with a Notes password</td><td>A few photos</td></tr>
               <tr><th scope="row">Guided Access</th><td>The screen you're on</td><td class="yes">Yes</td><td>Showing a single photo</td></tr>
+              <tr><th scope="row">Vault app with album locks</th><td>One album inside the vault</td><td class="yes">Yes</td><td>Keeping one album shut while showing others</td></tr>
               <tr><th scope="row">Vault app with its own code</th><td>The vault's photos and videos</td><td class="yes">Yes</td><td>Photos that must stay private from anyone</td></tr>
             </tbody>
           </table>
@@ -301,6 +340,14 @@
 
         <h2 id="faq">Questions people ask</h2>
         <div class="faq-list">
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Can someone open my Hidden album without Face ID?</span></span></summary>
+            <div class="faq-body"><p>Yes, if they know your iPhone passcode: the lock falls back to it. If Use Face ID is off in Photos settings, it doesn't ask at all.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Does hiding a photo encrypt it?</span></span></summary>
+            <div class="faq-body"><p>No more than any other photo. iPhone encrypts its storage as a whole, and hiding only moves the photo to a locked album; it doesn't add a separate key.</p></div>
+          </details>
           <details class="faq-item">
             <summary class="faq-summary"><span class="faq-summary-left"><span>Can I lock a specific album on iPhone?</span></span></summary>
             <div class="faq-body"><p>No. The Photos app only locks the Hidden and Recently Deleted albums. To lock other photos, hide them, put them in a locked note, or use a vault app.</p></div>
@@ -327,6 +374,9 @@
           <p class="toc-title">On this page</p>
           <ol>
             <li><a href="#hidden-album">Lock the Hidden album</a></li>
+            <li><a href="#lock-hidden">Lock hidden photos</a></li>
+            <li><a href="#lock-vs-hide">Hiding vs locking</a></li>
+            <li><a href="#one-album">Lock one album</a></li>
             <li><a href="#photos-app">Lock the Photos app</a></li>
             <li><a href="#notes">Lock photos in Notes</a></li>
             <li><a href="#guided-access">Show one photo safely</a></li>
