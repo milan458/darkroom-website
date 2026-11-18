@@ -72,7 +72,7 @@
       "updated": "2026-11-14"
     },
     "/guides/how-to-hide-photos-on-iphone": {
-      "source": "2026-10-26",
+      "source": "2026-11-15",
       "title": "Cómo ocultar fotos en el iPhone: todos los métodos (iOS 26)",
       "description": "Todas las formas de ocultar fotos en el iPhone con iOS 26: álbum Oculto, notas y apps bloqueadas y bóvedas. Qué protege cada una y qué no.",
       "headline": "Cómo ocultar fotos en el iPhone: todos los métodos y qué protege cada uno",
@@ -80,7 +80,7 @@
       "crumb": "Ocultar fotos en el iPhone",
       "keyword": "ocultar fotos iphone",
       "published": "2026-11-12",
-      "updated": "2026-11-14"
+      "updated": "2026-11-16"
     },
     "/guides/is-iphone-hidden-album-private": {
       "source": "2026-10-26",
@@ -166,6 +166,17 @@
       "keyword": "son seguras las apps de caja fuerte de fotos",
       "published": "2026-11-17",
       "updated": "2026-11-17"
+    },
+    "/guides/lock-photos-iphone-face-id": {
+      "source": "2026-10-26",
+      "title": "Cómo bloquear fotos en el iPhone con Face ID o un patrón",
+      "description": "Bloquea fotos en el iPhone: el álbum Oculto, la app Fotos con Face ID, notas bloqueadas, Acceso guiado y apps de caja fuerte con su propio patrón.",
+      "headline": "Cómo bloquear fotos en el iPhone con Face ID, un código o un patrón",
+      "summary": "Todas las formas de poner fotos tras Face ID o un código aparte en el iPhone, y cuándo basta cada una.",
+      "crumb": "Bloquear fotos",
+      "keyword": "bloquear fotos iphone",
+      "published": "2026-11-16",
+      "updated": "2026-11-16"
     }
   },
   "facts": [

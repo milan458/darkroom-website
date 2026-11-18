@@ -41,7 +41,7 @@
   <meta property="og:image:alt" content="Noxium photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
   <meta property="og:locale" content="de_DE">
   <meta property="article:published_time" content="2026-11-12">
-  <meta property="article:modified_time" content="2026-11-12">
+  <meta property="article:modified_time" content="2026-11-16">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="iPhone Fotos verstecken: alle Wege im Überblick (iOS 26)">
   <meta name="twitter:description" content="Fotos auf dem iPhone verstecken mit iOS 26: Album „Ausgeblendet“, gesperrte Notizen, gesperrte Apps und Tresor-Apps. Was jeder Weg schützt und was nicht.">
@@ -90,7 +90,7 @@
         "mainEntityOfPage": "https://getnoxium.app/de/guides/how-to-hide-photos-on-iphone",
         "image": "https://getnoxium.app/assets/guides/noxium-lock.jpg",
         "datePublished": "2026-11-12",
-        "dateModified": "2026-11-12",
+        "dateModified": "2026-11-16",
         "author": {
           "@id": "https://getnoxium.app/#org"
         },
@@ -168,6 +168,14 @@
               "@type": "Answer",
               "text": "Ja. Öffne Einstellungen › Apps › Fotos und deaktiviere „Album ‚Ausgeblendet‘ einblenden“. Das Album verschwindet aus den Sammlungen, bis du die Einstellung wieder aktivierst."
             }
+          },
+          {
+            "@type": "Question",
+            "name": "Was passiert mit ausgeblendeten Fotos, wenn ich mein iPhone zurücksetze?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sie werden mit dem Rest des iPhone gelöscht und kommen ausgeblendet zurück, wenn du wiederherstellst: aus iCloud-Fotos, sobald du dich anmeldest, oder aus einem iCloud- oder Computer-Backup, wenn iCloud-Fotos aus war. Ohne beides sind sie weg."
+            }
           }
         ]
       }
@@ -233,7 +241,7 @@
         <p class="eyebrow"><span class="dot dot-ink" aria-hidden="true"></span>Anleitung · Fotos verstecken</p>
         <h1>Fotos auf dem iPhone verstecken: alle Wege, und was jeder davon schützt</h1>
         <!-- build:byline -->
-        <p class="byline"><span>Von <a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>Zuletzt aktualisiert am <time datetime="2026-11-12">12. November 2026</time></span></p>
+        <p class="byline"><span>Von <a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>Veröffentlicht am <time datetime="2026-11-12">12. November 2026</time></span><span aria-hidden="true">·</span><span>Zuletzt aktualisiert am <time datetime="2026-11-16">16. November 2026</time></span></p>
         <!-- /build:byline -->
         <div class="answer">
           <span class="answer-label">Kurz gesagt</span>
@@ -264,13 +272,13 @@
         </div>
 
         <h2 id="hidden-album">Wie versteckst du Fotos mit dem Album „Ausgeblendet“?</h2>
-        <p>Leg den Finger auf ein Foto, tippe auf „Ausblenden“ und bestätige. Das Foto verschwindet aus der Mediathek, aus Rückblicken und Widgets und erscheint nur noch im Album „Ausgeblendet“.</p>
+        <p>Leg den Finger auf ein Foto, tippe auf „Ausblenden“ und bestätige. Das Foto verschwindet aus der Mediathek, aus deinen anderen Alben und aus dem Foto-Widget und erscheint nur noch im Album „Ausgeblendet“ (<a href="https://support.apple.com/de-de/104987">Apple: Fotos mit dem Album „Ausgeblendet“ ausblenden</a>).</p>
         <ol class="steps">
           <li><strong>Öffne die Fotos-App</strong> und such das Foto oder Video.</li>
           <li><strong>Leg den Finger darauf</strong>, tippe dann auf <span class="path">Ausblenden</span> und bestätige.</li>
           <li><strong>Um mehrere auf einmal auszublenden</strong>, tippe auf <span class="path">Auswählen</span>, tippe jedes Foto an, tippe auf die <span class="path">Mehr-Taste (…)</span> und wähle <span class="path">Ausblenden</span>.</li>
         </ol>
-        <p>Um ausgeblendete Fotos zu sehen, öffne <span class="path">Sammlungen</span>, scrolle nach unten zu <span class="path">Dienstprogramme</span>, tippe auf <span class="path">Ausgeblendet</span>, dann auf <span class="path">Album anzeigen</span>, und entsperre mit Face ID. Um ein Foto wieder einzublenden, leg den Finger darauf und tippe auf <span class="path">Einblenden</span>.</p>
+        <p>Um ausgeblendete Fotos zu sehen, öffne <span class="path">Sammlungen</span>, scrolle nach unten zu <span class="path">Dienstprogramme</span>, tippe auf <span class="path">Ausgeblendet</span>, dann auf <span class="path">Album anzeigen</span>, und entsperre mit Face ID. Um ein Foto wieder einzublenden, leg den Finger darauf und tippe auf <span class="path">Einblenden</span>. Fehlt „Ausgeblendet“, oder willst du wissen, was mit ausgeblendeten Fotos in iCloud, auf dem Mac oder auf einem neuen iPhone passiert, lies den <a href="/de/guides/hidden-photos-iphone">kompletten Ratgeber zu ausgeblendeten Fotos auf dem iPhone</a>.</p>
 
         <h3 id="lock-hidden-album">Prüfe, ob das Album „Ausgeblendet“ gesperrt ist</h3>
         <p>Ab iOS 16 ist das Album „Ausgeblendet“ standardmäßig gesperrt. Prüf es trotzdem: Öffne <span class="path">Einstellungen › Apps › Fotos</span> und stell sicher, dass <span class="path">Face ID verwenden</span> (oder „Touch ID verwenden“ / „Code verwenden“) aktiviert ist. Dieselbe Einstellung sperrt auch „Zuletzt gelöscht“.</p>
@@ -283,6 +291,10 @@
           <li><strong>Es ist nicht separat verschlüsselt.</strong> Ausgeblendete Fotos haben denselben Schutz wie der Rest der Mediathek. In iCloud sind Fotos nur dann Ende-zu-Ende-verschlüsselt, wenn du den Erweiterten Datenschutz für iCloud aktivierst (<a href="https://support.apple.com/de-de/102651">Apples Sicherheitsüberblick zu iCloud-Daten</a>).</li>
         </ul>
         <p>Das ganze Bild findest du in <a href="/de/guides/is-iphone-hidden-album-private">Ist das Album „Ausgeblendet“ auf dem iPhone wirklich privat?</a></p>
+
+        <h2 id="ipad-mac">Wie blendest du Fotos auf dem iPad und dem Mac aus?</h2>
+        <p>Auf dem iPad genauso wie auf dem iPhone: Foto gedrückt halten und auf „Ausblenden“ tippen. Ist das Album „Ausgeblendet“ nicht zu sehen, tippe in Fotos zuerst auf die Taste für die Seitenleiste. Auf dem Mac klickst du bei gedrückter Ctrl-Taste auf das Foto und wählst <span class="path">Foto ausblenden</span>, oder du drückst Befehl-L. Mit iCloud-Fotos ist ein Foto, das du auf einem Gerät ausblendest, auf allen ausgeblendet. Du musst es also nur einmal tun.</p>
+        <p>Auf dem Mac ist das Album „Ausgeblendet“ standardmäßig aus. Um es zu sehen, wähle in Fotos <span class="path">Darstellung › Fotoalbum „Ausgeblendet“ einblenden</span> und entsperre es mit Touch ID oder deinem Anmeldepasswort.</p>
 
         <h2 id="lock-photos-app">Kannst du die ganze Fotos-App mit Face ID sperren?</h2>
         <p>Ja. Seit iOS 18 kannst du jede App, auch Fotos, bei jedem Öffnen nach Face ID fragen lassen.</p>
@@ -326,6 +338,16 @@
         </figure>
         <p class="inline-cta"><a href="https://apps.apple.com/app/apple-store/id6824616093" data-cta="inline" data-label-waitlist="Noxium kostenlos testen: Beta beitreten →" data-label-live="Noxium kostenlos im App Store laden →">Noxium kostenlos im App Store laden →</a></p>
 
+        <h2 id="mistakes">Welche Fehler machen ausgeblendete Fotos sichtbar?</h2>
+        <p>Die meisten ausgeblendeten Fotos, die jemand zu sehen bekommt, wurden nicht im Album „Ausgeblendet“ gefunden, sondern woanders, oder die Sperre war aus. Prüfe diese fünf Punkte:</p>
+        <ol class="steps">
+          <li><strong>Die Face-ID-Sperre ausschalten.</strong> Ist „Face ID verwenden“ in <span class="path">Einstellungen › Apps › Fotos</span> aus, kann jeder mit deinem entsperrten iPhone „Ausgeblendet“ öffnen, und Apps mit vollem Zugriff auf die Mediathek können ausgeblendete Fotos abrufen.</li>
+          <li><strong>„Album ‚Ausgeblendet‘ einblenden“ für eine Sperre halten.</strong> Ausschalten nimmt das Album nur aus dem Blick. Jeder kann es in den Einstellungen wieder einschalten.</li>
+          <li><strong>Fotos in einer geteilten Mediathek ausblenden.</strong> In der geteilten iCloud-Fotomediathek landet ein ausgeblendetes Foto bei allen Teilnehmenden im Album „Ausgeblendet“, und jeder von ihnen kann es ansehen oder wieder einblenden (<a href="https://support.apple.com/de-de/guide/icloud/mmea67686c65/icloud">Apple: Fotos auf iCloud.com ausblenden</a>).</li>
+          <li><strong>Kopien zurücklassen:</strong> in „Zuletzt gelöscht“, in Nachrichten, in anderen Apps oder in einem alten Mac-Import (siehe nächster Abschnitt).</li>
+          <li><strong>Das iPhone ohne Backup löschen.</strong> Ausgeblendete Fotos gehören zu deiner Mediathek. Ist iCloud-Fotos aus und gibt es kein aktuelles Backup, löscht das Zurücksetzen des iPhone sie mit allem anderen.</li>
+        </ol>
+
         <h2 id="recently-deleted">Vergiss „Zuletzt gelöscht“ und andere Kopien nicht</h2>
         <p>Ein Foto an einen privaten Ort zu verschieben reicht nicht, wenn irgendwo eine Kopie zurückbleibt. Gelöschte Fotos liegen 30 Tage lang in „Zuletzt gelöscht“.</p>
         <ul>
@@ -366,6 +388,10 @@
             <summary class="faq-summary"><span class="faq-summary-left"><span>Kann ich das Album „Ausgeblendet“ selbst verstecken?</span></span></summary>
             <div class="faq-body"><p>Ja. Öffne Einstellungen › Apps › Fotos und deaktiviere „Album ‚Ausgeblendet‘ einblenden“. Das Album verschwindet aus den Sammlungen, bis du die Einstellung wieder aktivierst.</p></div>
           </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Was passiert mit ausgeblendeten Fotos, wenn ich mein iPhone zurücksetze?</span></span></summary>
+            <div class="faq-body"><p>Sie werden mit dem Rest des iPhone gelöscht und kommen ausgeblendet zurück, wenn du wiederherstellst: aus iCloud-Fotos, sobald du dich anmeldest, oder aus einem iCloud- oder Computer-Backup, wenn iCloud-Fotos aus war. Ohne beides sind sie weg.</p></div>
+          </details>
         </div>
 
         <p><em>Etwas falsch oder veraltet? Schreib an <a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a>, dann korrigieren wir es.</em></p>
@@ -377,9 +403,11 @@
           <ol>
             <li><a href="#compare">Welcher Weg passt</a></li>
             <li><a href="#hidden-album">Album „Ausgeblendet“</a></li>
+            <li><a href="#ipad-mac">iPad und Mac</a></li>
             <li><a href="#lock-photos-app">Fotos-App sperren</a></li>
             <li><a href="#locked-note">Gesperrte Notiz</a></li>
             <li><a href="#vault-app">Foto-Tresor-App</a></li>
+            <li><a href="#mistakes">Fehler vermeiden</a></li>
             <li><a href="#recently-deleted">Zuletzt gelöscht und Kopien</a></li>
             <li><a href="#faq">Häufige Fragen</a></li>
           </ol>
@@ -390,6 +418,7 @@
           <ul role="list">
             <li><a href="/de/guides/is-iphone-hidden-album-private">Ist „Ausgeblendet“ privat?</a></li>
             <li><a href="/de/guides/move-photo-vault-to-new-iphone">Tresor aufs neue iPhone</a></li>
+            <li><a href="/de/guides/lock-photos-iphone-face-id">Fotos sperren</a></li>
             <li><a href="/de/guides/hidden-photos-iphone">Ausgeblendete Fotos</a></li>
             <li><a href="/de/guides/">Alle Anleitungen</a></li>
           </ul>

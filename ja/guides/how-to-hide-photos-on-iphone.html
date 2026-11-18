@@ -41,7 +41,7 @@
   <meta property="og:image:alt" content="Noxium photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
   <meta property="og:locale" content="ja_JP">
   <meta property="article:published_time" content="2026-11-12">
-  <meta property="article:modified_time" content="2026-11-14">
+  <meta property="article:modified_time" content="2026-11-16">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="iPhoneで写真を隠す方法：全手段と守れる範囲（iOS 26）">
   <meta name="twitter:description" content="iOS 26のiPhoneで写真を隠す方法を全部解説。「非表示」アルバム、メモのロック、アプリのロック、保管庫アプリで何が守れて何が守れないか。">
@@ -90,7 +90,7 @@
         "mainEntityOfPage": "https://getnoxium.app/ja/guides/how-to-hide-photos-on-iphone",
         "image": "https://getnoxium.app/assets/guides/noxium-lock.jpg",
         "datePublished": "2026-11-12",
-        "dateModified": "2026-11-14",
+        "dateModified": "2026-11-16",
         "author": {
           "@id": "https://getnoxium.app/#org"
         },
@@ -168,6 +168,14 @@
               "@type": "Answer",
               "text": "隠せます。設定 › アプリ › 写真で「非表示アルバムを表示」をオフにしてください。設定をオンに戻すまで、アルバムはコレクションに表示されません。"
             }
+          },
+          {
+            "@type": "Question",
+            "name": "iPhone をリセットすると非表示の写真はどうなりますか？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "iPhone のほかのデータと一緒に消去されますが、復元すれば非表示のまま戻ります。サインインすれば iCloud 写真から、iCloud 写真がオフだった場合は iCloud またはコンピュータのバックアップから戻ります。どちらもなければ失われます。"
+            }
           }
         ]
       }
@@ -233,7 +241,7 @@
         <p class="eyebrow"><span class="dot dot-ink" aria-hidden="true"></span>ガイド · 写真を隠す</p>
         <h1>iPhone で写真を隠す方法：すべての方法と、それぞれが守れる範囲</h1>
         <!-- build:byline -->
-        <p class="byline"><span>著者：<a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>公開日：<time datetime="2026-11-12">2026年11月12日</time></span><span aria-hidden="true">·</span><span>最終更新日：<time datetime="2026-11-14">2026年11月14日</time></span></p>
+        <p class="byline"><span>著者：<a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>公開日：<time datetime="2026-11-12">2026年11月12日</time></span><span aria-hidden="true">·</span><span>最終更新日：<time datetime="2026-11-16">2026年11月16日</time></span></p>
         <!-- /build:byline -->
         <div class="answer">
           <span class="answer-label">結論</span>
@@ -264,13 +272,13 @@
         </div>
 
         <h2 id="hidden-album">「非表示」アルバムで写真を隠すには？</h2>
-        <p>写真を長押しして「非表示」をタップし、確定します。写真はライブラリ、メモリー、ウィジェットから消え、「非表示」アルバムにだけ表示されるようになります。</p>
+        <p>写真を長押しして「非表示」をタップし、確定します。写真はライブラリ、ほかのアルバム、写真ウィジェットから消え、「非表示」アルバムにだけ表示されるようになります（<a href="https://support.apple.com/ja-jp/104987">Apple：「非表示」アルバムで写真を非表示にする</a>）。</p>
         <ol class="steps">
           <li><strong>写真アプリを開き、</strong>隠したい写真やビデオを探します。</li>
           <li><strong>長押しして</strong><span class="path">非表示</span>をタップし、確定します。</li>
           <li><strong>まとめて隠すときは、</strong><span class="path">選択</span>をタップして写真を 1 枚ずつタップし、<span class="path">…</span>ボタンをタップして<span class="path">非表示</span>を選びます。</li>
         </ol>
-        <p>隠した写真を見るには、<span class="path">コレクション</span>を開いて<span class="path">ユーティリティ</span>まで下にスクロールし、<span class="path">非表示</span>、<span class="path">アルバムを表示</span>の順にタップして、Face ID でロックを解除します。元に戻すには、写真を長押しして<span class="path">非表示を解除</span>をタップします。</p>
+        <p>隠した写真を見るには、<span class="path">コレクション</span>を開いて<span class="path">ユーティリティ</span>まで下にスクロールし、<span class="path">非表示</span>、<span class="path">アルバムを表示</span>の順にタップして、Face ID でロックを解除します。元に戻すには、写真を長押しして<span class="path">非表示を解除</span>をタップします。「非表示」が見当たらないときや、iCloud・Mac・新しい iPhone で非表示の写真がどうなるか知りたいときは、<a href="/ja/guides/hidden-photos-iphone">iPhone の非表示の写真の完全ガイド</a>をご覧ください。</p>
 
         <h3 id="lock-hidden-album">「非表示」アルバムがロックされているか確認する</h3>
         <p>iOS 16 以降、「非表示」アルバムは最初からロックされています。念のため確認しておきましょう。<span class="path">設定 › アプリ › 写真</span>を開き、<span class="path">Face IDを使用</span>（または「Touch IDを使用」「パスコードを使用」）がオンになっていることを確かめます。この設定で「最近削除した項目」もロックされます。</p>
@@ -283,6 +291,10 @@
           <li><strong>個別には暗号化されていない。</strong>隠した写真も、ライブラリのほかの写真と同じ保護しか受けていません。iCloud の写真がエンドツーエンドで暗号化されるのは、高度なデータ保護をオンにした場合だけです（<a href="https://support.apple.com/ja-jp/102651">Apple の「iCloud のデータセキュリティの概要」</a>）。</li>
         </ul>
         <p>詳しくは<a href="/ja/guides/is-iphone-hidden-album-private">iPhone の「非表示」アルバムは本当にプライベート？</a>をご覧ください。</p>
+
+        <h2 id="ipad-mac">iPad や Mac で写真を非表示にするには？</h2>
+        <p>iPad では iPhone とまったく同じで、写真を長押しして「非表示」をタップします。「非表示」アルバムが見えないときは、先に「写真」のサイドバーのボタンをタップします。Mac では、Control キーを押しながら写真をクリックして <span class="path">写真を非表示</span> を選ぶか、Command-L を押します。iCloud 写真がオンなら、1 台で非表示にした写真はすべてのデバイスで非表示になるので、操作は一度で済みます。</p>
+        <p>Mac では「非表示」アルバムは初期設定でオフです。表示するには、「写真」で <span class="path">表示 › 非表示アルバムを表示</span> を選び、Touch ID かログインパスワードでロックを解除します。</p>
 
         <h2 id="lock-photos-app">写真アプリごと Face ID でロックできる？</h2>
         <p>できます。iOS 18 以降は、写真アプリを含むどのアプリでも、開くたびに Face ID を求めるよう設定できます。</p>
@@ -326,6 +338,16 @@
         </figure>
         <p class="inline-cta"><a href="https://apps.apple.com/app/apple-store/id6824616093" data-cta="inline" data-label-waitlist="Noxium を無料で試す：ベータに参加 →" data-label-live="Noxium を App Store で無料ダウンロード →">Noxium を App Store で無料ダウンロード →</a></p>
 
+        <h2 id="mistakes">非表示の写真が見られてしまうのはどんなミス？</h2>
+        <p>見られてしまった非表示の写真の多くは、「非表示」アルバムで見つかったのではありません。別の場所で見つかったか、ロックがオフになっていたのです。次の 5 つを確認しましょう。</p>
+        <ol class="steps">
+          <li><strong>Face ID のロックをオフにする。</strong><span class="path">設定 › アプリ › 写真</span> で「Face IDを使用」がオフだと、ロック解除された iPhone を手にした人は誰でも「非表示」を開けますし、ライブラリへのフルアクセスを持つアプリも非表示の写真を読み込めます。</li>
+          <li><strong>「非表示アルバムを表示」をロックだと思う。</strong>オフにしてもアルバムが見えなくなるだけで、誰でも「設定」でオンに戻せます。</li>
+          <li><strong>共有ライブラリで写真を非表示にする。</strong>iCloud 共有写真ライブラリで非表示にした写真は、参加者全員の「非表示」アルバムに移り、誰でも見たり非表示を解除したりできます（<a href="https://support.apple.com/ja-jp/guide/icloud/mmea67686c65/icloud">Apple：iCloud.com で写真を非表示にする</a>）。</li>
+          <li><strong>コピーを残したままにする：</strong>「最近削除した項目」、メッセージ、ほかのアプリ、昔 Mac に読み込んだ写真など（次のセクションを参照）。</li>
+          <li><strong>バックアップなしで iPhone を消去する。</strong>非表示の写真もライブラリの一部です。iCloud 写真がオフで最近のバックアップもなければ、iPhone を消去・リセットすると、ほかのデータと一緒に消えてしまいます。</li>
+        </ol>
+
         <h2 id="recently-deleted">「最近削除した項目」とほかのコピーも忘れずに</h2>
         <p>写真を安全な場所に移しても、どこかにコピーが残っていては意味がありません。削除した写真は「最近削除した項目」に 30 日間残ります。</p>
         <ul>
@@ -366,6 +388,10 @@
             <summary class="faq-summary"><span class="faq-summary-left"><span>「非表示」アルバム自体を隠せますか？</span></span></summary>
             <div class="faq-body"><p>隠せます。設定 › アプリ › 写真で「非表示アルバムを表示」をオフにしてください。設定をオンに戻すまで、アルバムはコレクションに表示されません。</p></div>
           </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>iPhone をリセットすると非表示の写真はどうなりますか？</span></span></summary>
+            <div class="faq-body"><p>iPhone のほかのデータと一緒に消去されますが、復元すれば非表示のまま戻ります。サインインすれば iCloud 写真から、iCloud 写真がオフだった場合は iCloud またはコンピュータのバックアップから戻ります。どちらもなければ失われます。</p></div>
+          </details>
         </div>
 
         <p><em>誤りや古い情報を見つけたら、<a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a> までお知らせください。修正します。</em></p>
@@ -377,9 +403,11 @@
           <ol>
             <li><a href="#compare">どの方法を使うか</a></li>
             <li><a href="#hidden-album">「非表示」アルバム</a></li>
+            <li><a href="#ipad-mac">iPad と Mac</a></li>
             <li><a href="#lock-photos-app">写真アプリをロック</a></li>
             <li><a href="#locked-note">ロックしたメモ</a></li>
             <li><a href="#vault-app">写真保管庫アプリ</a></li>
+            <li><a href="#mistakes">避けたいミス</a></li>
             <li><a href="#recently-deleted">最近削除した項目とコピー</a></li>
             <li><a href="#faq">よくある質問</a></li>
           </ol>
@@ -390,6 +418,7 @@
           <ul role="list">
             <li><a href="/ja/guides/is-iphone-hidden-album-private">「非表示」アルバムは安全？</a></li>
             <li><a href="/ja/guides/move-photo-vault-to-new-iphone">保管庫を新しい iPhone へ</a></li>
+            <li><a href="/ja/guides/lock-photos-iphone-face-id">写真をロック</a></li>
             <li><a href="/ja/guides/hidden-photos-iphone">非表示の写真</a></li>
             <li><a href="/ja/guides/">ガイド一覧</a></li>
           </ul>

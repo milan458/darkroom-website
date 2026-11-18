@@ -72,7 +72,7 @@
       "updated": "2026-11-14"
     },
     "/guides/how-to-hide-photos-on-iphone": {
-      "source": "2026-10-26",
+      "source": "2026-11-15",
       "title": "Cacher des photos sur iPhone : toutes les méthodes (iOS 26)",
       "description": "Cacher des photos sur iPhone avec iOS 26 : album Masquées, note ou app verrouillée, coffre-fort. Ce que chaque méthode protège, et ses limites.",
       "headline": "Cacher des photos sur iPhone : toutes les méthodes, et ce que chacune protège",
@@ -80,7 +80,7 @@
       "crumb": "Cacher des photos sur iPhone",
       "keyword": "cacher des photos sur iphone",
       "published": "2026-11-12",
-      "updated": "2026-11-14"
+      "updated": "2026-11-16"
     },
     "/guides/is-iphone-hidden-album-private": {
       "source": "2026-10-26",
@@ -166,6 +166,17 @@
       "keyword": "app coffre photo sûre",
       "published": "2026-11-17",
       "updated": "2026-11-17"
+    },
+    "/guides/lock-photos-iphone-face-id": {
+      "source": "2026-10-26",
+      "title": "Verrouiller des photos sur iPhone : Face ID ou schéma",
+      "description": "Verrouiller des photos sur iPhone : album Masquées, app Photos avec Face ID, notes verrouillées, Accès guidé, et apps de coffre avec leur propre schéma.",
+      "headline": "Verrouiller des photos sur iPhone avec Face ID, un code ou un schéma",
+      "summary": "Toutes les façons de mettre des photos derrière Face ID ou un code distinct sur iPhone, et quand chacune suffit.",
+      "crumb": "Verrouiller des photos",
+      "keyword": "verrouiller photos iphone",
+      "published": "2026-11-16",
+      "updated": "2026-11-16"
     }
   },
   "facts": [

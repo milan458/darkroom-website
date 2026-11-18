@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#FAF9F6" media="(prefers-color-scheme: light)">
+  <!-- build:meta -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WWNMHW99TP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-WWNMHW99TP');
+  </script>
+  <title>如何鎖定 iPhone 照片（Face ID、圖形）</title>
+  <meta name="description" content="鎖定 iPhone 照片的方法：「已隱藏」相簿、需要 Face ID 的「照片」App、鎖定的備忘錄、引導使用模式，以及有自己圖形的保險庫 App。">
+  <link rel="canonical" href="https://getnoxium.app/zh-hant/guides/lock-photos-iphone-face-id">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <link rel="alternate" hreflang="en" href="https://getnoxium.app/guides/lock-photos-iphone-face-id">
+  <link rel="alternate" hreflang="de" href="https://getnoxium.app/de/guides/lock-photos-iphone-face-id">
+  <link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/guides/lock-photos-iphone-face-id">
+  <link rel="alternate" hreflang="es" href="https://getnoxium.app/es/guides/lock-photos-iphone-face-id">
+  <link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/guides/lock-photos-iphone-face-id">
+  <link rel="alternate" hreflang="it" href="https://getnoxium.app/it/guides/lock-photos-iphone-face-id">
+  <link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/guides/lock-photos-iphone-face-id">
+  <link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/guides/lock-photos-iphone-face-id">
+  <link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/guides/lock-photos-iphone-face-id">
+  <link rel="alternate" hreflang="x-default" href="https://getnoxium.app/guides/lock-photos-iphone-face-id">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Noxium">
+  <meta property="og:title" content="如何鎖定 iPhone 照片（Face ID、圖形）">
+  <meta property="og:description" content="鎖定 iPhone 照片的方法：「已隱藏」相簿、需要 Face ID 的「照片」App、鎖定的備忘錄、引導使用模式，以及有自己圖形的保險庫 App。">
+  <meta property="og:url" content="https://getnoxium.app/zh-hant/guides/lock-photos-iphone-face-id">
+  <meta property="og:image" content="https://getnoxium.app/assets/og/noxium-og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Noxium photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="article:published_time" content="2026-11-16">
+  <meta property="article:modified_time" content="2026-11-16">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="如何鎖定 iPhone 照片（Face ID、圖形）">
+  <meta name="twitter:description" content="鎖定 iPhone 照片的方法：「已隱藏」相簿、需要 Face ID 的「照片」App、鎖定的備忘錄、引導使用模式，以及有自己圖形的保險庫 App。">
+  <meta name="twitter:image" content="https://getnoxium.app/assets/og/noxium-og.png">
+  <meta name="twitter:image:alt" content="Noxium photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
+  <meta name="apple-itunes-app" content="app-id=6824616093">
+  <!-- /build:meta -->
+
+  <link rel="icon" type="image/svg+xml" href="/assets/noxium-logo.svg">
+  <link rel="apple-touch-icon" href="/assets/noxium-icon-180.png">
+
+  <link rel="preload" href="/assets/fonts/instrument-serif-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/fonts/fonts.css">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/pages.css">
+
+  <!-- build:jsonld -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://getnoxium.app/#org",
+        "name": "Inertia Projects",
+        "url": "https://getnoxium.app/about",
+        "email": "business@inertiaprojects.info",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://getnoxium.app/assets/noxium-icon-512.png"
+        },
+        "brand": {
+          "@type": "Brand",
+          "name": "Noxium"
+        },
+        "sameAs": [
+          "https://apps.apple.com/app/apple-store/id6824616093"
+        ]
+      },
+      {
+        "@type": "Article",
+        "@id": "https://getnoxium.app/zh-hant/guides/lock-photos-iphone-face-id#article",
+        "headline": "如何用 Face ID、密碼或圖形鎖定 iPhone 照片",
+        "description": "鎖定 iPhone 照片的方法：「已隱藏」相簿、需要 Face ID 的「照片」App、鎖定的備忘錄、引導使用模式，以及有自己圖形的保險庫 App。",
+        "url": "https://getnoxium.app/zh-hant/guides/lock-photos-iphone-face-id",
+        "mainEntityOfPage": "https://getnoxium.app/zh-hant/guides/lock-photos-iphone-face-id",
+        "image": "https://getnoxium.app/assets/guides/noxium-lock.jpg",
+        "datePublished": "2026-11-16",
+        "dateModified": "2026-11-16",
+        "author": {
+          "@id": "https://getnoxium.app/#org"
+        },
+        "publisher": {
+          "@id": "https://getnoxium.app/#org"
+        },
+        "inLanguage": "zh-Hant",
+        "isPartOf": {
+          "@id": "https://getnoxium.app/#website"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Noxium",
+            "item": "https://getnoxium.app/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "指南",
+            "item": "https://getnoxium.app/zh-hant/guides/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "鎖定照片",
+            "item": "https://getnoxium.app/zh-hant/guides/lock-photos-iphone-face-id"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://getnoxium.app/zh-hant/guides/lock-photos-iphone-face-id#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "iPhone 可以只鎖定某一個相簿嗎？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "不行。「照片」App 只會鎖定「已隱藏」和「最近刪除」相簿。要鎖定其他照片，可以把它們隱藏、放進鎖定的備忘錄，或使用保險庫 App。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "可以用和 iPhone 密碼不同的密碼鎖定照片嗎？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "可以，有兩種方法：另設備忘錄密碼的鎖定備忘錄，或是有自己 PIN 碼、密碼或圖形的保險庫 App。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "鎖定「照片」App 會把它藏起來嗎？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "不會。「需要 Face ID」只會在打開「照片」時要求 Face ID，App 仍會留在主畫面上。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "圖形鎖比 PIN 碼安全嗎？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "不一定。重點在於密碼有沒有用來加密照片，以及要猜中需要多久。用來推導加密金鑰的長圖形或長密碼，遠比擋在一般檔案前面的 4 位數 PIN 碼強得多。"
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <!-- /build:jsonld -->
+</head>
+<body>
+  <!-- build:header -->
+  <!-- Shared header (homepage and subpages). Edit partials/header.html, then run python3 tools/build.py. -->
+  <a href="#main-content" class="skip-link">跳至主要內容</a>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <nav class="nav glass" aria-label="主要導覽">
+        <a href="/" class="wordmark" aria-label="Noxium 首頁">Noxium<span aria-hidden="true">.</span></a>
+
+        <div class="nav-links">
+          <a href="/#features">功能</a>
+          <a href="/#security">安全性</a>
+          <a href="/#pricing">價格</a>
+          <a href="/compare/">比較</a>
+          <a href="/zh-hant/guides/">指南</a>
+        </div>
+
+        <div class="nav-actions">
+          <a href="https://apps.apple.com/app/apple-store/id6824616093" class="btn btn-ink btn-nav nav-cta" data-cta="nav" data-label-waitlist="加入 Beta 測試" data-label-live="下載 Noxium">下載 Noxium</a>
+          <button type="button" class="mobile-menu-btn" id="mobile-menu-btn" aria-expanded="false" aria-controls="mobile-drawer" aria-label="選單">
+            <svg class="icon icon-menu" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 9h14M5 15h14"/></svg>
+            <svg class="icon icon-close" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <div class="mobile-drawer glass" id="mobile-drawer" hidden>
+      <nav class="mobile-drawer-list" aria-label="行動版">
+        <a href="/#features">功能</a>
+        <a href="/#security">安全性</a>
+        <a href="/#pricing">價格</a>
+        <a href="/best-photo-vault-apps-iphone">比較保險庫 App</a>
+        <a href="/zh-hant/guides/">指南</a>
+        <a href="/about">關於</a>
+        <a href="/support">支援</a>
+      </nav>
+    </div>
+  </header>
+  <!-- /build:header -->
+
+  <main id="main-content" tabindex="-1">
+    <div class="page-hero">
+      <div class="container">
+        <!-- build:breadcrumbs -->
+        <nav class="crumbs" aria-label="導覽路徑">
+          <ol>
+            <li><a href="/">Noxium</a></li>
+            <li><a href="/zh-hant/guides/">指南</a></li>
+            <li aria-current="page">鎖定照片</li>
+          </ol>
+        </nav>
+        <!-- /build:breadcrumbs -->
+        <p class="eyebrow"><span class="dot dot-ink" aria-hidden="true"></span>指南 · 鎖定照片</p>
+        <h1>如何用 Face ID、密碼或圖形鎖定 iPhone 照片</h1>
+        <!-- build:byline -->
+        <p class="byline"><span>作者：<a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>最後更新：<time datetime="2026-11-16">2026年11月16日</time></span></p>
+        <!-- /build:byline -->
+        <div class="answer">
+          <span class="answer-label">簡短回答</span>
+          <p>iPhone 有三種內建方法能用 Face ID 鎖定照片：把照片隱藏，讓它們進入「已隱藏」相簿（預設鎖定）；讓整個「照片」App 需要 Face ID；或把照片放進鎖定的備忘錄。三種方法最後都能用 iPhone 密碼打開。如果想要和密碼分開的鎖，例如圖形，就需要照片保險庫 App。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container article-layout">
+      <article class="prose">
+        <p>「照片」App 裡沒有「鎖定這個相簿」的按鈕。iOS 26 提供的是幾種作用範圍不同的鎖：一個相簿、整個 App，或一則備忘錄。下面說明每一種怎麼設定、實際鎖住了什麼，以及什麼時候需要更強的保護。</p>
+
+        <h2 id="hidden-album">怎麼用 Face ID 鎖定「已隱藏」相簿裡的照片？</h2>
+        <p>把照片隱藏，再確認「已隱藏」相簿的 Face ID 鎖定有開啟。從 iOS 16 開始預設就是開啟的。和獨立的保險庫相比如何，請看<a href="/compare/apple-hidden-album">「已隱藏」相簿和照片保險庫 App 的比較</a>。</p>
+        <ol class="steps">
+          <li><strong>隱藏照片：</strong>在「照片」中按住照片，點一下<span class="path">隱藏</span>。要一次隱藏多張，點一下<span class="path">選取</span>並選好照片，再點一下<span class="path">「更多」按鈕（…）</span>和<span class="path">隱藏</span>。</li>
+          <li><strong>確認鎖定：</strong>前往<span class="path">設定 › App › 照片</span>，開啟<span class="path">使用 Face ID</span>（或 Touch ID、密碼）。這樣「已隱藏」和「最近刪除」都會鎖定。</li>
+          <li><strong>選用：</strong>關閉<span class="path">顯示『已隱藏』相簿</span>，相簿就完全不會出現在「選集」中。</li>
+        </ol>
+        <p>「已隱藏」相簿在哪裡、怎麼查看和取消隱藏照片，以及它們在 iCloud 和新 iPhone 上會怎樣，請看<a href="/zh-hant/guides/hidden-photos-iphone">iPhone 隱藏照片完整指南</a>。</p>
+        <p>「照片」無法鎖定其他相簿，只有「已隱藏」和「最近刪除」有鎖。而且這道鎖也接受 iPhone 密碼，所以知道密碼的人都能打開相簿（<a href="https://support.apple.com/zh-tw/104987">Apple 支援</a>）。</p>
+
+        <h2 id="photos-app">怎麼鎖定整個「照片」App？</h2>
+        <p>從 iOS 18 開始，任何 App 都可以設定成打開前要先通過 Face ID。</p>
+        <ol class="steps">
+          <li><strong>在主畫面上按住「照片」圖像。</strong></li>
+          <li>點一下<span class="path">需要 Face ID</span>並確認。</li>
+        </ol>
+        <p>現在每次打開「照片」都會要求 Face ID，拿到你已解鎖 iPhone 的人就無法翻看你的圖庫。不過這是全有或全無：你一天要解鎖整個圖庫很多次，而且密碼還是打得開。</p>
+
+        <h2 id="notes">怎麼把照片放進備忘錄並鎖定？</h2>
+        <p>把照片加入一則備忘錄，然後鎖定這則備忘錄。備忘錄可以使用和 iPhone 密碼不同的另一組密碼，並以 Face ID 作為捷徑。</p>
+        <ol class="steps">
+          <li>在<strong>備忘錄</strong>中新增一則備忘錄，點一下<span class="path">相機</span>按鈕，選擇從圖庫加入照片或影片的選項。</li>
+          <li>點一下<span class="path">「更多」按鈕（…）</span>，再選擇<span class="path">鎖定</span>。</li>
+          <li>如果要另設密碼，前往<span class="path">設定 › App › 備忘錄 › 密碼</span>，設定一組備忘錄密碼，並開啟<span class="path">使用 Face ID</span>。</li>
+          <li><strong>刪除原始照片：</strong>先在「照片」中刪除，再從「最近刪除」中刪除。</li>
+        </ol>
+        <p>這是唯一能和 iPhone 密碼分開的內建鎖。它適合少量照片，不適合整個圖庫：沒有相簿，長影片也不好處理。如果你忘了另設的備忘錄密碼，Apple 也無法回復已鎖定的備忘錄。</p>
+
+        <h2 id="guided-access">怎麼只給別人看一張照片，不讓對方滑到其他照片？</h2>
+        <p>使用「引導使用模式」。它會把 iPhone 固定在目前的 App 裡，對方就無法離開。</p>
+        <ol class="steps">
+          <li>先在<span class="path">設定 › 輔助使用 › 引導使用模式</span>開啟一次，並設定密碼。</li>
+          <li>打開照片，按三下側邊按鈕，再點一下<span class="path">開始</span>。你可以圈起畫面上的區域讓它們失效。</li>
+          <li>要結束時，按三下側邊按鈕，輸入引導使用模式的密碼。</li>
+        </ol>
+        <p>除非你停用螢幕觸碰，否則在引導使用模式下，還是能在「照片」裡滑到其他照片。所以請圈起整張照片，或在選項中關閉<span class="path">觸碰</span>。</p>
+
+        <h2 id="pattern">iPhone 可以用圖形鎖定照片嗎？</h2>
+        <p>內建功能做不到。iOS 使用的是 Face ID、Touch ID 和密碼；畫圖形解鎖只有保險庫 App 才有。根據 App Store 頁面和各家網站，Private Photo Vault、Vaultaire 和 Noxium 等 App 都提供圖形鎖。</p>
+        <p>圖形鎖有多強，要看它背後做了什麼。有些 App 只是在一般檔案前面擋一個畫面；有些則用圖形推導出加密金鑰。信任一款 App 之前，先弄清楚它怎麼使用圖形（差別請看<a href="/guides/how-encrypted-photo-vaults-work">加密照片保險庫是怎麼運作的</a>）。</p>
+        <p>在我們開發的 Noxium 中，你要在 5×5 的板子上畫出一個<a href="/features/pattern-lock">至少經過 25 顆螺栓中 6 顆的圖形</a>。圖形永遠不會被儲存：Argon2id 會把它轉成打開保險庫的金鑰，每一張照片都在 iPhone 上用 AES-256-GCM 加密。Face ID 可以方便地打開主要保險庫，但永遠不會打開偽裝保險庫。</p>
+        <figure class="shot">
+          <img src="/assets/guides/noxium-lock.jpg" alt="Noxium 的鎖定畫面：畫上圖形的 5×5 螺栓板" width="559" height="1216" loading="lazy" decoding="async">
+          <figcaption>Noxium 的鎖：在 5×5 螺栓板上畫出的圖形，和 iPhone 密碼分開。</figcaption>
+        </figure>
+        <p class="inline-cta"><a href="https://apps.apple.com/app/apple-store/id6824616093" data-cta="inline" data-label-waitlist="免費試用 Noxium：加入測試 →" data-label-live="在 App Store 免費下載 Noxium →">在 App Store 免費下載 Noxium →</a></p>
+
+        <h2 id="which">該用哪一種照片鎖？</h2>
+        <div class="data-table-wrap" tabindex="0" role="region" aria-labelledby="lock-caption">
+          <table class="data-table">
+            <caption id="lock-caption">在 iPhone 上鎖定照片的方法（iOS 26）</caption>
+            <thead><tr><th scope="col">鎖</th><th scope="col">鎖住什麼</th><th scope="col">和密碼分開？</th><th scope="col">適合</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">「已隱藏」相簿的鎖</th><td>「已隱藏」和「最近刪除」</td><td class="no">否</td><td>讓照片離開圖庫</td></tr>
+              <tr><th scope="row">「照片」需要 Face ID</th><td>整個「照片」App</td><td class="no">否</td><td>把手機交給別人時</td></tr>
+              <tr><th scope="row">鎖定的備忘錄</th><td>一則備忘錄</td><td class="yes">是，使用備忘錄密碼</td><td>少量照片</td></tr>
+              <tr><th scope="row">引導使用模式</th><td>目前的畫面</td><td class="yes">是</td><td>只給人看一張照片</td></tr>
+              <tr><th scope="row">有自己密碼的保險庫 App</th><td>保險庫裡的照片和影片</td><td class="yes">是</td><td>不能讓任何人看到的照片</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="cta-card">
+          <p class="cta-card-title">不是 iPhone 密碼的鎖</p>
+          <p>Noxium 用只有你知道的圖形打開，和 iPhone 密碼分開。每一張照片都在你的 iPhone 上加密。免費方案可存 150 張照片和 10 部影片。</p>
+          <a href="https://apps.apple.com/app/apple-store/id6824616093" class="btn btn-primary" data-cta="body" data-label-waitlist="加入測試" data-label-live="在 App Store 下載">在 App Store 下載</a>
+          <!-- build:status -->
+          <span class="release-status">可在 App Store 下載，支援 iPhone 和 iPad。</span>
+          <!-- /build:status -->
+        </div>
+
+        <h2 id="faq">常見問題</h2>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>iPhone 可以只鎖定某一個相簿嗎？</span></span></summary>
+            <div class="faq-body"><p>不行。「照片」App 只會鎖定「已隱藏」和「最近刪除」相簿。要鎖定其他照片，可以把它們隱藏、放進鎖定的備忘錄，或使用保險庫 App。</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>可以用和 iPhone 密碼不同的密碼鎖定照片嗎？</span></span></summary>
+            <div class="faq-body"><p>可以，有兩種方法：另設備忘錄密碼的鎖定備忘錄，或是有自己 PIN 碼、密碼或圖形的保險庫 App。</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>鎖定「照片」App 會把它藏起來嗎？</span></span></summary>
+            <div class="faq-body"><p>不會。「需要 Face ID」只會在打開「照片」時要求 Face ID，App 仍會留在主畫面上。</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>圖形鎖比 PIN 碼安全嗎？</span></span></summary>
+            <div class="faq-body"><p>不一定。重點在於密碼有沒有用來加密照片，以及要猜中需要多久。用來推導加密金鑰的長圖形或長密碼，遠比擋在一般檔案前面的 4 位數 PIN 碼強得多。</p></div>
+          </details>
+        </div>
+
+        <p><em>發現錯誤或過時的資訊？請寫信到 <a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a>，我們會修正。</em></p>
+      </article>
+
+      <aside class="article-aside" aria-label="本頁內容">
+        <nav class="toc" aria-label="目錄">
+          <p class="toc-title">本頁內容</p>
+          <ol>
+            <li><a href="#hidden-album">鎖定「已隱藏」</a></li>
+            <li><a href="#photos-app">鎖定「照片」App</a></li>
+            <li><a href="#notes">用備忘錄鎖照片</a></li>
+            <li><a href="#guided-access">只給人看一張</a></li>
+            <li><a href="#pattern">用圖形鎖定</a></li>
+            <li><a href="#which">該用哪一種鎖</a></li>
+            <li><a href="#faq">常見問題</a></li>
+          </ol>
+        </nav>
+        <!-- build:related -->
+        <div class="related">
+          <p class="toc-title">相關頁面</p>
+          <ul role="list">
+            <li><a href="/zh-hant/guides/how-to-hide-photos-on-iphone">iPhone 隱藏照片</a></li>
+            <li><a href="/zh-hant/guides/is-iphone-hidden-album-private">「已隱藏」相簿安全嗎？</a></li>
+            <li><a href="/zh-hant/guides/what-is-a-decoy-vault">什麼是偽裝保險庫</a></li>
+            <li><a href="/zh-hant/guides/hidden-photos-iphone">隱藏的照片</a></li>
+            <li><a href="/zh-hant/guides/">全部指南</a></li>
+          </ul>
+        </div>
+        <!-- /build:related -->
+      </aside>
+    </div>
+  </main>
+
+  <!-- build:footer -->
+  <!-- Shared footer for subpages (the homepage has its own copy with build:status). Edit partials/footer.html, then run python3 tools/build.py. -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="/" class="wordmark" aria-label="Noxium 首頁">Noxium<span aria-hidden="true">.</span></a>
+          <p>照片、影片和備忘錄的私密保險庫。</p>
+        </div>
+
+        <nav class="footer-groups" aria-label="頁尾">
+          <div>
+            <h2 class="footer-heading">產品</h2>
+            <ul role="list">
+              <li><a href="/#features">功能</a></li>
+              <li><a href="/#security">加密原理</a></li>
+              <li><a href="/#pricing">免費版與 Pro 版</a></li>
+              <li><a href="/best-photo-vault-apps-iphone">照片保險庫 App 比較</a></li>
+              <li><a href="/#faq">常見問題</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="footer-heading">指南</h2>
+            <ul role="list">
+              <li><a href="/zh-hant/guides/how-to-hide-photos-on-iphone">iPhone 隱藏照片</a></li>
+  <li><a href="/zh-hant/guides/is-iphone-hidden-album-private">「已隱藏」相簿安全嗎？</a></li>
+  <li><a href="/zh-hant/guides/hidden-photos-iphone">隱藏的照片</a></li>
+  <li><a href="/zh-hant/guides/move-photo-vault-to-new-iphone">保險庫移到新 iPhone</a></li>
+  <li><a href="/zh-hant/guides/photo-vault-lost-photos">保險庫照片不見了</a></li>
+  <li><a href="/zh-hant/guides/keepsafe-alternatives">Keepsafe 替代 App</a></li>
+              <li><a href="/zh-hant/guides/">全部指南</a></li>
+              <li><a href="/features/">Features</a></li>
+  <li><a href="/compare/">Comparisons</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="footer-heading">公司</h2>
+            <ul role="list">
+              <li><a href="/about">關於</a></li>
+              <li><a href="/support">支援</a></li>
+              <li><a href="/privacy">隱私政策</a></li>
+              <li><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener">使用條款</a></li>
+              <li><a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Noxium。由獨立開發者 Inertia Projects 開發。App Store 隱私標籤：未收集資料。</p>
+        <nav class="lang-list" aria-label="語言"><a href="/guides/lock-photos-iphone-face-id" hreflang="en" lang="en">English</a><a href="/de/guides/lock-photos-iphone-face-id" hreflang="de" lang="de">Deutsch</a><a href="/fr/guides/lock-photos-iphone-face-id" hreflang="fr" lang="fr">Français</a><a href="/es/guides/lock-photos-iphone-face-id" hreflang="es" lang="es">Español</a><a href="/pt-br/guides/lock-photos-iphone-face-id" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a><a href="/it/guides/lock-photos-iphone-face-id" hreflang="it" lang="it">Italiano</a><a href="/ja/guides/lock-photos-iphone-face-id" hreflang="ja" lang="ja">日本語</a><a href="/ko/guides/lock-photos-iphone-face-id" hreflang="ko" lang="ko">한국어</a><a href="/zh-hant/guides/lock-photos-iphone-face-id" hreflang="zh-Hant" lang="zh-Hant" aria-current="true">繁體中文</a></nav>
+        <p>Apple、Apple 標誌、iPhone、iPad 和 Face ID 是 Apple Inc. 在美國和其他國家和地區註冊的商標。App Store 是 Apple Inc. 的服務商標。</p>
+      </div>
+    </div>
+  </footer>
+  <!-- /build:footer -->
+
+  <script src="/app.js" defer></script>
+</body>
+</html>

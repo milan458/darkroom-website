@@ -72,7 +72,7 @@
       "updated": "2026-11-14"
     },
     "/guides/how-to-hide-photos-on-iphone": {
-      "source": "2026-10-26",
+      "source": "2026-11-15",
       "title": "Como esconder fotos no iPhone: todos os jeitos (iOS 26)",
       "description": "Todos os jeitos de esconder fotos no iPhone com iOS 26: álbum Itens Ocultos, notas e apps bloqueados e cofres. O que cada um protege e o que não protege.",
       "headline": "Como esconder fotos no iPhone: todos os jeitos e o que cada um protege",
@@ -80,7 +80,7 @@
       "crumb": "Esconder fotos no iPhone",
       "keyword": "como esconder fotos no iphone",
       "published": "2026-11-12",
-      "updated": "2026-11-12"
+      "updated": "2026-11-16"
     },
     "/guides/is-iphone-hidden-album-private": {
       "source": "2026-10-26",
@@ -166,6 +166,17 @@
       "keyword": "app de cofre de fotos é seguro",
       "published": "2026-11-17",
       "updated": "2026-11-17"
+    },
+    "/guides/lock-photos-iphone-face-id": {
+      "source": "2026-10-26",
+      "title": "Como bloquear fotos no iPhone com Face ID ou padrão",
+      "description": "Bloqueie fotos no iPhone: álbum Itens Ocultos, app Fotos com Face ID, notas bloqueadas, Acesso Guiado e apps de cofre com padrão próprio.",
+      "headline": "Como bloquear fotos no iPhone com Face ID, código ou padrão",
+      "summary": "Todos os jeitos de colocar fotos atrás do Face ID ou de um código separado no iPhone, e quando cada um basta.",
+      "crumb": "Bloquear fotos",
+      "keyword": "bloquear fotos iphone",
+      "published": "2026-11-16",
+      "updated": "2026-11-16"
     }
   },
   "facts": [

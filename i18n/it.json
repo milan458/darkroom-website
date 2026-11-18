@@ -72,7 +72,7 @@
       "updated": "2026-11-14"
     },
     "/guides/how-to-hide-photos-on-iphone": {
-      "source": "2026-10-26",
+      "source": "2026-11-15",
       "title": "Come nascondere le foto su iPhone: tutti i metodi (iOS 26)",
       "description": "Tutti i modi per nascondere le foto su iPhone con iOS 26: album Nascosti, note e app bloccate, casseforti. Cosa protegge ogni metodo e cosa no.",
       "headline": "Come nascondere le foto su iPhone: tutti i metodi e cosa protegge ciascuno",
@@ -80,7 +80,7 @@
       "crumb": "Nascondere le foto su iPhone",
       "keyword": "nascondere foto iphone",
       "published": "2026-11-12",
-      "updated": "2026-11-12"
+      "updated": "2026-11-16"
     },
     "/guides/is-iphone-hidden-album-private": {
       "source": "2026-10-26",
@@ -166,6 +166,17 @@
       "keyword": "app cassaforte foto sicure",
       "published": "2026-11-17",
       "updated": "2026-11-17"
+    },
+    "/guides/lock-photos-iphone-face-id": {
+      "source": "2026-10-26",
+      "title": "Come bloccare le foto su iPhone con Face ID o sequenza",
+      "description": "Bloccare le foto su iPhone: album Nascosti, app Foto con Face ID, note protette, Accesso Guidato e app cassaforte con una sequenza propria.",
+      "headline": "Come bloccare le foto su iPhone con Face ID, un codice o una sequenza",
+      "summary": "Tutti i modi per mettere le foto dietro Face ID o un codice separato su iPhone, e quando basta ciascuno.",
+      "crumb": "Bloccare le foto",
+      "keyword": "bloccare foto iphone",
+      "published": "2026-11-16",
+      "updated": "2026-11-16"
     }
   },
   "facts": [
