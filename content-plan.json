@@ -269,7 +269,7 @@
       "path": "/features/encrypted-notes",
       "keyword": "encrypted notes app iphone",
       "cluster": "features",
-      "status": "in-review"
+      "status": "live"
     },
     {
       "order": 28,
@@ -280,7 +280,7 @@
       "cluster": "existing",
       "vaultaire": "https://vaultaire.app/guides/hide-videos-iphone/",
       "note": "Expand; add 2+ in-text links (fails check_content today).",
-      "status": "in-review"
+      "status": "live"
     },
     {
       "order": 29,
@@ -291,7 +291,7 @@
       "cluster": "existing",
       "vaultaire": "https://vaultaire.app/guides/lock-photos-iphone/",
       "note": "Expand; add 2+ in-text links (fails check_content today). Add a section answering 'how to lock hidden photos on iphone' (2,400 worldwide / 1,000 US, KD 8) and link the hidden-photos pillar.",
-      "status": "in-review"
+      "status": "live"
     },
     {
       "order": 30,
@@ -302,7 +302,7 @@
       "cluster": "existing",
       "vaultaire": "https://vaultaire.app/guides/best-photo-vault-apps-iphone/",
       "note": "Refresh from data/competitors.json; add per-app verdicts; link every /compare/ page as they go live. Vaultaire's best-of page wins 'vault apps for iphone' (590, position 4) and 'photo vault for iphone' (210): use that wording in the intro and headings.",
-      "status": "in-review"
+      "status": "live"
     },
     {
       "order": 31,
@@ -313,7 +313,7 @@
       "cluster": "existing",
       "vaultaire": "https://vaultaire.app/guides/forgot-photo-vault-password/",
       "note": "Expand app-by-app section; add 2+ in-text links (fails check_content today).",
-      "status": "todo"
+      "status": "in-review"
     },
     {
       "order": 32,
@@ -323,7 +323,7 @@
       "keyword": "move photo vault to new iphone",
       "cluster": "existing",
       "note": "Add 2+ in-text links (fails check_content today).",
-      "status": "todo"
+      "status": "in-review"
     },
     {
       "order": 33,
@@ -333,7 +333,7 @@
       "keyword": "decoy vault",
       "cluster": "existing",
       "note": "Add 2+ in-text links (fails check_content today); link /features/decoy-vault.",
-      "status": "todo"
+      "status": "in-review"
     },
     {
       "order": 34,
@@ -343,7 +343,7 @@
       "keyword": "photo vault no subscription",
       "cluster": "existing",
       "note": "Add 2+ in-text links (fails check_content today).",
-      "status": "todo"
+      "status": "in-review"
     },
     {
       "order": 35,
