@@ -179,7 +179,7 @@
       "updated": "2026-11-14"
     },
     "/guides/forgot-photo-vault-password": {
-      "source": "2026-11-11",
+      "source": "2026-11-19",
       "title": "忘記照片保險庫密碼？解鎖與復原方法",
       "description": "打不開照片保險庫 App？各 App 的復原方式、應該先試什麼，以及為了不弄丟照片不能做的事。",
       "headline": "忘記照片保險庫的密碼或 PIN 碼？你還能做的事",
@@ -187,10 +187,10 @@
       "crumb": "忘記保險庫密碼",
       "keyword": "照片保險庫 忘記密碼",
       "published": "2026-11-15",
-      "updated": "2026-11-15"
+      "updated": "2026-11-19"
     },
     "/guides/move-photo-vault-to-new-iphone": {
-      "source": "2026-10-26",
+      "source": "2026-11-19",
       "title": "把照片保險庫移到新 iPhone，照片不弄丟",
       "description": "換手機時保險庫 App 為什麼會弄丟照片，以及移轉前、移轉中、移轉後的逐步檢查清單，讓你安全把保險庫移到新 iPhone。",
       "headline": "把照片保險庫移到新 iPhone，一張照片都不弄丟",
@@ -198,7 +198,7 @@
       "crumb": "保險庫移到新 iPhone",
       "keyword": "照片保險庫 換手機 移轉",
       "published": "2026-11-15",
-      "updated": "2026-11-15"
+      "updated": "2026-11-19"
     },
     "/guides/hidden-photos-iphone": {
       "source": "2026-11-15",

@@ -41,7 +41,7 @@
   <meta property="og:image:alt" content="Noxium photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
   <meta property="og:locale" content="ja_JP">
   <meta property="article:published_time" content="2026-11-15">
-  <meta property="article:modified_time" content="2026-11-15">
+  <meta property="article:modified_time" content="2026-11-19">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="写真保管庫を新しい iPhone に移す方法">
   <meta name="twitter:description" content="機種変更で保管庫アプリの写真が消える理由と、移行の前・最中・後に確認する手順。写真を失わずに新しい iPhone へ移すためのチェックリストです。">
@@ -90,7 +90,7 @@
         "mainEntityOfPage": "https://getnoxium.app/ja/guides/move-photo-vault-to-new-iphone",
         "image": "https://getnoxium.app/assets/guides/noxium-backup.jpg",
         "datePublished": "2026-11-15",
-        "dateModified": "2026-11-15",
+        "dateModified": "2026-11-19",
         "author": {
           "@id": "https://getnoxium.app/#org"
         },
@@ -233,7 +233,7 @@
         <p class="eyebrow"><span class="dot dot-ink" aria-hidden="true"></span>ガイド · 新しい iPhone</p>
         <h1>写真保管庫を新しい iPhone に移す方法：写真を失わないために</h1>
         <!-- build:byline -->
-        <p class="byline"><span>著者：<a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>最終更新日：<time datetime="2026-11-15">2026年11月15日</time></span></p>
+        <p class="byline"><span>著者：<a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>公開日：<time datetime="2026-11-15">2026年11月15日</time></span><span aria-hidden="true">·</span><span>最終更新日：<time datetime="2026-11-19">2026年11月19日</time></span></p>
         <!-- /build:byline -->
         <div class="answer">
           <span class="answer-label">結論</span>
@@ -271,9 +271,18 @@
           </table>
         </div>
         <p>バックアップの設定が見つからない場合は、写真は古い iPhone にしかないと考えてください。機種変更の前に開発元に問い合わせましょう。</p>
+        <p>人気の保管庫アプリが App Store の掲載情報でバックアップについて書いていること（2026 年 10 月・11 月に確認）：</p>
+        <ul>
+          <li><strong>Private Photo Vault：</strong>独自のクラウド（Cloud Vault）で、別の Cloud Vault パスワードで保護されます。<a href="/compare/private-photo-vault">レビュー</a>もご覧ください。</li>
+          <li><strong>Keepsafe：</strong>Keepsafe Private Cloud で、Keepsafe のアカウントに紐づきます。<a href="/compare/keepsafe">レビュー</a>もご覧ください。</li>
+          <li><strong>Calculator#：</strong>iCloud、Dropbox、Google Drive、OneDrive にバックアップします。<a href="/compare/calculator-hide-photos">レビュー</a>もご覧ください。</li>
+          <li><strong>Hide it Pro：</strong>独自のクラウドストレージで、有料プランなら容量が増えます。<a href="/compare/hide-it-pro">レビュー</a>もご覧ください。</li>
+          <li><strong>Privault</strong> と <strong>Secret Photo Vault – Lock Photos：</strong>バックアップの説明はありません。Secret Photo Vault はデータがデバイス内にとどまるとしています。ステップ 2 の書き出しを前提にしましょう。</li>
+          <li><strong>Vaultaire</strong> と <strong>Noxium</strong>（私たちが開発しているアプリ）：あなた自身の iCloud に暗号化したバックアップを置き、パターンで復元します。<a href="/compare/vaultaire">Vaultaire のレビュー</a>もご覧ください。</li>
+        </ul>
 
         <h2 id="step-2">ステップ 2：かけがえのないものは別にコピーを書き出す</h2>
-        <p>特に大事な写真やビデオを、Mac の「ファイル」や暗号化した外付けドライブなど、自分で管理できる場所に書き出します。元の画質や日付が保たれているかも確認しましょう。書き出したコピーは保管庫による暗号化がかかっていないので、人目につかない場所に置き、移行が終わったら削除してください。</p>
+        <p>特に大事な写真やビデオを、Mac の「ファイル」や暗号化した外付けドライブなど、自分で管理できる場所に書き出します。元の画質や日付が保たれているかも確認しましょう。私たちが開発している Noxium の場合は<a href="/features/import-export">読み込みと書き出し</a>をご覧ください。書き出したコピーは保管庫による暗号化がかかっていないので、人目につかない場所に置き、移行が終わったら削除してください。</p>
 
         <h2 id="step-3">ステップ 3：バックアップが完了しているか確かめる</h2>
         <ol class="steps">
@@ -314,6 +323,14 @@
           <figcaption>Noxium がアップロードするのは暗号化したデータだけで、保存先はあなた自身の iCloud です。バックアップは iCloud のストレージを使います。</figcaption>
         </figure>
         <p class="inline-cta"><a href="https://apps.apple.com/app/apple-store/id6824616093" data-cta="inline" data-label-waitlist="Noxium を無料で試す：ベータに参加 →" data-label-live="Noxium を App Store で無料ダウンロード →">Noxium を App Store で無料ダウンロード →</a></p>
+
+        <h2 id="keep-both">古いデバイスと新しいデバイスの両方に保管庫を残せる？</h2>
+        <p>アプリがデバイス間で同期する場合だけです。ほとんどの保管庫は 1 台の iPhone にバックアップを復元するもので、2 台を同じ状態に保つわけではありません。</p>
+        <ul>
+          <li><strong>古い iPhone を売る・譲る場合：</strong>新しい iPhone で復元し、すべて確認してから（ステップ 6）、古い iPhone を消去します（ステップ 7）。</li>
+          <li><strong>iPhone と iPad など、両方を使い続ける場合：</strong>アプリの設定でバックアップだけでなく同期を探しましょう。Noxium では <a href="/features/iphone-ipad-sync">iPhone と iPad の同期</a>は Pro の機能です。無料プランでもデバイスごとにバックアップされますが、変更はデバイス間で反映されません。</li>
+          <li><strong>別の Apple アカウントの場合：</strong>あなた自身の iCloud にあるバックアップは、同じ Apple アカウントでサインインしたデバイスでしか復元できません。</li>
+        </ul>
 
         <h2 id="already-missing">すでに写真が足りない場合は？</h2>
         <p>どちらの iPhone でも保管庫アプリを削除したり再インストールしたりせず、古い iPhone が手元にあるなら消去しないでください。古い iPhone でまだ保管庫が開けるか確認し、アプリの設定に復元の項目がないか探し、アプリに Web 版のログインがないか調べ、アプリのバージョンと経緯を添えて開発元に連絡しましょう。再インストールすると、まだ復旧できたかもしれないローカルのファイルが消えることがあります。<a href="/ja/guides/photo-vault-lost-photos">保管庫アプリで写真が消えたときの対処法</a>もご覧ください。</p>
@@ -367,6 +384,7 @@
             <li><a href="#step-6">6. 復元して確認</a></li>
             <li><a href="#step-7">7. 古い iPhone を消去</a></li>
             <li><a href="#noxium">Noxium を移す</a></li>
+            <li><a href="#keep-both">両方のデバイスに残す</a></li>
             <li><a href="#faq">よくある質問</a></li>
           </ol>
         </nav>

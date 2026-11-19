@@ -41,7 +41,7 @@
   <meta property="og:image:alt" content="Noxium photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
   <meta property="og:locale" content="zh_TW">
   <meta property="article:published_time" content="2026-11-15">
-  <meta property="article:modified_time" content="2026-11-15">
+  <meta property="article:modified_time" content="2026-11-19">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="把照片保險庫移到新 iPhone，照片不弄丟">
   <meta name="twitter:description" content="換手機時保險庫 App 為什麼會弄丟照片，以及移轉前、移轉中、移轉後的逐步檢查清單，讓你安全把保險庫移到新 iPhone。">
@@ -90,7 +90,7 @@
         "mainEntityOfPage": "https://getnoxium.app/zh-hant/guides/move-photo-vault-to-new-iphone",
         "image": "https://getnoxium.app/assets/guides/noxium-backup.jpg",
         "datePublished": "2026-11-15",
-        "dateModified": "2026-11-15",
+        "dateModified": "2026-11-19",
         "author": {
           "@id": "https://getnoxium.app/#org"
         },
@@ -233,7 +233,7 @@
         <p class="eyebrow"><span class="dot dot-ink" aria-hidden="true"></span>指南 · 新 iPhone</p>
         <h1>把照片保險庫移到新 iPhone，一張照片都不弄丟</h1>
         <!-- build:byline -->
-        <p class="byline"><span>作者：<a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>最後更新：<time datetime="2026-11-15">2026年11月15日</time></span></p>
+        <p class="byline"><span>作者：<a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>發表於<time datetime="2026-11-15">2026年11月15日</time></span><span aria-hidden="true">·</span><span>最後更新：<time datetime="2026-11-19">2026年11月19日</time></span></p>
         <!-- /build:byline -->
         <div class="answer">
           <span class="answer-label">簡短回答</span>
@@ -271,9 +271,18 @@
           </table>
         </div>
         <p>如果找不到任何備份設定，就當作照片只存在舊手機上。換手機之前先聯絡開發者。</p>
+        <p>以下是熱門保險庫 App 在 App Store 頁面上對備份的說明，於 2026 年 10 月和 11 月查詢：</p>
+        <ul>
+          <li><strong>Private Photo Vault：</strong>自家的雲端（Cloud Vault），以另一組 Cloud Vault 密碼保護。請看我們的<a href="/compare/private-photo-vault">評測</a>。</li>
+          <li><strong>Keepsafe：</strong>Keepsafe Private Cloud，綁定你的 Keepsafe 帳號。請看我們的<a href="/compare/keepsafe">評測</a>。</li>
+          <li><strong>Calculator#：</strong>備份到 iCloud、Dropbox、Google Drive 或 OneDrive。請看我們的<a href="/compare/calculator-hide-photos">評測</a>。</li>
+          <li><strong>Hide it Pro：</strong>自家的雲端儲存空間，付費方案有更多空間。請看我們的<a href="/compare/hide-it-pro">評測</a>。</li>
+          <li><strong>Privault</strong> 和 <strong>Secret Photo Vault – Lock Photos：</strong>沒有說明備份；Secret Photo Vault 表示資料只留在裝置上。請以步驟 2 的匯出為準。</li>
+          <li><strong>Vaultaire</strong> 和 <strong>Noxium</strong>（我們開發的 App）：加密備份存在你自己的 iCloud，用你的圖形回復。請看我們的 <a href="/compare/vaultaire">Vaultaire 評測</a>。</li>
+        </ul>
 
         <h2 id="step-2">步驟 2：把無法取代的內容另外匯出一份</h2>
-        <p>把最重要的照片和影片匯出到你自己能掌控的地方，例如 Mac 上的「檔案」或加密的外接硬碟。確認匯出後保留了原始畫質和日期。匯出的副本不再受保險庫加密保護，請放在私密的地方，移轉完成後就刪除。</p>
+        <p>把最重要的照片和影片匯出到你自己能掌控的地方，例如 Mac 上的「檔案」或加密的外接硬碟。確認匯出後保留了原始畫質和日期。在我們開發的 Noxium 中，請看<a href="/features/import-export">匯入與匯出</a>。匯出的副本不再受保險庫加密保護，請放在私密的地方，移轉完成後就刪除。</p>
 
         <h2 id="step-3">步驟 3：確認備份已經完成</h2>
         <ol class="steps">
@@ -314,6 +323,14 @@
           <figcaption>Noxium 只上傳加密資料，而且是上傳到你自己的 iCloud。備份會占用你的 iCloud 儲存空間。</figcaption>
         </figure>
         <p class="inline-cta"><a href="https://apps.apple.com/app/apple-store/id6824616093" data-cta="inline" data-label-waitlist="免費試用 Noxium：加入測試 →" data-label-live="在 App Store 免費下載 Noxium →">在 App Store 免費下載 Noxium →</a></p>
+
+        <h2 id="keep-both">可以讓舊裝置和新裝置都保有保險庫嗎？</h2>
+        <p>只有在 App 支援跨裝置同步時才行。大多數保險庫只會把備份回復到一支手機上，不會讓兩台裝置保持一致。</p>
+        <ul>
+          <li><strong>要賣掉或送人舊 iPhone：</strong>在新 iPhone 上回復，檢查一切（步驟 6），再清除舊 iPhone（步驟 7）。</li>
+          <li><strong>兩台都要繼續用，例如 iPhone 和 iPad：</strong>在 App 的設定裡找「同步」，而不只是備份。在 Noxium 中，<a href="/features/iphone-ipad-sync">iPhone 與 iPad 同步</a>屬於 Pro；免費方案每台裝置都會備份，但變更不會在裝置之間傳遞。</li>
+          <li><strong>另一個 Apple 帳號：</strong>存在你自己 iCloud 的備份，只能回復到登入同一個 Apple 帳號的裝置。</li>
+        </ul>
 
         <h2 id="already-missing">如果照片已經不見了呢？</h2>
         <p>不要在任何一支手機上刪除或重新安裝保險庫 App，如果舊 iPhone 還在，也不要清除它。看看舊手機是否還能打開保險庫，在 App 設定裡找回復選項，看看 App 有沒有自己的網頁登入，再寫信給開發者，附上 App 版本和發生的經過。重新安裝可能會刪掉也許還救得回來的本機檔案。另請參閱<a href="/zh-hant/guides/photo-vault-lost-photos">保險庫 App 弄丟照片時該怎麼辦</a>。</p>
@@ -367,6 +384,7 @@
             <li><a href="#step-6">6. 回復並檢查</a></li>
             <li><a href="#step-7">7. 再清除舊手機</a></li>
             <li><a href="#noxium">移轉 Noxium</a></li>
+            <li><a href="#keep-both">兩台裝置都保留</a></li>
             <li><a href="#faq">常見問題</a></li>
           </ol>
         </nav>
