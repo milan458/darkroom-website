@@ -1062,11 +1062,11 @@ Related
 # How to move a private photo vault to a new iPhone without losing photos
 
 URL: https://getnoxium.app/guides/move-photo-vault-to-new-iphone
-Last updated: 2026-10-26
+Last updated: 2026-11-19
 
 Guide · New iPhone
 ## How to move a private photo vault to a new iPhone without losing photos
-By Inertia Projects · Published 22 October 2026 · Last updated 26 October 2026
+By Inertia Projects · Published 22 October 2026 · Last updated 19 November 2026
 Short answer
 Before you switch, find out how your vault app backs up, make sure that backup is complete, and export a copy of anything you can't replace. Many vault apps keep photos only on the phone or in their own cloud, so a normal iPhone transfer brings back the app but not the photos. Don't erase the old iPhone until every photo opens on the new one.
 Switching phones is when vault photos most often disappear. In the most recent one- and two-star App Store reviews of eight popular vault apps, which we read in October 2026, backup and new-phone transfer problems came up 31 times, and lost or missing photos 47 times. Most of those losses are avoidable if you check a few things before the old phone is wiped. This checklist works for any vault app.
@@ -1086,6 +1086,13 @@ The developer's own cloud Your account login, often a paid plan Lost login, laps
 Your own iCloud, managed by the app The same Apple Account, plus the vault's code Incomplete upload if iCloud storage is full.
 Manual export file The file, and its password if it's encrypted Only as current as your last export.
 If you can't find any backup setting, assume the photos exist only on the old phone. Contact the developer before you switch.
+Here is what popular vault apps say about backup on their App Store listings, checked October and November 2026:
+- Private Photo Vault: its own Cloud Vault, protected by a separate Cloud Vault Password. See our review .
+- Keepsafe: Keepsafe Private Cloud, tied to your Keepsafe account. See our review .
+- Calculator#: backup to iCloud, Dropbox, Google Drive or OneDrive. See our review .
+- Hide it Pro: its own cloud storage, with more space on a paid plan. See our review .
+- Privault and Secret Photo Vault – Lock Photos: no backup described; Secret Photo Vault says data stays on the device. Plan on Step 2's export.
+- Vaultaire and Noxium (which we make): an encrypted backup in your own iCloud, restored with your pattern. See our Vaultaire review .
 ### Step 2: Export a safety copy of what you can't replace
 Export your most important photos and videos to somewhere you control, such as Files on a Mac or an encrypted external drive. Check the export keeps full quality and dates; in Noxium, which we make, see import and export . Exported copies are no longer encrypted by the vault, so keep them somewhere private and delete them once the move is done.
 ### Step 3: Make sure the backup is complete
@@ -1113,6 +1120,11 @@ Noxium, which we make, is built for this moment. Its vault files are deliberatel
 - Open other vaults, such as a decoy, by drawing their patterns. They stay in iCloud until you do.
 Noxium backs up only encrypted data, to your own iCloud. The backup counts toward your iCloud storage.
 Get Noxium free on the App Store →
+### Can you keep the vault on both the old and new device?
+Only if the app syncs between devices. Most vaults restore a backup onto one phone; they don't keep two devices in step.
+- Selling or giving away the old iPhone: restore on the new one, check everything (Step 6), then erase the old one (Step 7).
+- Keeping both, such as an iPhone and an iPad: look for sync in the app's settings, not just backup. In Noxium, iPhone and iPad sync is part of Pro; on the free plan each device backs up, but changes don't move between them.
+- A second Apple Account: backups in your own iCloud only restore on devices signed in to the same Apple Account.
 ### What if photos are already missing?
 Don't delete or reinstall the vault app on either phone, and don't erase the old iPhone if you still have it. Check whether the old phone still opens the vault, look for a restore option in the app's settings, check whether the app has its own website login, and email the developer with your app version and what happened. Reinstalling can delete local files that might still be recoverable.
 New phone? Everything comes back.
@@ -1463,11 +1475,11 @@ Related
 # What is a decoy vault, and does it actually protect you?
 
 URL: https://getnoxium.app/guides/what-is-a-decoy-vault
-Last updated: 2026-10-26
+Last updated: 2026-11-19
 
 Guide · Decoy vaults
 ## What is a decoy vault, and does it actually protect you?
-By Inertia Projects · Published 22 October 2026 · Last updated 26 October 2026
+By Inertia Projects · Published 22 October 2026 · Last updated 19 November 2026
 Short answer
 A decoy vault is a second, harmless vault inside a photo vault app that opens when you enter a different PIN, password or pattern. If someone pressures you to open the app, you open the decoy, and they see ordinary photos instead of your private ones. It helps in a tense moment, but it isn't a guarantee: it works best when nothing in the app reveals that a second vault exists.
 Picture someone who knows you use a vault app (a partner, a parent, someone at a border) saying "open it". Refusing makes things worse. A decoy vault gives you a third option: open it, and show them something harmless. Here's how decoy vaults work, the two very different ways apps build them, and their honest limits.
@@ -1489,8 +1501,8 @@ A decoy buys you a calm moment; it doesn't make your real photos disappear.
 A decoy hides your vault; an emergency erase code destroys it. Some apps offer a third code that opens a harmless vault and, at the same time, quietly deletes the others. That protects the photos from being seen, but they're gone. If the app can also delete the cloud backup, there's no way back.
 Only set up an erase code if losing those photos is better than them being seen, and keep a copy elsewhere if you can't afford to lose them.
 ### Which photo vault apps have a decoy vault?
-From their App Store listings on 22 October 2026:
-Decoy features named in each app's US App Store description, 22 October 2026
+From their App Store listings, checked 22 October to 15 November 2026. App names link to our full reviews where we have one.
+Decoy features named in each app's US App Store description, checked 22 October to 15 November 2026
 App What the listing says
 Noxium Our app A second pattern opens a separate encrypted vault; 1 free, more with Pro. Emergency erase pattern with Pro.
 Vaultaire A different pattern opens a different vault; duress vault with Pro.
@@ -1500,8 +1512,18 @@ PV – Secret Photo Album Fake password.
 Safe Lock Fake password that opens a fake gallery.
 KYMS Fake PIN for a decoy vault.
 Privault A secondary passcode opens a secondary folder.
+Secret Photo Vault – Lock Photos Decoy accounts with their own passwords.
+Hide it Pro No decoy; an escape code makes the app look empty.
+Calculator# No decoy; a panic switch jumps to another app.
 Apple Hidden album No decoy.
-Listings don't say which kind of decoy they are, so test it: open the decoy and look through every screen, including settings. If anything mentions another vault, so will the person looking. See all 17 apps in our comparison . Two more take different approaches: Secret Photo Vault has decoy accounts with their own passwords, and Hide it Pro has an escape code that opens the app looking empty.
+Listings don't say which kind of decoy they are, so test it: open the decoy and look through every screen, including settings. If anything mentions another vault, so will the person looking. See all 17 apps in our comparison .
+### How do you test a decoy before you need it?
+Open it as if you were the other person, and look for anything that gives the real vault away. Five minutes now saves a bad moment later.
+- Open the decoy with its own code, from a locked app.
+- Go through every screen , settings included. Anything that names another vault, counts more items than you can see, or offers to "switch vault" is a giveaway.
+- Check the backup or storage screens. A total that's far larger than the decoy's contents invites questions.
+- Try Face ID. If it opens the real vault, leave Face ID off or practise using the decoy code under pressure.
+- Add a few new photos now and then, so the decoy's latest items aren't months old.
 ### How do you set up a decoy vault well?
 - Pick a code you won't mix up with your real one, but can recall under stress.
 - Fill it with real, dull photos: food, a trip, screenshots, a pet. Dozens, not three.
@@ -1515,6 +1537,8 @@ Noxium's decoy vault is a separate encrypted vault with its own pattern, include
 Download on the App Store
 Available on the App Store for iPhone and iPad.
 ### Questions people ask
+Can you have more than one decoy vault?
+In some apps. Noxium's free plan includes 1 decoy vault and Pro adds as many as you like; other apps' listings usually describe a single decoy code.
 What is a fake PIN in a photo vault app?
 A second PIN that opens a different, harmless set of photos instead of your private ones. It's another name for a decoy vault.
 Can someone tell I'm using a decoy vault?
@@ -1616,34 +1640,46 @@ Related
 # Photo vault apps without a subscription or ads
 
 URL: https://getnoxium.app/guides/photo-vault-no-subscription-no-ads
-Last updated: 2026-11-12
+Last updated: 2026-11-19
 
 Guide · Pricing
 ## Photo vault apps without a subscription or ads
-By Inertia Projects · Published 22 October 2026 · Last updated 12 November 2026
+By Inertia Projects · Published 22 October 2026 · Last updated 19 November 2026
 Short answer
 Several iPhone photo vaults sell a one-time purchase instead of, or alongside, a subscription: on the US App Store in October 2026 these include Vaultaire ($39.99 lifetime), Obscura ($39.99), Noxium ($39.99, which we make), Privault ($45.99) and PV ($41.99). Ads are a separate question: Calculator#, Privault, KYMS and PV say their free versions have ads or sell ad removal. The free options with no purchase at all are Apple's Hidden album and locked notes.
 Pricing is the most common complaint in vault app reviews. In the most recent one- and two-star reviews of eight popular vault apps, which we read in October 2026, subscriptions and paywalls came up 67 times, more than lost photos. Here's which vaults let you pay once, which show ads, and the question that matters most: what happens to your photos if you stop paying.
 ### Why does a vault's pricing matter more than most apps'?
 Because the app holds your photos. If a music app's subscription lapses, you lose music you can stream elsewhere. If a vault limits access when you stop paying, your own photos are on the other side of the paywall. Check the "if I stop paying" rule before you move a library in.
 ### Which photo vaults have a one-time purchase?
-These apps list an in-app purchase named lifetime, permanent or similar on their US App Store page (22 October 2026). Names are the developers'; we haven't bought them.
-One-time purchases listed on US App Store pages, 22 October 2026
+These apps list an in-app purchase named lifetime, permanent or similar on their US App Store page, rechecked 11–16 November 2026. Names are the developers'; we haven't bought them.
+One-time purchases listed on US App Store pages, checked 11–16 November 2026
 App One-time option (as listed) Subscriptions also listed
 Noxium Our app Pro Lifetime $39.99 $2.99/week, $17.99/year
-Vaultaire Pro Lifetime $39.99 Weekly, monthly, annual
+Vaultaire Pro Lifetime $39.99 $1.99/week, $5.99/month, $19.99/year
 Obscura Obscura Pro $39.99 $6.99/month, $29.99/year
 PV – Secret Photo Album Permanent Membership $41.99 Monthly, yearly, cloud tiers
 Privault Permanent Pro $45.99 $3.49/month, $24.99/year
 MaxVault Lifetime Premium $79.99–$99.99 $7.99/month, $29.99/year
 Encamera Lifetime $99.99; Limited Lifetime $49.99 Weekly, monthly, yearly
 Secret Photo Vault – Lock Photos Pro Version $6.99 None listed
-Keepsafe, SPV and HiddenVault list Premium plans and subscriptions but no purchase named lifetime or permanent. Private Photo Vault lists Premium plans and an "Upgrade" for $39.99; its listing doesn't say whether that is one-time. Full price ranges for 17 apps are in our comparison .
+Calculator Lock - Secure Vault Pro (Lifetime) $29.99 $1.99/week, $14.99/year
+Keepsafe and SPV list Premium plans and subscriptions but no purchase named lifetime or permanent, and HiddenVault's listing showed no in-app purchases on 11 November. Hide it Pro sells add-ons instead of a plan: Cloud Storage for $9.99 and Password Reset for $4.99 (see our Hide it Pro review ). Private Photo Vault lists Premium plans and an "Upgrade" for $39.99; its listing doesn't say whether that is one-time. Full price ranges for 17 apps are in our comparison .
+### Is a lifetime purchase worth it?
+If you'll keep the app for more than about two years, usually yes. Divide the one-time price by the yearly price to see when it pays for itself.
+One-time price divided by yearly price, from the table above
+App Once Per year Pays for itself after
+Vaultaire $39.99 $19.99 About 2 years
+Obscura $39.99 $29.99 About 1 year 4 months
+Privault $45.99 $24.99 About 1 year 10 months
+Calculator Lock $29.99 $14.99 About 2 years
+Noxium (ours) $39.99 $17.99 About 2 years 3 months
+Two things matter more than the maths. First, what a lifetime purchase covers: some apps sell cloud storage separately. Second, what happens if you stop paying a subscription; the next sections cover that. Prices differ by country, so check the App Store in your region.
 ### Which photo vault apps show ads?
 From each developer's own App Store description and purchase list:
 - Calculator# says it is "free with ads".
 - Privault sells "Remove ADs" for $2.99 (see our Privault review ).
 - KYMS sells "Remove advertising" for $4.99.
+- Calculator Lock - Secure Vault sells "Remove Ads" for $3.99. More calculator-style apps are in calculator vault apps .
 - PV – Secret Photo Album lists "Ad Free" as a paid feature.
 - Noxium, Vaultaire and Encamera say no ads.
 Ads matter more than annoyance here: ad networks are a common reason an app's privacy label lists "Data Used to Track You". In our comparison, 9 of 17 vault apps reported tracking data.
@@ -1691,11 +1727,11 @@ Related
 # Forgot your photo vault password or PIN? What you can still do
 
 URL: https://getnoxium.app/guides/forgot-photo-vault-password
-Last updated: 2026-11-11
+Last updated: 2026-11-19
 
 Guide · Locked out
 ## Forgot your photo vault password or PIN? What you can still do
-By Inertia Projects · Published 22 October 2026 · Last updated 11 November 2026
+By Inertia Projects · Published 22 October 2026 · Last updated 19 November 2026
 Short answer
 First, don't delete or reinstall the app; that can erase the vault for good. Then find out how your app handles recovery: some reset by email, some use a recovery phrase or key you saved at setup, and some truly encrypted vaults can't be opened by anyone without the code. Look in the app's lock screen and settings, check your email and notes for a recovery code, and contact the developer.
 Getting locked out of a vault app is one of the most common complaints in vault reviews: in the most recent one- and two-star reviews of eight popular vault apps, which we read in October 2026, it came up 27 times. What you can do depends almost entirely on how the app was built, so this guide starts with what's safe to try, then explains each kind of recovery.
@@ -1720,11 +1756,15 @@ Recovery phrase or key you keep Enter the phrase or key you saved at setup Nobod
 No recovery Only the code opens it Maximum privacy, no second chance
 An app that can reset your code by email holds, or can rebuild, the key to your vault. That's not automatically bad, but it means your photos are only as private as your email account.
 ### How do popular vault apps handle a forgotten code?
-From each developer's own App Store listing or help pages (October 2026):
+From each developer's own App Store listing or help pages, checked October and November 2026. Full reviews are linked where we've written one.
 - PV – Secret Photo Album: set a recovery email in the app's settings; it's used if you forget the passcode.
 - Keepsafe: account-based, tied to your email. Its help center covers losing access to that email ( Keepsafe Help Center ). More in our Keepsafe review .
-- Hide it Pro: lists a "Password Reset" in-app purchase for $4.99.
-- Calculator#: its listing describes "Lost Password Recovery".
+- Hide it Pro: lists a "Password Reset" in-app purchase for $4.99. See our Hide it Pro review .
+- Calculator#: recovery through an email you register in the app. It's a safety net, but anyone with access to that email may be able to use it too. See our Calculator# review .
+- Private Photo Vault: the listing doesn't describe recovery for the app lock. It warns that a forgotten Cloud Vault Password means losing access to your Cloud Vault data. See our Private Photo Vault review .
+- Privault: the listing doesn't say what happens if you forget the passcode. Contact the developer before you need it; see our Privault review .
+- Secret Photo Vault – Lock Photos: an optional security question can reset the password, if you set one up. See our Secret Photo Vault review .
+- Vaultaire: a recovery sentence you save at setup, which can be viewed again later from the open vault's settings. See our Vaultaire review .
 - Obscura: says plainly that if you forget your password, your photos are gone, with no reset or recovery email.
 - Noxium (which we make): no reset by anyone, including us or Apple. At setup you write down a recovery phrase ; on the lock screen, tap "Forgot your pattern?", enter the phrase, and it opens your main vault.
 Noxium asks you to write down a recovery phrase at setup. It's the only spare key.
@@ -1732,6 +1772,16 @@ Get Noxium free on the App Store →
 ### What if you forgot your iPhone passcode (Hidden album)?
 Apple's Hidden album opens with Face ID or your iPhone passcode. If Face ID still works, it still opens. If you changed your passcode in the last 72 hours, iOS 17 and later let you use the previous one from the lock screen's "Forgot Passcode?" option.
 Otherwise, the only way back is to erase the iPhone with a computer or in Recovery Mode, then restore from a backup ( Apple: reset your iPhone and passcode ). Photos in iCloud Photos come back when you sign in again; anything that was only on the phone and not in a backup is lost.
+### Which recovery method is safest?
+The one only you can use. Each kind of recovery trades convenience against who else could get in.
+Ways vault apps let you back in after a forgotten code
+Method Who else could use it Example from the list above
+Email reset Anyone with access to that email account Calculator#, PV, Keepsafe
+Security question Anyone who knows or can guess the answer Secret Photo Vault – Lock Photos
+Paid reset Depends on how the developer verifies you Hide it Pro
+Recovery phrase you keep Only someone who finds your written phrase Noxium, Vaultaire
+No recovery Nobody, including you Obscura
+If the developer can reset your code, the developer, or someone who gets into your email, can in principle get in too. A recovery phrase avoids that, but only if you write it down and keep it somewhere safe. For how a phrase opens an encrypted vault, see how encrypted photo vaults work .
 ### How do you avoid getting locked out next time?
 - Save the code in Apple's Passwords app or a password manager, with a note of which app it's for.
 - Set up recovery now, whatever your app offers, and test it once.
@@ -1742,6 +1792,8 @@ Noxium has you write down a recovery phrase at setup. It opens your vault if you
 Download on the App Store
 Available on the App Store for iPhone and iPad.
 ### Questions people ask
+Is a security question a safe way to recover a vault?
+It's the weakest option. Answers such as a pet's name or a first school are often easy to guess or find. If your app offers one, use an answer nobody could know.
 Can a photo vault app reset my password?
 Only if it was built that way, usually through your email or an account. Vaults that encrypt with a key only you hold can't reset it; they rely on a recovery phrase or key you saved.
 Can I recover a vault if I deleted the app?

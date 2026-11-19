@@ -279,7 +279,7 @@
       "description": "Why vault apps lose photos when you switch phones, and a step-by-step checklist to move yours safely: before, during and after the transfer.",
       "summary": "A before-during-after checklist for moving any photo vault app to a new iPhone, and why vault photos go missing.",
       "published": "2026-10-22",
-      "updated": "2026-10-26",
+      "updated": "2026-11-19",
       "priority": "0.8",
       "image": "/assets/guides/noxium-backup.jpg"
     },
@@ -372,7 +372,7 @@
       "description": "A decoy vault opens a second, harmless set of photos when you enter a different code. How decoy vaults work, the two kinds, and their limits.",
       "summary": "How decoy vaults and fake PINs work in photo vault apps, the two kinds, and what they can't do.",
       "published": "2026-10-22",
-      "updated": "2026-10-26",
+      "updated": "2026-11-19",
       "priority": "0.7",
       "image": "/assets/guides/noxium-decoy.jpg"
     },
@@ -405,10 +405,10 @@
       "related": ["/best-photo-vault-apps-iphone", "/guides/keepsafe-alternatives", "/guides/are-photo-vault-apps-safe", "/guides/vaultaire-vs-keepsafe"],
       "title": "Photo Vault Apps Without Subscriptions or Ads (2026)",
       "headline": "Photo vault apps without a subscription or ads",
-      "description": "Which iPhone photo vault apps offer a one-time purchase, which show ads, and what free plans include, from App Store listings in October 2026.",
+      "description": "Which iPhone photo vault apps offer a one-time purchase, which show ads, and what free plans include, from App Store listings in November 2026.",
       "summary": "Which vault apps sell a one-time purchase, which have ads, and what happens to your photos if you stop paying.",
       "published": "2026-10-22",
-      "updated": "2026-11-12",
+      "updated": "2026-11-19",
       "priority": "0.7",
       "image": "/assets/guides/noxium-promises.jpg"
     },
@@ -426,7 +426,7 @@
       "description": "Locked out of a photo vault app? How to unlock it with the recovery each app offers, what to try first, and what not to do so you don't lose the photos.",
       "summary": "What to do when you forget a vault app's PIN, password or pattern, and how each kind of recovery works.",
       "published": "2026-10-22",
-      "updated": "2026-11-11",
+      "updated": "2026-11-19",
       "priority": "0.7",
       "image": "/assets/guides/noxium-recovery.jpg"
     },
