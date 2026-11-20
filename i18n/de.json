@@ -199,6 +199,17 @@
       "keyword": "videos verstecken iphone",
       "published": "2026-11-18",
       "updated": "2026-11-18"
+    },
+    "/guides/how-encrypted-photo-vaults-work": {
+      "source": "2026-10-26",
+      "title": "Wie funktioniert ein verschlüsselter Foto-Tresor?",
+      "description": "Was Verschlüsselung im Foto-Tresor heißt: Schlüssel, Argon2id, AES-256-GCM und Backups, einfach erklärt. Und wie du Tresore erkennst, die nur verstecken.",
+      "headline": "So funktionieren verschlüsselte Foto-Tresore, einfach erklärt",
+      "summary": "Schlüssel, Schlüsselableitung, AES-256-GCM und verschlüsselte Backups, ohne Fachchinesisch erklärt.",
+      "crumb": "So funktioniert Verschlüsselung",
+      "keyword": "foto tresor verschlüsselung",
+      "published": "2026-11-20",
+      "updated": "2026-11-20"
     }
   },
   "facts": [

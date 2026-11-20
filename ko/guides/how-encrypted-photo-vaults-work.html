@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#FAF9F6" media="(prefers-color-scheme: light)">
+  <!-- build:meta -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WWNMHW99TP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-WWNMHW99TP');
+  </script>
+  <title>사진 금고 앱 암호화 원리, 쉽게 정리</title>
+  <meta name="description" content="사진 금고의 암호화란? 키, Argon2id, AES-256-GCM, 암호화된 백업을 전문 용어 없이 설명하고, 숨기기만 하는 앱 구별법까지.">
+  <link rel="canonical" href="https://getnoxium.app/ko/guides/how-encrypted-photo-vaults-work">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <link rel="alternate" hreflang="en" href="https://getnoxium.app/guides/how-encrypted-photo-vaults-work">
+  <link rel="alternate" hreflang="de" href="https://getnoxium.app/de/guides/how-encrypted-photo-vaults-work">
+  <link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/guides/how-encrypted-photo-vaults-work">
+  <link rel="alternate" hreflang="es" href="https://getnoxium.app/es/guides/how-encrypted-photo-vaults-work">
+  <link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/guides/how-encrypted-photo-vaults-work">
+  <link rel="alternate" hreflang="it" href="https://getnoxium.app/it/guides/how-encrypted-photo-vaults-work">
+  <link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/guides/how-encrypted-photo-vaults-work">
+  <link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/guides/how-encrypted-photo-vaults-work">
+  <link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/guides/how-encrypted-photo-vaults-work">
+  <link rel="alternate" hreflang="x-default" href="https://getnoxium.app/guides/how-encrypted-photo-vaults-work">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Noxium">
+  <meta property="og:title" content="사진 금고 앱 암호화 원리, 쉽게 정리">
+  <meta property="og:description" content="사진 금고의 암호화란? 키, Argon2id, AES-256-GCM, 암호화된 백업을 전문 용어 없이 설명하고, 숨기기만 하는 앱 구별법까지.">
+  <meta property="og:url" content="https://getnoxium.app/ko/guides/how-encrypted-photo-vaults-work">
+  <meta property="og:image" content="https://getnoxium.app/assets/og/noxium-og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Noxium photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="article:published_time" content="2026-11-20">
+  <meta property="article:modified_time" content="2026-11-20">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="사진 금고 앱 암호화 원리, 쉽게 정리">
+  <meta name="twitter:description" content="사진 금고의 암호화란? 키, Argon2id, AES-256-GCM, 암호화된 백업을 전문 용어 없이 설명하고, 숨기기만 하는 앱 구별법까지.">
+  <meta name="twitter:image" content="https://getnoxium.app/assets/og/noxium-og.png">
+  <meta name="twitter:image:alt" content="Noxium photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
+  <meta name="apple-itunes-app" content="app-id=6824616093">
+  <!-- /build:meta -->
+
+  <link rel="icon" type="image/svg+xml" href="/assets/noxium-logo.svg">
+  <link rel="apple-touch-icon" href="/assets/noxium-icon-180.png">
+
+  <link rel="preload" href="/assets/fonts/instrument-serif-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/fonts/fonts.css">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/pages.css">
+
+  <!-- build:jsonld -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://getnoxium.app/#org",
+        "name": "Inertia Projects",
+        "url": "https://getnoxium.app/about",
+        "email": "business@inertiaprojects.info",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://getnoxium.app/assets/noxium-icon-512.png"
+        },
+        "brand": {
+          "@type": "Brand",
+          "name": "Noxium"
+        },
+        "sameAs": [
+          "https://apps.apple.com/app/apple-store/id6824616093"
+        ]
+      },
+      {
+        "@type": "Article",
+        "@id": "https://getnoxium.app/ko/guides/how-encrypted-photo-vaults-work#article",
+        "headline": "암호화된 사진 금고의 원리, 쉽게 설명합니다",
+        "description": "사진 금고의 암호화란? 키, Argon2id, AES-256-GCM, 암호화된 백업을 전문 용어 없이 설명하고, 숨기기만 하는 앱 구별법까지.",
+        "url": "https://getnoxium.app/ko/guides/how-encrypted-photo-vaults-work",
+        "mainEntityOfPage": "https://getnoxium.app/ko/guides/how-encrypted-photo-vaults-work",
+        "image": "https://getnoxium.app/assets/guides/noxium-lock.jpg",
+        "datePublished": "2026-11-20",
+        "dateModified": "2026-11-20",
+        "author": {
+          "@id": "https://getnoxium.app/#org"
+        },
+        "publisher": {
+          "@id": "https://getnoxium.app/#org"
+        },
+        "inLanguage": "ko-KR",
+        "isPartOf": {
+          "@id": "https://getnoxium.app/#website"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Noxium",
+            "item": "https://getnoxium.app/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "가이드",
+            "item": "https://getnoxium.app/ko/guides/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "암호화 원리",
+            "item": "https://getnoxium.app/ko/guides/how-encrypted-photo-vaults-work"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://getnoxium.app/ko/guides/how-encrypted-photo-vaults-work#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "사진 금고 앱은 암호화되어 있나요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "그런 앱도 있고 아닌 앱도 있습니다. 많은 앱이 평범한 파일 앞에 PIN 화면만 띄웁니다. AES-256 같은 암호 방식의 이름과, 백업 전에 기기에서 암호화하는지를 확인하세요."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "군사 등급 암호화는 무슨 뜻인가요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "대개 표준 암호 방식인 AES일 뿐입니다. 키가 어떻게 만들어지고 어디에 보관되는지는 알려 주지 않는데, 그쪽이 더 중요합니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Argon2id는 무엇인가요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "비밀번호나 패턴을 느리게, 많은 메모리를 써서 암호화 키로 바꾸는 키 유도 함수입니다. 코드를 추측하는 데 비용이 많이 들게 합니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "암호화된 금고도 해킹될 수 있나요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "약점은 암호화 자체가 아닙니다. 짧은 코드, 다른 사람이 본 코드, 다른 곳에 남은 암호화되지 않은 사본이 약점입니다. 긴 코드를 쓰고, 가져온 뒤에는 원본을 지우세요."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <!-- /build:jsonld -->
+</head>
+<body>
+  <!-- build:header -->
+  <!-- Shared header (homepage and subpages). Edit partials/header.html, then run python3 tools/build.py. -->
+  <a href="#main-content" class="skip-link">본문으로 건너뛰기</a>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <nav class="nav glass" aria-label="주 메뉴">
+        <a href="/" class="wordmark" aria-label="Noxium 홈">Noxium<span aria-hidden="true">.</span></a>
+
+        <div class="nav-links">
+          <a href="/#features">기능</a>
+          <a href="/#security">보안</a>
+          <a href="/#pricing">가격</a>
+          <a href="/compare/">비교</a>
+          <a href="/ko/guides/">가이드</a>
+        </div>
+
+        <div class="nav-actions">
+          <a href="https://apps.apple.com/app/apple-store/id6824616093" class="btn btn-ink btn-nav nav-cta" data-cta="nav" data-label-waitlist="베타 참여하기" data-label-live="Noxium 받기">Noxium 받기</a>
+          <button type="button" class="mobile-menu-btn" id="mobile-menu-btn" aria-expanded="false" aria-controls="mobile-drawer" aria-label="메뉴">
+            <svg class="icon icon-menu" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 9h14M5 15h14"/></svg>
+            <svg class="icon icon-close" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <div class="mobile-drawer glass" id="mobile-drawer" hidden>
+      <nav class="mobile-drawer-list" aria-label="모바일">
+        <a href="/#features">기능</a>
+        <a href="/#security">보안</a>
+        <a href="/#pricing">가격</a>
+        <a href="/ko/best-photo-vault-apps-iphone">금고 앱 비교</a>
+        <a href="/ko/guides/">가이드</a>
+        <a href="/about">소개</a>
+        <a href="/support">지원</a>
+      </nav>
+    </div>
+  </header>
+  <!-- /build:header -->
+
+  <main id="main-content" tabindex="-1">
+    <div class="page-hero">
+      <div class="container">
+        <!-- build:breadcrumbs -->
+        <nav class="crumbs" aria-label="이동 경로">
+          <ol>
+            <li><a href="/">Noxium</a></li>
+            <li><a href="/ko/guides/">가이드</a></li>
+            <li aria-current="page">암호화 원리</li>
+          </ol>
+        </nav>
+        <!-- /build:breadcrumbs -->
+        <p class="eyebrow"><span class="dot dot-ink" aria-hidden="true"></span>가이드 · 암호화 원리</p>
+        <h1>암호화된 사진 금고의 원리, 쉽게 설명합니다</h1>
+        <!-- build:byline -->
+        <p class="byline"><span>작성:<a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>최종 업데이트:<time datetime="2026-11-20">2026년 11월 20일</time></span></p>
+        <!-- /build:byline -->
+        <div class="answer">
+          <span class="answer-label">짧은 답변</span>
+          <p>암호화된 사진 금고는 사진 한 장 한 장을 비밀 키로 뒤섞어서, 키가 없으면 파일을 읽을 수 없게 합니다. PIN, 비밀번호, 패턴은 폰 안에서 그 키(또는 그 키를 여는 키)로 바뀌는데, 추측하는 데 비용이 들도록 일부러 느리게 처리됩니다. 평범한 파일 앞에 PIN 화면만 띄우는 금고는 사진을 숨길 뿐, 암호화하지는 않습니다.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container article-layout">
+      <article class="prose">
+        <p>금고 앱들은 '암호화'라는 말을 아주 좋아하고, '군사 등급'을 덧붙이는 앱도 있습니다. 둘 다 별다른 정보를 주지 않습니다. 이 가이드는 사진 금고의 진짜 암호화가 무엇인지 수식 없이 설명해, 앱이 내세우는 말을 읽고 그 뜻을 알 수 있게 해 드립니다.</p>
+
+        <h2 id="lock-vs-encrypt">사진을 숨기는 것과 암호화하는 것은 어떻게 다른가요?</h2>
+        <p>숨기기는 평범한 사진 앞에 문을 하나 다는 것입니다. 암호화는 사진 자체를 읽을 수 없는 데이터로 바꾸는 것입니다.</p>
+        <p>숨기기만 하는 금고는 사진을 앱 안에 평범한 이미지 파일로 저장하고, 보여 주기 전에 PIN 화면을 띄웁니다. 다른 경로(컴퓨터 백업, 포렌식 도구, 버그)로 그 파일에 접근한 사람에게는 사진이 그대로 보입니다. 암호화하는 금고는 뒤섞인 데이터만 저장합니다. 키가 없으면 파일을 완벽하게 복사해도 쓸모가 없습니다.</p>
+
+        <h2 id="keys">암호화 키란 무엇인가요?</h2>
+        <p>키는 암호화가 데이터를 뒤섞고 되돌리는 데 쓰는 긴 무작위 숫자입니다. 256비트 키는 가능한 값이 약 10<sup>77</sup>개로, 어떤 컴퓨터도 다 시도할 수 없습니다. 그래서 키 자체를 알아맞히는 사람은 없습니다.</p>
+        <p>그래서 공격자는 키가 아니라 키를 여는 것, 즉 여러분의 코드를 노립니다.</p>
+
+        <h2 id="stretching">PIN이나 패턴은 어떻게 키가 되나요?</h2>
+        <p>'키 유도 함수'가 코드를 키로 바꿉니다. 좋은 키 유도 함수는 일부러 느리고 메모리를 많이 써서, 추측할 때마다 실제로 시간이 걸리게 합니다.</p>
+        <p>코드는 짧기 때문에 이 점이 중요합니다. 4자리 PIN은 경우의 수가 10,000개뿐입니다. 한 번 추측에 1마이크로초가 걸린다면 컴퓨터는 100분의 1초 만에 전부 시도합니다. 한 번에 0.5초와 많은 메모리가 든다면, 4자리 PIN이라도 같은 탐색에 1시간이 넘게 걸리고, 글자나 점이 하나 늘 때마다 엄청나게 길어집니다. 길고 무작위한 비밀번호는 사실상 추측할 수 없게 됩니다.</p>
+        <ul>
+          <li><strong>Argon2id</strong>는 현재 권장되는 방식입니다. '메모리 하드' 방식이라 그래픽 카드나 전용 칩으로 속도를 높이기가 비쌉니다.</li>
+          <li><strong>PBKDF2</strong>는 더 오래된 방식으로 지금도 흔히 쓰입니다. 느리긴 하지만 전용 하드웨어로 공격하기가 더 쌉니다.</li>
+          <li><strong>단순한 해시를 쓰거나 아무것도 쓰지 않으면</strong> 추측에 거의 비용이 들지 않습니다.</li>
+        </ul>
+        <p>저희가 만드는 Noxium은 64 MiB 메모리와 3회 반복으로 Argon2id를 쓰고, 무작위 128비트 솔트를 더해 같은 패턴이라도 같은 키가 두 번 나오지 않게 합니다. 5×5 격자로 패턴을 몇 가지 만들 수 있는지는 <a href="/features/pattern-lock">Noxium 패턴 잠금</a> 페이지에서 볼 수 있습니다.</p>
+
+        <h2 id="aes">AES-256-GCM은 무슨 뜻인가요?</h2>
+        <p>사진을 뒤섞는 암호 방식으로, 변조까지 감지하는 모드로 씁니다.</p>
+        <ul>
+          <li><strong>AES</strong>는 정부와 은행, 그리고 iPhone 자체가 쓰는 표준 암호 방식입니다.</li>
+          <li><strong>256</strong>은 키 길이(비트)입니다.</li>
+          <li><strong>GCM</strong>은 인증 태그를 붙입니다. 암호화된 파일이 단 1비트라도 바뀌거나 손상되면, 깨진 사진을 내놓는 대신 복호화가 실패합니다.</li>
+        </ul>
+        <p>'군사 등급 암호화'는 대개 그냥 AES를 뜻합니다. 정말 중요한 질문은 키가 무엇으로 만들어지는지, 어디에 보관되는지, 백업도 암호화되는지입니다.</p>
+
+        <h2 id="wrapping">좋은 금고는 왜 '키 안의 키'를 쓰나요?</h2>
+        <p>사진을 모두 다시 암호화하지 않고도 코드를 바꿀 수 있게 하고, 파일 키 하나가 새어 나가도 나머지는 안전하게 하기 위해서입니다.</p>
+        <ol class="steps">
+          <li>코드가 늘여져 <strong>래핑 키</strong>가 됩니다.</li>
+          <li>래핑 키가 암호화된 상태로만 저장된 무작위 <strong>금고 키</strong>를 엽니다.</li>
+          <li>금고 키가 사진, 비디오, 메모마다 따로 있는 무작위 <strong>파일 키</strong>를 엽니다.</li>
+        </ol>
+        <p>코드를 바꾸면 금고 키를 다시 감싸기만 하면 됩니다. 복구 문구도 같은 원리로, 같은 금고 키를 한 번 더 감싼 것입니다. 그래서 코드나 문구 중 어느 쪽으로도 금고가 열립니다. 큰 비디오는 보통 블록 단위로 암호화해, 파일 전체를 먼저 복호화하지 않고도 재생할 수 있습니다. Noxium은 1 MiB 블록을 쓰고, 블록마다 인증 태그를 붙입니다. 전체 키 구조는 홈페이지의 <a href="/#security">보안 섹션</a>에, 각 단계의 설명은 <a href="/features/on-device-encryption">기기 내 암호화</a> 페이지에 있습니다.</p>
+
+        <h2 id="backup">암호화된 백업은 어떻게 비공개로 유지되나요?</h2>
+        <p>무엇이든 업로드하기 전에 폰에서 암호화하므로, 클라우드에는 뒤섞인 데이터만 저장됩니다. 이것을 종단간 암호화라고 합니다.</p>
+        <p>확인 방법은 간단합니다. 그 회사가 이메일로 코드를 재설정하고 사진을 돌려줄 수 있나요? 그렇다면 회사가 키에 접근할 수 있고, 회사 시스템이나 내 이메일에 침입한 사람도 마찬가지입니다. 그렇지 않다면 백업을 복호화할 수 있는 사람은 나뿐입니다. 코드와 복구 문구를 둘 다 잃으면 접근할 수 없게 되는 이유도 이것입니다.</p>
+        <p>Noxium은 iPhone에서 사진과 썸네일, 그리고 그 이름·날짜·위치를 암호화한 뒤, 그 암호화된 데이터만 내 비공개 iCloud(CloudKit)에 백업합니다. Apple은 저장하지만 읽을 수는 없습니다.</p>
+
+        <h2 id="limits">암호화로 막을 수 없는 것은?</h2>
+        <ul>
+          <li><strong>코드를 입력하는 모습을 누가 지켜보는 것,</strong> 또는 입력하라고 강요하는 것.</li>
+          <li><strong>열려 있는 금고.</strong> 화면에서 잠금이 해제된 동안에는 사진이 보입니다. 좋은 앱은 빨리 잠기고 앱 전환기에서도 내용을 가립니다.</li>
+          <li><strong>짧은 코드.</strong> 느린 키 유도가 도움이 되지만, 4자리 PIN은 여전히 전부 시도해 볼 수 있습니다.</li>
+          <li><strong>금고 밖의 사본.</strong> 사진 앱이나 메시지, '최근 삭제된 항목'에 남은 원본 같은 것들입니다.</li>
+        </ul>
+
+        <h2 id="spot">금고가 정말 암호화하는지 어떻게 알 수 있나요?</h2>
+        <ul>
+          <li>'안전'이라고만 하지 않고 암호 방식과 키 유도 방식(예: AES-256-GCM과 Argon2id 또는 PBKDF2)을 밝힌다.</li>
+          <li>백업 전에 기기에서 암호화한다고 말한다.</li>
+          <li>이메일로 코드를 재설정할 수 없거나, 할 수 있다면 솔직하게 밝힌다.</li>
+          <li>백업을 단순한 '안전한 클라우드'가 아니라 내 키로 암호화된다고 설명한다.</li>
+          <li>가장 좋은 것은 암호화 코드가 오픈 소스이거나 독립적으로 검토된 경우다.</li>
+        </ul>
+        <p>2026년 10월 기준, 저희가 비교한 금고 앱 17개 중 App Store 설명에 AES-256-GCM을 밝힌 앱은 2개뿐이었습니다. 전체 목록은 <a href="/ko/best-photo-vault-apps-iphone">비교 페이지</a>에서 볼 수 있습니다.</p>
+        <figure class="shot">
+          <img src="/assets/guides/noxium-lock.jpg" alt="Noxium 잠금 화면: 패턴은 Argon2id로 늘여져 금고를 여는 키가 된다" width="559" height="1216" loading="lazy" decoding="async">
+          <figcaption>Noxium은 패턴을 저장하지 않습니다. 패턴은 Argon2id로 늘여져 금고를 여는 키가 됩니다.</figcaption>
+        </figure>
+
+        <div class="cta-card">
+          <p class="cta-card-title">설명할 수 있는 암호화</p>
+          <p>Noxium은 모든 부품의 이름을 밝힙니다. 패턴에는 Argon2id, 파일마다 AES-256-GCM, 그리고 내 iCloud에는 암호화된 데이터만. 사진 150장, 비디오 10개까지 무료.</p>
+          <a href="https://apps.apple.com/app/apple-store/id6824616093" class="btn btn-primary" data-cta="body" data-label-waitlist="베타 참여하기" data-label-live="App Store에서 받기">App Store에서 받기</a>
+          <!-- build:status -->
+          <span class="release-status">iPhone 및 iPad용으로 App Store에서 받을 수 있습니다.</span>
+          <!-- /build:status -->
+        </div>
+
+        <h2 id="faq">자주 묻는 질문</h2>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>사진 금고 앱은 암호화되어 있나요?</span></span></summary>
+            <div class="faq-body"><p>그런 앱도 있고 아닌 앱도 있습니다. 많은 앱이 평범한 파일 앞에 PIN 화면만 띄웁니다. AES-256 같은 암호 방식의 이름과, 백업 전에 기기에서 암호화하는지를 확인하세요.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>군사 등급 암호화는 무슨 뜻인가요?</span></span></summary>
+            <div class="faq-body"><p>대개 표준 암호 방식인 AES일 뿐입니다. 키가 어떻게 만들어지고 어디에 보관되는지는 알려 주지 않는데, 그쪽이 더 중요합니다.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Argon2id는 무엇인가요?</span></span></summary>
+            <div class="faq-body"><p>비밀번호나 패턴을 느리게, 많은 메모리를 써서 암호화 키로 바꾸는 키 유도 함수입니다. 코드를 추측하는 데 비용이 많이 들게 합니다.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>암호화된 금고도 해킹될 수 있나요?</span></span></summary>
+            <div class="faq-body"><p>약점은 암호화 자체가 아닙니다. 짧은 코드, 다른 사람이 본 코드, 다른 곳에 남은 암호화되지 않은 사본이 약점입니다. 긴 코드를 쓰고, 가져온 뒤에는 원본을 지우세요.</p></div>
+          </details>
+        </div>
+
+        <p><em>틀리거나 오래된 정보를 발견하셨나요? <a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a>로 알려 주시면 고치겠습니다.</em></p>
+      </article>
+
+      <aside class="article-aside" aria-label="이 페이지의 내용">
+        <nav class="toc" aria-label="목차">
+          <p class="toc-title">이 페이지의 내용</p>
+          <ol>
+            <li><a href="#lock-vs-encrypt">숨기기와 암호화</a></li>
+            <li><a href="#keys">키란 무엇인가</a></li>
+            <li><a href="#stretching">코드에서 키로</a></li>
+            <li><a href="#aes">AES-256-GCM</a></li>
+            <li><a href="#wrapping">키 안의 키</a></li>
+            <li><a href="#backup">암호화된 백업</a></li>
+            <li><a href="#limits">암호화의 한계</a></li>
+            <li><a href="#spot">구별하는 법</a></li>
+            <li><a href="#faq">자주 묻는 질문</a></li>
+          </ol>
+        </nav>
+        <!-- build:related -->
+        <div class="related">
+          <p class="toc-title">관련 페이지</p>
+          <ul role="list">
+            <li><a href="/ko/guides/are-photo-vault-apps-safe">금고 앱은 안전할까?</a></li>
+            <li><a href="/ko/guides/forgot-photo-vault-password">비밀번호를 잊었을 때</a></li>
+            <li><a href="/ko/best-photo-vault-apps-iphone">사진 금고 앱 비교</a></li>
+            <li><a href="/ko/guides/what-is-a-decoy-vault">위장 금고란?</a></li>
+            <li><a href="/ko/guides/">전체 가이드</a></li>
+          </ul>
+        </div>
+        <!-- /build:related -->
+      </aside>
+    </div>
+  </main>
+
+  <!-- build:footer -->
+  <!-- Shared footer for subpages (the homepage has its own copy with build:status). Edit partials/footer.html, then run python3 tools/build.py. -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="/" class="wordmark" aria-label="Noxium 홈">Noxium<span aria-hidden="true">.</span></a>
+          <p>사진, 비디오, 메모를 위한 비공개 금고.</p>
+        </div>
+
+        <nav class="footer-groups" aria-label="바닥글">
+          <div>
+            <h2 class="footer-heading">제품</h2>
+            <ul role="list">
+              <li><a href="/#features">기능</a></li>
+              <li><a href="/#security">암호화 작동 방식</a></li>
+              <li><a href="/#pricing">무료와 Pro</a></li>
+              <li><a href="/ko/best-photo-vault-apps-iphone">사진 금고 앱 비교</a></li>
+              <li><a href="/#faq">자주 묻는 질문</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="footer-heading">가이드</h2>
+            <ul role="list">
+              <li><a href="/ko/guides/how-to-hide-photos-on-iphone">iPhone 사진 숨기기</a></li>
+  <li><a href="/ko/guides/is-iphone-hidden-album-private">&#x27;가려진 항목&#x27;은 안전할까?</a></li>
+  <li><a href="/ko/guides/hidden-photos-iphone">가려진 사진</a></li>
+  <li><a href="/ko/guides/move-photo-vault-to-new-iphone">금고를 새 iPhone으로</a></li>
+  <li><a href="/ko/guides/photo-vault-lost-photos">금고 사진이 사라졌을 때</a></li>
+  <li><a href="/ko/guides/keepsafe-alternatives">Keepsafe 대체 앱</a></li>
+              <li><a href="/ko/guides/">전체 가이드</a></li>
+              <li><a href="/features/">Features</a></li>
+  <li><a href="/compare/">Comparisons</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="footer-heading">회사</h2>
+            <ul role="list">
+              <li><a href="/about">소개</a></li>
+              <li><a href="/support">지원</a></li>
+              <li><a href="/privacy">개인정보 처리방침</a></li>
+              <li><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener">이용 약관</a></li>
+              <li><a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Noxium. 독립 개발자 Inertia Projects가 만들었습니다. App Store 개인정보 보호 라벨: 데이터가 수집되지 않음.</p>
+        <nav class="lang-list" aria-label="언어"><a href="/guides/how-encrypted-photo-vaults-work" hreflang="en" lang="en">English</a><a href="/de/guides/how-encrypted-photo-vaults-work" hreflang="de" lang="de">Deutsch</a><a href="/fr/guides/how-encrypted-photo-vaults-work" hreflang="fr" lang="fr">Français</a><a href="/es/guides/how-encrypted-photo-vaults-work" hreflang="es" lang="es">Español</a><a href="/pt-br/guides/how-encrypted-photo-vaults-work" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a><a href="/it/guides/how-encrypted-photo-vaults-work" hreflang="it" lang="it">Italiano</a><a href="/ja/guides/how-encrypted-photo-vaults-work" hreflang="ja" lang="ja">日本語</a><a href="/ko/guides/how-encrypted-photo-vaults-work" hreflang="ko" lang="ko" aria-current="true">한국어</a><a href="/zh-hant/guides/how-encrypted-photo-vaults-work" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></nav>
+        <p>Apple, Apple 로고, iPhone, iPad 및 Face ID는 미국 및 기타 국가에서 등록된 Apple Inc.의 상표입니다. App Store는 Apple Inc.의 서비스 마크입니다.</p>
+      </div>
+    </div>
+  </footer>
+  <!-- /build:footer -->
+
+  <script src="/app.js" defer></script>
+</body>
+</html>

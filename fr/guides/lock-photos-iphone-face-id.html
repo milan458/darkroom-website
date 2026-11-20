@@ -280,7 +280,7 @@
           <li><strong>Masquée seulement :</strong> si l’interrupteur Face ID est désactivé, quiconque tient votre téléphone déverrouillé peut ouvrir l’album Masquées.</li>
           <li><strong>Masquée et verrouillée :</strong> il faut votre visage ou le code de votre iPhone.</li>
           <li><strong>Verrouillée avec un code distinct :</strong> une note verrouillée avec son propre mot de passe Notes, ou une app de coffre avec son propre schéma ou NIP, reste fermée même pour qui connaît votre code.</li>
-          <li><strong>Chiffrée avec une clé distincte :</strong> dans une app de coffre chiffrée, la clé vient du code du coffre, et les fichiers sont illisibles sans lui. Voyez <a href="/guides/how-encrypted-photo-vaults-work">comment fonctionnent les coffres photo chiffrés</a>.</li>
+          <li><strong>Chiffrée avec une clé distincte :</strong> dans une app de coffre chiffrée, la clé vient du code du coffre, et les fichiers sont illisibles sans lui. Voyez <a href="/fr/guides/how-encrypted-photo-vaults-work">comment fonctionnent les coffres photo chiffrés</a>.</li>
         </ul>
 
         <h2 id="one-album">Peut-on verrouiller un seul album sur iPhone?</h2>
@@ -315,7 +315,7 @@
 
         <h2 id="pattern">Peut-on verrouiller des photos avec un schéma sur iPhone?</h2>
         <p>Pas avec les fonctions intégrées. iOS utilise Face ID, Touch ID et des codes; un verrou par schéma tracé ne vient que des apps de coffre. Private Photo Vault, Vaultaire et Noxium, entre autres, offrent un schéma selon leurs fiches App Store et leurs sites Web.</p>
-        <p>Un schéma ne vaut que ce qu’il y a derrière. Dans certaines apps, il ouvre seulement un écran posé devant des fichiers ordinaires; dans d’autres, il sert à dériver la clé de chiffrement. Demandez comment l’app l’utilise avant de lui faire confiance (on explique la différence dans <a href="/guides/how-encrypted-photo-vaults-work">comment fonctionnent les coffres photo chiffrés</a>).</p>
+        <p>Un schéma ne vaut que ce qu’il y a derrière. Dans certaines apps, il ouvre seulement un écran posé devant des fichiers ordinaires; dans d’autres, il sert à dériver la clé de chiffrement. Demandez comment l’app l’utilise avant de lui faire confiance (on explique la différence dans <a href="/fr/guides/how-encrypted-photo-vaults-work">comment fonctionnent les coffres photo chiffrés</a>).</p>
         <p>Dans Noxium, l’app que nous développons, vous tracez un <a href="/features/pattern-lock">schéma sur au moins 6 des 25 boulons</a> d’une plaque de 5×5. Le schéma n’est jamais enregistré : Argon2id en tire la clé qui ouvre votre coffre, et chaque photo est chiffrée sur l’iPhone en AES-256-GCM. Face ID peut ouvrir le coffre principal par commodité, mais jamais un coffre leurre.</p>
         <figure class="shot">
           <img src="/assets/guides/noxium-lock.jpg" alt="L’écran de verrouillage de Noxium : une plaque de 5×5 boulons sur laquelle un schéma est tracé" width="559" height="1216" loading="lazy" decoding="async">
@@ -401,6 +401,7 @@
           <ul role="list">
             <li><a href="/fr/guides/how-to-hide-photos-on-iphone">Cacher des photos sur iPhone</a></li>
             <li><a href="/fr/guides/is-iphone-hidden-album-private">L’album Masquées est-il privé?</a></li>
+            <li><a href="/fr/guides/how-encrypted-photo-vaults-work">Le chiffrement expliqué</a></li>
             <li><a href="/fr/guides/how-to-hide-videos-on-iphone">Cacher des vidéos</a></li>
             <li><a href="/fr/guides/what-is-a-decoy-vault">Qu’est-ce qu’un coffre leurre?</a></li>
             <li><a href="/fr/guides/">Tous les guides</a></li>

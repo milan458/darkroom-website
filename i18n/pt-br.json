@@ -199,6 +199,17 @@
       "keyword": "como ocultar vídeos no iphone",
       "published": "2026-11-18",
       "updated": "2026-11-18"
+    },
+    "/guides/how-encrypted-photo-vaults-work": {
+      "source": "2026-10-26",
+      "title": "Como funciona um cofre de fotos criptografado",
+      "description": "O que criptografia quer dizer num cofre de fotos: chaves, Argon2id, AES-256-GCM e backups, sem jargão, e como identificar um cofre que só esconde.",
+      "headline": "Como funcionam os cofres de fotos criptografados, sem complicação",
+      "summary": "Chaves, derivação de chave, AES-256-GCM e backups criptografados, explicados sem jargão.",
+      "crumb": "Como funciona a criptografia",
+      "keyword": "cofre de fotos criptografado",
+      "published": "2026-11-20",
+      "updated": "2026-11-20"
     }
   },
   "facts": [
