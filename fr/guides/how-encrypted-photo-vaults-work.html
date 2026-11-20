@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#FAF9F6" media="(prefers-color-scheme: light)">
+  <!-- build:meta -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WWNMHW99TP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-WWNMHW99TP');
+  </script>
+  <title>Comment fonctionne un coffre photo chiffré</title>
+  <meta name="description" content="Le chiffrement d’un coffre photo, sans jargon : clés, Argon2id, AES-256-GCM et sauvegardes. Et comment repérer un coffre qui ne fait que cacher.">
+  <link rel="canonical" href="https://getnoxium.app/fr/guides/how-encrypted-photo-vaults-work">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <link rel="alternate" hreflang="en" href="https://getnoxium.app/guides/how-encrypted-photo-vaults-work">
+  <link rel="alternate" hreflang="de" href="https://getnoxium.app/de/guides/how-encrypted-photo-vaults-work">
+  <link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/guides/how-encrypted-photo-vaults-work">
+  <link rel="alternate" hreflang="es" href="https://getnoxium.app/es/guides/how-encrypted-photo-vaults-work">
+  <link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/guides/how-encrypted-photo-vaults-work">
+  <link rel="alternate" hreflang="it" href="https://getnoxium.app/it/guides/how-encrypted-photo-vaults-work">
+  <link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/guides/how-encrypted-photo-vaults-work">
+  <link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/guides/how-encrypted-photo-vaults-work">
+  <link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/guides/how-encrypted-photo-vaults-work">
+  <link rel="alternate" hreflang="x-default" href="https://getnoxium.app/guides/how-encrypted-photo-vaults-work">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Noxium">
+  <meta property="og:title" content="Comment fonctionne un coffre photo chiffré">
+  <meta property="og:description" content="Le chiffrement d’un coffre photo, sans jargon : clés, Argon2id, AES-256-GCM et sauvegardes. Et comment repérer un coffre qui ne fait que cacher.">
+  <meta property="og:url" content="https://getnoxium.app/fr/guides/how-encrypted-photo-vaults-work">
+  <meta property="og:image" content="https://getnoxium.app/assets/og/noxium-og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Noxium photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
+  <meta property="og:locale" content="fr_CA">
+  <meta property="article:published_time" content="2026-11-20">
+  <meta property="article:modified_time" content="2026-11-20">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Comment fonctionne un coffre photo chiffré">
+  <meta name="twitter:description" content="Le chiffrement d’un coffre photo, sans jargon : clés, Argon2id, AES-256-GCM et sauvegardes. Et comment repérer un coffre qui ne fait que cacher.">
+  <meta name="twitter:image" content="https://getnoxium.app/assets/og/noxium-og.png">
+  <meta name="twitter:image:alt" content="Noxium photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
+  <meta name="apple-itunes-app" content="app-id=6824616093">
+  <!-- /build:meta -->
+
+  <link rel="icon" type="image/svg+xml" href="/assets/noxium-logo.svg">
+  <link rel="apple-touch-icon" href="/assets/noxium-icon-180.png">
+
+  <link rel="preload" href="/assets/fonts/instrument-serif-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/fonts/fonts.css">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/pages.css">
+
+  <!-- build:jsonld -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://getnoxium.app/#org",
+        "name": "Inertia Projects",
+        "url": "https://getnoxium.app/about",
+        "email": "business@inertiaprojects.info",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://getnoxium.app/assets/noxium-icon-512.png"
+        },
+        "brand": {
+          "@type": "Brand",
+          "name": "Noxium"
+        },
+        "sameAs": [
+          "https://apps.apple.com/app/apple-store/id6824616093"
+        ]
+      },
+      {
+        "@type": "Article",
+        "@id": "https://getnoxium.app/fr/guides/how-encrypted-photo-vaults-work#article",
+        "headline": "Comment fonctionnent les coffres photo chiffrés, en termes simples",
+        "description": "Le chiffrement d’un coffre photo, sans jargon : clés, Argon2id, AES-256-GCM et sauvegardes. Et comment repérer un coffre qui ne fait que cacher.",
+        "url": "https://getnoxium.app/fr/guides/how-encrypted-photo-vaults-work",
+        "mainEntityOfPage": "https://getnoxium.app/fr/guides/how-encrypted-photo-vaults-work",
+        "image": "https://getnoxium.app/assets/guides/noxium-lock.jpg",
+        "datePublished": "2026-11-20",
+        "dateModified": "2026-11-20",
+        "author": {
+          "@id": "https://getnoxium.app/#org"
+        },
+        "publisher": {
+          "@id": "https://getnoxium.app/#org"
+        },
+        "inLanguage": "fr-CA",
+        "isPartOf": {
+          "@id": "https://getnoxium.app/#website"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Noxium",
+            "item": "https://getnoxium.app/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Guides",
+            "item": "https://getnoxium.app/fr/guides/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Le chiffrement expliqué",
+            "item": "https://getnoxium.app/fr/guides/how-encrypted-photo-vaults-work"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://getnoxium.app/fr/guides/how-encrypted-photo-vaults-work#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Les apps coffre photo sont-elles chiffrées?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Certaines oui, d’autres non. Beaucoup affichent seulement un écran de NIP devant des fichiers ordinaires. Cherchez un algorithme nommé, comme AES-256, et un chiffrement sur l’appareil avant la sauvegarde."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Que veut dire chiffrement de niveau militaire?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "En général, juste AES, l’algorithme standard. Ça ne dit rien sur la façon dont la clé est créée ou gardée, ce qui compte davantage."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Qu’est-ce qu’Argon2id?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Une fonction de dérivation de clé qui transforme un mot de passe ou un schéma en clé de chiffrement, lentement et avec beaucoup de mémoire, pour que deviner les codes coûte cher."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Un coffre chiffré peut-il être piraté?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Le chiffrement lui-même n’est pas le point faible. Les codes courts, les codes vus par quelqu’un d’autre et les copies non chiffrées laissées ailleurs, oui. Utilisez un long code et supprimez les originaux après l’importation."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <!-- /build:jsonld -->
+</head>
+<body>
+  <!-- build:header -->
+  <!-- Shared header (homepage and subpages). Edit partials/header.html, then run python3 tools/build.py. -->
+  <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <nav class="nav glass" aria-label="Navigation principale">
+        <a href="/" class="wordmark" aria-label="Accueil Noxium">Noxium<span aria-hidden="true">.</span></a>
+
+        <div class="nav-links">
+          <a href="/#features">Fonctionnalités</a>
+          <a href="/#security">Sécurité</a>
+          <a href="/#pricing">Tarifs</a>
+          <a href="/compare/">Comparer</a>
+          <a href="/fr/guides/">Guides</a>
+        </div>
+
+        <div class="nav-actions">
+          <a href="https://apps.apple.com/app/apple-store/id6824616093" class="btn btn-ink btn-nav nav-cta" data-cta="nav" data-label-waitlist="Rejoindre la bêta" data-label-live="Obtenir Noxium">Obtenir Noxium</a>
+          <button type="button" class="mobile-menu-btn" id="mobile-menu-btn" aria-expanded="false" aria-controls="mobile-drawer" aria-label="Menu">
+            <svg class="icon icon-menu" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 9h14M5 15h14"/></svg>
+            <svg class="icon icon-close" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <div class="mobile-drawer glass" id="mobile-drawer" hidden>
+      <nav class="mobile-drawer-list" aria-label="Mobile">
+        <a href="/#features">Fonctionnalités</a>
+        <a href="/#security">Sécurité</a>
+        <a href="/#pricing">Tarifs</a>
+        <a href="/fr/best-photo-vault-apps-iphone">Comparer les apps de coffre</a>
+        <a href="/fr/guides/">Guides</a>
+        <a href="/about">À propos</a>
+        <a href="/support">Assistance</a>
+      </nav>
+    </div>
+  </header>
+  <!-- /build:header -->
+
+  <main id="main-content" tabindex="-1">
+    <div class="page-hero">
+      <div class="container">
+        <!-- build:breadcrumbs -->
+        <nav class="crumbs" aria-label="Fil d’Ariane">
+          <ol>
+            <li><a href="/">Noxium</a></li>
+            <li><a href="/fr/guides/">Guides</a></li>
+            <li aria-current="page">Le chiffrement expliqué</li>
+          </ol>
+        </nav>
+        <!-- /build:breadcrumbs -->
+        <p class="eyebrow"><span class="dot dot-ink" aria-hidden="true"></span>Guide · Le chiffrement expliqué</p>
+        <h1>Comment fonctionnent les coffres photo chiffrés, en termes simples</h1>
+        <!-- build:byline -->
+        <p class="byline"><span>Par <a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>Mis à jour le <time datetime="2026-11-20">20 novembre 2026</time></span></p>
+        <!-- /build:byline -->
+        <div class="answer">
+          <span class="answer-label">En bref</span>
+          <p>Un coffre photo chiffré brouille chaque photo avec une clé secrète : sans elle, le fichier est illisible. Votre NIP, mot de passe ou schéma est transformé en cette clé (ou en une clé qui l’ouvre) sur votre téléphone, lentement et exprès, pour que deviner coûte cher. Un coffre qui se contente d’afficher un écran de NIP devant des fichiers ordinaires cache vos photos, il ne les chiffre pas.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container article-layout">
+      <article class="prose">
+        <p>Les apps coffre-fort adorent le mot « chiffré », et certaines ajoutent « de niveau militaire ». Ni l’un ni l’autre ne vous apprend grand-chose. Ce guide explique, sans mathématiques, ce qu’implique un vrai chiffrement dans un coffre photo, pour que vous puissiez lire les promesses d’une app et savoir ce qu’elles veulent dire.</p>
+
+        <h2 id="lock-vs-encrypt">Quelle est la différence entre cacher et chiffrer une photo?</h2>
+        <p>Cacher, c’est mettre une porte devant une photo normale. Chiffrer, c’est transformer la photo elle-même en données illisibles.</p>
+        <p>Un coffre qui ne fait que cacher garde vos photos comme des fichiers image ordinaires dans l’app, et affiche un écran de NIP avant de les montrer. Quiconque atteint ces fichiers autrement (une sauvegarde sur ordinateur, un outil d’analyse judiciaire, un bogue) voit les photos. Un coffre qui chiffre ne stocke que des données brouillées. Sans la clé, même une copie parfaite des fichiers ne sert à rien.</p>
+
+        <h2 id="keys">Qu’est-ce qu’une clé de chiffrement?</h2>
+        <p>Une clé est un long nombre aléatoire dont le chiffrement se sert pour brouiller et débrouiller les données. Une clé de 256 bits a environ 10<sup>77</sup> valeurs possibles, bien au-delà de ce qu’un ordinateur pourrait essayer : personne ne devine la clé elle-même.</p>
+        <p>C’est pourquoi les attaquants ne s’en prennent pas à la clé. Ils visent ce qui l’ouvre : votre code.</p>
+
+        <h2 id="stretching">Comment un NIP ou un schéma devient-il une clé?</h2>
+        <p>Grâce à une « fonction de dérivation de clé », qui transforme votre code en clé. Les bonnes sont lentes et gourmandes en mémoire, exprès, pour que chaque essai coûte du temps réel.</p>
+        <p>C’est important parce que les codes sont courts. Un NIP à 4 chiffres offre 10 000 possibilités. Si chaque essai prenait une microseconde, un ordinateur les testerait toutes en un centième de seconde. Si chaque essai prend une demi-seconde et beaucoup de mémoire, la même recherche dure plus d’une heure pour un NIP à 4 chiffres, et s’allonge énormément à chaque caractère ou point de plus. Un long mot de passe aléatoire devient impossible à deviner en pratique.</p>
+        <ul>
+          <li><strong>Argon2id</strong> est le choix recommandé aujourd’hui. Il est « exigeant en mémoire », ce qui rend coûteuse toute accélération par cartes graphiques ou puces spécialisées.</li>
+          <li><strong>PBKDF2</strong> est plus ancien et encore courant. Il est lent, mais moins cher à attaquer avec du matériel spécialisé.</li>
+          <li><strong>Un simple hachage, ou rien du tout,</strong> veut dire que les essais ne coûtent presque rien.</li>
+        </ul>
+        <p>Noxium, notre app, utilise Argon2id avec 64 Mio de mémoire et 3 passes, plus un sel aléatoire de 128 bits pour que le même schéma ne donne jamais deux fois la même clé. Notre page sur le <a href="/features/pattern-lock">verrou par schéma de Noxium</a> montre combien de schémas la grille 5×5 permet.</p>
+
+        <h2 id="aes">Que veut dire AES-256-GCM?</h2>
+        <p>C’est l’algorithme qui brouille les photos, dans un mode qui détecte aussi toute modification.</p>
+        <ul>
+          <li><strong>AES</strong> est l’algorithme standard qu’utilisent les gouvernements, les banques et votre iPhone lui-même.</li>
+          <li><strong>256</strong> est la taille de la clé, en bits.</li>
+          <li><strong>GCM</strong> ajoute une étiquette d’authentification : si un seul bit du fichier chiffré est modifié ou abîmé, le déchiffrement échoue au lieu de produire une photo corrompue.</li>
+        </ul>
+        <p>« Chiffrement de niveau militaire » veut généralement dire AES, tout simplement. Les vraies questions : d’où vient la clé, où est-elle gardée, et la sauvegarde est-elle chiffrée aussi?</p>
+
+        <h2 id="wrapping">Pourquoi les bons coffres utilisent-ils des « clés dans des clés »?</h2>
+        <p>Pour que vous puissiez changer de code sans rechiffrer chaque photo, et pour qu’une clé de fichier qui fuit n’expose pas les autres.</p>
+        <ol class="steps">
+          <li>Votre code est étiré en une <strong>clé d’enveloppement</strong>.</li>
+          <li>La clé d’enveloppement ouvre une <strong>clé du coffre</strong> aléatoire, stockée uniquement sous forme chiffrée.</li>
+          <li>La clé du coffre ouvre une <strong>clé de fichier</strong> aléatoire distincte pour chaque photo, vidéo et note.</li>
+        </ol>
+        <p>Changer de code ne fait que réenvelopper la clé du coffre. Une phrase de récupération fonctionne de la même façon : c’est une deuxième enveloppe autour de la même clé du coffre, donc le code ou la phrase ouvre le coffre. Les grosses vidéos sont souvent chiffrées par blocs, pour pouvoir jouer sans déchiffrer tout le fichier d’abord. Noxium utilise des blocs de 1 Mio, chacun avec sa propre étiquette d’authentification. La hiérarchie complète des clés est dans notre <a href="/#security">section Sécurité</a>, et chaque couche est expliquée sur notre page <a href="/features/on-device-encryption">chiffrement sur l’appareil</a>.</p>
+
+        <h2 id="backup">Comment une sauvegarde chiffrée reste-t-elle privée?</h2>
+        <p>En chiffrant sur le téléphone avant tout téléversement, pour que le nuage ne stocke jamais que des données brouillées. C’est ce qu’on appelle le chiffrement de bout en bout.</p>
+        <p>Le test est simple : l’entreprise pourrait-elle réinitialiser votre code par courriel et vous rendre vos photos? Si oui, elle a accès à la clé, comme quiconque entrerait dans ses systèmes ou dans votre courriel. Si non, vous seul pouvez déchiffrer la sauvegarde, et c’est aussi pourquoi perdre à la fois votre code et votre phrase de récupération veut dire perdre l’accès.</p>
+        <p>Noxium chiffre les photos, les vignettes ainsi que leurs noms, dates et lieux sur l’iPhone, puis ne sauvegarde que ces données chiffrées dans votre propre iCloud privé (CloudKit). Apple les stocke, mais ne peut pas les lire.</p>
+
+        <h2 id="limits">Contre quoi le chiffrement ne protège-t-il pas?</h2>
+        <ul>
+          <li><strong>Quelqu’un qui vous regarde entrer votre code,</strong> ou qui vous oblige à l’entrer.</li>
+          <li><strong>Un coffre ouvert.</strong> Tant qu’il est déverrouillé à l’écran, les photos sont visibles. Les bonnes apps se verrouillent vite et masquent le contenu dans le sélecteur d’apps.</li>
+          <li><strong>Un code court.</strong> Une dérivation lente aide, mais un NIP à 4 chiffres peut quand même être testé au complet.</li>
+          <li><strong>Des copies hors du coffre,</strong> comme des originaux restés dans Photos, Messages ou Suppressions récentes.</li>
+        </ul>
+
+        <h2 id="spot">Comment savoir si un coffre chiffre vraiment?</h2>
+        <ul>
+          <li>Il nomme l’algorithme et la dérivation de clé (par exemple AES-256-GCM et Argon2id ou PBKDF2), pas seulement « sécurisé ».</li>
+          <li>Il précise que le chiffrement se fait sur l’appareil, avant la sauvegarde.</li>
+          <li>Il ne peut pas réinitialiser votre code par courriel, ou il dit honnêtement qu’il le peut.</li>
+          <li>Sa sauvegarde est décrite comme chiffrée avec votre clé, pas seulement comme un « nuage sécurisé ».</li>
+          <li>Idéalement, le code de chiffrement est ouvert (open source) ou examiné de façon indépendante.</li>
+        </ul>
+        <p>En octobre 2026, seulement 2 des 17 apps coffre-fort que nous avons comparées nommaient AES-256-GCM dans leur description App Store. Voyez-les toutes dans <a href="/fr/best-photo-vault-apps-iphone">notre comparatif</a>.</p>
+        <figure class="shot">
+          <img src="/assets/guides/noxium-lock.jpg" alt="Écran de verrouillage de Noxium : le schéma est étiré avec Argon2id en la clé qui ouvre le coffre" width="559" height="1216" loading="lazy" decoding="async">
+          <figcaption>Dans Noxium, votre schéma n’est jamais stocké. Il est étiré avec Argon2id en la clé qui ouvre votre coffre.</figcaption>
+        </figure>
+
+        <div class="cta-card">
+          <p class="cta-card-title">Un chiffrement expliqué noir sur blanc</p>
+          <p>Noxium nomme chaque pièce : Argon2id pour votre schéma, AES-256-GCM pour chaque fichier, et uniquement des données chiffrées dans votre propre iCloud. Gratuit pour 150 photos et 10 vidéos.</p>
+          <a href="https://apps.apple.com/app/apple-store/id6824616093" class="btn btn-primary" data-cta="body" data-label-waitlist="Rejoindre la bêta" data-label-live="Télécharger sur l’App Store">Télécharger sur l’App Store</a>
+          <!-- build:status -->
+          <span class="release-status">Disponible sur l’App Store pour iPhone et iPad (sauf en France).</span>
+          <!-- /build:status -->
+        </div>
+
+        <h2 id="faq">Questions fréquentes</h2>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Les apps coffre photo sont-elles chiffrées?</span></span></summary>
+            <div class="faq-body"><p>Certaines oui, d’autres non. Beaucoup affichent seulement un écran de NIP devant des fichiers ordinaires. Cherchez un algorithme nommé, comme AES-256, et un chiffrement sur l’appareil avant la sauvegarde.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Que veut dire chiffrement de niveau militaire?</span></span></summary>
+            <div class="faq-body"><p>En général, juste AES, l’algorithme standard. Ça ne dit rien sur la façon dont la clé est créée ou gardée, ce qui compte davantage.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Qu’est-ce qu’Argon2id?</span></span></summary>
+            <div class="faq-body"><p>Une fonction de dérivation de clé qui transforme un mot de passe ou un schéma en clé de chiffrement, lentement et avec beaucoup de mémoire, pour que deviner les codes coûte cher.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Un coffre chiffré peut-il être piraté?</span></span></summary>
+            <div class="faq-body"><p>Le chiffrement lui-même n’est pas le point faible. Les codes courts, les codes vus par quelqu’un d’autre et les copies non chiffrées laissées ailleurs, oui. Utilisez un long code et supprimez les originaux après l’importation.</p></div>
+          </details>
+        </div>
+
+        <p><em>Une erreur ou une info périmée? Écrivez à <a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a> et nous corrigerons.</em></p>
+      </article>
+
+      <aside class="article-aside" aria-label="Sur cette page">
+        <nav class="toc" aria-label="Table des matières">
+          <p class="toc-title">Sur cette page</p>
+          <ol>
+            <li><a href="#lock-vs-encrypt">Cacher ou chiffrer</a></li>
+            <li><a href="#keys">Ce qu’est une clé</a></li>
+            <li><a href="#stretching">Du code à la clé</a></li>
+            <li><a href="#aes">AES-256-GCM</a></li>
+            <li><a href="#wrapping">Des clés dans des clés</a></li>
+            <li><a href="#backup">Sauvegardes chiffrées</a></li>
+            <li><a href="#limits">Les limites du chiffrement</a></li>
+            <li><a href="#spot">Faire la différence</a></li>
+            <li><a href="#faq">Questions fréquentes</a></li>
+          </ol>
+        </nav>
+        <!-- build:related -->
+        <div class="related">
+          <p class="toc-title">À lire aussi</p>
+          <ul role="list">
+            <li><a href="/fr/guides/are-photo-vault-apps-safe">Les coffres photo sont-ils sûrs?</a></li>
+            <li><a href="/fr/guides/forgot-photo-vault-password">Mot de passe du coffre oublié</a></li>
+            <li><a href="/fr/best-photo-vault-apps-iphone">Meilleurs coffres photo</a></li>
+            <li><a href="/fr/guides/what-is-a-decoy-vault">Qu’est-ce qu’un coffre leurre?</a></li>
+            <li><a href="/fr/guides/">Tous les guides</a></li>
+          </ul>
+        </div>
+        <!-- /build:related -->
+      </aside>
+    </div>
+  </main>
+
+  <!-- build:footer -->
+  <!-- Shared footer for subpages (the homepage has its own copy with build:status). Edit partials/footer.html, then run python3 tools/build.py. -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="/" class="wordmark" aria-label="Accueil Noxium">Noxium<span aria-hidden="true">.</span></a>
+          <p>Un coffre privé pour vos photos, vidéos et notes.</p>
+        </div>
+
+        <nav class="footer-groups" aria-label="Pied de page">
+          <div>
+            <h2 class="footer-heading">Produit</h2>
+            <ul role="list">
+              <li><a href="/#features">Fonctionnalités</a></li>
+              <li><a href="/#security">Comment fonctionne le chiffrement</a></li>
+              <li><a href="/#pricing">Gratuit ou Pro</a></li>
+              <li><a href="/fr/best-photo-vault-apps-iphone">Comparatif des apps de coffre photo</a></li>
+              <li><a href="/#faq">FAQ</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="footer-heading">Guides</h2>
+            <ul role="list">
+              <li><a href="/fr/guides/how-to-hide-photos-on-iphone">Cacher des photos sur iPhone</a></li>
+  <li><a href="/fr/guides/is-iphone-hidden-album-private">L’album Masquées est-il privé?</a></li>
+  <li><a href="/fr/guides/hidden-photos-iphone">Photos masquées</a></li>
+  <li><a href="/fr/guides/move-photo-vault-to-new-iphone">Coffre vers un nouvel iPhone</a></li>
+  <li><a href="/fr/guides/photo-vault-lost-photos">Photos perdues dans un coffre</a></li>
+  <li><a href="/fr/guides/keepsafe-alternatives">Alternatives à Keepsafe</a></li>
+              <li><a href="/fr/guides/">Tous les guides</a></li>
+              <li><a href="/features/">Features</a></li>
+  <li><a href="/compare/">Comparisons</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="footer-heading">Entreprise</h2>
+            <ul role="list">
+              <li><a href="/about">À propos</a></li>
+              <li><a href="/support">Assistance</a></li>
+              <li><a href="/privacy">Politique de confidentialité</a></li>
+              <li><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener">Conditions d’utilisation</a></li>
+              <li><a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Noxium. Conçu par Inertia Projects, un développeur indépendant. Étiquette de confidentialité de l’App Store : Données non recueillies.</p>
+        <nav class="lang-list" aria-label="Langue"><a href="/guides/how-encrypted-photo-vaults-work" hreflang="en" lang="en">English</a><a href="/de/guides/how-encrypted-photo-vaults-work" hreflang="de" lang="de">Deutsch</a><a href="/fr/guides/how-encrypted-photo-vaults-work" hreflang="fr" lang="fr" aria-current="true">Français</a><a href="/es/guides/how-encrypted-photo-vaults-work" hreflang="es" lang="es">Español</a><a href="/pt-br/guides/how-encrypted-photo-vaults-work" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a><a href="/it/guides/how-encrypted-photo-vaults-work" hreflang="it" lang="it">Italiano</a><a href="/ja/guides/how-encrypted-photo-vaults-work" hreflang="ja" lang="ja">日本語</a><a href="/ko/guides/how-encrypted-photo-vaults-work" hreflang="ko" lang="ko">한국어</a><a href="/zh-hant/guides/how-encrypted-photo-vaults-work" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></nav>
+        <p>Apple, le logo Apple, iPhone, iPad et Face ID sont des marques d’Apple Inc., déposées aux États-Unis et dans d’autres pays. App Store est une marque de service d’Apple Inc.</p>
+      </div>
+    </div>
+  </footer>
+  <!-- /build:footer -->
+
+  <script src="/app.js" defer></script>
+</body>
+</html>

@@ -146,7 +146,7 @@
       "updated": "2026-11-15"
     },
     "/guides/what-is-a-decoy-vault": {
-      "source": "2026-10-26",
+      "source": "2026-11-19",
       "title": "Qu’est-ce qu’un coffre leurre? Vous protège-t-il vraiment?",
       "description": "Un coffre leurre est un deuxième coffre anodin dans une app de coffre photo. Comment il fonctionne, quelles apps en ont un, et ses vraies limites.",
       "headline": "Qu’est-ce qu’un coffre leurre, et vous protège-t-il vraiment?",
@@ -154,7 +154,7 @@
       "crumb": "Qu’est-ce qu’un coffre leurre?",
       "keyword": "coffre leurre app photo",
       "published": "2026-11-17",
-      "updated": "2026-11-17"
+      "updated": "2026-11-20"
     },
     "/guides/are-photo-vault-apps-safe": {
       "source": "2026-10-26",
@@ -199,6 +199,17 @@
       "keyword": "cacher des vidéos iphone",
       "published": "2026-11-18",
       "updated": "2026-11-18"
+    },
+    "/guides/how-encrypted-photo-vaults-work": {
+      "source": "2026-10-26",
+      "title": "Comment fonctionne un coffre photo chiffré",
+      "description": "Le chiffrement d’un coffre photo, sans jargon : clés, Argon2id, AES-256-GCM et sauvegardes. Et comment repérer un coffre qui ne fait que cacher.",
+      "headline": "Comment fonctionnent les coffres photo chiffrés, en termes simples",
+      "summary": "Clés, dérivation de clé, AES-256-GCM et sauvegardes chiffrées, expliqués sans jargon.",
+      "crumb": "Le chiffrement expliqué",
+      "keyword": "coffre photo chiffré",
+      "published": "2026-11-20",
+      "updated": "2026-11-20"
     }
   },
   "facts": [

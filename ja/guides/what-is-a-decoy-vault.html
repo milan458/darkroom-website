@@ -41,7 +41,7 @@
   <meta property="og:image:alt" content="Noxium photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
   <meta property="og:locale" content="ja_JP">
   <meta property="article:published_time" content="2026-11-17">
-  <meta property="article:modified_time" content="2026-11-17">
+  <meta property="article:modified_time" content="2026-11-20">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="おとり保管庫とは？ 本当に守ってくれるのか">
   <meta name="twitter:description" content="おとり保管庫は、写真保管庫アプリの中にある当たり障りのない 2 つ目の保管庫。仕組み、対応アプリ、そして本当の限界を解説します。">
@@ -90,7 +90,7 @@
         "mainEntityOfPage": "https://getnoxium.app/ja/guides/what-is-a-decoy-vault",
         "image": "https://getnoxium.app/assets/guides/noxium-decoy.jpg",
         "datePublished": "2026-11-17",
-        "dateModified": "2026-11-17",
+        "dateModified": "2026-11-20",
         "author": {
           "@id": "https://getnoxium.app/#org"
         },
@@ -129,6 +129,14 @@
         "@type": "FAQPage",
         "@id": "https://getnoxium.app/ja/guides/what-is-a-decoy-vault#faq",
         "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "おとり保管庫は 2 つ以上持てる？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "アプリによっては持てます。Noxium の無料プランにはおとり保管庫が 1 つ含まれ、Pro なら好きなだけ追加できます。ほかのアプリの掲載情報では、おとりのコードは 1 つだけという説明が一般的です。"
+            }
+          },
           {
             "@type": "Question",
             "name": "写真保管庫アプリの偽 PIN とは何ですか？",
@@ -225,7 +233,7 @@
         <p class="eyebrow"><span class="dot dot-ink" aria-hidden="true"></span>ガイド · おとり保管庫</p>
         <h1>おとり保管庫とは？ 本当にあなたを守ってくれるのか</h1>
         <!-- build:byline -->
-        <p class="byline"><span>著者：<a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>最終更新日：<time datetime="2026-11-17">2026年11月17日</time></span></p>
+        <p class="byline"><span>著者：<a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>公開日：<time datetime="2026-11-17">2026年11月17日</time></span><span aria-hidden="true">·</span><span>最終更新日：<time datetime="2026-11-20">2026年11月20日</time></span></p>
         <!-- /build:byline -->
         <div class="answer">
           <span class="answer-label">結論</span>
@@ -264,25 +272,38 @@
         <p>消去コードを設定するのは、写真を見られるくらいなら失ったほうがいい場合だけにしましょう。失っては困る写真なら、別の場所にもコピーを置いておきます。</p>
 
         <h2 id="which-apps">おとり保管庫がある写真保管庫アプリは？</h2>
-        <p>2026 年 10 月 22 日時点の各アプリの App Store ページより：</p>
+        <p>各アプリの App Store ページより（2026 年 10 月 22 日〜11 月 15 日に確認）。詳しいレビューがあるアプリは、名前からリンクしています。</p>
         <div class="data-table-wrap" tabindex="0" role="region" aria-labelledby="decoy-caption">
           <table class="data-table">
-            <caption id="decoy-caption">米国 App Store の各アプリの説明に書かれたおとり機能（2026 年 10 月 22 日）</caption>
+            <caption id="decoy-caption">米国 App Store の各アプリの説明に書かれたおとり機能（2026 年 10 月 22 日〜11 月 15 日に確認）</caption>
             <thead><tr><th scope="col">アプリ</th><th scope="col">掲載情報の記述</th></tr></thead>
             <tbody>
               <tr class="is-noxium"><th scope="row">Noxium<small>私たちのアプリ</small></th><td>2 つ目のパターンで別の暗号化された保管庫が開く。1 つは無料、Pro でさらに追加可能。Pro では緊急消去パターンも。</td></tr>
-              <tr><th scope="row">Vaultaire</th><td>別のパターンで別の保管庫が開く。Pro ではデュレス保管庫。</td></tr>
-              <tr><th scope="row">Private Photo Vault</th><td>おとりパスワード。</td></tr>
+              <tr><th scope="row"><a href="/compare/vaultaire">Vaultaire</a></th><td>別のパターンで別の保管庫が開く。Pro ではデュレス保管庫。</td></tr>
+              <tr><th scope="row"><a href="/compare/private-photo-vault">Private Photo Vault</a></th><td>おとりパスワード。</td></tr>
               <tr><th scope="row">Secret Photo Album (SA)</th><td>おとり PIN。</td></tr>
               <tr><th scope="row">PV – Secret Photo Album</th><td>偽パスワード。</td></tr>
               <tr><th scope="row">Safe Lock</th><td>偽のギャラリーを開く偽パスワード。</td></tr>
               <tr><th scope="row">KYMS</th><td>おとり保管庫用の偽 PIN。</td></tr>
-              <tr><th scope="row">Privault</th><td>サブパスコードでサブフォルダが開く。</td></tr>
-              <tr><th scope="row">Apple の「非表示」アルバム</th><td>おとりなし。</td></tr>
+              <tr><th scope="row"><a href="/compare/privault">Privault</a></th><td>サブパスコードでサブフォルダが開く。</td></tr>
+              <tr><th scope="row"><a href="/compare/secret-photo-vault">Secret Photo Vault – Lock Photos</a></th><td>それぞれ独自のパスワードを持つおとりアカウント。</td></tr>
+              <tr><th scope="row"><a href="/compare/hide-it-pro">Hide it Pro</a></th><td>おとりなし。エスケープコードでアプリを空に見せる。</td></tr>
+              <tr><th scope="row"><a href="/compare/calculator-hide-photos">Calculator#</a></th><td>おとりなし。パニックスイッチで別のアプリに切り替わる。</td></tr>
+              <tr><th scope="row"><a href="/compare/apple-hidden-album">Apple の「非表示」アルバム</a></th><td>おとりなし。</td></tr>
             </tbody>
           </table>
         </div>
         <p>掲載情報からはおとりの種類までは分からないので、実際に試してください。おとりを開いて、設定も含めてすべての画面を確認します。ほかの保管庫に触れている箇所があれば、見る人にも気づかれます。17 本すべては<a href="/ja/best-photo-vault-apps-iphone">比較ページ</a>をご覧ください。ほかに 2 本は別の方法をとっています。<a href="/compare/secret-photo-vault">Secret Photo Vault</a> には独自のパスワードを持つおとりアカウントがあり、<a href="/compare/hide-it-pro">Hide it Pro</a> にはアプリを空に見せるエスケープコードがあります。</p>
+
+        <h2 id="test">必要になる前に、おとり保管庫をテストするには？</h2>
+        <p>相手になったつもりで開き、本物の保管庫がばれる手がかりがないか探します。今 5 分かけておけば、あとで困らずに済みます。</p>
+        <ol class="steps">
+          <li><strong>ロックした状態のアプリから</strong>、おとり専用のコードでおとりを開きます。</li>
+          <li><strong>設定も含めて、すべての画面を確認します。</strong>別の保管庫の名前が出る、見えている数より多い項目数が表示される、「保管庫を切り替える」が出てくる、といったものは手がかりになります。</li>
+          <li><strong>バックアップやストレージの画面を確認します。</strong>おとりの中身よりずっと大きい合計容量は、疑いを招きます。</li>
+          <li><strong>Face ID を試します。</strong>本物の保管庫が開くなら、Face ID はオフのままにするか、緊張した場面でもおとりのコードを使えるよう練習しておきましょう。</li>
+          <li><strong>ときどき新しい写真を何枚か追加して、</strong>おとりの最新の項目が何か月も前のものにならないようにします。</li>
+        </ol>
 
         <h2 id="set-up">おとり保管庫を上手に設定するには？</h2>
         <ol class="steps">
@@ -309,6 +330,10 @@
 
         <h2 id="faq">よくある質問</h2>
         <div class="faq-list">
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>おとり保管庫は 2 つ以上持てる？</span></span></summary>
+            <div class="faq-body"><p>アプリによっては持てます。Noxium の無料プランにはおとり保管庫が 1 つ含まれ、Pro なら好きなだけ追加できます。ほかのアプリの掲載情報では、おとりのコードは 1 つだけという説明が一般的です。</p></div>
+          </details>
           <details class="faq-item">
             <summary class="faq-summary"><span class="faq-summary-left"><span>写真保管庫アプリの偽 PIN とは何ですか？</span></span></summary>
             <div class="faq-body"><p>プライベートな写真の代わりに、別の当たり障りのない写真を開く 2 つ目の PIN です。おとり保管庫の別名です。</p></div>
@@ -339,6 +364,7 @@
             <li><a href="#limits">おとりにできないこと</a></li>
             <li><a href="#erase">おとりと緊急消去</a></li>
             <li><a href="#which-apps">おとりがあるアプリ</a></li>
+            <li><a href="#test">おとりをテストする</a></li>
             <li><a href="#set-up">上手な設定方法</a></li>
             <li><a href="#faq">よくある質問</a></li>
           </ol>
@@ -348,6 +374,7 @@
           <p class="toc-title">関連ページ</p>
           <ul role="list">
             <li><a href="/ja/guides/lock-photos-iphone-face-id">写真をロック</a></li>
+            <li><a href="/ja/guides/how-encrypted-photo-vaults-work">暗号化のしくみ</a></li>
             <li><a href="/ja/best-photo-vault-apps-iphone">写真保管庫アプリ比較</a></li>
             <li><a href="/ja/guides/are-photo-vault-apps-safe">保管庫アプリは安全？</a></li>
             <li><a href="/ja/guides/">ガイド一覧</a></li>

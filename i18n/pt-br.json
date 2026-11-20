@@ -146,7 +146,7 @@
       "updated": "2026-11-15"
     },
     "/guides/what-is-a-decoy-vault": {
-      "source": "2026-10-26",
+      "source": "2026-11-19",
       "title": "O que é um cofre isca, e ele protege você de verdade?",
       "description": "Um cofre isca é um segundo cofre, inofensivo, num app de cofre de fotos. Como funciona, quais apps têm e quais são os limites reais.",
       "headline": "O que é um cofre isca, e ele protege você de verdade?",
@@ -154,7 +154,7 @@
       "crumb": "O que é um cofre isca?",
       "keyword": "cofre isca app",
       "published": "2026-11-17",
-      "updated": "2026-11-17"
+      "updated": "2026-11-20"
     },
     "/guides/are-photo-vault-apps-safe": {
       "source": "2026-10-26",
@@ -199,6 +199,17 @@
       "keyword": "como ocultar vídeos no iphone",
       "published": "2026-11-18",
       "updated": "2026-11-18"
+    },
+    "/guides/how-encrypted-photo-vaults-work": {
+      "source": "2026-10-26",
+      "title": "Como funciona um cofre de fotos criptografado",
+      "description": "O que criptografia quer dizer num cofre de fotos: chaves, Argon2id, AES-256-GCM e backups, sem jargão, e como identificar um cofre que só esconde.",
+      "headline": "Como funcionam os cofres de fotos criptografados, sem complicação",
+      "summary": "Chaves, derivação de chave, AES-256-GCM e backups criptografados, explicados sem jargão.",
+      "crumb": "Como funciona a criptografia",
+      "keyword": "cofre de fotos criptografado",
+      "published": "2026-11-20",
+      "updated": "2026-11-20"
     }
   },
   "facts": [

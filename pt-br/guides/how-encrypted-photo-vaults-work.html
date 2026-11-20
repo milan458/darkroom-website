@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#FAF9F6" media="(prefers-color-scheme: light)">
+  <!-- build:meta -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WWNMHW99TP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-WWNMHW99TP');
+  </script>
+  <title>Como funciona um cofre de fotos criptografado</title>
+  <meta name="description" content="O que criptografia quer dizer num cofre de fotos: chaves, Argon2id, AES-256-GCM e backups, sem jargão, e como identificar um cofre que só esconde.">
+  <link rel="canonical" href="https://getnoxium.app/pt-br/guides/how-encrypted-photo-vaults-work">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <link rel="alternate" hreflang="en" href="https://getnoxium.app/guides/how-encrypted-photo-vaults-work">
+  <link rel="alternate" hreflang="de" href="https://getnoxium.app/de/guides/how-encrypted-photo-vaults-work">
+  <link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/guides/how-encrypted-photo-vaults-work">
+  <link rel="alternate" hreflang="es" href="https://getnoxium.app/es/guides/how-encrypted-photo-vaults-work">
+  <link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/guides/how-encrypted-photo-vaults-work">
+  <link rel="alternate" hreflang="it" href="https://getnoxium.app/it/guides/how-encrypted-photo-vaults-work">
+  <link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/guides/how-encrypted-photo-vaults-work">
+  <link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/guides/how-encrypted-photo-vaults-work">
+  <link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/guides/how-encrypted-photo-vaults-work">
+  <link rel="alternate" hreflang="x-default" href="https://getnoxium.app/guides/how-encrypted-photo-vaults-work">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Noxium">
+  <meta property="og:title" content="Como funciona um cofre de fotos criptografado">
+  <meta property="og:description" content="O que criptografia quer dizer num cofre de fotos: chaves, Argon2id, AES-256-GCM e backups, sem jargão, e como identificar um cofre que só esconde.">
+  <meta property="og:url" content="https://getnoxium.app/pt-br/guides/how-encrypted-photo-vaults-work">
+  <meta property="og:image" content="https://getnoxium.app/assets/og/noxium-og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Noxium photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="article:published_time" content="2026-11-20">
+  <meta property="article:modified_time" content="2026-11-20">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Como funciona um cofre de fotos criptografado">
+  <meta name="twitter:description" content="O que criptografia quer dizer num cofre de fotos: chaves, Argon2id, AES-256-GCM e backups, sem jargão, e como identificar um cofre que só esconde.">
+  <meta name="twitter:image" content="https://getnoxium.app/assets/og/noxium-og.png">
+  <meta name="twitter:image:alt" content="Noxium photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
+  <meta name="apple-itunes-app" content="app-id=6824616093">
+  <!-- /build:meta -->
+
+  <link rel="icon" type="image/svg+xml" href="/assets/noxium-logo.svg">
+  <link rel="apple-touch-icon" href="/assets/noxium-icon-180.png">
+
+  <link rel="preload" href="/assets/fonts/instrument-serif-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/fonts/fonts.css">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/pages.css">
+
+  <!-- build:jsonld -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://getnoxium.app/#org",
+        "name": "Inertia Projects",
+        "url": "https://getnoxium.app/about",
+        "email": "business@inertiaprojects.info",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://getnoxium.app/assets/noxium-icon-512.png"
+        },
+        "brand": {
+          "@type": "Brand",
+          "name": "Noxium"
+        },
+        "sameAs": [
+          "https://apps.apple.com/app/apple-store/id6824616093"
+        ]
+      },
+      {
+        "@type": "Article",
+        "@id": "https://getnoxium.app/pt-br/guides/how-encrypted-photo-vaults-work#article",
+        "headline": "Como funcionam os cofres de fotos criptografados, sem complicação",
+        "description": "O que criptografia quer dizer num cofre de fotos: chaves, Argon2id, AES-256-GCM e backups, sem jargão, e como identificar um cofre que só esconde.",
+        "url": "https://getnoxium.app/pt-br/guides/how-encrypted-photo-vaults-work",
+        "mainEntityOfPage": "https://getnoxium.app/pt-br/guides/how-encrypted-photo-vaults-work",
+        "image": "https://getnoxium.app/assets/guides/noxium-lock.jpg",
+        "datePublished": "2026-11-20",
+        "dateModified": "2026-11-20",
+        "author": {
+          "@id": "https://getnoxium.app/#org"
+        },
+        "publisher": {
+          "@id": "https://getnoxium.app/#org"
+        },
+        "inLanguage": "pt-BR",
+        "isPartOf": {
+          "@id": "https://getnoxium.app/#website"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Noxium",
+            "item": "https://getnoxium.app/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Guias",
+            "item": "https://getnoxium.app/pt-br/guides/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Como funciona a criptografia",
+            "item": "https://getnoxium.app/pt-br/guides/how-encrypted-photo-vaults-work"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://getnoxium.app/pt-br/guides/how-encrypted-photo-vaults-work#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Os apps cofre de fotos são criptografados?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Alguns sim, outros não. Muitos só mostram uma tela de PIN na frente de arquivos comuns. Procure um algoritmo com nome, como AES-256, e criptografia no aparelho antes do backup."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "O que quer dizer criptografia de nível militar?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Geralmente só AES, o algoritmo padrão. Isso não diz como a chave é criada nem onde ela fica, o que importa mais."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "O que é Argon2id?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Uma função de derivação de chave que transforma uma senha ou padrão em chave de criptografia devagar e com muita memória, para que adivinhar códigos saia caro."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Dá para hackear um cofre criptografado?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A criptografia em si não é o ponto fraco. Códigos curtos, códigos que outra pessoa viu e cópias sem criptografia deixadas em outros lugares são. Use um código longo e apague os originais depois de importar."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <!-- /build:jsonld -->
+</head>
+<body>
+  <!-- build:header -->
+  <!-- Shared header (homepage and subpages). Edit partials/header.html, then run python3 tools/build.py. -->
+  <a href="#main-content" class="skip-link">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <nav class="nav glass" aria-label="Navegação principal">
+        <a href="/" class="wordmark" aria-label="Página inicial do Noxium">Noxium<span aria-hidden="true">.</span></a>
+
+        <div class="nav-links">
+          <a href="/#features">Recursos</a>
+          <a href="/#security">Segurança</a>
+          <a href="/#pricing">Preços</a>
+          <a href="/compare/">Comparar</a>
+          <a href="/pt-br/guides/">Guias</a>
+        </div>
+
+        <div class="nav-actions">
+          <a href="https://apps.apple.com/app/apple-store/id6824616093" class="btn btn-ink btn-nav nav-cta" data-cta="nav" data-label-waitlist="Entrar no beta" data-label-live="Baixar o Noxium">Baixar o Noxium</a>
+          <button type="button" class="mobile-menu-btn" id="mobile-menu-btn" aria-expanded="false" aria-controls="mobile-drawer" aria-label="Menu">
+            <svg class="icon icon-menu" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 9h14M5 15h14"/></svg>
+            <svg class="icon icon-close" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <div class="mobile-drawer glass" id="mobile-drawer" hidden>
+      <nav class="mobile-drawer-list" aria-label="Celular">
+        <a href="/#features">Recursos</a>
+        <a href="/#security">Segurança</a>
+        <a href="/#pricing">Preços</a>
+        <a href="/pt-br/best-photo-vault-apps-iphone">Comparar apps de cofre</a>
+        <a href="/pt-br/guides/">Guias</a>
+        <a href="/about">Sobre</a>
+        <a href="/support">Suporte</a>
+      </nav>
+    </div>
+  </header>
+  <!-- /build:header -->
+
+  <main id="main-content" tabindex="-1">
+    <div class="page-hero">
+      <div class="container">
+        <!-- build:breadcrumbs -->
+        <nav class="crumbs" aria-label="Trilha de navegação">
+          <ol>
+            <li><a href="/">Noxium</a></li>
+            <li><a href="/pt-br/guides/">Guias</a></li>
+            <li aria-current="page">Como funciona a criptografia</li>
+          </ol>
+        </nav>
+        <!-- /build:breadcrumbs -->
+        <p class="eyebrow"><span class="dot dot-ink" aria-hidden="true"></span>Guia · Criptografia explicada</p>
+        <h1>Como funcionam os cofres de fotos criptografados, sem complicação</h1>
+        <!-- build:byline -->
+        <p class="byline"><span>Por <a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>Atualizado em <time datetime="2026-11-20">20 de novembro de 2026</time></span></p>
+        <!-- /build:byline -->
+        <div class="answer">
+          <span class="answer-label">Resposta rápida</span>
+          <p>Um cofre de fotos criptografado embaralha cada foto com uma chave secreta, então o arquivo fica ilegível sem ela. Seu PIN, senha ou padrão vira essa chave (ou uma chave que abre ela) no seu celular, devagar de propósito, para que tentar adivinhar saia caro. Um cofre que só coloca uma tela de PIN na frente de arquivos normais está escondendo as fotos, não criptografando.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container article-layout">
+      <article class="prose">
+        <p>Apps cofre adoram a palavra "criptografado", e alguns acrescentam "nível militar". Nenhuma das duas diz muita coisa. Este guia explica, sem matemática, o que uma criptografia de verdade envolve num cofre de fotos, para você ler o que um app promete e entender o que isso quer dizer.</p>
+
+        <h2 id="lock-vs-encrypt">Qual é a diferença entre ocultar e criptografar uma foto?</h2>
+        <p>Ocultar é colocar uma porta na frente de uma foto normal. Criptografar é transformar a própria foto em dados ilegíveis.</p>
+        <p>Um cofre que só oculta guarda suas fotos como arquivos de imagem comuns dentro do app e mostra uma tela de PIN antes de exibi-las. Quem chegar a esses arquivos por outro caminho (um backup no computador, uma ferramenta forense, um bug) vê as fotos. Um cofre que criptografa guarda só dados embaralhados. Sem a chave, até uma cópia perfeita dos arquivos não serve para nada.</p>
+
+        <h2 id="keys">O que é uma chave de criptografia?</h2>
+        <p>Uma chave é um número aleatório longo que a criptografia usa para embaralhar e desembaralhar os dados. Uma chave de 256 bits tem cerca de 10<sup>77</sup> valores possíveis, muito além do que qualquer computador conseguiria testar, então ninguém adivinha a chave em si.</p>
+        <p>Por isso os atacantes não vão atrás da chave. Eles vão atrás do que abre a chave: o seu código.</p>
+
+        <h2 id="stretching">Como um PIN ou padrão vira uma chave?</h2>
+        <p>Por meio de uma "função de derivação de chave", que transforma o seu código numa chave. As boas são lentas e gastam muita memória de propósito, para que cada tentativa custe tempo de verdade.</p>
+        <p>Isso importa porque os códigos são curtos. Um PIN de 4 dígitos tem 10.000 possibilidades. Se cada tentativa levasse um microssegundo, um computador testaria todas em um centésimo de segundo. Se cada tentativa leva meio segundo e muita memória, a mesma busca leva mais de uma hora para um PIN de 4 dígitos, e cresce muito a cada caractere ou ponto a mais. Uma senha longa e aleatória fica impossível de adivinhar na prática.</p>
+        <ul>
+          <li><strong>Argon2id</strong> é a opção recomendada hoje. Ele é "pesado em memória", o que deixa caro acelerá-lo com placas de vídeo ou chips feitos sob medida.</li>
+          <li><strong>PBKDF2</strong> é mais antigo e ainda comum. É lento, mas mais barato de atacar com hardware especializado.</li>
+          <li><strong>Um hash simples, ou nada,</strong> quer dizer que as tentativas saem quase de graça.</li>
+        </ul>
+        <p>O Noxium, o app que fazemos, usa Argon2id com 64 MiB de memória e 3 passadas, mais um salt aleatório de 128 bits para que o mesmo padrão nunca gere a mesma chave duas vezes. Nossa página sobre o <a href="/features/pattern-lock">bloqueio por padrão do Noxium</a> mostra quantos padrões a grade 5×5 permite.</p>
+
+        <h2 id="aes">O que significa AES-256-GCM?</h2>
+        <p>É o algoritmo que embaralha as fotos, num modo que também detecta adulteração.</p>
+        <ul>
+          <li><strong>AES</strong> é o algoritmo padrão usado por governos, bancos e pelo seu próprio iPhone.</li>
+          <li><strong>256</strong> é o tamanho da chave em bits.</li>
+          <li><strong>GCM</strong> adiciona uma etiqueta de autenticação: se um único bit do arquivo criptografado for alterado ou danificado, a descriptografia falha em vez de gerar uma foto corrompida.</li>
+        </ul>
+        <p>"Criptografia de nível militar" costuma ser só AES. As perguntas que interessam são de onde vem a chave, onde ela fica guardada e se o backup também é criptografado.</p>
+
+        <h2 id="wrapping">Por que os bons cofres usam "chaves dentro de chaves"?</h2>
+        <p>Para você poder trocar o código sem criptografar todas as fotos de novo, e para que uma chave de arquivo vazada não exponha as outras.</p>
+        <ol class="steps">
+          <li>Seu código é esticado até virar uma <strong>chave de encapsulamento</strong>.</li>
+          <li>A chave de encapsulamento abre uma <strong>chave do cofre</strong> aleatória, guardada só de forma criptografada.</li>
+          <li>A chave do cofre abre uma <strong>chave de arquivo</strong> aleatória separada para cada foto, vídeo e nota.</li>
+        </ol>
+        <p>Trocar o código só reencapsula a chave do cofre. Uma frase de recuperação funciona do mesmo jeito: é um segundo encapsulamento da mesma chave do cofre, então tanto o código quanto a frase abrem o cofre. Vídeos grandes costumam ser criptografados em blocos, para tocar sem descriptografar o arquivo inteiro antes. O Noxium usa blocos de 1 MiB, cada um com a própria etiqueta de autenticação. A hierarquia completa de chaves está na nossa <a href="/#security">seção de segurança</a>, e cada camada é explicada na nossa página de <a href="/features/on-device-encryption">criptografia no aparelho</a>.</p>
+
+        <h2 id="backup">Como um backup criptografado continua privado?</h2>
+        <p>Criptografando no celular antes de enviar qualquer coisa, para que a nuvem só guarde dados embaralhados. Isso se chama criptografia de ponta a ponta.</p>
+        <p>O teste é simples: a empresa conseguiria redefinir seu código por e-mail e devolver suas fotos? Se sim, ela consegue chegar à chave, assim como qualquer pessoa que entre nos sistemas dela ou no seu e-mail. Se não, só você consegue descriptografar o backup, e é por isso também que perder o código e a frase de recuperação ao mesmo tempo significa perder o acesso.</p>
+        <p>O Noxium criptografa no iPhone as fotos, as miniaturas e os nomes, datas e lugares delas, e depois faz backup só desses dados criptografados no seu próprio iCloud privado (CloudKit). A Apple guarda, mas não consegue ler.</p>
+
+        <h2 id="limits">Contra o que a criptografia não protege?</h2>
+        <ul>
+          <li><strong>Alguém vendo você digitar o código,</strong> ou obrigando você a digitar.</li>
+          <li><strong>Um cofre aberto.</strong> Enquanto ele está desbloqueado na tela, as fotos ficam visíveis. Bons apps bloqueiam rápido e escondem o conteúdo no seletor de apps.</li>
+          <li><strong>Um código curto.</strong> A derivação lenta ajuda, mas um PIN de 4 dígitos ainda pode ser testado por inteiro.</li>
+          <li><strong>Cópias fora do cofre,</strong> como originais que ficaram em Fotos, Mensagens ou Apagados.</li>
+        </ul>
+
+        <h2 id="spot">Como saber se um cofre criptografa de verdade?</h2>
+        <ul>
+          <li>Ele cita o algoritmo e a derivação de chave (por exemplo AES-256-GCM e Argon2id ou PBKDF2), não só "seguro".</li>
+          <li>Ele diz que a criptografia acontece no aparelho, antes do backup.</li>
+          <li>Ele não consegue redefinir seu código por e-mail, ou diz com honestidade que consegue.</li>
+          <li>O backup dele é descrito como criptografado com a sua chave, não só como "nuvem segura".</li>
+          <li>O ideal é que o código da criptografia seja aberto ou revisado de forma independente.</li>
+        </ul>
+        <p>Em outubro de 2026, só 2 dos 17 apps cofre que comparamos citavam AES-256-GCM na descrição da App Store. Veja todos no <a href="/pt-br/best-photo-vault-apps-iphone">nosso comparativo</a>.</p>
+        <figure class="shot">
+          <img src="/assets/guides/noxium-lock.jpg" alt="Tela de bloqueio do Noxium: o padrão é esticado com Argon2id até virar a chave que abre o cofre" width="559" height="1216" loading="lazy" decoding="async">
+          <figcaption>No Noxium, seu padrão nunca é guardado. Ele é esticado com Argon2id até virar a chave que abre o seu cofre.</figcaption>
+        </figure>
+
+        <div class="cta-card">
+          <p class="cta-card-title">Criptografia explicada com todas as letras</p>
+          <p>O Noxium diz o nome de cada peça: Argon2id para o seu padrão, AES-256-GCM para cada arquivo e só dados criptografados no seu próprio iCloud. Grátis para 150 fotos e 10 vídeos.</p>
+          <a href="https://apps.apple.com/app/apple-store/id6824616093" class="btn btn-primary" data-cta="body" data-label-waitlist="Entrar no beta" data-label-live="Baixar na App Store">Baixar na App Store</a>
+          <!-- build:status -->
+          <span class="release-status">Disponível na App Store para iPhone e iPad.</span>
+          <!-- /build:status -->
+        </div>
+
+        <h2 id="faq">Perguntas frequentes</h2>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Os apps cofre de fotos são criptografados?</span></span></summary>
+            <div class="faq-body"><p>Alguns sim, outros não. Muitos só mostram uma tela de PIN na frente de arquivos comuns. Procure um algoritmo com nome, como AES-256, e criptografia no aparelho antes do backup.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>O que quer dizer criptografia de nível militar?</span></span></summary>
+            <div class="faq-body"><p>Geralmente só AES, o algoritmo padrão. Isso não diz como a chave é criada nem onde ela fica, o que importa mais.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>O que é Argon2id?</span></span></summary>
+            <div class="faq-body"><p>Uma função de derivação de chave que transforma uma senha ou padrão em chave de criptografia devagar e com muita memória, para que adivinhar códigos saia caro.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Dá para hackear um cofre criptografado?</span></span></summary>
+            <div class="faq-body"><p>A criptografia em si não é o ponto fraco. Códigos curtos, códigos que outra pessoa viu e cópias sem criptografia deixadas em outros lugares são. Use um código longo e apague os originais depois de importar.</p></div>
+          </details>
+        </div>
+
+        <p><em>Viu um erro ou algo desatualizado? Escreva para <a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a> e a gente corrige.</em></p>
+      </article>
+
+      <aside class="article-aside" aria-label="Nesta página">
+        <nav class="toc" aria-label="Sumário">
+          <p class="toc-title">Nesta página</p>
+          <ol>
+            <li><a href="#lock-vs-encrypt">Ocultar ou criptografar</a></li>
+            <li><a href="#keys">O que é uma chave</a></li>
+            <li><a href="#stretching">Do código à chave</a></li>
+            <li><a href="#aes">AES-256-GCM</a></li>
+            <li><a href="#wrapping">Chaves dentro de chaves</a></li>
+            <li><a href="#backup">Backups criptografados</a></li>
+            <li><a href="#limits">O que a criptografia não faz</a></li>
+            <li><a href="#spot">Como perceber a diferença</a></li>
+            <li><a href="#faq">Perguntas frequentes</a></li>
+          </ol>
+        </nav>
+        <!-- build:related -->
+        <div class="related">
+          <p class="toc-title">Relacionados</p>
+          <ul role="list">
+            <li><a href="/pt-br/guides/are-photo-vault-apps-safe">Cofres de fotos são seguros?</a></li>
+            <li><a href="/pt-br/guides/forgot-photo-vault-password">Esqueceu a senha do cofre</a></li>
+            <li><a href="/pt-br/best-photo-vault-apps-iphone">Melhores cofres de fotos</a></li>
+            <li><a href="/pt-br/guides/what-is-a-decoy-vault">O que é um cofre isca?</a></li>
+            <li><a href="/pt-br/guides/">Todos os guias</a></li>
+          </ul>
+        </div>
+        <!-- /build:related -->
+      </aside>
+    </div>
+  </main>
+
+  <!-- build:footer -->
+  <!-- Shared footer for subpages (the homepage has its own copy with build:status). Edit partials/footer.html, then run python3 tools/build.py. -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="/" class="wordmark" aria-label="Página inicial do Noxium">Noxium<span aria-hidden="true">.</span></a>
+          <p>Um cofre privado para fotos, vídeos e notas.</p>
+        </div>
+
+        <nav class="footer-groups" aria-label="Rodapé">
+          <div>
+            <h2 class="footer-heading">Produto</h2>
+            <ul role="list">
+              <li><a href="/#features">Recursos</a></li>
+              <li><a href="/#security">Como funciona a criptografia</a></li>
+              <li><a href="/#pricing">Grátis ou Pro</a></li>
+              <li><a href="/pt-br/best-photo-vault-apps-iphone">Comparativo de apps de cofre de fotos</a></li>
+              <li><a href="/#faq">Perguntas frequentes</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="footer-heading">Guias</h2>
+            <ul role="list">
+              <li><a href="/pt-br/guides/how-to-hide-photos-on-iphone">Esconder fotos no iPhone</a></li>
+  <li><a href="/pt-br/guides/is-iphone-hidden-album-private">Itens Ocultos é privado?</a></li>
+  <li><a href="/pt-br/guides/hidden-photos-iphone">Fotos ocultas</a></li>
+  <li><a href="/pt-br/guides/move-photo-vault-to-new-iphone">Cofre para um iPhone novo</a></li>
+  <li><a href="/pt-br/guides/photo-vault-lost-photos">Fotos sumidas do cofre</a></li>
+  <li><a href="/pt-br/guides/keepsafe-alternatives">Alternativas ao Keepsafe</a></li>
+              <li><a href="/pt-br/guides/">Todos os guias</a></li>
+              <li><a href="/features/">Features</a></li>
+  <li><a href="/compare/">Comparisons</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="footer-heading">Empresa</h2>
+            <ul role="list">
+              <li><a href="/about">Sobre</a></li>
+              <li><a href="/support">Suporte</a></li>
+              <li><a href="/privacy">Política de privacidade</a></li>
+              <li><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener">Termos de uso</a></li>
+              <li><a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Noxium. Feito pela Inertia Projects, um desenvolvedor independente. Rótulo de privacidade da App Store: Dados não coletados.</p>
+        <nav class="lang-list" aria-label="Idioma"><a href="/guides/how-encrypted-photo-vaults-work" hreflang="en" lang="en">English</a><a href="/de/guides/how-encrypted-photo-vaults-work" hreflang="de" lang="de">Deutsch</a><a href="/fr/guides/how-encrypted-photo-vaults-work" hreflang="fr" lang="fr">Français</a><a href="/es/guides/how-encrypted-photo-vaults-work" hreflang="es" lang="es">Español</a><a href="/pt-br/guides/how-encrypted-photo-vaults-work" hreflang="pt-BR" lang="pt-BR" aria-current="true">Português (Brasil)</a><a href="/it/guides/how-encrypted-photo-vaults-work" hreflang="it" lang="it">Italiano</a><a href="/ja/guides/how-encrypted-photo-vaults-work" hreflang="ja" lang="ja">日本語</a><a href="/ko/guides/how-encrypted-photo-vaults-work" hreflang="ko" lang="ko">한국어</a><a href="/zh-hant/guides/how-encrypted-photo-vaults-work" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></nav>
+        <p>Apple, o logotipo da Apple, iPhone, iPad e Face ID são marcas comerciais da Apple Inc., registradas nos EUA e em outros países. App Store é uma marca de serviço da Apple Inc.</p>
+      </div>
+    </div>
+  </footer>
+  <!-- /build:footer -->
+
+  <script src="/app.js" defer></script>
+</body>
+</html>

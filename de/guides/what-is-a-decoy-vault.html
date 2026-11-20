@@ -41,7 +41,7 @@
   <meta property="og:image:alt" content="Noxium photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
   <meta property="og:locale" content="de_DE">
   <meta property="article:published_time" content="2026-11-17">
-  <meta property="article:modified_time" content="2026-11-17">
+  <meta property="article:modified_time" content="2026-11-20">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Was ist ein Tarntresor? Und schützt er dich wirklich?">
   <meta name="twitter:description" content="Ein Tarntresor ist ein zweiter, harmloser Tresor in einer Foto-Tresor-App. Wie er funktioniert, welche Apps einen haben und wo seine Grenzen liegen.">
@@ -90,7 +90,7 @@
         "mainEntityOfPage": "https://getnoxium.app/de/guides/what-is-a-decoy-vault",
         "image": "https://getnoxium.app/assets/guides/noxium-decoy.jpg",
         "datePublished": "2026-11-17",
-        "dateModified": "2026-11-17",
+        "dateModified": "2026-11-20",
         "author": {
           "@id": "https://getnoxium.app/#org"
         },
@@ -129,6 +129,14 @@
         "@type": "FAQPage",
         "@id": "https://getnoxium.app/de/guides/what-is-a-decoy-vault#faq",
         "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Kann man mehr als einen Tarntresor haben?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "In manchen Apps. Der kostenlose Plan von Noxium enthält 1 Tarntresor, mit Pro so viele du willst; die Einträge anderer Apps beschreiben meist einen einzigen Tarncode."
+            }
+          },
           {
             "@type": "Question",
             "name": "Was ist eine Fake-PIN in einer Foto-Tresor-App?",
@@ -225,7 +233,7 @@
         <p class="eyebrow"><span class="dot dot-ink" aria-hidden="true"></span>Anleitung · Tarntresore</p>
         <h1>Was ist ein Tarntresor, und schützt er dich wirklich?</h1>
         <!-- build:byline -->
-        <p class="byline"><span>Von <a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>Zuletzt aktualisiert am <time datetime="2026-11-17">17. November 2026</time></span></p>
+        <p class="byline"><span>Von <a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>Veröffentlicht am <time datetime="2026-11-17">17. November 2026</time></span><span aria-hidden="true">·</span><span>Zuletzt aktualisiert am <time datetime="2026-11-20">20. November 2026</time></span></p>
         <!-- /build:byline -->
         <div class="answer">
           <span class="answer-label">Kurz gesagt</span>
@@ -264,25 +272,38 @@
         <p>Richte einen Löschcode nur ein, wenn es besser ist, die Fotos zu verlieren, als dass sie jemand sieht, und bewahre eine Kopie woanders auf, wenn du sie nicht verlieren darfst.</p>
 
         <h2 id="which-apps">Welche Foto-Tresor-Apps haben einen Tarntresor?</h2>
-        <p>Laut ihren App-Store-Seiten vom 22. Oktober 2026:</p>
+        <p>Laut ihren App-Store-Einträgen, geprüft vom 22. Oktober bis 15. November 2026. Die App-Namen führen zu unseren ausführlichen Tests, wo es einen gibt.</p>
         <div class="data-table-wrap" tabindex="0" role="region" aria-labelledby="decoy-caption">
           <table class="data-table">
-            <caption id="decoy-caption">Tarnfunktionen laut der Beschreibung jeder App im US App Store, 22. Oktober 2026</caption>
+            <caption id="decoy-caption">Tarnfunktionen laut der Beschreibung jeder App im US App Store, geprüft vom 22. Oktober bis 15. November 2026</caption>
             <thead><tr><th scope="col">App</th><th scope="col">Was die Beschreibung sagt</th></tr></thead>
             <tbody>
               <tr class="is-noxium"><th scope="row">Noxium<small>Unsere App</small></th><td>Ein zweites Muster öffnet einen getrennten, verschlüsselten Tresor; 1 kostenlos, mehr mit Pro. Notlöschmuster mit Pro.</td></tr>
-              <tr><th scope="row">Vaultaire</th><td>Ein anderes Muster öffnet einen anderen Tresor; Zwangstresor mit Pro.</td></tr>
-              <tr><th scope="row">Private Photo Vault</th><td>Tarnpasswort.</td></tr>
+              <tr><th scope="row"><a href="/compare/vaultaire">Vaultaire</a></th><td>Ein anderes Muster öffnet einen anderen Tresor; Zwangstresor mit Pro.</td></tr>
+              <tr><th scope="row"><a href="/compare/private-photo-vault">Private Photo Vault</a></th><td>Tarnpasswort.</td></tr>
               <tr><th scope="row">Secret Photo Album (SA)</th><td>Tarn-PIN.</td></tr>
               <tr><th scope="row">PV – Secret Photo Album</th><td>Fake-Passwort.</td></tr>
               <tr><th scope="row">Safe Lock</th><td>Fake-Passwort, das eine Fake-Galerie öffnet.</td></tr>
               <tr><th scope="row">KYMS</th><td>Fake-PIN für einen Tarntresor.</td></tr>
-              <tr><th scope="row">Privault</th><td>Ein Zweitcode öffnet einen Zweitordner.</td></tr>
-              <tr><th scope="row">Apple-Album „Ausgeblendet“</th><td>Kein Tarntresor.</td></tr>
+              <tr><th scope="row"><a href="/compare/privault">Privault</a></th><td>Ein Zweitcode öffnet einen Zweitordner.</td></tr>
+              <tr><th scope="row"><a href="/compare/secret-photo-vault">Secret Photo Vault – Lock Photos</a></th><td>Tarnkonten mit eigenen Passwörtern.</td></tr>
+              <tr><th scope="row"><a href="/compare/hide-it-pro">Hide it Pro</a></th><td>Kein Tarntresor; ein Fluchtcode lässt die App leer aussehen.</td></tr>
+              <tr><th scope="row"><a href="/compare/calculator-hide-photos">Calculator#</a></th><td>Kein Tarntresor; ein Panikschalter springt in eine andere App.</td></tr>
+              <tr><th scope="row"><a href="/compare/apple-hidden-album">Apple-Album „Ausgeblendet“</a></th><td>Kein Tarntresor.</td></tr>
             </tbody>
           </table>
         </div>
         <p>Die Beschreibungen sagen nicht, welche Art von Tarntresor es ist, also teste es: Öffne den Tarntresor und sieh dir jeden Bildschirm an, auch die Einstellungen. Wenn irgendwo ein weiterer Tresor erwähnt wird, sieht das auch die Person, die nachschaut. Alle 17 Apps findest du in <a href="/de/best-photo-vault-apps-iphone">unserem Vergleich</a>. Zwei weitere gehen anders vor: <a href="/compare/secret-photo-vault">Secret Photo Vault</a> hat Tarnkonten mit eigenen Passwörtern, und <a href="/compare/hide-it-pro">Hide it Pro</a> hat einen Fluchtcode, der die App leer aussehen lässt.</p>
+
+        <h2 id="test">Wie testest du einen Tarntresor, bevor du ihn brauchst?</h2>
+        <p>Öffne ihn so, als wärst du die andere Person, und such nach allem, was den echten Tresor verrät. Fünf Minuten jetzt ersparen dir später einen schlimmen Moment.</p>
+        <ol class="steps">
+          <li><strong>Öffne den Tarntresor</strong> mit seinem eigenen Code, aus einer gesperrten App heraus.</li>
+          <li><strong>Geh jeden Bildschirm durch</strong>, auch die Einstellungen. Alles, was einen anderen Tresor nennt, mehr Objekte zählt, als du siehst, oder anbietet, „den Tresor zu wechseln“, verrät dich.</li>
+          <li><strong>Prüf die Backup- oder Speicheranzeigen.</strong> Eine Gesamtgröße, die weit über dem Inhalt des Tarntresors liegt, wirft Fragen auf.</li>
+          <li><strong>Probier Face ID aus.</strong> Öffnet es den echten Tresor, lass Face ID aus oder übe, unter Druck den Tarncode zu nutzen.</li>
+          <li><strong>Füg ab und zu ein paar neue Fotos hinzu,</strong> damit die neuesten Objekte im Tarntresor nicht Monate alt sind.</li>
+        </ol>
 
         <h2 id="set-up">Wie richtest du einen Tarntresor gut ein?</h2>
         <ol class="steps">
@@ -309,6 +330,10 @@
 
         <h2 id="faq">Häufige Fragen</h2>
         <div class="faq-list">
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Kann man mehr als einen Tarntresor haben?</span></span></summary>
+            <div class="faq-body"><p>In manchen Apps. Der kostenlose Plan von Noxium enthält 1 Tarntresor, mit Pro so viele du willst; die Einträge anderer Apps beschreiben meist einen einzigen Tarncode.</p></div>
+          </details>
           <details class="faq-item">
             <summary class="faq-summary"><span class="faq-summary-left"><span>Was ist eine Fake-PIN in einer Foto-Tresor-App?</span></span></summary>
             <div class="faq-body"><p>Eine zweite PIN, die statt deiner privaten Fotos einen anderen, harmlosen Satz Fotos öffnet. Es ist nur ein anderer Name für einen Tarntresor.</p></div>
@@ -339,6 +364,7 @@
             <li><a href="#limits">Was er nicht kann</a></li>
             <li><a href="#erase">Tarntresor oder Notlöschung</a></li>
             <li><a href="#which-apps">Apps mit Tarntresor</a></li>
+            <li><a href="#test">Tarntresor testen</a></li>
             <li><a href="#set-up">Gut einrichten</a></li>
             <li><a href="#faq">Häufige Fragen</a></li>
           </ol>
@@ -348,6 +374,7 @@
           <p class="toc-title">Verwandte Seiten</p>
           <ul role="list">
             <li><a href="/de/guides/lock-photos-iphone-face-id">Fotos sperren</a></li>
+            <li><a href="/de/guides/how-encrypted-photo-vaults-work">So funktioniert Verschlüsselung</a></li>
             <li><a href="/de/best-photo-vault-apps-iphone">Beste Foto-Tresor-Apps</a></li>
             <li><a href="/de/guides/are-photo-vault-apps-safe">Sind Foto-Tresore sicher?</a></li>
             <li><a href="/de/guides/">Alle Anleitungen</a></li>

@@ -146,7 +146,7 @@
       "updated": "2026-11-15"
     },
     "/guides/what-is-a-decoy-vault": {
-      "source": "2026-10-26",
+      "source": "2026-11-19",
       "title": "おとり保管庫とは？ 本当に守ってくれるのか",
       "description": "おとり保管庫は、写真保管庫アプリの中にある当たり障りのない 2 つ目の保管庫。仕組み、対応アプリ、そして本当の限界を解説します。",
       "headline": "おとり保管庫とは？ 本当にあなたを守ってくれるのか",
@@ -154,7 +154,7 @@
       "crumb": "おとり保管庫とは",
       "keyword": "おとり保管庫 アプリ",
       "published": "2026-11-17",
-      "updated": "2026-11-17"
+      "updated": "2026-11-20"
     },
     "/guides/are-photo-vault-apps-safe": {
       "source": "2026-10-26",
@@ -199,6 +199,17 @@
       "keyword": "iphone 動画 隠す",
       "published": "2026-11-18",
       "updated": "2026-11-18"
+    },
+    "/guides/how-encrypted-photo-vaults-work": {
+      "source": "2026-10-26",
+      "title": "写真保管庫アプリの暗号化のしくみをやさしく解説",
+      "description": "写真保管庫の暗号化とは？ 鍵、Argon2id、AES-256-GCM、暗号化バックアップを専門用語なしで解説。隠すだけのアプリの見分け方も。",
+      "headline": "暗号化された写真保管庫のしくみを、わかりやすく解説",
+      "summary": "鍵、鍵導出、AES-256-GCM、暗号化されたバックアップを専門用語なしで解説します。",
+      "crumb": "暗号化のしくみ",
+      "keyword": "写真保管庫 暗号化 仕組み",
+      "published": "2026-11-20",
+      "updated": "2026-11-20"
     }
   },
   "facts": [

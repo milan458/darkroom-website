@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#FAF9F6" media="(prefers-color-scheme: light)">
+  <!-- build:meta -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WWNMHW99TP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-WWNMHW99TP');
+  </script>
+  <title>Come funziona una cassaforte per foto cifrata</title>
+  <meta name="description" content="La cifratura in una cassaforte per foto, senza gergo: chiavi, Argon2id, AES-256-GCM e backup. E come riconoscere quella che si limita a nascondere.">
+  <link rel="canonical" href="https://getnoxium.app/it/guides/how-encrypted-photo-vaults-work">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <link rel="alternate" hreflang="en" href="https://getnoxium.app/guides/how-encrypted-photo-vaults-work">
+  <link rel="alternate" hreflang="de" href="https://getnoxium.app/de/guides/how-encrypted-photo-vaults-work">
+  <link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/guides/how-encrypted-photo-vaults-work">
+  <link rel="alternate" hreflang="es" href="https://getnoxium.app/es/guides/how-encrypted-photo-vaults-work">
+  <link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/guides/how-encrypted-photo-vaults-work">
+  <link rel="alternate" hreflang="it" href="https://getnoxium.app/it/guides/how-encrypted-photo-vaults-work">
+  <link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/guides/how-encrypted-photo-vaults-work">
+  <link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/guides/how-encrypted-photo-vaults-work">
+  <link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/guides/how-encrypted-photo-vaults-work">
+  <link rel="alternate" hreflang="x-default" href="https://getnoxium.app/guides/how-encrypted-photo-vaults-work">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Noxium">
+  <meta property="og:title" content="Come funziona una cassaforte per foto cifrata">
+  <meta property="og:description" content="La cifratura in una cassaforte per foto, senza gergo: chiavi, Argon2id, AES-256-GCM e backup. E come riconoscere quella che si limita a nascondere.">
+  <meta property="og:url" content="https://getnoxium.app/it/guides/how-encrypted-photo-vaults-work">
+  <meta property="og:image" content="https://getnoxium.app/assets/og/noxium-og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Noxium photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
+  <meta property="og:locale" content="it_IT">
+  <meta property="article:published_time" content="2026-11-20">
+  <meta property="article:modified_time" content="2026-11-20">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Come funziona una cassaforte per foto cifrata">
+  <meta name="twitter:description" content="La cifratura in una cassaforte per foto, senza gergo: chiavi, Argon2id, AES-256-GCM e backup. E come riconoscere quella che si limita a nascondere.">
+  <meta name="twitter:image" content="https://getnoxium.app/assets/og/noxium-og.png">
+  <meta name="twitter:image:alt" content="Noxium photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
+  <meta name="apple-itunes-app" content="app-id=6824616093">
+  <!-- /build:meta -->
+
+  <link rel="icon" type="image/svg+xml" href="/assets/noxium-logo.svg">
+  <link rel="apple-touch-icon" href="/assets/noxium-icon-180.png">
+
+  <link rel="preload" href="/assets/fonts/instrument-serif-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/fonts/fonts.css">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/pages.css">
+
+  <!-- build:jsonld -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://getnoxium.app/#org",
+        "name": "Inertia Projects",
+        "url": "https://getnoxium.app/about",
+        "email": "business@inertiaprojects.info",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://getnoxium.app/assets/noxium-icon-512.png"
+        },
+        "brand": {
+          "@type": "Brand",
+          "name": "Noxium"
+        },
+        "sameAs": [
+          "https://apps.apple.com/app/apple-store/id6824616093"
+        ]
+      },
+      {
+        "@type": "Article",
+        "@id": "https://getnoxium.app/it/guides/how-encrypted-photo-vaults-work#article",
+        "headline": "Come funzionano le casseforti per foto cifrate, spiegato semplice",
+        "description": "La cifratura in una cassaforte per foto, senza gergo: chiavi, Argon2id, AES-256-GCM e backup. E come riconoscere quella che si limita a nascondere.",
+        "url": "https://getnoxium.app/it/guides/how-encrypted-photo-vaults-work",
+        "mainEntityOfPage": "https://getnoxium.app/it/guides/how-encrypted-photo-vaults-work",
+        "image": "https://getnoxium.app/assets/guides/noxium-lock.jpg",
+        "datePublished": "2026-11-20",
+        "dateModified": "2026-11-20",
+        "author": {
+          "@id": "https://getnoxium.app/#org"
+        },
+        "publisher": {
+          "@id": "https://getnoxium.app/#org"
+        },
+        "inLanguage": "it-IT",
+        "isPartOf": {
+          "@id": "https://getnoxium.app/#website"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Noxium",
+            "item": "https://getnoxium.app/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Guide",
+            "item": "https://getnoxium.app/it/guides/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Come funziona la cifratura",
+            "item": "https://getnoxium.app/it/guides/how-encrypted-photo-vaults-work"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://getnoxium.app/it/guides/how-encrypted-photo-vaults-work#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Le app cassaforte per foto sono cifrate?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Alcune sì, altre no. Molte mostrano solo una schermata col PIN davanti a file normali. Cerca un algoritmo con un nome, come AES-256, e una cifratura sul dispositivo prima del backup."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Cosa significa cifratura di livello militare?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Di solito solo AES, l’algoritmo standard. Non dice come viene creata o conservata la chiave, che conta di più."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Cos’è Argon2id?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Una funzione di derivazione della chiave che trasforma una password o una sequenza in una chiave di cifratura lentamente e con molta memoria, così indovinare i codici costa caro."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Una cassaforte cifrata si può violare?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La cifratura in sé non è il punto debole. Lo sono i codici corti, i codici visti da qualcun altro e le copie non cifrate lasciate altrove. Usa un codice lungo e cancella gli originali dopo l’importazione."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <!-- /build:jsonld -->
+</head>
+<body>
+  <!-- build:header -->
+  <!-- Shared header (homepage and subpages). Edit partials/header.html, then run python3 tools/build.py. -->
+  <a href="#main-content" class="skip-link">Vai al contenuto principale</a>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <nav class="nav glass" aria-label="Navigazione principale">
+        <a href="/" class="wordmark" aria-label="Home di Noxium">Noxium<span aria-hidden="true">.</span></a>
+
+        <div class="nav-links">
+          <a href="/#features">Funzioni</a>
+          <a href="/#security">Sicurezza</a>
+          <a href="/#pricing">Prezzi</a>
+          <a href="/compare/">Confronta</a>
+          <a href="/it/guides/">Guide</a>
+        </div>
+
+        <div class="nav-actions">
+          <a href="https://apps.apple.com/app/apple-store/id6824616093" class="btn btn-ink btn-nav nav-cta" data-cta="nav" data-label-waitlist="Unisciti alla beta" data-label-live="Scarica Noxium">Scarica Noxium</a>
+          <button type="button" class="mobile-menu-btn" id="mobile-menu-btn" aria-expanded="false" aria-controls="mobile-drawer" aria-label="Menu">
+            <svg class="icon icon-menu" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 9h14M5 15h14"/></svg>
+            <svg class="icon icon-close" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <div class="mobile-drawer glass" id="mobile-drawer" hidden>
+      <nav class="mobile-drawer-list" aria-label="Mobile">
+        <a href="/#features">Funzioni</a>
+        <a href="/#security">Sicurezza</a>
+        <a href="/#pricing">Prezzi</a>
+        <a href="/it/best-photo-vault-apps-iphone">Confronta le app cassaforte</a>
+        <a href="/it/guides/">Guide</a>
+        <a href="/about">Chi siamo</a>
+        <a href="/support">Assistenza</a>
+      </nav>
+    </div>
+  </header>
+  <!-- /build:header -->
+
+  <main id="main-content" tabindex="-1">
+    <div class="page-hero">
+      <div class="container">
+        <!-- build:breadcrumbs -->
+        <nav class="crumbs" aria-label="Percorso di navigazione">
+          <ol>
+            <li><a href="/">Noxium</a></li>
+            <li><a href="/it/guides/">Guide</a></li>
+            <li aria-current="page">Come funziona la cifratura</li>
+          </ol>
+        </nav>
+        <!-- /build:breadcrumbs -->
+        <p class="eyebrow"><span class="dot dot-ink" aria-hidden="true"></span>Guida · La cifratura spiegata</p>
+        <h1>Come funzionano le casseforti per foto cifrate, spiegato semplice</h1>
+        <!-- build:byline -->
+        <p class="byline"><span>Di <a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>Aggiornato il <time datetime="2026-11-20">20 novembre 2026</time></span></p>
+        <!-- /build:byline -->
+        <div class="answer">
+          <span class="answer-label">In breve</span>
+          <p>Una cassaforte per foto cifrata rimescola ogni foto con una chiave segreta, così senza di essa il file è illeggibile. Il tuo PIN, la password o la sequenza diventano quella chiave (o una chiave che la apre) sul telefono, lentamente e di proposito, così tirare a indovinare costa caro. Una cassaforte che mette solo una schermata col PIN davanti a file normali nasconde le foto, non le cifra.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container article-layout">
+      <article class="prose">
+        <p>Le app cassaforte adorano la parola “cifrato”, e alcune aggiungono “di livello militare”. Nessuna delle due dice molto. Questa guida spiega, senza matematica, cosa comporta una vera cifratura in una cassaforte per foto, così puoi leggere le promesse di un’app e capire cosa significano.</p>
+
+        <h2 id="lock-vs-encrypt">Che differenza c’è tra nascondere e cifrare una foto?</h2>
+        <p>Nascondere mette una porta davanti a una foto normale. Cifrare trasforma la foto stessa in dati illeggibili.</p>
+        <p>Una cassaforte che si limita a nascondere conserva le foto come normali file immagine dentro l’app e mostra una schermata col PIN prima di farle vedere. Chi arriva a quei file per un’altra strada (un backup sul computer, uno strumento forense, un bug) vede le foto. Una cassaforte che cifra conserva solo dati rimescolati. Senza la chiave, anche una copia perfetta dei file è inutile.</p>
+
+        <h2 id="keys">Cos’è una chiave di cifratura?</h2>
+        <p>Una chiave è un lungo numero casuale che la cifratura usa per rimescolare e ricomporre i dati. Una chiave a 256 bit ha circa 10<sup>77</sup> valori possibili, molti più di quanti un computer possa provarne, quindi nessuno indovina la chiave in sé.</p>
+        <p>Per questo chi attacca non punta alla chiave. Punta a ciò che la apre: il tuo codice.</p>
+
+        <h2 id="stretching">Come fa un PIN o una sequenza a diventare una chiave?</h2>
+        <p>Con una “funzione di derivazione della chiave”, che trasforma il tuo codice in una chiave. Quelle buone sono lente e usano molta memoria di proposito, così ogni tentativo costa tempo vero.</p>
+        <p>Conta perché i codici sono corti. Un PIN di 4 cifre ha 10.000 possibilità. Se ogni tentativo richiedesse un microsecondo, un computer le proverebbe tutte in un centesimo di secondo. Se ogni tentativo richiede mezzo secondo e molta memoria, la stessa ricerca dura più di un’ora per un PIN di 4 cifre, e cresce enormemente a ogni carattere o punto in più. Una password lunga e casuale diventa impossibile da indovinare nella pratica.</p>
+        <ul>
+          <li><strong>Argon2id</strong> è la scelta raccomandata oggi. È “memory-hard”: renderlo più veloce con schede grafiche o chip dedicati costa caro.</li>
+          <li><strong>PBKDF2</strong> è più vecchio e ancora diffuso. È lento, ma più economico da attaccare con hardware specializzato.</li>
+          <li><strong>Un semplice hash, o niente,</strong> significa che i tentativi sono quasi gratis.</li>
+        </ul>
+        <p>Noxium, l’app che sviluppiamo, usa Argon2id con 64 MiB di memoria e 3 passaggi, più un salt casuale a 128 bit perché la stessa sequenza non produca mai due volte la stessa chiave. La nostra pagina sul <a href="/features/pattern-lock">blocco con sequenza di Noxium</a> mostra quante sequenze consente la griglia 5×5.</p>
+
+        <h2 id="aes">Cosa significa AES-256-GCM?</h2>
+        <p>È l’algoritmo che rimescola le foto, in una modalità che rileva anche le manomissioni.</p>
+        <ul>
+          <li><strong>AES</strong> è l’algoritmo standard usato da governi, banche e dal tuo stesso iPhone.</li>
+          <li><strong>256</strong> è la lunghezza della chiave in bit.</li>
+          <li><strong>GCM</strong> aggiunge un’etichetta di autenticazione: se anche un solo bit del file cifrato viene cambiato o danneggiato, la decifratura fallisce invece di restituire una foto corrotta.</li>
+        </ul>
+        <p>“Cifratura di livello militare” di solito vuol dire solo AES. Le domande interessanti sono da dove nasce la chiave, dove viene conservata e se anche il backup è cifrato.</p>
+
+        <h2 id="wrapping">Perché le buone casseforti usano “chiavi dentro chiavi”?</h2>
+        <p>Così puoi cambiare il codice senza ricifrare ogni foto, e una singola chiave di file trapelata non espone tutte le altre.</p>
+        <ol class="steps">
+          <li>Il tuo codice viene allungato in una <strong>chiave di avvolgimento</strong>.</li>
+          <li>La chiave di avvolgimento apre una <strong>chiave della cassaforte</strong> casuale, conservata solo in forma cifrata.</li>
+          <li>La chiave della cassaforte apre una <strong>chiave di file</strong> casuale e separata per ogni foto, video e nota.</li>
+        </ol>
+        <p>Cambiare il codice riavvolge solo la chiave della cassaforte. Una frase di recupero funziona allo stesso modo: è un secondo avvolgimento della stessa chiave, quindi il codice o la frase aprono la cassaforte. I video grandi spesso vengono cifrati a blocchi, così si riproducono senza decifrare prima tutto il file. Noxium usa blocchi da 1 MiB, ognuno con la propria etichetta di autenticazione. La gerarchia completa delle chiavi è nella nostra <a href="/#security">sezione Sicurezza</a>, e ogni livello è spiegato nella pagina sulla <a href="/features/on-device-encryption">cifratura sul dispositivo</a>.</p>
+
+        <h2 id="backup">Come fa un backup cifrato a restare privato?</h2>
+        <p>Cifrando sul telefono prima di caricare qualsiasi cosa, così il cloud conserva solo dati rimescolati. Si chiama cifratura end-to-end.</p>
+        <p>Il test è semplice: l’azienda potrebbe reimpostare il tuo codice via email e restituirti le foto? Se sì, può arrivare alla chiave, e così chiunque entri nei suoi sistemi o nella tua email. Se no, solo tu puoi decifrare il backup, ed è anche per questo che perdere sia il codice sia la frase di recupero significa perdere l’accesso.</p>
+        <p>Noxium cifra sull’iPhone foto, miniature e i loro nomi, date e luoghi, poi salva solo quei dati cifrati nel tuo iCloud privato (CloudKit). Apple li conserva, ma non può leggerli.</p>
+
+        <h2 id="limits">Da cosa non protegge la cifratura?</h2>
+        <ul>
+          <li><strong>Da chi ti guarda mentre inserisci il codice,</strong> o ti costringe a inserirlo.</li>
+          <li><strong>Da una cassaforte aperta.</strong> Finché è sbloccata sullo schermo, le foto si vedono. Le app fatte bene si bloccano in fretta e nascondono il contenuto nel selettore delle app.</li>
+          <li><strong>Da un codice corto.</strong> Una derivazione lenta aiuta, ma un PIN di 4 cifre si può comunque provare tutto.</li>
+          <li><strong>Dalle copie fuori dalla cassaforte,</strong> come gli originali rimasti in Foto, Messaggi o Eliminati di recente.</li>
+        </ul>
+
+        <h2 id="spot">Come capire se una cassaforte cifra davvero?</h2>
+        <ul>
+          <li>Nomina l’algoritmo e la derivazione della chiave (per esempio AES-256-GCM e Argon2id o PBKDF2), non solo “sicuro”.</li>
+          <li>Dice che la cifratura avviene sul dispositivo, prima del backup.</li>
+          <li>Non può reimpostare il tuo codice via email, oppure dice onestamente che può.</li>
+          <li>Descrive il backup come cifrato con la tua chiave, non solo come “cloud sicuro”.</li>
+          <li>Idealmente, il codice della cifratura è open source o verificato da terzi.</li>
+        </ul>
+        <p>A ottobre 2026, solo 2 delle 17 app cassaforte che abbiamo confrontato citavano AES-256-GCM nella descrizione dell’App Store. Le trovi tutte nel <a href="/it/best-photo-vault-apps-iphone">nostro confronto</a>.</p>
+        <figure class="shot">
+          <img src="/assets/guides/noxium-lock.jpg" alt="Schermata di blocco di Noxium: la sequenza viene allungata con Argon2id nella chiave che apre la cassaforte" width="559" height="1216" loading="lazy" decoding="async">
+          <figcaption>In Noxium la tua sequenza non viene mai salvata. Viene allungata con Argon2id nella chiave che apre la cassaforte.</figcaption>
+        </figure>
+
+        <div class="cta-card">
+          <p class="cta-card-title">Una cifratura che puoi leggere</p>
+          <p>Noxium dà un nome a ogni pezzo: Argon2id per la tua sequenza, AES-256-GCM per ogni file e solo dati cifrati nel tuo iCloud. Gratis per 150 foto e 10 video.</p>
+          <a href="https://apps.apple.com/app/apple-store/id6824616093" class="btn btn-primary" data-cta="body" data-label-waitlist="Unisciti alla beta" data-label-live="Scarica dall’App Store">Scarica dall’App Store</a>
+          <!-- build:status -->
+          <span class="release-status">Disponibile sull’App Store per iPhone e iPad.</span>
+          <!-- /build:status -->
+        </div>
+
+        <h2 id="faq">Domande frequenti</h2>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Le app cassaforte per foto sono cifrate?</span></span></summary>
+            <div class="faq-body"><p>Alcune sì, altre no. Molte mostrano solo una schermata col PIN davanti a file normali. Cerca un algoritmo con un nome, come AES-256, e una cifratura sul dispositivo prima del backup.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Cosa significa cifratura di livello militare?</span></span></summary>
+            <div class="faq-body"><p>Di solito solo AES, l’algoritmo standard. Non dice come viene creata o conservata la chiave, che conta di più.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Cos’è Argon2id?</span></span></summary>
+            <div class="faq-body"><p>Una funzione di derivazione della chiave che trasforma una password o una sequenza in una chiave di cifratura lentamente e con molta memoria, così indovinare i codici costa caro.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Una cassaforte cifrata si può violare?</span></span></summary>
+            <div class="faq-body"><p>La cifratura in sé non è il punto debole. Lo sono i codici corti, i codici visti da qualcun altro e le copie non cifrate lasciate altrove. Usa un codice lungo e cancella gli originali dopo l’importazione.</p></div>
+          </details>
+        </div>
+
+        <p><em>Hai trovato un errore o un’informazione superata? Scrivi a <a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a> e la correggeremo.</em></p>
+      </article>
+
+      <aside class="article-aside" aria-label="In questa pagina">
+        <nav class="toc" aria-label="Indice">
+          <p class="toc-title">In questa pagina</p>
+          <ol>
+            <li><a href="#lock-vs-encrypt">Nascondere o cifrare</a></li>
+            <li><a href="#keys">Cos’è una chiave</a></li>
+            <li><a href="#stretching">Dal codice alla chiave</a></li>
+            <li><a href="#aes">AES-256-GCM</a></li>
+            <li><a href="#wrapping">Chiavi dentro chiavi</a></li>
+            <li><a href="#backup">Backup cifrati</a></li>
+            <li><a href="#limits">Cosa la cifratura non fa</a></li>
+            <li><a href="#spot">Come riconoscere la differenza</a></li>
+            <li><a href="#faq">Domande frequenti</a></li>
+          </ol>
+        </nav>
+        <!-- build:related -->
+        <div class="related">
+          <p class="toc-title">Correlati</p>
+          <ul role="list">
+            <li><a href="/it/guides/are-photo-vault-apps-safe">Le casseforti per foto sono sicure?</a></li>
+            <li><a href="/it/guides/forgot-photo-vault-password">Password dimenticata</a></li>
+            <li><a href="/it/best-photo-vault-apps-iphone">Migliori casseforti per foto</a></li>
+            <li><a href="/it/guides/what-is-a-decoy-vault">Cos’è una cassaforte esca?</a></li>
+            <li><a href="/it/guides/">Tutte le guide</a></li>
+          </ul>
+        </div>
+        <!-- /build:related -->
+      </aside>
+    </div>
+  </main>
+
+  <!-- build:footer -->
+  <!-- Shared footer for subpages (the homepage has its own copy with build:status). Edit partials/footer.html, then run python3 tools/build.py. -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="/" class="wordmark" aria-label="Home di Noxium">Noxium<span aria-hidden="true">.</span></a>
+          <p>Una cassaforte privata per foto, video e note.</p>
+        </div>
+
+        <nav class="footer-groups" aria-label="Piè di pagina">
+          <div>
+            <h2 class="footer-heading">Prodotto</h2>
+            <ul role="list">
+              <li><a href="/#features">Funzioni</a></li>
+              <li><a href="/#security">Come funziona la crittografia</a></li>
+              <li><a href="/#pricing">Gratis o Pro</a></li>
+              <li><a href="/it/best-photo-vault-apps-iphone">Confronto tra app cassaforte per foto</a></li>
+              <li><a href="/#faq">Domande frequenti</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="footer-heading">Guide</h2>
+            <ul role="list">
+              <li><a href="/it/guides/how-to-hide-photos-on-iphone">Nascondere le foto su iPhone</a></li>
+  <li><a href="/it/guides/is-iphone-hidden-album-private">L’album Nascosti è privato?</a></li>
+  <li><a href="/it/guides/hidden-photos-iphone">Foto nascoste</a></li>
+  <li><a href="/it/guides/move-photo-vault-to-new-iphone">Cassaforte sul nuovo iPhone</a></li>
+  <li><a href="/it/guides/photo-vault-lost-photos">Foto sparite dalla cassaforte</a></li>
+  <li><a href="/it/guides/keepsafe-alternatives">Alternative a Keepsafe</a></li>
+              <li><a href="/it/guides/">Tutte le guide</a></li>
+              <li><a href="/features/">Features</a></li>
+  <li><a href="/compare/">Comparisons</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="footer-heading">Azienda</h2>
+            <ul role="list">
+              <li><a href="/about">Chi siamo</a></li>
+              <li><a href="/support">Assistenza</a></li>
+              <li><a href="/privacy">Informativa sulla privacy</a></li>
+              <li><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener">Condizioni d’uso</a></li>
+              <li><a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Noxium. Realizzata da Inertia Projects, uno sviluppatore indipendente. Etichetta privacy dell’App Store: Dati non raccolti.</p>
+        <nav class="lang-list" aria-label="Lingua"><a href="/guides/how-encrypted-photo-vaults-work" hreflang="en" lang="en">English</a><a href="/de/guides/how-encrypted-photo-vaults-work" hreflang="de" lang="de">Deutsch</a><a href="/fr/guides/how-encrypted-photo-vaults-work" hreflang="fr" lang="fr">Français</a><a href="/es/guides/how-encrypted-photo-vaults-work" hreflang="es" lang="es">Español</a><a href="/pt-br/guides/how-encrypted-photo-vaults-work" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a><a href="/it/guides/how-encrypted-photo-vaults-work" hreflang="it" lang="it" aria-current="true">Italiano</a><a href="/ja/guides/how-encrypted-photo-vaults-work" hreflang="ja" lang="ja">日本語</a><a href="/ko/guides/how-encrypted-photo-vaults-work" hreflang="ko" lang="ko">한국어</a><a href="/zh-hant/guides/how-encrypted-photo-vaults-work" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></nav>
+        <p>Apple, il logo Apple, iPhone, iPad e Face ID sono marchi di Apple Inc., registrati negli Stati Uniti e in altri Paesi. App Store è un marchio di servizio di Apple Inc.</p>
+      </div>
+    </div>
+  </footer>
+  <!-- /build:footer -->
+
+  <script src="/app.js" defer></script>
+</body>
+</html>
