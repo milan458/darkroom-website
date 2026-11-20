@@ -6,37 +6,37 @@
       "name": "Noxium: Private Photo Vault",
       "listings": {
         "us": {
-          "name": "Private Photo Vault - Noxium",
+          "name": "Decoy Photo Vault - Noxium",
           "developer": "Milan Sharma",
           "price": "Free",
           "rating": null,
           "ratingCount": 0,
-          "version": "1.1",
-          "lastUpdate": "2026-11-13",
+          "version": "1.2",
+          "lastUpdate": "2026-11-15",
           "minimumOs": "17.0",
-          "url": "https://apps.apple.com/us/app/private-photo-vault-noxium/id6824616093",
+          "url": "https://apps.apple.com/us/app/decoy-photo-vault-noxium/id6824616093",
           "privacyLabel": [
-            "Data Not Collected"
+            "Data Not Linked to You"
           ],
           "inAppPurchases": [
             {
-              "name": "Noxium Pro Monthly",
-              "price": "$2.99"
-            },
-            {
               "name": "Noxium Pro Yearly",
               "price": "$17.99"
+            },
+            {
+              "name": "Noxium Pro Weekly",
+              "price": "$2.99"
             },
             {
               "name": "Noxium Pro Lifetime",
               "price": "$39.99"
             },
             {
-              "name": "Noxium Pro Weekly",
+              "name": "Noxium Pro Monthly",
               "price": "$2.99"
             }
           ],
-          "checked": "2026-11-13"
+          "checked": "2026-11-20"
         },
         "de": {
           "name": "Foto Tresor & Safe - Noxium",
@@ -2702,7 +2702,7 @@
           "developer": "MAPLE LABS COMPANY LIMITED",
           "price": "Free",
           "rating": 4.6,
-          "ratingCount": 70136,
+          "ratingCount": 70209,
           "version": "7.6.1",
           "lastUpdate": "2026-08-30",
           "minimumOs": "15.0",
@@ -2737,7 +2737,7 @@
               "price": "$6.99"
             }
           ],
-          "checked": "2026-11-11"
+          "checked": "2026-11-20"
         },
         "de": {
           "name": "SPV - Secret Photo Vault",
@@ -3090,9 +3090,9 @@
           "developer": "Haibin Jiao",
           "price": "Free",
           "rating": 4.7,
-          "ratingCount": 30312,
-          "version": "7.7.9",
-          "lastUpdate": "2026-10-26",
+          "ratingCount": 30321,
+          "version": "7.7.11",
+          "lastUpdate": "2026-11-17",
           "minimumOs": "17.0",
           "url": "https://apps.apple.com/us/app/pv-secret-photo-album/id867586326",
           "privacyLabel": [
@@ -3130,7 +3130,7 @@
               "price": "$49.99"
             }
           ],
-          "checked": "2026-11-11"
+          "checked": "2026-11-20"
         },
         "de": {
           "name": "Foto Tresor: Bilder Verstecken",
@@ -3519,7 +3519,7 @@
           "developer": "Encamera LLC",
           "price": "Free",
           "rating": 4.5,
-          "ratingCount": 148,
+          "ratingCount": 149,
           "version": "2.10.0",
           "lastUpdate": "2026-09-08",
           "minimumOs": "17.0",
@@ -3529,12 +3529,12 @@
           ],
           "inAppPurchases": [
             {
-              "name": "1 Month",
-              "price": "$3.99"
-            },
-            {
               "name": "12 Months",
               "price": "$19.99"
+            },
+            {
+              "name": "1 Month",
+              "price": "$3.99"
             },
             {
               "name": "1 Week",
@@ -3549,15 +3549,15 @@
               "price": "$2.99"
             },
             {
-              "name": "Limited Lifetime",
-              "price": "$49.99"
-            },
-            {
               "name": "Premium Yearly",
               "price": "$17.99"
+            },
+            {
+              "name": "Limited Lifetime",
+              "price": "$49.99"
             }
           ],
-          "checked": "2026-11-11"
+          "checked": "2026-11-20"
         },
         "de": {
           "name": "Encamera Verschlüsselte Fotos",

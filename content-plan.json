@@ -313,7 +313,7 @@
       "cluster": "existing",
       "vaultaire": "https://vaultaire.app/guides/forgot-photo-vault-password/",
       "note": "Expand app-by-app section; add 2+ in-text links (fails check_content today).",
-      "status": "in-review"
+      "status": "live"
     },
     {
       "order": 32,
@@ -323,7 +323,7 @@
       "keyword": "move photo vault to new iphone",
       "cluster": "existing",
       "note": "Add 2+ in-text links (fails check_content today).",
-      "status": "in-review"
+      "status": "live"
     },
     {
       "order": 33,
@@ -333,7 +333,7 @@
       "keyword": "decoy vault",
       "cluster": "existing",
       "note": "Add 2+ in-text links (fails check_content today); link /features/decoy-vault.",
-      "status": "in-review"
+      "status": "live"
     },
     {
       "order": 34,
@@ -343,7 +343,7 @@
       "keyword": "photo vault no subscription",
       "cluster": "existing",
       "note": "Add 2+ in-text links (fails check_content today).",
-      "status": "in-review"
+      "status": "live"
     },
     {
       "order": 35,
@@ -353,7 +353,7 @@
       "keyword": "how do photo vault apps work",
       "cluster": "existing",
       "note": "Add 2+ in-text links (fails check_content today); link /features/on-device-encryption.",
-      "status": "todo"
+      "status": "in-review"
     },
     {
       "order": 36,
@@ -364,7 +364,7 @@
       "cluster": "choose-vault",
       "vaultaire": "https://vaultaire.app/compare/vaultaire-vs-spv/",
       "competitor": "SPV - Secret Photo Vault",
-      "status": "todo"
+      "status": "in-review"
     },
     {
       "order": 37,
@@ -375,7 +375,7 @@
       "cluster": "choose-vault",
       "vaultaire": "https://vaultaire.app/compare/vaultaire-vs-pv-secret-photo-album/",
       "competitor": "PV - Secret Photo Album",
-      "status": "todo"
+      "status": "in-review"
     },
     {
       "order": 38,
@@ -386,7 +386,7 @@
       "cluster": "choose-vault",
       "vaultaire": "https://vaultaire.app/compare/vaultaire-vs-encamera/",
       "competitor": "Encamera Encrypted Photo Vault",
-      "status": "todo"
+      "status": "in-review"
     },
     {
       "order": 39,
