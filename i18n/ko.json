@@ -201,7 +201,7 @@
       "updated": "2026-11-18"
     },
     "/guides/how-encrypted-photo-vaults-work": {
-      "source": "2026-10-26",
+      "source": "2026-11-21",
       "title": "사진 금고 앱 암호화 원리, 쉽게 정리",
       "description": "사진 금고의 암호화란? 키, Argon2id, AES-256-GCM, 암호화된 백업을 전문 용어 없이 설명하고, 숨기기만 하는 앱 구별법까지.",
       "headline": "암호화된 사진 금고의 원리, 쉽게 설명합니다",
@@ -209,7 +209,18 @@
       "crumb": "암호화 원리",
       "keyword": "사진 금고 앱 암호화 원리",
       "published": "2026-11-20",
-      "updated": "2026-11-20"
+      "updated": "2026-11-21"
+    },
+    "/guides/photo-vault-no-subscription-no-ads": {
+      "source": "2026-11-21",
+      "title": "구독·광고 없는 사진 금고 앱 (2026)",
+      "description": "한 번 구매가 있는 iPhone 사진 금고 앱, 광고가 나오는 앱, 무료 요금제를 비교. 2026년 11월 한국 App Store 가격 기준.",
+      "headline": "구독도 광고도 없는 사진 금고 앱",
+      "summary": "한 번 구매가 있는 금고 앱, 광고가 나오는 앱, 결제를 멈추면 사진이 어떻게 되는지 정리했습니다.",
+      "crumb": "구독·광고 없는 금고",
+      "keyword": "사진 금고 앱 구독 없는",
+      "published": "2026-11-21",
+      "updated": "2026-11-21"
     }
   },
   "facts": [

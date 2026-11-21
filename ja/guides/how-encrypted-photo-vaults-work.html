@@ -41,7 +41,7 @@
   <meta property="og:image:alt" content="Noxium photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
   <meta property="og:locale" content="ja_JP">
   <meta property="article:published_time" content="2026-11-20">
-  <meta property="article:modified_time" content="2026-11-20">
+  <meta property="article:modified_time" content="2026-11-21">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="写真保管庫アプリの暗号化のしくみをやさしく解説">
   <meta name="twitter:description" content="写真保管庫の暗号化とは？ 鍵、Argon2id、AES-256-GCM、暗号化バックアップを専門用語なしで解説。隠すだけのアプリの見分け方も。">
@@ -90,7 +90,7 @@
         "mainEntityOfPage": "https://getnoxium.app/ja/guides/how-encrypted-photo-vaults-work",
         "image": "https://getnoxium.app/assets/guides/noxium-lock.jpg",
         "datePublished": "2026-11-20",
-        "dateModified": "2026-11-20",
+        "dateModified": "2026-11-21",
         "author": {
           "@id": "https://getnoxium.app/#org"
         },
@@ -151,6 +151,14 @@
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "パスワードやパターンを、ゆっくりと大量のメモリを使って暗号化の鍵に変える鍵導出関数です。コードの推測に手間がかかるようになります。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Face ID は暗号化の一部？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "直接ではありません。Face ID は、アプリが iPhone のキーチェーンに保存した鍵へのショートカットです。Noxium では、その鍵はこの iPhone にとどまり、同期されず、Face ID の登録内容が変わると使えなくなります。パターンはいつでも使えます。"
             }
           },
           {
@@ -225,7 +233,7 @@
         <p class="eyebrow"><span class="dot dot-ink" aria-hidden="true"></span>ガイド · 暗号化のしくみ</p>
         <h1>暗号化された写真保管庫のしくみを、わかりやすく解説</h1>
         <!-- build:byline -->
-        <p class="byline"><span>著者：<a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>最終更新日：<time datetime="2026-11-20">2026年11月20日</time></span></p>
+        <p class="byline"><span>著者：<a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>公開日：<time datetime="2026-11-20">2026年11月20日</time></span><span aria-hidden="true">·</span><span>最終更新日：<time datetime="2026-11-21">2026年11月21日</time></span></p>
         <!-- /build:byline -->
         <div class="answer">
           <span class="answer-label">結論</span>
@@ -296,6 +304,51 @@
           <li>理想を言えば、暗号化のコードがオープンソースか、第三者に検証されている。</li>
         </ul>
         <p>2026 年 10 月の時点で、私たちが比較した 17 の保管庫アプリのうち、App Store の説明で AES-256-GCM を挙げていたのは 2 つだけでした。すべてのアプリは<a href="/ja/best-photo-vault-apps-iphone">比較ページ</a>でご覧いただけます。</p>
+        <h2 id="apps">人気の保管庫アプリは、自分たちの暗号化について何と言っている？</h2>
+        <p>詳しく書いているアプリはほとんどありません。私たちがレビューした 14 の保管庫アプリのうち、掲載情報で暗号方式を挙げているのは Vaultaire と Obscura だけです。Keepsafe はヘルプセンターで AES-256 を挙げ、Obscura と Encamera は暗号化のコードを公開しています。そのほかは詳細なしに「暗号化」と書くか、暗号化に触れていません。</p>
+        <div class="data-table-wrap" tabindex="0" role="region" aria-labelledby="apps-caption">
+          <table class="data-table">
+            <caption id="apps-caption">各アプリの米国 App Store の掲載情報（注記がある場合は、そのアプリのヘルプページやコード）が暗号化について述べていること。2026 年 11 月 11 日〜21 日に確認。テスト結果ではなく、各社の主張をまとめたものです。</caption>
+            <thead><tr><th scope="col">アプリ</th><th scope="col">暗号化についての記述</th></tr></thead>
+            <tbody>
+              <tr><th scope="row"><a href="/compare/vaultaire">Vaultaire</a></th><td>デバイス上で AES-256-GCM。iCloud バックアップはアップロード前に暗号化</td></tr>
+              <tr><th scope="row"><a href="/compare/obscura">Obscura</a></th><td>AES-256-GCM。パスワードから PBKDF2（60 万回）で鍵を生成。暗号化のコードを公開</td></tr>
+              <tr><th scope="row"><a href="/compare/encamera">Encamera</a></th><td>すべてのメディアを暗号化。libsodium をベースにした暗号化のコードを公開</td></tr>
+              <tr><th scope="row"><a href="/compare/keepsafe">Keepsafe</a></th><td>掲載情報では「軍事レベル」。ヘルプセンターでは AES-256</td></tr>
+              <tr><th scope="row"><a href="/compare/privault">Privault</a></th><td>ストレージは暗号化されているとのこと。暗号方式の記載なし</td></tr>
+              <tr><th scope="row"><a href="/compare/private-photo-vault">Private Photo Vault</a></th><td>クラウドバックアップを「暗号化」と説明。暗号方式の記載なし</td></tr>
+              <tr><th scope="row"><a href="/compare/pv-secret-photo-album">PV - Secret Photo Album</a></th><td>「データの暗号化」に言及。暗号方式の記載なし</td></tr>
+              <tr><th scope="row"><a href="/compare/hiddenvault">HiddenVault</a></th><td>「ゼロ知識」。暗号方式の記載なし</td></tr>
+              <tr><th scope="row"><a href="/compare/spv">SPV - Secret Photo Vault</a></th><td>記載なし。PIN による保護</td></tr>
+              <tr><th scope="row"><a href="/compare/secret-photo-vault">Secret Photo Vault Lock Photos</a></th><td>記載なし</td></tr>
+              <tr><th scope="row"><a href="/compare/safe-lock">Safe Lock</a></th><td>記載なし</td></tr>
+              <tr><th scope="row"><a href="/compare/maxvault">MaxVault</a></th><td>記載なし</td></tr>
+              <tr><th scope="row"><a href="/compare/hide-it-pro">Hide it Pro</a></th><td>記載なし</td></tr>
+              <tr><th scope="row"><a href="/compare/calculator-hide-photos">Calculator#</a></th><td>記載なし</td></tr>
+              <tr><th scope="row">Noxium（私たちのアプリ）</th><td>デバイス上で AES-256-GCM。パターンから Argon2id で鍵を生成。バックアップは暗号化されたデータのみ</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>「記載なし」は、そのアプリが暗号化していない証拠ではありません。開発元が公開している情報からは判断できない、という意味です。気になるなら、上のリストの質問を開発元に聞いてみましょう。</p>
+
+        <h2 id="ios">iPhone はもともと写真を暗号化しているのでは？</h2>
+        <p>はい、iPhone がロックされている間は。ロックが解除されれば、手に持った人は誰でも「写真」を開けます。だから保管庫は、独自の鍵を持つ 2 つ目の錠を加えるのです。</p>
+        <ul>
+          <li><strong>iPhone 本体。</strong>iOS は、パスコードに結びついた鍵でストレージを暗号化しています（Apple はこれを「Data Protection」と呼んでいます）。これはロックされたまま紛失した iPhone を守ります。ただし、あなたのパスコードを知っている人や、入力を見ていた人から、特定のアプリの写真を切り離すものではありません。</li>
+          <li><strong>「非表示」アルバム。</strong>開くには Face ID かパスコードが必要ですが、同じパスコードであり、ほかのデバイスにも同期されます。<a href="/ja/guides/lock-photos-iphone-face-id">iPhone で写真にロックをかける方法</a>をご覧ください。</li>
+          <li><strong>iCloud 写真。</strong>「高度なデータ保護」をオンにすれば、iCloud 写真はエンドツーエンドで暗号化されます。オフのままなら、iCloud 写真の鍵は Apple が持っています。</li>
+        </ul>
+        <p>保管庫が独自のコードから作った鍵で暗号化していれば、iPhone のパスコードだけでは開きません。</p>
+
+        <h2 id="open-source">オープンソースなら、保管庫は安全だと言える？</h2>
+        <p>言い切れませんが、役には立ちます。コードが公開されていれば、「安全」といった言葉を信じる代わりに、ファイルがどう暗号化されるか誰でも確かめられます。</p>
+        <ul>
+          <li><strong>方式がわかる。</strong>暗号方式、鍵の作り方、鍵の保管場所が見えます。</li>
+          <li><strong>監査と同じではない。</strong>コードが公開されていても、専門家が確認したとは限りません。</li>
+          <li><strong>アプリ全体とは限らない。</strong>暗号化の部分だけを公開する開発元もあります。いちばん大事な部分ではありますが、アプリのほかの部分も写真を扱っています。</li>
+          <li><strong>App Store 版と一致するか確かめにくい。</strong>インストールしたアプリが公開コードからビルドされたものか、Apple の仕組みでは確認できません。</li>
+        </ul>
+        <p>私たちが開発している Noxium はオープンソースではありません。その代わり、使っているものを正確に公開しています。Argon2id、AES-256-GCM、鍵の階層、ブロックのサイズは<a href="/features/on-device-encryption">デバイス上の暗号化</a>のページにあります。</p>
         <figure class="shot">
           <img src="/assets/guides/noxium-lock.jpg" alt="Noxium のロック画面：パターンは Argon2id で引き伸ばされ、保管庫を開ける鍵になる" width="559" height="1216" loading="lazy" decoding="async">
           <figcaption>Noxium では、パターンそのものは保存されません。Argon2id で引き伸ばされ、保管庫を開ける鍵になります。</figcaption>
@@ -325,6 +378,10 @@
             <div class="faq-body"><p>パスワードやパターンを、ゆっくりと大量のメモリを使って暗号化の鍵に変える鍵導出関数です。コードの推測に手間がかかるようになります。</p></div>
           </details>
           <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Face ID は暗号化の一部？</span></span></summary>
+            <div class="faq-body"><p>直接ではありません。Face ID は、アプリが iPhone のキーチェーンに保存した鍵へのショートカットです。Noxium では、その鍵はこの iPhone にとどまり、同期されず、Face ID の登録内容が変わると使えなくなります。パターンはいつでも使えます。</p></div>
+          </details>
+          <details class="faq-item">
             <summary class="faq-summary"><span class="faq-summary-left"><span>暗号化された保管庫はハッキングされる？</span></span></summary>
             <div class="faq-body"><p>弱点は暗号化そのものではありません。短いコード、ほかの人に見られたコード、ほかの場所に残った暗号化されていないコピーが弱点です。長いコードを使い、読み込んだあとは元の写真を削除しましょう。</p></div>
           </details>
@@ -345,6 +402,9 @@
             <li><a href="#backup">暗号化されたバックアップ</a></li>
             <li><a href="#limits">暗号化の限界</a></li>
             <li><a href="#spot">見分け方</a></li>
+            <li><a href="#apps">アプリの主張</a></li>
+            <li><a href="#ios">iPhone 自体の暗号化</a></li>
+            <li><a href="#open-source">オープンソース</a></li>
             <li><a href="#faq">よくある質問</a></li>
           </ol>
         </nav>

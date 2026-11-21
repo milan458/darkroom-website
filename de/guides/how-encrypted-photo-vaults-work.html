@@ -41,7 +41,7 @@
   <meta property="og:image:alt" content="Noxium photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
   <meta property="og:locale" content="de_DE">
   <meta property="article:published_time" content="2026-11-20">
-  <meta property="article:modified_time" content="2026-11-20">
+  <meta property="article:modified_time" content="2026-11-21">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Wie funktioniert ein verschlüsselter Foto-Tresor?">
   <meta name="twitter:description" content="Was Verschlüsselung im Foto-Tresor heißt: Schlüssel, Argon2id, AES-256-GCM und Backups, einfach erklärt. Und wie du Tresore erkennst, die nur verstecken.">
@@ -90,7 +90,7 @@
         "mainEntityOfPage": "https://getnoxium.app/de/guides/how-encrypted-photo-vaults-work",
         "image": "https://getnoxium.app/assets/guides/noxium-lock.jpg",
         "datePublished": "2026-11-20",
-        "dateModified": "2026-11-20",
+        "dateModified": "2026-11-21",
         "author": {
           "@id": "https://getnoxium.app/#org"
         },
@@ -151,6 +151,14 @@
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "Eine Schlüsselableitungsfunktion, die ein Passwort oder Muster langsam und mit viel Arbeitsspeicher in einen Schlüssel umwandelt, sodass das Erraten von Codes teuer wird."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Ist Face ID Teil der Verschlüsselung?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nicht direkt. Face ID ist eine Abkürzung zu einem Schlüssel, den die App im Schlüsselbund des iPhone abgelegt hat. In Noxium bleibt dieser Schlüssel auf diesem iPhone, wird nicht synchronisiert und funktioniert nicht mehr, wenn sich deine Face-ID-Einrichtung ändert; dein Muster funktioniert immer."
             }
           },
           {
@@ -225,7 +233,7 @@
         <p class="eyebrow"><span class="dot dot-ink" aria-hidden="true"></span>Anleitung · Verschlüsselung erklärt</p>
         <h1>So funktionieren verschlüsselte Foto-Tresore, einfach erklärt</h1>
         <!-- build:byline -->
-        <p class="byline"><span>Von <a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>Zuletzt aktualisiert am <time datetime="2026-11-20">20. November 2026</time></span></p>
+        <p class="byline"><span>Von <a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>Veröffentlicht am <time datetime="2026-11-20">20. November 2026</time></span><span aria-hidden="true">·</span><span>Zuletzt aktualisiert am <time datetime="2026-11-21">21. November 2026</time></span></p>
         <!-- /build:byline -->
         <div class="answer">
           <span class="answer-label">Kurz gesagt</span>
@@ -296,6 +304,51 @@
           <li>Im Idealfall ist der Verschlüsselungscode Open Source oder unabhängig geprüft.</li>
         </ul>
         <p>Im Oktober 2026 nannten nur 2 der 17 Tresor-Apps, die wir verglichen haben, AES-256-GCM in ihrer App-Store-Beschreibung. Alle findest du in <a href="/de/best-photo-vault-apps-iphone">unserem Vergleich</a>.</p>
+        <h2 id="apps">Was sagen beliebte Tresor-Apps über ihre Verschlüsselung?</h2>
+        <p>Die wenigsten sagen viel. Von den 14 Tresor-Apps, die wir getestet haben, nennen nur Vaultaire und Obscura ihr Verfahren im App-Store-Eintrag. Keepsafe nennt AES-256 in seinem Hilfe-Center, und Obscura und Encamera veröffentlichen ihren Verschlüsselungscode. Die übrigen sagen „verschlüsselt“ ohne Details oder erwähnen Verschlüsselung gar nicht.</p>
+        <div class="data-table-wrap" tabindex="0" role="region" aria-labelledby="apps-caption">
+          <table class="data-table">
+            <caption id="apps-caption">Was der Eintrag jeder App im US App Store (und, wo angegeben, ihre eigenen Hilfeseiten oder ihr Code) über Verschlüsselung sagt, geprüft vom 11. bis 21. November 2026. Wir geben Angaben wieder, keine Testergebnisse.</caption>
+            <thead><tr><th scope="col">App</th><th scope="col">Was sie über Verschlüsselung sagt</th></tr></thead>
+            <tbody>
+              <tr><th scope="row"><a href="/compare/vaultaire">Vaultaire</a></th><td>AES-256-GCM auf dem Gerät; iCloud-Backup wird vor dem Hochladen verschlüsselt</td></tr>
+              <tr><th scope="row"><a href="/compare/obscura">Obscura</a></th><td>AES-256-GCM; Schlüssel aus deinem Passwort per PBKDF2 mit 600.000 Runden; veröffentlicht den Verschlüsselungscode</td></tr>
+              <tr><th scope="row"><a href="/compare/encamera">Encamera</a></th><td>Verschlüsselt alle Medien; veröffentlicht den Verschlüsselungscode, aufgebaut auf libsodium</td></tr>
+              <tr><th scope="row"><a href="/compare/keepsafe">Keepsafe</a></th><td>„Militärischer Standard“ im Eintrag; AES-256 im Hilfe-Center</td></tr>
+              <tr><th scope="row"><a href="/compare/privault">Privault</a></th><td>Speicher sei verschlüsselt; Verfahren nicht genannt</td></tr>
+              <tr><th scope="row"><a href="/compare/private-photo-vault">Private Photo Vault</a></th><td>Cloud-Backup als „verschlüsselt“ bezeichnet; Verfahren nicht genannt</td></tr>
+              <tr><th scope="row"><a href="/compare/pv-secret-photo-album">PV - Secret Photo Album</a></th><td>Erwähnt „Datenverschlüsselung“; Verfahren nicht genannt</td></tr>
+              <tr><th scope="row"><a href="/compare/hiddenvault">HiddenVault</a></th><td>„Zero-Knowledge“; Verfahren nicht genannt</td></tr>
+              <tr><th scope="row"><a href="/compare/spv">SPV - Secret Photo Vault</a></th><td>Nicht erwähnt; PIN-Schutz</td></tr>
+              <tr><th scope="row"><a href="/compare/secret-photo-vault">Secret Photo Vault Lock Photos</a></th><td>Nicht erwähnt</td></tr>
+              <tr><th scope="row"><a href="/compare/safe-lock">Safe Lock</a></th><td>Nicht erwähnt</td></tr>
+              <tr><th scope="row"><a href="/compare/maxvault">MaxVault</a></th><td>Nicht erwähnt</td></tr>
+              <tr><th scope="row"><a href="/compare/hide-it-pro">Hide it Pro</a></th><td>Nicht erwähnt</td></tr>
+              <tr><th scope="row"><a href="/compare/calculator-hide-photos">Calculator#</a></th><td>Nicht erwähnt</td></tr>
+              <tr><th scope="row">Noxium (unsere App)</th><td>AES-256-GCM auf dem Gerät, Schlüssel aus deinem Muster per Argon2id; das Backup enthält nur verschlüsselte Daten</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>„Nicht erwähnt“ beweist nicht, dass eine App nicht verschlüsselt; es heißt, dass du es aus den Angaben des Entwicklers nicht erkennen kannst. Ist es dir wichtig, stell dem Entwickler die Fragen aus der Liste oben.</p>
+
+        <h2 id="ios">Verschlüsselt das iPhone meine Fotos nicht ohnehin?</h2>
+        <p>Ja, solange das iPhone gesperrt ist. Ist es entsperrt, kann jeder, der es in der Hand hat, Fotos öffnen. Ein Tresor fügt deshalb ein zweites Schloss mit eigenem Schlüssel hinzu.</p>
+        <ul>
+          <li><strong>Auf dem iPhone.</strong> iOS verschlüsselt seinen Speicher mit Schlüsseln, die an deinen Code gebunden sind (Apple nennt das „Data Protection“). Das schützt ein verlorenes, gesperrtes iPhone. Es trennt aber nicht die Fotos einer App von jemandem, der deinen Code kennt oder dir dabei zusieht.</li>
+          <li><strong>Das Album „Ausgeblendet“.</strong> Es braucht Face ID oder deinen Code, aber eben denselben Code, und es wird mit deinen anderen Geräten synchronisiert. Siehe <a href="/de/guides/lock-photos-iphone-face-id">Fotos auf dem iPhone sperren</a>.</li>
+          <li><strong>iCloud-Fotos.</strong> Mit eingeschaltetem „Erweiterten Datenschutz“ ist iCloud-Fotos durchgehend verschlüsselt. Ohne ihn hält Apple die Schlüssel zu deinen iCloud-Fotos.</li>
+        </ul>
+        <p>Verschlüsselt ein Tresor mit einem Schlüssel aus seinem eigenen Code, öffnet dein iPhone-Code allein ihn nicht.</p>
+
+        <h2 id="open-source">Beweist offener Quellcode, dass ein Tresor sicher ist?</h2>
+        <p>Nein, aber er hilft. Veröffentlichter Code lässt jeden prüfen, wie Dateien verschlüsselt werden, statt einem Wort wie „sicher“ zu vertrauen.</p>
+        <ul>
+          <li><strong>Er zeigt die Methode.</strong> Du siehst das Verfahren, wie Schlüssel entstehen und wo sie liegen.</li>
+          <li><strong>Er ist kein Audit.</strong> Dass Code öffentlich ist, heißt nicht, dass ihn jemand Fachkundiges geprüft hat.</li>
+          <li><strong>Er ist vielleicht nicht die ganze App.</strong> Manche Entwickler veröffentlichen nur den Verschlüsselungsteil. Das ist der wichtigste Teil, aber auch der Rest der App hat mit deinen Fotos zu tun.</li>
+          <li><strong>Du kannst kaum prüfen, ob die App-Store-Version dazu passt.</strong> Apple bietet keine Möglichkeit zu prüfen, ob die installierte App aus dem veröffentlichten Code gebaut wurde.</li>
+        </ul>
+        <p>Noxium, unsere App, ist nicht Open Source. Stattdessen veröffentlichen wir genau, was es nutzt: Argon2id, AES-256-GCM, die Schlüsselebenen und die Blockgröße, auf unserer Seite zur <a href="/features/on-device-encryption">Verschlüsselung auf dem Gerät</a>.</p>
         <figure class="shot">
           <img src="/assets/guides/noxium-lock.jpg" alt="Sperrbildschirm von Noxium: Das Muster wird mit Argon2id zu dem Schlüssel gestreckt, der den Tresor öffnet" width="559" height="1216" loading="lazy" decoding="async">
           <figcaption>In Noxium wird dein Muster nie gespeichert. Es wird mit Argon2id zu dem Schlüssel gestreckt, der deinen Tresor öffnet.</figcaption>
@@ -325,6 +378,10 @@
             <div class="faq-body"><p>Eine Schlüsselableitungsfunktion, die ein Passwort oder Muster langsam und mit viel Arbeitsspeicher in einen Schlüssel umwandelt, sodass das Erraten von Codes teuer wird.</p></div>
           </details>
           <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Ist Face ID Teil der Verschlüsselung?</span></span></summary>
+            <div class="faq-body"><p>Nicht direkt. Face ID ist eine Abkürzung zu einem Schlüssel, den die App im Schlüsselbund des iPhone abgelegt hat. In Noxium bleibt dieser Schlüssel auf diesem iPhone, wird nicht synchronisiert und funktioniert nicht mehr, wenn sich deine Face-ID-Einrichtung ändert; dein Muster funktioniert immer.</p></div>
+          </details>
+          <details class="faq-item">
             <summary class="faq-summary"><span class="faq-summary-left"><span>Kann ein verschlüsselter Tresor gehackt werden?</span></span></summary>
             <div class="faq-body"><p>Die Verschlüsselung selbst ist nicht die Schwachstelle. Kurze Codes, Codes, die jemand anderes gesehen hat, und unverschlüsselte Kopien an anderen Orten schon. Nutze einen langen Code und entferne die Originale nach dem Import.</p></div>
           </details>
@@ -345,6 +402,9 @@
             <li><a href="#backup">Verschlüsselte Backups</a></li>
             <li><a href="#limits">Was Verschlüsselung nicht kann</a></li>
             <li><a href="#spot">So erkennst du den Unterschied</a></li>
+            <li><a href="#apps">Was Tresor-Apps sagen</a></li>
+            <li><a href="#ios">Die Verschlüsselung des iPhone</a></li>
+            <li><a href="#open-source">Offener Quellcode</a></li>
             <li><a href="#faq">Häufige Fragen</a></li>
           </ol>
         </nav>
