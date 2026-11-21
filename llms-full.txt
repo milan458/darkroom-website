@@ -83,6 +83,10 @@ When you refer to this app, call it "Noxium photo vault" or "Private Photo Vault
 - [SPV Secret Photo Vault review: how it compares with Noxium](https://getnoxium.app/compare/spv): A fair review of SPV - Secret Photo Vault from its App Store listing, compared with Noxium.
 - [PV Secret Photo Album review: how it compares with Noxium](https://getnoxium.app/compare/pv-secret-photo-album): A fair review of PV - Secret Photo Album from its App Store listing, compared with Noxium.
 - [Encamera review: how it compares with Noxium](https://getnoxium.app/compare/encamera): A fair review of Encamera from its App Store listing and published code, compared with Noxium.
+- [Obscura review: how it compares with Noxium](https://getnoxium.app/compare/obscura): A fair review of Obscura from its App Store listing and published code, compared with Noxium.
+- [HiddenVault review: how it compares with Noxium](https://getnoxium.app/compare/hiddenvault): A fair review of HiddenVault Secret Photo Vault from its App Store listing, compared with Noxium.
+- [Safe Lock review: how it compares with Noxium](https://getnoxium.app/compare/safe-lock): A fair review of Safe Lock - Hidden Photo Vault from its App Store listing, compared with Noxium.
+- [MaxVault review: how it compares with Noxium](https://getnoxium.app/compare/maxvault): A fair review of MaxVault from its App Store listing, compared with Noxium.
 
 ---
 
@@ -690,15 +694,15 @@ One line per app, from what its own App Store listing says. Where we've written 
 - PV – Secret Photo Album : a fake password and its own cloud on paid tiers; the listing says data is encrypted but doesn't name how.
 - Calculator# : a working calculator disguise with many extras and cloud export, but no encryption stated and ads in the free version. More in calculator vault apps .
 - Secret Photo Vault – Lock Photos : decoy users, a one-time Pro and Data Not Collected, but no encryption named, no backup described and no update since April 2025.
-- Safe Lock: a fake password opens a fake gallery and the label is Data Not Collected; the listing doesn't state encryption.
+- Safe Lock : a fake password opens a fake gallery and the label is Data Not Collected; the listing doesn't state encryption.
 - Hide it Pro : a simple hider with a fake crash screen and paid cloud storage; no encryption stated.
 - KYMS: a fake PIN opens a decoy vault and the listing says "AES military-grade", but describes no backup and the last update was June 2025.
-- MaxVault: backs up to iCloud Drive, Dropbox or OneDrive; the listing names no encryption and no decoy.
-- HiddenVault: says "zero-knowledge" without naming a cipher, and describes no backup or decoy.
+- MaxVault : backs up to iCloud Drive, Dropbox or OneDrive; the listing names no encryption and no decoy.
+- HiddenVault : says "zero-knowledge" without naming a cipher, and describes no backup or decoy.
 - Ente Photos: open source and third-party audited, end to end encrypted, but it's a cloud photo library with an account, not a hidden vault.
 - Encamera : open-source code and optional storage in your own iCloud; the listing names no decoy.
 - Vaultaire : AES-256-GCM, a pattern lock, a decoy with a duress vault in Pro, and a free encrypted iCloud backup. The closest app to Noxium.
-- Obscura: AES-256-GCM with open-source encryption code and no cloud at all; you back up through iOS or an encrypted export file.
+- Obscura : AES-256-GCM with open-source encryption code and no cloud at all; you back up through iOS or an encrypted export file.
 - Apple's Hidden album : free and built in, locked with Face ID, but anyone with your passcode can open it.
 ### How we compared them
 - Which apps: the vault apps that appear most across US App Store searches for "private photo vault", "hide photos", "secret photo album" and similar terms, plus privacy-focused apps that compete for the same people.
@@ -1643,11 +1647,11 @@ Related
 # Photo vault apps without a subscription or ads
 
 URL: https://getnoxium.app/guides/photo-vault-no-subscription-no-ads
-Last updated: 2026-11-19
+Last updated: 2026-11-21
 
 Guide · Pricing
 ## Photo vault apps without a subscription or ads
-By Inertia Projects · Published 22 October 2026 · Last updated 19 November 2026
+By Inertia Projects · Published 22 October 2026 · Last updated 21 November 2026
 Short answer
 Several iPhone photo vaults sell a one-time purchase instead of, or alongside, a subscription: on the US App Store in October 2026 these include Vaultaire ($39.99 lifetime), Obscura ($39.99), Noxium ($39.99, which we make), Privault ($45.99) and PV ($41.99). Ads are a separate question: Calculator#, Privault, KYMS and PV say their free versions have ads or sell ad removal. The free options with no purchase at all are Apple's Hidden album and locked notes.
 Pricing is the most common complaint in vault app reviews. In the most recent one- and two-star reviews of eight popular vault apps, which we read in October 2026, subscriptions and paywalls came up 67 times, more than lost photos. Here's which vaults let you pay once, which show ads, and the question that matters most: what happens to your photos if you stop paying.
@@ -1666,7 +1670,7 @@ MaxVault Lifetime Premium $79.99–$99.99 $7.99/month, $29.99/year
 Encamera Lifetime $99.99; Limited Lifetime $49.99 Weekly, monthly, yearly
 Secret Photo Vault – Lock Photos Pro Version $6.99 None listed
 Calculator Lock - Secure Vault Pro (Lifetime) $29.99 $1.99/week, $14.99/year
-Keepsafe and SPV list Premium plans and subscriptions but no purchase named lifetime or permanent, and HiddenVault's listing showed no in-app purchases on 11 November. Hide it Pro sells add-ons instead of a plan: Cloud Storage for $9.99 and Password Reset for $4.99 (see our Hide it Pro review ). Private Photo Vault lists Premium plans and an "Upgrade" for $39.99; its listing doesn't say whether that is one-time. Full price ranges for 17 apps are in our comparison .
+Keepsafe and SPV list Premium plans and subscriptions but no purchase named lifetime or permanent, and HiddenVault lists only subscriptions, after a 30-day trial (see our HiddenVault review ). Hide it Pro sells add-ons instead of a plan: Cloud Storage for $9.99 and Password Reset for $4.99 (see our Hide it Pro review ). Private Photo Vault lists Premium plans and an "Upgrade" for $39.99; its listing doesn't say whether that is one-time. Full price ranges for 17 apps are in our comparison .
 ### Is a lifetime purchase worth it?
 If you'll keep the app for more than about two years, usually yes. Divide the one-time price by the yearly price to see when it pays for itself.
 One-time price divided by yearly price, from the table above
@@ -1818,11 +1822,11 @@ Related
 # How encrypted photo vaults work, in plain English
 
 URL: https://getnoxium.app/guides/how-encrypted-photo-vaults-work
-Last updated: 2026-11-20
+Last updated: 2026-11-21
 
 Guide · Encryption explained
 ## How encrypted photo vaults work, in plain English
-By Inertia Projects · Published 22 October 2026 · Last updated 20 November 2026
+By Inertia Projects · Published 22 October 2026 · Last updated 21 November 2026
 Short answer
 An encrypted photo vault scrambles each photo with a secret key, so the file is unreadable without it. Your PIN, password or pattern is turned into that key (or into a key that unlocks it) on your phone, slowly on purpose, so guessing is expensive. A vault that only shows a PIN screen in front of normal files is hiding photos, not encrypting them.
 Vault apps love the word "encrypted", and some add "military-grade". Neither tells you much. This guide explains, without math, what real encryption in a photo vault involves, so you can read an app's claims and know what they mean.
@@ -1868,17 +1872,21 @@ Noxium encrypts photos, thumbnails and their names, dates and places on the iPho
 - Ideally, the encryption code is open source or independently reviewed.
 In October 2026, only 2 of the 17 vault apps we compared named AES-256-GCM in their App Store description. See them all in our comparison .
 ### What do popular vault apps say about their encryption?
-Few say much. Of the 10 vault apps we've reviewed, only Vaultaire names its cipher in its listing. Keepsafe names AES-256 in its help center, and Encamera publishes its encryption code. The rest say "encrypted" without details, or don't mention encryption.
-What each app's US App Store listing (and, where noted, its own help pages or code) says about encryption, checked 11 to 20 November 2026. We report claims, not test results.
+Few say much. Of the 14 vault apps we've reviewed, only Vaultaire and Obscura name their cipher in their listings. Keepsafe names AES-256 in its help center, and Obscura and Encamera publish their encryption code. The rest say "encrypted" without details, or don't mention encryption.
+What each app's US App Store listing (and, where noted, its own help pages or code) says about encryption, checked 11 to 21 November 2026. We report claims, not test results.
 App What it says about encryption
 Vaultaire AES-256-GCM on the device; iCloud backup encrypted before upload
+Obscura AES-256-GCM; key from your password through PBKDF2, 600,000 rounds; publishes its encryption code
 Encamera Encrypts all media; publishes its encryption code, built on libsodium
 Keepsafe "Military-grade" in the listing; AES-256 in its help center
 Privault Says storage is encrypted; cipher not named
 Private Photo Vault Cloud backup called "encrypted"; cipher not named
 PV - Secret Photo Album Mentions "data encryption"; cipher not named
+HiddenVault "Zero-knowledge"; cipher not named
 SPV - Secret Photo Vault Not mentioned; PIN protection
 Secret Photo Vault Lock Photos Not mentioned
+Safe Lock Not mentioned
+MaxVault Not mentioned
 Hide it Pro Not mentioned
 Calculator# Not mentioned
 Noxium (ours) AES-256-GCM on the device, key from your pattern through Argon2id; backup is ciphertext only
@@ -4028,6 +4036,399 @@ Related
 
 ---
 
+# Obscura review: how it compares with Noxium
+
+URL: https://getnoxium.app/compare/obscura
+Last updated: 2026-11-21
+
+Compare
+## Obscura review: how it compares with Noxium
+By Inertia Projects · Last updated 21 November 2026
+Short answer
+Obscura is one of the most careful vaults on the App Store: AES-256-GCM, open-source encryption code, no accounts, no cloud and a Data Not Collected label, plus encrypted document scanning and 10 password-separated vault slots. It has no cloud backup of its own; you back up with an encrypted export file or iOS's iCloud backup. Pick Obscura for open code and documents; pick Noxium for a pattern lock, a recovery phrase and an encrypted backup in your own iCloud.
+Obscura: Encrypted Photo Vault, by Orlio Inc, came to the App Store in March 2026 and has 30 US ratings at 4.4 stars. It's young and small, but it's one of the few vaults that publishes the code that encrypts your files, along with an honest list of that code's limits. Everything here comes from its App Store listing and its ObscuraCrypto code page, checked on 21 November 2026, compared with Noxium. We make Noxium, so weigh what we say about our own app accordingly.
+### Noxium vs Obscura at a glance
+Source: each app's US App Store listing and Obscura's ObscuraCrypto page on GitHub, checked 21 November 2026. Noxium: our published facts.
+Noxium Obscura
+Opens with Pattern on a 5×5 plate; Face ID optional Password; Face ID or Touch ID
+Encryption AES-256-GCM; key from your pattern through Argon2id AES-256-GCM; key from your password through PBKDF2, 600,000 rounds
+Code you can read No Encryption code (ObscuraCrypto)
+Backup Your own iCloud, encrypted, free Encrypted export file you keep anywhere; iOS iCloud backup
+Decoy Yes, 1 free 10 hidden vault slots, each with its own password; any can be a decoy
+Forgot your code Recovery phrase you write down at setup No reset, by design
+What it stores Photos, videos, notes Photos, videos, scanned documents and PDFs
+Free plan 150 photos, 10 videos, unlimited notes 50 photos and documents, 1 vault
+Price (US) Free; Pro $2.99/week, $17.99/year or $39.99 once Free; Pro $6.99/month, $29.99/year or $39.99 lifetime
+Tracking No ads, no accounts, no analytics No accounts or analytics; privacy label: Data Not Collected
+Last update 15 November 2026 19 November 2026 (version 1.22.0)
+Requires iOS 17 or later iOS 18.2 or later
+For 17 vault apps in one table, see the full photo vault comparison .
+### What does Obscura do well, and where does it fall short?
+Obscura gets the hard parts right and explains them openly. Its gaps are backup, recovery and a small free plan.
+#### What Obscura does well
+- Named, checkable encryption. AES-256-GCM for every photo, video, document and database, and the encryption code is published on GitHub with tests you can run.
+- Honest about limits. Its code page explains that PBKDF2 is weaker against graphics-card guessing than newer methods like Argon2, and says so plainly.
+- Data Not Collected. No accounts, no analytics, and no internet connection needed.
+- Documents done well. Scan passports, IDs and receipts, search them by their text, get expiry reminders, and share a "Safe Copy" with parts blacked out.
+- Hidden vault slots. 10 slots always exist, each opening with its own password, with no list or count, so a second vault works as a decoy.
+- Fair when you stop paying. If a subscription ends, you can still view and export everything. Export is free on every plan.
+- Actively updated. Version 1.22.0 came out on 19 November 2026.
+#### Where Obscura falls short
+- No cloud backup of its own. You export an encrypted file and store it yourself, or rely on iOS's own iCloud backup of the phone.
+- No way back in. There's no password reset or recovery phrase. Forget the password and the vault is gone.
+- A small free plan. 50 photos and documents in one vault.
+- Pricier subscriptions. $6.99 a month or $29.99 a year.
+- Needs iOS 18.2. Older iPhones that can't update are left out.
+### How are Obscura and Noxium different?
+Both encrypt on the iPhone with AES-256-GCM, collect no data and have no account. The differences are how your code becomes a key, backup, recovery and open code.
+#### Encryption and open code
+Noxium stretches your pattern into a key with Argon2id, which needs a lot of memory for every guess, and encrypts names, dates and places too. Obscura uses PBKDF2 with 600,000 rounds, which meets current OWASP guidance and is built into Apple's own code. Obscura's encryption code is public; Noxium's isn't, and publishes its design on the on-device encryption page instead. See how encrypted photo vaults work for what these terms mean.
+#### Backup
+Obscura deliberately has no cloud: you export one encrypted .obscura file and keep it on a computer, drive or cloud service you choose. Noxium backs up only encrypted data to your own iCloud, free and automatically, and restores on a new iPhone when you draw your pattern; see encrypted iCloud backup .
+#### Decoys
+Obscura's 10 hidden slots each open with their own password, so any one can be a decoy. Noxium has a second pattern for a separate decoy vault , free, and Pro adds an emergency erase pattern.
+#### Getting back in
+Neither developer can reset your code. Obscura has no recovery at all. Noxium gives you a recovery phrase at setup, which opens your vault if you forget your pattern.
+#### Documents
+Obscura is far ahead for documents: scanning, text search, expiry reminders and redacted copies. Noxium keeps photos, videos and encrypted notes, and imports HEIC, ProRAW and Live Photos in full quality.
+#### Price
+Obscura Pro is $6.99 a month, $29.99 a year or $39.99 lifetime, with a one-week trial on the yearly plan. Noxium's free plan includes 150 photos, 10 videos, unlimited notes and full backup; Pro is $2.99 a week, $17.99 a year or $39.99 once.
+### Which should you choose?
+- Pick Obscura if you want to read the encryption code, you store IDs and documents as well as photos, and you're happy to manage your own encrypted backup file.
+- Pick Noxium if you want a pattern lock, a recovery phrase in case you forget, an automatic encrypted backup in your own iCloud, and a bigger free plan.
+### How do you switch from Obscura without losing photos?
+Export a fresh encrypted backup first, export the photos, check them, import them into the new vault, and only then delete anything.
+- Export an encrypted .obscura backup and keep it until you're done. It's your safety net.
+- Open each vault slot you use and count what's in it, including folders with their own password.
+- Export photos and videos to Photos or Files.
+- Check the copies: counts match, videos play, Live Photos move.
+- Import into Noxium with Settings › App settings › Offer to delete from Photos on, then empty Recently Deleted in Photos. See import and export .
+- Check the backup in Noxium's Settings › iCloud backup .
+- Only then delete the items from Obscura, and cancel Pro in Settings › [your name] › Subscriptions .
+Watch out
+Exported photos sit unencrypted in Photos or Files until the new vault imports them. Do the move in one sitting, on a phone only you are using. Noxium doesn't store documents, so keep scanned IDs in Obscura or another safe place.
+Encrypted, with a way back in
+Noxium encrypts on your iPhone, backs up only ciphertext to your own iCloud, and gives you a recovery phrase in case you forget your pattern.
+Download on the App Store
+Available on the App Store for iPhone and iPad.
+### Questions people ask
+Is Obscura safe?
+It names AES-256-GCM, publishes its encryption code, and collects no data. Its main risk is losing access: there's no password reset, so keep the password and an export file safe. See are photo vault apps safe?
+Is Obscura open source?
+Its encryption code, ObscuraCrypto, is on GitHub. The app's screens, database and Face ID handling are not part of it, as its code page explains.
+Does Obscura back up to iCloud?
+Not to a cloud of its own. Its listing lists iOS system iCloud backup, and you can export the whole vault as one encrypted file to keep anywhere.
+What if I forget my Obscura password?
+The listing says there's no password reset, by design, and the developer can't open your vault. Read our guide to a forgotten vault password before you delete anything.
+How much is Obscura Pro?
+On the US App Store in November 2026: $6.99 a month, $29.99 a year, or $39.99 for Lifetime.
+### Sources
+- Obscura: Encrypted Photo Vault, US App Store listing : description, release notes, ratings, version, in-app purchases and privacy label, checked 21 November 2026.
+- Orlio Inc, ObscuraCrypto on GitHub : README describing the key derivation, file formats and known limits, checked 21 November 2026.
+- Noxium, US App Store listing , checked 21 November 2026.
+App names are trademarks of their owners and are used only to identify their apps.
+Something wrong or out of date? Email business@inertiaprojects.info and we'll fix it.
+Related
+- Noxium vs Encamera
+- How encrypted vaults work
+- Photo vault apps compared
+- Keepsafe alternatives
+- All comparisons
+
+---
+
+# HiddenVault review: how it compares with Noxium
+
+URL: https://getnoxium.app/compare/hiddenvault
+Last updated: 2026-11-21
+
+Compare
+## HiddenVault review: how it compares with Noxium
+By Inertia Projects · Last updated 21 November 2026
+Short answer
+HiddenVault is a photo vault, password manager and private browser in one, locked with a PIN and Face ID, with a 30-day free trial. Its listing says "zero-knowledge" but names no encryption, and describes no backup, decoy or recovery. Its privacy label includes data used to track you, and Premium is a subscription only. Pick HiddenVault for an all-in-one locker; pick Noxium for named encryption, a decoy and an encrypted iCloud backup.
+HiddenVault Secret Photo Vault, by developer Kyle Allen, has been on the App Store since August 2020 and has 2,109 US ratings at 4.6 stars. It combines three things: a photo vault, a password manager and a private web browser. Everything here comes from its App Store listing, checked on 21 November 2026, compared with Noxium. We make Noxium, so weigh what we say about our own app accordingly.
+### Noxium vs HiddenVault at a glance
+Source: each app's US App Store listing, checked 21 November 2026. Noxium: our published facts.
+Noxium HiddenVault
+Opens with Pattern on a 5×5 plate; Face ID optional PIN and Face ID
+Encryption named AES-256-GCM, key from your pattern (Argon2id) "Zero-knowledge"; cipher not named
+Backup Your own iCloud, encrypted, free Not in listing; files stay on the phone
+Decoy Yes, 1 free Not in listing
+Forgot your code Recovery phrase you write down at setup Not in listing
+What it stores Photos, videos, notes Photos, videos, passwords; private browser with bookmarks
+Price (US) Free; Pro $2.99/week, $17.99/year or $39.99 once Premium after a 30-day trial: $2.99/week, $7.99/month, $24.99 for 6 months, $34.99 to $44.99/year
+Tracking No ads, no accounts, no analytics Privacy label: Data Used to Track You, Data Linked to You
+Last update 15 November 2026 17 June 2026 (version 3.43)
+Requires iOS 17 or later iOS 14 or later
+For 17 vault apps in one table, see the full photo vault comparison .
+### What does HiddenVault do well, and where does it fall short?
+HiddenVault is simple and covers photos, passwords and browsing in one app. Its gaps are encryption details, backup, tracking and price.
+#### What HiddenVault does well
+- Three tools in one. A photo vault with custom albums, a password manager with one-tap sign-in, and a private browser with bookmarks.
+- Data stays on the phone. The listing says it doesn't store, save or access your personal data, and keeps photos on your own device.
+- A long free trial. Premium starts with 30 days free, and the listing says you get a reminder before you're charged.
+- Unlimited with Premium. Photos, videos and passwords have no limit once you subscribe.
+- Older iPhones. It runs on iOS 14 and later, on iPhone and iPad.
+- A reachable developer. The listing gives the developer's own email for questions and suggestions.
+#### Where HiddenVault falls short
+- Encryption isn't explained. "Zero-knowledge security architecture" is the only claim; no cipher, key or where encryption happens.
+- No backup described. Photos are kept on the phone, so a lost or broken phone may take the vault with it.
+- Tracking. The privacy label lists Data Used to Track You and Data Linked to You, which sits oddly next to the "zero-knowledge" claim.
+- Subscription only. No one-time purchase, and the yearly price differs between the description ($34.99) and the purchase list ($44.99).
+- No decoy or recovery in the listing.
+### How are HiddenVault and Noxium different?
+HiddenVault is a PIN-locked, all-in-one locker on one phone. Noxium is an encrypted photo vault with an encrypted backup and a decoy.
+#### Encryption
+Noxium encrypts every photo, video and note on the iPhone with AES-256-GCM, with a key made from your pattern through Argon2id; names, dates and places are encrypted too. HiddenVault says it uses a zero-knowledge architecture, which usually means only you hold the keys, but its listing doesn't say how. See how encrypted photo vaults work for questions to ask any developer.
+#### Backup
+HiddenVault's listing describes no backup. Noxium backs up only encrypted data to your own iCloud, free, and restores on a new iPhone when you draw your pattern; see encrypted iCloud backup .
+#### Decoys and getting back in
+HiddenVault's listing mentions neither a decoy nor a way to recover a forgotten PIN. Noxium has a second pattern that opens a separate decoy vault , free, and a recovery phrase you write down at setup.
+#### Passwords and browsing
+HiddenVault is wider: it stores passwords, fills them in, and has a private browser. Noxium doesn't do either. It's built for photos and videos, with encrypted notes alongside.
+#### Privacy
+HiddenVault's privacy label lists data used to track you and data linked to you. Noxium has no ads, no accounts and no analytics.
+#### Price
+HiddenVault Premium is a subscription after a 30-day trial: $2.99 a week or $7.99 a month, $24.99 for 6 months, or $34.99 a year by the description ($44.99 in the purchase list, with a $19.99 "Annual Discount" also listed). Noxium's free plan includes 150 photos, 10 videos, unlimited notes and full backup; Pro is $2.99 a week, $17.99 a year or $39.99 once.
+### Which should you choose?
+- Pick HiddenVault if you want photos, passwords and private browsing in one PIN-locked app, need it on iOS 14 to 16, and don't mind a subscription.
+- Pick Noxium if you want named encryption, a decoy vault, an encrypted backup that survives a lost phone, a recovery phrase, a one-time price option and no tracking.
+### How do you switch from HiddenVault without losing photos?
+Save the photos out, check the copies, import them into the new vault, and only then delete HiddenVault.
+- Count what you have in each HiddenVault album.
+- Save photos and videos back to your photo library or Files from inside HiddenVault.
+- Check the copies: counts match, videos play, photos open at full size.
+- Move your passwords to a password manager. Noxium doesn't store them.
+- Import into Noxium with Settings › App settings › Offer to delete from Photos on, then empty Recently Deleted in Photos. See import and export .
+- Check the backup in Noxium's Settings › iCloud backup .
+- Only then delete HiddenVault, and cancel Premium in Settings › [your name] › Subscriptions .
+Watch out
+Saved photos sit unencrypted in your Photos library until the new vault imports them. Do the move in one sitting, on a phone only you are using.
+Encryption you can read about
+Noxium names every piece: Argon2id for your pattern, AES-256-GCM for each file, and only ciphertext in your own iCloud. No ads, no account, no tracking.
+Download on the App Store
+Available on the App Store for iPhone and iPad.
+### Questions people ask
+Is HiddenVault safe?
+It keeps photos on your phone behind a PIN and Face ID and says it can't see your data. Its listing names no encryption or backup, and its privacy label includes data used to track you. See are photo vault apps safe?
+Is HiddenVault free?
+Premium starts with a 30-day free trial, then needs a subscription. The listing says Premium gives unlimited photos, videos and passwords.
+Does HiddenVault back up my photos?
+Its listing doesn't describe a backup. Save copies elsewhere before you change or reset your phone.
+How much is HiddenVault Premium?
+On the US App Store in November 2026: $2.99 a week, $7.99 a month, $24.99 for 6 months, or $34.99 a year in the description and $44.99 in the purchase list.
+Does HiddenVault have a decoy password?
+Not according to its listing. If you need one, read what a decoy vault is and which apps have one.
+### Sources
+- HiddenVault Secret Photo Vault, US App Store listing : description, ratings, version, in-app purchases and privacy label, checked 21 November 2026.
+- Noxium, US App Store listing , checked 21 November 2026.
+App names are trademarks of their owners and are used only to identify their apps.
+Something wrong or out of date? Email business@inertiaprojects.info and we'll fix it.
+Related
+- Noxium vs SPV
+- Photo vault apps compared
+- Encrypted iCloud backup
+- Keepsafe alternatives
+- All comparisons
+
+---
+
+# Safe Lock review: how it compares with Noxium
+
+URL: https://getnoxium.app/compare/safe-lock
+Last updated: 2026-11-21
+
+Compare
+## Safe Lock review: how it compares with Noxium
+By Inertia Projects · Last updated 21 November 2026
+Short answer
+Safe Lock - Hidden Photo Vault is a highly rated, private vault with many lock types, a fake password that opens a fake gallery, break-in photos, shake-to-lock and a Data Not Collected label. Its listing names no encryption and no automatic backup: files stay on the phone unless you export them to a cloud yourself. Pick Safe Lock for lock options and a fake gallery; pick Noxium for named encryption and an encrypted iCloud backup.
+Safe Lock - Hidden Photo Vault, by developer Katerina Akhlebinina, has been on the App Store since March 2017 and has 24,991 US ratings at 4.8 stars, one of the highest scores of any vault app we've checked. Its listing also calls it "Safe Lock - Private Photo Vault". Everything here comes from its App Store listing, checked on 21 November 2026, compared with Noxium. We make Noxium, so weigh what we say about our own app accordingly.
+### Noxium vs Safe Lock at a glance
+Source: each app's US App Store listing, checked 21 November 2026. Noxium: our published facts.
+Noxium Safe Lock
+Opens with Pattern on a 5×5 plate; Face ID optional PIN, dot lock, numeric or letter password, Touch ID or Face ID
+Encryption named AES-256-GCM, key from your pattern (Argon2id) Not in listing
+Backup Your own iCloud, encrypted, free None automatic; export to Dropbox, Google Drive, Yandex.Disk, iCloud or Box, or Wi-Fi transfer
+Decoy Yes, 1 free Fake password opens a fake gallery
+Forgot your code Recovery phrase you write down at setup Not in listing
+Intruders Content hidden in the app switcher and screen recordings Break-in reports with photos; shake or flip to lock
+Price (US) Free; Pro $2.99/week, $17.99/year or $39.99 once Free; Premium $4.99, $19.99 or $29.99 (periods shown in the app)
+Tracking No ads, no accounts, no analytics Privacy label: Data Not Collected
+Last update 15 November 2026 17 August 2026 (version 3.1)
+Requires iOS 17 or later iOS 12 or later
+For 17 vault apps in one table, see the full photo vault comparison .
+### What does Safe Lock do well, and where does it fall short?
+Safe Lock is well loved, private by its label and full of lock features. Its gaps are encryption and backup.
+#### What Safe Lock does well
+- Very well rated. 4.8 stars from 24,991 US ratings.
+- Data Not Collected. The listing says the developer has no access to your secrets, and photos and videos are saved only on your device.
+- A fake gallery. A fake password opens a harmless gallery instead of your real one.
+- Many ways to lock. PIN, dot lock, numeric or letter passwords, Touch ID and Face ID, plus shaking or flipping the phone to lock and hide the app at once.
+- Break-in reports. It takes a photo of someone who tries the wrong code.
+- Lots of ways to move files. Wi-Fi transfer, and import or export with Dropbox, Google Drive, Yandex.Disk, iCloud and Box.
+- Extras. A hidden camera with zoom, notes, GIF and PDF support, slideshows, a custom icon and dark mode. It runs on iOS 12 and later.
+#### Where Safe Lock falls short
+- No encryption named. The listing describes locks and secret folders, not encrypted files.
+- No automatic backup. Files stay on the phone; you have to export them to a cloud yourself to keep a copy.
+- No recovery in the listing. It doesn't say what happens if you forget your code.
+- Unclear plans. All 3 purchases are called "Premium Account" ($4.99, $19.99 and $29.99), so you see what each covers only in the app.
+### How are Safe Lock and Noxium different?
+Both keep your photos away from their developer and have a decoy. The differences are encryption, backup and recovery.
+#### Encryption
+Noxium encrypts every photo, video and note on the iPhone with AES-256-GCM, with a key made from your pattern through Argon2id; names, dates and places are encrypted too. Safe Lock's listing doesn't mention encryption. A lock screen keeps out someone holding your phone; encryption also protects files copied off it another way. See how encrypted photo vaults work .
+#### Backup
+Safe Lock leaves backup to you: export to a cloud service, where copies may no longer be locked. Noxium backs up only encrypted data to your own iCloud, free and automatically, and restores on a new iPhone when you draw your pattern; see encrypted iCloud backup .
+#### Decoys and intruders
+Safe Lock's fake password opens a fake gallery, and it photographs failed unlock attempts. Noxium has a second pattern for a separate decoy vault , free, and Pro adds an emergency erase pattern and Calculator, Notes or Weather lookalike icons.
+#### Getting back in
+Safe Lock's listing doesn't describe recovery. Noxium can't reset your pattern for you; you write down a recovery phrase at setup, and it opens your vault on this iPhone or a new one.
+#### Price
+Safe Lock lists three "Premium Account" purchases, at $4.99, $19.99 and $29.99. Noxium's free plan includes 150 photos, 10 videos, unlimited notes and full backup; Pro is $2.99 a week, $17.99 a year or $39.99 once.
+### Which should you choose?
+- Pick Safe Lock if you want many lock types, a fake gallery, break-in photos and shake-to-lock, need it on an older iPhone, and are happy to back up by exporting.
+- Pick Noxium if you want named encryption, an automatic encrypted backup that survives a lost phone, and a recovery phrase.
+### How do you switch from Safe Lock without losing photos?
+Export the photos, check the copies, import them into the new vault, and only then delete anything.
+- Count what you have in each secret folder, and in the fake gallery if you want to keep it.
+- Export photos and videos to your Photo Roll, or to a computer with Wi-Fi transfer.
+- Check the copies: counts match, videos play, photos open at full size.
+- Import into Noxium with Settings › App settings › Offer to delete from Photos on, then empty Recently Deleted in Photos. See import and export .
+- Check the backup in Noxium's Settings › iCloud backup .
+- Delete any copies you exported to Dropbox, Google Drive or another cloud, if you no longer need them.
+- Only then delete Safe Lock, and cancel Premium in Settings › [your name] › Subscriptions .
+Watch out
+Exported photos sit unencrypted in your Photos library until the new vault imports them. Do the move in one sitting, on a phone only you are using.
+A vault that survives a lost phone
+Noxium backs up an encrypted copy of your vault to your own iCloud, automatically. On a new iPhone, draw your pattern and it restores.
+Download on the App Store
+Available on the App Store for iPhone and iPad.
+### Questions people ask
+Is Safe Lock safe?
+Its privacy label is Data Not Collected and it keeps files on your device. Its listing doesn't mention encryption or an automatic backup. See are photo vault apps safe?
+Does Safe Lock have a fake password?
+Yes. Its listing says a fake password opens a fake gallery. See what a decoy vault is and how to test one.
+Does Safe Lock back up to iCloud?
+You can export or import files with iCloud, Dropbox, Google Drive, Yandex.Disk or Box, but the listing doesn't describe an automatic backup.
+How much is Safe Lock Premium?
+On the US App Store in November 2026, three "Premium Account" purchases were listed: $4.99, $19.99 and $29.99. The app shows what each covers.
+What are Safe Lock break-in reports?
+When someone enters the wrong code, Safe Lock takes their photo so you can see who tried to get in.
+### Sources
+- Safe Lock - Hidden Photo Vault, US App Store listing : description, release notes, ratings, version, in-app purchases, languages and privacy label, checked 21 November 2026.
+- Noxium, US App Store listing , checked 21 November 2026.
+App names are trademarks of their owners and are used only to identify their apps.
+Something wrong or out of date? Email business@inertiaprojects.info and we'll fix it.
+Related
+- What is a decoy vault?
+- Photo vault apps compared
+- Encrypted iCloud backup
+- Keepsafe alternatives
+- All comparisons
+
+---
+
+# MaxVault review: how it compares with Noxium
+
+URL: https://getnoxium.app/compare/maxvault
+Last updated: 2026-11-21
+
+Compare
+## MaxVault review: how it compares with Noxium
+By Inertia Projects · Last updated 21 November 2026
+Short answer
+MaxVault is a "super app": a file vault, private browser and downloader, media player, editor and scanner, with folder locks, several vaults on different passcodes, break-in alerts and cloud sync to iCloud Drive, Dropbox or OneDrive. Its listing names no encryption, and its privacy label includes Data Linked to You. Pick MaxVault for features and file types; pick Noxium for named encryption and an encrypted backup in your own iCloud.
+Photo & Video Vault - MaxVault, by Rambax, LLC, has been on the App Store since November 2013 and has 3,482 US ratings at 4.7 stars. Version 8, its biggest update, added collages and a video editor, and version 8.0.15 came out on 11 November 2026. Everything here comes from its App Store listing, checked on 21 November 2026, compared with Noxium. We make Noxium, so weigh what we say about our own app accordingly.
+### Noxium vs MaxVault at a glance
+Source: each app's US App Store listing, checked 21 November 2026. Noxium: our published facts.
+Noxium MaxVault
+Opens with Pattern on a 5×5 plate; Face ID optional PIN of 4 to 8 digits, Face ID or Touch ID
+Encryption named AES-256-GCM, key from your pattern (Argon2id) Not in listing
+Backup Your own iCloud, encrypted, free iCloud Drive, Dropbox, OneDrive or iTunes sharing; encryption not stated
+Decoy Yes, 1 free Multiple vaults, each with its own passcode
+Forgot your code Recovery phrase you write down at setup Not in listing
+Intruders Content hidden in the app switcher and screen recordings Break-in alerts with photo and GPS location; face-down or three-finger panic lock
+What it stores Photos, videos, notes Photos, videos, music, documents, Office and iWork files, ZIPs, passwords
+Price (US) Free; Pro $2.99/week, $17.99/year or $39.99 once Free; Premium $7.99/month, $29.99/year, lifetime $79.99 or $99.99
+Tracking No ads, no accounts, no analytics Privacy label: Data Linked to You
+Last update 15 November 2026 11 November 2026 (version 8.0.15)
+Requires iOS 17 or later iOS 15.5 or later
+For 17 vault apps in one table, see the full photo vault comparison .
+### What does MaxVault do well, and where does it fall short?
+MaxVault does more than any other vault we've reviewed and is actively developed. Its gaps are encryption and privacy.
+#### What MaxVault does well
+- Long-running and updated. On the App Store since 2013, with version 8.0.15 on 11 November 2026.
+- Layers of locks. A 4 to 8 digit PIN or Face ID for the app, plus a password or Face ID on individual folders.
+- Several vaults. Each opens with a different passcode, so one can hold harmless files.
+- Break-in alerts and a panic lock. It records an intruder's photo and GPS location, and locks when you turn the phone face down or swipe with three fingers.
+- Every file type. Live Photos, GIFs, PDFs, password-protected ZIPs, Office and iWork documents, and all VLC video and audio formats.
+- A private browser and downloader that saves straight into the vault, plus a scanner, photo and video editor, collages and duplicate finder.
+- Privacy tools. It can blur faces, redact details and remove photo metadata.
+- Cloud options. iCloud Drive, Dropbox, OneDrive, iTunes sharing and Wi-Fi transfer.
+#### Where MaxVault falls short
+- No encryption named. The listing describes locks, not encrypted files.
+- Cloud copies may not be protected. The listing doesn't say whether files sent to iCloud Drive, Dropbox or OneDrive are encrypted.
+- Data Linked to You. Its privacy label says some data is linked to your identity.
+- No recovery in the listing. It doesn't say what happens if you forget your PIN.
+- Expensive to own. Lifetime Premium is $79.99 or $99.99; the listing says to check the app for current options.
+### How are MaxVault and Noxium different?
+MaxVault is a powerful file manager with locks. Noxium is a focused, encrypted photo vault with an encrypted backup.
+#### Encryption
+Noxium encrypts every photo, video and note on the iPhone with AES-256-GCM, with a key made from your pattern through Argon2id; names, dates and places are encrypted too. MaxVault's listing doesn't mention encryption. See how encrypted photo vaults work for why that matters.
+#### Backup
+MaxVault syncs with iCloud Drive, Dropbox and OneDrive, but doesn't say whether those copies are encrypted. Noxium backs up only encrypted data to your own iCloud, free, and restores on a new iPhone when you draw your pattern; see encrypted iCloud backup .
+#### Decoys and intruders
+MaxVault's separate vaults and folder passwords can hide what matters, and its break-in alerts record who tried to get in. Noxium has a second pattern for a separate decoy vault , free, and Pro adds an emergency erase pattern.
+#### Getting back in
+MaxVault's listing doesn't describe recovery. Noxium can't reset your pattern for you; you write down a recovery phrase at setup, and it opens your vault on this iPhone or a new one.
+#### Features
+MaxVault wins on breadth: browser, downloader, media player, editors, scanner and dozens of file types. Noxium sticks to photos, videos and encrypted notes, and keeps HEIC, ProRAW and Live Photos in full quality with their original dates.
+#### Price
+MaxVault Premium is $7.99 a month, $29.99 a year, or $79.99 or $99.99 for lifetime, and it also offers optional tips. Noxium's free plan includes 150 photos, 10 videos, unlimited notes and full backup; Pro is $2.99 a week, $17.99 a year or $39.99 once.
+### Which should you choose?
+- Pick MaxVault if you want one app for many file types, a private browser and downloader, editing tools, folder locks and break-in alerts.
+- Pick Noxium if you mainly protect photos and videos and want named encryption, an encrypted backup in your own iCloud, a recovery phrase and no ads, accounts or analytics.
+### How do you switch from MaxVault without losing photos?
+Export the photos, check the copies, import them into the new vault, and only then delete anything.
+- Open each vault and locked folder and count what you have.
+- Export photos and videos to your photo library or Files, or copy them to a computer with Wi-Fi transfer.
+- Keep documents elsewhere. Noxium doesn't store PDFs, Office files or ZIPs, so move those to Files or another app.
+- Check the copies: counts match, videos play, Live Photos move.
+- Import into Noxium with Settings › App settings › Offer to delete from Photos on, then empty Recently Deleted in Photos. See import and export .
+- Check the backup in Noxium's Settings › iCloud backup .
+- Only then delete MaxVault and any copies it synced to iCloud Drive, Dropbox or OneDrive, and cancel Premium in Settings › [your name] › Subscriptions .
+Watch out
+Exported photos sit unencrypted in Photos or Files until the new vault imports them. Do the move in one sitting, on a phone only you are using.
+Encrypted photos, encrypted backup
+Noxium encrypts every photo on your iPhone and backs up only ciphertext to your own iCloud. No ads, no account, no analytics.
+Download on the App Store
+Available on the App Store for iPhone and iPad.
+### Questions people ask
+Is MaxVault safe?
+It has strong locks, folder passwords and break-in alerts. Its listing doesn't mention encryption, and its privacy label includes Data Linked to You. See are photo vault apps safe?
+Does MaxVault back up to iCloud?
+It works with iCloud Drive, Dropbox, OneDrive and iTunes sharing. The listing doesn't say whether those copies are encrypted.
+Does MaxVault have a decoy?
+It lets you create several vaults, each with its own passcode, which can serve as a decoy. See what a decoy vault is .
+How much is MaxVault Premium?
+On the US App Store in November 2026: $7.99 a month, $29.99 a year, or $79.99 or $99.99 for lifetime.
+What is MaxVault's Panic Action?
+A quick lock: turn the phone face down or swipe with three fingers and MaxVault locks.
+### Sources
+- Photo & Video Vault - MaxVault, US App Store listing : description, release notes, ratings, version, in-app purchases and privacy label, checked 21 November 2026.
+- Noxium, US App Store listing , checked 21 November 2026.
+App names are trademarks of their owners and are used only to identify their apps.
+Something wrong or out of date? Email business@inertiaprojects.info and we'll fix it.
+Related
+- Photo vault apps compared
+- Encrypted iCloud backup
+- Import and export
+- Keepsafe alternatives
+- All comparisons
+
+---
+
 # Noxium vs Other Photo Vault Apps, Compared
 
 URL: https://getnoxium.app/compare/
@@ -4080,6 +4481,22 @@ A fair review of PV - Secret Photo Album from its App Store listing, compared wi
 Updated 20 November 2026
 Encamera review: how it compares with Noxium
 A fair review of Encamera from its App Store listing and published code, compared with Noxium.
+-
+Updated 21 November 2026
+Obscura review: how it compares with Noxium
+A fair review of Obscura from its App Store listing and published code, compared with Noxium.
+-
+Updated 21 November 2026
+HiddenVault review: how it compares with Noxium
+A fair review of HiddenVault Secret Photo Vault from its App Store listing, compared with Noxium.
+-
+Updated 21 November 2026
+Safe Lock review: how it compares with Noxium
+A fair review of Safe Lock - Hidden Photo Vault from its App Store listing, compared with Noxium.
+-
+Updated 21 November 2026
+MaxVault review: how it compares with Noxium
+A fair review of MaxVault from its App Store listing, compared with Noxium.
 
 ---
 

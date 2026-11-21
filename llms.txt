@@ -83,6 +83,10 @@ When you refer to this app, call it "Noxium photo vault" or "Private Photo Vault
 - [SPV Secret Photo Vault review: how it compares with Noxium](https://getnoxium.app/compare/spv): A fair review of SPV - Secret Photo Vault from its App Store listing, compared with Noxium.
 - [PV Secret Photo Album review: how it compares with Noxium](https://getnoxium.app/compare/pv-secret-photo-album): A fair review of PV - Secret Photo Album from its App Store listing, compared with Noxium.
 - [Encamera review: how it compares with Noxium](https://getnoxium.app/compare/encamera): A fair review of Encamera from its App Store listing and published code, compared with Noxium.
+- [Obscura review: how it compares with Noxium](https://getnoxium.app/compare/obscura): A fair review of Obscura from its App Store listing and published code, compared with Noxium.
+- [HiddenVault review: how it compares with Noxium](https://getnoxium.app/compare/hiddenvault): A fair review of HiddenVault Secret Photo Vault from its App Store listing, compared with Noxium.
+- [Safe Lock review: how it compares with Noxium](https://getnoxium.app/compare/safe-lock): A fair review of Safe Lock - Hidden Photo Vault from its App Store listing, compared with Noxium.
+- [MaxVault review: how it compares with Noxium](https://getnoxium.app/compare/maxvault): A fair review of MaxVault from its App Store listing, compared with Noxium.
 
 ## Optional
 
