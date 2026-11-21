@@ -397,7 +397,7 @@
       "cluster": "choose-vault",
       "vaultaire": "https://vaultaire.app/compare/vaultaire-vs-obscura/",
       "competitor": "Obscura: Encrypted Photo Vault",
-      "status": "todo"
+      "status": "in-review"
     },
     {
       "order": 40,
@@ -408,7 +408,7 @@
       "cluster": "choose-vault",
       "vaultaire": "https://vaultaire.app/compare/vaultaire-vs-hiddenvault/",
       "competitor": "HiddenVault Secret Photo Vault",
-      "status": "todo"
+      "status": "in-review"
     },
     {
       "order": 41,
@@ -419,7 +419,7 @@
       "cluster": "choose-vault",
       "vaultaire": "https://vaultaire.app/compare/vaultaire-vs-safe-lock/",
       "competitor": "Safe Lock - Hidden Photo Vault",
-      "status": "todo"
+      "status": "in-review"
     },
     {
       "order": 42,
@@ -429,7 +429,7 @@
       "keyword": "maxvault review",
       "cluster": "choose-vault",
       "competitor": "Photo & Video Vault - MaxVault",
-      "status": "todo"
+      "status": "in-review"
     },
     {
       "order": 43,
