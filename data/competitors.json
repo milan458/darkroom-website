@@ -3898,9 +3898,9 @@
           "developer": "Orlio Inc",
           "price": "Free",
           "rating": 4.4,
-          "ratingCount": 28,
-          "version": "1.20.0",
-          "lastUpdate": "2026-11-09",
+          "ratingCount": 30,
+          "version": "1.22.0",
+          "lastUpdate": "2026-11-19",
           "minimumOs": "18.2",
           "url": "https://apps.apple.com/us/app/obscura-encrypted-photo-vault/id6759755376",
           "privacyLabel": [
@@ -3920,7 +3920,7 @@
               "price": "$6.99"
             }
           ],
-          "checked": "2026-11-11"
+          "checked": "2026-11-21"
         },
         "de": {
           "name": "Obscura: Geheimer Ordner",
@@ -4165,7 +4165,7 @@
           "developer": "Kyle Allen",
           "price": "Free",
           "rating": 4.6,
-          "ratingCount": 2107,
+          "ratingCount": 2109,
           "version": "3.43",
           "lastUpdate": "2026-06-17",
           "minimumOs": "14.0",
@@ -4175,8 +4175,33 @@
             "Data Linked to You",
             "Data Not Linked to You"
           ],
-          "inAppPurchases": [],
-          "checked": "2026-11-11"
+          "inAppPurchases": [
+            {
+              "name": "HiddenVault Premium: Annual",
+              "price": "$44.99"
+            },
+            {
+              "name": "HiddenVault Premium: Weekly",
+              "price": "$2.99"
+            },
+            {
+              "name": "HiddenVault Weekly",
+              "price": "$2.99"
+            },
+            {
+              "name": "HiddenVault Premium: Monthly",
+              "price": "$7.99"
+            },
+            {
+              "name": "HiddenVault Annual Discount",
+              "price": "$19.99"
+            },
+            {
+              "name": "HiddenVault Premium: 6-Months",
+              "price": "$24.99"
+            }
+          ],
+          "checked": "2026-11-21"
         },
         "de": {
           "name": "HiddenVault Secret Photo Vault",
@@ -4597,7 +4622,7 @@
           "developer": "Katerina Akhlebinina",
           "price": "Free",
           "rating": 4.8,
-          "ratingCount": 24960,
+          "ratingCount": 24991,
           "version": "3.1",
           "lastUpdate": "2026-08-17",
           "minimumOs": "12.0",
@@ -4619,7 +4644,7 @@
               "price": "$19.99"
             }
           ],
-          "checked": "2026-11-11"
+          "checked": "2026-11-21"
         },
         "de": {
           "name": "Photo Vault: Keep Safe Lock",
@@ -4864,7 +4889,7 @@
           "developer": "Rambax, LLC",
           "price": "Free",
           "rating": 4.7,
-          "ratingCount": 3475,
+          "ratingCount": 3482,
           "version": "8.0.15",
           "lastUpdate": "2026-11-11",
           "minimumOs": "15.5",
@@ -4898,7 +4923,7 @@
               "price": "$4.99"
             }
           ],
-          "checked": "2026-11-11"
+          "checked": "2026-11-21"
         },
         "de": {
           "name": "Foto- & Video-Tresor: MaxVault",
