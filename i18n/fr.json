@@ -113,7 +113,7 @@
       "updated": "2026-11-14"
     },
     "/guides/forgot-photo-vault-password": {
-      "source": "2026-11-11",
+      "source": "2026-11-19",
       "title": "Mot de passe du coffre photo oublié? Déverrouiller l’app",
       "description": "Bloqué hors de votre app de coffre photo? Comment la déverrouiller avec sa récupération, quoi essayer d’abord et quoi éviter pour garder vos photos.",
       "headline": "Mot de passe ou NIP de votre coffre photo oublié? Ce que vous pouvez encore faire",
@@ -121,10 +121,10 @@
       "crumb": "Mot de passe du coffre oublié",
       "keyword": "mot de passe coffre photo oublié",
       "published": "2026-11-15",
-      "updated": "2026-11-15"
+      "updated": "2026-11-19"
     },
     "/guides/move-photo-vault-to-new-iphone": {
-      "source": "2026-10-26",
+      "source": "2026-11-19",
       "title": "Coffre photo vers un nouvel iPhone, sans perdre de photos",
       "description": "Pourquoi les apps de coffre perdent des photos quand on change de téléphone, et une liste pour transférer le vôtre en toute sécurité.",
       "headline": "Transférer un coffre photo privé vers un nouvel iPhone sans perdre de photos",
@@ -132,7 +132,7 @@
       "crumb": "Coffre vers un nouvel iPhone",
       "keyword": "transférer coffre photo nouvel iphone",
       "published": "2026-11-15",
-      "updated": "2026-11-15"
+      "updated": "2026-11-19"
     },
     "/guides/hidden-photos-iphone": {
       "source": "2026-11-15",

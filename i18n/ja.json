@@ -113,7 +113,7 @@
       "updated": "2026-11-14"
     },
     "/guides/forgot-photo-vault-password": {
-      "source": "2026-11-11",
+      "source": "2026-11-19",
       "title": "写真保管庫のパスワードを忘れた時の対処法",
       "description": "写真保管庫アプリに入れなくなったら。アプリごとの復旧方法、最初に試すこと、写真を失わないためにやってはいけないこと。",
       "headline": "写真保管庫のパスワードや PIN を忘れたら？ まだできること",
@@ -121,10 +121,10 @@
       "crumb": "パスワードを忘れた",
       "keyword": "写真保管庫 パスワード 忘れた",
       "published": "2026-11-15",
-      "updated": "2026-11-15"
+      "updated": "2026-11-19"
     },
     "/guides/move-photo-vault-to-new-iphone": {
-      "source": "2026-10-26",
+      "source": "2026-11-19",
       "title": "写真保管庫を新しい iPhone に移す方法",
       "description": "機種変更で保管庫アプリの写真が消える理由と、移行の前・最中・後に確認する手順。写真を失わずに新しい iPhone へ移すためのチェックリストです。",
       "headline": "写真保管庫を新しい iPhone に移す方法：写真を失わないために",
@@ -132,7 +132,7 @@
       "crumb": "保管庫を新しい iPhone へ",
       "keyword": "写真保管庫 機種変更 引き継ぎ",
       "published": "2026-11-15",
-      "updated": "2026-11-15"
+      "updated": "2026-11-19"
     },
     "/guides/hidden-photos-iphone": {
       "source": "2026-11-15",
