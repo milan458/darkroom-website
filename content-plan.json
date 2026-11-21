@@ -353,7 +353,7 @@
       "keyword": "how do photo vault apps work",
       "cluster": "existing",
       "note": "Add 2+ in-text links (fails check_content today); link /features/on-device-encryption.",
-      "status": "in-review"
+      "status": "live"
     },
     {
       "order": 36,
@@ -364,7 +364,7 @@
       "cluster": "choose-vault",
       "vaultaire": "https://vaultaire.app/compare/vaultaire-vs-spv/",
       "competitor": "SPV - Secret Photo Vault",
-      "status": "in-review"
+      "status": "live"
     },
     {
       "order": 37,
@@ -375,7 +375,7 @@
       "cluster": "choose-vault",
       "vaultaire": "https://vaultaire.app/compare/vaultaire-vs-pv-secret-photo-album/",
       "competitor": "PV - Secret Photo Album",
-      "status": "in-review"
+      "status": "live"
     },
     {
       "order": 38,
@@ -386,7 +386,7 @@
       "cluster": "choose-vault",
       "vaultaire": "https://vaultaire.app/compare/vaultaire-vs-encamera/",
       "competitor": "Encamera Encrypted Photo Vault",
-      "status": "in-review"
+      "status": "live"
     },
     {
       "order": 39,
