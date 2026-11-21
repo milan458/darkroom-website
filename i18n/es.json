@@ -201,7 +201,7 @@
       "updated": "2026-11-18"
     },
     "/guides/how-encrypted-photo-vaults-work": {
-      "source": "2026-10-26",
+      "source": "2026-11-21",
       "title": "Cómo funciona una caja fuerte de fotos cifrada",
       "description": "Qué es el cifrado en una caja fuerte de fotos: claves, Argon2id, AES-256-GCM y copias, sin tecnicismos, y cómo detectar una que solo oculta.",
       "headline": "Cómo funcionan las cajas fuertes de fotos cifradas, explicado fácil",
@@ -209,7 +209,7 @@
       "crumb": "Cómo funciona el cifrado",
       "keyword": "caja fuerte de fotos cifrada",
       "published": "2026-11-20",
-      "updated": "2026-11-20"
+      "updated": "2026-11-21"
     },
     "/guides/vaultaire-vs-keepsafe": {
       "source": "2026-11-12",

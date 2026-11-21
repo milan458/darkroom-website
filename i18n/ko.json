@@ -201,7 +201,7 @@
       "updated": "2026-11-18"
     },
     "/guides/how-encrypted-photo-vaults-work": {
-      "source": "2026-10-26",
+      "source": "2026-11-21",
       "title": "사진 금고 앱 암호화 원리, 쉽게 정리",
       "description": "사진 금고의 암호화란? 키, Argon2id, AES-256-GCM, 암호화된 백업을 전문 용어 없이 설명하고, 숨기기만 하는 앱 구별법까지.",
       "headline": "암호화된 사진 금고의 원리, 쉽게 설명합니다",
@@ -209,7 +209,7 @@
       "crumb": "암호화 원리",
       "keyword": "사진 금고 앱 암호화 원리",
       "published": "2026-11-20",
-      "updated": "2026-11-20"
+      "updated": "2026-11-21"
     },
     "/guides/vaultaire-vs-keepsafe": {
       "source": "2026-11-12",

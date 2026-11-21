@@ -201,7 +201,7 @@
       "updated": "2026-11-18"
     },
     "/guides/how-encrypted-photo-vaults-work": {
-      "source": "2026-10-26",
+      "source": "2026-11-21",
       "title": "Comment fonctionne un coffre photo chiffré",
       "description": "Le chiffrement d’un coffre photo, sans jargon : clés, Argon2id, AES-256-GCM et sauvegardes. Et comment repérer un coffre qui ne fait que cacher.",
       "headline": "Comment fonctionnent les coffres photo chiffrés, en termes simples",
@@ -209,7 +209,7 @@
       "crumb": "Le chiffrement expliqué",
       "keyword": "coffre photo chiffré",
       "published": "2026-11-20",
-      "updated": "2026-11-20"
+      "updated": "2026-11-21"
     },
     "/guides/vaultaire-vs-keepsafe": {
       "source": "2026-11-12",

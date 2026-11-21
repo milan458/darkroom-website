@@ -41,7 +41,7 @@
   <meta property="og:image:alt" content="Noxium photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
   <meta property="og:locale" content="es_ES">
   <meta property="article:published_time" content="2026-11-20">
-  <meta property="article:modified_time" content="2026-11-20">
+  <meta property="article:modified_time" content="2026-11-21">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Cómo funciona una caja fuerte de fotos cifrada">
   <meta name="twitter:description" content="Qué es el cifrado en una caja fuerte de fotos: claves, Argon2id, AES-256-GCM y copias, sin tecnicismos, y cómo detectar una que solo oculta.">
@@ -90,7 +90,7 @@
         "mainEntityOfPage": "https://getnoxium.app/es/guides/how-encrypted-photo-vaults-work",
         "image": "https://getnoxium.app/assets/guides/noxium-lock.jpg",
         "datePublished": "2026-11-20",
-        "dateModified": "2026-11-20",
+        "dateModified": "2026-11-21",
         "author": {
           "@id": "https://getnoxium.app/#org"
         },
@@ -151,6 +151,14 @@
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "Una función de derivación de claves que convierte una contraseña o un patrón en una clave de cifrado despacio y con mucha memoria, para que adivinar códigos salga caro."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Face ID forma parte del cifrado?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No directamente. Face ID es un atajo hacia una clave que la app guardó en el llavero del iPhone. En Noxium, esa clave se queda en este iPhone, no se sincroniza y deja de funcionar si cambia tu configuración de Face ID; tu patrón siempre funciona."
             }
           },
           {
@@ -225,7 +233,7 @@
         <p class="eyebrow"><span class="dot dot-ink" aria-hidden="true"></span>Guía · El cifrado explicado</p>
         <h1>Cómo funcionan las cajas fuertes de fotos cifradas, explicado fácil</h1>
         <!-- build:byline -->
-        <p class="byline"><span>Por <a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>Última actualización: <time datetime="2026-11-20">20 de noviembre de 2026</time></span></p>
+        <p class="byline"><span>Por <a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>Publicado el <time datetime="2026-11-20">20 de noviembre de 2026</time></span><span aria-hidden="true">·</span><span>Última actualización: <time datetime="2026-11-21">21 de noviembre de 2026</time></span></p>
         <!-- /build:byline -->
         <div class="answer">
           <span class="answer-label">Respuesta corta</span>
@@ -296,6 +304,51 @@
           <li>Lo ideal es que el código de cifrado sea de código abierto o esté revisado de forma independiente.</li>
         </ul>
         <p>En octubre de 2026, solo 2 de las 17 apps caja fuerte que comparamos mencionaban AES-256-GCM en su descripción del App Store. Míralas todas en <a href="/es/best-photo-vault-apps-iphone">nuestra comparativa</a>.</p>
+        <h2 id="apps">¿Qué dicen de su cifrado las apps caja fuerte populares?</h2>
+        <p>Pocas dicen mucho. De las 14 apps caja fuerte que hemos analizado, solo Vaultaire y Obscura nombran su algoritmo en la ficha. Keepsafe nombra AES-256 en su centro de ayuda, y Obscura y Encamera publican su código de cifrado. Las demás dicen «cifrado» sin detalles o no mencionan el cifrado.</p>
+        <div class="data-table-wrap" tabindex="0" role="region" aria-labelledby="apps-caption">
+          <table class="data-table">
+            <caption id="apps-caption">Lo que dice sobre el cifrado la ficha de cada app en el App Store de EE. UU. (y, donde se indica, sus páginas de ayuda o su código), revisado del 11 al 21 de noviembre de 2026. Recogemos afirmaciones, no resultados de pruebas.</caption>
+            <thead><tr><th scope="col">App</th><th scope="col">Qué dice sobre el cifrado</th></tr></thead>
+            <tbody>
+              <tr><th scope="row"><a href="/compare/vaultaire">Vaultaire</a></th><td>AES-256-GCM en el dispositivo; copia en iCloud cifrada antes de subirla</td></tr>
+              <tr><th scope="row"><a href="/compare/obscura">Obscura</a></th><td>AES-256-GCM; clave a partir de tu contraseña con PBKDF2, 600.000 iteraciones; publica su código de cifrado</td></tr>
+              <tr><th scope="row"><a href="/compare/encamera">Encamera</a></th><td>Cifra todos los archivos multimedia; publica su código de cifrado, basado en libsodium</td></tr>
+              <tr><th scope="row"><a href="/compare/keepsafe">Keepsafe</a></th><td>«De grado militar» en la ficha; AES-256 en su centro de ayuda</td></tr>
+              <tr><th scope="row"><a href="/compare/privault">Privault</a></th><td>Dice que el almacenamiento está cifrado; algoritmo sin nombrar</td></tr>
+              <tr><th scope="row"><a href="/compare/private-photo-vault">Private Photo Vault</a></th><td>Copia en la nube llamada «cifrada»; algoritmo sin nombrar</td></tr>
+              <tr><th scope="row"><a href="/compare/pv-secret-photo-album">PV - Secret Photo Album</a></th><td>Menciona «cifrado de datos»; algoritmo sin nombrar</td></tr>
+              <tr><th scope="row"><a href="/compare/hiddenvault">HiddenVault</a></th><td>«Conocimiento cero»; algoritmo sin nombrar</td></tr>
+              <tr><th scope="row"><a href="/compare/spv">SPV - Secret Photo Vault</a></th><td>No se menciona; protección con PIN</td></tr>
+              <tr><th scope="row"><a href="/compare/secret-photo-vault">Secret Photo Vault Lock Photos</a></th><td>No se menciona</td></tr>
+              <tr><th scope="row"><a href="/compare/safe-lock">Safe Lock</a></th><td>No se menciona</td></tr>
+              <tr><th scope="row"><a href="/compare/maxvault">MaxVault</a></th><td>No se menciona</td></tr>
+              <tr><th scope="row"><a href="/compare/hide-it-pro">Hide it Pro</a></th><td>No se menciona</td></tr>
+              <tr><th scope="row"><a href="/compare/calculator-hide-photos">Calculator#</a></th><td>No se menciona</td></tr>
+              <tr><th scope="row">Noxium (la nuestra)</th><td>AES-256-GCM en el dispositivo, clave a partir de tu patrón con Argon2id; la copia solo contiene datos cifrados</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>«No se menciona» no demuestra que una app no cifre; significa que no puedes saberlo por lo que publica el desarrollador. Si te importa, hazle las preguntas de la lista anterior.</p>
+
+        <h2 id="ios">¿El iPhone no cifra ya mis fotos?</h2>
+        <p>Sí, mientras el teléfono está bloqueado. En cuanto se desbloquea, cualquiera que lo tenga en la mano puede abrir Fotos, así que una caja fuerte añade un segundo candado con su propia clave.</p>
+        <ul>
+          <li><strong>En el iPhone.</strong> iOS cifra su almacenamiento con claves ligadas a tu código (Apple lo llama «Data Protection»). Eso protege un teléfono perdido y bloqueado. No separa las fotos de una app de alguien que conoce tu código o te ve introducirlo.</li>
+          <li><strong>El álbum Oculto.</strong> Necesita Face ID o tu código para abrirse, pero es el mismo código, y se sincroniza con tus otros dispositivos. Consulta <a href="/es/guides/lock-photos-iphone-face-id">cómo bloquear fotos en el iPhone</a>.</li>
+          <li><strong>Fotos en iCloud.</strong> Con la Protección de datos avanzada activada, Fotos en iCloud tiene cifrado de extremo a extremo. Sin ella, Apple tiene las claves de tus Fotos en iCloud.</li>
+        </ul>
+        <p>Si una caja fuerte cifra con una clave que sale de su propio código, el código del iPhone por sí solo no la abre.</p>
+
+        <h2 id="open-source">¿El código abierto demuestra que una caja fuerte es segura?</h2>
+        <p>No, pero ayuda. El código publicado permite a cualquiera comprobar cómo se cifran los archivos, en vez de fiarse de una palabra como «seguro».</p>
+        <ul>
+          <li><strong>Muestra el método.</strong> Puedes ver el algoritmo, cómo se crean las claves y dónde se guardan.</li>
+          <li><strong>No es lo mismo que una auditoría.</strong> Que el código sea público no significa que lo haya revisado alguien cualificado.</li>
+          <li><strong>Puede que no sea toda la app.</strong> Algunos desarrolladores solo publican la parte de cifrado. Es la que más importa, pero el resto de la app también maneja tus fotos.</li>
+          <li><strong>No es fácil confirmar que la versión del App Store coincide.</strong> Apple no permite comprobar que la app instalada se compiló a partir del código publicado.</li>
+        </ul>
+        <p>Noxium, la app que hacemos, no es de código abierto. En su lugar publicamos exactamente lo que usa: Argon2id, AES-256-GCM, las capas de claves y el tamaño de los bloques, en nuestra página de <a href="/features/on-device-encryption">cifrado en el dispositivo</a>.</p>
         <figure class="shot">
           <img src="/assets/guides/noxium-lock.jpg" alt="Pantalla de bloqueo de Noxium: el patrón se estira con Argon2id hasta la clave que abre la caja fuerte" width="559" height="1216" loading="lazy" decoding="async">
           <figcaption>En Noxium, tu patrón nunca se guarda. Se estira con Argon2id hasta la clave que abre tu caja fuerte.</figcaption>
@@ -325,6 +378,10 @@
             <div class="faq-body"><p>Una función de derivación de claves que convierte una contraseña o un patrón en una clave de cifrado despacio y con mucha memoria, para que adivinar códigos salga caro.</p></div>
           </details>
           <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>¿Face ID forma parte del cifrado?</span></span></summary>
+            <div class="faq-body"><p>No directamente. Face ID es un atajo hacia una clave que la app guardó en el llavero del iPhone. En Noxium, esa clave se queda en este iPhone, no se sincroniza y deja de funcionar si cambia tu configuración de Face ID; tu patrón siempre funciona.</p></div>
+          </details>
+          <details class="faq-item">
             <summary class="faq-summary"><span class="faq-summary-left"><span>¿Se puede hackear una caja fuerte cifrada?</span></span></summary>
             <div class="faq-body"><p>El cifrado en sí no es el punto débil. Sí lo son los códigos cortos, los códigos que ha visto otra persona y las copias sin cifrar que quedan en otros sitios. Usa un código largo y borra los originales después de importarlos.</p></div>
           </details>
@@ -345,6 +402,9 @@
             <li><a href="#backup">Copias cifradas</a></li>
             <li><a href="#limits">Lo que el cifrado no hace</a></li>
             <li><a href="#spot">Cómo notar la diferencia</a></li>
+            <li><a href="#apps">Lo que dicen las apps</a></li>
+            <li><a href="#ios">El cifrado del propio iPhone</a></li>
+            <li><a href="#open-source">Código abierto</a></li>
             <li><a href="#faq">Preguntas frecuentes</a></li>
           </ol>
         </nav>
