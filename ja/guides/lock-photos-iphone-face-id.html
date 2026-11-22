@@ -316,7 +316,7 @@
         <h2 id="pattern">iPhone で写真をパターンでロックできる？</h2>
         <p>標準機能ではできません。iOS が使うのは Face ID、Touch ID、パスコードで、描くパターンのロックは保管庫アプリだけのものです。App Store の掲載情報や各社のサイトによると、Private Photo Vault、Vaultaire、Noxium などがパターンに対応しています。</p>
         <p>パターンの強さは、その裏で何をしているかで決まります。普通のファイルの前に画面を 1 枚置くだけのアプリもあれば、パターンから暗号鍵を作るアプリもあります。信用する前に、そのアプリがパターンをどう使っているか確認しましょう（違いは<a href="/ja/guides/how-encrypted-photo-vaults-work">暗号化された写真保管庫の仕組み</a>で説明しています）。</p>
-        <p>私たちが開発している Noxium では、5×5 のプレートにある <a href="/features/pattern-lock">25 本のボルトのうち 6 本以上を通るパターン</a>を描きます。パターンは保存されません。Argon2id でパターンから保管庫を開く鍵を作り、すべての写真を iPhone 上で AES-256-GCM で暗号化します。Face ID で開けるのは便利のためのメインの保管庫だけで、おとり保管庫は決して開きません。</p>
+        <p>私たちが開発している Noxium では、5×5 のプレートにある <a href="/ja/features/pattern-lock">25 本のボルトのうち 6 本以上を通るパターン</a>を描きます。パターンは保存されません。Argon2id でパターンから保管庫を開く鍵を作り、すべての写真を iPhone 上で AES-256-GCM で暗号化します。Face ID で開けるのは便利のためのメインの保管庫だけで、おとり保管庫は決して開きません。</p>
         <figure class="shot">
           <img src="/assets/guides/noxium-lock.jpg" alt="Noxium のロック画面：パターンが描かれた 5×5 のボルトプレート" width="559" height="1216" loading="lazy" decoding="async">
           <figcaption>Noxium のロック：5×5 のボルトプレートに描くパターンで、iPhone のパスコードとは別物です。</figcaption>

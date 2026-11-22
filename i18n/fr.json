@@ -221,6 +221,17 @@
       "keyword": "vaultaire ou keepsafe",
       "published": "2026-11-22",
       "updated": "2026-11-22"
+    },
+    "/features/pattern-lock": {
+      "source": "2026-11-13",
+      "title": "Coffre photo à verrou par schéma : le 5×5 de Noxium",
+      "description": "Noxium s’ouvre avec un schéma passant par 6 de ses 25 boulons ou plus. Comment il devient votre clé, combien il y en a et comment en choisir un solide.",
+      "headline": "Verrou par schéma : Noxium s’ouvre avec une forme, pas un NIP",
+      "summary": "Comment le verrou par schéma 5×5 de Noxium transforme une forme en clé de chiffrement, sa solidité et ses limites.",
+      "crumb": "Verrou par schéma",
+      "keyword": "coffre photo verrou schéma",
+      "published": "2026-11-22",
+      "updated": "2026-11-22"
     }
   },
   "facts": [

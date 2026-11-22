@@ -221,6 +221,17 @@
       "keyword": "vaultaire o keepsafe",
       "published": "2026-11-22",
       "updated": "2026-11-22"
+    },
+    "/features/pattern-lock": {
+      "source": "2026-11-13",
+      "title": "Caja fuerte de fotos con patrón: así funciona Noxium",
+      "description": "Noxium se abre con un patrón que pasa por 6 o más de 25 pernos. Cómo se convierte en tu clave, cuántos patrones hay y cómo elegir uno fuerte.",
+      "headline": "Bloqueo con patrón: Noxium se abre con una forma, no con un PIN",
+      "summary": "Cómo el bloqueo con patrón de 5×5 de Noxium convierte una forma en tu clave de cifrado, lo fuerte que es y sus límites.",
+      "crumb": "Bloqueo con patrón",
+      "keyword": "caja fuerte de fotos con patrón",
+      "published": "2026-11-22",
+      "updated": "2026-11-22"
     }
   },
   "facts": [

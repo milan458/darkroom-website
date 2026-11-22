@@ -221,6 +221,17 @@
       "keyword": "vaultaire keepsafe 비교",
       "published": "2026-11-22",
       "updated": "2026-11-22"
+    },
+    "/features/pattern-lock": {
+      "source": "2026-11-13",
+      "title": "패턴 잠금 사진 금고 Noxium의 원리",
+      "description": "Noxium은 볼트 25개 중 6개 이상을 지나는 패턴으로 열립니다. 패턴이 키가 되는 원리, 패턴의 수, 강한 패턴 고르는 법.",
+      "headline": "패턴 잠금: Noxium은 PIN이 아니라 모양으로 열립니다",
+      "summary": "Noxium의 5×5 패턴 잠금이 모양을 암호화 키로 바꾸는 원리, 강도, 한계.",
+      "crumb": "패턴 잠금",
+      "keyword": "사진 금고 패턴 잠금",
+      "published": "2026-11-22",
+      "updated": "2026-11-22"
     }
   },
   "facts": [

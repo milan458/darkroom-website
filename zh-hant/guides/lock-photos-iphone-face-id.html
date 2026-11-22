@@ -316,7 +316,7 @@
         <h2 id="pattern">iPhone 可以用圖形鎖定照片嗎？</h2>
         <p>內建功能做不到。iOS 使用的是 Face ID、Touch ID 和密碼；畫圖形解鎖只有保險庫 App 才有。根據 App Store 頁面和各家網站，Private Photo Vault、Vaultaire 和 Noxium 等 App 都提供圖形鎖。</p>
         <p>圖形鎖有多強，要看它背後做了什麼。有些 App 只是在一般檔案前面擋一個畫面；有些則用圖形推導出加密金鑰。信任一款 App 之前，先弄清楚它怎麼使用圖形（差別請看<a href="/zh-hant/guides/how-encrypted-photo-vaults-work">加密照片保險庫是怎麼運作的</a>）。</p>
-        <p>在我們開發的 Noxium 中，你要在 5×5 的板子上畫出一個<a href="/features/pattern-lock">至少經過 25 顆螺栓中 6 顆的圖形</a>。圖形永遠不會被儲存：Argon2id 會把它轉成打開保險庫的金鑰，每一張照片都在 iPhone 上用 AES-256-GCM 加密。Face ID 可以方便地打開主要保險庫，但永遠不會打開偽裝保險庫。</p>
+        <p>在我們開發的 Noxium 中，你要在 5×5 的板子上畫出一個<a href="/zh-hant/features/pattern-lock">至少經過 25 顆螺栓中 6 顆的圖形</a>。圖形永遠不會被儲存：Argon2id 會把它轉成打開保險庫的金鑰，每一張照片都在 iPhone 上用 AES-256-GCM 加密。Face ID 可以方便地打開主要保險庫，但永遠不會打開偽裝保險庫。</p>
         <figure class="shot">
           <img src="/assets/guides/noxium-lock.jpg" alt="Noxium 的鎖定畫面：畫上圖形的 5×5 螺栓板" width="559" height="1216" loading="lazy" decoding="async">
           <figcaption>Noxium 的鎖：在 5×5 螺栓板上畫出的圖形，和 iPhone 密碼分開。</figcaption>

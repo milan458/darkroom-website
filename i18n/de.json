@@ -221,6 +221,17 @@
       "keyword": "vaultaire oder keepsafe",
       "published": "2026-11-22",
       "updated": "2026-11-22"
+    },
+    "/features/pattern-lock": {
+      "source": "2026-11-13",
+      "title": "Foto-Tresor mit Mustersperre: So funktioniert Noxium",
+      "description": "Noxium öffnet sich mit einem Muster über 6+ von 25 Bolzen. Wie das Muster zum Schlüssel wird, wie viele Muster es gibt und wie du ein starkes wählst.",
+      "headline": "Mustersperre: So öffnet sich Noxium mit einer Form statt einer PIN",
+      "summary": "Wie die 5×5-Mustersperre von Noxium eine Form in deinen Schlüssel verwandelt, wie stark sie ist und wo ihre Grenzen liegen.",
+      "crumb": "Mustersperre",
+      "keyword": "foto tresor mustersperre",
+      "published": "2026-11-22",
+      "updated": "2026-11-22"
     }
   },
   "facts": [

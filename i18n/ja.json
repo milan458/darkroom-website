@@ -221,6 +221,17 @@
       "keyword": "vaultaire keepsafe 比較",
       "published": "2026-11-22",
       "updated": "2026-11-22"
+    },
+    "/features/pattern-lock": {
+      "source": "2026-11-13",
+      "title": "パターンロックの写真保管庫 Noxium",
+      "description": "Noxium は 25 本中 6 本以上のボルトを通るパターンで開きます。パターンが鍵になるしくみ、パターンの数、強いパターンの選び方。",
+      "headline": "パターンロック：Noxium は PIN ではなく形で開く",
+      "summary": "Noxium の 5×5 パターンロックが形を暗号化の鍵に変えるしくみ、強さ、限界を説明します。",
+      "crumb": "パターンロック",
+      "keyword": "写真保管庫 パターンロック",
+      "published": "2026-11-22",
+      "updated": "2026-11-22"
     }
   },
   "facts": [

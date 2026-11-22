@@ -221,6 +221,17 @@
       "keyword": "vaultaire ou keepsafe",
       "published": "2026-11-22",
       "updated": "2026-11-22"
+    },
+    "/features/pattern-lock": {
+      "source": "2026-11-13",
+      "title": "Cofre de fotos com padrão: como funciona o Noxium",
+      "description": "O Noxium abre com um padrão que passa por 6 ou mais de 25 parafusos. Como ele vira a sua chave, quantos padrões existem e como escolher um forte.",
+      "headline": "Bloqueio por padrão: o Noxium abre com uma forma, não com um PIN",
+      "summary": "Como o bloqueio por padrão 5×5 do Noxium transforma uma forma na sua chave de criptografia, a força dele e os limites.",
+      "crumb": "Bloqueio por padrão",
+      "keyword": "cofre de fotos com padrão",
+      "published": "2026-11-22",
+      "updated": "2026-11-22"
     }
   },
   "facts": [

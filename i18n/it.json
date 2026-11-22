@@ -221,6 +221,17 @@
       "keyword": "vaultaire o keepsafe",
       "published": "2026-11-22",
       "updated": "2026-11-22"
+    },
+    "/features/pattern-lock": {
+      "source": "2026-11-13",
+      "title": "Cassaforte foto con sequenza: come funziona Noxium",
+      "description": "Noxium si apre con una sequenza su 6 o più dei 25 bulloni. Come diventa la tua chiave, quante sequenze esistono e come sceglierne una robusta.",
+      "headline": "Blocco con sequenza: Noxium si apre con una forma, non con un PIN",
+      "summary": "Come il blocco con sequenza 5×5 di Noxium trasforma una forma nella tua chiave di cifratura, quanto è robusto e i suoi limiti.",
+      "crumb": "Blocco con sequenza",
+      "keyword": "cassaforte foto con sequenza",
+      "published": "2026-11-22",
+      "updated": "2026-11-22"
     }
   },
   "facts": [
