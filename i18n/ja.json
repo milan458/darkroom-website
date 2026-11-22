@@ -210,6 +210,28 @@
       "keyword": "写真保管庫 暗号化 仕組み",
       "published": "2026-11-20",
       "updated": "2026-11-20"
+    },
+    "/guides/vaultaire-vs-keepsafe": {
+      "source": "2026-11-12",
+      "title": "Vaultaire と Keepsafe を比較",
+      "description": "Vaultaire はアカウント不要で自分の iCloud にバックアップ。Keepsafe はメールアカウントと自社クラウド。料金・暗号化・おとり機能を比較。",
+      "headline": "Vaultaire と Keepsafe、あなたに合う写真保管庫はどっち？",
+      "summary": "App Store の掲載情報をもとに、アカウント、バックアップ、料金、暗号化、おとり保管庫を比較します。",
+      "crumb": "Vaultaire と Keepsafe",
+      "keyword": "vaultaire keepsafe 比較",
+      "published": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    "/features/pattern-lock": {
+      "source": "2026-11-13",
+      "title": "パターンロックの写真保管庫 Noxium",
+      "description": "Noxium は 25 本中 6 本以上のボルトを通るパターンで開きます。パターンが鍵になるしくみ、パターンの数、強いパターンの選び方。",
+      "headline": "パターンロック：Noxium は PIN ではなく形で開く",
+      "summary": "Noxium の 5×5 パターンロックが形を暗号化の鍵に変えるしくみ、強さ、限界を説明します。",
+      "crumb": "パターンロック",
+      "keyword": "写真保管庫 パターンロック",
+      "published": "2026-11-22",
+      "updated": "2026-11-22"
     }
   },
   "facts": [

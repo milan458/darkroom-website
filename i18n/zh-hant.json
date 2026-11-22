@@ -276,6 +276,28 @@
       "keyword": "照片保險庫 加密 原理",
       "published": "2026-11-20",
       "updated": "2026-11-20"
+    },
+    "/guides/vaultaire-vs-keepsafe": {
+      "source": "2026-11-12",
+      "title": "Vaultaire 和 Keepsafe 比較",
+      "description": "Vaultaire 不用帳號、備份到你的 iCloud；Keepsafe 用電子郵件帳號和自家雲端。比較價格、加密和偽裝保險庫。",
+      "headline": "Vaultaire 和 Keepsafe，哪款照片保險庫適合你？",
+      "summary": "依 App Store 頁面比較帳號、備份、價格、加密和偽裝保險庫。",
+      "crumb": "Vaultaire 和 Keepsafe",
+      "keyword": "vaultaire keepsafe 比較",
+      "published": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    "/features/pattern-lock": {
+      "source": "2026-11-13",
+      "title": "圖形鎖照片保險庫：Noxium 如何運作",
+      "description": "Noxium 用經過 25 顆螺栓中至少 6 顆的圖形打開。圖形如何變成金鑰、共有多少種圖形，以及怎麼選一個強的圖形。",
+      "headline": "圖形鎖：Noxium 用一個形狀打開，而不是 PIN 碼",
+      "summary": "Noxium 的 5×5 圖形鎖如何把形狀變成加密金鑰、強度有多高，以及它的限制。",
+      "crumb": "圖形鎖",
+      "keyword": "照片保險庫 圖形鎖",
+      "published": "2026-11-22",
+      "updated": "2026-11-22"
     }
   }
 }
