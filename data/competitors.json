@@ -5288,10 +5288,10 @@
           "developer": "IdeaSolutions S.r.l.",
           "price": "Free",
           "rating": 4.7,
-          "ratingCount": 17327,
-          "version": "3.6.5",
-          "lastUpdate": "2025-06-10",
-          "minimumOs": "12.0",
+          "ratingCount": 17322,
+          "version": "3.6.7",
+          "lastUpdate": "2026-11-18",
+          "minimumOs": "15.0",
           "url": "https://apps.apple.com/us/app/secret-photos-kyms/id471303390",
           "privacyLabel": [
             "Data Used to Track You",
@@ -5307,7 +5307,7 @@
               "price": "$4.99"
             }
           ],
-          "checked": "2026-11-11"
+          "checked": "2026-11-22"
         },
         "de": {
           "name": "Geheime Fotos - KYMS",
