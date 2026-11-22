@@ -439,7 +439,7 @@
       "keyword": "kyms app review",
       "cluster": "choose-vault",
       "competitor": "Secret photos - KYMS",
-      "status": "todo"
+      "status": "in-review"
     },
     {
       "order": 44,
@@ -449,7 +449,7 @@
       "keyword": "view hidden photos on mac",
       "cluster": "hidden-album",
       "vaultaire": "https://vaultaire.app/guides/view-hidden-photos-mac/",
-      "status": "todo"
+      "status": "in-review"
     },
     {
       "order": 45,
@@ -459,7 +459,7 @@
       "keyword": "view iphone hidden photos on windows",
       "cluster": "hidden-album",
       "vaultaire": "https://vaultaire.app/guides/view-hidden-photos-windows-pc/",
-      "status": "todo"
+      "status": "in-review"
     },
     {
       "order": 46,
@@ -469,7 +469,7 @@
       "keyword": "hidden album face id bypass",
       "cluster": "hidden-album",
       "vaultaire": "https://vaultaire.app/guides/hidden-album-face-id-bypass-iphone/",
-      "status": "todo"
+      "status": "in-review"
     },
     {
       "order": 47,
