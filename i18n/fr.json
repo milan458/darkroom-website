@@ -210,6 +210,17 @@
       "keyword": "coffre photo chiffré",
       "published": "2026-11-20",
       "updated": "2026-11-20"
+    },
+    "/guides/vaultaire-vs-keepsafe": {
+      "source": "2026-11-12",
+      "title": "Vaultaire ou Keepsafe : comparatif de coffres photo",
+      "description": "Vaultaire ne demande aucun compte et sauvegarde dans votre iCloud. Keepsafe utilise un compte courriel et son nuage. Prix, chiffrement et leurres comparés.",
+      "headline": "Vaultaire ou Keepsafe : quel coffre photo vous convient?",
+      "summary": "Vaultaire et Keepsafe comparés d’après leurs fiches App Store : compte, sauvegarde, prix, chiffrement et coffre leurre.",
+      "crumb": "Vaultaire ou Keepsafe",
+      "keyword": "vaultaire ou keepsafe",
+      "published": "2026-11-22",
+      "updated": "2026-11-22"
     }
   },
   "facts": [

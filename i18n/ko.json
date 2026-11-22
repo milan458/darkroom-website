@@ -210,6 +210,17 @@
       "keyword": "사진 금고 앱 암호화 원리",
       "published": "2026-11-20",
       "updated": "2026-11-20"
+    },
+    "/guides/vaultaire-vs-keepsafe": {
+      "source": "2026-11-12",
+      "title": "Vaultaire vs Keepsafe 비교",
+      "description": "Vaultaire는 계정 없이 내 iCloud에 백업, Keepsafe는 이메일 계정과 자체 클라우드. 가격, 암호화, 위장 금고를 비교합니다.",
+      "headline": "Vaultaire vs Keepsafe: 나에게 맞는 사진 금고는?",
+      "summary": "App Store 앱 정보로 비교한 계정, 백업, 가격, 암호화, 위장 금고.",
+      "crumb": "Vaultaire vs Keepsafe",
+      "keyword": "vaultaire keepsafe 비교",
+      "published": "2026-11-22",
+      "updated": "2026-11-22"
     }
   },
   "facts": [

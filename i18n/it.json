@@ -210,6 +210,17 @@
       "keyword": "cassaforte foto cifrata",
       "published": "2026-11-20",
       "updated": "2026-11-20"
+    },
+    "/guides/vaultaire-vs-keepsafe": {
+      "source": "2026-11-12",
+      "title": "Vaultaire o Keepsafe: confronto tra casseforti foto",
+      "description": "Vaultaire non chiede account e fa il backup nel tuo iCloud. Keepsafe usa un account email e il suo cloud. Prezzi, cifratura e cassaforte esca a confronto.",
+      "headline": "Vaultaire o Keepsafe: quale cassaforte per foto fa per te?",
+      "summary": "Vaultaire e Keepsafe a confronto secondo le schede dell’App Store: account, backup, prezzo, cifratura e cassaforte esca.",
+      "crumb": "Vaultaire o Keepsafe",
+      "keyword": "vaultaire o keepsafe",
+      "published": "2026-11-22",
+      "updated": "2026-11-22"
     }
   },
   "facts": [

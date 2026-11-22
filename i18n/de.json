@@ -210,6 +210,17 @@
       "keyword": "foto tresor verschlüsselung",
       "published": "2026-11-20",
       "updated": "2026-11-20"
+    },
+    "/guides/vaultaire-vs-keepsafe": {
+      "source": "2026-11-12",
+      "title": "Vaultaire oder Keepsafe? Foto-Tresore im Vergleich",
+      "description": "Vaultaire braucht kein Konto und sichert in deiner iCloud. Keepsafe nutzt ein E-Mail-Konto und eigene Server. Preise, Verschlüsselung und Tarntresor.",
+      "headline": "Vaultaire oder Keepsafe: Welcher Foto-Tresor passt zu dir?",
+      "summary": "Vaultaire und Keepsafe im Vergleich ihrer App-Store-Einträge: Konto, Backup, Preis, Verschlüsselung und Tarntresor.",
+      "crumb": "Vaultaire oder Keepsafe",
+      "keyword": "vaultaire oder keepsafe",
+      "published": "2026-11-22",
+      "updated": "2026-11-22"
     }
   },
   "facts": [

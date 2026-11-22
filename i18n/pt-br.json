@@ -210,6 +210,17 @@
       "keyword": "cofre de fotos criptografado",
       "published": "2026-11-20",
       "updated": "2026-11-20"
+    },
+    "/guides/vaultaire-vs-keepsafe": {
+      "source": "2026-11-12",
+      "title": "Vaultaire ou Keepsafe: qual cofre de fotos escolher",
+      "description": "O Vaultaire não pede conta e faz backup no seu iCloud. O Keepsafe usa conta de e-mail e nuvem própria. Preço, criptografia e cofre isca comparados.",
+      "headline": "Vaultaire ou Keepsafe: qual cofre de fotos combina com você?",
+      "summary": "Vaultaire e Keepsafe comparados pelas páginas da App Store: conta, backup, preço, criptografia e cofre isca.",
+      "crumb": "Vaultaire ou Keepsafe",
+      "keyword": "vaultaire ou keepsafe",
+      "published": "2026-11-22",
+      "updated": "2026-11-22"
     }
   },
   "facts": [

@@ -276,6 +276,17 @@
       "keyword": "照片保險庫 加密 原理",
       "published": "2026-11-20",
       "updated": "2026-11-20"
+    },
+    "/guides/vaultaire-vs-keepsafe": {
+      "source": "2026-11-12",
+      "title": "Vaultaire 和 Keepsafe 比較",
+      "description": "Vaultaire 不用帳號、備份到你的 iCloud；Keepsafe 用電子郵件帳號和自家雲端。比較價格、加密和偽裝保險庫。",
+      "headline": "Vaultaire 和 Keepsafe，哪款照片保險庫適合你？",
+      "summary": "依 App Store 頁面比較帳號、備份、價格、加密和偽裝保險庫。",
+      "crumb": "Vaultaire 和 Keepsafe",
+      "keyword": "vaultaire keepsafe 比較",
+      "published": "2026-11-22",
+      "updated": "2026-11-22"
     }
   }
 }
