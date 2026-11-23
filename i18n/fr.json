@@ -232,6 +232,17 @@
       "keyword": "coffre photo verrou schéma",
       "published": "2026-11-22",
       "updated": "2026-11-22"
+    },
+    "/features/on-device-encryption": {
+      "source": "2026-11-13",
+      "title": "App coffre photo chiffrée sur iPhone : ce que Noxium chiffre",
+      "description": "Noxium chiffre photos, vidéos et notes sur l’iPhone en AES-256-GCM, avec une clé tirée de votre schéma par Argon2id. Ce qui est protégé ou non.",
+      "headline": "Chiffrement sur l’appareil : ce que Noxium chiffre, et comment",
+      "summary": "Ce que Noxium chiffre sur l’iPhone, la chaîne de clés du schéma au fichier, et où s’arrête le chiffrement.",
+      "crumb": "Chiffrement sur l’appareil",
+      "keyword": "app coffre photo chiffrée iphone",
+      "published": "2026-11-23",
+      "updated": "2026-11-23"
     }
   },
   "facts": [

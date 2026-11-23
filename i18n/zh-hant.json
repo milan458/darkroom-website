@@ -298,6 +298,17 @@
       "keyword": "照片保險庫 圖形鎖",
       "published": "2026-11-22",
       "updated": "2026-11-22"
+    },
+    "/features/on-device-encryption": {
+      "source": "2026-11-13",
+      "title": "加密照片保險庫 App：Noxium 加密了什麼",
+      "description": "Noxium 在 iPhone 上以 AES-256-GCM 加密每張照片、影片和備忘錄，金鑰由你的圖形經 Argon2id 產生。保護什麼、不保護什麼。",
+      "headline": "裝置端加密：Noxium 加密了什麼，又是怎麼加密",
+      "summary": "Noxium 在 iPhone 上加密的內容、從圖形到檔案的金鑰鏈，以及加密的極限。",
+      "crumb": "裝置端加密",
+      "keyword": "iphone 加密照片保險庫 app",
+      "published": "2026-11-23",
+      "updated": "2026-11-23"
     }
   }
 }

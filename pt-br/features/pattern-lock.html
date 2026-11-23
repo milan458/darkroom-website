@@ -256,7 +256,7 @@
           <li><strong>O padrão vira chave.</strong> O Noxium passa o padrão pelo Argon2id (da libsodium) com 64 MiB de memória e 3 passadas. É lento de propósito, para que cada tentativa custe tempo e memória.</li>
           <li><strong>A chave abre a chave do cofre.</strong> Cada cofre tem a própria chave aleatória, selada com a chave do padrão usando AES-256-GCM. Se o selo abre, você entra. Se não, nada abre e nada aparece.</li>
         </ol>
-        <p>Como a verificação é "esta chave abre algum cofre?", uma só tela de bloqueio serve para vários cofres. Um <a href="/pt-br/guides/what-is-a-decoy-vault">cofre isca</a> tem simplesmente o próprio padrão. O Noxium testa todos os cofres a cada vez, então um padrão errado parece igual não importa quantos cofres existam. Para a criptografia em palavras simples, veja <a href="/pt-br/guides/how-encrypted-photo-vaults-work">como funcionam os cofres de fotos criptografados</a> e a nossa página de <a href="/features/on-device-encryption">criptografia no aparelho</a>.</p>
+        <p>Como a verificação é "esta chave abre algum cofre?", uma só tela de bloqueio serve para vários cofres. Um <a href="/pt-br/guides/what-is-a-decoy-vault">cofre isca</a> tem simplesmente o próprio padrão. O Noxium testa todos os cofres a cada vez, então um padrão errado parece igual não importa quantos cofres existam. Para a criptografia em palavras simples, veja <a href="/pt-br/guides/how-encrypted-photo-vaults-work">como funcionam os cofres de fotos criptografados</a> e a nossa página de <a href="/pt-br/features/on-device-encryption">criptografia no aparelho</a>.</p>
 
         <h2 id="strength">Quantos padrões existem?</h2>
         <p>Na placa 5×5 do Noxium existem 19.174.112 padrões diferentes que tocam exatamente 6 parafusos. Contamos com as mesmas regras de desenho que o app usa. Padrões mais longos somam muito mais:</p>
@@ -370,6 +370,7 @@
         <div class="related">
           <p class="toc-title">Relacionados</p>
           <ul role="list">
+            <li><a href="/pt-br/features/on-device-encryption">Criptografia no aparelho</a></li>
             <li><a href="/pt-br/guides/lock-photos-iphone-face-id">Bloquear fotos</a></li>
             <li><a href="/features/">Todos os features</a></li>
           </ul>

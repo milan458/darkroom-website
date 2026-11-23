@@ -256,7 +256,7 @@
           <li><strong>La sequenza diventa una chiave.</strong> Noxium fa passare la sequenza da Argon2id (di libsodium) con 64 MiB di memoria e 3 passaggi. È lento di proposito, così ogni tentativo costa tempo e memoria.</li>
           <li><strong>La chiave apre la chiave della cassaforte.</strong> Ogni cassaforte ha una propria chiave casuale, sigillata con la chiave della sequenza tramite AES-256-GCM. Se il sigillo si apre, sei dentro. Se no, non si apre niente e non si vede niente.</li>
         </ol>
-        <p>Dato che il controllo è “questa chiave apre una cassaforte?”, una sola schermata di blocco può servire più casseforti. Una <a href="/it/guides/what-is-a-decoy-vault">cassaforte esca</a> ha semplicemente la propria sequenza. Noxium prova tutte le casseforti ogni volta, quindi una sequenza sbagliata appare uguale qualunque sia il numero di casseforti. Per la crittografia in parole semplici, vedi <a href="/it/guides/how-encrypted-photo-vaults-work">come funzionano le casseforti per foto cifrate</a> e la nostra pagina sulla <a href="/features/on-device-encryption">cifratura sul dispositivo</a>.</p>
+        <p>Dato che il controllo è “questa chiave apre una cassaforte?”, una sola schermata di blocco può servire più casseforti. Una <a href="/it/guides/what-is-a-decoy-vault">cassaforte esca</a> ha semplicemente la propria sequenza. Noxium prova tutte le casseforti ogni volta, quindi una sequenza sbagliata appare uguale qualunque sia il numero di casseforti. Per la crittografia in parole semplici, vedi <a href="/it/guides/how-encrypted-photo-vaults-work">come funzionano le casseforti per foto cifrate</a> e la nostra pagina sulla <a href="/it/features/on-device-encryption">cifratura sul dispositivo</a>.</p>
 
         <h2 id="strength">Quante sequenze esistono?</h2>
         <p>Sulla piastra 5×5 di Noxium ci sono 19.174.112 sequenze diverse che toccano esattamente 6 bulloni. Le abbiamo contate con le stesse regole di tracciamento dell’app. Le sequenze più lunghe ne aggiungono moltissime:</p>
@@ -370,6 +370,7 @@
         <div class="related">
           <p class="toc-title">Correlati</p>
           <ul role="list">
+            <li><a href="/it/features/on-device-encryption">Cifratura sul dispositivo</a></li>
             <li><a href="/it/guides/lock-photos-iphone-face-id">Bloccare le foto</a></li>
             <li><a href="/features/">Tutte le features</a></li>
           </ul>

@@ -232,6 +232,17 @@
       "keyword": "写真保管庫 パターンロック",
       "published": "2026-11-22",
       "updated": "2026-11-22"
+    },
+    "/features/on-device-encryption": {
+      "source": "2026-11-13",
+      "title": "暗号化の写真保管庫アプリ Noxium の中身",
+      "description": "Noxium は写真・ビデオ・メモを iPhone 上で AES-256-GCM で暗号化。鍵はパターンから Argon2id で生成。守れるものと守れないもの",
+      "headline": "デバイス上の暗号化：Noxium が何を、どう暗号化するか",
+      "summary": "Noxium が iPhone 上で暗号化するもの、パターンからファイルまでの鍵のつながり、暗号化の限界。",
+      "crumb": "デバイス上の暗号化",
+      "keyword": "暗号化 写真保管庫 アプリ iphone",
+      "published": "2026-11-23",
+      "updated": "2026-11-23"
     }
   },
   "facts": [

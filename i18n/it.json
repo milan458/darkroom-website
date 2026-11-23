@@ -232,6 +232,17 @@
       "keyword": "cassaforte foto con sequenza",
       "published": "2026-11-22",
       "updated": "2026-11-22"
+    },
+    "/features/on-device-encryption": {
+      "source": "2026-11-13",
+      "title": "App cassaforte per foto cifrata: cosa cifra Noxium",
+      "description": "Noxium cifra ogni foto, video e nota sull’iPhone con AES-256-GCM, con una chiave ricavata dalla tua sequenza tramite Argon2id. Cosa copre e cosa no.",
+      "headline": "Cifratura sul dispositivo: cosa cifra Noxium, e come",
+      "summary": "Cosa cifra Noxium sull’iPhone, la catena di chiavi dalla sequenza al file e dove finisce la cifratura.",
+      "crumb": "Cifratura sul dispositivo",
+      "keyword": "app cassaforte foto cifrata iphone",
+      "published": "2026-11-23",
+      "updated": "2026-11-23"
     }
   },
   "facts": [

@@ -256,7 +256,7 @@
           <li><strong>パターンが鍵になる。</strong>Noxium はパターンを Argon2id（libsodium）に通します。メモリ 64 MiB、3 回のパスです。わざと遅くしてあり、推測のたびに時間とメモリがかかります。</li>
           <li><strong>鍵が保管庫の鍵を開ける。</strong>保管庫ごとにランダムな鍵があり、パターンの鍵で AES-256-GCM により封印されています。封印が開けば中に入れます。開かなければ、何も開かず、何も表示されません。</li>
         </ol>
-        <p>チェックの中身は「この鍵で開く保管庫があるか」なので、1 つのロック画面で複数の保管庫を扱えます。<a href="/ja/guides/what-is-a-decoy-vault">おとり保管庫</a>は、単に専用のパターンを持つ保管庫です。Noxium は毎回すべての保管庫を試すので、保管庫がいくつあっても、間違ったパターンの見え方は同じです。暗号のしくみをやさしく知りたいなら、<a href="/ja/guides/how-encrypted-photo-vaults-work">暗号化された写真保管庫のしくみ</a>と<a href="/features/on-device-encryption">デバイス上の暗号化</a>のページをご覧ください。</p>
+        <p>チェックの中身は「この鍵で開く保管庫があるか」なので、1 つのロック画面で複数の保管庫を扱えます。<a href="/ja/guides/what-is-a-decoy-vault">おとり保管庫</a>は、単に専用のパターンを持つ保管庫です。Noxium は毎回すべての保管庫を試すので、保管庫がいくつあっても、間違ったパターンの見え方は同じです。暗号のしくみをやさしく知りたいなら、<a href="/ja/guides/how-encrypted-photo-vaults-work">暗号化された写真保管庫のしくみ</a>と<a href="/ja/features/on-device-encryption">デバイス上の暗号化</a>のページをご覧ください。</p>
 
         <h2 id="strength">パターンは何通りある？</h2>
         <p>Noxium の 5×5 プレートには、ちょうど 6 本のボルトに触れるパターンが 19,174,112 通りあります。アプリと同じ描画ルールで数えました。パターンが長くなると、桁違いに増えます。</p>
@@ -370,6 +370,7 @@
         <div class="related">
           <p class="toc-title">関連ページ</p>
           <ul role="list">
+            <li><a href="/ja/features/on-device-encryption">デバイス上の暗号化</a></li>
             <li><a href="/ja/guides/lock-photos-iphone-face-id">写真をロック</a></li>
             <li><a href="/features/">Features一覧</a></li>
           </ul>

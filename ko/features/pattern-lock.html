@@ -256,7 +256,7 @@
           <li><strong>패턴이 키가 됩니다.</strong> Noxium은 패턴을 Argon2id(libsodium)에 메모리 64 MiB, 3회 반복으로 통과시킵니다. 일부러 느리게 만들어, 추측할 때마다 시간과 메모리가 들게 합니다.</li>
           <li><strong>키가 금고 키를 엽니다.</strong> 금고마다 고유한 무작위 키가 있고, 패턴 키로 AES-256-GCM 봉인되어 있습니다. 봉인이 열리면 들어갑니다. 열리지 않으면 아무것도 열리지 않고 아무것도 보이지 않습니다.</li>
         </ol>
-        <p>확인 방식이 '이 키로 열리는 금고가 있는가?'이기 때문에, 잠금 화면 하나로 여러 금고를 쓸 수 있습니다. <a href="/ko/guides/what-is-a-decoy-vault">위장 금고</a>는 단지 자기 패턴을 가진 금고입니다. Noxium은 매번 모든 금고를 시도하므로, 금고가 몇 개든 틀린 패턴은 똑같아 보입니다. 암호 원리를 쉽게 알고 싶다면 <a href="/ko/guides/how-encrypted-photo-vaults-work">암호화된 사진 금고의 원리</a>와 <a href="/features/on-device-encryption">기기 내 암호화</a> 페이지를 보세요.</p>
+        <p>확인 방식이 '이 키로 열리는 금고가 있는가?'이기 때문에, 잠금 화면 하나로 여러 금고를 쓸 수 있습니다. <a href="/ko/guides/what-is-a-decoy-vault">위장 금고</a>는 단지 자기 패턴을 가진 금고입니다. Noxium은 매번 모든 금고를 시도하므로, 금고가 몇 개든 틀린 패턴은 똑같아 보입니다. 암호 원리를 쉽게 알고 싶다면 <a href="/ko/guides/how-encrypted-photo-vaults-work">암호화된 사진 금고의 원리</a>와 <a href="/ko/features/on-device-encryption">기기 내 암호화</a> 페이지를 보세요.</p>
 
         <h2 id="strength">패턴은 몇 가지나 있나요?</h2>
         <p>Noxium의 5×5 판에는 볼트 정확히 6개에 닿는 패턴이 19,174,112가지 있습니다. 앱과 같은 그리기 규칙으로 직접 세었습니다. 패턴이 길어지면 훨씬 더 늘어납니다.</p>
@@ -370,6 +370,7 @@
         <div class="related">
           <p class="toc-title">관련 페이지</p>
           <ul role="list">
+            <li><a href="/ko/features/on-device-encryption">기기 내 암호화</a></li>
             <li><a href="/ko/guides/lock-photos-iphone-face-id">사진 잠그기</a></li>
             <li><a href="/features/">전체 Features</a></li>
           </ul>

@@ -256,7 +256,7 @@
           <li><strong>El patrón se convierte en clave.</strong> Noxium pasa el patrón por Argon2id (de libsodium) con 64 MiB de memoria y 3 pasadas. Es lento a propósito, para que cada intento cueste tiempo y memoria.</li>
           <li><strong>La clave abre la clave de la caja fuerte.</strong> Cada caja fuerte tiene su propia clave aleatoria, sellada con la clave del patrón mediante AES-256-GCM. Si el sello se abre, entras. Si no, no se abre nada ni se muestra nada.</li>
         </ol>
-        <p>Como la comprobación es «¿abre esta clave alguna caja fuerte?», una sola pantalla de bloqueo sirve para varias cajas fuertes. Una <a href="/es/guides/what-is-a-decoy-vault">caja señuelo</a> simplemente tiene su propio patrón. Noxium prueba todas las cajas cada vez, así que un patrón incorrecto se ve igual haya las que haya. Para la criptografía en palabras sencillas, consulta <a href="/es/guides/how-encrypted-photo-vaults-work">cómo funcionan las cajas fuertes de fotos cifradas</a> y nuestra página de <a href="/features/on-device-encryption">cifrado en el dispositivo</a>.</p>
+        <p>Como la comprobación es «¿abre esta clave alguna caja fuerte?», una sola pantalla de bloqueo sirve para varias cajas fuertes. Una <a href="/es/guides/what-is-a-decoy-vault">caja señuelo</a> simplemente tiene su propio patrón. Noxium prueba todas las cajas cada vez, así que un patrón incorrecto se ve igual haya las que haya. Para la criptografía en palabras sencillas, consulta <a href="/es/guides/how-encrypted-photo-vaults-work">cómo funcionan las cajas fuertes de fotos cifradas</a> y nuestra página de <a href="/es/features/on-device-encryption">cifrado en el dispositivo</a>.</p>
 
         <h2 id="strength">¿Cuántos patrones hay?</h2>
         <p>En la placa de 5×5 de Noxium hay 19.174.112 patrones distintos que tocan exactamente 6 pernos. Los contamos con las mismas reglas de dibujo que usa la app. Los patrones más largos añaden muchísimos más:</p>
@@ -370,6 +370,7 @@
         <div class="related">
           <p class="toc-title">Relacionado</p>
           <ul role="list">
+            <li><a href="/es/features/on-device-encryption">Cifrado en el dispositivo</a></li>
             <li><a href="/es/guides/lock-photos-iphone-face-id">Bloquear fotos</a></li>
             <li><a href="/features/">Todas las features</a></li>
           </ul>

@@ -232,6 +232,17 @@
       "keyword": "foto tresor mustersperre",
       "published": "2026-11-22",
       "updated": "2026-11-22"
+    },
+    "/features/on-device-encryption": {
+      "source": "2026-11-13",
+      "title": "Verschlüsselte Foto-Tresor-App: Was Noxium verschlüsselt",
+      "description": "Noxium verschlüsselt Fotos, Videos und Notizen auf dem iPhone mit AES-256-GCM, Schlüssel per Argon2id aus deinem Muster. Was geschützt ist, was nicht.",
+      "headline": "Verschlüsselung auf dem Gerät: Was Noxium verschlüsselt, und wie",
+      "summary": "Was Noxium auf dem iPhone verschlüsselt, die Schlüsselkette vom Muster bis zur Datei und wo die Verschlüsselung endet.",
+      "crumb": "Verschlüsselung auf dem Gerät",
+      "keyword": "verschlüsselte foto tresor app",
+      "published": "2026-11-23",
+      "updated": "2026-11-23"
     }
   },
   "facts": [

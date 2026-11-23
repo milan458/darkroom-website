@@ -232,6 +232,17 @@
       "keyword": "caja fuerte de fotos con patrón",
       "published": "2026-11-22",
       "updated": "2026-11-22"
+    },
+    "/features/on-device-encryption": {
+      "source": "2026-11-13",
+      "title": "App de caja fuerte de fotos cifrada: qué cifra Noxium",
+      "description": "Noxium cifra cada foto, vídeo y nota en el iPhone con AES-256-GCM, con una clave que sale de tu patrón mediante Argon2id. Qué cubre y qué no.",
+      "headline": "Cifrado en el dispositivo: qué cifra Noxium, y cómo",
+      "summary": "Qué cifra Noxium en el iPhone, la cadena de claves del patrón al archivo y dónde acaba el cifrado.",
+      "crumb": "Cifrado en el dispositivo",
+      "keyword": "app caja fuerte fotos cifrada iphone",
+      "published": "2026-11-23",
+      "updated": "2026-11-23"
     }
   },
   "facts": [
