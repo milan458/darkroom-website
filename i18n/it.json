@@ -243,6 +243,25 @@
       "keyword": "app cassaforte foto cifrata iphone",
       "published": "2026-11-23",
       "updated": "2026-11-23"
+    },
+    "/features/encrypted-icloud-backup": {
+      "source": "2026-11-13",
+      "title": "Cassaforte foto con backup iCloud cifrato: Noxium",
+      "description": "Noxium salva una copia cifrata della cassaforte nel tuo iCloud. Cosa viene caricato, come ripristinare su un nuovo iPhone e cosa il backup non fa.",
+      "headline": "Backup iCloud cifrato: la tua cassaforte, nel tuo iCloud, illeggibile per chiunque altro",
+      "summary": "Come funziona il backup cifrato di Noxium nel tuo iCloud, come ripristinarlo e i suoi limiti.",
+      "crumb": "Backup iCloud cifrato",
+      "keyword": "cassaforte foto backup icloud",
+      "published": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    "/features/": {
+      "source": "2026-11-12",
+      "title": "Funzioni di Noxium: sequenza, cifratura, cassaforte esca",
+      "description": "Cosa fa la cassaforte per foto Noxium, funzione per funzione: blocco con sequenza, cifratura sul dispositivo, backup iCloud cifrato, casseforti esca.",
+      "crumb": "Funzioni",
+      "published": "2026-11-23",
+      "updated": "2026-11-23"
     }
   },
   "facts": [

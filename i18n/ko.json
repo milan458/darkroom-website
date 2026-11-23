@@ -243,6 +243,25 @@
       "keyword": "아이폰 암호화 사진 금고 앱",
       "published": "2026-11-23",
       "updated": "2026-11-23"
+    },
+    "/features/encrypted-icloud-backup": {
+      "source": "2026-11-13",
+      "title": "사진 금고 암호화 iCloud 백업: Noxium",
+      "description": "Noxium은 금고의 암호화된 사본을 내 iCloud에 백업합니다. 무엇이 올라가는지, 새 iPhone에서 복원하는 법, 못 하는 일.",
+      "headline": "암호화된 iCloud 백업: 내 금고를 내 iCloud에, 다른 누구도 못 읽게",
+      "summary": "Noxium 암호화 백업의 원리, 복원 방법, 한계.",
+      "crumb": "암호화된 iCloud 백업",
+      "keyword": "사진 금고 icloud 백업",
+      "published": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    "/features/": {
+      "source": "2026-11-12",
+      "title": "Noxium 기능: 패턴 잠금, 암호화, 위장 금고",
+      "description": "사진 금고 Noxium의 기능을 하나씩: 패턴 잠금, 기기 내 암호화, 암호화된 iCloud 백업, 위장 금고 등.",
+      "crumb": "기능",
+      "published": "2026-11-23",
+      "updated": "2026-11-23"
     }
   },
   "facts": [

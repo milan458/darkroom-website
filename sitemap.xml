@@ -274,6 +274,16 @@
     <loc>https://getnoxium.app/features/encrypted-icloud-backup</loc>
     <lastmod>2026-11-13</lastmod>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/features/encrypted-icloud-backup"/>
   </url>
   <url>
     <loc>https://getnoxium.app/features/recovery-phrase</loc>
@@ -284,6 +294,16 @@
     <loc>https://getnoxium.app/features/</loc>
     <lastmod>2026-11-12</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/features/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/features/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/features/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/features/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/features/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/features/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/features/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/features/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/features/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/features/"/>
   </url>
   <url>
     <loc>https://getnoxium.app/compare/privault</loc>
@@ -681,6 +701,36 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/features/on-device-encryption"/>
   </url>
   <url>
+    <loc>https://getnoxium.app/de/features/encrypted-icloud-backup</loc>
+    <lastmod>2026-11-23</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/features/encrypted-icloud-backup"/>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/de/features/</loc>
+    <lastmod>2026-11-23</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/features/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/features/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/features/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/features/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/features/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/features/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/features/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/features/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/features/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/features/"/>
+  </url>
+  <url>
     <loc>https://getnoxium.app/fr/guides/keepsafe-alternatives</loc>
     <lastmod>2026-11-14</lastmod>
     <priority>0.7</priority>
@@ -934,6 +984,36 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/features/on-device-encryption"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/features/on-device-encryption"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/features/on-device-encryption"/>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/fr/features/encrypted-icloud-backup</loc>
+    <lastmod>2026-11-23</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/features/encrypted-icloud-backup"/>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/fr/features/</loc>
+    <lastmod>2026-11-23</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/features/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/features/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/features/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/features/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/features/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/features/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/features/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/features/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/features/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/features/"/>
   </url>
   <url>
     <loc>https://getnoxium.app/es/guides/keepsafe-alternatives</loc>
@@ -1191,6 +1271,36 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/features/on-device-encryption"/>
   </url>
   <url>
+    <loc>https://getnoxium.app/es/features/encrypted-icloud-backup</loc>
+    <lastmod>2026-11-23</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/features/encrypted-icloud-backup"/>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/es/features/</loc>
+    <lastmod>2026-11-23</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/features/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/features/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/features/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/features/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/features/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/features/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/features/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/features/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/features/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/features/"/>
+  </url>
+  <url>
     <loc>https://getnoxium.app/pt-br/guides/keepsafe-alternatives</loc>
     <lastmod>2026-11-14</lastmod>
     <priority>0.7</priority>
@@ -1444,6 +1554,36 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/features/on-device-encryption"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/features/on-device-encryption"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/features/on-device-encryption"/>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/pt-br/features/encrypted-icloud-backup</loc>
+    <lastmod>2026-11-23</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/features/encrypted-icloud-backup"/>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/pt-br/features/</loc>
+    <lastmod>2026-11-23</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/features/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/features/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/features/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/features/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/features/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/features/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/features/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/features/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/features/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/features/"/>
   </url>
   <url>
     <loc>https://getnoxium.app/it/guides/keepsafe-alternatives</loc>
@@ -1701,6 +1841,36 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/features/on-device-encryption"/>
   </url>
   <url>
+    <loc>https://getnoxium.app/it/features/encrypted-icloud-backup</loc>
+    <lastmod>2026-11-23</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/features/encrypted-icloud-backup"/>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/it/features/</loc>
+    <lastmod>2026-11-23</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/features/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/features/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/features/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/features/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/features/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/features/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/features/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/features/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/features/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/features/"/>
+  </url>
+  <url>
     <loc>https://getnoxium.app/ja/guides/keepsafe-alternatives</loc>
     <lastmod>2026-11-14</lastmod>
     <priority>0.7</priority>
@@ -1954,6 +2124,36 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/features/on-device-encryption"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/features/on-device-encryption"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/features/on-device-encryption"/>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/ja/features/encrypted-icloud-backup</loc>
+    <lastmod>2026-11-23</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/features/encrypted-icloud-backup"/>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/ja/features/</loc>
+    <lastmod>2026-11-23</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/features/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/features/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/features/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/features/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/features/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/features/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/features/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/features/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/features/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/features/"/>
   </url>
   <url>
     <loc>https://getnoxium.app/ko/guides/keepsafe-alternatives</loc>
@@ -2211,6 +2411,36 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/features/on-device-encryption"/>
   </url>
   <url>
+    <loc>https://getnoxium.app/ko/features/encrypted-icloud-backup</loc>
+    <lastmod>2026-11-23</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/features/encrypted-icloud-backup"/>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/ko/features/</loc>
+    <lastmod>2026-11-23</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/features/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/features/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/features/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/features/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/features/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/features/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/features/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/features/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/features/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/features/"/>
+  </url>
+  <url>
     <loc>https://getnoxium.app/zh-hant/guides/keepsafe-alternatives</loc>
     <lastmod>2026-11-14</lastmod>
     <priority>0.7</priority>
@@ -2464,5 +2694,35 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/features/on-device-encryption"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/features/on-device-encryption"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/features/on-device-encryption"/>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/zh-hant/features/encrypted-icloud-backup</loc>
+    <lastmod>2026-11-23</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/features/encrypted-icloud-backup"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/features/encrypted-icloud-backup"/>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/zh-hant/features/</loc>
+    <lastmod>2026-11-23</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/features/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/features/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/features/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/features/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/features/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/features/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/features/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/features/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/features/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/features/"/>
   </url>
 </urlset>

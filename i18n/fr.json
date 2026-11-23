@@ -243,6 +243,26 @@
       "keyword": "app coffre photo chiffrée iphone",
       "published": "2026-11-23",
       "updated": "2026-11-23"
+    },
+    "/features/encrypted-icloud-backup": {
+      "source": "2026-11-13",
+      "title": "Coffre photo avec sauvegarde iCloud chiffrée : Noxium",
+      "description": "Noxium sauvegarde une copie chiffrée de votre coffre dans votre propre iCloud. Ce qui est téléversé, comment restaurer sur un nouvel iPhone, ses limites.",
+      "headline": "Sauvegarde iCloud chiffrée : votre coffre, dans votre iCloud, illisible pour tous les autres",
+      "summary": "Comment fonctionne la sauvegarde chiffrée de Noxium dans votre propre iCloud, comment la restaurer et ses limites.",
+      "crumb": "Sauvegarde iCloud chiffrée",
+      "keyword": "coffre photo sauvegarde icloud",
+      "published": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    "/features/": {
+      "source": "2026-11-12",
+      "title": "Fonctionnalités de Noxium : schéma, chiffrement, leurres",
+      "description": "Ce que fait le coffre photo Noxium, fonction par fonction : verrou par schéma, chiffrement sur l’appareil, sauvegarde iCloud chiffrée, coffres leurres.",
+      "crumb": "Fonctionnalités",
+      "published": "2026-11-23",
+      "updated": "2026-11-23",
+      "allLabel": "Toutes les fonctionnalités"
     }
   },
   "facts": [

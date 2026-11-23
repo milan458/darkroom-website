@@ -243,6 +243,25 @@
       "keyword": "app cofre de fotos criptografado iphone",
       "published": "2026-11-23",
       "updated": "2026-11-23"
+    },
+    "/features/encrypted-icloud-backup": {
+      "source": "2026-11-13",
+      "title": "Cofre de fotos com backup criptografado no iCloud",
+      "description": "O Noxium faz backup de uma cópia criptografada do seu cofre no seu próprio iCloud. O que sobe, como restaurar num iPhone novo e o que ele não faz.",
+      "headline": "Backup criptografado no iCloud: seu cofre, no seu iCloud, ilegível para qualquer outra pessoa",
+      "summary": "Como funciona o backup criptografado do Noxium no seu próprio iCloud, como restaurar e os limites.",
+      "crumb": "Backup criptografado no iCloud",
+      "keyword": "cofre de fotos backup icloud",
+      "published": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    "/features/": {
+      "source": "2026-11-12",
+      "title": "Recursos do Noxium: padrão, criptografia, cofre isca",
+      "description": "O que o cofre de fotos Noxium faz, recurso por recurso: bloqueio por padrão, criptografia no aparelho, backup criptografado no iCloud, cofres isca e mais.",
+      "crumb": "Recursos",
+      "published": "2026-11-23",
+      "updated": "2026-11-23"
     }
   },
   "facts": [

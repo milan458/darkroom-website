@@ -243,6 +243,25 @@
       "keyword": "verschlüsselte foto tresor app",
       "published": "2026-11-23",
       "updated": "2026-11-23"
+    },
+    "/features/encrypted-icloud-backup": {
+      "source": "2026-11-13",
+      "title": "Foto-Tresor mit iCloud-Backup, verschlüsselt: so bei Noxium",
+      "description": "Noxium sichert eine verschlüsselte Kopie deines Tresors in deiner eigenen iCloud. Was hochgeladen wird, wie das Wiederherstellen geht und die Grenzen.",
+      "headline": "Verschlüsseltes iCloud-Backup: dein Tresor, in deiner iCloud, für alle anderen unlesbar",
+      "summary": "Wie das verschlüsselte Backup von Noxium in deiner eigenen iCloud funktioniert, wie du es wiederherstellst und wo seine Grenzen liegen.",
+      "crumb": "Verschlüsseltes iCloud-Backup",
+      "keyword": "foto tresor icloud backup",
+      "published": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    "/features/": {
+      "source": "2026-11-12",
+      "title": "Noxium Funktionen: Mustersperre, Verschlüsselung, Tarntresor",
+      "description": "Was der Noxium Foto-Tresor kann, Funktion für Funktion: Mustersperre, Verschlüsselung auf dem Gerät, verschlüsseltes iCloud-Backup, Tarntresore und mehr.",
+      "crumb": "Funktionen",
+      "published": "2026-11-23",
+      "updated": "2026-11-23"
     }
   },
   "facts": [
