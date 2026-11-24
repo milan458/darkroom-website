@@ -479,7 +479,7 @@
       "keyword": "did someone open my hidden album",
       "cluster": "hidden-album",
       "vaultaire": "https://vaultaire.app/guides/did-someone-open-my-hidden-album-iphone/",
-      "status": "todo"
+      "status": "in-review"
     },
     {
       "order": 48,
@@ -489,7 +489,7 @@
       "keyword": "change hidden album password iphone",
       "cluster": "hidden-album",
       "vaultaire": "https://vaultaire.app/guides/change-hidden-album-password-iphone/",
-      "status": "todo"
+      "status": "in-review"
     },
     {
       "order": 49,
@@ -499,7 +499,7 @@
       "keyword": "hidden photos disappeared iphone",
       "cluster": "hidden-album",
       "vaultaire": "https://vaultaire.app/guides/hidden-photos-disappeared-iphone/",
-      "status": "todo",
+      "status": "in-review",
       "note": "Also answer 'hidden photos not showing in albums' (210 US, KD 0): Show Hidden Album off, iCloud Photos sync, Screen Time restrictions."
     },
     {
@@ -510,7 +510,7 @@
       "keyword": "hide photos from memories iphone",
       "cluster": "hidden-album",
       "vaultaire": "https://vaultaire.app/guides/hide-photos-from-memories-iphone/",
-      "status": "todo"
+      "status": "in-review"
     },
     {
       "order": 51,
