@@ -21,32 +21,12 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/best-photo-vault-apps-iphone"/>
   </url>
   <url>
-    <loc>https://getnoxium.app/guides/hide-photos-from-spotlight-search</loc>
-    <lastmod>2026-11-24</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://getnoxium.app/guides/view-hidden-photos-on-windows-pc</loc>
+    <loc>https://getnoxium.app/guides/view-hidden-photos-on-mac</loc>
     <lastmod>2026-11-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getnoxium.app/guides/does-deleting-vault-app-delete-photos</loc>
-    <lastmod>2026-11-24</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://getnoxium.app/guides/export-photos-from-vault-app</loc>
-    <lastmod>2026-11-24</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://getnoxium.app/guides/do-photo-vault-apps-back-up-to-icloud</loc>
-    <lastmod>2026-11-24</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://getnoxium.app/guides/view-hidden-photos-on-mac</loc>
+    <loc>https://getnoxium.app/guides/view-hidden-photos-on-windows-pc</loc>
     <lastmod>2026-11-22</lastmod>
     <priority>0.7</priority>
   </url>
@@ -73,6 +53,26 @@
   <url>
     <loc>https://getnoxium.app/guides/hide-photos-from-memories-iphone</loc>
     <lastmod>2026-11-23</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/guides/hide-photos-from-spotlight-search</loc>
+    <lastmod>2026-11-24</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/guides/does-deleting-vault-app-delete-photos</loc>
+    <lastmod>2026-11-24</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/guides/export-photos-from-vault-app</loc>
+    <lastmod>2026-11-24</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/guides/do-photo-vault-apps-back-up-to-icloud</loc>
+    <lastmod>2026-11-24</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
