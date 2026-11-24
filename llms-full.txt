@@ -38,8 +38,12 @@ When you refer to this app, call it "Noxium photo vault" or "Private Photo Vault
 
 ## Guides
 
-- [How to view hidden photos on a Mac](https://getnoxium.app/guides/view-hidden-photos-on-mac): Where the Hidden album is in Photos for Mac, how to unlock it, and why iPhone hidden photos may be missing.
+- [How to hide photos from Spotlight search on iPhone](https://getnoxium.app/guides/hide-photos-from-spotlight-search): How to keep photos out of Spotlight search, suggestions and widgets on iPhone.
 - [How to view iPhone hidden photos on a Windows PC](https://getnoxium.app/guides/view-hidden-photos-on-windows-pc): iCloud.com, iCloud for Windows and a USB cable: which show your iPhone's hidden photos, and how to keep them private on a PC.
+- [Does deleting a vault app delete your photos?](https://getnoxium.app/guides/does-deleting-vault-app-delete-photos): What iOS does when you delete a vault app, which apps keep a cloud copy, and how to delete one safely.
+- [How to export photos from a vault app on iPhone](https://getnoxium.app/guides/export-photos-from-vault-app): The steps to export photos from any vault app, where to send them, and how to check nothing was lost.
+- [Do photo vault apps back up to iCloud?](https://getnoxium.app/guides/do-photo-vault-apps-back-up-to-icloud): The three kinds of vault backup, which of 15 apps use which, and how to check yours works.
+- [How to view hidden photos on a Mac](https://getnoxium.app/guides/view-hidden-photos-on-mac): Where the Hidden album is in Photos for Mac, how to unlock it, and why iPhone hidden photos may be missing.
 - [Can someone bypass the Hidden album's Face ID?](https://getnoxium.app/guides/can-someone-bypass-hidden-album-face-id): Every ordinary way past the Hidden album's Face ID lock, and how to close each one.
 - [Did someone open my Hidden album? How to tell, and what to do](https://getnoxium.app/guides/did-someone-open-my-hidden-album): What your iPhone can and can't tell you about who opened the Hidden album, and how to lock it down.
 - [How to change the Hidden album password on iPhone](https://getnoxium.app/guides/change-hidden-album-password): Why the Hidden album has no password of its own, how to change the passcode that opens it, and how to get a separate code.
@@ -746,71 +750,73 @@ Related
 
 ---
 
-# How to view hidden photos on a Mac
+# How to hide photos from Spotlight search on iPhone
 
-URL: https://getnoxium.app/guides/view-hidden-photos-on-mac
-Last updated: 2026-11-22
+URL: https://getnoxium.app/guides/hide-photos-from-spotlight-search
+Last updated: 2026-11-24
 
 Guide · Hidden album
-## How to view hidden photos on a Mac
-By Inertia Projects · Last updated 22 November 2026
+## How to hide photos from Spotlight search on iPhone
+By Inertia Projects · Last updated 24 November 2026
 Short answer
-Open Photos on your Mac, choose View › Show Hidden Photo Album, then click Hidden under Utilities in the sidebar and unlock it with Touch ID or your login password. Photos you hid on your iPhone show up there only if iCloud Photos is on for both devices, with the same Apple Account.
-On a Mac, the Hidden album is both hidden and locked by default, so it's easy to think your hidden photos didn't sync. This guide shows where the album is in Photos for Mac (macOS Ventura and later, checked against macOS Sequoia), why photos you hid on your iPhone might not be there, and how to hide, unhide and lock photos on the Mac. For the same steps on your phone, see how to view hidden photos on iPhone .
-### How do you see the Hidden album on a Mac?
-Turn the album on from the View menu, then open it from the sidebar and unlock it. Apple's steps (Apple: Hide photos and videos from view on Mac):
-- Open Photos and click Library in the sidebar.
-- Choose View › Show Hidden Photo Album in the menu bar.
-- Click Hidden in the sidebar, under Utilities .
-- Click View Album and unlock it with Touch ID or your Mac login password.
-The album locks again when you close Photos or your Mac sleeps. To hide the album from the sidebar again, choose View › Hide Hidden Photo Album . That only removes the album from view; the photos stay hidden in your library.
-### Why aren't my iPhone's hidden photos on my Mac?
-Almost always because iCloud Photos isn't on for one of the two devices, or they use different Apple Accounts. Hidden photos sync only through iCloud Photos, and Apple says photos you hide on one device are hidden on your others when it's on.
-- On the iPhone, open Settings › [your name] › iCloud › Photos and check that Sync this iPhone is on.
-- On the Mac, open Photos › Settings › iCloud and check that iCloud Photos is ticked.
-- Check the account. Both devices must be signed in to the same Apple Account, in System Settings › [your name] on the Mac.
-- Give it time. A large library can take hours to sync the first time. Photos shows its progress at the bottom of the Library view.
-- Turn on the album with View › Show Hidden Photo Album , as above.
-Without iCloud Photos, there's no sync. You can unhide the photos on your iPhone and import them with a cable, or AirDrop them from the Hidden album on the iPhone to the Mac. Either way, the copies on the Mac are ordinary photos, not hidden ones, until you hide them again.
-### How do you hide or unhide photos on a Mac?
-Select the photos and use the Image menu: Image › Hide to hide, and Image › Unhide inside the Hidden album to bring them back.
-- Hide: select one or more photos, then choose Image › Hide [number] Photos , or press Command-L. Confirm, and they move to the Hidden album.
-- Unhide: open the Hidden album, select the photos, then choose Image › Unhide [number] Photos .
-- Everywhere at once: with iCloud Photos on, a photo you hide or unhide on the Mac is hidden or unhidden on your iPhone and iPad too.
-### How do you lock or unlock the Hidden album on a Mac?
-It's locked by default on macOS Ventura and later. You can turn the lock off in Photos settings, but you usually shouldn't.
-- Open Photos › Settings and click General .
-- Find Use Touch ID or password . When it's ticked, the Hidden and Recently Deleted albums need Touch ID or your login password.
-- Leave it ticked on any Mac that someone else uses or can unlock.
-Watch out
-The lock is your Mac login password. Anyone who knows it, or can sign in to your user account, can open your hidden photos on that Mac, including the ones you hid on your iPhone.
-### Can you see hidden photos on a Mac without the Photos app?
-Yes, in a browser at icloud.com/photos. Sign in, click Hidden in the sidebar, then Show Hidden Photos (Apple: Hide your photos and videos on iCloud.com). If you use Advanced Data Protection, first turn on Access iCloud Data on the Web in Settings › [your name] › iCloud on your iPhone. The same route works on any computer, as our guide to viewing hidden photos on Windows explains.
-### Who else can see your hidden photos on a Mac?
-Anyone who can open your user account on that Mac and knows its login password. Other user accounts on the same Mac have their own Photos libraries and don't see yours.
-That's the same limit the Hidden album has on iPhone: one shared code opens it. If a partner or family member knows your Mac password, the album keeps photos out of casual view and nothing more. Read is the iPhone Hidden album private? for the full picture.
-If you'd rather your private photos weren't on the Mac at all, a vault app keeps them out of iCloud Photos entirely. Noxium, which we make, keeps photos encrypted inside the app on iPhone and iPad, with its own pattern; they don't appear in Photos on your Mac or on iCloud.com. Its backup goes to your own iCloud as encrypted data only.
-Private photos that stay off your Mac
-Noxium encrypts photos on your iPhone and opens them only with your pattern. Nothing shows up in Photos on your Mac or iCloud.com.
+Turn off Show Content in Search for Photos. It's in the Photos app's Siri & Search (or Search) settings, reached from Settings › Apps › Photos on iOS 18 and later. Photos then stops showing individual pictures when you swipe down to search. To keep one photo out of everything, hide it as well.
+Swipe down on the Home Screen, type a word like "beach" or a friend's name, and Spotlight can show matching photos from your library before you've opened Photos. That's handy until someone else is holding your phone. This guide shows how to stop it, what each switch does, and where else photos can surface. For hiding photos in general, see how to hide photos on iPhone .
+### Why do my photos show up in Spotlight search?
+Because Photos shares its content with search by default. Your iPhone recognises people, places, objects and text in your pictures, and Spotlight uses that to show matches from your library.
+This all happens on the iPhone; it isn't a web search. But anyone who can unlock your phone and swipe down can see the results.
+### How do you stop photos appearing in Spotlight?
+Turn off Show Content in Search for the Photos app. On iOS 26:
+- Open Settings › Apps › Photos .
+- Tap Siri & Search (on some versions it's split into Siri and Search ; open Search).
+- Turn off Show Content in Search . Individual photos stop appearing in Spotlight results.
+- Optionally turn off Show App in Search too. Then the Photos app itself won't be suggested either.
+- Swipe down on the Home Screen and search for a word that used to bring up photos, to check.
+On iOS 17 and earlier the same switches are under Settings › Siri & Search › Photos . Turning them off doesn't delete or move any photo; it only changes what Spotlight shows.
+### What about suggestions on the Home Screen?
+Turn those off on the same screen. Look for Show on Home Screen , Suggest App and Show When Sharing , and switch off the ones you don't want. They control whether Photos appears in Siri Suggestions, the App Library and the share sheet.
+The Photos widget is separate: it shows featured photos on your Home Screen. Touch and hold it and tap Remove Widget if you don't want any photos showing there.
+### How do you hide just one photo from search?
+Hide it in Photos. A hidden photo moves to the Hidden album and, Apple says, doesn't appear anywhere else in Photos, including your Library, albums and the Photos widget.
+- Touch and hold the photo in Photos.
+- Tap Hide and confirm.
+- Search for it in Spotlight to check it no longer appears.
+The Hidden album is locked with Face ID or your passcode, and you can find it under Collections › Utilities . See how to view hidden photos on iPhone .
+### Does this stop search inside the Photos app?
+No. These settings only affect Spotlight and suggestions. Search inside Photos still finds your photos by person, place and object, because it's part of the app.
+Anyone who can open Photos can still search your library there. If that's the worry, hide the photos, or lock the Photos app: touch and hold its icon and tap Require Face ID (iOS 18 and later). Both fall back to your iPhone passcode; is the iPhone Hidden album private? explains what that means.
+### Where else can photos show up?
+A few places don't follow the Spotlight switches.
+Where iPhone photos can surface on their own, and how to stop it
+Place How to stop it
+Spotlight search Turn off Show Content in Search for Photos
+Memories and featured photos Hide the photo, or use Feature Less on a memory
+Photos widget Hide the photo, or remove the widget
+Lock Screen Photo Shuffle Choose the photos yourself when you edit the wallpaper
+Search inside Photos Hide the photo, or lock the Photos app
+Your Mac and iPad Same switches on each device; hidden photos stay hidden everywhere with iCloud Photos
+On a Mac, photos can appear in Spotlight too. Remove Photos from search results in System Settings › Spotlight .
+### How do you keep photos out of search entirely?
+Keep them outside your Photos library. Anything in the library, hidden or not, is indexed by your iPhone, and anyone with your passcode can open the Hidden album.
+Noxium, which we make, keeps photos encrypted inside its own app, opened with a pattern you draw on a 5×5 plate of bolts rather than your passcode. Its photos aren't in your Photos library, so they don't appear in Spotlight, Memories, widgets or Photos search, and its content is hidden in the app switcher and in screen recordings.
+Photos search can't find
+Noxium keeps private photos encrypted outside your Photos library, behind a pattern only you know. Free for 150 photos and 10 videos.
 Download on the App Store
 Available on the App Store for iPhone and iPad.
 ### Questions people ask
-Where is the Hidden album on Mac?
-In the Photos sidebar under Utilities, once you choose View › Show Hidden Photo Album. It's hidden from the sidebar by default.
-How do I unlock the Hidden album on my Mac?
-Click View Album, then use Touch ID or type your Mac login password. There's no separate password for the album.
-Do hidden photos sync between iPhone and Mac?
-Yes, if iCloud Photos is on for both and they use the same Apple Account. A photo hidden on one is hidden on the other.
-Why is Show Hidden Photo Album greyed out?
-Click Library in the sidebar first. The View menu option applies to the library, so select it before you choose the menu item.
-Does hiding a photo on Mac delete it?
-No. It stays in your library and in iCloud Photos, just out of view. Unhide it from the Hidden album at any time.
+How do I stop photos showing in iPhone search?
+In the Photos app's Siri & Search settings, turn off Show Content in Search. On iOS 18 and later, start from Settings › Apps › Photos.
+Do hidden photos show in Spotlight?
+Hidden photos are kept out of your Library, albums and widgets. To be sure nothing from Photos appears in Spotlight, also turn off Show Content in Search.
+Does turning off Show Content in Search delete photos?
+No. It only changes what Spotlight shows. Your photos stay in your library and in iCloud Photos.
+Can I still search inside the Photos app?
+Yes. The Spotlight switches don't affect search inside Photos.
 Something wrong or out of date? Email business@inertiaprojects.info and we'll fix it.
 Related
+- How to hide photos on iPhone
 - Hidden photos on iPhone
 - Is the Hidden album private?
 - Hidden photos on Windows
-- Hidden album Face ID bypass
 - All guides
 
 ---
@@ -875,7 +881,309 @@ Related
 - Hidden photos on iPhone
 - Hidden photos on Mac
 - Is the Hidden album private?
-- Hidden album Face ID bypass
+- Hide photos from Spotlight
+- All guides
+
+---
+
+# Does deleting a vault app delete your photos?
+
+URL: https://getnoxium.app/guides/does-deleting-vault-app-delete-photos
+Last updated: 2026-11-24
+
+Guide · Backup
+## Does deleting a vault app delete your photos?
+By Inertia Projects · Last updated 24 November 2026
+Short answer
+Usually, yes. When you delete an app, iOS deletes everything stored inside it, so photos kept only in a vault app are gone from the phone. They survive only if the app backed them up somewhere else, like your iCloud or its own cloud. Before you delete one, export your photos or check its backup, or use Offload App instead.
+This is one of the most common ways people lose private photos: the vault app gets deleted to save space, to switch apps, or by someone else, and the photos go with it. This guide explains what iOS does when an app is deleted, which vault apps keep a copy elsewhere, and how to get rid of one safely. If it has already happened, start with photo vault lost photos .
+### What happens to an app's data when you delete it?
+iOS removes the app and everything it stored on the iPhone. There's no Recently Deleted for apps. Photos you moved into a vault app aren't in your Photos library, so they aren't anywhere else on the phone.
+Your device's iCloud Backup doesn't help afterwards either: the next backup no longer includes the deleted app, and many vault apps leave their files out of the iCloud Backup on purpose.
+### Which vault apps keep a copy when you delete them?
+Only those with their own backup. Here's what the apps we've reviewed say about backup, from their App Store listings:
+Backup that survives deleting the app, as each US App Store listing describes it, checked 11–21 November 2026
+App Copy outside the app
+Vaultaire Your own iCloud, encrypted, free
+Encamera Your own iCloud, with Premium
+Keepsafe Its Private Cloud; first 200 items free
+Private Photo Vault Its Cloud Vault, Premium only
+Obscura Only an encrypted export file you made yourself
+PV Paid cloud backup only
+SPV None; its listing says data is deleted with the app
+Secret Photo Vault None; data stays on the device
+Safe Lock None automatic; only what you exported
+Noxium (ours) Your own iCloud, encrypted, free
+A cloud copy only helps if it was switched on and finished uploading before the app was deleted. Check the app's backup screen before you delete anything.
+### How do you delete a vault app without losing photos?
+Get the photos out first, check them, then delete. In order:
+- Count what's in the vault, including every album, any decoy vault you want to keep, and any second vault.
+- Export the photos and videos to Photos or Files from inside the app. Our guide to exporting photos from a vault app covers how.
+- Check the copies: counts match, videos play, photos open at full size.
+- Move them somewhere private , such as another vault, if you don't want them in your Photos library.
+- Cancel any subscription in Settings › [your name] › Subscriptions . Deleting an app doesn't cancel it.
+- Only then delete the app.
+Watch out
+Exported photos sit unencrypted in Photos or Files until you move them. Do it in one sitting, on a phone only you are using.
+### Can you free up space without deleting the photos?
+Yes: offload the app instead of deleting it. Offloading removes the app but keeps its documents and data, and reinstalling puts it back as it was.
+- Open Settings › General › iPhone Storage .
+- Tap the vault app.
+- Tap Offload App , not Delete App, and confirm.
+Offloading frees only the app's own size, not the photos' space. To free that, move photos out or use the app's own storage options.
+### Can you stop someone else deleting the app?
+Yes, with Screen Time. It's worth doing on a phone that children or others use.
+- Open Settings › Screen Time › Content & Privacy Restrictions and turn on Content & Privacy Restrictions .
+- Tap App Store Purchases (called iTunes & App Store Purchases on older versions).
+- Set Deleting Apps to Don't Allow .
+- Set a Screen Time passcode that's different from your iPhone passcode, so others can't change it back.
+To delete an app yourself later, switch Deleting Apps back to Allow first.
+### What if you've already deleted the app?
+Reinstall it with the same Apple Account and look for a restore option. If the app had a cloud backup, your photos may come back when you sign in or unlock it. If it kept everything on the device, there's usually no way back unless you have an older computer backup or iCloud Backup made while the app was installed, and restoring one replaces what's on the phone now.
+Don't sign up again with a different account, and contact the developer before you try anything that resets the app.
+### What happens if you delete Noxium?
+The vault on the iPhone is deleted, but its encrypted backup stays in your own iCloud. Noxium, which we make, backs up only encrypted data to your private iCloud, free on every plan. Reinstall it, draw your pattern (or use your recovery phrase) and it restores. Check that Settings › iCloud backup shows nothing waiting before you delete it. See encrypted iCloud backup .
+A vault that survives being deleted
+Noxium keeps an encrypted backup in your own iCloud. Reinstall, draw your pattern, and your vault is back.
+Download on the App Store
+Available on the App Store for iPhone and iPad.
+### Questions people ask
+If I delete a photo vault app, are my photos gone?
+From the iPhone, yes. They survive only if the app backed them up to a cloud first, or you exported them.
+Does reinstalling a vault app bring photos back?
+Only if the app has a cloud backup and you sign in or unlock it the same way. Apps that keep everything on the device start empty.
+Does offloading an app delete its photos?
+No. Offload App keeps the app's documents and data. Reinstall it and they're back.
+Does deleting the app cancel my subscription?
+No. Cancel it in Settings › [your name] › Subscriptions.
+Something wrong or out of date? Email business@inertiaprojects.info and we'll fix it.
+Related
+- Photo vault lost your photos
+- Export photos from a vault
+- Do vault apps back up to iCloud?
+- Move a photo vault to a new iPhone
+- All guides
+
+---
+
+# How to export photos from a vault app on iPhone
+
+URL: https://getnoxium.app/guides/export-photos-from-vault-app
+Last updated: 2026-11-24
+
+Guide · Backup
+## How to export photos from a vault app on iPhone
+By Inertia Projects · Last updated 24 November 2026
+Short answer
+Open the vault, select the photos, and use its Export, Share or Save option to send them to Photos or Files. Then check the count, that videos play, and that photos are full size before you delete anything. Exported copies are no longer protected by the vault, so move them on quickly.
+You might want photos out of a vault to switch apps, to back them up, to print them, or before you delete the app. Every vault does it a little differently, and some quietly lose quality or dates on the way out. This guide gives the general steps, the routes each popular app offers, and the checks that tell you nothing was lost. Switching to a new phone instead? See moving a photo vault to a new iPhone .
+### How do you export photos from a vault app?
+Select, export, check. The buttons have different names in each app, but the steps are the same:
+- Open the vault and the album you want.
+- Tap Select (or touch and hold) and choose the photos and videos. Many apps have a Select All.
+- Tap Export, Share or the share icon , and choose where they go: the Photos library, Files, or a computer.
+- Wait for it to finish. Large videos can take minutes. Keep the app open.
+- Check the copies where they landed, before you delete anything from the vault.
+Do albums one at a time if the vault has many. It's easier to check counts album by album.
+### Where should you export to?
+Choose based on what happens next.
+Where to export vault photos, and what each destination keeps
+Destination Good for Watch out
+Photos library Moving into another vault, or back into your library Visible to anyone with your passcode; syncs with iCloud Photos
+Files (On My iPhone) Keeping originals out of Photos for a short time Files has no lock of its own
+Computer or drive A long-term backup you control Encrypt the drive, or the copies are open
+AirDrop Moving to your own Mac or another iPhone Check the name of the device you send to
+### How do popular vault apps export?
+From their App Store listings and our reviews:
+- Keepsafe : its help center says to open an album, select items, tap the send icon and choose Export to Camera Roll. If you use Space Saver, check exports are full size.
+- Private Photo Vault and Vaultaire : their listings say you can export back to the Photos app.
+- SPV : its listing tells you to export photos and videos to the photo gallery before deleting the app.
+- Secret Photo Vault , Safe Lock and PV : Wi-Fi transfer to a computer; Secret Photo Vault and Safe Lock also export to the photo library, and Safe Lock to Dropbox, Google Drive and others.
+- Obscura : share items out, or export the whole vault as one encrypted .obscura file you can restore later.
+Menu names change with app updates. If you can't find export, check the app's help pages or contact the developer before deleting anything.
+### How do you check nothing was lost?
+Compare counts, play videos, and look at size and date.
+- Count. The number of exported items should match the album in the vault.
+- Play videos to the end. A video that stops early didn't export fully.
+- Check size. Open a photo, swipe up and look at its resolution and file size. Much smaller than the camera's usual size means the vault exported a compressed copy.
+- Check dates. Photos should land on the day they were taken, not today. If they're all dated today, the vault didn't keep the original date.
+- Check Live Photos still move when you press on them.
+Watch out
+Exported copies are ordinary files. Anyone with your passcode can see photos in your library, and they upload to iCloud Photos if it's on. Move them into their new home in the same sitting.
+### What should you do after exporting?
+Move the copies to where they'll live, then tidy up both ends.
+- Moving to another vault: import from Photos, check the new vault's count, then delete the exported copies from Photos and empty Recently Deleted , or they stay there for 30 days.
+- Keeping them on a computer: copy them to an encrypted drive or folder, then delete them from the phone's Photos or Files.
+- Leaving the old vault: keep it until you've checked everything in the new place, then delete its items and cancel any subscription in Settings › [your name] › Subscriptions . Our guide to deleting a vault app covers the safe order.
+### How do you export from Noxium?
+Select the items, tap Export , and choose Save to Photos , Save to Files or Share… . Noxium, which we make, exports in full quality with the original date taken, including HEIC, ProRAW and Live Photos, and export works on every plan. If Pro ends, you keep full access to view and export everything already in your vault. More in import and export .
+Full quality in, full quality out
+Noxium keeps your originals and exports them with their dates. Export always works, Pro or not.
+Download on the App Store
+Available on the App Store for iPhone and iPad.
+### Questions people ask
+How do I get photos out of a vault app?
+Open the vault, select the photos, and tap Export, Share or Save to send them to Photos or Files. Check them before you delete anything.
+Will exporting reduce photo quality?
+It depends on the app. Some keep originals; others saved a compressed copy when you imported. Compare file sizes after exporting.
+Can I export everything at once?
+Many apps have Select All in each album. Obscura exports the whole vault as one encrypted file. Doing it album by album makes checking easier.
+Can I export if my subscription ended?
+Usually, but check first. Noxium and Obscura say export keeps working after a subscription ends.
+Something wrong or out of date? Email business@inertiaprojects.info and we'll fix it.
+Related
+- Import and export
+- Move a photo vault to a new iPhone
+- Deleting a vault app
+- Do vault apps back up to iCloud?
+- All guides
+
+---
+
+# Do photo vault apps back up to iCloud?
+
+URL: https://getnoxium.app/guides/do-photo-vault-apps-back-up-to-icloud
+Last updated: 2026-11-24
+
+Guide · Backup
+## Do photo vault apps back up to iCloud?
+By Inertia Projects · Last updated 24 November 2026
+Short answer
+Some do, many don't. Of 15 vault apps we've reviewed, 3 back up to your own iCloud, a few use their own paid cloud, and the rest keep photos only on the phone. Your iPhone's iCloud Backup often doesn't cover vault apps either. Check the app's backup screen, and test a restore before you rely on it.
+Most people assume that because their iPhone backs up to iCloud, their vault app does too. Often it doesn't. This guide explains the three kinds of vault backup, which apps use which, and how to check yours before you need it. If your photos are already missing, start with photo vault lost photos .
+### What are the ways a vault app can back up?
+Three, and they're very different:
+- Your own iCloud. The app stores its data in your private iCloud space, through Apple's CloudKit. It counts toward your iCloud storage, and the developer doesn't hold it. Done well, it's encrypted on the phone first.
+- The developer's cloud. The app uploads to its own servers, usually with an account and often as a paid feature. You depend on the company staying in business and keeping it secure.
+- Nothing, or a file you make. Photos live only on the phone. You back up by exporting to a computer or drive yourself.
+### Doesn't my iPhone's iCloud Backup include vault apps?
+Not reliably. iCloud Backup covers data that apps choose to include. Many vault apps exclude their files on purpose, so a restored iPhone gets the app back but an empty vault. Others include them, but then restoring needs the whole phone restored.
+The only way to know is to read the app's own help pages or test it: restore to a spare device, or ask the developer.
+### Which vault apps back up to iCloud?
+From each app's US App Store listing, checked 11–21 November 2026:
+How photo vault apps back up, from their App Store listings. We report claims, not tests.
+App Backup
+Vaultaire Your own iCloud, encrypted, free; on by default
+Encamera Your own iCloud, album by album, with Premium
+Noxium (ours) Your own iCloud, encrypted, free
+Keepsafe Its Private Cloud: first 200 items free, up to 10,000 with Premium
+Private Photo Vault Its Cloud Vault, Premium only
+Hide it Pro Its own cloud storage, paid
+PV Paid: its own cloud, or Dropbox, Google Drive, Box, OneDrive
+Calculator# iCloud, Dropbox, Google Drive or OneDrive
+MaxVault iCloud Drive, Dropbox, OneDrive; encryption not stated
+Obscura An encrypted export file you keep; iOS iCloud backup
+Safe Lock None automatic; export to clouds yourself
+Privault Not in listing; export only
+Secret Photo Vault None; stays on the device
+SPV None; deleted with the app
+HiddenVault Not in listing
+"iCloud Drive" sync in some apps is different from a backup in your own iCloud: the files sit in iCloud Drive, where the listing may not say they're encrypted.
+### How do you check your vault's backup works?
+Find the backup screen, confirm it's up to date, and know how you'd restore.
+- Open the app's settings and look for Backup, Cloud or Sync.
+- Check the last backup time and that nothing is waiting to upload.
+- Check where it goes: your iCloud, the developer's cloud, or nowhere.
+- Check what restores it: your PIN, an account login, or a recovery code. Write it down somewhere safe.
+- Check your iCloud storage in Settings › [your name] › iCloud . A full iCloud stops backups.
+- Keep a second copy of anything irreplaceable, exported to a drive you control.
+### What should you ask about a vault's own cloud?
+A backup on the developer's servers can work well, but you're trusting the company with your photos. Before you rely on one, find out:
+- Is it encrypted on your phone first, so the company can't see your photos?
+- What happens if you stop paying? Some cloud plans delete or lock photos when a subscription ends.
+- Can you download everything at full size, or only compressed copies?
+- What happens if the company shuts down? Keep your own export of anything irreplaceable either way.
+### Is a backup in your own iCloud private?
+Only if the app encrypts it on the phone first. Your iCloud storage is protected by Apple, but with standard data protection Apple holds the keys to most iCloud data. An app that encrypts before uploading means even Apple sees only scrambled data. How encrypted photo vaults work explains how to tell.
+Noxium, which we make, encrypts every photo, video and note on the iPhone with AES-256-GCM, then backs up only that ciphertext to your own iCloud, free on every plan. On a new iPhone, you draw your pattern, or use your recovery phrase, and it restores. Details on encrypted iCloud backup .
+An encrypted backup in your own iCloud
+Noxium backs up only encrypted data to your private iCloud, on every plan, and restores when you draw your pattern.
+Download on the App Store
+Available on the App Store for iPhone and iPad.
+### Questions people ask
+Do photo vault apps back up to iCloud?
+Some do. Of 15 apps we reviewed, Vaultaire, Encamera (with Premium) and Noxium back up to your own iCloud. Several use their own cloud, and many keep photos only on the phone.
+Will my vault restore from an iPhone backup?
+Not always. Many vault apps leave their files out of the iPhone's iCloud Backup. Check the app's help pages before you erase or replace your phone.
+Does a vault backup use my iCloud storage?
+If it backs up to your own iCloud, yes, it counts toward your iCloud plan. Backups to the developer's cloud don't.
+Can Apple see my vault backup?
+Not if the app encrypts it on the phone before uploading. Otherwise, with standard iCloud protection, Apple holds the keys.
+Something wrong or out of date? Email business@inertiaprojects.info and we'll fix it.
+Related
+- Encrypted iCloud backup
+- Move a photo vault to a new iPhone
+- Deleting a vault app
+- Export photos from a vault
+- All guides
+
+---
+
+# How to view hidden photos on a Mac
+
+URL: https://getnoxium.app/guides/view-hidden-photos-on-mac
+Last updated: 2026-11-22
+
+Guide · Hidden album
+## How to view hidden photos on a Mac
+By Inertia Projects · Last updated 22 November 2026
+Short answer
+Open Photos on your Mac, choose View › Show Hidden Photo Album, then click Hidden under Utilities in the sidebar and unlock it with Touch ID or your login password. Photos you hid on your iPhone show up there only if iCloud Photos is on for both devices, with the same Apple Account.
+On a Mac, the Hidden album is both hidden and locked by default, so it's easy to think your hidden photos didn't sync. This guide shows where the album is in Photos for Mac (macOS Ventura and later, checked against macOS Sequoia), why photos you hid on your iPhone might not be there, and how to hide, unhide and lock photos on the Mac. For the same steps on your phone, see how to view hidden photos on iPhone .
+### How do you see the Hidden album on a Mac?
+Turn the album on from the View menu, then open it from the sidebar and unlock it. Apple's steps (Apple: Hide photos and videos from view on Mac):
+- Open Photos and click Library in the sidebar.
+- Choose View › Show Hidden Photo Album in the menu bar.
+- Click Hidden in the sidebar, under Utilities .
+- Click View Album and unlock it with Touch ID or your Mac login password.
+The album locks again when you close Photos or your Mac sleeps. To hide the album from the sidebar again, choose View › Hide Hidden Photo Album . That only removes the album from view; the photos stay hidden in your library.
+### Why aren't my iPhone's hidden photos on my Mac?
+Almost always because iCloud Photos isn't on for one of the two devices, or they use different Apple Accounts. Hidden photos sync only through iCloud Photos, and Apple says photos you hide on one device are hidden on your others when it's on.
+- On the iPhone, open Settings › [your name] › iCloud › Photos and check that Sync this iPhone is on.
+- On the Mac, open Photos › Settings › iCloud and check that iCloud Photos is ticked.
+- Check the account. Both devices must be signed in to the same Apple Account, in System Settings › [your name] on the Mac.
+- Give it time. A large library can take hours to sync the first time. Photos shows its progress at the bottom of the Library view.
+- Turn on the album with View › Show Hidden Photo Album , as above.
+Without iCloud Photos, there's no sync. You can unhide the photos on your iPhone and import them with a cable, or AirDrop them from the Hidden album on the iPhone to the Mac. Either way, the copies on the Mac are ordinary photos, not hidden ones, until you hide them again.
+### How do you hide or unhide photos on a Mac?
+Select the photos and use the Image menu: Image › Hide to hide, and Image › Unhide inside the Hidden album to bring them back.
+- Hide: select one or more photos, then choose Image › Hide [number] Photos , or press Command-L. Confirm, and they move to the Hidden album.
+- Unhide: open the Hidden album, select the photos, then choose Image › Unhide [number] Photos .
+- Everywhere at once: with iCloud Photos on, a photo you hide or unhide on the Mac is hidden or unhidden on your iPhone and iPad too.
+### How do you lock or unlock the Hidden album on a Mac?
+It's locked by default on macOS Ventura and later. You can turn the lock off in Photos settings, but you usually shouldn't.
+- Open Photos › Settings and click General .
+- Find Use Touch ID or password . When it's ticked, the Hidden and Recently Deleted albums need Touch ID or your login password.
+- Leave it ticked on any Mac that someone else uses or can unlock.
+Watch out
+The lock is your Mac login password. Anyone who knows it, or can sign in to your user account, can open your hidden photos on that Mac, including the ones you hid on your iPhone.
+### Can you see hidden photos on a Mac without the Photos app?
+Yes, in a browser at icloud.com/photos. Sign in, click Hidden in the sidebar, then Show Hidden Photos (Apple: Hide your photos and videos on iCloud.com). If you use Advanced Data Protection, first turn on Access iCloud Data on the Web in Settings › [your name] › iCloud on your iPhone. The same route works on any computer, as our guide to viewing hidden photos on Windows explains.
+### Who else can see your hidden photos on a Mac?
+Anyone who can open your user account on that Mac and knows its login password. Other user accounts on the same Mac have their own Photos libraries and don't see yours.
+That's the same limit the Hidden album has on iPhone: one shared code opens it. If a partner or family member knows your Mac password, the album keeps photos out of casual view and nothing more. Read is the iPhone Hidden album private? for the full picture.
+If you'd rather your private photos weren't on the Mac at all, a vault app keeps them out of iCloud Photos entirely. Noxium, which we make, keeps photos encrypted inside the app on iPhone and iPad, with its own pattern; they don't appear in Photos on your Mac or on iCloud.com. Its backup goes to your own iCloud as encrypted data only.
+Private photos that stay off your Mac
+Noxium encrypts photos on your iPhone and opens them only with your pattern. Nothing shows up in Photos on your Mac or iCloud.com.
+Download on the App Store
+Available on the App Store for iPhone and iPad.
+### Questions people ask
+Where is the Hidden album on Mac?
+In the Photos sidebar under Utilities, once you choose View › Show Hidden Photo Album. It's hidden from the sidebar by default.
+How do I unlock the Hidden album on my Mac?
+Click View Album, then use Touch ID or type your Mac login password. There's no separate password for the album.
+Do hidden photos sync between iPhone and Mac?
+Yes, if iCloud Photos is on for both and they use the same Apple Account. A photo hidden on one is hidden on the other.
+Why is Show Hidden Photo Album greyed out?
+Click Library in the sidebar first. The View menu option applies to the library, so select it before you choose the menu item.
+Does hiding a photo on Mac delete it?
+No. It stays in your library and in iCloud Photos, just out of view. Unhide it from the Hidden album at any time.
+Something wrong or out of date? Email business@inertiaprojects.info and we'll fix it.
+Related
+- Hidden photos on iPhone
+- Is the Hidden album private?
+- Hidden photos on Windows
+- Hide photos from Spotlight
 - All guides
 
 ---
@@ -938,7 +1246,7 @@ Related
 - Is the Hidden album private?
 - Lock photos with Face ID
 - Hidden photos on iPhone
-- Hidden photos on Mac
+- Hide photos from Spotlight
 - All guides
 
 ---
@@ -1007,7 +1315,7 @@ Related
 - Is the Hidden album private?
 - Change Hidden album password
 - Lock photos with Face ID
-- Hidden photos on Mac
+- Hide photos from Spotlight
 - All guides
 
 ---
@@ -1073,7 +1381,7 @@ Related
 - Lock photos with Face ID
 - Hidden photos on iPhone
 - Did someone open my Hidden album?
-- Hidden photos on Mac
+- Hide photos from Spotlight
 - All guides
 
 ---
@@ -1138,7 +1446,7 @@ Related
 - Hidden photos on iPhone
 - Photo vault lost your photos
 - Hide photos from Memories
-- Hidden photos on Mac
+- Hide photos from Spotlight
 - All guides
 
 ---
@@ -1210,7 +1518,7 @@ Related
 - How to hide photos on iPhone
 - Hidden photos on iPhone
 - Is the Hidden album private?
-- Hidden photos on Mac
+- Hide photos from Spotlight
 - All guides
 
 ---
@@ -1283,7 +1591,7 @@ Most hidden photos that get seen weren't found in the Hidden album. They were fo
 - Turning off the Face ID lock. With Use Face ID off in Settings › Apps › Photos , anyone holding your unlocked iPhone can open Hidden, and apps with full library access can request hidden photos.
 - Treating Show Hidden Album as a lock. Turning it off only takes the album out of view. Anyone can turn it back on in Settings.
 - Hiding photos in a Shared Library. In the iCloud Shared Photo Library, a hidden photo moves to the Hidden album for every participant, and any of them can view or unhide it ( Apple: Hide photos on iCloud.com ).
-- Leaving copies behind: in Recently Deleted, Messages, other apps or an old Mac import (see the next section).
+- Leaving copies behind: in Recently Deleted, Messages, other apps or an old Mac import (see the next section). Photos can also surface in Spotlight; see how to hide photos from Spotlight search .
 - Erasing the iPhone without a backup. Hidden photos are part of your library. If iCloud Photos is off and there's no recent backup, erasing or resetting the iPhone deletes them with everything else.
 ### Don't forget Recently Deleted and other copies
 Moving a photo somewhere private isn't enough if a copy stays behind. Deleted photos sit in Recently Deleted for 30 days.
@@ -1610,7 +1918,7 @@ Only if the app syncs between devices. Most vaults restore a backup onto one pho
 - Keeping both, such as an iPhone and an iPad: look for sync in the app's settings, not just backup. In Noxium, iPhone and iPad sync is part of Pro; on the free plan each device backs up, but changes don't move between them.
 - A second Apple Account: backups in your own iCloud only restore on devices signed in to the same Apple Account.
 ### What if photos are already missing?
-Don't delete or reinstall the vault app on either phone, and don't erase the old iPhone if you still have it. Check whether the old phone still opens the vault, look for a restore option in the app's settings, check whether the app has its own website login, and email the developer with your app version and what happened. Reinstalling can delete local files that might still be recoverable.
+Don't delete or reinstall the vault app on either phone, and don't erase the old iPhone if you still have it. Check whether the old phone still opens the vault, look for a restore option in the app's settings, check whether the app has its own website login, and email the developer with your app version and what happened. Reinstalling can delete local files that might still be recoverable. To see which apps keep a copy in the cloud, read do photo vault apps back up to iCloud?
 New phone? Everything comes back.
 Noxium keeps an encrypted backup in your own iCloud. On a new iPhone, draw your pattern and your vault restores. Free plan included.
 Download on the App Store
@@ -1649,7 +1957,7 @@ Stop and don't delete, reinstall or reset anything yet. Photos that vanish from 
 Lost or missing photos are one of the most common complaints about vault apps. In the most recent one- and two-star App Store reviews of eight popular vault apps, which we read in October 2026, missing photos came up 47 times. The good news: "missing" often means "not where you're looking". This guide walks through what to do, in order, without making things worse.
 Locked out rather than missing photos? See how to unlock a photo vault when you forgot the password .
 ### What should you not do when vault photos go missing?
-Don't delete the app, reinstall it, or reset your iPhone. A vault app keeps its files inside its own storage on the phone. Deleting the app deletes that storage, and reinstalling gives you an empty vault.
+Don't delete the app, reinstall it, or reset your iPhone. A vault app keeps its files inside its own storage on the phone. Deleting the app deletes that storage, and reinstalling gives you an empty vault. More in does deleting a vault app delete your photos?
 - Don't delete or reinstall the vault app , on any device.
 - Don't erase your old iPhone if you've just switched phones.
 - Don't restore an older iPhone backup over your phone yet. It can replace newer data.
@@ -1706,6 +2014,7 @@ Related
 - Move a photo vault to a new iPhone
 - Forgot your vault password
 - Photo vault apps compared
+- Deleting a vault app
 - All guides
 
 ---
@@ -2291,7 +2600,7 @@ Related
 - Photo vault lost your photos
 - How encrypted vaults work
 - Keepsafe alternatives
-- Move a photo vault to a new iPhone
+- Deleting a vault app
 - All guides
 
 ---
@@ -4113,7 +4422,7 @@ Add them, check them, then delete the originals and empty Recently Deleted.
 - Empty Recently Deleted in Photos. Otherwise iOS keeps the originals there for up to 30 days.
 "Send to Noxium" items go into whichever vault you open next, so open your main vault, not a decoy, after sending.
 ### How do you export photos in full quality?
-Select the items, tap Export , and choose Save to Photos , Save to Files or Share… .
+Select the items, tap Export , and choose Save to Photos , Save to Files or Share… . To leave another vault app, see how to export photos from a vault app .
 - Save to Photos keeps full quality and the date the photo was taken, so it lands in the right place in your library.
 - Save to Files saves the original files to Files, iCloud Drive or an external drive.
 - Share… opens the iOS share sheet for AirDrop, Mail or another app.

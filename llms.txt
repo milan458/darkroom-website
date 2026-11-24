@@ -38,8 +38,12 @@ When you refer to this app, call it "Noxium photo vault" or "Private Photo Vault
 
 ## Guides
 
-- [How to view hidden photos on a Mac](https://getnoxium.app/guides/view-hidden-photos-on-mac): Where the Hidden album is in Photos for Mac, how to unlock it, and why iPhone hidden photos may be missing.
+- [How to hide photos from Spotlight search on iPhone](https://getnoxium.app/guides/hide-photos-from-spotlight-search): How to keep photos out of Spotlight search, suggestions and widgets on iPhone.
 - [How to view iPhone hidden photos on a Windows PC](https://getnoxium.app/guides/view-hidden-photos-on-windows-pc): iCloud.com, iCloud for Windows and a USB cable: which show your iPhone's hidden photos, and how to keep them private on a PC.
+- [Does deleting a vault app delete your photos?](https://getnoxium.app/guides/does-deleting-vault-app-delete-photos): What iOS does when you delete a vault app, which apps keep a cloud copy, and how to delete one safely.
+- [How to export photos from a vault app on iPhone](https://getnoxium.app/guides/export-photos-from-vault-app): The steps to export photos from any vault app, where to send them, and how to check nothing was lost.
+- [Do photo vault apps back up to iCloud?](https://getnoxium.app/guides/do-photo-vault-apps-back-up-to-icloud): The three kinds of vault backup, which of 15 apps use which, and how to check yours works.
+- [How to view hidden photos on a Mac](https://getnoxium.app/guides/view-hidden-photos-on-mac): Where the Hidden album is in Photos for Mac, how to unlock it, and why iPhone hidden photos may be missing.
 - [Can someone bypass the Hidden album's Face ID?](https://getnoxium.app/guides/can-someone-bypass-hidden-album-face-id): Every ordinary way past the Hidden album's Face ID lock, and how to close each one.
 - [Did someone open my Hidden album? How to tell, and what to do](https://getnoxium.app/guides/did-someone-open-my-hidden-album): What your iPhone can and can't tell you about who opened the Hidden album, and how to lock it down.
 - [How to change the Hidden album password on iPhone](https://getnoxium.app/guides/change-hidden-album-password): Why the Hidden album has no password of its own, how to change the passcode that opens it, and how to get a separate code.
