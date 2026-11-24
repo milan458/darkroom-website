@@ -520,7 +520,7 @@
       "keyword": "hide photos from spotlight search iphone",
       "cluster": "hidden-album",
       "vaultaire": "https://vaultaire.app/guides/hide-photos-from-spotlight-search-iphone/",
-      "status": "todo"
+      "status": "in-review"
     },
     {
       "order": 52,
@@ -530,7 +530,7 @@
       "keyword": "does deleting vault app delete photos",
       "cluster": "backup-recovery",
       "vaultaire": "https://vaultaire.app/guides/does-deleting-vault-app-delete-photos/",
-      "status": "todo"
+      "status": "in-review"
     },
     {
       "order": 53,
@@ -540,7 +540,7 @@
       "keyword": "export photos from vault app",
       "cluster": "backup-recovery",
       "vaultaire": "https://vaultaire.app/guides/export-photos-from-vault-app-iphone/",
-      "status": "todo"
+      "status": "in-review"
     },
     {
       "order": 54,
@@ -550,7 +550,7 @@
       "keyword": "do photo vault apps back up to icloud",
       "cluster": "backup-recovery",
       "vaultaire": "https://vaultaire.app/guides/do-photo-vault-apps-backup-to-icloud/",
-      "status": "todo"
+      "status": "in-review"
     },
     {
       "order": 55,
