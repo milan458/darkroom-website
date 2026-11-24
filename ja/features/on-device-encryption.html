@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#FAF9F6" media="(prefers-color-scheme: light)">
+  <!-- build:meta -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WWNMHW99TP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-WWNMHW99TP');
+  </script>
+  <title>暗号化の写真保管庫アプリ Noxium の中身</title>
+  <meta name="description" content="Noxium は写真・ビデオ・メモを iPhone 上で AES-256-GCM で暗号化。鍵はパターンから Argon2id で生成。守れるものと守れないもの">
+  <link rel="canonical" href="https://getnoxium.app/ja/features/on-device-encryption">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <link rel="alternate" hreflang="en" href="https://getnoxium.app/features/on-device-encryption">
+  <link rel="alternate" hreflang="de" href="https://getnoxium.app/de/features/on-device-encryption">
+  <link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/features/on-device-encryption">
+  <link rel="alternate" hreflang="es" href="https://getnoxium.app/es/features/on-device-encryption">
+  <link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/features/on-device-encryption">
+  <link rel="alternate" hreflang="it" href="https://getnoxium.app/it/features/on-device-encryption">
+  <link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/features/on-device-encryption">
+  <link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/features/on-device-encryption">
+  <link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/features/on-device-encryption">
+  <link rel="alternate" hreflang="x-default" href="https://getnoxium.app/features/on-device-encryption">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Noxium">
+  <meta property="og:title" content="暗号化の写真保管庫アプリ Noxium の中身">
+  <meta property="og:description" content="Noxium は写真・ビデオ・メモを iPhone 上で AES-256-GCM で暗号化。鍵はパターンから Argon2id で生成。守れるものと守れないもの">
+  <meta property="og:url" content="https://getnoxium.app/ja/features/on-device-encryption">
+  <meta property="og:image" content="https://getnoxium.app/assets/og/noxium-og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Noxium photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="article:published_time" content="2026-11-23">
+  <meta property="article:modified_time" content="2026-11-23">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="暗号化の写真保管庫アプリ Noxium の中身">
+  <meta name="twitter:description" content="Noxium は写真・ビデオ・メモを iPhone 上で AES-256-GCM で暗号化。鍵はパターンから Argon2id で生成。守れるものと守れないもの">
+  <meta name="twitter:image" content="https://getnoxium.app/assets/og/noxium-og.png">
+  <meta name="twitter:image:alt" content="Noxium photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
+  <meta name="apple-itunes-app" content="app-id=6824616093">
+  <!-- /build:meta -->
+
+  <link rel="icon" type="image/svg+xml" href="/assets/noxium-logo.svg">
+  <link rel="apple-touch-icon" href="/assets/noxium-icon-180.png">
+
+  <link rel="preload" href="/assets/fonts/instrument-serif-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/fonts/fonts.css">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/pages.css">
+
+  <!-- build:jsonld -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://getnoxium.app/#org",
+        "name": "Inertia Projects",
+        "url": "https://getnoxium.app/about",
+        "email": "business@inertiaprojects.info",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://getnoxium.app/assets/noxium-icon-512.png"
+        },
+        "brand": {
+          "@type": "Brand",
+          "name": "Noxium"
+        },
+        "sameAs": [
+          "https://apps.apple.com/app/apple-store/id6824616093"
+        ]
+      },
+      {
+        "@type": "Article",
+        "@id": "https://getnoxium.app/ja/features/on-device-encryption#article",
+        "headline": "デバイス上の暗号化：Noxium が何を、どう暗号化するか",
+        "description": "Noxium は写真・ビデオ・メモを iPhone 上で AES-256-GCM で暗号化。鍵はパターンから Argon2id で生成。守れるものと守れないもの",
+        "url": "https://getnoxium.app/ja/features/on-device-encryption",
+        "mainEntityOfPage": "https://getnoxium.app/ja/features/on-device-encryption",
+        "image": "https://getnoxium.app/assets/guides/noxium-backup.jpg",
+        "datePublished": "2026-11-23",
+        "dateModified": "2026-11-23",
+        "author": {
+          "@id": "https://getnoxium.app/#org"
+        },
+        "publisher": {
+          "@id": "https://getnoxium.app/#org"
+        },
+        "inLanguage": "ja-JP",
+        "isPartOf": {
+          "@id": "https://getnoxium.app/#website"
+        },
+        "about": {
+          "@id": "https://getnoxium.app/#app"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Noxium",
+            "item": "https://getnoxium.app/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "機能",
+            "item": "https://getnoxium.app/ja/features/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "デバイス上の暗号化",
+            "item": "https://getnoxium.app/ja/features/on-device-encryption"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://getnoxium.app/ja/features/on-device-encryption#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "iPhone の写真保管庫アプリは暗号化されている？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "されているものもありますが、多くはされていません。AES-256 のような暗号方式の名前、バックアップ前のデバイス上での暗号化、メールでパスワードをリセットできないこと、を確認しましょう。 写真保管庫アプリは安全？ にチェックリストがあります。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "開発元は私の写真を見られる？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "見られません。Noxium にはアカウントも、写真を預かるサーバーもありません。鍵は iPhone 上であなたのパターンから作られ、iCloud のバックアップもすでに暗号化されています。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "iPhone はもともと暗号化されているのでは？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "されています。iOS は iPhone 全体を暗号化しますが、iPhone のパスコードで解除されます。パスコードを知っている人や、iPhone から作ったバックアップがあれば、「写真」ライブラリを見られます。Noxium は、あなたのパターンだけが作る鍵で 2 つ目の錠を加えます。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "AES-256-GCM とは？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "256 ビットの鍵を使う AES は、業界全体で使われている標準の暗号方式です。GCM は暗号化されたデータの変更を検知するタグを付けるので、壊れたり書き換えられたりしたファイルは開きません。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "暗号化で Noxium は遅くなる？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Argon2id はわざと遅く作られているので、ロック解除には少し時間がかかります。閲覧は速く、サムネールが先に表示され、ビデオは再生しながら 1 MiB ずつ復号されます。"
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <!-- /build:jsonld -->
+</head>
+<body>
+  <!-- build:header -->
+  <!-- Shared header (homepage and subpages). Edit partials/header.html, then run python3 tools/build.py. -->
+  <a href="#main-content" class="skip-link">メインコンテンツへスキップ</a>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <nav class="nav glass" aria-label="メインナビゲーション">
+        <a href="/" class="wordmark" aria-label="Noxium ホーム">Noxium<span aria-hidden="true">.</span></a>
+
+        <div class="nav-links">
+          <a href="/#features">機能</a>
+          <a href="/#security">セキュリティ</a>
+          <a href="/#pricing">料金</a>
+          <a href="/compare/">比較</a>
+          <a href="/ja/guides/">ガイド</a>
+        </div>
+
+        <div class="nav-actions">
+          <a href="https://apps.apple.com/app/apple-store/id6824616093" class="btn btn-ink btn-nav nav-cta" data-cta="nav" data-label-waitlist="ベータ版に参加" data-label-live="Noxium を入手">Noxium を入手</a>
+          <button type="button" class="mobile-menu-btn" id="mobile-menu-btn" aria-expanded="false" aria-controls="mobile-drawer" aria-label="メニュー">
+            <svg class="icon icon-menu" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 9h14M5 15h14"/></svg>
+            <svg class="icon icon-close" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <div class="mobile-drawer glass" id="mobile-drawer" hidden>
+      <nav class="mobile-drawer-list" aria-label="モバイル">
+        <a href="/#features">機能</a>
+        <a href="/#security">セキュリティ</a>
+        <a href="/#pricing">料金</a>
+        <a href="/ja/best-photo-vault-apps-iphone">保管庫アプリを比較</a>
+        <a href="/ja/guides/">ガイド</a>
+        <a href="/about">概要</a>
+        <a href="/support">サポート</a>
+      </nav>
+    </div>
+  </header>
+  <!-- /build:header -->
+
+  <main id="main-content" tabindex="-1">
+    <div class="page-hero">
+      <div class="container">
+        <!-- build:breadcrumbs -->
+        <nav class="crumbs" aria-label="パンくずリスト">
+          <ol>
+            <li><a href="/">Noxium</a></li>
+            <li><a href="/ja/features/">機能</a></li>
+            <li aria-current="page">デバイス上の暗号化</li>
+          </ol>
+        </nav>
+        <!-- /build:breadcrumbs -->
+        <p class="eyebrow"><span class="dot dot-ink" aria-hidden="true"></span>機能</p>
+        <h1>デバイス上の暗号化：Noxium が何を、どう暗号化するか</h1>
+        <!-- build:byline -->
+        <p class="byline"><span>著者：<a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>最終更新日：<time datetime="2026-11-23">2026年11月23日</time></span></p>
+        <!-- /build:byline -->
+        <div class="answer">
+          <span class="answer-label">結論</span>
+          <p>Noxium は、すべての写真・ビデオ・メモを、保存やバックアップの前に iPhone 上で暗号化します。鍵はパターンから Argon2id で作られ、ファイルは AES-256-GCM で封印されます。名前・日付・場所も暗号化され、パターンはどこにも保存されません。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container article-layout">
+      <article class="prose">
+        <p>多くの写真保管庫アプリは、普通の画像ファイルの前に PIN の画面を置いているだけです。パソコンへのバックアップ、フォレンジックツール、不具合など、別の経路でそのファイルにたどり着いた人には、写真がそのまま見えます。暗号化された写真保管庫アプリが保存するのは、かき混ぜられたデータだけ。ファイルをコピーしても、鍵がなければ役に立ちません。このページでは、私たちが開発している保管庫 Noxium が iPhone 上で何を、どんな道具で暗号化し、保護がどこで終わるのかを正確に説明します。</p>
+
+        <h2 id="how">Noxium の暗号化のしくみは？</h2>
+        <p>Noxium は「鍵の中に鍵」を使います。パターンが 1 つの鍵を作り、その鍵が保管庫の鍵を開け、保管庫の鍵がファイルごとに別々の鍵を開けます。指から写真までのつながりは次のとおりです。</p>
+        <ol class="steps">
+          <li><strong>パターンの鍵。</strong><a href="/ja/features/pattern-lock">パターン</a>を描くと、Argon2id（libsodium）がそれを 256 ビットの鍵に引き伸ばします。メモリ 64 MiB、3 回のパス、ランダムなソルトを使います。遅さこそが狙いで、推測のたびに本物の時間とメモリがかかります。</li>
+          <li><strong>保管庫の鍵。</strong>保管庫ごとにランダムな 256 ビットの鍵があります。この鍵は、Apple の CryptoKit の AES-256-GCM で、パターンの鍵によって封印された形でしか保存されません。</li>
+          <li><strong>ファイルの鍵。</strong>写真・ビデオ・メモ 1 つずつに、保管庫の鍵で封印されたランダムな鍵があります。サムネールは、ファイルの鍵から導いた別の鍵を使います。</li>
+          <li><strong>ファイルそのもの。</strong>各ファイルは 1 MiB ずつのブロックに分けて AES-256-GCM で暗号化され、ブロックごとに認証タグが付きます。長いビデオもファイル全体を先に復号せずに再生でき、書き換えられたり壊れたりしたブロックは、壊れたデータを表示する代わりに開くのを拒みます。</li>
+        </ol>
+        <p>パターンを変えても封印し直すのは保管庫の鍵だけなので、写真が何千枚あっても一瞬で済みます。<a href="/features/recovery-phrase">復元フレーズ</a>は、同じ保管庫の鍵にかけた 2 つ目の封印です。背景にある考え方を数式なしで知りたいなら、<a href="/ja/guides/how-encrypted-photo-vaults-work">暗号化された写真保管庫のしくみ</a>をお読みください。</p>
+
+        <h2 id="what">具体的に何が暗号化される？</h2>
+        <p>保管庫に入れたものすべてと、それにまつわる情報です。ファイル名や日付の一覧だけでも多くのことがわかるので、これは大切です。</p>
+        <div class="data-table-wrap" tabindex="0" role="region" aria-labelledby="enc-caption">
+          <table class="data-table">
+            <caption id="enc-caption">Noxium が iPhone 上で暗号化するもの</caption>
+            <thead><tr><th scope="col">データ</th><th scope="col">暗号化</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">写真、ビデオ、Live Photos</th><td class="yes">あり。AES-256-GCM、ファイルごとに 1 つの鍵</td></tr>
+              <tr><th scope="row">サムネールとプレビュー</th><td class="yes">あり。専用の導出鍵を使用</td></tr>
+              <tr><th scope="row">名前・日付・場所</th><td class="yes">あり</td></tr>
+              <tr><th scope="row">アルバム名とメモ</th><td class="yes">あり</td></tr>
+              <tr><th scope="row">パターン</th><td>そもそも保存しない</td></tr>
+              <tr><th scope="row">iCloud バックアップ</th><td class="yes">あり。アップロードするのは暗号化済みのデータだけ</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>ストレージ上の保管庫ファイルはランダムな名前を持ち、iOS でいちばん強いファイル保護クラスを使うため、iPhone がロックされている間は iOS によってもロックされます。iPhone 自体のバックアップからは意図的に外しており、代わりに Noxium が独自の<a href="/ja/features/encrypted-icloud-backup">暗号化 iCloud バックアップ</a>を作ります。</p>
+
+        <h2 id="share">共有メニューから追加した写真は？</h2>
+        <p>Noxium のメインアプリが開く前に暗号化されます。ほかのアプリで<span class="path">Noxiumに送信</span>を使うと、共有拡張機能が各ファイルを新しい鍵で暗号化し、その鍵を公開鍵に向けて封印します。拡張機能が保管庫の鍵を持つことはありません。次にロックを解除したとき、Noxium が封筒を開けてファイルを保管庫に移します。</p>
+
+        <h2 id="setup">オンにするには？</h2>
+        <p>その必要はありません。暗号化は無料でも Pro でも、すべての保管庫・すべての項目で常にオンです。</p>
+        <ol class="steps">
+          <li><strong>パターンを設定する。</strong>Noxium を初めて開いたら、6 本以上のボルトを通るパターンを描きます。これで最初の保管庫とその鍵が作られます。</li>
+          <li><strong>写真を追加する。</strong>「写真」から読み込むか、内蔵カメラで撮るか、<span class="path">Noxiumに送信</span>を使います。各項目は追加と同時に暗号化されます。</li>
+          <li><strong>元の写真を削除する。</strong>「写真」アプリに残ったコピーは保護されません。<span class="path">設定 › App設定 › “写真”からの削除を提案</span>をオンにすると（<a href="/features/import-export">読み込みと書き出し</a>を参照）、読み込み後に Noxium が削除を提案します。そのあと「写真」で<span class="path">コレクション › ユーティリティ › 最近削除した項目</span>を空にしましょう。</li>
+        </ol>
+        <figure class="shot">
+          <img src="/assets/guides/noxium-backup.jpg" alt="Noxium のバックアップ画面：保管庫は iPhone 上で暗号化され、ユーザー自身の iCloud にプライベートにバックアップされる" width="559" height="1216" loading="lazy" decoding="async">
+          <figcaption>暗号化はまず iPhone 上で行われます。バックアップされるのは暗号化された結果だけです。</figcaption>
+        </figure>
+
+        <h2 id="limits">暗号化で防げないことは？</h2>
+        <p>暗号化が守るのは保存中のファイルです。写真を見ている最中や、保管庫の外にあるコピーは守れません。</p>
+        <ul>
+          <li><strong>開いたままの保管庫。</strong>ロックが解除されている間は、iPhone を手にした人にもあなたと同じものが見えます。<span class="path">設定 › 離れたあとにロック</span>と<span class="path">伏せたときにロック</span>を使いましょう。</li>
+          <li><strong>弱いパターン。</strong>Argon2id は推測を遅らせますが、Z の形のパターンならやはりすぐに当てられます。</li>
+          <li><strong>ほかの場所にあるコピー。</strong>「写真」や iCloud 写真に残った元の写真、スクリーンショット、書き出したファイルは、Noxium では暗号化されません。</li>
+          <li><strong>乗っ取られた iPhone。</strong>スパイウェアや、悪意あるコードが動く脱獄済みの iPhone は、保管庫が開いている間の画面を見ることができます。</li>
+          <li><strong>強要。</strong>誰かにパターンを描くよう強要されたら、暗号化は助けになりません。助けになるのは<a href="/ja/guides/what-is-a-decoy-vault">おとり保管庫</a>です。</li>
+        </ul>
+        <p>保管庫の中身は App スイッチャーや画面収録中には隠されるので、ちらっと見られる程度なら防げます。ただしスパイウェアへの対策にはなりません。</p>
+
+        <h2 id="plans">無料？ Pro？</h2>
+        <p>暗号化はどのプランでも同じです。無料プランには写真 150 枚、ビデオ 10 本、メモ無制限、そして iCloud への完全なバックアップと復元が含まれます。Noxium Pro では、項目無制限、緊急消去、iPhone と iPad の同期、カスタムアイコン、アルバムのパターン、共有保管庫が加わります。Pro が終わっても、保管庫にすでにあるものはすべて、表示・書き出し・バックアップを引き続き行えます。</p>
+
+        <div class="cta-card">
+          <p class="cta-card-title">しくみを説明できる暗号化</p>
+          <p>パターンには Argon2id、各ファイルには AES-256-GCM、そしてあなた自身の iCloud には暗号化されたデータだけ。</p>
+          <a href="https://apps.apple.com/app/apple-store/id6824616093" class="btn btn-primary" data-cta="body" data-label-waitlist="ベータに参加" data-label-live="App Store でダウンロード">App Store でダウンロード</a>
+          <!-- build:status -->
+          <span class="release-status">iPhone と iPad 向けに App Store で配信中。</span>
+          <!-- /build:status -->
+        </div>
+
+        <h2 id="faq">よくある質問</h2>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>iPhone の写真保管庫アプリは暗号化されている？</span></span></summary>
+            <div class="faq-body"><p>されているものもありますが、多くはされていません。AES-256 のような暗号方式の名前、バックアップ前のデバイス上での暗号化、メールでパスワードをリセットできないこと、を確認しましょう。<a href="/ja/guides/are-photo-vault-apps-safe">写真保管庫アプリは安全？</a>にチェックリストがあります。</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>開発元は私の写真を見られる？</span></span></summary>
+            <div class="faq-body"><p>見られません。Noxium にはアカウントも、写真を預かるサーバーもありません。鍵は iPhone 上であなたのパターンから作られ、iCloud のバックアップもすでに暗号化されています。</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>iPhone はもともと暗号化されているのでは？</span></span></summary>
+            <div class="faq-body"><p>されています。iOS は iPhone 全体を暗号化しますが、iPhone のパスコードで解除されます。パスコードを知っている人や、iPhone から作ったバックアップがあれば、「写真」ライブラリを見られます。Noxium は、あなたのパターンだけが作る鍵で 2 つ目の錠を加えます。</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>AES-256-GCM とは？</span></span></summary>
+            <div class="faq-body"><p>256 ビットの鍵を使う AES は、業界全体で使われている標準の暗号方式です。GCM は暗号化されたデータの変更を検知するタグを付けるので、壊れたり書き換えられたりしたファイルは開きません。</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>暗号化で Noxium は遅くなる？</span></span></summary>
+            <div class="faq-body"><p>Argon2id はわざと遅く作られているので、ロック解除には少し時間がかかります。閲覧は速く、サムネールが先に表示され、ビデオは再生しながら 1 MiB ずつ復号されます。</p></div>
+          </details>
+        </div>
+
+        <p><em>誤りや古い情報を見つけたら、<a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a> までお知らせください。修正します。</em></p>
+      </article>
+
+      <aside class="article-aside" aria-label="このページの内容">
+        <nav class="toc" aria-label="目次">
+          <p class="toc-title">このページの内容</p>
+          <ol>
+            <li><a href="#how">しくみ</a></li>
+            <li><a href="#what">暗号化されるもの</a></li>
+            <li><a href="#share">共有メニューからの追加</a></li>
+            <li><a href="#setup">オンにする</a></li>
+            <li><a href="#limits">守れないこと</a></li>
+            <li><a href="#plans">無料か Pro か</a></li>
+            <li><a href="#faq">よくある質問</a></li>
+          </ol>
+        </nav>
+        <!-- build:related -->
+        <div class="related">
+          <p class="toc-title">関連ページ</p>
+          <ul role="list">
+            <li><a href="/ja/features/pattern-lock">パターンロック</a></li>
+            <li><a href="/ja/features/encrypted-icloud-backup">暗号化 iCloud バックアップ</a></li>
+            <li><a href="/ja/guides/how-encrypted-photo-vaults-work">暗号化のしくみ</a></li>
+            <li><a href="/ja/features/">機能一覧</a></li>
+          </ul>
+        </div>
+        <!-- /build:related -->
+      </aside>
+    </div>
+  </main>
+
+  <!-- build:footer -->
+  <!-- Shared footer for subpages (the homepage has its own copy with build:status). Edit partials/footer.html, then run python3 tools/build.py. -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="/" class="wordmark" aria-label="Noxium ホーム">Noxium<span aria-hidden="true">.</span></a>
+          <p>写真・ビデオ・メモのためのプライベートな保管庫。</p>
+        </div>
+
+        <nav class="footer-groups" aria-label="フッター">
+          <div>
+            <h2 class="footer-heading">製品</h2>
+            <ul role="list">
+              <li><a href="/#features">機能</a></li>
+              <li><a href="/#security">暗号化のしくみ</a></li>
+              <li><a href="/#pricing">無料版と Pro</a></li>
+              <li><a href="/ja/best-photo-vault-apps-iphone">写真保管庫アプリの比較</a></li>
+              <li><a href="/#faq">よくある質問</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="footer-heading">ガイド</h2>
+            <ul role="list">
+              <li><a href="/ja/guides/how-to-hide-photos-on-iphone">iPhone で写真を隠す方法</a></li>
+  <li><a href="/ja/guides/is-iphone-hidden-album-private">「非表示」アルバムは安全？</a></li>
+  <li><a href="/ja/guides/hidden-photos-iphone">非表示の写真</a></li>
+  <li><a href="/ja/guides/move-photo-vault-to-new-iphone">保管庫を新しい iPhone へ</a></li>
+  <li><a href="/ja/guides/photo-vault-lost-photos">保管庫の写真が消えた</a></li>
+  <li><a href="/ja/guides/keepsafe-alternatives">Keepsafe の代わり</a></li>
+  <li><a href="/ja/guides/vaultaire-vs-keepsafe">Vaultaire と Keepsafe</a></li>
+              <li><a href="/ja/guides/">すべてのガイド</a></li>
+              <li><a href="/ja/features/">機能</a></li>
+  <li><a href="/compare/">Comparisons</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="footer-heading">会社情報</h2>
+            <ul role="list">
+              <li><a href="/about">概要</a></li>
+              <li><a href="/support">サポート</a></li>
+              <li><a href="/privacy">プライバシーポリシー</a></li>
+              <li><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener">利用規約</a></li>
+              <li><a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Noxium。独立系デベロッパ Inertia Projects が開発。App Store のプライバシーラベル：データの収集なし。</p>
+        <nav class="lang-list" aria-label="言語"><a href="/features/on-device-encryption" hreflang="en" lang="en">English</a><a href="/de/features/on-device-encryption" hreflang="de" lang="de">Deutsch</a><a href="/fr/features/on-device-encryption" hreflang="fr" lang="fr">Français</a><a href="/es/features/on-device-encryption" hreflang="es" lang="es">Español</a><a href="/pt-br/features/on-device-encryption" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a><a href="/it/features/on-device-encryption" hreflang="it" lang="it">Italiano</a><a href="/ja/features/on-device-encryption" hreflang="ja" lang="ja" aria-current="true">日本語</a><a href="/ko/features/on-device-encryption" hreflang="ko" lang="ko">한국어</a><a href="/zh-hant/features/on-device-encryption" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></nav>
+        <p>Apple、Apple のロゴ、iPhone、iPad、Face ID は、米国およびその他の国や地域で登録された Apple Inc. の商標です。App Store は Apple Inc. のサービスマークです。</p>
+      </div>
+    </div>
+  </footer>
+  <!-- /build:footer -->
+
+  <script src="/app.js" defer></script>
+</body>
+</html>

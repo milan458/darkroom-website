@@ -232,6 +232,36 @@
       "keyword": "caja fuerte de fotos con patrón",
       "published": "2026-11-22",
       "updated": "2026-11-22"
+    },
+    "/features/on-device-encryption": {
+      "source": "2026-11-13",
+      "title": "App de caja fuerte de fotos cifrada: qué cifra Noxium",
+      "description": "Noxium cifra cada foto, vídeo y nota en el iPhone con AES-256-GCM, con una clave que sale de tu patrón mediante Argon2id. Qué cubre y qué no.",
+      "headline": "Cifrado en el dispositivo: qué cifra Noxium, y cómo",
+      "summary": "Qué cifra Noxium en el iPhone, la cadena de claves del patrón al archivo y dónde acaba el cifrado.",
+      "crumb": "Cifrado en el dispositivo",
+      "keyword": "app caja fuerte fotos cifrada iphone",
+      "published": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    "/features/encrypted-icloud-backup": {
+      "source": "2026-11-13",
+      "title": "Caja fuerte de fotos con copia cifrada en iCloud: Noxium",
+      "description": "Noxium hace una copia cifrada de tu caja fuerte en tu propio iCloud. Qué se sube, cómo restaurarla en un iPhone nuevo y lo que no puede hacer.",
+      "headline": "Copia cifrada en iCloud: tu caja fuerte, en tu iCloud, ilegible para cualquier otra persona",
+      "summary": "Cómo funciona la copia cifrada de Noxium en tu propio iCloud, cómo restaurarla y sus límites.",
+      "crumb": "Copia cifrada en iCloud",
+      "keyword": "caja fuerte fotos copia icloud",
+      "published": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    "/features/": {
+      "source": "2026-11-12",
+      "title": "Funciones de Noxium: patrón, cifrado y cajas señuelo",
+      "description": "Lo que hace la caja fuerte de fotos Noxium, función a función: bloqueo con patrón, cifrado en el dispositivo, copia cifrada en iCloud, cajas señuelo y más.",
+      "crumb": "Funciones",
+      "published": "2026-11-23",
+      "updated": "2026-11-23"
     }
   },
   "facts": [

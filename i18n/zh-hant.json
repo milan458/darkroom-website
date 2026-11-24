@@ -298,6 +298,36 @@
       "keyword": "照片保險庫 圖形鎖",
       "published": "2026-11-22",
       "updated": "2026-11-22"
+    },
+    "/features/on-device-encryption": {
+      "source": "2026-11-13",
+      "title": "加密照片保險庫 App：Noxium 加密了什麼",
+      "description": "Noxium 在 iPhone 上以 AES-256-GCM 加密每張照片、影片和備忘錄，金鑰由你的圖形經 Argon2id 產生。保護什麼、不保護什麼。",
+      "headline": "裝置端加密：Noxium 加密了什麼，又是怎麼加密",
+      "summary": "Noxium 在 iPhone 上加密的內容、從圖形到檔案的金鑰鏈，以及加密的極限。",
+      "crumb": "裝置端加密",
+      "keyword": "iphone 加密照片保險庫 app",
+      "published": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    "/features/encrypted-icloud-backup": {
+      "source": "2026-11-13",
+      "title": "照片保險庫加密 iCloud 備份：Noxium",
+      "description": "Noxium 把保險庫的加密副本備份到你自己的 iCloud。會上傳什麼、怎麼在新 iPhone 回復，以及做不到的事。",
+      "headline": "加密 iCloud 備份：你的保險庫存在你的 iCloud，其他人都讀不到",
+      "summary": "Noxium 加密備份的運作方式、回復方法和限制。",
+      "crumb": "加密 iCloud 備份",
+      "keyword": "照片保險庫 icloud 備份",
+      "published": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    "/features/": {
+      "source": "2026-11-12",
+      "title": "Noxium 功能：圖形鎖、加密、偽裝保險庫",
+      "description": "Noxium 照片保險庫的功能逐一介紹：圖形鎖、裝置端加密、加密 iCloud 備份、偽裝保險庫等。",
+      "crumb": "功能",
+      "published": "2026-11-23",
+      "updated": "2026-11-23"
     }
   }
 }

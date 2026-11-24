@@ -232,6 +232,36 @@
       "keyword": "foto tresor mustersperre",
       "published": "2026-11-22",
       "updated": "2026-11-22"
+    },
+    "/features/on-device-encryption": {
+      "source": "2026-11-13",
+      "title": "Verschlüsselte Foto-Tresor-App: Was Noxium verschlüsselt",
+      "description": "Noxium verschlüsselt Fotos, Videos und Notizen auf dem iPhone mit AES-256-GCM, Schlüssel per Argon2id aus deinem Muster. Was geschützt ist, was nicht.",
+      "headline": "Verschlüsselung auf dem Gerät: Was Noxium verschlüsselt, und wie",
+      "summary": "Was Noxium auf dem iPhone verschlüsselt, die Schlüsselkette vom Muster bis zur Datei und wo die Verschlüsselung endet.",
+      "crumb": "Verschlüsselung auf dem Gerät",
+      "keyword": "verschlüsselte foto tresor app",
+      "published": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    "/features/encrypted-icloud-backup": {
+      "source": "2026-11-13",
+      "title": "Foto-Tresor mit iCloud-Backup, verschlüsselt: so bei Noxium",
+      "description": "Noxium sichert eine verschlüsselte Kopie deines Tresors in deiner eigenen iCloud. Was hochgeladen wird, wie das Wiederherstellen geht und die Grenzen.",
+      "headline": "Verschlüsseltes iCloud-Backup: dein Tresor, in deiner iCloud, für alle anderen unlesbar",
+      "summary": "Wie das verschlüsselte Backup von Noxium in deiner eigenen iCloud funktioniert, wie du es wiederherstellst und wo seine Grenzen liegen.",
+      "crumb": "Verschlüsseltes iCloud-Backup",
+      "keyword": "foto tresor icloud backup",
+      "published": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    "/features/": {
+      "source": "2026-11-12",
+      "title": "Noxium Funktionen: Mustersperre, Verschlüsselung, Tarntresor",
+      "description": "Was der Noxium Foto-Tresor kann, Funktion für Funktion: Mustersperre, Verschlüsselung auf dem Gerät, verschlüsseltes iCloud-Backup, Tarntresore und mehr.",
+      "crumb": "Funktionen",
+      "published": "2026-11-23",
+      "updated": "2026-11-23"
     }
   },
   "facts": [

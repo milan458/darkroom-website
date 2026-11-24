@@ -232,6 +232,36 @@
       "keyword": "cassaforte foto con sequenza",
       "published": "2026-11-22",
       "updated": "2026-11-22"
+    },
+    "/features/on-device-encryption": {
+      "source": "2026-11-13",
+      "title": "App cassaforte per foto cifrata: cosa cifra Noxium",
+      "description": "Noxium cifra ogni foto, video e nota sull’iPhone con AES-256-GCM, con una chiave ricavata dalla tua sequenza tramite Argon2id. Cosa copre e cosa no.",
+      "headline": "Cifratura sul dispositivo: cosa cifra Noxium, e come",
+      "summary": "Cosa cifra Noxium sull’iPhone, la catena di chiavi dalla sequenza al file e dove finisce la cifratura.",
+      "crumb": "Cifratura sul dispositivo",
+      "keyword": "app cassaforte foto cifrata iphone",
+      "published": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    "/features/encrypted-icloud-backup": {
+      "source": "2026-11-13",
+      "title": "Cassaforte foto con backup iCloud cifrato: Noxium",
+      "description": "Noxium salva una copia cifrata della cassaforte nel tuo iCloud. Cosa viene caricato, come ripristinare su un nuovo iPhone e cosa il backup non fa.",
+      "headline": "Backup iCloud cifrato: la tua cassaforte, nel tuo iCloud, illeggibile per chiunque altro",
+      "summary": "Come funziona il backup cifrato di Noxium nel tuo iCloud, come ripristinarlo e i suoi limiti.",
+      "crumb": "Backup iCloud cifrato",
+      "keyword": "cassaforte foto backup icloud",
+      "published": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    "/features/": {
+      "source": "2026-11-12",
+      "title": "Funzioni di Noxium: sequenza, cifratura, cassaforte esca",
+      "description": "Cosa fa la cassaforte per foto Noxium, funzione per funzione: blocco con sequenza, cifratura sul dispositivo, backup iCloud cifrato, casseforti esca.",
+      "crumb": "Funzioni",
+      "published": "2026-11-23",
+      "updated": "2026-11-23"
     }
   },
   "facts": [

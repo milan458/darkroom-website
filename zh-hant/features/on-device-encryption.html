@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#FAF9F6" media="(prefers-color-scheme: light)">
+  <!-- build:meta -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WWNMHW99TP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-WWNMHW99TP');
+  </script>
+  <title>加密照片保險庫 App：Noxium 加密了什麼</title>
+  <meta name="description" content="Noxium 在 iPhone 上以 AES-256-GCM 加密每張照片、影片和備忘錄，金鑰由你的圖形經 Argon2id 產生。保護什麼、不保護什麼。">
+  <link rel="canonical" href="https://getnoxium.app/zh-hant/features/on-device-encryption">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <link rel="alternate" hreflang="en" href="https://getnoxium.app/features/on-device-encryption">
+  <link rel="alternate" hreflang="de" href="https://getnoxium.app/de/features/on-device-encryption">
+  <link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/features/on-device-encryption">
+  <link rel="alternate" hreflang="es" href="https://getnoxium.app/es/features/on-device-encryption">
+  <link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/features/on-device-encryption">
+  <link rel="alternate" hreflang="it" href="https://getnoxium.app/it/features/on-device-encryption">
+  <link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/features/on-device-encryption">
+  <link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/features/on-device-encryption">
+  <link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/features/on-device-encryption">
+  <link rel="alternate" hreflang="x-default" href="https://getnoxium.app/features/on-device-encryption">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Noxium">
+  <meta property="og:title" content="加密照片保險庫 App：Noxium 加密了什麼">
+  <meta property="og:description" content="Noxium 在 iPhone 上以 AES-256-GCM 加密每張照片、影片和備忘錄，金鑰由你的圖形經 Argon2id 產生。保護什麼、不保護什麼。">
+  <meta property="og:url" content="https://getnoxium.app/zh-hant/features/on-device-encryption">
+  <meta property="og:image" content="https://getnoxium.app/assets/og/noxium-og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Noxium photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="article:published_time" content="2026-11-23">
+  <meta property="article:modified_time" content="2026-11-23">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="加密照片保險庫 App：Noxium 加密了什麼">
+  <meta name="twitter:description" content="Noxium 在 iPhone 上以 AES-256-GCM 加密每張照片、影片和備忘錄，金鑰由你的圖形經 Argon2id 產生。保護什麼、不保護什麼。">
+  <meta name="twitter:image" content="https://getnoxium.app/assets/og/noxium-og.png">
+  <meta name="twitter:image:alt" content="Noxium photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
+  <meta name="apple-itunes-app" content="app-id=6824616093">
+  <!-- /build:meta -->
+
+  <link rel="icon" type="image/svg+xml" href="/assets/noxium-logo.svg">
+  <link rel="apple-touch-icon" href="/assets/noxium-icon-180.png">
+
+  <link rel="preload" href="/assets/fonts/instrument-serif-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/fonts/fonts.css">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/pages.css">
+
+  <!-- build:jsonld -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://getnoxium.app/#org",
+        "name": "Inertia Projects",
+        "url": "https://getnoxium.app/about",
+        "email": "business@inertiaprojects.info",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://getnoxium.app/assets/noxium-icon-512.png"
+        },
+        "brand": {
+          "@type": "Brand",
+          "name": "Noxium"
+        },
+        "sameAs": [
+          "https://apps.apple.com/app/apple-store/id6824616093"
+        ]
+      },
+      {
+        "@type": "Article",
+        "@id": "https://getnoxium.app/zh-hant/features/on-device-encryption#article",
+        "headline": "裝置端加密：Noxium 加密了什麼，又是怎麼加密",
+        "description": "Noxium 在 iPhone 上以 AES-256-GCM 加密每張照片、影片和備忘錄，金鑰由你的圖形經 Argon2id 產生。保護什麼、不保護什麼。",
+        "url": "https://getnoxium.app/zh-hant/features/on-device-encryption",
+        "mainEntityOfPage": "https://getnoxium.app/zh-hant/features/on-device-encryption",
+        "image": "https://getnoxium.app/assets/guides/noxium-backup.jpg",
+        "datePublished": "2026-11-23",
+        "dateModified": "2026-11-23",
+        "author": {
+          "@id": "https://getnoxium.app/#org"
+        },
+        "publisher": {
+          "@id": "https://getnoxium.app/#org"
+        },
+        "inLanguage": "zh-Hant",
+        "isPartOf": {
+          "@id": "https://getnoxium.app/#website"
+        },
+        "about": {
+          "@id": "https://getnoxium.app/#app"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Noxium",
+            "item": "https://getnoxium.app/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "功能",
+            "item": "https://getnoxium.app/zh-hant/features/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "裝置端加密",
+            "item": "https://getnoxium.app/zh-hant/features/on-device-encryption"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://getnoxium.app/zh-hant/features/on-device-encryption#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "iPhone 的照片保險庫 App 有加密嗎？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "有些有，很多沒有。請找有沒有寫出 AES-256 之類的加密演算法、備份前是否在裝置上加密，以及能不能用電子郵件重設密碼。我們的 照片保險庫 App 安全嗎？ 指南有一份檢查清單。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "開發者看得到我的照片嗎？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "看不到。Noxium 沒有帳號，也沒有保存你照片的伺服器。金鑰在你的 iPhone 上由你的圖形產生，你 iCloud 裡的備份也已經加密。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "iPhone 不是本來就有加密嗎？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "有。iOS 會加密整支手機，但它用你的 iPhone 密碼解鎖。任何知道密碼的人，或從手機做出的備份，都能看到你的「照片」圖庫。Noxium 再加一道鎖，金鑰只有你的圖形能產生。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "AES-256-GCM 是什麼？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "使用 256 位元金鑰的 AES 是業界通用的標準加密演算法。GCM 會加上一個能偵測加密資料任何變更的標籤，所以損壞或被竄改的檔案打不開。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "加密會讓 Noxium 變慢嗎？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "解鎖會刻意花一點時間，因為 Argon2id 本來就設計得很慢。瀏覽很快：縮圖會先出現，影片則是邊播放邊以 1 MiB 區塊解密。"
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <!-- /build:jsonld -->
+</head>
+<body>
+  <!-- build:header -->
+  <!-- Shared header (homepage and subpages). Edit partials/header.html, then run python3 tools/build.py. -->
+  <a href="#main-content" class="skip-link">跳至主要內容</a>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <nav class="nav glass" aria-label="主要導覽">
+        <a href="/" class="wordmark" aria-label="Noxium 首頁">Noxium<span aria-hidden="true">.</span></a>
+
+        <div class="nav-links">
+          <a href="/#features">功能</a>
+          <a href="/#security">安全性</a>
+          <a href="/#pricing">價格</a>
+          <a href="/compare/">比較</a>
+          <a href="/zh-hant/guides/">指南</a>
+        </div>
+
+        <div class="nav-actions">
+          <a href="https://apps.apple.com/app/apple-store/id6824616093" class="btn btn-ink btn-nav nav-cta" data-cta="nav" data-label-waitlist="加入 Beta 測試" data-label-live="下載 Noxium">下載 Noxium</a>
+          <button type="button" class="mobile-menu-btn" id="mobile-menu-btn" aria-expanded="false" aria-controls="mobile-drawer" aria-label="選單">
+            <svg class="icon icon-menu" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 9h14M5 15h14"/></svg>
+            <svg class="icon icon-close" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <div class="mobile-drawer glass" id="mobile-drawer" hidden>
+      <nav class="mobile-drawer-list" aria-label="行動版">
+        <a href="/#features">功能</a>
+        <a href="/#security">安全性</a>
+        <a href="/#pricing">價格</a>
+        <a href="/zh-hant/best-photo-vault-apps-iphone">比較保險庫 App</a>
+        <a href="/zh-hant/guides/">指南</a>
+        <a href="/about">關於</a>
+        <a href="/support">支援</a>
+      </nav>
+    </div>
+  </header>
+  <!-- /build:header -->
+
+  <main id="main-content" tabindex="-1">
+    <div class="page-hero">
+      <div class="container">
+        <!-- build:breadcrumbs -->
+        <nav class="crumbs" aria-label="導覽路徑">
+          <ol>
+            <li><a href="/">Noxium</a></li>
+            <li><a href="/zh-hant/features/">功能</a></li>
+            <li aria-current="page">裝置端加密</li>
+          </ol>
+        </nav>
+        <!-- /build:breadcrumbs -->
+        <p class="eyebrow"><span class="dot dot-ink" aria-hidden="true"></span>功能</p>
+        <h1>裝置端加密：Noxium 加密了什麼，又是怎麼加密</h1>
+        <!-- build:byline -->
+        <p class="byline"><span>作者：<a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>最後更新：<time datetime="2026-11-23">2026年11月23日</time></span></p>
+        <!-- /build:byline -->
+        <div class="answer">
+          <span class="answer-label">簡短回答</span>
+          <p>Noxium 會在你的 iPhone 上，先把每張照片、每部影片和每則備忘錄加密，才儲存或備份。金鑰由你的圖形經 Argon2id 產生，檔案則以 AES-256-GCM 封存。名稱、日期和地點也會加密，而你的圖形從不儲存。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container article-layout">
+      <article class="prose">
+        <p>很多照片保險庫 App 只是在一般圖片檔前面擋一個 PIN 碼畫面。只要有人透過電腦備份、鑑識工具或程式錯誤等其他管道拿到這些檔案，照片就直接攤在那裡。加密的照片保險庫 App 只儲存打亂後的資料，所以沒有你的金鑰，複製檔案也沒用。這頁精確說明我們開發的保險庫 Noxium 在你的 iPhone 上加密了什麼、用了哪些工具，以及保護到哪裡為止。</p>
+
+        <h2 id="how">Noxium 的加密如何運作？</h2>
+        <p>Noxium 採用「金鑰裡的金鑰」。你的圖形產生一把金鑰，這把金鑰打開保險庫金鑰，保險庫金鑰再為每個檔案打開各自的金鑰。從手指到照片的鏈條如下：</p>
+        <ol class="steps">
+          <li><strong>圖形金鑰。</strong>你畫下<a href="/zh-hant/features/pattern-lock">圖形</a>時，Argon2id（來自 libsodium）會用 64 MiB 記憶體、3 次運算和隨機鹽值，把它延展成 256 位元的金鑰。慢正是重點：每次猜測都要花上真正的時間和記憶體。</li>
+          <li><strong>保險庫金鑰。</strong>每個保險庫都有自己的隨機 256 位元金鑰。它只以被圖形金鑰封存的形式儲存，使用 Apple CryptoKit 的 AES-256-GCM。</li>
+          <li><strong>檔案金鑰。</strong>每張照片、每部影片、每則備忘錄都有自己的隨機金鑰，由保險庫金鑰封存。縮圖使用從檔案金鑰衍生出的另一把金鑰。</li>
+          <li><strong>檔案本身。</strong>每個檔案以 1 MiB 為一個區塊，用 AES-256-GCM 加密，每個區塊都有自己的驗證標籤。長影片不必先解密整個檔案就能播放；被更改或損壞的區塊會拒絕打開，而不是顯示損壞的資料。</li>
+        </ol>
+        <p>更改圖形只會重新封存保險庫金鑰，所以就算有上千張照片，也是一下子就完成。你的<a href="/features/recovery-phrase">復原短語</a>是同一把保險庫金鑰上的第二道封印。想不用數學了解背後的概念，請讀<a href="/zh-hant/guides/how-encrypted-photo-vaults-work">加密照片保險庫如何運作</a>。</p>
+
+        <h2 id="what">到底加密了哪些東西？</h2>
+        <p>你放進保險庫的一切，以及與它們相關的細節。這很重要，因為光是一份檔名和日期清單，就能透露很多事。</p>
+        <div class="data-table-wrap" tabindex="0" role="region" aria-labelledby="enc-caption">
+          <table class="data-table">
+            <caption id="enc-caption">Noxium 在 iPhone 上加密的內容</caption>
+            <thead><tr><th scope="col">資料</th><th scope="col">加密？</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">照片、影片、原況照片</th><td class="yes">是，AES-256-GCM，每個檔案一把金鑰</td></tr>
+              <tr><th scope="row">縮圖和預覽</th><td class="yes">是，使用各自的衍生金鑰</td></tr>
+              <tr><th scope="row">名稱、日期和地點</th><td class="yes">是</td></tr>
+              <tr><th scope="row">相簿名稱和備忘錄</th><td class="yes">是</td></tr>
+              <tr><th scope="row">你的圖形</th><td>完全不儲存</td></tr>
+              <tr><th scope="row">iCloud 備份</th><td class="yes">是，只上傳已加密的資料</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>在儲存空間裡，保險庫檔案使用隨機名稱，並採用 iOS 最強的檔案保護等級，所以 iPhone 上鎖時，iOS 也會把它們鎖住。它們刻意不納入 iPhone 本身的備份；Noxium 改為製作自己的<a href="/zh-hant/features/encrypted-icloud-backup">加密 iCloud 備份</a>。</p>
+
+        <h2 id="share">從分享選單加入的照片呢？</h2>
+        <p>它們在 Noxium 主程式開啟之前就已加密。你在其他 App 使用<span class="path">傳送到Noxium</span>時，分享延伸功能會用一把新金鑰加密每個檔案，再把那把金鑰封存給一把公開金鑰。延伸功能從來不持有你的保險庫金鑰。下次解鎖時，Noxium 會打開信封，把檔案移進你的保險庫。</p>
+
+        <h2 id="setup">怎麼開啟？</h2>
+        <p>不用特別開啟。不論免費或 Pro，每個保險庫、每個項目都一直有加密。</p>
+        <ol class="steps">
+          <li><strong>設定你的圖形。</strong>第一次打開 Noxium 時，畫一個至少經過 6 顆螺栓的圖形。這會建立你的第一個保險庫和它的金鑰。</li>
+          <li><strong>加入照片。</strong>從「照片」匯入、用內建相機拍攝，或使用<span class="path">傳送到Noxium</span>。每個項目在加入時就會加密。</li>
+          <li><strong>刪除原始檔。</strong>留在「照片」App 的副本不受保護。開啟<span class="path">設定 › App設定 › 提供從「照片」刪除的選項</span>（請看<a href="/features/import-export">匯入與匯出</a>），Noxium 就會在匯入後提議刪除它們，接著在「照片」清空<span class="path">選集 › 更多項目 › 最近刪除</span>。</li>
+        </ol>
+        <figure class="shot">
+          <img src="/assets/guides/noxium-backup.jpg" alt="Noxium 備份畫面：保險庫在 iPhone 上加密，並私密備份到使用者自己的 iCloud" width="559" height="1216" loading="lazy" decoding="async">
+          <figcaption>加密先在 iPhone 上完成。備份的只有加密後的結果。</figcaption>
+        </figure>
+
+        <h2 id="limits">加密擋不住什麼？</h2>
+        <p>加密保護的是存放中的檔案。它保護不了你正在看的照片，也保護不了保險庫外的副本。</p>
+        <ul>
+          <li><strong>打開中的保險庫。</strong>解鎖期間，任何拿著手機的人都看得到你看到的東西。使用<span class="path">設定 › 離開後鎖定</span>和<span class="path">螢幕朝下時鎖定</span>。</li>
+          <li><strong>太弱的圖形。</strong>Argon2id 會減慢猜測，但 Z 字形的圖形還是很快會被猜到。</li>
+          <li><strong>其他地方的副本。</strong>還留在「照片」或 iCloud 照片裡的原始檔、截圖，以及你匯出的檔案，都不會被 Noxium 加密。</li>
+          <li><strong>被入侵的 iPhone。</strong>間諜軟體，或執行惡意程式碼的越獄手機，可以在保險庫打開時看到畫面。</li>
+          <li><strong>被逼迫。</strong>如果有人逼你畫出圖形，加密幫不上忙。<a href="/zh-hant/guides/what-is-a-decoy-vault">偽裝保險庫</a>可以。</li>
+        </ul>
+        <p>保險庫內容在 App 切換器和螢幕錄影時會被隱藏，足以應付不經意的瞥見，但不能防禦間諜軟體。</p>
+
+        <h2 id="plans">是免費還是 Pro？</h2>
+        <p>每個方案的加密都一樣。免費方案可存 150 張照片、10 部影片和不限量備忘錄，並有完整的 iCloud 備份與回復。Noxium Pro 加上項目不限、緊急清除、iPhone 與 iPad 同步、自訂圖像、相簿圖形和共享保險庫。Pro 結束後，你仍可完整檢視、匯出和備份保險庫裡現有的一切。</p>
+
+        <div class="cta-card">
+          <p class="cta-card-title">說得出原理的加密</p>
+          <p>圖形用 Argon2id，每個檔案用 AES-256-GCM，你自己的 iCloud 裡只有加密資料。</p>
+          <a href="https://apps.apple.com/app/apple-store/id6824616093" class="btn btn-primary" data-cta="body" data-label-waitlist="加入 Beta" data-label-live="在 App Store 下載">在 App Store 下載</a>
+          <!-- build:status -->
+          <span class="release-status">可在 App Store 下載，支援 iPhone 和 iPad。</span>
+          <!-- /build:status -->
+        </div>
+
+        <h2 id="faq">常見問題</h2>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>iPhone 的照片保險庫 App 有加密嗎？</span></span></summary>
+            <div class="faq-body"><p>有些有，很多沒有。請找有沒有寫出 AES-256 之類的加密演算法、備份前是否在裝置上加密，以及能不能用電子郵件重設密碼。我們的<a href="/zh-hant/guides/are-photo-vault-apps-safe">照片保險庫 App 安全嗎？</a>指南有一份檢查清單。</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>開發者看得到我的照片嗎？</span></span></summary>
+            <div class="faq-body"><p>看不到。Noxium 沒有帳號，也沒有保存你照片的伺服器。金鑰在你的 iPhone 上由你的圖形產生，你 iCloud 裡的備份也已經加密。</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>iPhone 不是本來就有加密嗎？</span></span></summary>
+            <div class="faq-body"><p>有。iOS 會加密整支手機，但它用你的 iPhone 密碼解鎖。任何知道密碼的人，或從手機做出的備份，都能看到你的「照片」圖庫。Noxium 再加一道鎖，金鑰只有你的圖形能產生。</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>AES-256-GCM 是什麼？</span></span></summary>
+            <div class="faq-body"><p>使用 256 位元金鑰的 AES 是業界通用的標準加密演算法。GCM 會加上一個能偵測加密資料任何變更的標籤，所以損壞或被竄改的檔案打不開。</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>加密會讓 Noxium 變慢嗎？</span></span></summary>
+            <div class="faq-body"><p>解鎖會刻意花一點時間，因為 Argon2id 本來就設計得很慢。瀏覽很快：縮圖會先出現，影片則是邊播放邊以 1 MiB 區塊解密。</p></div>
+          </details>
+        </div>
+
+        <p><em>發現錯誤或過時的資訊嗎？請寄信到 <a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a> 告訴我們，我們會修正。</em></p>
+      </article>
+
+      <aside class="article-aside" aria-label="本頁內容">
+        <nav class="toc" aria-label="目錄">
+          <p class="toc-title">本頁內容</p>
+          <ol>
+            <li><a href="#how">運作方式</a></li>
+            <li><a href="#what">加密的內容</a></li>
+            <li><a href="#share">從分享選單加入</a></li>
+            <li><a href="#setup">開啟方式</a></li>
+            <li><a href="#limits">保護不了的事</a></li>
+            <li><a href="#plans">免費或 Pro</a></li>
+            <li><a href="#faq">常見問題</a></li>
+          </ol>
+        </nav>
+        <!-- build:related -->
+        <div class="related">
+          <p class="toc-title">相關頁面</p>
+          <ul role="list">
+            <li><a href="/zh-hant/features/pattern-lock">圖形鎖</a></li>
+            <li><a href="/zh-hant/features/encrypted-icloud-backup">加密 iCloud 備份</a></li>
+            <li><a href="/zh-hant/guides/how-encrypted-photo-vaults-work">加密原理</a></li>
+            <li><a href="/zh-hant/features/">全部功能</a></li>
+          </ul>
+        </div>
+        <!-- /build:related -->
+      </aside>
+    </div>
+  </main>
+
+  <!-- build:footer -->
+  <!-- Shared footer for subpages (the homepage has its own copy with build:status). Edit partials/footer.html, then run python3 tools/build.py. -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="/" class="wordmark" aria-label="Noxium 首頁">Noxium<span aria-hidden="true">.</span></a>
+          <p>照片、影片和備忘錄的私密保險庫。</p>
+        </div>
+
+        <nav class="footer-groups" aria-label="頁尾">
+          <div>
+            <h2 class="footer-heading">產品</h2>
+            <ul role="list">
+              <li><a href="/#features">功能</a></li>
+              <li><a href="/#security">加密原理</a></li>
+              <li><a href="/#pricing">免費版與 Pro 版</a></li>
+              <li><a href="/zh-hant/best-photo-vault-apps-iphone">照片保險庫 App 比較</a></li>
+              <li><a href="/#faq">常見問題</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="footer-heading">指南</h2>
+            <ul role="list">
+              <li><a href="/zh-hant/guides/how-to-hide-photos-on-iphone">iPhone 隱藏照片</a></li>
+  <li><a href="/zh-hant/guides/is-iphone-hidden-album-private">「已隱藏」相簿安全嗎？</a></li>
+  <li><a href="/zh-hant/guides/hidden-photos-iphone">隱藏的照片</a></li>
+  <li><a href="/zh-hant/guides/move-photo-vault-to-new-iphone">保險庫移到新 iPhone</a></li>
+  <li><a href="/zh-hant/guides/photo-vault-lost-photos">保險庫照片不見了</a></li>
+  <li><a href="/zh-hant/guides/keepsafe-alternatives">Keepsafe 替代 App</a></li>
+  <li><a href="/zh-hant/guides/vaultaire-vs-keepsafe">Vaultaire 和 Keepsafe</a></li>
+              <li><a href="/zh-hant/guides/">全部指南</a></li>
+              <li><a href="/zh-hant/features/">功能</a></li>
+  <li><a href="/compare/">Comparisons</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="footer-heading">公司</h2>
+            <ul role="list">
+              <li><a href="/about">關於</a></li>
+              <li><a href="/support">支援</a></li>
+              <li><a href="/privacy">隱私政策</a></li>
+              <li><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener">使用條款</a></li>
+              <li><a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Noxium。由獨立開發者 Inertia Projects 開發。App Store 隱私標籤：未收集資料。</p>
+        <nav class="lang-list" aria-label="語言"><a href="/features/on-device-encryption" hreflang="en" lang="en">English</a><a href="/de/features/on-device-encryption" hreflang="de" lang="de">Deutsch</a><a href="/fr/features/on-device-encryption" hreflang="fr" lang="fr">Français</a><a href="/es/features/on-device-encryption" hreflang="es" lang="es">Español</a><a href="/pt-br/features/on-device-encryption" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a><a href="/it/features/on-device-encryption" hreflang="it" lang="it">Italiano</a><a href="/ja/features/on-device-encryption" hreflang="ja" lang="ja">日本語</a><a href="/ko/features/on-device-encryption" hreflang="ko" lang="ko">한국어</a><a href="/zh-hant/features/on-device-encryption" hreflang="zh-Hant" lang="zh-Hant" aria-current="true">繁體中文</a></nav>
+        <p>Apple、Apple 標誌、iPhone、iPad 和 Face ID 是 Apple Inc. 在美國和其他國家和地區註冊的商標。App Store 是 Apple Inc. 的服務商標。</p>
+      </div>
+    </div>
+  </footer>
+  <!-- /build:footer -->
+
+  <script src="/app.js" defer></script>
+</body>
+</html>

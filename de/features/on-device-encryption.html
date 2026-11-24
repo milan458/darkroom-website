@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#FAF9F6" media="(prefers-color-scheme: light)">
+  <!-- build:meta -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WWNMHW99TP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-WWNMHW99TP');
+  </script>
+  <title>Verschlüsselte Foto-Tresor-App: Was Noxium verschlüsselt</title>
+  <meta name="description" content="Noxium verschlüsselt Fotos, Videos und Notizen auf dem iPhone mit AES-256-GCM, Schlüssel per Argon2id aus deinem Muster. Was geschützt ist, was nicht.">
+  <link rel="canonical" href="https://getnoxium.app/de/features/on-device-encryption">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <link rel="alternate" hreflang="en" href="https://getnoxium.app/features/on-device-encryption">
+  <link rel="alternate" hreflang="de" href="https://getnoxium.app/de/features/on-device-encryption">
+  <link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/features/on-device-encryption">
+  <link rel="alternate" hreflang="es" href="https://getnoxium.app/es/features/on-device-encryption">
+  <link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/features/on-device-encryption">
+  <link rel="alternate" hreflang="it" href="https://getnoxium.app/it/features/on-device-encryption">
+  <link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/features/on-device-encryption">
+  <link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/features/on-device-encryption">
+  <link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/features/on-device-encryption">
+  <link rel="alternate" hreflang="x-default" href="https://getnoxium.app/features/on-device-encryption">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Noxium">
+  <meta property="og:title" content="Verschlüsselte Foto-Tresor-App: Was Noxium verschlüsselt">
+  <meta property="og:description" content="Noxium verschlüsselt Fotos, Videos und Notizen auf dem iPhone mit AES-256-GCM, Schlüssel per Argon2id aus deinem Muster. Was geschützt ist, was nicht.">
+  <meta property="og:url" content="https://getnoxium.app/de/features/on-device-encryption">
+  <meta property="og:image" content="https://getnoxium.app/assets/og/noxium-og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Noxium photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
+  <meta property="og:locale" content="de_DE">
+  <meta property="article:published_time" content="2026-11-23">
+  <meta property="article:modified_time" content="2026-11-23">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Verschlüsselte Foto-Tresor-App: Was Noxium verschlüsselt">
+  <meta name="twitter:description" content="Noxium verschlüsselt Fotos, Videos und Notizen auf dem iPhone mit AES-256-GCM, Schlüssel per Argon2id aus deinem Muster. Was geschützt ist, was nicht.">
+  <meta name="twitter:image" content="https://getnoxium.app/assets/og/noxium-og.png">
+  <meta name="twitter:image:alt" content="Noxium photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
+  <meta name="apple-itunes-app" content="app-id=6824616093">
+  <!-- /build:meta -->
+
+  <link rel="icon" type="image/svg+xml" href="/assets/noxium-logo.svg">
+  <link rel="apple-touch-icon" href="/assets/noxium-icon-180.png">
+
+  <link rel="preload" href="/assets/fonts/instrument-serif-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/fonts/fonts.css">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/pages.css">
+
+  <!-- build:jsonld -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://getnoxium.app/#org",
+        "name": "Inertia Projects",
+        "url": "https://getnoxium.app/about",
+        "email": "business@inertiaprojects.info",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://getnoxium.app/assets/noxium-icon-512.png"
+        },
+        "brand": {
+          "@type": "Brand",
+          "name": "Noxium"
+        },
+        "sameAs": [
+          "https://apps.apple.com/app/apple-store/id6824616093"
+        ]
+      },
+      {
+        "@type": "Article",
+        "@id": "https://getnoxium.app/de/features/on-device-encryption#article",
+        "headline": "Verschlüsselung auf dem Gerät: Was Noxium verschlüsselt, und wie",
+        "description": "Noxium verschlüsselt Fotos, Videos und Notizen auf dem iPhone mit AES-256-GCM, Schlüssel per Argon2id aus deinem Muster. Was geschützt ist, was nicht.",
+        "url": "https://getnoxium.app/de/features/on-device-encryption",
+        "mainEntityOfPage": "https://getnoxium.app/de/features/on-device-encryption",
+        "image": "https://getnoxium.app/assets/guides/noxium-backup.jpg",
+        "datePublished": "2026-11-23",
+        "dateModified": "2026-11-23",
+        "author": {
+          "@id": "https://getnoxium.app/#org"
+        },
+        "publisher": {
+          "@id": "https://getnoxium.app/#org"
+        },
+        "inLanguage": "de-DE",
+        "isPartOf": {
+          "@id": "https://getnoxium.app/#website"
+        },
+        "about": {
+          "@id": "https://getnoxium.app/#app"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Noxium",
+            "item": "https://getnoxium.app/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Funktionen",
+            "item": "https://getnoxium.app/de/features/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Verschlüsselung auf dem Gerät",
+            "item": "https://getnoxium.app/de/features/on-device-encryption"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://getnoxium.app/de/features/on-device-encryption#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Sind Foto-Tresor-Apps auf dem iPhone verschlüsselt?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Manche ja, viele nicht. Achte auf ein genanntes Verfahren wie AES-256, Verschlüsselung auf dem Gerät vor dem Backup und kein Zurücksetzen des Passworts per E-Mail. Unsere Anleitung Sind Foto-Tresor-Apps sicher? hat eine Checkliste."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Kann der Entwickler meine Fotos sehen?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nein. Noxium hat keine Konten und keine Server, die deine Fotos halten. Die Schlüssel entstehen aus deinem Muster auf deinem iPhone, und das Backup in deiner iCloud ist schon verschlüsselt."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Ist das iPhone nicht schon verschlüsselt?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Doch, iOS verschlüsselt das ganze Handy, aber es entsperrt sich mit deinem iPhone-Code. Wer den Code kennt, oder ein Backup des Handys, sieht deine Fotos-Mediathek. Noxium fügt ein zweites Schloss hinzu, mit einem Schlüssel, den nur dein Muster erzeugt."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Was ist AES-256-GCM?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "AES mit einem 256-Bit-Schlüssel ist das branchenweit übliche Verfahren. GCM fügt ein Kennzeichen hinzu, das jede Änderung an den verschlüsselten Daten erkennt, sodass beschädigte oder veränderte Dateien sich nicht öffnen."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Macht die Verschlüsselung Noxium langsam?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Das Entsperren dauert absichtlich einen Moment, weil Argon2id bewusst langsam ist. Das Blättern ist schnell: Zuerst kommen die Vorschaubilder, und Videos werden beim Abspielen in Blöcken von 1 MiB entschlüsselt."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <!-- /build:jsonld -->
+</head>
+<body>
+  <!-- build:header -->
+  <!-- Shared header (homepage and subpages). Edit partials/header.html, then run python3 tools/build.py. -->
+  <a href="#main-content" class="skip-link">Zum Inhalt springen</a>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <nav class="nav glass" aria-label="Hauptnavigation">
+        <a href="/" class="wordmark" aria-label="Noxium Startseite">Noxium<span aria-hidden="true">.</span></a>
+
+        <div class="nav-links">
+          <a href="/#features">Funktionen</a>
+          <a href="/#security">Sicherheit</a>
+          <a href="/#pricing">Preise</a>
+          <a href="/compare/">Vergleich</a>
+          <a href="/de/guides/">Anleitungen</a>
+        </div>
+
+        <div class="nav-actions">
+          <a href="https://apps.apple.com/app/apple-store/id6824616093" class="btn btn-ink btn-nav nav-cta" data-cta="nav" data-label-waitlist="Beta beitreten" data-label-live="Noxium laden">Noxium laden</a>
+          <button type="button" class="mobile-menu-btn" id="mobile-menu-btn" aria-expanded="false" aria-controls="mobile-drawer" aria-label="Menü">
+            <svg class="icon icon-menu" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 9h14M5 15h14"/></svg>
+            <svg class="icon icon-close" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <div class="mobile-drawer glass" id="mobile-drawer" hidden>
+      <nav class="mobile-drawer-list" aria-label="Mobil">
+        <a href="/#features">Funktionen</a>
+        <a href="/#security">Sicherheit</a>
+        <a href="/#pricing">Preise</a>
+        <a href="/de/best-photo-vault-apps-iphone">Tresor-Apps vergleichen</a>
+        <a href="/de/guides/">Anleitungen</a>
+        <a href="/about">Über uns</a>
+        <a href="/support">Support</a>
+      </nav>
+    </div>
+  </header>
+  <!-- /build:header -->
+
+  <main id="main-content" tabindex="-1">
+    <div class="page-hero">
+      <div class="container">
+        <!-- build:breadcrumbs -->
+        <nav class="crumbs" aria-label="Brotkrumen-Navigation">
+          <ol>
+            <li><a href="/">Noxium</a></li>
+            <li><a href="/de/features/">Funktionen</a></li>
+            <li aria-current="page">Verschlüsselung auf dem Gerät</li>
+          </ol>
+        </nav>
+        <!-- /build:breadcrumbs -->
+        <p class="eyebrow"><span class="dot dot-ink" aria-hidden="true"></span>Funktion</p>
+        <h1>Verschlüsselung auf dem Gerät: Was Noxium verschlüsselt, und wie</h1>
+        <!-- build:byline -->
+        <p class="byline"><span>Von <a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>Zuletzt aktualisiert am <time datetime="2026-11-23">23. November 2026</time></span></p>
+        <!-- /build:byline -->
+        <div class="answer">
+          <span class="answer-label">Kurz gesagt</span>
+          <p>Noxium verschlüsselt jedes Foto, Video und jede Notiz auf deinem iPhone, bevor etwas gespeichert oder gesichert wird. Die Schlüssel entstehen aus deinem Muster per Argon2id, Dateien werden mit AES-256-GCM versiegelt. Auch Namen, Daten und Orte sind verschlüsselt, und dein Muster wird nie gespeichert.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container article-layout">
+      <article class="prose">
+        <p>Viele Foto-Tresor-Apps zeigen einen PIN-Bildschirm vor gewöhnlichen Bilddateien. Kommt jemand auf anderem Weg an diese Dateien, über ein Computer-Backup, ein Forensik-Tool oder einen Fehler, liegen die Fotos einfach da. Eine verschlüsselte Foto-Tresor-App speichert nur verwürfelte Daten, also ist eine Kopie der Dateien ohne deinen Schlüssel nutzlos. Diese Seite erklärt genau, was Noxium, der Tresor, den wir entwickeln, auf deinem iPhone verschlüsselt, mit welchen Werkzeugen, und wo der Schutz endet.</p>
+
+        <h2 id="how">Wie funktioniert die Verschlüsselung von Noxium?</h2>
+        <p>Noxium nutzt Schlüssel in Schlüsseln. Dein Muster ergibt einen Schlüssel, dieser öffnet einen Tresorschlüssel, und der Tresorschlüssel öffnet für jede Datei einen eigenen Schlüssel. So sieht die Kette aus, vom Finger bis zum Foto:</p>
+        <ol class="steps">
+          <li><strong>Musterschlüssel.</strong> Wenn du dein <a href="/de/features/pattern-lock">Muster</a> zeichnest, streckt Argon2id (aus libsodium) es zu einem 256-Bit-Schlüssel, mit 64 MiB Speicher, 3 Durchläufen und einem zufälligen Salt. Die Langsamkeit ist der Sinn: Jeder Rateversuch kostet echte Zeit und echten Speicher.</li>
+          <li><strong>Tresorschlüssel.</strong> Jeder Tresor hat einen eigenen zufälligen 256-Bit-Schlüssel. Er wird nur versiegelt mit dem Musterschlüssel gespeichert, per AES-256-GCM aus Apples CryptoKit.</li>
+          <li><strong>Dateischlüssel.</strong> Jedes Foto, Video und jede Notiz bekommt einen eigenen Zufallsschlüssel, versiegelt mit dem Tresorschlüssel. Vorschaubilder nutzen einen eigenen, vom Dateischlüssel abgeleiteten Schlüssel.</li>
+          <li><strong>Die Datei selbst.</strong> Jede Datei wird mit AES-256-GCM in Blöcken von 1 MiB verschlüsselt, jeder mit eigenem Prüfkennzeichen. Ein langes Video spielt ab, ohne dass zuerst die ganze Datei entschlüsselt wird, und ein veränderter oder beschädigter Block öffnet sich nicht, statt kaputte Daten zu zeigen.</li>
+        </ol>
+        <p>Änderst du dein Muster, wird nur der Tresorschlüssel neu versiegelt; das dauert auch bei Tausenden Fotos nur einen Moment. Deine <a href="/features/recovery-phrase">Wiederherstellungsphrase</a> ist ein zweites Siegel um denselben Tresorschlüssel. Die Ideen dahinter, ohne Mathe, erklärt <a href="/de/guides/how-encrypted-photo-vaults-work">So funktionieren verschlüsselte Foto-Tresore</a>.</p>
+
+        <h2 id="what">Was genau wird verschlüsselt?</h2>
+        <p>Alles, was du in einen Tresor legst, plus die Angaben dazu. Das ist wichtig, denn schon eine Liste von Dateinamen und Daten kann viel verraten.</p>
+        <div class="data-table-wrap" tabindex="0" role="region" aria-labelledby="enc-caption">
+          <table class="data-table">
+            <caption id="enc-caption">Was Noxium auf dem iPhone verschlüsselt</caption>
+            <thead><tr><th scope="col">Daten</th><th scope="col">Verschlüsselt?</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Fotos, Videos, Live Photos</th><td class="yes">Ja, AES-256-GCM, ein Schlüssel pro Datei</td></tr>
+              <tr><th scope="row">Vorschaubilder und Vorschauen</th><td class="yes">Ja, mit eigenem abgeleitetem Schlüssel</td></tr>
+              <tr><th scope="row">Namen, Daten und Orte</th><td class="yes">Ja</td></tr>
+              <tr><th scope="row">Albumnamen und Notizen</th><td class="yes">Ja</td></tr>
+              <tr><th scope="row">Dein Muster</th><td>Wird überhaupt nie gespeichert</td></tr>
+              <tr><th scope="row">Das iCloud-Backup</th><td class="yes">Ja, hochgeladen werden nur bereits verschlüsselte Daten</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Auf dem Speicher tragen Tresordateien zufällige Namen und nutzen die stärkste Dateischutzklasse von iOS, sind also zusätzlich von iOS gesperrt, solange das iPhone gesperrt ist. Aus dem eigenen Backup des iPhone sind sie absichtlich ausgenommen; Noxium macht stattdessen ein eigenes <a href="/de/features/encrypted-icloud-backup">verschlüsseltes iCloud-Backup</a>.</p>
+
+        <h2 id="share">Und Fotos, die über das Teilen-Menü kommen?</h2>
+        <p>Sie werden verschlüsselt, bevor die Haupt-App von Noxium überhaupt startet. Nutzt du in einer anderen App <span class="path">An Noxium senden</span>, verschlüsselt die Teilen-Erweiterung jede Datei mit einem neuen Schlüssel und versiegelt diesen Schlüssel für einen öffentlichen Schlüssel. Die Erweiterung hat deinen Tresorschlüssel nie. Beim nächsten Entsperren öffnet Noxium den Umschlag und verschiebt die Datei in deinen Tresor.</p>
+
+        <h2 id="setup">Wie schaltest du sie ein?</h2>
+        <p>Gar nicht nötig. Die Verschlüsselung ist immer an, für jeden Tresor und jedes Objekt, kostenlos und mit Pro.</p>
+        <ol class="steps">
+          <li><strong>Leg dein Muster fest.</strong> Beim ersten Öffnen von Noxium zeichnest du ein Muster über mindestens 6 Bolzen. Damit entstehen dein erster Tresor und sein Schlüssel.</li>
+          <li><strong>Füg Fotos hinzu.</strong> Importiere aus Fotos, nimm sie mit der eingebauten Kamera auf oder nutze <span class="path">An Noxium senden</span>. Jedes Objekt wird beim Hinzufügen verschlüsselt.</li>
+          <li><strong>Entferne die Originale.</strong> Kopien, die in der Fotos-App bleiben, sind nicht geschützt. Schalte <span class="path">Einstellungen › App-Einstellungen › Löschen aus Fotos anbieten</span> ein (siehe <a href="/features/import-export">Import und Export</a>), damit Noxium nach einem Import anbietet, sie zu löschen, und leere danach in Fotos <span class="path">Sammlungen › Dienstprogramme › Zuletzt gelöscht</span>.</li>
+        </ol>
+        <figure class="shot">
+          <img src="/assets/guides/noxium-backup.jpg" alt="Backup-Bildschirm von Noxium: Der Tresor ist auf dem iPhone verschlüsselt und privat in der iCloud des Nutzers gesichert" width="559" height="1216" loading="lazy" decoding="async">
+          <figcaption>Zuerst wird auf dem iPhone verschlüsselt. Gesichert wird nur das verschlüsselte Ergebnis.</figcaption>
+        </figure>
+
+        <h2 id="limits">Wovor schützt die Verschlüsselung nicht?</h2>
+        <p>Verschlüsselung schützt gespeicherte Dateien. Sie kann ein Foto nicht schützen, während du es ansiehst, und keine Kopie außerhalb des Tresors.</p>
+        <ul>
+          <li><strong>Ein offener Tresor.</strong> Solange er entsperrt ist, sieht jeder, der das Handy hält, was du siehst. Nutze <span class="path">Einstellungen › Nach dem Verlassen sperren</span> und <span class="path">Sperren, wenn mit Display nach unten</span>.</li>
+          <li><strong>Ein schwaches Muster.</strong> Argon2id bremst das Raten, aber ein Z-förmiges Muster ist trotzdem schnell erraten.</li>
+          <li><strong>Kopien anderswo.</strong> Originale, die noch in Fotos oder iCloud-Fotos liegen, Bildschirmfotos und Dateien, die du exportierst, verschlüsselt Noxium nicht.</li>
+          <li><strong>Ein kompromittiertes iPhone.</strong> Spyware oder ein gejailbreaktes iPhone mit feindlichem Code kann den Bildschirm sehen, während der Tresor offen ist.</li>
+          <li><strong>Zwang.</strong> Zwingt dich jemand, dein Muster zu zeichnen, hilft die Verschlüsselung nicht. Ein <a href="/de/guides/what-is-a-decoy-vault">Tarntresor</a> schon.</li>
+        </ul>
+        <p>Tresorinhalte sind im App-Umschalter und bei Bildschirmaufnahmen verborgen; das hilft gegen flüchtige Blicke. Gegen Spyware schützt es nicht.</p>
+
+        <h2 id="plans">Ist sie kostenlos oder Pro?</h2>
+        <p>Die Verschlüsselung ist in jedem Plan gleich. Der kostenlose Plan umfasst 150 Fotos, 10 Videos und unbegrenzt Notizen, mit vollständigem iCloud-Backup und Wiederherstellen. Noxium Pro fügt unbegrenzte Objekte, Notlöschung, Synchronisierung zwischen iPhone und iPad, eigene App-Symbole, Albummuster und geteilte Tresore hinzu. Endet Pro, behältst du vollen Zugriff, um alles im Tresor anzusehen, zu exportieren und zu sichern.</p>
+
+        <div class="cta-card">
+          <p class="cta-card-title">Verschlüsselung, über die du nachlesen kannst</p>
+          <p>Argon2id für dein Muster, AES-256-GCM für jede Datei und nur verschlüsselte Daten in deiner eigenen iCloud.</p>
+          <a href="https://apps.apple.com/app/apple-store/id6824616093" class="btn btn-primary" data-cta="body" data-label-waitlist="Beta beitreten" data-label-live="Im App Store laden">Im App Store laden</a>
+          <!-- build:status -->
+          <span class="release-status">Im App Store für iPhone und iPad erhältlich.</span>
+          <!-- /build:status -->
+        </div>
+
+        <h2 id="faq">Häufige Fragen</h2>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Sind Foto-Tresor-Apps auf dem iPhone verschlüsselt?</span></span></summary>
+            <div class="faq-body"><p>Manche ja, viele nicht. Achte auf ein genanntes Verfahren wie AES-256, Verschlüsselung auf dem Gerät vor dem Backup und kein Zurücksetzen des Passworts per E-Mail. Unsere Anleitung <a href="/de/guides/are-photo-vault-apps-safe">Sind Foto-Tresor-Apps sicher?</a> hat eine Checkliste.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Kann der Entwickler meine Fotos sehen?</span></span></summary>
+            <div class="faq-body"><p>Nein. Noxium hat keine Konten und keine Server, die deine Fotos halten. Die Schlüssel entstehen aus deinem Muster auf deinem iPhone, und das Backup in deiner iCloud ist schon verschlüsselt.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Ist das iPhone nicht schon verschlüsselt?</span></span></summary>
+            <div class="faq-body"><p>Doch, iOS verschlüsselt das ganze Handy, aber es entsperrt sich mit deinem iPhone-Code. Wer den Code kennt, oder ein Backup des Handys, sieht deine Fotos-Mediathek. Noxium fügt ein zweites Schloss hinzu, mit einem Schlüssel, den nur dein Muster erzeugt.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Was ist AES-256-GCM?</span></span></summary>
+            <div class="faq-body"><p>AES mit einem 256-Bit-Schlüssel ist das branchenweit übliche Verfahren. GCM fügt ein Kennzeichen hinzu, das jede Änderung an den verschlüsselten Daten erkennt, sodass beschädigte oder veränderte Dateien sich nicht öffnen.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Macht die Verschlüsselung Noxium langsam?</span></span></summary>
+            <div class="faq-body"><p>Das Entsperren dauert absichtlich einen Moment, weil Argon2id bewusst langsam ist. Das Blättern ist schnell: Zuerst kommen die Vorschaubilder, und Videos werden beim Abspielen in Blöcken von 1 MiB entschlüsselt.</p></div>
+          </details>
+        </div>
+
+        <p><em>Etwas falsch oder veraltet? Schreib an <a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a>, dann korrigieren wir es.</em></p>
+      </article>
+
+      <aside class="article-aside" aria-label="Auf dieser Seite">
+        <nav class="toc" aria-label="Inhaltsverzeichnis">
+          <p class="toc-title">Auf dieser Seite</p>
+          <ol>
+            <li><a href="#how">So funktioniert sie</a></li>
+            <li><a href="#what">Was verschlüsselt wird</a></li>
+            <li><a href="#share">Import über Teilen</a></li>
+            <li><a href="#setup">Einschalten</a></li>
+            <li><a href="#limits">Was sie nicht schützt</a></li>
+            <li><a href="#plans">Kostenlos oder Pro</a></li>
+            <li><a href="#faq">Häufige Fragen</a></li>
+          </ol>
+        </nav>
+        <!-- build:related -->
+        <div class="related">
+          <p class="toc-title">Verwandte Seiten</p>
+          <ul role="list">
+            <li><a href="/de/features/pattern-lock">Mustersperre</a></li>
+            <li><a href="/de/features/encrypted-icloud-backup">Verschlüsseltes iCloud-Backup</a></li>
+            <li><a href="/de/guides/how-encrypted-photo-vaults-work">So funktioniert Verschlüsselung</a></li>
+            <li><a href="/de/features/">Alle Funktionen</a></li>
+          </ul>
+        </div>
+        <!-- /build:related -->
+      </aside>
+    </div>
+  </main>
+
+  <!-- build:footer -->
+  <!-- Shared footer for subpages (the homepage has its own copy with build:status). Edit partials/footer.html, then run python3 tools/build.py. -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="/" class="wordmark" aria-label="Noxium Startseite">Noxium<span aria-hidden="true">.</span></a>
+          <p>Ein privater Tresor für Fotos, Videos und Notizen.</p>
+        </div>
+
+        <nav class="footer-groups" aria-label="Fußzeile">
+          <div>
+            <h2 class="footer-heading">Produkt</h2>
+            <ul role="list">
+              <li><a href="/#features">Funktionen</a></li>
+              <li><a href="/#security">So funktioniert die Verschlüsselung</a></li>
+              <li><a href="/#pricing">Free vs. Pro</a></li>
+              <li><a href="/de/best-photo-vault-apps-iphone">Foto-Tresor-Apps im Vergleich</a></li>
+              <li><a href="/#faq">FAQ</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="footer-heading">Anleitungen</h2>
+            <ul role="list">
+              <li><a href="/de/guides/how-to-hide-photos-on-iphone">Fotos auf dem iPhone verstecken</a></li>
+  <li><a href="/de/guides/is-iphone-hidden-album-private">Ist „Ausgeblendet“ privat?</a></li>
+  <li><a href="/de/guides/hidden-photos-iphone">Ausgeblendete Fotos</a></li>
+  <li><a href="/de/guides/move-photo-vault-to-new-iphone">Tresor aufs neue iPhone</a></li>
+  <li><a href="/de/guides/photo-vault-lost-photos">Fotos im Tresor verloren</a></li>
+  <li><a href="/de/guides/keepsafe-alternatives">Keepsafe-Alternativen</a></li>
+  <li><a href="/de/guides/vaultaire-vs-keepsafe">Vaultaire oder Keepsafe</a></li>
+              <li><a href="/de/guides/">Alle Anleitungen</a></li>
+              <li><a href="/de/features/">Funktionen</a></li>
+  <li><a href="/compare/">Comparisons</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="footer-heading">Unternehmen</h2>
+            <ul role="list">
+              <li><a href="/about">Über uns</a></li>
+              <li><a href="/support">Support</a></li>
+              <li><a href="/privacy">Datenschutzerklärung</a></li>
+              <li><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener">Nutzungsbedingungen</a></li>
+              <li><a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Noxium. Entwickelt von Inertia Projects, einem unabhängigen Entwickler. App-Store-Datenschutzangabe: Keine Daten erfasst.</p>
+        <nav class="lang-list" aria-label="Sprache"><a href="/features/on-device-encryption" hreflang="en" lang="en">English</a><a href="/de/features/on-device-encryption" hreflang="de" lang="de" aria-current="true">Deutsch</a><a href="/fr/features/on-device-encryption" hreflang="fr" lang="fr">Français</a><a href="/es/features/on-device-encryption" hreflang="es" lang="es">Español</a><a href="/pt-br/features/on-device-encryption" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a><a href="/it/features/on-device-encryption" hreflang="it" lang="it">Italiano</a><a href="/ja/features/on-device-encryption" hreflang="ja" lang="ja">日本語</a><a href="/ko/features/on-device-encryption" hreflang="ko" lang="ko">한국어</a><a href="/zh-hant/features/on-device-encryption" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></nav>
+        <p>Apple, das Apple Logo, iPhone, iPad und Face ID sind Marken der Apple Inc., die in den USA und weiteren Ländern eingetragen sind. App Store ist eine Dienstleistungsmarke der Apple Inc.</p>
+      </div>
+    </div>
+  </footer>
+  <!-- /build:footer -->
+
+  <script src="/app.js" defer></script>
+</body>
+</html>
