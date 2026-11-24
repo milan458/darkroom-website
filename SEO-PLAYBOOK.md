@@ -121,6 +121,14 @@ Answer **one** real question about hiding, locking, backing up or moving private
 - **If it fails** with `AUTH_REFRESH_FAILED` or `SCOPE_MISSING`: `gum auth login --scope https://www.googleapis.com/auth/webmasters.readonly`. If the sign-in expires every 7 days, the OAuth app in Google Cloud is still in Testing: publish it (Google Auth Platform → Audience → Publish app).
 - **Stop it:** `python3 tools/seo-daily.py --uninstall`. Other sites: add `--site sc-domain:example.com --sitemap https://example.com/sitemap.xml` to both commands.
 
+**Search Console data for the cloud runs.** The daily page and translation runs work in the cloud, where gum isn't signed in. With `--publish`, the Mac's daily report also pushes `getnoxium-app/summary.json` (impressions and positions per page and per query, striking-distance queries, competing pages, unindexed URLs, the pace rule) and `reports/latest.md` to the **private** repo `milan458/noxium-seo-data`. Raw data stays on the Mac. The cloud runs read it to translate the pages with the most impressions first and to see the real queries in a topic's cluster. Setup, once:
+
+1. Create the private repo on GitHub: `milan458/noxium-seo-data`, Private, no README.
+2. On the Mac: `cd ~/seo-data && git init -b main && git remote add origin https://github.com/milan458/noxium-seo-data.git`
+3. `cd ~/dev/darkroom-website && python3 tools/seo-daily.py --publish` (the first push), then `python3 tools/seo-daily.py --install --publish` to keep it in the daily schedule.
+
+Never point `--publish` at this website repo: it's public.
+
 Act on the report weekly, not daily: positions move day to day, and a page change needs 1–4 weeks to show. Daily, just look for anything not indexed or a sudden drop.
 
 ### Daily publishing (30-day plan, from November 2026)
