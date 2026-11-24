@@ -201,7 +201,7 @@
       "updated": "2026-11-18"
     },
     "/guides/how-encrypted-photo-vaults-work": {
-      "source": "2026-11-21",
+      "source": "2026-11-22",
       "title": "写真保管庫アプリの暗号化のしくみをやさしく解説",
       "description": "写真保管庫の暗号化とは？ 鍵、Argon2id、AES-256-GCM、暗号化バックアップを専門用語なしで解説。隠すだけのアプリの見分け方も。",
       "headline": "暗号化された写真保管庫のしくみを、わかりやすく解説",
@@ -209,7 +209,7 @@
       "crumb": "暗号化のしくみ",
       "keyword": "写真保管庫 暗号化 仕組み",
       "published": "2026-11-20",
-      "updated": "2026-11-21"
+      "updated": "2026-11-24"
     },
     "/guides/vaultaire-vs-keepsafe": {
       "source": "2026-11-12",

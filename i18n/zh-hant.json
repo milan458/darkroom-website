@@ -267,7 +267,7 @@
       "updated": "2026-11-18"
     },
     "/guides/how-encrypted-photo-vaults-work": {
-      "source": "2026-11-21",
+      "source": "2026-11-22",
       "title": "照片保險庫加密原理，一次看懂",
       "description": "照片保險庫的加密是什麼？用白話說明金鑰、Argon2id、AES-256-GCM 和加密備份，並教你分辨只是隱藏的 App。",
       "headline": "加密照片保險庫如何運作，一次說清楚",
@@ -275,7 +275,7 @@
       "crumb": "加密原理",
       "keyword": "照片保險庫 加密 原理",
       "published": "2026-11-20",
-      "updated": "2026-11-21"
+      "updated": "2026-11-24"
     },
     "/guides/vaultaire-vs-keepsafe": {
       "source": "2026-11-12",

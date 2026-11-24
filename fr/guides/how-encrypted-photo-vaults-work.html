@@ -41,7 +41,7 @@
   <meta property="og:image:alt" content="Noxium photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
   <meta property="og:locale" content="fr_CA">
   <meta property="article:published_time" content="2026-11-20">
-  <meta property="article:modified_time" content="2026-11-21">
+  <meta property="article:modified_time" content="2026-11-24">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Comment fonctionne un coffre photo chiffré">
   <meta name="twitter:description" content="Le chiffrement d’un coffre photo, sans jargon : clés, Argon2id, AES-256-GCM et sauvegardes. Et comment repérer un coffre qui ne fait que cacher.">
@@ -90,7 +90,7 @@
         "mainEntityOfPage": "https://getnoxium.app/fr/guides/how-encrypted-photo-vaults-work",
         "image": "https://getnoxium.app/assets/guides/noxium-lock.jpg",
         "datePublished": "2026-11-20",
-        "dateModified": "2026-11-21",
+        "dateModified": "2026-11-24",
         "author": {
           "@id": "https://getnoxium.app/#org"
         },
@@ -233,7 +233,7 @@
         <p class="eyebrow"><span class="dot dot-ink" aria-hidden="true"></span>Guide · Le chiffrement expliqué</p>
         <h1>Comment fonctionnent les coffres photo chiffrés, en termes simples</h1>
         <!-- build:byline -->
-        <p class="byline"><span>Par <a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>Publié le <time datetime="2026-11-20">20 novembre 2026</time></span><span aria-hidden="true">·</span><span>Mis à jour le <time datetime="2026-11-21">21 novembre 2026</time></span></p>
+        <p class="byline"><span>Par <a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>Publié le <time datetime="2026-11-20">20 novembre 2026</time></span><span aria-hidden="true">·</span><span>Mis à jour le <time datetime="2026-11-24">24 novembre 2026</time></span></p>
         <!-- /build:byline -->
         <div class="answer">
           <span class="answer-label">En bref</span>
@@ -305,16 +305,17 @@
         </ul>
         <p>En octobre 2026, seulement 2 des 17 apps coffre-fort que nous avons comparées nommaient AES-256-GCM dans leur description App Store. Voyez-les toutes dans <a href="/fr/best-photo-vault-apps-iphone">notre comparatif</a>.</p>
         <h2 id="apps">Que disent les apps coffre-fort populaires de leur chiffrement?</h2>
-        <p>Peu en disent beaucoup. Des 14 apps coffre-fort que nous avons analysées, seules Vaultaire et Obscura nomment leur algorithme dans leur fiche. Keepsafe nomme AES-256 dans son centre d’aide, et Obscura et Encamera publient leur code de chiffrement. Les autres disent « chiffré » sans détails, ou ne parlent pas de chiffrement.</p>
+        <p>Peu en disent beaucoup. Des 15 apps coffre-fort que nous avons analysées, seules Vaultaire et Obscura nomment leur algorithme dans leur fiche. Keepsafe nomme AES-256 dans son centre d’aide, et Obscura et Encamera publient leur code de chiffrement. Les autres disent « chiffré » sans détails, ou ne parlent pas de chiffrement.</p>
         <div class="data-table-wrap" tabindex="0" role="region" aria-labelledby="apps-caption">
           <table class="data-table">
-            <caption id="apps-caption">Ce que la fiche de chaque app sur l’App Store américain (et, quand c’est indiqué, ses pages d’aide ou son code) dit du chiffrement, vérifié du 11 au 21 novembre 2026. Nous rapportons des affirmations, pas des résultats de tests.</caption>
+            <caption id="apps-caption">Ce que la fiche de chaque app sur l’App Store américain (et, quand c’est indiqué, ses pages d’aide ou son code) dit du chiffrement, vérifié du 11 au 22 novembre 2026. Nous rapportons des affirmations, pas des résultats de tests.</caption>
             <thead><tr><th scope="col">App</th><th scope="col">Ce qu’elle dit du chiffrement</th></tr></thead>
             <tbody>
               <tr><th scope="row"><a href="/compare/vaultaire">Vaultaire</a></th><td>AES-256-GCM sur l’appareil; sauvegarde iCloud chiffrée avant le téléversement</td></tr>
               <tr><th scope="row"><a href="/compare/obscura">Obscura</a></th><td>AES-256-GCM; clé tirée de votre mot de passe par PBKDF2, 600 000 itérations; publie son code de chiffrement</td></tr>
               <tr><th scope="row"><a href="/compare/encamera">Encamera</a></th><td>Chiffre tous les médias; publie son code de chiffrement, basé sur libsodium</td></tr>
               <tr><th scope="row"><a href="/fr/compare/keepsafe">Keepsafe</a></th><td>« De niveau militaire » dans la fiche; AES-256 dans son centre d’aide</td></tr>
+              <tr><th scope="row"><a href="/compare/kyms">KYMS</a></th><td>« AES military-grade »; taille de clé et mode non précisés</td></tr>
               <tr><th scope="row"><a href="/compare/privault">Privault</a></th><td>Dit que le stockage est chiffré; algorithme non nommé</td></tr>
               <tr><th scope="row"><a href="/compare/private-photo-vault">Private Photo Vault</a></th><td>Sauvegarde en nuage dite « chiffrée »; algorithme non nommé</td></tr>
               <tr><th scope="row"><a href="/compare/pv-secret-photo-album">PV - Secret Photo Album</a></th><td>Mentionne un « chiffrement des données »; algorithme non nommé</td></tr>

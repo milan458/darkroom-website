@@ -41,7 +41,7 @@
   <meta property="og:image:alt" content="Noxium photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
   <meta property="og:locale" content="ko_KR">
   <meta property="article:published_time" content="2026-11-20">
-  <meta property="article:modified_time" content="2026-11-21">
+  <meta property="article:modified_time" content="2026-11-24">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="사진 금고 앱 암호화 원리, 쉽게 정리">
   <meta name="twitter:description" content="사진 금고의 암호화란? 키, Argon2id, AES-256-GCM, 암호화된 백업을 전문 용어 없이 설명하고, 숨기기만 하는 앱 구별법까지.">
@@ -90,7 +90,7 @@
         "mainEntityOfPage": "https://getnoxium.app/ko/guides/how-encrypted-photo-vaults-work",
         "image": "https://getnoxium.app/assets/guides/noxium-lock.jpg",
         "datePublished": "2026-11-20",
-        "dateModified": "2026-11-21",
+        "dateModified": "2026-11-24",
         "author": {
           "@id": "https://getnoxium.app/#org"
         },
@@ -233,7 +233,7 @@
         <p class="eyebrow"><span class="dot dot-ink" aria-hidden="true"></span>가이드 · 암호화 원리</p>
         <h1>암호화된 사진 금고의 원리, 쉽게 설명합니다</h1>
         <!-- build:byline -->
-        <p class="byline"><span>작성:<a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>게시일:<time datetime="2026-11-20">2026년 11월 20일</time></span><span aria-hidden="true">·</span><span>최종 업데이트:<time datetime="2026-11-21">2026년 11월 21일</time></span></p>
+        <p class="byline"><span>작성:<a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>게시일:<time datetime="2026-11-20">2026년 11월 20일</time></span><span aria-hidden="true">·</span><span>최종 업데이트:<time datetime="2026-11-24">2026년 11월 24일</time></span></p>
         <!-- /build:byline -->
         <div class="answer">
           <span class="answer-label">짧은 답변</span>
@@ -305,16 +305,17 @@
         </ul>
         <p>2026년 10월 기준, 저희가 비교한 금고 앱 17개 중 App Store 설명에 AES-256-GCM을 밝힌 앱은 2개뿐이었습니다. 전체 목록은 <a href="/ko/best-photo-vault-apps-iphone">비교 페이지</a>에서 볼 수 있습니다.</p>
         <h2 id="apps">인기 금고 앱들은 자기 암호화에 대해 뭐라고 말하나요?</h2>
-        <p>자세히 밝히는 앱은 드뭅니다. 저희가 리뷰한 금고 앱 14개 중 앱 정보에 암호 방식을 밝힌 앱은 Vaultaire와 Obscura뿐입니다. Keepsafe는 도움말 센터에서 AES-256을 밝히고, Obscura와 Encamera는 암호화 코드를 공개합니다. 나머지는 자세한 설명 없이 '암호화'라고만 하거나 암호화를 언급하지 않습니다.</p>
+        <p>자세히 밝히는 앱은 드뭅니다. 저희가 리뷰한 금고 앱 15개 중 앱 정보에 암호 방식을 밝힌 앱은 Vaultaire와 Obscura뿐입니다. Keepsafe는 도움말 센터에서 AES-256을 밝히고, Obscura와 Encamera는 암호화 코드를 공개합니다. 나머지는 자세한 설명 없이 '암호화'라고만 하거나 암호화를 언급하지 않습니다.</p>
         <div class="data-table-wrap" tabindex="0" role="region" aria-labelledby="apps-caption">
           <table class="data-table">
-            <caption id="apps-caption">각 앱의 미국 App Store 앱 정보(표시된 경우 해당 앱의 도움말 페이지나 코드)가 암호화에 대해 밝힌 내용, 2026년 11월 11일~21일 확인. 테스트 결과가 아니라 각 앱의 주장을 정리한 것입니다.</caption>
+            <caption id="apps-caption">각 앱의 미국 App Store 앱 정보(표시된 경우 해당 앱의 도움말 페이지나 코드)가 암호화에 대해 밝힌 내용, 2026년 11월 11일~22일 확인. 테스트 결과가 아니라 각 앱의 주장을 정리한 것입니다.</caption>
             <thead><tr><th scope="col">앱</th><th scope="col">암호화에 대해 밝힌 내용</th></tr></thead>
             <tbody>
               <tr><th scope="row"><a href="/compare/vaultaire">Vaultaire</a></th><td>기기에서 AES-256-GCM, iCloud 백업은 업로드 전에 암호화</td></tr>
               <tr><th scope="row"><a href="/compare/obscura">Obscura</a></th><td>AES-256-GCM, 비밀번호에서 PBKDF2(60만 회)로 키 생성, 암호화 코드 공개</td></tr>
               <tr><th scope="row"><a href="/compare/encamera">Encamera</a></th><td>모든 미디어를 암호화, libsodium 기반 암호화 코드 공개</td></tr>
               <tr><th scope="row"><a href="/ko/compare/keepsafe">Keepsafe</a></th><td>앱 정보에는 '군사 등급', 도움말 센터에는 AES-256</td></tr>
+              <tr><th scope="row"><a href="/compare/kyms">KYMS</a></th><td>'AES military-grade', 키 길이와 모드는 밝히지 않음</td></tr>
               <tr><th scope="row"><a href="/compare/privault">Privault</a></th><td>저장소가 암호화된다고 밝힘, 암호 방식은 밝히지 않음</td></tr>
               <tr><th scope="row"><a href="/compare/private-photo-vault">Private Photo Vault</a></th><td>클라우드 백업을 '암호화'라고 설명, 암호 방식은 밝히지 않음</td></tr>
               <tr><th scope="row"><a href="/compare/pv-secret-photo-album">PV - Secret Photo Album</a></th><td>'데이터 암호화' 언급, 암호 방식은 밝히지 않음</td></tr>
