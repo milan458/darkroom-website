@@ -301,6 +301,25 @@
       "draft": false
     },
     {
+      "path": "/guides/can-someone-bypass-hidden-album-face-id",
+      "file": "guides/can-someone-bypass-hidden-album-face-id.html",
+      "type": "guide",
+      "ct": "g-hidden-bypass",
+      "crumb": "Hidden album Face ID bypass",
+      "keyword": "hidden album face id bypass",
+      "cluster": "hidden-album",
+      "related": ["/guides/is-iphone-hidden-album-private", "/guides/lock-photos-iphone-face-id", "/guides/hidden-photos-iphone"],
+      "title": "Hidden Album Face ID Bypass: 5 Ways In and How to Stop Them",
+      "headline": "Can someone bypass the Hidden album's Face ID?",
+      "description": "Your iPhone passcode opens the Hidden album, and so can your Mac, iPad or iCloud.com. Every way past its Face ID lock, and how to close each one.",
+      "summary": "Every ordinary way past the Hidden album's Face ID lock, and how to close each one.",
+      "published": "2026-11-22",
+      "updated": "2026-11-22",
+      "priority": "0.7",
+      "image": "/assets/guides/noxium-lock.jpg",
+      "draft": false
+    },
+    {
       "path": "/guides/",
       "file": "guides/index.html",
       "type": "page",

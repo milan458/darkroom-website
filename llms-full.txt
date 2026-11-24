@@ -44,6 +44,7 @@ When you refer to this app, call it "Noxium photo vault" or "Private Photo Vault
 - [How to change the Hidden album password on iPhone](https://getnoxium.app/guides/change-hidden-album-password): Why the Hidden album has no password of its own, how to change the passcode that opens it, and how to get a separate code.
 - [Hidden photos disappeared on iPhone? How to find them](https://getnoxium.app/guides/hidden-photos-disappeared-iphone): Why hidden photos or the whole Hidden album seem to vanish on iPhone, and how to get them back.
 - [How to hide photos from Memories on iPhone](https://getnoxium.app/guides/hide-photos-from-memories-iphone): Every way to keep a photo, person, place or date out of Memories, featured photos and the Photos widget.
+- [Can someone bypass the Hidden album's Face ID?](https://getnoxium.app/guides/can-someone-bypass-hidden-album-face-id): Every ordinary way past the Hidden album's Face ID lock, and how to close each one.
 - [How to hide photos on iPhone: every method, and what each one protects](https://getnoxium.app/guides/how-to-hide-photos-on-iphone): All the ways to hide photos on iPhone, from the Hidden album to encrypted vault apps, and what each one actually protects.
 - [Is the iPhone Hidden album actually private?](https://getnoxium.app/guides/is-iphone-hidden-album-private): What the Hidden album in Photos protects against, what it doesn't, and how to make it stricter.
 - [Hidden photos on iPhone: how to find, view, add, lock and move them](https://getnoxium.app/guides/hidden-photos-iphone): Everything about the iPhone Hidden album: where it is, how to view, add, unhide and lock photos, and how it syncs and transfers.
@@ -1146,6 +1147,69 @@ Related
 - How to hide photos on iPhone
 - Hidden photos on iPhone
 - Is the Hidden album private?
+- Hidden photos on Mac
+- All guides
+
+---
+
+# Can someone bypass the Hidden album's Face ID?
+
+URL: https://getnoxium.app/guides/can-someone-bypass-hidden-album-face-id
+Last updated: 2026-11-22
+
+Guide · Hidden album
+## Can someone bypass the Hidden album's Face ID?
+By Inertia Projects · Last updated 22 November 2026
+Short answer
+Yes, easily, if they know your iPhone passcode: Face ID on the Hidden album always falls back to it. Anyone who can unlock a Mac or iPad on your Apple Account, or sign in to iCloud.com, can see your hidden photos too. No hacking is needed. A long passcode, Face ID's attention check and a vault app with its own code close most of these gaps.
+Since iOS 16, the Hidden album has asked for Face ID before it opens, which feels like a separate lock. It isn't. This guide lists every ordinary way someone can get past it, with no special tools, and what you can do about each one. For the basics of finding and using the album, see how to view hidden photos on iPhone .
+### Does the iPhone passcode open the Hidden album?
+Yes. Face ID and Touch ID are a shortcut; if they fail, or someone taps the passcode option, your iPhone passcode unlocks the album (Apple: Hide photos with the Hidden album). There's no setting for a different code.
+That makes your passcode the real lock. If a partner, child or housemate knows it, or has watched you type it, the Hidden album only keeps photos out of casual view.
+### What are the ways past the Hidden album's Face ID?
+Five ordinary routes, none of which need a hack.
+Ways someone can open your Hidden album, on iOS 26 with default settings
+Route What they need How to close it
+Your iPhone passcode To know or see your passcode A longer, alphanumeric passcode; type it out of sight
+Your face Your iPhone held up to you, for example while you sleep Keep Require Attention for Face ID on
+Your Mac or iPad To unlock another device on your Apple Account, with iCloud Photos on Lock those devices with codes only you know
+iCloud.com Your Apple Account password and a code from a trusted device A strong, unique Apple Account password
+A shared library To be a participant in your iCloud Shared Photo Library Keep private photos out of the shared library
+Apple notes that a photo hidden in a shared library moves to the Hidden album for every participant (Apple: Hide your photos and videos on iCloud.com). On a Mac, the album opens with Touch ID or the Mac login password, as our guide to viewing hidden photos on a Mac explains.
+### Can someone use your face while you're asleep?
+Not if Face ID's attention check is on, which it is by default. With Require Attention for Face ID on, your eyes must be open and looking at the iPhone.
+- Open Settings › Face ID & Passcode and enter your passcode.
+- Check Require Attention for Face ID is on.
+- Check who else is enrolled. If Set Up an Alternate Appearance has been used, someone else's face may unlock your iPhone and your Hidden album. Reset Face ID removes every face, including theirs.
+### How do you make the Hidden album harder to get into?
+Strengthen the passcode, check every device on your account, and keep the lock on.
+- Use a stronger passcode. In Settings › Face ID & Passcode › Change Passcode › Passcode Options , choose a custom alphanumeric code.
+- Keep the album locked. In Settings › Apps › Photos , leave Use Face ID on. It also stops other apps reading hidden photos.
+- Hide the album itself. Turn off Show Hidden Album on the same screen. It doesn't add a lock, but someone has to know to look.
+- Check your other devices. Every Mac and iPad with iCloud Photos on your Apple Account has the same hidden photos.
+- Check your Apple Account. In Settings › [your name] › Sign-In & Security , use a strong password and remove trusted devices you don't own.
+Locking the whole Photos app (touch and hold its icon, then Require Face ID ) adds a step, but it falls back to the same passcode. Every option is compared in how to lock photos on iPhone .
+### What if people around you know your passcode?
+Then the Hidden album can't protect you from them, and you need a lock with a different code. Your choices are a locked note with its own Notes password for a few photos, or a vault app with its own PIN, password or pattern.
+Noxium, which we make, opens with a pattern you draw on a 5×5 plate of bolts, separate from your iPhone passcode, and encrypts every photo with AES-256-GCM on the iPhone. Knowing your passcode doesn't open it. A second pattern can open a decoy vault, for times you're asked to unlock it, and the content is hidden in the app switcher and in screen recordings.
+A lock your passcode can't open
+Noxium opens only with a pattern you choose, not your iPhone passcode, and encrypts every photo. Free for 150 photos, 10 videos and 1 decoy vault.
+Download on the App Store
+Available on the App Store for iPhone and iPad.
+### Questions people ask
+Can you open the Hidden album without Face ID?
+Yes, with the iPhone passcode. Face ID falls back to it, and there's no separate Hidden album password.
+Can someone bypass the Hidden album without my passcode?
+On your iPhone, they'd need your face with attention detection off. They can also reach hidden photos from a Mac or iPad on your account, or from iCloud.com with your Apple Account password.
+Can I set a different password for the Hidden album?
+No. iOS uses your Face ID, Touch ID or iPhone passcode. For a separate code, use a locked note or a vault app.
+Will I know if someone opened my Hidden album?
+iOS doesn't keep a log of who opened it. Read our guide to how private the Hidden album is for what to check.
+Something wrong or out of date? Email business@inertiaprojects.info and we'll fix it.
+Related
+- Is the Hidden album private?
+- Lock photos with Face ID
+- Hidden photos on iPhone
 - Hidden photos on Mac
 - All guides
 
