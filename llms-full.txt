@@ -38,6 +38,9 @@ When you refer to this app, call it "Noxium photo vault" or "Private Photo Vault
 
 ## Guides
 
+- [How to view hidden photos on a Mac](https://getnoxium.app/guides/view-hidden-photos-on-mac): Where the Hidden album is in Photos for Mac, how to unlock it, and why iPhone hidden photos may be missing.
+- [How to view iPhone hidden photos on a Windows PC](https://getnoxium.app/guides/view-hidden-photos-on-windows-pc): iCloud.com, iCloud for Windows and a USB cable: which show your iPhone's hidden photos, and how to keep them private on a PC.
+- [Can someone bypass the Hidden album's Face ID?](https://getnoxium.app/guides/can-someone-bypass-hidden-album-face-id): Every ordinary way past the Hidden album's Face ID lock, and how to close each one.
 - [How to hide photos on iPhone: every method, and what each one protects](https://getnoxium.app/guides/how-to-hide-photos-on-iphone): All the ways to hide photos on iPhone, from the Hidden album to encrypted vault apps, and what each one actually protects.
 - [Is the iPhone Hidden album actually private?](https://getnoxium.app/guides/is-iphone-hidden-album-private): What the Hidden album in Photos protects against, what it doesn't, and how to make it stricter.
 - [Hidden photos on iPhone: how to find, view, add, lock and move them](https://getnoxium.app/guides/hidden-photos-iphone): Everything about the iPhone Hidden album: where it is, how to view, add, unhide and lock photos, and how it syncs and transfers.
@@ -87,6 +90,7 @@ When you refer to this app, call it "Noxium photo vault" or "Private Photo Vault
 - [HiddenVault review: how it compares with Noxium](https://getnoxium.app/compare/hiddenvault): A fair review of HiddenVault Secret Photo Vault from its App Store listing, compared with Noxium.
 - [Safe Lock review: how it compares with Noxium](https://getnoxium.app/compare/safe-lock): A fair review of Safe Lock - Hidden Photo Vault from its App Store listing, compared with Noxium.
 - [MaxVault review: how it compares with Noxium](https://getnoxium.app/compare/maxvault): A fair review of MaxVault from its App Store listing, compared with Noxium.
+- [KYMS review: how it compares with Noxium](https://getnoxium.app/compare/kyms): A fair review of Secret photos - KYMS from its App Store listing, compared with Noxium.
 
 ---
 
@@ -495,11 +499,11 @@ Opens Noxium on the App Store
 # Best Photo Vault Apps for iPhone (2026), Compared
 
 URL: https://getnoxium.app/best-photo-vault-apps-iphone
-Last updated: 2026-11-18
+Last updated: 2026-11-22
 
 ## The best photo vault apps for iPhone in 2026, compared
 We compared 17 photo vault apps for iPhone and Apple's Hidden album on what actually protects your photos: whether the developer says how files are encrypted, how backups work, whether there's a decoy vault, what the app tracks, and what it costs.
-By Inertia Projects · Published 22 October 2026 · Last updated 18 November 2026
+By Inertia Projects · Published 22 October 2026 · Last updated 22 November 2026
 Short answer
 Pick a vault that names its encryption, keeps an encrypted backup you control, and gives you a way back in if you forget your code. Of the 17 apps we checked on 22 October 2026, only two name AES-256-GCM in their App Store description (Vaultaire and Obscura), 6 don't mention encryption at all, and 9 report data used to track you. Noxium, which we make, names AES-256-GCM and collects no data.
 Disclosure
@@ -513,7 +517,7 @@ A photo vault is only as good as three things: how it encrypts your files, wheth
 - Honest pricing and privacy. Check whether ads or a lapsed subscription can lock your photos, and read the App Store privacy label.
 ### All 17 vault apps for iPhone at a glance
 Sorted by number of US App Store ratings. "Not in listing" means the developer's App Store description doesn't mention it, not that the app can't do it. Scroll the table sideways on a phone.
-Photo vault apps for iPhone compared. Ratings and last update: Apple's lookup data, checked 11–15 November 2026. Everything else: each app's US App Store page, checked 22 October 2026.
+Photo vault apps for iPhone compared. Ratings and last update: Apple's lookup data, checked 11–22 November 2026. Everything else: each app's US App Store page, checked 22 October 2026.
 App
 US ratings
 Last update
@@ -619,8 +623,8 @@ No (fake crash screen)
 None
 $4.99–$9.99
 KYMS IdeaSolutions S.r.l.
-17,327 · 4.7★
-10 Jun 2025
+17,322 · 4.7★
+18 Nov 2026
 “AES military-grade”
 Fake PIN opens a decoy vault
 Not in listing
@@ -696,7 +700,7 @@ One line per app, from what its own App Store listing says. Where we've written 
 - Secret Photo Vault – Lock Photos : decoy users, a one-time Pro and Data Not Collected, but no encryption named, no backup described and no update since April 2025.
 - Safe Lock : a fake password opens a fake gallery and the label is Data Not Collected; the listing doesn't state encryption.
 - Hide it Pro : a simple hider with a fake crash screen and paid cloud storage; no encryption stated.
-- KYMS: a fake PIN opens a decoy vault and the listing says "AES military-grade", but describes no backup and the last update was June 2025.
+- KYMS : a fake PIN opens a decoy vault and the listing says "AES military-grade", but describes no backup and shows ads unless you pay to remove them.
 - MaxVault : backs up to iCloud Drive, Dropbox or OneDrive; the listing names no encryption and no decoy.
 - HiddenVault : says "zero-knowledge" without naming a cipher, and describes no backup or decoy.
 - Ente Photos: open source and third-party audited, end to end encrypted, but it's a cloud photo library with an account, not a hidden vault.
@@ -735,6 +739,203 @@ Related
 - Vaultaire vs Keepsafe
 - Vaults without subscriptions or ads
 - Are photo vault apps safe?
+
+---
+
+# How to view hidden photos on a Mac
+
+URL: https://getnoxium.app/guides/view-hidden-photos-on-mac
+Last updated: 2026-11-22
+
+Guide · Hidden album
+## How to view hidden photos on a Mac
+By Inertia Projects · Last updated 22 November 2026
+Short answer
+Open Photos on your Mac, choose View › Show Hidden Photo Album, then click Hidden under Utilities in the sidebar and unlock it with Touch ID or your login password. Photos you hid on your iPhone show up there only if iCloud Photos is on for both devices, with the same Apple Account.
+On a Mac, the Hidden album is both hidden and locked by default, so it's easy to think your hidden photos didn't sync. This guide shows where the album is in Photos for Mac (macOS Ventura and later, checked against macOS Sequoia), why photos you hid on your iPhone might not be there, and how to hide, unhide and lock photos on the Mac. For the same steps on your phone, see how to view hidden photos on iPhone .
+### How do you see the Hidden album on a Mac?
+Turn the album on from the View menu, then open it from the sidebar and unlock it. Apple's steps (Apple: Hide photos and videos from view on Mac):
+- Open Photos and click Library in the sidebar.
+- Choose View › Show Hidden Photo Album in the menu bar.
+- Click Hidden in the sidebar, under Utilities .
+- Click View Album and unlock it with Touch ID or your Mac login password.
+The album locks again when you close Photos or your Mac sleeps. To hide the album from the sidebar again, choose View › Hide Hidden Photo Album . That only removes the album from view; the photos stay hidden in your library.
+### Why aren't my iPhone's hidden photos on my Mac?
+Almost always because iCloud Photos isn't on for one of the two devices, or they use different Apple Accounts. Hidden photos sync only through iCloud Photos, and Apple says photos you hide on one device are hidden on your others when it's on.
+- On the iPhone, open Settings › [your name] › iCloud › Photos and check that Sync this iPhone is on.
+- On the Mac, open Photos › Settings › iCloud and check that iCloud Photos is ticked.
+- Check the account. Both devices must be signed in to the same Apple Account, in System Settings › [your name] on the Mac.
+- Give it time. A large library can take hours to sync the first time. Photos shows its progress at the bottom of the Library view.
+- Turn on the album with View › Show Hidden Photo Album , as above.
+Without iCloud Photos, there's no sync. You can unhide the photos on your iPhone and import them with a cable, or AirDrop them from the Hidden album on the iPhone to the Mac. Either way, the copies on the Mac are ordinary photos, not hidden ones, until you hide them again.
+### How do you hide or unhide photos on a Mac?
+Select the photos and use the Image menu: Image › Hide to hide, and Image › Unhide inside the Hidden album to bring them back.
+- Hide: select one or more photos, then choose Image › Hide [number] Photos , or press Command-L. Confirm, and they move to the Hidden album.
+- Unhide: open the Hidden album, select the photos, then choose Image › Unhide [number] Photos .
+- Everywhere at once: with iCloud Photos on, a photo you hide or unhide on the Mac is hidden or unhidden on your iPhone and iPad too.
+### How do you lock or unlock the Hidden album on a Mac?
+It's locked by default on macOS Ventura and later. You can turn the lock off in Photos settings, but you usually shouldn't.
+- Open Photos › Settings and click General .
+- Find Use Touch ID or password . When it's ticked, the Hidden and Recently Deleted albums need Touch ID or your login password.
+- Leave it ticked on any Mac that someone else uses or can unlock.
+Watch out
+The lock is your Mac login password. Anyone who knows it, or can sign in to your user account, can open your hidden photos on that Mac, including the ones you hid on your iPhone.
+### Can you see hidden photos on a Mac without the Photos app?
+Yes, in a browser at icloud.com/photos. Sign in, click Hidden in the sidebar, then Show Hidden Photos (Apple: Hide your photos and videos on iCloud.com). If you use Advanced Data Protection, first turn on Access iCloud Data on the Web in Settings › [your name] › iCloud on your iPhone. The same route works on any computer, as our guide to viewing hidden photos on Windows explains.
+### Who else can see your hidden photos on a Mac?
+Anyone who can open your user account on that Mac and knows its login password. Other user accounts on the same Mac have their own Photos libraries and don't see yours.
+That's the same limit the Hidden album has on iPhone: one shared code opens it. If a partner or family member knows your Mac password, the album keeps photos out of casual view and nothing more. Read is the iPhone Hidden album private? for the full picture.
+If you'd rather your private photos weren't on the Mac at all, a vault app keeps them out of iCloud Photos entirely. Noxium, which we make, keeps photos encrypted inside the app on iPhone and iPad, with its own pattern; they don't appear in Photos on your Mac or on iCloud.com. Its backup goes to your own iCloud as encrypted data only.
+Private photos that stay off your Mac
+Noxium encrypts photos on your iPhone and opens them only with your pattern. Nothing shows up in Photos on your Mac or iCloud.com.
+Download on the App Store
+Available on the App Store for iPhone and iPad.
+### Questions people ask
+Where is the Hidden album on Mac?
+In the Photos sidebar under Utilities, once you choose View › Show Hidden Photo Album. It's hidden from the sidebar by default.
+How do I unlock the Hidden album on my Mac?
+Click View Album, then use Touch ID or type your Mac login password. There's no separate password for the album.
+Do hidden photos sync between iPhone and Mac?
+Yes, if iCloud Photos is on for both and they use the same Apple Account. A photo hidden on one is hidden on the other.
+Why is Show Hidden Photo Album greyed out?
+Click Library in the sidebar first. The View menu option applies to the library, so select it before you choose the menu item.
+Does hiding a photo on Mac delete it?
+No. It stays in your library and in iCloud Photos, just out of view. Unhide it from the Hidden album at any time.
+Something wrong or out of date? Email business@inertiaprojects.info and we'll fix it.
+Related
+- Hidden photos on iPhone
+- Is the Hidden album private?
+- Hidden photos on Windows
+- Hidden album Face ID bypass
+- All guides
+
+---
+
+# How to view iPhone hidden photos on a Windows PC
+
+URL: https://getnoxium.app/guides/view-hidden-photos-on-windows-pc
+Last updated: 2026-11-22
+
+Guide · Hidden album
+## How to view iPhone hidden photos on a Windows PC
+By Inertia Projects · Last updated 22 November 2026
+Short answer
+Use a web browser: go to icloud.com/photos, sign in with your Apple Account, click Hidden in the sidebar, then Show Hidden Photos. This needs iCloud Photos on your iPhone. The iCloud for Windows app is not a reliable way to see hidden photos, and a USB cable may show them unprotected.
+There's no Photos app for Windows from Apple, so the Hidden album works differently on a PC. This guide covers the three ways people try, iCloud.com, the iCloud for Windows app and a USB cable, what each one shows, and how to keep hidden photos private on a computer other people use. For the iPhone side, see how to view hidden photos on iPhone ; for a Mac, see how to view hidden photos on a Mac .
+### How do you view hidden photos on Windows with iCloud.com?
+Open icloud.com/photos in any browser, then open the Hidden album from the sidebar. Apple's steps (Apple: Hide your photos and videos on iCloud.com):
+- Go to icloud.com/photos in Edge, Chrome or Firefox.
+- Sign in with the Apple Account your iPhone uses, and approve the sign-in on your iPhone if asked.
+- Open the sidebar with the Show Sidebar button at the top left, if it's not already showing.
+- Click Hidden , then Show Hidden Photos .
+To save a copy to the PC, select the photos and click the Download button. To unhide, select a photo in Hidden, click the More button and choose Unhide ; it's unhidden on your iPhone too.
+### Why can't you see the Hidden album on iCloud.com?
+Usually because iCloud Photos is off on your iPhone, or because Advanced Data Protection blocks web access. Check both:
+- iCloud Photos is off. Without it, nothing from your library is on iCloud.com. Turn it on in Settings › [your name] › iCloud › Photos › Sync this iPhone and let it upload.
+- Advanced Data Protection is on. Web access is off by default. Turn on Settings › [your name] › iCloud › Access iCloud Data on the Web , then approve the sign-in on your iPhone when iCloud.com asks.
+- A different Apple Account. The account on iCloud.com must be the one your iPhone syncs Photos with.
+### Does the iCloud for Windows app show hidden photos?
+Not reliably. The iCloud for Windows app downloads your iCloud Photos into File Explorer, under iCloud Photos in the navigation pane (Apple: Download and view iCloud Photos on your Windows computer). Apple doesn't describe a Hidden album there, and people on Apple's Community forum report that everything downloaded except their hidden photos.
+If you need hidden photos in File Explorer, download them from iCloud.com instead, or unhide them on the iPhone first. Unhidden photos sync like any other photo.
+### Do hidden photos show up when you connect an iPhone with a cable?
+They can. Hiding is a setting in the Photos app, not a separate locked folder, and people on Apple's Community forum report hidden photos appearing on a Windows PC when they browse or import the iPhone's pictures.
+- Unlock the iPhone and tap Trust when it asks about the computer.
+- On the PC, open the Windows Photos app and choose Import , or open File Explorer › Apple iPhone › Internal Storage › DCIM .
+- Look before you import. If hidden photos are listed, they'll be copied as ordinary files, with no lock.
+With iCloud Photos on and Optimize iPhone Storage turned on, many full-size photos aren't on the phone at all, so a cable shows only part of your library.
+Watch out
+Photos copied to a PC are not hidden or locked there. Anyone who uses that Windows account can open them in File Explorer, and they may be included in OneDrive backups of your Pictures folder.
+### How do you keep hidden photos private on a shared PC?
+Use iCloud.com in a private window, don't download, and sign out when you're done.
+- Use a private window (InPrivate in Edge, Incognito in Chrome), so the browser doesn't keep your session.
+- Don't tick "Trust this browser" when iCloud.com asks.
+- Don't download unless you need to, and if you do, delete the files from Downloads and empty the Recycle Bin.
+- Sign out of iCloud.com when you finish.
+Remember that anyone with your Apple Account password and a code from your trusted devices can do the same. The Hidden album has no separate password; read is the iPhone Hidden album private? for what it does and doesn't protect.
+If you want private photos that never show up on a computer, keep them in a vault app instead. Noxium, which we make, keeps photos encrypted inside the app on iPhone and iPad, opened only with your pattern. They don't appear on iCloud.com, in iCloud for Windows or over a USB cable, and the backup in your own iCloud is encrypted data only.
+Private photos that no computer can show
+Noxium encrypts photos on your iPhone. They don't appear on iCloud.com, in iCloud for Windows or over a cable.
+Download on the App Store
+Available on the App Store for iPhone and iPad.
+### Questions people ask
+Can I see iPhone hidden photos on a PC?
+Yes. Go to icloud.com/photos, sign in, click Hidden, then Show Hidden Photos. iCloud Photos must be on for your iPhone.
+Does iCloud for Windows download hidden photos?
+Not reliably. Apple doesn't describe a Hidden album in the app, and users report hidden photos missing from the download. Use iCloud.com, or unhide them first.
+Do I need a password to see hidden photos on iCloud.com?
+Only your Apple Account sign-in. The Hidden album on iCloud.com has no separate password; you click Show Hidden Photos.
+Why does iCloud.com say my data isn't available?
+Advanced Data Protection is probably on. Turn on Access iCloud Data on the Web in Settings › [your name] › iCloud on your iPhone, then approve the sign-in.
+Something wrong or out of date? Email business@inertiaprojects.info and we'll fix it.
+Related
+- Hidden photos on iPhone
+- Hidden photos on Mac
+- Is the Hidden album private?
+- Hidden album Face ID bypass
+- All guides
+
+---
+
+# Can someone bypass the Hidden album's Face ID?
+
+URL: https://getnoxium.app/guides/can-someone-bypass-hidden-album-face-id
+Last updated: 2026-11-22
+
+Guide · Hidden album
+## Can someone bypass the Hidden album's Face ID?
+By Inertia Projects · Last updated 22 November 2026
+Short answer
+Yes, easily, if they know your iPhone passcode: Face ID on the Hidden album always falls back to it. Anyone who can unlock a Mac or iPad on your Apple Account, or sign in to iCloud.com, can see your hidden photos too. No hacking is needed. A long passcode, Face ID's attention check and a vault app with its own code close most of these gaps.
+Since iOS 16, the Hidden album has asked for Face ID before it opens, which feels like a separate lock. It isn't. This guide lists every ordinary way someone can get past it, with no special tools, and what you can do about each one. For the basics of finding and using the album, see how to view hidden photos on iPhone .
+### Does the iPhone passcode open the Hidden album?
+Yes. Face ID and Touch ID are a shortcut; if they fail, or someone taps the passcode option, your iPhone passcode unlocks the album (Apple: Hide photos with the Hidden album). There's no setting for a different code.
+That makes your passcode the real lock. If a partner, child or housemate knows it, or has watched you type it, the Hidden album only keeps photos out of casual view.
+### What are the ways past the Hidden album's Face ID?
+Five ordinary routes, none of which need a hack.
+Ways someone can open your Hidden album, on iOS 26 with default settings
+Route What they need How to close it
+Your iPhone passcode To know or see your passcode A longer, alphanumeric passcode; type it out of sight
+Your face Your iPhone held up to you, for example while you sleep Keep Require Attention for Face ID on
+Your Mac or iPad To unlock another device on your Apple Account, with iCloud Photos on Lock those devices with codes only you know
+iCloud.com Your Apple Account password and a code from a trusted device A strong, unique Apple Account password
+A shared library To be a participant in your iCloud Shared Photo Library Keep private photos out of the shared library
+Apple notes that a photo hidden in a shared library moves to the Hidden album for every participant (Apple: Hide your photos and videos on iCloud.com). On a Mac, the album opens with Touch ID or the Mac login password, as our guide to viewing hidden photos on a Mac explains.
+### Can someone use your face while you're asleep?
+Not if Face ID's attention check is on, which it is by default. With Require Attention for Face ID on, your eyes must be open and looking at the iPhone.
+- Open Settings › Face ID & Passcode and enter your passcode.
+- Check Require Attention for Face ID is on.
+- Check who else is enrolled. If Set Up an Alternate Appearance has been used, someone else's face may unlock your iPhone and your Hidden album. Reset Face ID removes every face, including theirs.
+### How do you make the Hidden album harder to get into?
+Strengthen the passcode, check every device on your account, and keep the lock on.
+- Use a stronger passcode. In Settings › Face ID & Passcode › Change Passcode › Passcode Options , choose a custom alphanumeric code.
+- Keep the album locked. In Settings › Apps › Photos , leave Use Face ID on. It also stops other apps reading hidden photos.
+- Hide the album itself. Turn off Show Hidden Album on the same screen. It doesn't add a lock, but someone has to know to look.
+- Check your other devices. Every Mac and iPad with iCloud Photos on your Apple Account has the same hidden photos.
+- Check your Apple Account. In Settings › [your name] › Sign-In & Security , use a strong password and remove trusted devices you don't own.
+Locking the whole Photos app (touch and hold its icon, then Require Face ID ) adds a step, but it falls back to the same passcode. Every option is compared in how to lock photos on iPhone .
+### What if people around you know your passcode?
+Then the Hidden album can't protect you from them, and you need a lock with a different code. Your choices are a locked note with its own Notes password for a few photos, or a vault app with its own PIN, password or pattern.
+Noxium, which we make, opens with a pattern you draw on a 5×5 plate of bolts, separate from your iPhone passcode, and encrypts every photo with AES-256-GCM on the iPhone. Knowing your passcode doesn't open it. A second pattern can open a decoy vault, for times you're asked to unlock it, and the content is hidden in the app switcher and in screen recordings.
+A lock your passcode can't open
+Noxium opens only with a pattern you choose, not your iPhone passcode, and encrypts every photo. Free for 150 photos, 10 videos and 1 decoy vault.
+Download on the App Store
+Available on the App Store for iPhone and iPad.
+### Questions people ask
+Can you open the Hidden album without Face ID?
+Yes, with the iPhone passcode. Face ID falls back to it, and there's no separate Hidden album password.
+Can someone bypass the Hidden album without my passcode?
+On your iPhone, they'd need your face with attention detection off. They can also reach hidden photos from a Mac or iPad on your account, or from iCloud.com with your Apple Account password.
+Can I set a different password for the Hidden album?
+No. iOS uses your Face ID, Touch ID or iPhone passcode. For a separate code, use a locked note or a vault app.
+Will I know if someone opened my Hidden album?
+iOS doesn't keep a log of who opened it. Read our guide to how private the Hidden album is for what to check.
+Something wrong or out of date? Email business@inertiaprojects.info and we'll fix it.
+Related
+- Is the Hidden album private?
+- Lock photos with Face ID
+- Hidden photos on iPhone
+- Hidden photos on Mac
+- All guides
 
 ---
 
@@ -892,7 +1093,7 @@ Download on the App Store
 Available on the App Store for iPhone and iPad.
 ### Questions people ask
 Can someone see my Hidden album without Face ID?
-Yes, if they know your iPhone passcode. The Hidden album unlocks with Face ID, Touch ID or the passcode.
+Yes, if they know your iPhone passcode. The Hidden album unlocks with Face ID, Touch ID or the passcode. See every way past the Hidden album's Face ID .
 Does the Hidden album show up on my Mac and iPad?
 Yes, if iCloud Photos is on. Photos you hide on one device are hidden on your other devices too. On a Mac, the Hidden album is off by default and opens with Touch ID or your login password.
 Can apps see my hidden photos?
@@ -964,8 +1165,8 @@ iCloud Photos off, iCloud Backup They come back with the backup when you restore
 Quick Start, phone to phone With iCloud Photos off, they copy across with the library; with it on, they download from iCloud as above The Hidden album on the new iPhone has the same number of items
 Whatever the route, open the Hidden album on the new iPhone and compare the count before you erase the old one. Photos inside vault apps are a different story: many vault apps leave their files out of the iPhone backup on purpose, so read how to move a photo vault to a new iPhone before you switch.
 ### How do you view hidden photos on a Mac or Windows PC?
-On a Mac, the Hidden album is off by default. In Photos, choose View › Show Hidden Photo Album , select Hidden in the sidebar under Utilities, click View Album and unlock with Touch ID or your login password.
-On a Windows PC, or any computer, use a browser: go to icloud.com/photos, sign in, select Hidden in the sidebar, then Show Hidden Photos ( Apple: Hide photos on iCloud.com ). This needs iCloud Photos on. People report mixed results seeing hidden photos through the iCloud for Windows app, so iCloud.com is the reliable route.
+On a Mac, the Hidden album is off by default. In Photos, choose View › Show Hidden Photo Album , select Hidden in the sidebar under Utilities, click View Album and unlock with Touch ID or your login password. If your iPhone's hidden photos aren't there, see how to view hidden photos on a Mac .
+On a Windows PC, or any computer, use a browser: go to icloud.com/photos, sign in, select Hidden in the sidebar, then Show Hidden Photos ( Apple: Hide photos on iCloud.com ). This needs iCloud Photos on. People report mixed results seeing hidden photos through the iCloud for Windows app, so iCloud.com is the reliable route. More in viewing iPhone hidden photos on Windows .
 ### Can you have more than one Hidden album?
 No. iOS has exactly one Hidden album, and you can't create folders or albums inside it. Everything hidden sits in one grid, behind one lock. If you want separate private albums, for example one for documents and one for personal photos, see how to get multiple hidden albums on iPhone .
 ### What doesn't the Hidden album protect?
@@ -1822,11 +2023,11 @@ Related
 # How encrypted photo vaults work, in plain English
 
 URL: https://getnoxium.app/guides/how-encrypted-photo-vaults-work
-Last updated: 2026-11-21
+Last updated: 2026-11-22
 
 Guide · Encryption explained
 ## How encrypted photo vaults work, in plain English
-By Inertia Projects · Published 22 October 2026 · Last updated 21 November 2026
+By Inertia Projects · Published 22 October 2026 · Last updated 22 November 2026
 Short answer
 An encrypted photo vault scrambles each photo with a secret key, so the file is unreadable without it. Your PIN, password or pattern is turned into that key (or into a key that unlocks it) on your phone, slowly on purpose, so guessing is expensive. A vault that only shows a PIN screen in front of normal files is hiding photos, not encrypting them.
 Vault apps love the word "encrypted", and some add "military-grade". Neither tells you much. This guide explains, without math, what real encryption in a photo vault involves, so you can read an app's claims and know what they mean.
@@ -1872,13 +2073,14 @@ Noxium encrypts photos, thumbnails and their names, dates and places on the iPho
 - Ideally, the encryption code is open source or independently reviewed.
 In October 2026, only 2 of the 17 vault apps we compared named AES-256-GCM in their App Store description. See them all in our comparison .
 ### What do popular vault apps say about their encryption?
-Few say much. Of the 14 vault apps we've reviewed, only Vaultaire and Obscura name their cipher in their listings. Keepsafe names AES-256 in its help center, and Obscura and Encamera publish their encryption code. The rest say "encrypted" without details, or don't mention encryption.
-What each app's US App Store listing (and, where noted, its own help pages or code) says about encryption, checked 11 to 21 November 2026. We report claims, not test results.
+Few say much. Of the 15 vault apps we've reviewed, only Vaultaire and Obscura name their cipher in their listings. Keepsafe names AES-256 in its help center, and Obscura and Encamera publish their encryption code. The rest say "encrypted" without details, or don't mention encryption.
+What each app's US App Store listing (and, where noted, its own help pages or code) says about encryption, checked 11 to 22 November 2026. We report claims, not test results.
 App What it says about encryption
 Vaultaire AES-256-GCM on the device; iCloud backup encrypted before upload
 Obscura AES-256-GCM; key from your password through PBKDF2, 600,000 rounds; publishes its encryption code
 Encamera Encrypts all media; publishes its encryption code, built on libsodium
 Keepsafe "Military-grade" in the listing; AES-256 in its help center
+KYMS "AES military-grade"; key size and mode not named
 Privault Says storage is encrypted; cipher not named
 Private Photo Vault Cloud backup called "encrypted"; cipher not named
 PV - Secret Photo Album Mentions "data encryption"; cipher not named
@@ -4429,6 +4631,105 @@ Related
 
 ---
 
+# KYMS review: how it compares with Noxium
+
+URL: https://getnoxium.app/compare/kyms
+Last updated: 2026-11-22
+
+Compare
+## KYMS review: how it compares with Noxium
+By Inertia Projects · Last updated 22 November 2026
+Short answer
+KYMS (Secret photos - KYMS) is a long-running, well-rated vault for photos, videos, documents and passwords, with AES encryption, a fake PIN for a decoy vault, a panic gesture and a private browser. Its listing describes no backup or recovery, it shows ads unless you pay to remove them, and its privacy label includes data used to track you. Pick KYMS for file types and extras; pick Noxium for no ads or tracking and an encrypted iCloud backup.
+Secret photos - KYMS, by IdeaSolutions S.r.l., has been on the App Store since October 2011 and has 17,322 US ratings at 4.7 stars. It's one of the oldest vault apps still updated: version 3.6.7 came out on 18 November 2026. Everything here comes from its App Store listing, checked on 22 November 2026, compared with Noxium. We make Noxium, so weigh what we say about our own app accordingly.
+### Noxium vs KYMS at a glance
+Source: each app's US App Store listing, checked 22 November 2026. Noxium: our published facts.
+Noxium KYMS
+Opens with Pattern on a 5×5 plate; Face ID optional PIN, alphanumeric password, Face ID or Touch ID, or a combination
+Encryption named AES-256-GCM, key from your pattern (Argon2id) "AES military-grade"; key size and mode not named
+Backup Your own iCloud, encrypted, free Not in listing
+Decoy Yes, 1 free Fake PIN opens a decoy vault
+Forgot your code Recovery phrase you write down at setup Not in listing
+What it stores Photos, videos, notes Photos, videos, documents, passwords; contacts and audio with Premium
+Ads None Yes, unless you buy "Remove advertising"
+Price (US) Free; Pro $2.99/week, $17.99/year or $39.99 once Free; "Remove advertising" $4.99, "Premium features" $4.99
+Tracking No ads, no accounts, no analytics Privacy label: Data Used to Track You
+Last update 15 November 2026 18 November 2026 (version 3.6.7)
+Requires iOS 17 or later iOS 15 or later
+For 17 vault apps in one table, see the full photo vault comparison .
+### What does KYMS do well, and where does it fall short?
+KYMS encrypts, has a decoy, and handles almost any file. Its gaps are backup, ads and tracking.
+#### What KYMS does well
+- Encryption, named in part. The listing says files are protected with AES, which is more than many vault apps say.
+- A decoy vault. A fake PIN opens a separate, harmless vault.
+- A panic gesture. Cover the screen with your hand or close a smart cover and KYMS locks.
+- Layered login. You can combine a PIN, an alphanumeric password and Face ID or Touch ID.
+- Plays almost anything. FLV, AVI, WMV and MKV videos play while they're still being decrypted, and it opens and edits PDF, Word, Excel, PowerPoint, Pages and Numbers files.
+- Lots of extras. A private browser with tabs and video download, a password vault, and with Premium a contacts vault, audio recorder, card wallet, document scanner and task manager.
+- Long track record. On the App Store since 2011 and still updated in November 2026.
+#### Where KYMS falls short
+- No backup described. The listing doesn't say how to back up the vault or move it to a new iPhone.
+- No recovery described. It doesn't say what happens if you forget your PIN or password.
+- Ads and tracking. Ads stay unless you pay $4.99, and the privacy label lists Data Used to Track You.
+- Encryption details are thin. "AES military-grade" doesn't say how keys are made from your PIN or where they're kept.
+- Prices are unclear. The description mentions subscriptions, but the US purchase list shows only two items at $4.99 each.
+### How are KYMS and Noxium different?
+Both encrypt and both have a decoy. The differences are backup, recovery, ads and how much each app does.
+#### Encryption
+Noxium encrypts every photo, video and note on the iPhone with AES-256-GCM, with a key made from your pattern through Argon2id; names, dates and places are encrypted too. KYMS says AES without the details. Both are better than a PIN screen alone. See how encrypted photo vaults work for what the details mean.
+#### Backup
+KYMS's listing describes no backup. Noxium backs up only encrypted data to your own iCloud, free, and restores on a new iPhone when you draw your pattern; see encrypted iCloud backup .
+#### Decoys and emergencies
+KYMS has a fake PIN for a decoy vault and a panic gesture that locks the app. Noxium has a second pattern that opens a separate decoy vault , free, and Pro adds an emergency erase pattern.
+#### Getting back in
+KYMS's listing doesn't describe recovery. Noxium can't reset your pattern for you; you write down a recovery phrase at setup, and it opens your vault on this iPhone or a new one.
+#### Features
+KYMS does much more: documents, passwords, a browser, contacts, recordings and a wallet. Noxium sticks to photos, videos and encrypted notes, and keeps HEIC, ProRAW and Live Photos in full quality.
+#### Price
+KYMS lists "Remove advertising" and "Premium features" at $4.99 each. Noxium's free plan includes 150 photos, 10 videos, unlimited notes and full backup, with no ads; Pro is $2.99 a week, $17.99 a year or $39.99 once.
+### Which should you choose?
+- Pick KYMS if you want one encrypted app for photos, videos, documents and passwords, with a decoy PIN, a panic gesture and a private browser.
+- Pick Noxium if you mainly protect photos and videos and want an encrypted backup that survives a lost phone, a recovery phrase, and no ads or tracking.
+### How do you switch from KYMS without losing photos?
+Export the photos, check the copies, import them into the new vault, and only then delete anything.
+- Count what you have in each KYMS album, and in the decoy vault if you want to keep it.
+- Export photos and videos to your photo library or Files from inside KYMS.
+- Move documents and passwords to Files and a password manager. Noxium doesn't store them.
+- Check the copies: counts match, videos play, photos open at full size.
+- Import into Noxium with Settings › App settings › Offer to delete from Photos on, then empty Recently Deleted in Photos. See import and export .
+- Check the backup in Noxium's Settings › iCloud backup .
+- Only then delete KYMS.
+Watch out
+Exported photos sit unencrypted in Photos or Files until the new vault imports them. Do the move in one sitting, on a phone only you are using.
+Encrypted, backed up, no ads
+Noxium encrypts every photo on your iPhone and backs up only ciphertext to your own iCloud. No ads, no account, no analytics.
+Download on the App Store
+Available on the App Store for iPhone and iPad.
+### Questions people ask
+Is KYMS safe?
+It says it encrypts with AES and has a decoy PIN and a panic lock. Its listing doesn't describe a backup or recovery, and its privacy label includes data used to track you. See are photo vault apps safe?
+Does KYMS have a fake PIN?
+Yes. Its listing says a fake PIN opens a decoy vault. See what a decoy vault is and how to test one.
+Does KYMS have ads?
+Yes, unless you buy "Remove advertising", $4.99 on the US App Store in November 2026.
+What does KYMS stand for?
+The listing doesn't say. The app's full App Store name is "Secret photos - KYMS".
+Does KYMS back up to iCloud?
+Its listing doesn't describe a backup. Export important photos before you change or reset your iPhone.
+### Sources
+- Secret photos - KYMS, US App Store listing : description, ratings, version, in-app purchases and privacy label, checked 22 November 2026.
+- Noxium, US App Store listing , checked 22 November 2026.
+App names are trademarks of their owners and are used only to identify their apps.
+Something wrong or out of date? Email business@inertiaprojects.info and we'll fix it.
+Related
+- What is a decoy vault?
+- Photo vault apps compared
+- Encrypted iCloud backup
+- Keepsafe alternatives
+- All comparisons
+
+---
+
 # Noxium vs Other Photo Vault Apps, Compared
 
 URL: https://getnoxium.app/compare/
@@ -4497,6 +4798,10 @@ A fair review of Safe Lock - Hidden Photo Vault from its App Store listing, comp
 Updated 21 November 2026
 MaxVault review: how it compares with Noxium
 A fair review of MaxVault from its App Store listing, compared with Noxium.
+-
+Updated 22 November 2026
+KYMS review: how it compares with Noxium
+A fair review of Secret photos - KYMS from its App Store listing, compared with Noxium.
 
 ---
 

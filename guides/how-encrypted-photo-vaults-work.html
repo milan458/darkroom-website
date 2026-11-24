@@ -41,7 +41,7 @@
   <meta property="og:image:alt" content="Noxium photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
   <meta property="og:locale" content="en_US">
   <meta property="article:published_time" content="2026-10-22">
-  <meta property="article:modified_time" content="2026-11-21">
+  <meta property="article:modified_time" content="2026-11-22">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="How Encrypted Photo Vaults Work, in Plain English">
   <meta name="twitter:description" content="What encryption means in a photo vault: keys, Argon2id, AES-256-GCM and encrypted backups, without jargon, and how to spot a vault that only hides.">
@@ -90,7 +90,7 @@
         "mainEntityOfPage": "https://getnoxium.app/guides/how-encrypted-photo-vaults-work",
         "image": "https://getnoxium.app/assets/guides/noxium-lock.jpg",
         "datePublished": "2026-10-22",
-        "dateModified": "2026-11-21",
+        "dateModified": "2026-11-22",
         "author": {
           "@id": "https://getnoxium.app/#org"
         },
@@ -233,7 +233,7 @@
         <p class="eyebrow"><span class="dot dot-ink" aria-hidden="true"></span>Guide · Encryption explained</p>
         <h1>How encrypted photo vaults work, in plain English</h1>
         <!-- build:byline -->
-        <p class="byline"><span>By <a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>Published <time datetime="2026-10-22">22 October 2026</time></span><span aria-hidden="true">·</span><span>Last updated <time datetime="2026-11-21">21 November 2026</time></span></p>
+        <p class="byline"><span>By <a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>Published <time datetime="2026-10-22">22 October 2026</time></span><span aria-hidden="true">·</span><span>Last updated <time datetime="2026-11-22">22 November 2026</time></span></p>
         <!-- /build:byline -->
         <div class="answer">
           <span class="answer-label">Short answer</span>
@@ -306,16 +306,17 @@
         <p>In October 2026, only 2 of the 17 vault apps we compared named AES-256-GCM in their App Store description. See them all in <a href="/best-photo-vault-apps-iphone">our comparison</a>.</p>
 
         <h2 id="apps">What do popular vault apps say about their encryption?</h2>
-        <p>Few say much. Of the 14 vault apps we've reviewed, only Vaultaire and Obscura name their cipher in their listings. Keepsafe names AES-256 in its help center, and Obscura and Encamera publish their encryption code. The rest say "encrypted" without details, or don't mention encryption.</p>
+        <p>Few say much. Of the 15 vault apps we've reviewed, only Vaultaire and Obscura name their cipher in their listings. Keepsafe names AES-256 in its help center, and Obscura and Encamera publish their encryption code. The rest say "encrypted" without details, or don't mention encryption.</p>
         <div class="data-table-wrap" tabindex="0" role="region" aria-labelledby="apps-caption">
           <table class="data-table">
-            <caption id="apps-caption">What each app's US App Store listing (and, where noted, its own help pages or code) says about encryption, checked 11 to 21 November 2026. We report claims, not test results.</caption>
+            <caption id="apps-caption">What each app's US App Store listing (and, where noted, its own help pages or code) says about encryption, checked 11 to 22 November 2026. We report claims, not test results.</caption>
             <thead><tr><th scope="col">App</th><th scope="col">What it says about encryption</th></tr></thead>
             <tbody>
               <tr><th scope="row"><a href="/compare/vaultaire">Vaultaire</a></th><td>AES-256-GCM on the device; iCloud backup encrypted before upload</td></tr>
               <tr><th scope="row"><a href="/compare/obscura">Obscura</a></th><td>AES-256-GCM; key from your password through PBKDF2, 600,000 rounds; publishes its encryption code</td></tr>
               <tr><th scope="row"><a href="/compare/encamera">Encamera</a></th><td>Encrypts all media; publishes its encryption code, built on libsodium</td></tr>
               <tr><th scope="row"><a href="/compare/keepsafe">Keepsafe</a></th><td>"Military-grade" in the listing; AES-256 in its help center</td></tr>
+              <tr><th scope="row"><a href="/compare/kyms">KYMS</a></th><td>"AES military-grade"; key size and mode not named</td></tr>
               <tr><th scope="row"><a href="/compare/privault">Privault</a></th><td>Says storage is encrypted; cipher not named</td></tr>
               <tr><th scope="row"><a href="/compare/private-photo-vault">Private Photo Vault</a></th><td>Cloud backup called "encrypted"; cipher not named</td></tr>
               <tr><th scope="row"><a href="/compare/pv-secret-photo-album">PV - Secret Photo Album</a></th><td>Mentions "data encryption"; cipher not named</td></tr>
