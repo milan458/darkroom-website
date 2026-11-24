@@ -113,7 +113,7 @@
       "updated": "2026-11-14"
     },
     "/guides/forgot-photo-vault-password": {
-      "source": "2026-11-11",
+      "source": "2026-11-19",
       "title": "Esqueceu a senha do cofre de fotos? Como desbloquear",
       "description": "Ficou trancado do lado de fora do app de cofre de fotos? Como desbloquear com a recuperação que o app oferece, o que tentar primeiro e o que não fazer.",
       "headline": "Esqueceu a senha ou o PIN do cofre de fotos? O que você ainda pode fazer",
@@ -121,10 +121,10 @@
       "crumb": "Esqueceu a senha do cofre",
       "keyword": "esqueci a senha do cofre de fotos",
       "published": "2026-11-15",
-      "updated": "2026-11-15"
+      "updated": "2026-11-19"
     },
     "/guides/move-photo-vault-to-new-iphone": {
-      "source": "2026-10-26",
+      "source": "2026-11-19",
       "title": "Cofre de fotos para um iPhone novo sem perder fotos",
       "description": "Por que apps de cofre perdem fotos na troca de celular, e um checklist passo a passo para passar o seu com segurança: antes, durante e depois.",
       "headline": "Como passar um cofre de fotos para um iPhone novo sem perder fotos",
@@ -132,7 +132,7 @@
       "crumb": "Cofre para um iPhone novo",
       "keyword": "passar cofre de fotos para iphone novo",
       "published": "2026-11-15",
-      "updated": "2026-11-15"
+      "updated": "2026-11-19"
     },
     "/guides/hidden-photos-iphone": {
       "source": "2026-11-15",

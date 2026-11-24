@@ -41,7 +41,7 @@
   <meta property="og:image:alt" content="Noxium photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
   <meta property="og:locale" content="fr_CA">
   <meta property="article:published_time" content="2026-11-15">
-  <meta property="article:modified_time" content="2026-11-15">
+  <meta property="article:modified_time" content="2026-11-19">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Coffre photo vers un nouvel iPhone, sans perdre de photos">
   <meta name="twitter:description" content="Pourquoi les apps de coffre perdent des photos quand on change de téléphone, et une liste pour transférer le vôtre en toute sécurité.">
@@ -90,7 +90,7 @@
         "mainEntityOfPage": "https://getnoxium.app/fr/guides/move-photo-vault-to-new-iphone",
         "image": "https://getnoxium.app/assets/guides/noxium-backup.jpg",
         "datePublished": "2026-11-15",
-        "dateModified": "2026-11-15",
+        "dateModified": "2026-11-19",
         "author": {
           "@id": "https://getnoxium.app/#org"
         },
@@ -233,7 +233,7 @@
         <p class="eyebrow"><span class="dot dot-ink" aria-hidden="true"></span>Guide · Nouvel iPhone</p>
         <h1>Transférer un coffre photo privé vers un nouvel iPhone sans perdre de photos</h1>
         <!-- build:byline -->
-        <p class="byline"><span>Par <a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>Mis à jour le <time datetime="2026-11-15">15 novembre 2026</time></span></p>
+        <p class="byline"><span>Par <a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>Publié le <time datetime="2026-11-15">15 novembre 2026</time></span><span aria-hidden="true">·</span><span>Mis à jour le <time datetime="2026-11-19">19 novembre 2026</time></span></p>
         <!-- /build:byline -->
         <div class="answer">
           <span class="answer-label">En bref</span>
@@ -271,9 +271,18 @@
           </table>
         </div>
         <p>Si vous ne trouvez aucun réglage de sauvegarde, partez du principe que les photos n’existent que sur l’ancien téléphone. Contactez le développeur avant de changer.</p>
+        <p>Voici ce que des apps coffre-fort populaires disent de la sauvegarde sur leur fiche App Store, vérifié en octobre et novembre 2026 :</p>
+        <ul>
+          <li><strong>Private Photo Vault :</strong> son propre nuage (Cloud Vault), protégé par un mot de passe Cloud Vault distinct. Voir notre <a href="/compare/private-photo-vault">analyse</a>.</li>
+          <li><strong>Keepsafe :</strong> Keepsafe Private Cloud, lié à votre compte Keepsafe. Voir notre <a href="/compare/keepsafe">analyse</a>.</li>
+          <li><strong>Calculator# :</strong> sauvegarde dans iCloud, Dropbox, Google Drive ou OneDrive. Voir notre <a href="/compare/calculator-hide-photos">analyse</a>.</li>
+          <li><strong>Hide it Pro :</strong> son propre stockage en nuage, avec plus d’espace dans un forfait payant. Voir notre <a href="/compare/hide-it-pro">analyse</a>.</li>
+          <li><strong>Privault</strong> et <strong>Secret Photo Vault – Lock Photos :</strong> aucune sauvegarde décrite; Secret Photo Vault indique que les données restent sur l’appareil. Prévoyez l’exportation de l’étape 2.</li>
+          <li><strong>Vaultaire</strong> et <strong>Noxium</strong> (notre app) : une sauvegarde chiffrée dans votre propre iCloud, restaurée avec votre schéma. Voir notre <a href="/compare/vaultaire">analyse de Vaultaire</a>.</li>
+        </ul>
 
         <h2 id="step-2">Étape 2 : exportez une copie de sécurité de l’irremplaçable</h2>
-        <p>Exportez vos photos et vidéos les plus importantes vers un endroit que vous contrôlez, comme Fichiers sur un Mac ou un disque externe chiffré. Vérifiez que l’export garde la qualité et les dates d’origine. Les copies exportées ne sont plus chiffrées par le coffre : gardez-les en lieu privé et supprimez-les une fois le transfert terminé.</p>
+        <p>Exportez vos photos et vidéos les plus importantes vers un endroit que vous contrôlez, comme Fichiers sur un Mac ou un disque externe chiffré. Vérifiez que l’export garde la qualité et les dates d’origine. Dans Noxium, notre app, voir <a href="/features/import-export">importation et exportation</a>. Les copies exportées ne sont plus chiffrées par le coffre : gardez-les en lieu privé et supprimez-les une fois le transfert terminé.</p>
 
         <h2 id="step-3">Étape 3 : assurez-vous que la sauvegarde est complète</h2>
         <ol class="steps">
@@ -314,6 +323,14 @@
           <figcaption>Noxium ne sauvegarde que des données chiffrées, dans votre propre iCloud. La sauvegarde compte dans votre stockage iCloud.</figcaption>
         </figure>
         <p class="inline-cta"><a href="https://apps.apple.com/app/apple-store/id6824616093" data-cta="inline" data-label-waitlist="Essayer Noxium gratuitement : rejoindre la bêta →" data-label-live="Obtenir Noxium gratuitement sur l’App Store →">Obtenir Noxium gratuitement sur l’App Store →</a></p>
+
+        <h2 id="keep-both">Pouvez-vous garder le coffre sur l’ancien et le nouvel appareil?</h2>
+        <p>Seulement si l’app synchronise entre appareils. La plupart des coffres restaurent une sauvegarde sur un seul téléphone; ils ne gardent pas deux appareils à jour ensemble.</p>
+        <ul>
+          <li><strong>Vous vendez ou donnez l’ancien iPhone :</strong> restaurez sur le nouveau, vérifiez tout (étape 6), puis effacez l’ancien (étape 7).</li>
+          <li><strong>Vous gardez les deux, comme un iPhone et un iPad :</strong> cherchez la synchronisation dans les réglages de l’app, pas seulement la sauvegarde. Dans Noxium, la <a href="/features/iphone-ipad-sync">synchronisation iPhone et iPad</a> fait partie de Pro; avec le forfait gratuit, chaque appareil se sauvegarde, mais les changements ne passent pas de l’un à l’autre.</li>
+          <li><strong>Un deuxième compte Apple :</strong> les sauvegardes dans votre propre iCloud ne se restaurent que sur des appareils connectés au même compte Apple.</li>
+        </ul>
 
         <h2 id="already-missing">Et si des photos manquent déjà?</h2>
         <p>Ne supprimez pas et ne réinstallez pas l’app de coffre sur l’un ou l’autre téléphone, et n’effacez pas l’ancien iPhone si vous l’avez encore. Vérifiez si l’ancien téléphone ouvre encore le coffre, cherchez une option de restauration dans les réglages de l’app, voyez si l’app a sa propre connexion sur le Web, et écrivez au développeur avec la version de l’app et ce qui s’est passé. Réinstaller peut supprimer des fichiers locaux qui seraient peut-être encore récupérables. Voyez aussi <a href="/fr/guides/photo-vault-lost-photos">quoi faire quand une app de coffre a perdu vos photos</a>.</p>
@@ -367,6 +384,7 @@
             <li><a href="#step-6">6. Restaurer et vérifier</a></li>
             <li><a href="#step-7">7. Puis effacer l’ancien</a></li>
             <li><a href="#noxium">Transférer Noxium</a></li>
+            <li><a href="#keep-both">Garder les deux appareils</a></li>
             <li><a href="#faq">Questions fréquentes</a></li>
           </ol>
         </nav>
