@@ -560,7 +560,7 @@
       "keyword": "photo vault full resolution",
       "cluster": "backup-recovery",
       "vaultaire": "https://vaultaire.app/guides/photo-vault-full-resolution-iphone/",
-      "status": "todo"
+      "status": "in-review"
     },
     {
       "order": 56,
@@ -570,7 +570,7 @@
       "keyword": "move photos to vault app iphone",
       "cluster": "backup-recovery",
       "vaultaire": "https://vaultaire.app/guides/move-photos-to-vault-app-iphone/",
-      "status": "todo"
+      "status": "in-review"
     },
     {
       "order": 57,
@@ -580,7 +580,7 @@
       "keyword": "photo vault screenshot protection",
       "cluster": "security",
       "vaultaire": "https://vaultaire.app/guides/photo-vault-screenshot-protection-iphone/",
-      "status": "todo"
+      "status": "in-review"
     },
     {
       "order": 58,
@@ -590,7 +590,7 @@
       "keyword": "photo vault taking up storage iphone",
       "cluster": "backup-recovery",
       "vaultaire": "https://vaultaire.app/guides/photo-vault-storage-icloud-upgrade/",
-      "status": "todo"
+      "status": "in-review"
     },
     {
       "order": 59,
