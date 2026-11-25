@@ -49,6 +49,7 @@ When you refer to this app, call it "Noxium photo vault" or "Private Photo Vault
 - [Does deleting a vault app delete your photos?](https://getnoxium.app/guides/does-deleting-vault-app-delete-photos): What iOS does when you delete a vault app, which apps keep a cloud copy, and how to delete one safely.
 - [How to export photos from a vault app on iPhone](https://getnoxium.app/guides/export-photos-from-vault-app): The steps to export photos from any vault app, where to send them, and how to check nothing was lost.
 - [Do photo vault apps back up to iCloud?](https://getnoxium.app/guides/do-photo-vault-apps-back-up-to-icloud): The three kinds of vault backup, which of 15 apps use which, and how to check yours works.
+- [Does a photo vault keep full resolution on iPhone?](https://getnoxium.app/guides/photo-vault-full-resolution): Why some vaults lose photo quality, what full resolution means on iPhone, and a two-minute test for any vault.
 - [How to hide photos on iPhone: every method, and what each one protects](https://getnoxium.app/guides/how-to-hide-photos-on-iphone): All the ways to hide photos on iPhone, from the Hidden album to encrypted vault apps, and what each one actually protects.
 - [Is the iPhone Hidden album actually private?](https://getnoxium.app/guides/is-iphone-hidden-album-private): What the Hidden album in Photos protects against, what it doesn't, and how to make it stricter.
 - [Hidden photos on iPhone: how to find, view, add, lock and move them](https://getnoxium.app/guides/hidden-photos-iphone): Everything about the iPhone Hidden album: where it is, how to view, add, unhide and lock photos, and how it syncs and transfers.
@@ -1365,7 +1366,7 @@ Related
 - Photo vault lost your photos
 - Export photos from a vault
 - Do vault apps back up to iCloud?
-- Move a photo vault to a new iPhone
+- Full resolution in a vault
 - All guides
 
 ---
@@ -1409,7 +1410,7 @@ Menu names change with app updates. If you can't find export, check the app's he
 Compare counts, play videos, and look at size and date.
 - Count. The number of exported items should match the album in the vault.
 - Play videos to the end. A video that stops early didn't export fully.
-- Check size. Open a photo, swipe up and look at its resolution and file size. Much smaller than the camera's usual size means the vault exported a compressed copy.
+- Check size. Open a photo, swipe up and look at its resolution and file size. Much smaller than the camera's usual size means the vault exported a compressed copy. See does a photo vault keep full resolution?
 - Check dates. Photos should land on the day they were taken, not today. If they're all dated today, the vault didn't keep the original date.
 - Check Live Photos still move when you press on them.
 Watch out
@@ -1519,6 +1520,90 @@ Related
 - Move a photo vault to a new iPhone
 - Deleting a vault app
 - Export photos from a vault
+- All guides
+
+---
+
+# Does a photo vault keep full resolution on iPhone?
+
+URL: https://getnoxium.app/guides/photo-vault-full-resolution
+Last updated: 2026-11-25
+
+Guide · Backup
+## Does a photo vault keep full resolution on iPhone?
+By Inertia Projects · Last updated 25 November 2026
+Short answer
+Not always. Some vault apps save a smaller copy to save space, turn HEIC into JPEG, keep only the still part of a Live Photo, or drop the date and place. You can test any vault in two minutes: import one photo, export it back to Photos, and compare its size, resolution and date with the original.
+A vault is meant to keep your photos safe, not make them worse. But a few vault apps shrink what you put in, and you often notice only months later, when you zoom in or export. This guide explains how vaults lose quality, what "full resolution" means on an iPhone, and how to check yours before you delete any originals. If you're about to move a whole library, run the two-minute test below first.
+### Why do some photo vaults lose quality?
+To save space. Full-size photos and videos are big, and a smaller copy makes the app look lighter on your phone. The common ways quality goes missing:
+- Compression. The vault saves a smaller, lower-quality copy of each photo. Keepsafe's App Store listing says its Space Saver "compresses photos and saves originals to the Cloud", so the full-size file lives in Keepsafe's cloud, not on your phone.
+- Format changes. HEIC photos become JPEG, and HDR or wide colour can be lost on the way.
+- Live Photos cut down. The vault keeps the still photo and drops the short video that makes it move.
+- Missing details. The date taken and the place are removed, so an exported photo lands on today's date.
+- Video re-encoding. 4K video is saved at a lower resolution or bitrate.
+None of this is always bad. Some people choose a space saver on purpose. It's a problem only when you don't know it's happening and then delete the originals.
+### What does full resolution mean on an iPhone?
+It means the vault keeps the exact file the camera made, with nothing removed. Your iPhone can make several kinds:
+iPhone photo and video formats a vault should keep as they are
+Format What it is What can go missing
+HEIC (High Efficiency) The iPhone's default photo format Converted to JPEG, HDR lost
+JPEG (Most Compatible) Chosen in Settings › Camera › Formats Compressed again
+Apple ProRAW Pro models; about 25 MB at 12 MP and 75 MB at 48 MP, Apple says Saved as an ordinary photo
+Live Photo A photo with a short video around it The video part
+Video (4K, HDR) Set in Settings › Camera › Record Video Lower resolution or bitrate
+Details Date taken, place, camera Removed or reset to the import date
+Apple's ProRAW support article gives those sizes and says ProRAW files are 10 to 12 times larger than HEIF or JPEG files. That's why a vault that quietly converts them saves so much space.
+### How can you tell if a vault keeps full resolution?
+Run a round trip with one photo, and compare before and after. It takes two minutes:
+- Pick a test photo in Photos: ideally a Live Photo taken outdoors, so it has a place.
+- Note its details. Swipe up on the photo, or tap the info button. Write down the resolution (for example 24 MP and the pixel size), the file size, the format, the date and the place.
+- Import it into the vault the way you normally would.
+- Export it back to Photos from the vault.
+- Compare. Open the exported copy, swipe up and check the same details. Press on it to see if the Live Photo still moves.
+- Repeat with a video if you'll keep videos in the vault. Check its resolution and length.
+Matching numbers and a moving Live Photo mean the vault kept the original. A smaller file, a lower resolution, today's date or a still Live Photo means it didn't. Our guide to exporting photos from a vault app covers the same checks for a whole library.
+### Does iCloud Photos affect what the vault gets?
+It can slow imports down, but it shouldn't change the result. With Optimize iPhone Storage on, your iPhone keeps smaller copies, and the full-size originals stay in iCloud. When a vault imports one of those photos, iOS has to download the original first.
+- Use Wi-Fi for big imports, and keep the vault open until it finishes.
+- Check a few imported items afterwards, using the round trip above.
+- Before a big move, you can turn on Download and Keep Originals in Settings › Apps › Photos (or Settings › [your name] › iCloud › Photos ), if you have the space.
+### How do you move photos without losing quality?
+Import from Photos or Files inside the vault app, and avoid routes that compress. Some ways of sending photos shrink them:
+- Messages and chat apps often send smaller copies. Messages has a Low Quality Image Mode, and many chat apps compress by default.
+- AirDrop sends the original between your own devices.
+- The share sheet has an Options button at the top, where you can include all photo data and choose whether to include the location.
+- Screenshots of a photo are never full quality. Don't use them as a backup.
+### Can you get full quality back after a vault compressed it?
+Only if the original still exists somewhere. A vault can't rebuild detail it threw away. Look for the original in:
+- Photos and Recently Deleted, which keeps deleted items for 30 days.
+- iCloud Photos on iCloud.com or another device signed in to the same Apple Account.
+- The vault's own cloud, if you used a space saver. Download the originals from there before you cancel or delete the app.
+- A computer backup, or the chat or email you first received the photo in.
+If you find the original, import it again into a vault that keeps full resolution, and test it first.
+### Does full resolution use more storage?
+Yes. A vault that keeps originals takes as much space as the photos did, and more than an optimized Photos library on the same iPhone. ProRAW and 4K video fill a phone fastest. Settings › General › iPhone Storage shows how much each app uses. If the vault backs up to your iCloud, it uses iCloud storage too: see do photo vault apps back up to iCloud?
+### Does Noxium keep full resolution?
+Yes. Noxium, which we make, imports HEIC, ProRAW and Live Photos as they are, and exports them in full quality with their original dates. Every item is encrypted on the iPhone with AES-256-GCM, with its name, date and place. If space runs short, Settings › iCloud backup › Free up space removes full-size copies that are already in your encrypted iCloud backup; previews stay, and originals download again when you open them. More in import and export .
+Your originals, kept as they were
+Noxium keeps HEIC, ProRAW and Live Photos as they are, and exports them in full quality with their dates.
+Download on the App Store
+Available on the App Store for iPhone and iPad.
+### Questions people ask
+Do photo vault apps reduce photo quality?
+Some do, to save space, and some only when you turn on a space saver. Test yours: import one photo, export it, and compare size, resolution and date.
+How do I check a photo's resolution on iPhone?
+Open it in Photos and swipe up, or tap the info button. You'll see the megapixels, the pixel size, the file size and the format.
+Do vaults keep Live Photos?
+Not all of them. Some keep only the still photo. Press on an exported Live Photo to check it still moves.
+Can I get the original back after a vault compressed it?
+Only from somewhere else: Photos, Recently Deleted, iCloud Photos, the vault's cloud or a backup. The vault can't restore detail it removed.
+Something wrong or out of date? Email business@inertiaprojects.info and we'll fix it.
+Related
+- Import and export
+- Export photos from a vault
+- Deleting a vault app
+- Do vault apps back up to iCloud?
 - All guides
 
 ---
@@ -4404,7 +4489,7 @@ Feature
 By Inertia Projects · Last updated 17 November 2026
 Short answer
 Noxium imports from Photos, Files, its own camera and the share sheet, including HEIC, ProRAW and Live Photos. It exports to Photos or Files in full quality with the original date taken. Exported copies are no longer encrypted, so move them only when you need them out of the vault.
-A vault is only useful if photos go in without losing anything and come out the same way. Some vault apps shrink photos to save space, or strip the date. Noxium, the photo vault we make, keeps the original file and its date. This page covers every way in and out, and how to move photos without leaving copies behind. If you're switching from another app, see moving a vault to a new iPhone and photo vault lost photos .
+A vault is only useful if photos go in without losing anything and come out the same way. Some vault apps shrink photos to save space , or strip the date. Noxium, the photo vault we make, keeps the original file and its date. This page covers every way in and out, and how to move photos without leaving copies behind. If you're switching from another app, see moving a vault to a new iPhone and photo vault lost photos .
 ### How do you add photos to Noxium?
 Tap the add button in your vault and choose From Photos , From Files or Camera , or send items from any app's share sheet.
 - From Photos. HEIC, ProRAW and Live Photos come in as they are. With Settings › App settings › Offer to delete from Photos on, Noxium offers to delete the originals afterwards.

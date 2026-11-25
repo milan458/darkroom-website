@@ -382,6 +382,25 @@
       "draft": false
     },
     {
+      "path": "/guides/photo-vault-full-resolution",
+      "file": "guides/photo-vault-full-resolution.html",
+      "type": "guide",
+      "ct": "g-fullres",
+      "crumb": "Full resolution in a vault",
+      "keyword": "photo vault full resolution",
+      "cluster": "backup-recovery",
+      "related": ["/features/import-export", "/guides/export-photos-from-vault-app", "/guides/does-deleting-vault-app-delete-photos"],
+      "title": "Photo Vault Full Resolution: Does It Keep Your Originals?",
+      "headline": "Does a photo vault keep full resolution on iPhone?",
+      "description": "Some photo vaults compress photos, drop Live Photos or strip dates. How to test yours in two minutes, and what full resolution means on iPhone.",
+      "summary": "Why some vaults lose photo quality, what full resolution means on iPhone, and a two-minute test for any vault.",
+      "published": "2026-11-25",
+      "updated": "2026-11-25",
+      "priority": "0.7",
+      "image": "/assets/guides/noxium-library.jpg",
+      "draft": false
+    },
+    {
       "path": "/guides/",
       "file": "guides/index.html",
       "type": "page",
