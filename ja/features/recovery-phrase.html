@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#FAF9F6" media="(prefers-color-scheme: light)">
+  <!-- build:meta -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WWNMHW99TP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-WWNMHW99TP');
+  </script>
+  <title>写真保管庫の復元フレーズ：Noxium の予備の鍵</title>
+  <meta name="description" content="パターンを忘れても、Noxium の復元フレーズで保管庫を開けます。誰にもリセットできません。しくみ、保管のしかた、限界を説明します。">
+  <link rel="canonical" href="https://getnoxium.app/ja/features/recovery-phrase">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <link rel="alternate" hreflang="en" href="https://getnoxium.app/features/recovery-phrase">
+  <link rel="alternate" hreflang="de" href="https://getnoxium.app/de/features/recovery-phrase">
+  <link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/features/recovery-phrase">
+  <link rel="alternate" hreflang="es" href="https://getnoxium.app/es/features/recovery-phrase">
+  <link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/features/recovery-phrase">
+  <link rel="alternate" hreflang="it" href="https://getnoxium.app/it/features/recovery-phrase">
+  <link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/features/recovery-phrase">
+  <link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/features/recovery-phrase">
+  <link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/features/recovery-phrase">
+  <link rel="alternate" hreflang="x-default" href="https://getnoxium.app/features/recovery-phrase">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Noxium">
+  <meta property="og:title" content="写真保管庫の復元フレーズ：Noxium の予備の鍵">
+  <meta property="og:description" content="パターンを忘れても、Noxium の復元フレーズで保管庫を開けます。誰にもリセットできません。しくみ、保管のしかた、限界を説明します。">
+  <meta property="og:url" content="https://getnoxium.app/ja/features/recovery-phrase">
+  <meta property="og:image" content="https://getnoxium.app/assets/og/noxium-og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Noxium photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="article:published_time" content="2026-11-25">
+  <meta property="article:modified_time" content="2026-11-25">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="写真保管庫の復元フレーズ：Noxium の予備の鍵">
+  <meta name="twitter:description" content="パターンを忘れても、Noxium の復元フレーズで保管庫を開けます。誰にもリセットできません。しくみ、保管のしかた、限界を説明します。">
+  <meta name="twitter:image" content="https://getnoxium.app/assets/og/noxium-og.png">
+  <meta name="twitter:image:alt" content="Noxium photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
+  <meta name="apple-itunes-app" content="app-id=6824616093">
+  <!-- /build:meta -->
+
+  <link rel="icon" type="image/svg+xml" href="/assets/noxium-logo.svg">
+  <link rel="apple-touch-icon" href="/assets/noxium-icon-180.png">
+
+  <link rel="preload" href="/assets/fonts/instrument-serif-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/fonts/fonts.css">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/pages.css">
+
+  <!-- build:jsonld -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://getnoxium.app/#org",
+        "name": "Inertia Projects",
+        "url": "https://getnoxium.app/about",
+        "email": "business@inertiaprojects.info",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://getnoxium.app/assets/noxium-icon-512.png"
+        },
+        "brand": {
+          "@type": "Brand",
+          "name": "Noxium"
+        },
+        "sameAs": [
+          "https://apps.apple.com/app/apple-store/id6824616093"
+        ]
+      },
+      {
+        "@type": "Article",
+        "@id": "https://getnoxium.app/ja/features/recovery-phrase#article",
+        "headline": "復元フレーズ：あなただけが持つ予備の鍵",
+        "description": "パターンを忘れても、Noxium の復元フレーズで保管庫を開けます。誰にもリセットできません。しくみ、保管のしかた、限界を説明します。",
+        "url": "https://getnoxium.app/ja/features/recovery-phrase",
+        "mainEntityOfPage": "https://getnoxium.app/ja/features/recovery-phrase",
+        "image": "https://getnoxium.app/assets/guides/noxium-recovery.jpg",
+        "datePublished": "2026-11-25",
+        "dateModified": "2026-11-25",
+        "author": {
+          "@id": "https://getnoxium.app/#org"
+        },
+        "publisher": {
+          "@id": "https://getnoxium.app/#org"
+        },
+        "inLanguage": "ja-JP",
+        "isPartOf": {
+          "@id": "https://getnoxium.app/#website"
+        },
+        "about": {
+          "@id": "https://getnoxium.app/#app"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Noxium",
+            "item": "https://getnoxium.app/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "機能",
+            "item": "https://getnoxium.app/ja/features/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "復元フレーズ",
+            "item": "https://getnoxium.app/ja/features/recovery-phrase"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://getnoxium.app/ja/features/recovery-phrase#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "写真保管庫の復元フレーズとは？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "設定時に保存しておく単語の並びで、コードを忘れたときに保管庫を開けられます。メールでのリセットと違い、単語を持っている人しか使えません。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "あとで復元フレーズをもう一度見られる？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "見られません。Noxium はフレーズを保存しないので、再表示できません。控えをなくしたら、保管庫を開けるうちに設定 › 復元フレーズで新しく作りましょう。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "パターンを変えるとフレーズも変わる？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "変わりません。パターンとフレーズは、同じ保管庫を開ける別々の鍵です。片方を変えても、もう片方はそのまま使えます。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "暗号資産ウォレットのシードフレーズと同じ？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "同じ BIP-39 の単語リストを使いますが、ウォレットのシードではなく、その用途には使えません。扱いは同じくらい慎重に。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Noxium の開発者は保管庫を復旧できる？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "できません。私たちがあなたのパターン、フレーズ、鍵を持つことはありません。だからこそフレーズが大切です。"
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <!-- /build:jsonld -->
+</head>
+<body>
+  <!-- build:header -->
+  <!-- Shared header (homepage and subpages). Edit partials/header.html, then run python3 tools/build.py. -->
+  <a href="#main-content" class="skip-link">メインコンテンツへスキップ</a>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <nav class="nav glass" aria-label="メインナビゲーション">
+        <a href="/" class="wordmark" aria-label="Noxium ホーム">Noxium<span aria-hidden="true">.</span></a>
+
+        <div class="nav-links">
+          <a href="/#features">機能</a>
+          <a href="/#security">セキュリティ</a>
+          <a href="/#pricing">料金</a>
+          <a href="/compare/">比較</a>
+          <a href="/ja/guides/">ガイド</a>
+        </div>
+
+        <div class="nav-actions">
+          <a href="https://apps.apple.com/app/apple-store/id6824616093" class="btn btn-ink btn-nav nav-cta" data-cta="nav" data-label-waitlist="ベータ版に参加" data-label-live="Noxium を入手">Noxium を入手</a>
+          <button type="button" class="mobile-menu-btn" id="mobile-menu-btn" aria-expanded="false" aria-controls="mobile-drawer" aria-label="メニュー">
+            <svg class="icon icon-menu" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 9h14M5 15h14"/></svg>
+            <svg class="icon icon-close" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <div class="mobile-drawer glass" id="mobile-drawer" hidden>
+      <nav class="mobile-drawer-list" aria-label="モバイル">
+        <a href="/#features">機能</a>
+        <a href="/#security">セキュリティ</a>
+        <a href="/#pricing">料金</a>
+        <a href="/ja/best-photo-vault-apps-iphone">保管庫アプリを比較</a>
+        <a href="/ja/guides/">ガイド</a>
+        <a href="/about">概要</a>
+        <a href="/support">サポート</a>
+      </nav>
+    </div>
+  </header>
+  <!-- /build:header -->
+
+  <main id="main-content" tabindex="-1">
+    <div class="page-hero">
+      <div class="container">
+        <!-- build:breadcrumbs -->
+        <nav class="crumbs" aria-label="パンくずリスト">
+          <ol>
+            <li><a href="/">Noxium</a></li>
+            <li><a href="/ja/features/">機能</a></li>
+            <li aria-current="page">復元フレーズ</li>
+          </ol>
+        </nav>
+        <!-- /build:breadcrumbs -->
+        <p class="eyebrow"><span class="dot dot-ink" aria-hidden="true"></span>機能</p>
+        <h1>復元フレーズ：あなただけが持つ予備の鍵</h1>
+        <!-- build:byline -->
+        <p class="byline"><span>著者：<a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>最終更新日：<time datetime="2026-11-25">2026年11月25日</time></span></p>
+        <!-- /build:byline -->
+        <div class="answer">
+          <span class="answer-label">結論</span>
+          <p>設定時に、Noxium は書き留めておくための復元フレーズを表示します。パターンを忘れても、このフレーズでメインの保管庫を開けます。今の iPhone でも、新しい iPhone でも同じです。パターンをリセットできる人はいません。開発者も Apple もできません。だから、フレーズが唯一の予備の鍵です。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container article-layout">
+      <article class="prose">
+        <p>メールでリセットできる保管庫は、ほかの誰かが開けられる保管庫です。逆に戻る手段のない保管庫は、たった 1 日の物忘れで取り返しがつかなくなります。私たちが開発している写真保管庫 Noxium はその中間です。リセットはありませんが、あなただけが持つ予備の鍵があります。このページでは、復元フレーズのしくみ、作り方と保管のしかた、そしてなくしたらどうなるかを説明します。</p>
+
+        <h2 id="how">復元フレーズのしくみは？</h2>
+        <p>フレーズは、保管庫を開ける鍵を作る 2 つ目の方法です。パターンとフレーズは、それぞれ同じ保管庫の鍵を封印しているので、どちらでも開けられます。</p>
+        <ol class="steps">
+          <li><strong>自動生成されるフレーズは 8 単語です。</strong>Noxium は、多くの暗号資産ウォレットと同じ 2,048 語の BIP-39 英語リストから無作為に選びます。そのため、アプリが日本語でも単語は英語です。ランダムさは 88 ビットで、どんなパターンよりはるかに大きい値です。</li>
+          <li><strong>パターンと同じ方法で鍵になります。</strong>Argon2id（libsodium）がメモリ 64 MiB、3 回のパスで引き伸ばし、保管庫の鍵を AES-256-GCM で封印する鍵にします。</li>
+          <li><strong>どこにも保存されません。</strong><a href="/ja/features/pattern-lock">パターン</a>と同じく、Noxium はフレーズをどこにも残しません。保存されるのは封印された保管庫の鍵だけで、iPhone の中と<a href="/ja/features/encrypted-icloud-backup">暗号化 iCloud バックアップ</a>の中にあります。</li>
+          <li><strong>大文字小文字やスペースは区別しません。</strong>「Author Tuition」と「author  tuition」は同じに読まれるので、紙から書き写したフレーズでも使えます。</li>
+        </ol>
+        <p>フレーズは保管庫の鍵そのものを開けるので、古い iPhone がなくても、私たちがいなくても使えます。「鍵の中に鍵」のしくみは<a href="/ja/guides/how-encrypted-photo-vaults-work">暗号化された写真保管庫のしくみ</a>をご覧ください。</p>
+
+        <h2 id="setup">設定のしかたは？</h2>
+        <p>フレーズは設定の最後のステップで、いつでも作り直せます。</p>
+        <ol class="steps">
+          <li><strong>フレーズを受け取る。</strong><span class="path">復元フレーズ</span>の画面で<span class="path">自動生成</span>のままにすると、ランダムな 8 単語になります。別の単語がよければ<span class="path">新しいフレーズ</span>をタップします。</li>
+          <li><strong>または自分で決める。</strong><span class="path">自分で決める</span>をタップし、6〜9 語、合計 20 文字以上を入力します。自分で考えたフレーズは覚えやすい反面、推測もされやすいので、歌詞や名言は避けましょう。</li>
+          <li><strong>紙に書き留める。</strong><span class="path">コピー</span>と<span class="path">“ファイル”に保存</span>もありますが、コピーしたフレーズは 2 分後にクリップボードから消え、保存したファイルは暗号化されません。</li>
+          <li><strong>簡単な確認に答える。</strong><span class="path">保存しました</span>をタップします。自動生成のフレーズなら、Noxium が「フレーズの3番目の単語はどれですか?」のように 1〜2 語を尋ね、控えが正しいことを確かめます。</li>
+          <li><strong>あとから作り直す。</strong>保管庫の中で<span class="path">設定 › 復元フレーズ</span>を開き、<span class="path">新しい復元フレーズを作成</span>か<span class="path">自分でフレーズを決める</span>をタップします。新しいフレーズに置き換わり、古いものは使えなくなります。</li>
+        </ol>
+        <figure class="shot">
+          <img src="/assets/guides/noxium-recovery.jpg" alt="Noxium の復元フレーズ画面（ステップ 5/5）：自動生成された 8 つの単語と、コピー、“ファイル”に保存、保存しましたのボタン" width="559" height="1216" loading="lazy" decoding="async">
+          <figcaption>設定のステップ 5：ランダムな 8 単語。紙に書き留めましょう。</figcaption>
+        </figure>
+
+        <h2 id="use">パターンを忘れたときの使い方は？</h2>
+        <p>ロック画面で<span class="path">パターンを忘れた場合</span>をタップし、フレーズを入力します。メインの保管庫が開きます。</p>
+        <ol class="steps">
+          <li><strong>同じ iPhone では：</strong>ロック画面で<span class="path">パターンを忘れた場合</span>をタップし、<span class="path">復元フレーズを使用</span>にフレーズを入力すると、メインの保管庫が開きます。</li>
+          <li><strong>新しいパターンを設定：</strong>中に入ったら<span class="path">設定 › パターンを変更</span>へ。</li>
+          <li><strong>新しい iPhone では：</strong>同じ Apple アカウントでサインインし、Noxium を開いて、<span class="path">保管庫を復元</span>で<span class="path">復元フレーズで復元</span>を選びます。</li>
+        </ol>
+        <p>ほかのアプリで締め出された場合は、<a href="/ja/guides/forgot-photo-vault-password">写真保管庫のパスワードを忘れたとき</a>のガイドで、ほかの保管庫の対応を紹介しています。</p>
+
+        <h2 id="store">どこに保管すべき？</h2>
+        <p>紙に書いて、安全な場所に、iPhone とは離して。実際的な選択肢は次のとおりです。</p>
+        <ul>
+          <li><strong>パスポートをしまう場所。</strong>自宅の引き出しや書類フォルダに。財布やスマホケースには入れないでください。</li>
+          <li><strong>パスワード管理アプリ（ふだんからきちんと使っているなら）。</strong>暗号化され、バックアップもされます。普通のメモ、自分宛てのメール、写真には残さないでください。</li>
+          <li><strong>保管庫の中には入れない。</strong>フレーズは中に入れないときのためのものです。</li>
+          <li><strong>決して人に教えない。</strong>フレーズを持つ人は、パターンなしでメインの保管庫を開けられます。</li>
+        </ul>
+
+        <h2 id="limits">復元フレーズで守れないことは？</h2>
+        <ul>
+          <li><strong>両方なくした場合。</strong>パターンを忘れてフレーズもなくすと、誰も保管庫を開けられません。私たちにも Apple にもできません。ほかの誰にも開けられない保管庫の代償です。</li>
+          <li><strong>誰かに見つかったフレーズ。</strong>紙に書いたフレーズの安全性は、保管場所しだいです。見られたかもしれないと思ったら、新しく作りましょう。</li>
+          <li><strong>ほかの保管庫。</strong>設定時のフレーズで開くのはメインの保管庫だけです。<a href="/ja/guides/what-is-a-decoy-vault">おとり保管庫</a>は、専用のパターンか、その保管庫の設定で作ったフレーズで開きます。</li>
+          <li><strong>バックアップなしで削除したアプリ。</strong>フレーズで開けるのは、iPhone か iCloud にまだ存在する保管庫です。アプリを削除していてバックアップもなければ、開けるものは何も残っていません。</li>
+        </ul>
+
+        <h2 id="plans">無料？ Pro？</h2>
+        <p>復元フレーズは、無料でも Pro でも、すべての Noxium 保管庫に含まれます。無料プランには写真 150 枚、ビデオ 10 本、メモ無制限、おとり保管庫 1 つ、そして iCloud への完全なバックアップと復元が含まれます。</p>
+
+        <div class="cta-card">
+          <p class="cta-card-title">締め出されない。ほかの誰にもリセットされない。</p>
+          <p>設定時に書き留めた復元フレーズで、保管庫を開けます。パターンをリセットできる人はいません。開発者も Apple もできません。</p>
+          <a href="https://apps.apple.com/app/apple-store/id6824616093" class="btn btn-primary" data-cta="body" data-label-waitlist="ベータに参加" data-label-live="App Store でダウンロード">App Store でダウンロード</a>
+          <!-- build:status -->
+          <span class="release-status">iPhone と iPad 向けに App Store で配信中。</span>
+          <!-- /build:status -->
+        </div>
+
+        <h2 id="faq">よくある質問</h2>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>写真保管庫の復元フレーズとは？</span></span></summary>
+            <div class="faq-body"><p>設定時に保存しておく単語の並びで、コードを忘れたときに保管庫を開けられます。メールでのリセットと違い、単語を持っている人しか使えません。</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>あとで復元フレーズをもう一度見られる？</span></span></summary>
+            <div class="faq-body"><p>見られません。Noxium はフレーズを保存しないので、再表示できません。控えをなくしたら、保管庫を開けるうちに設定 › 復元フレーズで新しく作りましょう。</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>パターンを変えるとフレーズも変わる？</span></span></summary>
+            <div class="faq-body"><p>変わりません。パターンとフレーズは、同じ保管庫を開ける別々の鍵です。片方を変えても、もう片方はそのまま使えます。</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>暗号資産ウォレットのシードフレーズと同じ？</span></span></summary>
+            <div class="faq-body"><p>同じ BIP-39 の単語リストを使いますが、ウォレットのシードではなく、その用途には使えません。扱いは同じくらい慎重に。</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Noxium の開発者は保管庫を復旧できる？</span></span></summary>
+            <div class="faq-body"><p>できません。私たちがあなたのパターン、フレーズ、鍵を持つことはありません。だからこそフレーズが大切です。</p></div>
+          </details>
+        </div>
+
+        <p><em>誤りや古い情報を見つけたら、<a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a> までお知らせください。修正します。</em></p>
+      </article>
+
+      <aside class="article-aside" aria-label="このページの内容">
+        <nav class="toc" aria-label="目次">
+          <p class="toc-title">このページの内容</p>
+          <ol>
+            <li><a href="#how">しくみ</a></li>
+            <li><a href="#setup">設定</a></li>
+            <li><a href="#use">使い方</a></li>
+            <li><a href="#store">保管場所</a></li>
+            <li><a href="#limits">守れないこと</a></li>
+            <li><a href="#plans">無料か Pro か</a></li>
+            <li><a href="#faq">よくある質問</a></li>
+          </ol>
+        </nav>
+        <!-- build:related -->
+        <div class="related">
+          <p class="toc-title">関連ページ</p>
+          <ul role="list">
+            <li><a href="/ja/guides/forgot-photo-vault-password">パスワードを忘れた</a></li>
+            <li><a href="/ja/features/pattern-lock">パターンロック</a></li>
+            <li><a href="/ja/features/encrypted-icloud-backup">暗号化 iCloud バックアップ</a></li>
+            <li><a href="/ja/features/on-device-encryption">デバイス上の暗号化</a></li>
+            <li><a href="/ja/features/">機能一覧</a></li>
+          </ul>
+        </div>
+        <!-- /build:related -->
+      </aside>
+    </div>
+  </main>
+
+  <!-- build:footer -->
+  <!-- Shared footer for subpages (the homepage has its own copy with build:status). Edit partials/footer.html, then run python3 tools/build.py. -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="/" class="wordmark" aria-label="Noxium ホーム">Noxium<span aria-hidden="true">.</span></a>
+          <p>写真・ビデオ・メモのためのプライベートな保管庫。</p>
+        </div>
+
+        <nav class="footer-groups" aria-label="フッター">
+          <div>
+            <h2 class="footer-heading">製品</h2>
+            <ul role="list">
+              <li><a href="/#features">機能</a></li>
+              <li><a href="/#security">暗号化のしくみ</a></li>
+              <li><a href="/#pricing">無料版と Pro</a></li>
+              <li><a href="/ja/best-photo-vault-apps-iphone">写真保管庫アプリの比較</a></li>
+              <li><a href="/#faq">よくある質問</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="footer-heading">ガイド</h2>
+            <ul role="list">
+              <li><a href="/ja/guides/how-to-hide-photos-on-iphone">iPhone で写真を隠す方法</a></li>
+  <li><a href="/ja/guides/is-iphone-hidden-album-private">「非表示」アルバムは安全？</a></li>
+  <li><a href="/ja/guides/hidden-photos-iphone">非表示の写真</a></li>
+  <li><a href="/ja/guides/move-photo-vault-to-new-iphone">保管庫を新しい iPhone へ</a></li>
+  <li><a href="/ja/guides/photo-vault-lost-photos">保管庫の写真が消えた</a></li>
+  <li><a href="/ja/guides/keepsafe-alternatives">Keepsafe の代わり</a></li>
+  <li><a href="/ja/guides/vaultaire-vs-keepsafe">Vaultaire と Keepsafe</a></li>
+              <li><a href="/ja/guides/">すべてのガイド</a></li>
+              <li><a href="/ja/features/">機能</a></li>
+  <li><a href="/compare/">Comparisons</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="footer-heading">会社情報</h2>
+            <ul role="list">
+              <li><a href="/about">概要</a></li>
+              <li><a href="/support">サポート</a></li>
+              <li><a href="/privacy">プライバシーポリシー</a></li>
+              <li><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener">利用規約</a></li>
+              <li><a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Noxium。独立系デベロッパ Inertia Projects が開発。App Store のプライバシーラベル：データの収集なし。</p>
+        <nav class="lang-list" aria-label="言語"><a href="/features/recovery-phrase" hreflang="en" lang="en">English</a><a href="/de/features/recovery-phrase" hreflang="de" lang="de">Deutsch</a><a href="/fr/features/recovery-phrase" hreflang="fr" lang="fr">Français</a><a href="/es/features/recovery-phrase" hreflang="es" lang="es">Español</a><a href="/pt-br/features/recovery-phrase" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a><a href="/it/features/recovery-phrase" hreflang="it" lang="it">Italiano</a><a href="/ja/features/recovery-phrase" hreflang="ja" lang="ja" aria-current="true">日本語</a><a href="/ko/features/recovery-phrase" hreflang="ko" lang="ko">한국어</a><a href="/zh-hant/features/recovery-phrase" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></nav>
+        <p>Apple、Apple のロゴ、iPhone、iPad、Face ID は、米国およびその他の国や地域で登録された Apple Inc. の商標です。App Store は Apple Inc. のサービスマークです。</p>
+      </div>
+    </div>
+  </footer>
+  <!-- /build:footer -->
+
+  <script src="/app.js" defer></script>
+</body>
+</html>

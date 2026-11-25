@@ -262,6 +262,28 @@
       "crumb": "Funzioni",
       "published": "2026-11-23",
       "updated": "2026-11-23"
+    },
+    "/features/recovery-phrase": {
+      "source": "2026-11-13",
+      "title": "Frase di recupero della cassaforte foto Noxium",
+      "description": "Sequenza dimenticata? La frase di recupero di Noxium apre la cassaforte, e nessuno può reimpostarla per te. Come funziona, dove tenerla e i suoi limiti.",
+      "headline": "Frase di recupero: la chiave di riserva che hai solo tu",
+      "summary": "Come la frase di recupero di 8 parole di Noxium apre la cassaforte se dimentichi la sequenza, e come conservarla al sicuro.",
+      "crumb": "Frase di recupero",
+      "keyword": "cassaforte foto frase di recupero",
+      "published": "2026-11-25",
+      "updated": "2026-11-25"
+    },
+    "/compare/keepsafe": {
+      "source": "2026-11-14",
+      "title": "Keepsafe: recensione (2026) e confronto con Noxium",
+      "description": "Keepsafe si sincronizza con un account email e il suo cloud, con pubblicità nel piano gratuito. Cosa fa bene, dove è carente e come si confronta.",
+      "headline": "Keepsafe: recensione e confronto con Noxium nel 2026",
+      "summary": "Una recensione onesta di Keepsafe basata sulla scheda dell’App Store e sul centro assistenza, a confronto con Noxium.",
+      "crumb": "Noxium o Keepsafe",
+      "keyword": "keepsafe recensione",
+      "published": "2026-11-25",
+      "updated": "2026-11-25"
     }
   },
   "facts": [

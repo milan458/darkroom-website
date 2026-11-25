@@ -257,7 +257,7 @@
           <li><strong>ファイルの鍵。</strong>写真・ビデオ・メモ 1 つずつに、保管庫の鍵で封印されたランダムな鍵があります。サムネールは、ファイルの鍵から導いた別の鍵を使います。</li>
           <li><strong>ファイルそのもの。</strong>各ファイルは 1 MiB ずつのブロックに分けて AES-256-GCM で暗号化され、ブロックごとに認証タグが付きます。長いビデオもファイル全体を先に復号せずに再生でき、書き換えられたり壊れたりしたブロックは、壊れたデータを表示する代わりに開くのを拒みます。</li>
         </ol>
-        <p>パターンを変えても封印し直すのは保管庫の鍵だけなので、写真が何千枚あっても一瞬で済みます。<a href="/features/recovery-phrase">復元フレーズ</a>は、同じ保管庫の鍵にかけた 2 つ目の封印です。背景にある考え方を数式なしで知りたいなら、<a href="/ja/guides/how-encrypted-photo-vaults-work">暗号化された写真保管庫のしくみ</a>をお読みください。</p>
+        <p>パターンを変えても封印し直すのは保管庫の鍵だけなので、写真が何千枚あっても一瞬で済みます。<a href="/ja/features/recovery-phrase">復元フレーズ</a>は、同じ保管庫の鍵にかけた 2 つ目の封印です。背景にある考え方を数式なしで知りたいなら、<a href="/ja/guides/how-encrypted-photo-vaults-work">暗号化された写真保管庫のしくみ</a>をお読みください。</p>
 
         <h2 id="what">具体的に何が暗号化される？</h2>
         <p>保管庫に入れたものすべてと、それにまつわる情報です。ファイル名や日付の一覧だけでも多くのことがわかるので、これは大切です。</p>
@@ -362,6 +362,7 @@
             <li><a href="/ja/features/pattern-lock">パターンロック</a></li>
             <li><a href="/ja/features/encrypted-icloud-backup">暗号化 iCloud バックアップ</a></li>
             <li><a href="/ja/guides/how-encrypted-photo-vaults-work">暗号化のしくみ</a></li>
+            <li><a href="/ja/features/recovery-phrase">復元フレーズ</a></li>
             <li><a href="/ja/features/">機能一覧</a></li>
           </ul>
         </div>

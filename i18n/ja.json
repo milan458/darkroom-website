@@ -262,6 +262,28 @@
       "crumb": "機能",
       "published": "2026-11-23",
       "updated": "2026-11-23"
+    },
+    "/features/recovery-phrase": {
+      "source": "2026-11-13",
+      "title": "写真保管庫の復元フレーズ：Noxium の予備の鍵",
+      "description": "パターンを忘れても、Noxium の復元フレーズで保管庫を開けます。誰にもリセットできません。しくみ、保管のしかた、限界を説明します。",
+      "headline": "復元フレーズ：あなただけが持つ予備の鍵",
+      "summary": "パターンを忘れたとき、Noxium の 8 単語の復元フレーズで保管庫を開ける方法と、安全な保管のしかた。",
+      "crumb": "復元フレーズ",
+      "keyword": "写真保管庫 復元フレーズ",
+      "published": "2026-11-25",
+      "updated": "2026-11-25"
+    },
+    "/compare/keepsafe": {
+      "source": "2026-11-14",
+      "title": "Keepsafe の評判（2026）：Noxium と比較",
+      "description": "Keepsafe はメールアカウントと独自クラウドで同期し、無料プランには広告があります。良い点、足りない点、Noxium との違いを説明します。",
+      "headline": "Keepsafe の評判は？ 2026 年版 Noxium との比較",
+      "summary": "App Store のページとヘルプセンターをもとに、Keepsafe を公平にレビューし、Noxium と比べます。",
+      "crumb": "Noxium と Keepsafe",
+      "keyword": "keepsafe 評判",
+      "published": "2026-11-25",
+      "updated": "2026-11-25"
     }
   },
   "facts": [

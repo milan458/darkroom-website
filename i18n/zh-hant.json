@@ -328,6 +328,28 @@
       "crumb": "功能",
       "published": "2026-11-23",
       "updated": "2026-11-23"
+    },
+    "/features/recovery-phrase": {
+      "source": "2026-11-13",
+      "title": "照片保險庫復原短語：Noxium 的備用鑰匙",
+      "description": "忘記圖形？Noxium 的復原短語能打開你的保險庫，沒有人能替你重設。說明運作方式、保管方法與限制。",
+      "headline": "復原短語：只有你持有的備用鑰匙",
+      "summary": "忘記圖形時，如何用 Noxium 的 8 個單字復原短語打開保險庫，以及如何安全保管。",
+      "crumb": "復原短語",
+      "keyword": "照片保險庫 復原短語",
+      "published": "2026-11-25",
+      "updated": "2026-11-25"
+    },
+    "/compare/keepsafe": {
+      "source": "2026-11-14",
+      "title": "Keepsafe 評價（2026）：和 Noxium 比較",
+      "description": "Keepsafe 透過電子郵件帳號和自家雲端同步，免費方案有廣告。它的優點、不足，以及和 Noxium 的比較。",
+      "headline": "Keepsafe 評價：2026 年和 Noxium 比一比",
+      "summary": "根據 App Store 頁面和說明中心，公平評價 Keepsafe，並和 Noxium 比較。",
+      "crumb": "Noxium 和 Keepsafe",
+      "keyword": "keepsafe 評價",
+      "published": "2026-11-25",
+      "updated": "2026-11-25"
     }
   }
 }
