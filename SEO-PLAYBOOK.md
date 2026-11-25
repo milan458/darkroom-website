@@ -133,12 +133,14 @@ Act on the report weekly, not daily: positions move day to day, and a page chang
 
 ### Daily publishing (30-day plan, from November 2026)
 
-Goal: close the gap with Vaultaire (256 English pages, 33 languages) by publishing **4 pages a day** from `content-plan.json`: the first features, then comparisons, the remaining features, guides and scenarios, in `order`. Milan reviews every page; merging the day's PR publishes it.
+Goal: close the gap with Vaultaire (256 English pages, 33 languages) by publishing **1 page a day** from `content-plan.json`: the first features, then comparisons, the remaining features, guides and scenarios, in `order`. Milan reviews every page; merging the day's PR publishes it.
+
+**Pace history:** 4 pages a day from 13 November 2026. On 25 November Milan cut it to 1 a day: impressions fell to almost zero on 17–19 November, during Google's November 2026 core update (10–24 November) and right after the site grew from about 14 to about 60 English pages, plus about 150 translations, in 12 days. Search Console showed no manual action, no removals, and Googlebot could crawl the site. Go back to more than 1 a day only once impressions have recovered and most pages published 14 or more days ago are indexed.
 
 **The daily run** (a scheduled cloud task does this each morning; anyone can run it by hand):
 
 1. `git switch main && git pull`, then a branch `pages/<YYYY-MM-DD>`.
-2. Take the next 4 topics in `content-plan.json` with `"status": "todo"`, lowest `order` first. Skip a topic whose page already exists. A hub topic (`"hub": true`) only means "set the hub's `draft` to false" once 3 of its pages are live; it doesn't use up one of the 4.
+2. Take the next topic in `content-plan.json` with `"status": "todo"`, the lowest `order`. Skip a topic whose page already exists. A hub topic (`"hub": true`) only means "set the hub's `draft` to false" once 3 of its pages are live; it doesn't count as the day's page. With one page a day, make it the best page on its topic: more original detail and better internal links than usual.
 3. For each topic, research before writing:
    - Google's "People also ask" questions and related searches for the `keyword` (web search).
    - The matching Vaultaire page (`"vaultaire"`): note what it covers. Cover more, answer better, never copy text or structure.
@@ -148,7 +150,7 @@ Goal: close the gap with Vaultaire (256 English pages, 33 languages) by publishi
 4. Write from the template for the type (`templates/*.html`), add the page to `site.json` (title ≤ 60 with the keyword near the start, description ≤ 155, `keyword`, `cluster`, `published` and `updated` = today, `competitor` on comparisons, `sensitive` on sensitive scenarios). `"expand"` topics improve the existing page instead, and bump its `updated`.
 5. Link it in: 2–3 links in the text to related pages, and add a link to the new page from at least 2 existing pages (the build fills Related boxes from the cluster on its own).
 6. `python3 tools/build.py` (no warnings) and `python3 tools/check_content.py <new and changed files>` (no errors). Check one new page at 375 px.
-7. Set the 4 topics to `"status": "in-review"`, commit, push, and open a PR titled "Pages for <date>" listing each page, its keyword, the Vaultaire page it answers, and anything Milan should check (new facts, sensitive pages, claims you couldn't verify).
+7. Set the topic to `"status": "in-review"`, commit, push, and open a PR titled "Pages for <date>" listing each page, its keyword, the Vaultaire page it answers, and anything Milan should check (new facts, sensitive pages, claims you couldn't verify).
 
 **Milan's review** (about 15–20 minutes a page): read it on a phone; check every claim about Noxium; check one menu path against your iPhone; for comparisons, check the competitor is treated fairly; for sensitive scenarios, read the safety box and the help links first. Comment or edit on the PR, then merge. After merging, set the topics to `"live"` (the next daily run does it if you don't), request indexing for the new URLs in Search Console, and IndexNow runs on its own.
 
@@ -163,7 +165,7 @@ Goal: close the gap with Vaultaire (256 English pages, 33 languages) by publishi
 - Anything about images of minors: point only to NCMEC Take It Down and the police. No other advice.
 - Sensitive scenarios stay English-only until a native speaker can review translations.
 
-**Pace rule:** the daily report (`~/seo-data/getnoxium-app/reports/latest.md`) shows which sitemap URLs aren't indexed. If more than 25% of pages published 14 or more days ago are still "Crawled" or "Discovered – currently not indexed", drop to 2 pages a day and improve the weakest pages (more original detail, better internal links) before going back to 4. Google treats a fast flood of thin pages on a new domain as scaled content abuse; this rule is the brake.
+**Pace rule:** the daily report (`~/seo-data/getnoxium-app/reports/latest.md`) shows which sitemap URLs aren't indexed. If more than 25% of pages published 14 or more days ago are still "Crawled" or "Discovered – currently not indexed", pause new pages and improve the weakest ones (more original detail, better internal links, merging near-duplicates) before going back to 1 a day. Google treats a fast flood of thin pages on a new domain as scaled content abuse; this rule is the brake.
 
 **Translations** (from day 10): 8 languages, set in `site.json` `"locales"`: de, fr, es, pt-br, it, ja, ko, zh-hant. Translate an English page once it has been live 7 days, the strongest pages first (most impressions in the daily report, then comparisons and features). To translate one page into one language:
 
