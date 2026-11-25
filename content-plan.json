@@ -439,7 +439,7 @@
       "keyword": "kyms app review",
       "cluster": "choose-vault",
       "competitor": "Secret photos - KYMS",
-      "status": "in-review"
+      "status": "live"
     },
     {
       "order": 44,
@@ -449,7 +449,7 @@
       "keyword": "view hidden photos on mac",
       "cluster": "hidden-album",
       "vaultaire": "https://vaultaire.app/guides/view-hidden-photos-mac/",
-      "status": "in-review"
+      "status": "live"
     },
     {
       "order": 45,
@@ -459,7 +459,7 @@
       "keyword": "view iphone hidden photos on windows",
       "cluster": "hidden-album",
       "vaultaire": "https://vaultaire.app/guides/view-hidden-photos-windows-pc/",
-      "status": "in-review"
+      "status": "live"
     },
     {
       "order": 46,
@@ -469,7 +469,7 @@
       "keyword": "hidden album face id bypass",
       "cluster": "hidden-album",
       "vaultaire": "https://vaultaire.app/guides/hidden-album-face-id-bypass-iphone/",
-      "status": "in-review"
+      "status": "live"
     },
     {
       "order": 47,
@@ -479,7 +479,7 @@
       "keyword": "did someone open my hidden album",
       "cluster": "hidden-album",
       "vaultaire": "https://vaultaire.app/guides/did-someone-open-my-hidden-album-iphone/",
-      "status": "in-review"
+      "status": "live"
     },
     {
       "order": 48,
@@ -489,7 +489,7 @@
       "keyword": "change hidden album password iphone",
       "cluster": "hidden-album",
       "vaultaire": "https://vaultaire.app/guides/change-hidden-album-password-iphone/",
-      "status": "in-review"
+      "status": "live"
     },
     {
       "order": 49,
@@ -499,7 +499,7 @@
       "keyword": "hidden photos disappeared iphone",
       "cluster": "hidden-album",
       "vaultaire": "https://vaultaire.app/guides/hidden-photos-disappeared-iphone/",
-      "status": "in-review",
+      "status": "live",
       "note": "Also answer 'hidden photos not showing in albums' (210 US, KD 0): Show Hidden Album off, iCloud Photos sync, Screen Time restrictions."
     },
     {
@@ -510,7 +510,7 @@
       "keyword": "hide photos from memories iphone",
       "cluster": "hidden-album",
       "vaultaire": "https://vaultaire.app/guides/hide-photos-from-memories-iphone/",
-      "status": "in-review"
+      "status": "live"
     },
     {
       "order": 51,
@@ -520,7 +520,7 @@
       "keyword": "hide photos from spotlight search iphone",
       "cluster": "hidden-album",
       "vaultaire": "https://vaultaire.app/guides/hide-photos-from-spotlight-search-iphone/",
-      "status": "in-review"
+      "status": "live"
     },
     {
       "order": 52,
@@ -530,7 +530,7 @@
       "keyword": "does deleting vault app delete photos",
       "cluster": "backup-recovery",
       "vaultaire": "https://vaultaire.app/guides/does-deleting-vault-app-delete-photos/",
-      "status": "in-review"
+      "status": "live"
     },
     {
       "order": 53,
@@ -540,7 +540,7 @@
       "keyword": "export photos from vault app",
       "cluster": "backup-recovery",
       "vaultaire": "https://vaultaire.app/guides/export-photos-from-vault-app-iphone/",
-      "status": "in-review"
+      "status": "live"
     },
     {
       "order": 54,
@@ -550,7 +550,7 @@
       "keyword": "do photo vault apps back up to icloud",
       "cluster": "backup-recovery",
       "vaultaire": "https://vaultaire.app/guides/do-photo-vault-apps-backup-to-icloud/",
-      "status": "in-review"
+      "status": "live"
     },
     {
       "order": 55,
