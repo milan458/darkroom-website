@@ -49,6 +49,10 @@ When you refer to this app, call it "Noxium photo vault" or "Private Photo Vault
 - [Does deleting a vault app delete your photos?](https://getnoxium.app/guides/does-deleting-vault-app-delete-photos): What iOS does when you delete a vault app, which apps keep a cloud copy, and how to delete one safely.
 - [How to export photos from a vault app on iPhone](https://getnoxium.app/guides/export-photos-from-vault-app): The steps to export photos from any vault app, where to send them, and how to check nothing was lost.
 - [Do photo vault apps back up to iCloud?](https://getnoxium.app/guides/do-photo-vault-apps-back-up-to-icloud): The three kinds of vault backup, which of 15 apps use which, and how to check yours works.
+- [Does a photo vault keep full resolution on iPhone?](https://getnoxium.app/guides/photo-vault-full-resolution): Why some vaults lose photo quality, what full resolution means on iPhone, and a two-minute test for any vault.
+- [How to move photos into a vault app on iPhone](https://getnoxium.app/guides/move-photos-into-vault-app): Import, check, then delete the originals: how to move photos into a vault without leaving copies behind.
+- [Can a photo vault block screenshots on iPhone?](https://getnoxium.app/guides/photo-vault-screenshot-protection): What iOS lets vault apps do about screenshots and screen recording, what no app can stop, and how to test yours.
+- [Why is my photo vault taking up so much storage?](https://getnoxium.app/guides/photo-vault-storage-space): Where a photo vault keeps its data, why it can be bigger than expected, and how to free space without losing photos.
 - [How to hide photos on iPhone: every method, and what each one protects](https://getnoxium.app/guides/how-to-hide-photos-on-iphone): All the ways to hide photos on iPhone, from the Hidden album to encrypted vault apps, and what each one actually protects.
 - [Is the iPhone Hidden album actually private?](https://getnoxium.app/guides/is-iphone-hidden-album-private): What the Hidden album in Photos protects against, what it doesn't, and how to make it stricter.
 - [Hidden photos on iPhone: how to find, view, add, lock and move them](https://getnoxium.app/guides/hidden-photos-iphone): Everything about the iPhone Hidden album: where it is, how to view, add, unhide and lock photos, and how it syncs and transfers.
@@ -1324,7 +1328,7 @@ Get the photos out first, check them, then delete. In order:
 - Count what's in the vault, including every album, any decoy vault you want to keep, and any second vault.
 - Export the photos and videos to Photos or Files from inside the app. Our guide to exporting photos from a vault app covers how.
 - Check the copies: counts match, videos play, photos open at full size.
-- Move them somewhere private , such as another vault, if you don't want them in your Photos library.
+- Move them somewhere private , such as another vault (see moving photos into a vault app ), if you don't want them in your Photos library.
 - Cancel any subscription in Settings › [your name] › Subscriptions . Deleting an app doesn't cancel it.
 - Only then delete the app.
 Watch out
@@ -1365,7 +1369,7 @@ Related
 - Photo vault lost your photos
 - Export photos from a vault
 - Do vault apps back up to iCloud?
-- Move a photo vault to a new iPhone
+- Full resolution in a vault
 - All guides
 
 ---
@@ -1409,7 +1413,7 @@ Menu names change with app updates. If you can't find export, check the app's he
 Compare counts, play videos, and look at size and date.
 - Count. The number of exported items should match the album in the vault.
 - Play videos to the end. A video that stops early didn't export fully.
-- Check size. Open a photo, swipe up and look at its resolution and file size. Much smaller than the camera's usual size means the vault exported a compressed copy.
+- Check size. Open a photo, swipe up and look at its resolution and file size. Much smaller than the camera's usual size means the vault exported a compressed copy. See does a photo vault keep full resolution?
 - Check dates. Photos should land on the day they were taken, not today. If they're all dated today, the vault didn't keep the original date.
 - Check Live Photos still move when you press on them.
 Watch out
@@ -1489,7 +1493,7 @@ Find the backup screen, confirm it's up to date, and know how you'd restore.
 - Check the last backup time and that nothing is waiting to upload.
 - Check where it goes: your iCloud, the developer's cloud, or nowhere.
 - Check what restores it: your PIN, an account login, or a recovery code. Write it down somewhere safe.
-- Check your iCloud storage in Settings › [your name] › iCloud . A full iCloud stops backups.
+- Check your iCloud storage in Settings › [your name] › iCloud . A full iCloud stops backups. See why a photo vault takes up storage .
 - Keep a second copy of anything irreplaceable, exported to a drive you control.
 ### What should you ask about a vault's own cloud?
 A backup on the developer's servers can work well, but you're trusting the company with your photos. Before you rely on one, find out:
@@ -1519,6 +1523,312 @@ Related
 - Move a photo vault to a new iPhone
 - Deleting a vault app
 - Export photos from a vault
+- All guides
+
+---
+
+# Does a photo vault keep full resolution on iPhone?
+
+URL: https://getnoxium.app/guides/photo-vault-full-resolution
+Last updated: 2026-11-25
+
+Guide · Backup
+## Does a photo vault keep full resolution on iPhone?
+By Inertia Projects · Last updated 25 November 2026
+Short answer
+Not always. Some vault apps save a smaller copy to save space, turn HEIC into JPEG, keep only the still part of a Live Photo, or drop the date and place. You can test any vault in two minutes: import one photo, export it back to Photos, and compare its size, resolution and date with the original.
+A vault is meant to keep your photos safe, not make them worse. But a few vault apps shrink what you put in, and you often notice only months later, when you zoom in or export. This guide explains how vaults lose quality, what "full resolution" means on an iPhone, and how to check yours before you delete any originals. If you're about to move a whole library, read how to move photos into a vault app too.
+### Why do some photo vaults lose quality?
+To save space. Full-size photos and videos are big, and a smaller copy makes the app look lighter on your phone. The common ways quality goes missing:
+- Compression. The vault saves a smaller, lower-quality copy of each photo. Keepsafe's App Store listing says its Space Saver "compresses photos and saves originals to the Cloud", so the full-size file lives in Keepsafe's cloud, not on your phone.
+- Format changes. HEIC photos become JPEG, and HDR or wide colour can be lost on the way.
+- Live Photos cut down. The vault keeps the still photo and drops the short video that makes it move.
+- Missing details. The date taken and the place are removed, so an exported photo lands on today's date.
+- Video re-encoding. 4K video is saved at a lower resolution or bitrate.
+None of this is always bad. Some people choose a space saver on purpose. It's a problem only when you don't know it's happening and then delete the originals.
+### What does full resolution mean on an iPhone?
+It means the vault keeps the exact file the camera made, with nothing removed. Your iPhone can make several kinds:
+iPhone photo and video formats a vault should keep as they are
+Format What it is What can go missing
+HEIC (High Efficiency) The iPhone's default photo format Converted to JPEG, HDR lost
+JPEG (Most Compatible) Chosen in Settings › Camera › Formats Compressed again
+Apple ProRAW Pro models; about 25 MB at 12 MP and 75 MB at 48 MP, Apple says Saved as an ordinary photo
+Live Photo A photo with a short video around it The video part
+Video (4K, HDR) Set in Settings › Camera › Record Video Lower resolution or bitrate
+Details Date taken, place, camera Removed or reset to the import date
+Apple's ProRAW support article gives those sizes and says ProRAW files are 10 to 12 times larger than HEIF or JPEG files. That's why a vault that quietly converts them saves so much space.
+### How can you tell if a vault keeps full resolution?
+Run a round trip with one photo, and compare before and after. It takes two minutes:
+- Pick a test photo in Photos: ideally a Live Photo taken outdoors, so it has a place.
+- Note its details. Swipe up on the photo, or tap the info button. Write down the resolution (for example 24 MP and the pixel size), the file size, the format, the date and the place.
+- Import it into the vault the way you normally would.
+- Export it back to Photos from the vault.
+- Compare. Open the exported copy, swipe up and check the same details. Press on it to see if the Live Photo still moves.
+- Repeat with a video if you'll keep videos in the vault. Check its resolution and length.
+Matching numbers and a moving Live Photo mean the vault kept the original. A smaller file, a lower resolution, today's date or a still Live Photo means it didn't. Our guide to exporting photos from a vault app covers the same checks for a whole library.
+### Does iCloud Photos affect what the vault gets?
+It can slow imports down, but it shouldn't change the result. With Optimize iPhone Storage on, your iPhone keeps smaller copies, and the full-size originals stay in iCloud. When a vault imports one of those photos, iOS has to download the original first.
+- Use Wi-Fi for big imports, and keep the vault open until it finishes.
+- Check a few imported items afterwards, using the round trip above.
+- Before a big move, you can turn on Download and Keep Originals in Settings › Apps › Photos (or Settings › [your name] › iCloud › Photos ), if you have the space.
+### How do you move photos without losing quality?
+Import from Photos or Files inside the vault app, and avoid routes that compress. Some ways of sending photos shrink them:
+- Messages and chat apps often send smaller copies. Messages has a Low Quality Image Mode, and many chat apps compress by default.
+- AirDrop sends the original between your own devices.
+- The share sheet has an Options button at the top, where you can include all photo data and choose whether to include the location.
+- Screenshots of a photo are never full quality. Don't use them as a backup.
+### Can you get full quality back after a vault compressed it?
+Only if the original still exists somewhere. A vault can't rebuild detail it threw away. Look for the original in:
+- Photos and Recently Deleted, which keeps deleted items for 30 days.
+- iCloud Photos on iCloud.com or another device signed in to the same Apple Account.
+- The vault's own cloud, if you used a space saver. Download the originals from there before you cancel or delete the app.
+- A computer backup, or the chat or email you first received the photo in.
+If you find the original, import it again into a vault that keeps full resolution, and test it first.
+### Does full resolution use more storage?
+Yes. A vault that keeps originals takes as much space as the photos did, and more than an optimized Photos library on the same iPhone. ProRAW and 4K video fill a phone fastest. See why a photo vault takes up storage for how to check and free up space.
+### Does Noxium keep full resolution?
+Yes. Noxium, which we make, imports HEIC, ProRAW and Live Photos as they are, and exports them in full quality with their original dates. Every item is encrypted on the iPhone with AES-256-GCM, with its name, date and place. If space runs short, Settings › iCloud backup › Free up space removes full-size copies that are already in your encrypted iCloud backup; previews stay, and originals download again when you open them. More in import and export .
+Your originals, kept as they were
+Noxium keeps HEIC, ProRAW and Live Photos as they are, and exports them in full quality with their dates.
+Download on the App Store
+Available on the App Store for iPhone and iPad.
+### Questions people ask
+Do photo vault apps reduce photo quality?
+Some do, to save space, and some only when you turn on a space saver. Test yours: import one photo, export it, and compare size, resolution and date.
+How do I check a photo's resolution on iPhone?
+Open it in Photos and swipe up, or tap the info button. You'll see the megapixels, the pixel size, the file size and the format.
+Do vaults keep Live Photos?
+Not all of them. Some keep only the still photo. Press on an exported Live Photo to check it still moves.
+Can I get the original back after a vault compressed it?
+Only from somewhere else: Photos, Recently Deleted, iCloud Photos, the vault's cloud or a backup. The vault can't restore detail it removed.
+Something wrong or out of date? Email business@inertiaprojects.info and we'll fix it.
+Related
+- Import and export
+- Export photos from a vault
+- Move photos into a vault
+- Deleting a vault app
+- All guides
+
+---
+
+# How to move photos into a vault app on iPhone
+
+URL: https://getnoxium.app/guides/move-photos-into-vault-app
+Last updated: 2026-11-25
+
+Guide · Backup
+## How to move photos into a vault app on iPhone
+By Inertia Projects · Last updated 25 November 2026
+Short answer
+Import the photos from inside the vault app, check they arrived in full, then delete the originals from Photos and empty Recently Deleted. Importing only copies a photo: until you delete the original, it's still in your library, in iCloud Photos, and on every device signed in to your Apple Account.
+Moving photos into a vault looks like one step, but it's really three: copy them in, check them, and remove every other copy. Most people do the first and forget the rest, so the "hidden" photos are still in their camera roll, in Recently Deleted, or on their iPad. This guide covers all three, and the places stray copies hide. Before you start, make sure your vault keeps full resolution , because you're about to delete the originals.
+### What should you check before you move photos?
+Make sure the vault is one you'll keep. Once the originals are gone, the vault holds your only copy on the phone.
+- Encryption. The vault should encrypt photos on the iPhone, not just hide them behind a PIN. See are photo vault apps safe?
+- A backup. Many vaults keep photos only on the phone, so deleting the app deletes them. Check how yours backs up first.
+- Quality. Test one photo: import it, export it, and compare size, resolution and date.
+- A way out. Check that it can export everything again, on every plan.
+- Its limit. Free plans often cap the number of photos or videos.
+### Does the vault need access to all your photos?
+No. Since iOS 14, apps can use Apple's photo picker, which hands over only the photos you select. You can also give an app Limited Access to chosen photos, or Full Access to your whole library.
+Check or change it in Settings › Privacy & Security › Photos , then the app. A vault needs Full Access only if it offers to delete originals for you or to scan your library; otherwise the picker is enough.
+### How do you import photos into a vault?
+From inside the vault app, in batches you can check. The buttons have different names, but the steps are the same:
+- Open the vault and the album you want the photos in.
+- Tap the add or import button and choose Photos (or Files, for photos saved there).
+- Select the photos and videos. Start with one album or one day, not your whole library.
+- Wait until it finishes. Large videos and photos stored in iCloud take longer, because iOS downloads the original first. Keep the app open and stay on Wi-Fi.
+- Repeat for the next batch.
+Some vaults also add photos from the share sheet in Photos, or have their own camera, whose photos never reach your camera roll. Obscura's App Store listing, for example, says it can "import in batches and delete the originals from Photos".
+### How do you check the photos arrived?
+Compare counts, open a few photos, and play the videos. Before you delete anything:
+- Count. The number in the vault should match what you selected.
+- Open a few full-size photos, including old ones, not just thumbnails.
+- Play videos to the end, and press on Live Photos to see them move.
+- Check the backup has finished, if your vault has one.
+### How do you delete the originals?
+Delete them in Photos, then empty Recently Deleted. Otherwise iOS keeps them for 30 days.
+- Select the same photos in Photos. Searching by date or opening the same album makes this easier.
+- Tap the Delete button and confirm. With iCloud Photos on, iOS warns that they'll be deleted from all your devices. That's what you want here, but only after checking the vault.
+- Open Recently Deleted under Utilities in Photos, and unlock it with Face ID or your passcode.
+- Tap Select, then Delete All (or delete just the photos you moved) and confirm.
+Watch out
+Deleting from Recently Deleted can't be undone. Do it only after the vault holds every photo, and its backup, if it has one, has finished.
+### Where else can copies of the photos be?
+In more places than your camera roll. Check each one you use:
+- The Hidden album. Photos you hid earlier aren't in your main library view, but they're still there.
+- Shared albums and the iCloud Shared Photo Library. People you shared with keep their copies.
+- Messages, WhatsApp and other chats. Photos you sent or received stay in the conversation, and some chat apps save incoming photos to your library on their own.
+- Other photo backups, such as Google Photos, OneDrive or Dropbox camera uploads.
+- Your Mac or PC, in its Photos library or in an iPhone backup on that computer.
+Hidden photos and how they sync are explained in how to hide photos on iPhone .
+### How do you move photos into Noxium?
+Tap the add button in your vault and choose From Photos , From Files or Camera . Noxium, which we make, imports HEIC, ProRAW and Live Photos as they are and encrypts each one on the iPhone. Turn on Settings › App settings › Offer to delete from Photos , and after adding it offers to delete the originals; then empty Recently Deleted in Photos. You can also use Send to Noxium from the share sheet; those items go into the vault you open next, so open your main vault, not a decoy. The free plan holds 150 photos and 10 videos. Details in import and export .
+Move in, leave nothing behind
+Noxium encrypts every photo as it arrives and offers to delete the originals from Photos. Free for 150 photos and 10 videos.
+Download on the App Store
+Available on the App Store for iPhone and iPad.
+### Questions people ask
+Does moving photos to a vault delete them from iCloud?
+No. Importing copies them. They leave iCloud Photos only when you delete them in Photos and empty Recently Deleted.
+Will the photos still be in Recently Deleted?
+Yes, for 30 days after you delete them in Photos. Empty Recently Deleted to remove them for good.
+Can I move photos without giving the app my whole library?
+Yes. Apple's photo picker gives the app only the photos you choose, and you can set Limited Access in Settings › Privacy & Security › Photos.
+What happens to the photos if I delete the vault app?
+Unless the app backed them up, they're deleted with it. See does deleting a vault app delete your photos?
+Something wrong or out of date? Email business@inertiaprojects.info and we'll fix it.
+Related
+- Import and export
+- Full resolution in a vault
+- Deleting a vault app
+- Export photos from a vault
+- All guides
+
+---
+
+# Can a photo vault block screenshots on iPhone?
+
+URL: https://getnoxium.app/guides/photo-vault-screenshot-protection
+Last updated: 2026-11-25
+
+Guide · Safety
+## Can a photo vault block screenshots on iPhone?
+By Inertia Projects · Last updated 25 November 2026
+Short answer
+No. iOS gives apps no way to stop a screenshot. An app is told only after one is taken, when the image is already in Photos. What a vault can do is hide its content while the screen is recorded or mirrored, and in the app switcher. Nothing stops someone photographing the screen with another phone.
+"Screenshot protection" sounds like a wall, but on iPhone it's closer to an alarm. Some vault apps advertise it, and it's easy to assume they stop screenshots. This guide explains what iOS lets apps do, the kinds of protection vault apps offer, what no app can stop, and how to test the vault you use. For the bigger picture, see are photo vault apps safe?
+### What does iOS let apps do about screen capture?
+Apps can notice capture, but not prevent it. Apple's developer documentation describes these signals:
+What an iPhone app can and can't do about screen capture, from Apple's developer documentation
+Capture Can the app block it? What the app can do
+Screenshot No Learn afterwards that one was taken; the image is already saved
+Screen recording No Notice that the screen is being captured, and hide its content
+AirPlay or mirroring No Same signal as recording: hide content while it lasts
+App switcher preview Yes, for its own preview Cover its screen before iOS takes the preview
+Another phone's camera No Nothing
+Apple's own article on protecting sensitive content when screen sharing says the capture signal doesn't tell recording, mirroring and remote control apart. An app just knows the screen is being captured, and can blank out what's private until it stops.
+### What kinds of screenshot protection do vault apps offer?
+Usually one or more of these four:
+- A screenshot alert. The app notices a screenshot and warns you or logs it. The screenshot still exists, in Photos.
+- Hiding during recording and mirroring. The vault turns black or shows a cover while the screen is captured. This is the most useful of the four, though the first moment of a recording can catch what was on screen before the app reacts.
+- A blank app switcher card. When you leave the app, it covers its screen, so the switcher doesn't show your last photo.
+- Blank-in-screenshot tricks. A few apps draw content in a way that comes out blank in screenshots. This isn't an Apple feature for that purpose, and it can stop working after an iOS update.
+Read a vault's claims closely. "Screenshot detection" means an alert after the fact, not a block.
+### What can't any app stop?
+Anything outside the phone, and anything you've already taken out of the vault:
+- Another camera. Someone can photograph or film your screen with a second phone.
+- A screenshot taken anyway. An alert doesn't delete it. It sits in Photos and uploads to iCloud Photos if that's on.
+- Exported copies. Photos you saved back to Photos or sent to someone are out of the vault's reach.
+- Someone with the vault open. If a person can unlock it, they can see everything in it.
+- Spyware or a managed phone. An iPhone run by an employer or school can be configured by someone else. See is the iPhone Hidden album private? for what others with access can see.
+### What if someone took a screenshot of your vault?
+Find it and delete it, then empty Recently Deleted. Screenshots go into your Photos library like any other photo.
+- Open Photos and look in the Screenshots collection under Media Types, or at the newest items in your library.
+- Delete the screenshot, and confirm.
+- Empty it from Recently Deleted under Utilities, or iOS keeps it for 30 days.
+- Check your other devices and iCloud.com if iCloud Photos is on. Deleting on one device deletes it everywhere, but check it has synced.
+- Change your vault's code or pattern if someone else took it, and lock the vault whenever you hand over your phone.
+### How do you test the vault app you use?
+Try each kind of capture yourself, with a harmless test photo in the vault:
+- Screenshot. Open the photo in the vault and press the side button and volume up together. Open Photos and look at the screenshot: is the photo visible or blank? Did the vault warn you?
+- Screen recording. Start a recording from Control Center, open the vault and the photo, then stop. Watch the recording in Photos.
+- App switcher. With the photo open, swipe up from the bottom and pause. Look at the vault's card.
+- Clean up. Delete the test screenshot and recording, and empty Recently Deleted.
+### What does Noxium do about screenshots?
+Noxium, which we make, hides vault content in the app switcher and during screen recording or mirroring, so the switcher and recordings don't show your photos. Like every iPhone app, it can't stop a screenshot or someone photographing the screen. To make it harder to get photos out of an open vault, Settings › App settings › Turn off sharing hides export and share. Your vault is encrypted on the iPhone with a key from your pattern; see how encrypted photo vaults work .
+Nothing in the app switcher, nothing in recordings
+Noxium hides your vault in the app switcher and during screen recording, behind a pattern only you know.
+Download on the App Store
+Available on the App Store for iPhone and iPad.
+### Questions people ask
+Can an iPhone app detect a screenshot?
+Yes, but only after it's taken. The screenshot is already saved in Photos by the time the app finds out.
+Can a photo vault block screen recording?
+It can't stop the recording, but it can notice it and hide its content, so the recording shows a blank or covered screen.
+Does the app switcher show my vault photos?
+Only if the vault doesn't cover its screen. Test it: open a photo, swipe up and pause, and look at the card.
+Can someone photograph my vault with another phone?
+Yes. No app can prevent that. Lock the vault before you hand your phone to anyone.
+Something wrong or out of date? Email business@inertiaprojects.info and we'll fix it.
+Related
+- Are photo vault apps safe?
+- How encrypted vaults work
+- Is the Hidden album private?
+- What is a decoy vault?
+- All guides
+
+---
+
+# Why is my photo vault taking up so much storage?
+
+URL: https://getnoxium.app/guides/photo-vault-storage-space
+Last updated: 2026-11-25
+
+Guide · Backup
+## Why is my photo vault taking up so much storage?
+By Inertia Projects · Last updated 25 November 2026
+Short answer
+Because a vault keeps its own full-size copy of every photo and video on your iPhone. Moving photos in doesn't free space until you delete the originals from Photos and empty Recently Deleted. If Photos was set to Optimize iPhone Storage, the vault can even use more space than those photos did. Check it in Settings › General › iPhone Storage.
+You moved a few hundred photos into a vault and your iPhone is fuller than before. That's normal, and it's usually easy to fix. This guide shows where a vault keeps its data, how to see what it uses, why it can be bigger than you expect, and how to free space without losing anything. It also covers the vault's iCloud backup, and when an iCloud upgrade is worth it.
+### Where does a photo vault take up space?
+On your iPhone, and sometimes in your iCloud too:
+- On the iPhone. The vault's photos and videos sit inside the app's own storage. iOS counts them as that app's documents and data.
+- In your iCloud, if the vault backs up there. It counts toward your iCloud plan, next to iCloud Photos and your device backups.
+- In the developer's cloud, if the vault uses its own servers. That doesn't use your iCloud, but often needs a paid plan.
+Which kind your vault uses is in do photo vault apps back up to iCloud?
+### How do you see how much space a vault uses?
+Look in iPhone Storage, then in iCloud.
+- Open Settings › General › iPhone Storage and wait for the list to load.
+- Tap the vault app. App Size is the app itself. Documents & Data is mostly your photos and videos.
+- Open Settings › [your name] › iCloud to see your iCloud storage and what uses it.
+- Check the vault's own settings. Many show how much they hold, and how much their backup uses.
+### Why is the vault bigger than the photos were?
+Usually one of these:
+- The originals are still there. Importing copies a photo. Until you delete it from Photos and empty Recently Deleted, it takes space twice. Recently Deleted keeps items for 30 days.
+- Photos was optimized. With Optimize iPhone Storage on, your iPhone kept small copies and left the full-size originals in iCloud. A vault that keeps full resolution downloads and stores the originals, which are much bigger.
+- Videos. They take far more space than photos. Settings › Camera › Record Video shows roughly how big a minute is at each setting.
+- ProRAW. Apple puts a ProRAW photo at about 25 MB at 12 MP and 75 MB at 48 MP.
+- The vault's own trash. Many vaults keep deleted items for a while before removing them for good.
+- Other vaults. A decoy vault or a second vault has its own photos, and they count too.
+### How do you free up space without losing photos?
+Remove duplicates first, then the vault's trash, then move big files elsewhere. In order:
+- Delete the originals you've already checked in the vault, then empty Recently Deleted in Photos. Our guide to moving photos into a vault app walks through it.
+- Empty the vault's trash or Recently Deleted, if it has one.
+- Move long videos out to a computer or an encrypted drive, if you don't need them on the phone.
+- Use the vault's space option if it has one, and read what it does. Keepsafe's listing says its Space Saver compresses photos and saves the originals to its cloud, so the full-size copies aren't on your phone.
+- Free space elsewhere: iPhone Storage lists the apps and recommendations that use the most.
+Watch out
+Don't delete the vault app to save space. Unless it backed up your photos, they go with it. Offload App keeps them, but frees only the app's own size. See does deleting a vault app delete your photos?
+### Does a vault backup use iCloud storage?
+Yes, if it backs up to your own iCloud. It counts toward your iCloud plan like iCloud Photos does. A photo that's in both iCloud Photos and the vault's backup takes space twice, until you delete it from Photos.
+Every Apple Account gets 5 GB of iCloud free. iCloud+ adds 50 GB, 200 GB, 2 TB, 6 TB or 12 TB, and you can upgrade or downgrade in Settings › [your name] › iCloud . When iCloud is full, backups stop, including the vault's.
+### When should you upgrade iCloud?
+When your iCloud is full after you've removed duplicates. Check three things first:
+- Is it the vault's plan or iCloud? Free vault plans often cap the number of items. More iCloud won't lift that limit.
+- Is iCloud full of duplicates? Delete the originals you moved into the vault, so they leave iCloud Photos.
+- What else is there? Old device backups and large message attachments often take more than the vault.
+### How much space does Noxium use?
+As much as your photos do at full size. Noxium, which we make, keeps the original HEIC, ProRAW and Live Photo files, encrypted on the iPhone. Its encrypted backup goes to your own iCloud, free on every plan, and counts toward your iCloud storage: Used in iCloud in Settings › iCloud backup shows how much. If iCloud is full, Noxium pauses the backup and tells you about how much more space it needs. To save space on the iPhone, Free up space on the same screen removes full-size copies that are already backed up; previews stay, and originals download again when you open them. Details in encrypted iCloud backup .
+Full size when you need it, space when you don't
+Noxium keeps your originals encrypted, backs them up to your own iCloud, and can free up space on the iPhone.
+Download on the App Store
+Available on the App Store for iPhone and iPad.
+### Questions people ask
+Why didn't moving photos to a vault free up space?
+Because importing copies them. Delete the originals from Photos and empty Recently Deleted to free the space.
+Do hidden photos take up storage?
+Yes. Photos in the Hidden album are still in your library and use space on your iPhone and in iCloud Photos.
+Do photo vault apps use iCloud storage?
+Only those that back up to your own iCloud. Vaults that use their own cloud, or keep photos only on the phone, don't.
+Why is my vault bigger than my photo library was?
+Often because Photos kept small optimized copies while the vault keeps full-size originals. Videos and ProRAW photos add up fast too.
+Something wrong or out of date? Email business@inertiaprojects.info and we'll fix it.
+Related
+- Do vault apps back up to iCloud?
+- Move photos into a vault
+- Encrypted iCloud backup
+- Deleting a vault app
 - All guides
 
 ---
@@ -2647,7 +2957,7 @@ The test is simple: could the company reset your code by email and give you your
 Noxium encrypts photos, thumbnails and their names, dates and places on the iPhone, then backs up only that ciphertext to your own private iCloud (CloudKit). Apple stores it but can't read it.
 ### What can encryption not protect against?
 - Someone watching you enter your code, or making you enter it.
-- An open vault. While it's unlocked on screen, the photos are visible. Good apps lock quickly and hide content in the app switcher.
+- An open vault. While it's unlocked on screen, the photos are visible. Good apps lock quickly and hide content in the app switcher, but none can block a screenshot: see photo vault screenshot protection .
 - A short code. Slow key derivation helps, but a 4-digit PIN can still be tried exhaustively.
 - Copies outside the vault, such as originals left in Photos, Messages or Recently Deleted.
 ### How can you tell if a vault really encrypts?
@@ -2912,7 +3222,7 @@ Encryption protects files at rest. It can't protect a photo while you're looking
 - Copies elsewhere. Originals still in Photos or iCloud Photos, screenshots, and files you export are not encrypted by Noxium.
 - A compromised iPhone. Spyware, or a jailbroken phone running hostile code, can see the screen while the vault is open.
 - Being forced. If someone makes you draw your pattern, encryption doesn't help. A decoy vault does.
-Vault content is hidden in the app switcher and during screen recording, which covers casual glances. It isn't a defense against spyware.
+Vault content is hidden in the app switcher and during screen recording, which covers casual glances. No iPhone app can block a screenshot; see photo vault screenshot protection . It isn't a defense against spyware.
 ### Is it free or Pro?
 Encryption is the same on every plan. The free plan holds 150 photos, 10 videos and unlimited notes, with full iCloud backup and restore. Noxium Pro adds unlimited items, emergency erase, iPhone and iPad sync, custom icons, album patterns and shared vaults. If Pro ends, you keep full access to view, export and back up everything already in your vault.
 Encryption you can read about
@@ -2974,7 +3284,7 @@ Turn it on during setup, then check it before you change phones.
 - Check the status. Settings › iCloud backup shows when the vault was last backed up and how many items are waiting. Tap Back up now to start right away.
 - Choose how videos upload. Wi-Fi only for videos is on by default, so large videos wait for Wi-Fi.
 - Back up each vault. A decoy vault has its own backup switch. The status only counts the vault you're in, so it never reveals that other vaults exist.
-- Watch your storage. The backup counts toward your iCloud storage. Used in iCloud shows how much. If iCloud is full, Noxium pauses and tells you about how much more space it needs.
+- Watch your storage. The backup counts toward your iCloud storage. Used in iCloud shows how much. If iCloud is full, Noxium pauses and tells you about how much more space it needs. See why a photo vault takes up storage .
 Only encrypted data leaves the iPhone. It is stored in your private iCloud.
 ### How do you restore on a new iPhone?
 Sign in to the same Apple Account, open Noxium, and draw your pattern. The full checklist is in how to move a photo vault to a new iPhone .
@@ -4404,7 +4714,7 @@ Feature
 By Inertia Projects · Last updated 17 November 2026
 Short answer
 Noxium imports from Photos, Files, its own camera and the share sheet, including HEIC, ProRAW and Live Photos. It exports to Photos or Files in full quality with the original date taken. Exported copies are no longer encrypted, so move them only when you need them out of the vault.
-A vault is only useful if photos go in without losing anything and come out the same way. Some vault apps shrink photos to save space, or strip the date. Noxium, the photo vault we make, keeps the original file and its date. This page covers every way in and out, and how to move photos without leaving copies behind. If you're switching from another app, see moving a vault to a new iPhone and photo vault lost photos .
+A vault is only useful if photos go in without losing anything and come out the same way. Some vault apps shrink photos to save space , or strip the date. Noxium, the photo vault we make, keeps the original file and its date. This page covers every way in and out, and how to move photos without leaving copies behind. If you're switching from another app, see moving a vault to a new iPhone and photo vault lost photos .
 ### How do you add photos to Noxium?
 Tap the add button in your vault and choose From Photos , From Files or Camera , or send items from any app's share sheet.
 - From Photos. HEIC, ProRAW and Live Photos come in as they are. With Settings › App settings › Offer to delete from Photos on, Noxium offers to delete the originals afterwards.
@@ -4414,7 +4724,7 @@ Tap the add button in your vault and choose From Photos , From Files or Camera ,
 - Notes. Write encrypted notes inside the vault.
 Every item is encrypted with AES-256-GCM on the iPhone before it's saved, with its name, date and place. See on-device encryption .
 ### How do you move photos in without leaving copies?
-Add them, check them, then delete the originals and empty Recently Deleted.
+Add them, check them, then delete the originals and empty Recently Deleted. The full checklist, including where stray copies hide, is in moving photos into a vault app .
 - Turn on Offer to delete from Photos in Settings › App settings .
 - Add the photos from Photos and wait until Noxium has finished adding them.
 - Check them in the vault: counts match, videos play, Live Photos move.
