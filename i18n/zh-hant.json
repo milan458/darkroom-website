@@ -328,6 +328,17 @@
       "crumb": "功能",
       "published": "2026-11-23",
       "updated": "2026-11-23"
+    },
+    "/features/recovery-phrase": {
+      "source": "2026-11-13",
+      "title": "照片保險庫復原短語：Noxium 的備用鑰匙",
+      "description": "忘記圖形？Noxium 的復原短語能打開你的保險庫，沒有人能替你重設。說明運作方式、保管方法與限制。",
+      "headline": "復原短語：只有你持有的備用鑰匙",
+      "summary": "忘記圖形時，如何用 Noxium 的 8 個單字復原短語打開保險庫，以及如何安全保管。",
+      "crumb": "復原短語",
+      "keyword": "照片保險庫 復原短語",
+      "published": "2026-11-25",
+      "updated": "2026-11-25"
     }
   }
 }

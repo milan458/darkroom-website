@@ -262,6 +262,17 @@
       "crumb": "Funciones",
       "published": "2026-11-23",
       "updated": "2026-11-23"
+    },
+    "/features/recovery-phrase": {
+      "source": "2026-11-13",
+      "title": "Frase de recuperación de la caja fuerte de fotos",
+      "description": "¿Olvidaste tu patrón? La frase de recuperación de Noxium abre tu caja fuerte y nadie puede restablecerla por ti. Cómo funciona, dónde guardarla y límites.",
+      "headline": "Frase de recuperación: la llave de repuesto que solo tienes tú",
+      "summary": "Cómo la frase de recuperación de 8 palabras de Noxium abre tu caja fuerte si olvidas el patrón, y cómo guardarla bien.",
+      "crumb": "Frase de recuperación",
+      "keyword": "caja fuerte de fotos frase de recuperación",
+      "published": "2026-11-25",
+      "updated": "2026-11-25"
     }
   },
   "facts": [

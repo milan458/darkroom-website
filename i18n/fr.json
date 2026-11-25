@@ -263,6 +263,17 @@
       "published": "2026-11-23",
       "updated": "2026-11-23",
       "allLabel": "Toutes les fonctionnalités"
+    },
+    "/features/recovery-phrase": {
+      "source": "2026-11-13",
+      "title": "Phrase de récupération du coffre photo Noxium",
+      "description": "Schéma oublié ? La phrase de récupération de Noxium ouvre votre coffre, et personne ne peut le réinitialiser. Fonctionnement, rangement et limites.",
+      "headline": "Phrase de récupération : la clé de rechange que vous seul détenez",
+      "summary": "Comment la phrase de récupération de 8 mots de Noxium ouvre votre coffre si vous oubliez votre schéma, et comment la garder en sûreté.",
+      "crumb": "Phrase de récupération",
+      "keyword": "coffre photo phrase de récupération",
+      "published": "2026-11-25",
+      "updated": "2026-11-25"
     }
   },
   "facts": [

@@ -262,6 +262,17 @@
       "crumb": "Funktionen",
       "published": "2026-11-23",
       "updated": "2026-11-23"
+    },
+    "/features/recovery-phrase": {
+      "source": "2026-11-13",
+      "title": "Wiederherstellungsphrase im Foto-Tresor: Noxium",
+      "description": "Muster vergessen? Die Wiederherstellungsphrase von Noxium öffnet deinen Tresor, niemand kann ihn für dich zurücksetzen. So funktioniert und hält sie.",
+      "headline": "Wiederherstellungsphrase: der Ersatzschlüssel, den nur du hast",
+      "summary": "Wie die 8-Wort-Wiederherstellungsphrase von Noxium deinen Tresor öffnet, wenn du dein Muster vergisst, und wie du sie sicher aufbewahrst.",
+      "crumb": "Wiederherstellungsphrase",
+      "keyword": "foto tresor wiederherstellungsphrase",
+      "published": "2026-11-25",
+      "updated": "2026-11-25"
     }
   },
   "facts": [

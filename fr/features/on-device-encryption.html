@@ -257,7 +257,7 @@
           <li><strong>Clés des fichiers.</strong> Chaque photo, vidéo et note reçoit sa propre clé aléatoire, scellée par la clé du coffre. Les vignettes utilisent une clé distincte dérivée de la clé du fichier.</li>
           <li><strong>Le fichier lui-même.</strong> Chaque fichier est chiffré en AES-256-GCM par blocs de 1 Mio, chacun avec sa propre étiquette d’authentification. Une longue vidéo peut jouer sans déchiffrer tout le fichier d’abord, et un bloc modifié ou abîmé refuse de s’ouvrir au lieu d’afficher des données corrompues.</li>
         </ol>
-        <p>Changer de schéma ne fait que resceller la clé du coffre : c’est l’affaire d’un instant, même avec des milliers de photos. Votre <a href="/features/recovery-phrase">phrase de récupération</a> est un deuxième sceau sur la même clé du coffre. Pour les idées derrière tout ça, sans mathématiques, lisez <a href="/fr/guides/how-encrypted-photo-vaults-work">comment fonctionnent les coffres photo chiffrés</a>.</p>
+        <p>Changer de schéma ne fait que resceller la clé du coffre : c’est l’affaire d’un instant, même avec des milliers de photos. Votre <a href="/fr/features/recovery-phrase">phrase de récupération</a> est un deuxième sceau sur la même clé du coffre. Pour les idées derrière tout ça, sans mathématiques, lisez <a href="/fr/guides/how-encrypted-photo-vaults-work">comment fonctionnent les coffres photo chiffrés</a>.</p>
 
         <h2 id="what">Qu’est-ce qui est chiffré, exactement?</h2>
         <p>Tout ce que vous mettez dans un coffre, plus les détails qui l’accompagnent. C’est important : une simple liste de noms de fichiers et de dates peut en dire long.</p>
@@ -362,6 +362,7 @@
             <li><a href="/fr/features/pattern-lock">Verrou par schéma</a></li>
             <li><a href="/fr/features/encrypted-icloud-backup">Sauvegarde iCloud chiffrée</a></li>
             <li><a href="/fr/guides/how-encrypted-photo-vaults-work">Le chiffrement expliqué</a></li>
+            <li><a href="/fr/features/recovery-phrase">Phrase de récupération</a></li>
             <li><a href="/fr/features/">Toutes les fonctionnalités</a></li>
           </ul>
         </div>

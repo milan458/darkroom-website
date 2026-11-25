@@ -262,6 +262,17 @@
       "crumb": "기능",
       "published": "2026-11-23",
       "updated": "2026-11-23"
+    },
+    "/features/recovery-phrase": {
+      "source": "2026-11-13",
+      "title": "사진 금고 복구 문구: Noxium의 예비 키",
+      "description": "패턴을 잊어도 Noxium 복구 문구로 금고를 엽니다. 누구도 대신 재설정할 수 없습니다. 원리, 보관법, 한계를 설명합니다.",
+      "headline": "복구 문구: 나만 가진 예비 키",
+      "summary": "패턴을 잊었을 때 Noxium의 8단어 복구 문구로 금고를 여는 방법과 안전하게 보관하는 법.",
+      "crumb": "복구 문구",
+      "keyword": "사진 금고 복구 문구",
+      "published": "2026-11-25",
+      "updated": "2026-11-25"
     }
   },
   "facts": [
