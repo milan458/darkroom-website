@@ -295,6 +295,25 @@
       "keyword": "privault 후기",
       "published": "2026-11-26",
       "updated": "2026-11-26"
+    },
+    "/compare/private-photo-vault": {
+      "source": "2026-11-14",
+      "title": "Private Photo Vault 후기(2026)",
+      "description": "Private Photo Vault는 침입 보고서와 위장 비밀번호가 있지만 백업은 Premium 전용입니다. Noxium과 비교합니다.",
+      "headline": "Private Photo Vault 후기: Noxium과 비교",
+      "summary": "App Store 페이지를 바탕으로 한 공정한 Private Photo Vault(Pic Safe) 후기와 Noxium 비교.",
+      "crumb": "Noxium vs Private Photo Vault",
+      "keyword": "private photo vault 후기",
+      "published": "2026-11-26",
+      "updated": "2026-11-26"
+    },
+    "/compare/": {
+      "source": "2026-11-16",
+      "title": "Noxium과 다른 사진 금고 앱 비교",
+      "description": "Keepsafe, Private Photo Vault, Privault와 Noxium을 App Store 페이지와 한국 가격으로 비교합니다.",
+      "crumb": "비교",
+      "published": "2026-11-26",
+      "updated": "2026-11-26"
     }
   },
   "facts": [

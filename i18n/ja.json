@@ -295,6 +295,25 @@
       "keyword": "privault 評判",
       "published": "2026-11-26",
       "updated": "2026-11-26"
+    },
+    "/compare/private-photo-vault": {
+      "source": "2026-11-14",
+      "title": "Private Photo Vault の評判（2026）",
+      "description": "Private Photo Vault は侵入レポートとおとりパスワードを備えますが、バックアップは Premium のみ。Noxium と比べます。",
+      "headline": "Private Photo Vault の評判は？ Noxium との比較",
+      "summary": "App Store のページをもとに Private Photo Vault（Pic Safe）を公平にレビューし、Noxium と比べます。",
+      "crumb": "Noxium と Private Photo Vault",
+      "keyword": "private photo vault 評判",
+      "published": "2026-11-26",
+      "updated": "2026-11-26"
+    },
+    "/compare/": {
+      "source": "2026-11-16",
+      "title": "Noxium とほかの写真保管庫アプリの比較",
+      "description": "Keepsafe、Private Photo Vault、Privault と Noxium を、App Store のページと日本の価格で項目ごとに比較。",
+      "crumb": "比較",
+      "published": "2026-11-26",
+      "updated": "2026-11-26"
     }
   },
   "facts": [

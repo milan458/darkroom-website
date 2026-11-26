@@ -295,6 +295,25 @@
       "keyword": "privault erfahrungen",
       "published": "2026-11-26",
       "updated": "2026-11-26"
+    },
+    "/compare/private-photo-vault": {
+      "source": "2026-11-14",
+      "title": "Private Photo Vault im Test (2026) gegen Noxium",
+      "description": "Private Photo Vault (Pic Safe) hat Einbruchsbericht und Tarnpasswort, aber Backup nur mit Premium. Ein fairer Test, Punkt für Punkt mit Noxium verglichen.",
+      "headline": "Private Photo Vault im Test: So schlägt es sich gegen Noxium",
+      "summary": "Ein fairer Test von Private Photo Vault (Pic Safe) anhand seines App-Store-Eintrags, im Vergleich mit Noxium.",
+      "crumb": "Noxium oder Private Photo Vault",
+      "keyword": "private photo vault erfahrungen",
+      "published": "2026-11-26",
+      "updated": "2026-11-26"
+    },
+    "/compare/": {
+      "source": "2026-11-16",
+      "title": "Noxium im Vergleich mit anderen Foto-Tresor-Apps",
+      "description": "Noxium im Vergleich mit Keepsafe, Private Photo Vault und Privault, Punkt für Punkt, anhand ihrer App-Store-Einträge und deutscher Preise.",
+      "crumb": "Vergleiche",
+      "published": "2026-11-26",
+      "updated": "2026-11-26"
     }
   },
   "facts": [

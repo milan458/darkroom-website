@@ -295,6 +295,25 @@
       "keyword": "privault opiniones",
       "published": "2026-11-26",
       "updated": "2026-11-26"
+    },
+    "/compare/private-photo-vault": {
+      "source": "2026-11-14",
+      "title": "Private Photo Vault: opiniones (2026) frente a Noxium",
+      "description": "Private Photo Vault (Pic Safe) tiene informe de intrusos y contraseña señuelo, pero la copia es solo Premium. Una opinión justa, comparada con Noxium.",
+      "headline": "Private Photo Vault: opiniones y comparativa con Noxium",
+      "summary": "Una opinión justa sobre Private Photo Vault (Pic Safe) a partir de su ficha del App Store, comparada con Noxium.",
+      "crumb": "Noxium o Private Photo Vault",
+      "keyword": "private photo vault opiniones",
+      "published": "2026-11-26",
+      "updated": "2026-11-26"
+    },
+    "/compare/": {
+      "source": "2026-11-16",
+      "title": "Noxium frente a otras apps de caja fuerte de fotos",
+      "description": "Noxium comparado con Keepsafe, Private Photo Vault y Privault, punto por punto, a partir de sus fichas del App Store y con precios de España.",
+      "crumb": "Comparativas",
+      "published": "2026-11-26",
+      "updated": "2026-11-26"
     }
   },
   "facts": [
