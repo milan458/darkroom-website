@@ -401,6 +401,25 @@
       "draft": false
     },
     {
+      "path": "/guides/move-photos-into-vault-app",
+      "file": "guides/move-photos-into-vault-app.html",
+      "type": "guide",
+      "ct": "g-move-in",
+      "crumb": "Move photos into a vault",
+      "keyword": "move photos to vault app iphone",
+      "cluster": "backup-recovery",
+      "related": ["/features/import-export", "/guides/photo-vault-full-resolution", "/guides/export-photos-from-vault-app"],
+      "title": "How to Move Photos to a Vault App on iPhone",
+      "headline": "How to move photos into a vault app on iPhone",
+      "description": "Move photos to a vault app on iPhone: import, check, delete the originals and empty Recently Deleted. Plus the places stray copies hide.",
+      "summary": "Import, check, then delete the originals: how to move photos into a vault without leaving copies behind.",
+      "published": "2026-11-26",
+      "updated": "2026-11-26",
+      "priority": "0.7",
+      "image": "/assets/guides/noxium-library.jpg",
+      "draft": false
+    },
+    {
       "path": "/guides/",
       "file": "guides/index.html",
       "type": "page",
