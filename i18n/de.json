@@ -201,7 +201,7 @@
       "updated": "2026-11-18"
     },
     "/guides/how-encrypted-photo-vaults-work": {
-      "source": "2026-10-26",
+      "source": "2026-11-22",
       "title": "Wie funktioniert ein verschlüsselter Foto-Tresor?",
       "description": "Was Verschlüsselung im Foto-Tresor heißt: Schlüssel, Argon2id, AES-256-GCM und Backups, einfach erklärt. Und wie du Tresore erkennst, die nur verstecken.",
       "headline": "So funktionieren verschlüsselte Foto-Tresore, einfach erklärt",
@@ -209,7 +209,7 @@
       "crumb": "So funktioniert Verschlüsselung",
       "keyword": "foto tresor verschlüsselung",
       "published": "2026-11-20",
-      "updated": "2026-11-20"
+      "updated": "2026-11-24"
     },
     "/guides/vaultaire-vs-keepsafe": {
       "source": "2026-11-12",
@@ -284,6 +284,17 @@
       "keyword": "keepsafe erfahrungen",
       "published": "2026-11-25",
       "updated": "2026-11-25"
+    },
+    "/guides/photo-vault-no-subscription-no-ads": {
+      "source": "2026-11-21",
+      "title": "Foto-Tresor-App ohne Abo und ohne Werbung (2026)",
+      "description": "Welche Foto-Tresor-Apps fürs iPhone einen Einmalkauf bieten, welche Werbung zeigen, was gratis ist. Preise aus dem deutschen App Store, November 2026.",
+      "headline": "Foto-Tresor-Apps ohne Abo und ohne Werbung",
+      "summary": "Welche Tresor-Apps einen Einmalkauf verkaufen, welche Werbung zeigen und was mit deinen Fotos passiert, wenn du nicht mehr zahlst.",
+      "crumb": "Tresore ohne Abo und Werbung",
+      "keyword": "foto tresor app ohne abo",
+      "published": "2026-11-21",
+      "updated": "2026-11-21"
     }
   },
   "facts": [

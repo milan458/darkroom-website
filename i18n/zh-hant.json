@@ -267,7 +267,7 @@
       "updated": "2026-11-18"
     },
     "/guides/how-encrypted-photo-vaults-work": {
-      "source": "2026-10-26",
+      "source": "2026-11-22",
       "title": "照片保險庫加密原理，一次看懂",
       "description": "照片保險庫的加密是什麼？用白話說明金鑰、Argon2id、AES-256-GCM 和加密備份，並教你分辨只是隱藏的 App。",
       "headline": "加密照片保險庫如何運作，一次說清楚",
@@ -275,7 +275,7 @@
       "crumb": "加密原理",
       "keyword": "照片保險庫 加密 原理",
       "published": "2026-11-20",
-      "updated": "2026-11-20"
+      "updated": "2026-11-24"
     },
     "/guides/vaultaire-vs-keepsafe": {
       "source": "2026-11-12",
@@ -350,6 +350,17 @@
       "keyword": "keepsafe 評價",
       "published": "2026-11-25",
       "updated": "2026-11-25"
+    },
+    "/guides/photo-vault-no-subscription-no-ads": {
+      "source": "2026-11-21",
+      "title": "免訂閱、無廣告的照片保險庫 App（2026）",
+      "description": "哪些 iPhone 照片保險庫 App 有一次性購買、哪些有廣告、免費方案包含什麼。台灣 App Store 價格，2026 年 11 月。",
+      "headline": "不用訂閱、沒有廣告的照片保險庫 App",
+      "summary": "哪些保險庫 App 有一次性購買、哪些有廣告，以及停止付費後照片會怎樣。",
+      "crumb": "免訂閱、無廣告的保險庫",
+      "keyword": "照片保險庫 app 免訂閱",
+      "published": "2026-11-21",
+      "updated": "2026-11-21"
     }
   }
 }

@@ -41,7 +41,7 @@
   <meta property="og:image:alt" content="Noxium photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
   <meta property="og:locale" content="pt_BR">
   <meta property="article:published_time" content="2026-11-20">
-  <meta property="article:modified_time" content="2026-11-20">
+  <meta property="article:modified_time" content="2026-11-24">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Como funciona um cofre de fotos criptografado">
   <meta name="twitter:description" content="O que criptografia quer dizer num cofre de fotos: chaves, Argon2id, AES-256-GCM e backups, sem jargão, e como identificar um cofre que só esconde.">
@@ -90,7 +90,7 @@
         "mainEntityOfPage": "https://getnoxium.app/pt-br/guides/how-encrypted-photo-vaults-work",
         "image": "https://getnoxium.app/assets/guides/noxium-lock.jpg",
         "datePublished": "2026-11-20",
-        "dateModified": "2026-11-20",
+        "dateModified": "2026-11-24",
         "author": {
           "@id": "https://getnoxium.app/#org"
         },
@@ -151,6 +151,14 @@
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "Uma função de derivação de chave que transforma uma senha ou padrão em chave de criptografia devagar e com muita memória, para que adivinhar códigos saia caro."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "O Face ID faz parte da criptografia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Não diretamente. O Face ID é um atalho para uma chave que o app guardou nas Chaves do iPhone. No Noxium, essa chave fica neste iPhone, não é sincronizada e para de funcionar se o seu cadastro do Face ID mudar; o seu padrão sempre funciona."
             }
           },
           {
@@ -225,7 +233,7 @@
         <p class="eyebrow"><span class="dot dot-ink" aria-hidden="true"></span>Guia · Criptografia explicada</p>
         <h1>Como funcionam os cofres de fotos criptografados, sem complicação</h1>
         <!-- build:byline -->
-        <p class="byline"><span>Por <a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>Atualizado em <time datetime="2026-11-20">20 de novembro de 2026</time></span></p>
+        <p class="byline"><span>Por <a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>Publicado em <time datetime="2026-11-20">20 de novembro de 2026</time></span><span aria-hidden="true">·</span><span>Atualizado em <time datetime="2026-11-24">24 de novembro de 2026</time></span></p>
         <!-- /build:byline -->
         <div class="answer">
           <span class="answer-label">Resposta rápida</span>
@@ -296,6 +304,52 @@
           <li>O ideal é que o código da criptografia seja aberto ou revisado de forma independente.</li>
         </ul>
         <p>Em outubro de 2026, só 2 dos 17 apps cofre que comparamos citavam AES-256-GCM na descrição da App Store. Veja todos no <a href="/pt-br/best-photo-vault-apps-iphone">nosso comparativo</a>.</p>
+        <h2 id="apps">O que os apps cofre populares dizem sobre a criptografia deles?</h2>
+        <p>Poucos dizem muita coisa. Dos 15 apps cofre que analisamos, só o Vaultaire e o Obscura citam o algoritmo na página da App Store. O Keepsafe cita AES-256 na central de ajuda, e o Obscura e o Encamera publicam o código da criptografia. Os outros dizem "criptografado" sem detalhes ou nem falam de criptografia.</p>
+        <div class="data-table-wrap" tabindex="0" role="region" aria-labelledby="apps-caption">
+          <table class="data-table">
+            <caption id="apps-caption">O que a página de cada app na App Store dos EUA (e, quando indicado, as páginas de ajuda ou o código dele) diz sobre criptografia, conferido de 11 a 22 de novembro de 2026. Relatamos afirmações, não resultados de testes.</caption>
+            <thead><tr><th scope="col">App</th><th scope="col">O que diz sobre criptografia</th></tr></thead>
+            <tbody>
+              <tr><th scope="row"><a href="/compare/vaultaire">Vaultaire</a></th><td>AES-256-GCM no aparelho; backup no iCloud criptografado antes do envio</td></tr>
+              <tr><th scope="row"><a href="/compare/obscura">Obscura</a></th><td>AES-256-GCM; chave a partir da sua senha com PBKDF2, 600.000 rodadas; publica o código da criptografia</td></tr>
+              <tr><th scope="row"><a href="/compare/encamera">Encamera</a></th><td>Criptografa todas as mídias; publica o código da criptografia, baseado em libsodium</td></tr>
+              <tr><th scope="row"><a href="/pt-br/compare/keepsafe">Keepsafe</a></th><td>"Nível militar" na página; AES-256 na central de ajuda</td></tr>
+              <tr><th scope="row"><a href="/compare/kyms">KYMS</a></th><td>"AES military-grade"; tamanho da chave e modo não citados</td></tr>
+              <tr><th scope="row"><a href="/compare/privault">Privault</a></th><td>Diz que o armazenamento é criptografado; algoritmo não citado</td></tr>
+              <tr><th scope="row"><a href="/compare/private-photo-vault">Private Photo Vault</a></th><td>Backup na nuvem chamado de "criptografado"; algoritmo não citado</td></tr>
+              <tr><th scope="row"><a href="/compare/pv-secret-photo-album">PV - Secret Photo Album</a></th><td>Fala em "criptografia de dados"; algoritmo não citado</td></tr>
+              <tr><th scope="row"><a href="/compare/hiddenvault">HiddenVault</a></th><td>"Conhecimento zero"; algoritmo não citado</td></tr>
+              <tr><th scope="row"><a href="/compare/spv">SPV - Secret Photo Vault</a></th><td>Não mencionado; proteção por PIN</td></tr>
+              <tr><th scope="row"><a href="/compare/secret-photo-vault">Secret Photo Vault Lock Photos</a></th><td>Não mencionado</td></tr>
+              <tr><th scope="row"><a href="/compare/safe-lock">Safe Lock</a></th><td>Não mencionado</td></tr>
+              <tr><th scope="row"><a href="/compare/maxvault">MaxVault</a></th><td>Não mencionado</td></tr>
+              <tr><th scope="row"><a href="/compare/hide-it-pro">Hide it Pro</a></th><td>Não mencionado</td></tr>
+              <tr><th scope="row"><a href="/compare/calculator-hide-photos">Calculator#</a></th><td>Não mencionado</td></tr>
+              <tr><th scope="row">Noxium (o nosso)</th><td>AES-256-GCM no aparelho, chave a partir do seu padrão com Argon2id; o backup tem só dados criptografados</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>"Não mencionado" não prova que um app não criptografa; quer dizer que não dá para saber pelo que o desenvolvedor publica. Se isso importa para você, faça ao desenvolvedor as perguntas da lista acima.</p>
+
+        <h2 id="ios">O iPhone já não criptografa minhas fotos?</h2>
+        <p>Sim, enquanto o celular está bloqueado. Depois de desbloqueado, qualquer pessoa com ele na mão consegue abrir o Fotos, então um cofre acrescenta uma segunda tranca com chave própria.</p>
+        <ul>
+          <li><strong>No iPhone.</strong> O iOS criptografa o armazenamento com chaves ligadas ao seu código (a Apple chama isso de "Data Protection"). Isso protege um celular perdido e bloqueado. Não separa as fotos de um app de quem sabe seu código ou vê você digitando.</li>
+          <li><strong>O álbum Ocultos.</strong> Ele precisa do Face ID ou do seu código para abrir, mas é o mesmo código, e ele sincroniza com seus outros aparelhos. Veja <a href="/pt-br/guides/lock-photos-iphone-face-id">como bloquear fotos no iPhone</a>.</li>
+          <li><strong>Fotos do iCloud.</strong> Com a Proteção Avançada de Dados ativada, as Fotos do iCloud têm criptografia de ponta a ponta. Sem ela, a Apple tem as chaves das suas Fotos do iCloud.</li>
+        </ul>
+        <p>Se um cofre criptografa com uma chave que vem do próprio código dele, o código do iPhone sozinho não abre o cofre.</p>
+
+        <h2 id="open-source">Código aberto prova que um cofre é seguro?</h2>
+        <p>Não, mas ajuda. Código publicado permite que qualquer pessoa confira como os arquivos são criptografados, em vez de confiar numa palavra como "seguro".</p>
+        <ul>
+          <li><strong>Ele mostra o método.</strong> Dá para ver o algoritmo, como as chaves são criadas e onde ficam guardadas.</li>
+          <li><strong>Não é a mesma coisa que uma auditoria.</strong> Código público não quer dizer que alguém qualificado revisou.</li>
+          <li><strong>Pode não ser o app inteiro.</strong> Alguns desenvolvedores publicam só a parte da criptografia. É a parte mais importante, mas o resto do app também mexe nas suas fotos.</li>
+          <li><strong>Não dá para confirmar facilmente que a versão da App Store é a mesma.</strong> A Apple não permite verificar se o app instalado foi compilado a partir do código publicado.</li>
+        </ul>
+        <p>O Noxium, o app que fazemos, não é de código aberto. Em vez disso, publicamos exatamente o que ele usa: Argon2id, AES-256-GCM, as camadas de chaves e o tamanho dos blocos, na nossa página de <a href="/pt-br/features/on-device-encryption">criptografia no aparelho</a>.</p>
         <figure class="shot">
           <img src="/assets/guides/noxium-lock.jpg" alt="Tela de bloqueio do Noxium: o padrão é esticado com Argon2id até virar a chave que abre o cofre" width="559" height="1216" loading="lazy" decoding="async">
           <figcaption>No Noxium, seu padrão nunca é guardado. Ele é esticado com Argon2id até virar a chave que abre o seu cofre.</figcaption>
@@ -325,6 +379,10 @@
             <div class="faq-body"><p>Uma função de derivação de chave que transforma uma senha ou padrão em chave de criptografia devagar e com muita memória, para que adivinhar códigos saia caro.</p></div>
           </details>
           <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>O Face ID faz parte da criptografia?</span></span></summary>
+            <div class="faq-body"><p>Não diretamente. O Face ID é um atalho para uma chave que o app guardou nas Chaves do iPhone. No Noxium, essa chave fica neste iPhone, não é sincronizada e para de funcionar se o seu cadastro do Face ID mudar; o seu padrão sempre funciona.</p></div>
+          </details>
+          <details class="faq-item">
             <summary class="faq-summary"><span class="faq-summary-left"><span>Dá para hackear um cofre criptografado?</span></span></summary>
             <div class="faq-body"><p>A criptografia em si não é o ponto fraco. Códigos curtos, códigos que outra pessoa viu e cópias sem criptografia deixadas em outros lugares são. Use um código longo e apague os originais depois de importar.</p></div>
           </details>
@@ -345,6 +403,9 @@
             <li><a href="#backup">Backups criptografados</a></li>
             <li><a href="#limits">O que a criptografia não faz</a></li>
             <li><a href="#spot">Como perceber a diferença</a></li>
+            <li><a href="#apps">O que os apps dizem</a></li>
+            <li><a href="#ios">A criptografia do próprio iPhone</a></li>
+            <li><a href="#open-source">Código aberto</a></li>
             <li><a href="#faq">Perguntas frequentes</a></li>
           </ol>
         </nav>
