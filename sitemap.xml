@@ -384,6 +384,16 @@
     <loc>https://getnoxium.app/compare/privault</loc>
     <lastmod>2026-11-14</lastmod>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/compare/privault"/>
   </url>
   <url>
     <loc>https://getnoxium.app/compare/keepsafe</loc>
@@ -404,6 +414,16 @@
     <loc>https://getnoxium.app/compare/private-photo-vault</loc>
     <lastmod>2026-11-14</lastmod>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/compare/private-photo-vault"/>
   </url>
   <url>
     <loc>https://getnoxium.app/compare/vaultaire</loc>
@@ -519,6 +539,16 @@
     <loc>https://getnoxium.app/compare/</loc>
     <lastmod>2026-11-16</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/compare/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/compare/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/compare/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/compare/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/compare/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/compare/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/compare/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/compare/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/compare/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/compare/"/>
   </url>
   <url>
     <loc>https://getnoxium.app/about</loc>
@@ -851,6 +881,51 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/compare/keepsafe"/>
   </url>
   <url>
+    <loc>https://getnoxium.app/de/compare/privault</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/compare/privault"/>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/de/compare/private-photo-vault</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/compare/private-photo-vault"/>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/de/compare/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/compare/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/compare/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/compare/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/compare/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/compare/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/compare/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/compare/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/compare/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/compare/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/compare/"/>
+  </url>
+  <url>
     <loc>https://getnoxium.app/fr/guides/keepsafe-alternatives</loc>
     <lastmod>2026-11-14</lastmod>
     <priority>0.7</priority>
@@ -1164,6 +1239,51 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/compare/keepsafe"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/compare/keepsafe"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/compare/keepsafe"/>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/fr/compare/privault</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/compare/privault"/>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/fr/compare/private-photo-vault</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/compare/private-photo-vault"/>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/fr/compare/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/compare/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/compare/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/compare/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/compare/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/compare/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/compare/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/compare/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/compare/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/compare/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/compare/"/>
   </url>
   <url>
     <loc>https://getnoxium.app/es/guides/keepsafe-alternatives</loc>
@@ -1481,6 +1601,51 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/compare/keepsafe"/>
   </url>
   <url>
+    <loc>https://getnoxium.app/es/compare/privault</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/compare/privault"/>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/es/compare/private-photo-vault</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/compare/private-photo-vault"/>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/es/compare/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/compare/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/compare/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/compare/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/compare/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/compare/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/compare/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/compare/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/compare/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/compare/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/compare/"/>
+  </url>
+  <url>
     <loc>https://getnoxium.app/pt-br/guides/keepsafe-alternatives</loc>
     <lastmod>2026-11-14</lastmod>
     <priority>0.7</priority>
@@ -1794,6 +1959,51 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/compare/keepsafe"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/compare/keepsafe"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/compare/keepsafe"/>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/pt-br/compare/privault</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/compare/privault"/>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/pt-br/compare/private-photo-vault</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/compare/private-photo-vault"/>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/pt-br/compare/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/compare/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/compare/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/compare/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/compare/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/compare/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/compare/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/compare/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/compare/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/compare/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/compare/"/>
   </url>
   <url>
     <loc>https://getnoxium.app/it/guides/keepsafe-alternatives</loc>
@@ -2111,6 +2321,51 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/compare/keepsafe"/>
   </url>
   <url>
+    <loc>https://getnoxium.app/it/compare/privault</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/compare/privault"/>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/it/compare/private-photo-vault</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/compare/private-photo-vault"/>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/it/compare/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/compare/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/compare/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/compare/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/compare/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/compare/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/compare/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/compare/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/compare/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/compare/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/compare/"/>
+  </url>
+  <url>
     <loc>https://getnoxium.app/ja/guides/keepsafe-alternatives</loc>
     <lastmod>2026-11-14</lastmod>
     <priority>0.7</priority>
@@ -2424,6 +2679,51 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/compare/keepsafe"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/compare/keepsafe"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/compare/keepsafe"/>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/ja/compare/privault</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/compare/privault"/>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/ja/compare/private-photo-vault</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/compare/private-photo-vault"/>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/ja/compare/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/compare/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/compare/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/compare/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/compare/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/compare/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/compare/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/compare/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/compare/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/compare/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/compare/"/>
   </url>
   <url>
     <loc>https://getnoxium.app/ko/guides/keepsafe-alternatives</loc>
@@ -2741,6 +3041,51 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/compare/keepsafe"/>
   </url>
   <url>
+    <loc>https://getnoxium.app/ko/compare/privault</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/compare/privault"/>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/ko/compare/private-photo-vault</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/compare/private-photo-vault"/>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/ko/compare/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/compare/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/compare/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/compare/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/compare/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/compare/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/compare/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/compare/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/compare/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/compare/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/compare/"/>
+  </url>
+  <url>
     <loc>https://getnoxium.app/zh-hant/guides/keepsafe-alternatives</loc>
     <lastmod>2026-11-14</lastmod>
     <priority>0.7</priority>
@@ -3054,5 +3399,50 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/compare/keepsafe"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/compare/keepsafe"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/compare/keepsafe"/>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/zh-hant/compare/privault</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/compare/privault"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/compare/privault"/>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/zh-hant/compare/private-photo-vault</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/compare/private-photo-vault"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/compare/private-photo-vault"/>
+  </url>
+  <url>
+    <loc>https://getnoxium.app/zh-hant/compare/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://getnoxium.app/compare/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://getnoxium.app/de/compare/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://getnoxium.app/fr/compare/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://getnoxium.app/es/compare/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://getnoxium.app/pt-br/compare/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://getnoxium.app/it/compare/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://getnoxium.app/ja/compare/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://getnoxium.app/ko/compare/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://getnoxium.app/zh-hant/compare/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://getnoxium.app/compare/"/>
   </url>
 </urlset>

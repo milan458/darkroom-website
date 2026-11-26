@@ -284,6 +284,36 @@
       "keyword": "keepsafe recensione",
       "published": "2026-11-25",
       "updated": "2026-11-25"
+    },
+    "/compare/privault": {
+      "source": "2026-11-14",
+      "title": "Privault: recensione (2026) e confronto con Noxium",
+      "description": "Privault ha tastierino, codice esca e codice di cancellazione, ma la scheda non cita backup e l’app non viene aggiornata da febbraio 2025.",
+      "headline": "Privault: recensione e confronto con Noxium nel 2026",
+      "summary": "Una recensione onesta di Privault basata sulla scheda dell’App Store, confrontato punto per punto con Noxium.",
+      "crumb": "Noxium o Privault",
+      "keyword": "privault recensione",
+      "published": "2026-11-26",
+      "updated": "2026-11-26"
+    },
+    "/compare/private-photo-vault": {
+      "source": "2026-11-14",
+      "title": "Private Photo Vault: recensione (2026) vs Noxium",
+      "description": "Private Photo Vault (Pic Safe) ha report sulle intrusioni e password esca, ma il backup è solo Premium. Una recensione onesta, a confronto con Noxium.",
+      "headline": "Private Photo Vault: recensione e confronto con Noxium",
+      "summary": "Una recensione onesta di Private Photo Vault (Pic Safe) basata sulla scheda dell’App Store, a confronto con Noxium.",
+      "crumb": "Noxium o Private Photo Vault",
+      "keyword": "private photo vault recensione",
+      "published": "2026-11-26",
+      "updated": "2026-11-26"
+    },
+    "/compare/": {
+      "source": "2026-11-16",
+      "title": "Noxium a confronto con altre app cassaforte per foto",
+      "description": "Noxium a confronto con Keepsafe, Private Photo Vault e Privault, punto per punto, in base alle schede dell’App Store e ai prezzi italiani.",
+      "crumb": "Confronti",
+      "published": "2026-11-26",
+      "updated": "2026-11-26"
     }
   },
   "facts": [

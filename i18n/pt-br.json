@@ -284,6 +284,36 @@
       "keyword": "keepsafe vale a pena",
       "published": "2026-11-25",
       "updated": "2026-11-25"
+    },
+    "/compare/privault": {
+      "source": "2026-11-14",
+      "title": "Privault vale a pena? Comparação com o Noxium (2026)",
+      "description": "O Privault tem teclado numérico, código isca e código de apagar tudo, mas a página não cita backup e o app não é atualizado desde fevereiro de 2025.",
+      "headline": "Privault vale a pena? Comparação com o Noxium em 2026",
+      "summary": "Uma análise justa do Privault com base na página da App Store, comparado ponto a ponto com o Noxium.",
+      "crumb": "Noxium ou Privault",
+      "keyword": "privault vale a pena",
+      "published": "2026-11-26",
+      "updated": "2026-11-26"
+    },
+    "/compare/private-photo-vault": {
+      "source": "2026-11-14",
+      "title": "Private Photo Vault vale a pena? Comparação (2026)",
+      "description": "O Private Photo Vault (Pic Safe) tem relatório de invasão e senha isca, mas o backup é só no Premium. Uma análise justa, comparada com o Noxium.",
+      "headline": "Private Photo Vault vale a pena? Comparação com o Noxium",
+      "summary": "Uma análise justa do Private Photo Vault (Pic Safe) com base na página da App Store, comparado com o Noxium.",
+      "crumb": "Noxium ou Private Photo Vault",
+      "keyword": "private photo vault vale a pena",
+      "published": "2026-11-26",
+      "updated": "2026-11-26"
+    },
+    "/compare/": {
+      "source": "2026-11-16",
+      "title": "Noxium comparado com outros apps de cofre de fotos",
+      "description": "O Noxium comparado com Keepsafe, Private Photo Vault e Privault, ponto a ponto, com base nas páginas da App Store e nos preços do Brasil.",
+      "crumb": "Comparações",
+      "published": "2026-11-26",
+      "updated": "2026-11-26"
     }
   },
   "facts": [
