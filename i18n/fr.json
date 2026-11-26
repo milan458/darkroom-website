@@ -285,6 +285,17 @@
       "keyword": "keepsafe avis",
       "published": "2026-11-25",
       "updated": "2026-11-25"
+    },
+    "/compare/privault": {
+      "source": "2026-11-14",
+      "title": "Avis sur Privault (2026) : Privault ou Noxium?",
+      "description": "Privault a un verrou à clavier, un code leurre et un code d’effacement, mais aucune sauvegarde dans sa fiche ni de mise à jour depuis février 2025.",
+      "headline": "Avis sur Privault : comment il se compare à Noxium en 2026",
+      "summary": "Un avis juste sur Privault d’après sa fiche App Store, comparé point par point à Noxium.",
+      "crumb": "Noxium ou Privault",
+      "keyword": "privault avis",
+      "published": "2026-11-26",
+      "updated": "2026-11-26"
     }
   },
   "facts": [

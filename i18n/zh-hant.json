@@ -350,6 +350,17 @@
       "keyword": "keepsafe 評價",
       "published": "2026-11-25",
       "updated": "2026-11-25"
+    },
+    "/compare/privault": {
+      "source": "2026-11-14",
+      "title": "Privault 評價（2026）：和 Noxium 比較",
+      "description": "Privault 有數字鍵盤鎖、偽裝密碼和清除密碼，但頁面沒有說明備份，且自 2025 年 2 月起未更新。",
+      "headline": "Privault 評價：2026 年和 Noxium 比一比",
+      "summary": "根據 App Store 頁面公平評價 Privault，並和 Noxium 逐項比較。",
+      "crumb": "Noxium 和 Privault",
+      "keyword": "privault 評價",
+      "published": "2026-11-26",
+      "updated": "2026-11-26"
     }
   }
 }

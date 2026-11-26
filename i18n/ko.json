@@ -284,6 +284,17 @@
       "keyword": "keepsafe 후기",
       "published": "2026-11-25",
       "updated": "2026-11-25"
+    },
+    "/compare/privault": {
+      "source": "2026-11-14",
+      "title": "Privault 후기(2026): Noxium과 비교",
+      "description": "Privault는 숫자 잠금, 위장 암호, 전체 삭제 암호가 있지만 백업 설명이 없고 2025년 2월 이후 업데이트가 없습니다.",
+      "headline": "Privault 후기: 2026년 Noxium과 비교",
+      "summary": "App Store 페이지를 바탕으로 한 공정한 Privault 후기와 Noxium 항목별 비교.",
+      "crumb": "Noxium vs Privault",
+      "keyword": "privault 후기",
+      "published": "2026-11-26",
+      "updated": "2026-11-26"
     }
   },
   "facts": [
