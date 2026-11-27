@@ -143,6 +143,8 @@ Goal: close the gap with Vaultaire (256 English pages, 33 languages) by publishi
 
 **Pace history:** 4 pages a day from 13 November 2026. On 25 November Milan cut it to 1 a day: impressions fell to almost zero on 17–19 November, during Google's November 2026 core update (10–24 November) and right after the site grew from about 14 to about 60 English pages, plus about 150 translations, in 12 days. Search Console showed no manual action, no removals, and Googlebot could crawl the site. Go back to more than 1 a day only once impressions have recovered and most pages published 14 or more days ago are indexed.
 
+**27 November 2026: publishing paused and the site cut back.** Google had the homepage indexed and crawlable (URL Inspection: PASS, last crawl 25 November), yet the site no longer showed on page 1 for its own name, "noxium", so Google was holding back the whole site. Milan paused new pages and translations for 3 weeks, and 36 newer English pages plus all 168 translations were marked `"noindex": true` (in `site.json` and `i18n/*.json`). They stay on the site for visitors, but the build gives them `noindex`, leaves them out of the sitemap and hreflang, and doesn't count them as indexable. Kept: the original pages and every page with Search Console impressions from 26 October to 16 November. Check Search Console around 18 December (the Google Sheet "Search Console: getnoxium.app" has the daily numbers). Take `noindex` off a few pages at a time, best first, only once brand searches for "noxium" show the site again.
+
 **The daily run** (a scheduled cloud task does this each morning; anyone can run it by hand):
 
 1. `git switch main && git pull`, then a branch `pages/<YYYY-MM-DD>`.
