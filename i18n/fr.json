@@ -285,6 +285,28 @@
       "keyword": "keepsafe avis",
       "published": "2026-11-25",
       "updated": "2026-11-25"
+    },
+    "/compare/vaultaire": {
+      "source": "2026-11-14",
+      "title": "Avis sur Vaultaire (2026) : Vaultaire ou Noxium?",
+      "description": "Vaultaire chiffre en AES-256-GCM, s’ouvre avec un schéma 5×5 et sauvegarde dans votre iCloud. Un avis juste, et ce qui le distingue de Noxium.",
+      "headline": "Avis sur Vaultaire : comment il se compare à Noxium en 2026",
+      "summary": "Un avis juste sur Vaultaire d’après sa fiche App Store et son site, comparé point par point à Noxium.",
+      "crumb": "Noxium ou Vaultaire",
+      "keyword": "vaultaire avis",
+      "published": "2026-11-27",
+      "updated": "2026-11-27"
+    },
+    "/compare/apple-hidden-album": {
+      "source": "2026-11-15",
+      "title": "Album Masquées ou app de coffre photo?",
+      "description": "L’album Masquées est gratuit et verrouillé par Face ID, mais votre code l’ouvre et il se synchronise partout. Comparaison avec un coffre comme Noxium.",
+      "headline": "Album Masquées ou app de coffre photo : lequel vous faut-il?",
+      "summary": "L’album Masquées d’Apple comparé point par point à une app de coffre photo, et quand chacun suffit.",
+      "crumb": "Noxium ou l’album Masquées",
+      "keyword": "album masquées ou coffre photo",
+      "published": "2026-11-27",
+      "updated": "2026-11-27"
     }
   },
   "facts": [

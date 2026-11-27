@@ -284,6 +284,28 @@
       "keyword": "keepsafe vale a pena",
       "published": "2026-11-25",
       "updated": "2026-11-25"
+    },
+    "/compare/vaultaire": {
+      "source": "2026-11-14",
+      "title": "Vaultaire vale a pena? Comparação com o Noxium (2026)",
+      "description": "O Vaultaire criptografa com AES-256-GCM, abre com padrão 5×5 e faz backup no seu iCloud. Uma análise justa e as diferenças em relação ao Noxium.",
+      "headline": "Vaultaire vale a pena? Comparação com o Noxium em 2026",
+      "summary": "Uma análise justa do Vaultaire com base na página da App Store e no site, comparado ponto a ponto com o Noxium.",
+      "crumb": "Noxium ou Vaultaire",
+      "keyword": "vaultaire vale a pena",
+      "published": "2026-11-27",
+      "updated": "2026-11-27"
+    },
+    "/compare/apple-hidden-album": {
+      "source": "2026-11-15",
+      "title": "Itens Ocultos ou app de cofre de fotos?",
+      "description": "O álbum Itens Ocultos é grátis e bloqueado com Face ID, mas o seu código abre e ele sincroniza em tudo. Como ele se compara a um cofre como o Noxium.",
+      "headline": "Itens Ocultos ou app de cofre de fotos: do que você precisa?",
+      "summary": "O álbum Itens Ocultos da Apple comparado ponto a ponto com um app de cofre de fotos, e quando cada um basta.",
+      "crumb": "Noxium ou Itens Ocultos",
+      "keyword": "itens ocultos ou cofre de fotos",
+      "published": "2026-11-27",
+      "updated": "2026-11-27"
     }
   },
   "facts": [

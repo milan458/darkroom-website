@@ -284,6 +284,28 @@
       "keyword": "keepsafe recensione",
       "published": "2026-11-25",
       "updated": "2026-11-25"
+    },
+    "/compare/vaultaire": {
+      "source": "2026-11-14",
+      "title": "Vaultaire: recensione (2026) e confronto con Noxium",
+      "description": "Vaultaire cifra con AES-256-GCM, si apre con una sequenza 5×5 e fa il backup nel tuo iCloud. Una recensione onesta e le differenze rispetto a Noxium.",
+      "headline": "Vaultaire: recensione e confronto con Noxium nel 2026",
+      "summary": "Una recensione onesta di Vaultaire basata sulla scheda dell’App Store e sul sito, confrontato punto per punto con Noxium.",
+      "crumb": "Noxium o Vaultaire",
+      "keyword": "vaultaire recensione",
+      "published": "2026-11-27",
+      "updated": "2026-11-27"
+    },
+    "/compare/apple-hidden-album": {
+      "source": "2026-11-15",
+      "title": "Album Nascosti o app cassaforte per foto?",
+      "description": "L’album Nascosti è gratis e bloccato con Face ID, ma il tuo codice lo apre e si sincronizza ovunque. Come si confronta con una cassaforte come Noxium.",
+      "headline": "Album Nascosti o app cassaforte per foto: cosa ti serve?",
+      "summary": "L’album Nascosti di Apple confrontato punto per punto con un’app cassaforte per foto, e quando basta ciascuno.",
+      "crumb": "Noxium o l’album Nascosti",
+      "keyword": "album nascosti o cassaforte foto",
+      "published": "2026-11-27",
+      "updated": "2026-11-27"
     }
   },
   "facts": [
