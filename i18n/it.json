@@ -284,6 +284,17 @@
       "keyword": "keepsafe recensione",
       "published": "2026-11-25",
       "updated": "2026-11-25"
+    },
+    "/compare/vaultaire": {
+      "source": "2026-11-14",
+      "title": "Vaultaire: recensione (2026) e confronto con Noxium",
+      "description": "Vaultaire cifra con AES-256-GCM, si apre con una sequenza 5×5 e fa il backup nel tuo iCloud. Una recensione onesta e le differenze rispetto a Noxium.",
+      "headline": "Vaultaire: recensione e confronto con Noxium nel 2026",
+      "summary": "Una recensione onesta di Vaultaire basata sulla scheda dell’App Store e sul sito, confrontato punto per punto con Noxium.",
+      "crumb": "Noxium o Vaultaire",
+      "keyword": "vaultaire recensione",
+      "published": "2026-11-27",
+      "updated": "2026-11-27"
     }
   },
   "facts": [

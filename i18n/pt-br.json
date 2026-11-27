@@ -284,6 +284,17 @@
       "keyword": "keepsafe vale a pena",
       "published": "2026-11-25",
       "updated": "2026-11-25"
+    },
+    "/compare/vaultaire": {
+      "source": "2026-11-14",
+      "title": "Vaultaire vale a pena? Comparação com o Noxium (2026)",
+      "description": "O Vaultaire criptografa com AES-256-GCM, abre com padrão 5×5 e faz backup no seu iCloud. Uma análise justa e as diferenças em relação ao Noxium.",
+      "headline": "Vaultaire vale a pena? Comparação com o Noxium em 2026",
+      "summary": "Uma análise justa do Vaultaire com base na página da App Store e no site, comparado ponto a ponto com o Noxium.",
+      "crumb": "Noxium ou Vaultaire",
+      "keyword": "vaultaire vale a pena",
+      "published": "2026-11-27",
+      "updated": "2026-11-27"
     }
   },
   "facts": [

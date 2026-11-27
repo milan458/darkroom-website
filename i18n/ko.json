@@ -284,6 +284,17 @@
       "keyword": "keepsafe 후기",
       "published": "2026-11-25",
       "updated": "2026-11-25"
+    },
+    "/compare/vaultaire": {
+      "source": "2026-11-14",
+      "title": "Vaultaire 후기(2026): Noxium과 비교",
+      "description": "Vaultaire는 AES-256-GCM으로 암호화하고 5×5 패턴으로 열리며 iCloud에 백업합니다. 공정한 후기와 Noxium과의 차이.",
+      "headline": "Vaultaire 후기: 2026년 Noxium과 비교",
+      "summary": "App Store 페이지와 웹사이트를 바탕으로 한 공정한 Vaultaire 후기와 Noxium 항목별 비교.",
+      "crumb": "Noxium vs Vaultaire",
+      "keyword": "vaultaire 후기",
+      "published": "2026-11-27",
+      "updated": "2026-11-27"
     }
   },
   "facts": [

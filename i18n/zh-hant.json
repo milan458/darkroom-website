@@ -350,6 +350,17 @@
       "keyword": "keepsafe 評價",
       "published": "2026-11-25",
       "updated": "2026-11-25"
+    },
+    "/compare/vaultaire": {
+      "source": "2026-11-14",
+      "title": "Vaultaire 評價（2026）：和 Noxium 比較",
+      "description": "Vaultaire 以 AES-256-GCM 加密、用 5×5 圖形解鎖，並備份到你的 iCloud。公平評價，以及它和 Noxium 的差異。",
+      "headline": "Vaultaire 評價：2026 年和 Noxium 比一比",
+      "summary": "根據 App Store 頁面和網站公平評價 Vaultaire，並和 Noxium 逐項比較。",
+      "crumb": "Noxium 和 Vaultaire",
+      "keyword": "vaultaire 評價",
+      "published": "2026-11-27",
+      "updated": "2026-11-27"
     }
   }
 }
