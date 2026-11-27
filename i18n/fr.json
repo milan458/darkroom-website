@@ -296,6 +296,17 @@
       "keyword": "vaultaire avis",
       "published": "2026-11-27",
       "updated": "2026-11-27"
+    },
+    "/compare/apple-hidden-album": {
+      "source": "2026-11-15",
+      "title": "Album Masquées ou app de coffre photo?",
+      "description": "L’album Masquées est gratuit et verrouillé par Face ID, mais votre code l’ouvre et il se synchronise partout. Comparaison avec un coffre comme Noxium.",
+      "headline": "Album Masquées ou app de coffre photo : lequel vous faut-il?",
+      "summary": "L’album Masquées d’Apple comparé point par point à une app de coffre photo, et quand chacun suffit.",
+      "crumb": "Noxium ou l’album Masquées",
+      "keyword": "album masquées ou coffre photo",
+      "published": "2026-11-27",
+      "updated": "2026-11-27"
     }
   },
   "facts": [

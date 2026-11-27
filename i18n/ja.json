@@ -295,6 +295,17 @@
       "keyword": "vaultaire 評判",
       "published": "2026-11-27",
       "updated": "2026-11-27"
+    },
+    "/compare/apple-hidden-album": {
+      "source": "2026-11-15",
+      "title": "「非表示」アルバムと写真保管庫アプリの比較",
+      "description": "「非表示」アルバムは無料で Face ID でロックされますが、パスコードで開き、全デバイスに同期します。Noxium のような保管庫との違い。",
+      "headline": "「非表示」アルバムと写真保管庫アプリ、どちらが必要？",
+      "summary": "Apple の「非表示」アルバムと写真保管庫アプリを項目ごとに比べ、それぞれで足りる場面を説明します。",
+      "crumb": "Noxium と「非表示」アルバム",
+      "keyword": "非表示アルバム 写真保管庫 比較",
+      "published": "2026-11-27",
+      "updated": "2026-11-27"
     }
   },
   "facts": [

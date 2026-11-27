@@ -295,6 +295,17 @@
       "keyword": "vaultaire 후기",
       "published": "2026-11-27",
       "updated": "2026-11-27"
+    },
+    "/compare/apple-hidden-album": {
+      "source": "2026-11-15",
+      "title": "가려진 항목 앨범 vs 사진 금고 앱",
+      "description": "가려진 항목 앨범은 무료이고 Face ID로 잠기지만, 암호로 열리고 모든 기기에 동기화됩니다. Noxium 같은 금고와의 비교.",
+      "headline": "가려진 항목 앨범과 사진 금고 앱, 무엇이 필요할까?",
+      "summary": "Apple 가려진 항목 앨범과 사진 금고 앱을 항목별로 비교하고, 각각 충분한 경우를 설명합니다.",
+      "crumb": "Noxium vs 가려진 항목 앨범",
+      "keyword": "가려진 항목 사진 금고 비교",
+      "published": "2026-11-27",
+      "updated": "2026-11-27"
     }
   },
   "facts": [
