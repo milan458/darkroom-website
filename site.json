@@ -174,6 +174,7 @@
     },
     {
       "path": "/guides/view-hidden-photos-on-mac",
+      "noindex": true,
       "file": "guides/view-hidden-photos-on-mac.html",
       "type": "guide",
       "ct": "g-hidden-mac",
@@ -193,6 +194,7 @@
     },
     {
       "path": "/guides/view-hidden-photos-on-windows-pc",
+      "noindex": true,
       "file": "guides/view-hidden-photos-on-windows-pc.html",
       "type": "guide",
       "ct": "g-hidden-windows",
@@ -212,6 +214,7 @@
     },
     {
       "path": "/guides/can-someone-bypass-hidden-album-face-id",
+      "noindex": true,
       "file": "guides/can-someone-bypass-hidden-album-face-id.html",
       "type": "guide",
       "ct": "g-hidden-bypass",
@@ -231,6 +234,7 @@
     },
     {
       "path": "/guides/did-someone-open-my-hidden-album",
+      "noindex": true,
       "file": "guides/did-someone-open-my-hidden-album.html",
       "type": "guide",
       "ct": "g-hidden-opened",
@@ -250,6 +254,7 @@
     },
     {
       "path": "/guides/change-hidden-album-password",
+      "noindex": true,
       "file": "guides/change-hidden-album-password.html",
       "type": "guide",
       "ct": "g-hidden-password",
@@ -269,6 +274,7 @@
     },
     {
       "path": "/guides/hidden-photos-disappeared-iphone",
+      "noindex": true,
       "file": "guides/hidden-photos-disappeared-iphone.html",
       "type": "guide",
       "ct": "g-hidden-missing",
@@ -288,6 +294,7 @@
     },
     {
       "path": "/guides/hide-photos-from-memories-iphone",
+      "noindex": true,
       "file": "guides/hide-photos-from-memories-iphone.html",
       "type": "guide",
       "ct": "g-hide-memories",
@@ -307,6 +314,7 @@
     },
     {
       "path": "/guides/hide-photos-from-spotlight-search",
+      "noindex": true,
       "file": "guides/hide-photos-from-spotlight-search.html",
       "type": "guide",
       "ct": "g-hide-spotlight",
@@ -326,6 +334,7 @@
     },
     {
       "path": "/guides/does-deleting-vault-app-delete-photos",
+      "noindex": true,
       "file": "guides/does-deleting-vault-app-delete-photos.html",
       "type": "guide",
       "ct": "g-delete-vault",
@@ -345,6 +354,7 @@
     },
     {
       "path": "/guides/export-photos-from-vault-app",
+      "noindex": true,
       "file": "guides/export-photos-from-vault-app.html",
       "type": "guide",
       "ct": "g-export-vault",
@@ -364,6 +374,7 @@
     },
     {
       "path": "/guides/do-photo-vault-apps-back-up-to-icloud",
+      "noindex": true,
       "file": "guides/do-photo-vault-apps-back-up-to-icloud.html",
       "type": "guide",
       "ct": "g-vault-icloud",
@@ -383,6 +394,7 @@
     },
     {
       "path": "/guides/photo-vault-full-resolution",
+      "noindex": true,
       "file": "guides/photo-vault-full-resolution.html",
       "type": "guide",
       "ct": "g-fullres",
@@ -402,6 +414,7 @@
     },
     {
       "path": "/guides/move-photos-into-vault-app",
+      "noindex": true,
       "file": "guides/move-photos-into-vault-app.html",
       "type": "guide",
       "ct": "g-move-in",
@@ -473,6 +486,7 @@
     },
     {
       "path": "/guides/hidden-photos-iphone",
+      "noindex": true,
       "file": "guides/hidden-photos-iphone.html",
       "type": "guide",
       "ct": "g-hidden-photos",
@@ -493,6 +507,7 @@
     },
     {
       "path": "/guides/multiple-hidden-albums-iphone",
+      "noindex": true,
       "file": "guides/multiple-hidden-albums-iphone.html",
       "type": "guide",
       "ct": "g-multi-hidden",
@@ -800,6 +815,7 @@
     },
     {
       "path": "/compare/privault",
+      "noindex": true,
       "file": "compare/privault.html",
       "type": "compare",
       "ct": "c-privault",
@@ -872,6 +888,7 @@
     },
     {
       "path": "/compare/apple-hidden-album",
+      "noindex": true,
       "file": "compare/apple-hidden-album.html",
       "type": "compare",
       "ct": "c-hidden-album",
@@ -890,6 +907,7 @@
     },
     {
       "path": "/compare/calculator-hide-photos",
+      "noindex": true,
       "file": "compare/calculator-hide-photos.html",
       "type": "compare",
       "ct": "c-calculator",
@@ -908,6 +926,7 @@
     },
     {
       "path": "/compare/hide-it-pro",
+      "noindex": true,
       "file": "compare/hide-it-pro.html",
       "type": "compare",
       "ct": "c-hide-it-pro",
@@ -926,6 +945,7 @@
     },
     {
       "path": "/compare/secret-photo-vault",
+      "noindex": true,
       "file": "compare/secret-photo-vault.html",
       "type": "compare",
       "ct": "c-secret-photo-vault",
@@ -944,6 +964,7 @@
     },
     {
       "path": "/guides/calculator-vault-apps",
+      "noindex": true,
       "file": "guides/calculator-vault-apps.html",
       "type": "guide",
       "ct": "g-calculator-vault",
@@ -961,6 +982,7 @@
     },
     {
       "path": "/features/decoy-vault",
+      "noindex": true,
       "file": "features/decoy-vault.html",
       "type": "feature",
       "ct": "f-decoy",
@@ -977,6 +999,7 @@
     },
     {
       "path": "/features/emergency-erase",
+      "noindex": true,
       "file": "features/emergency-erase.html",
       "type": "feature",
       "ct": "f-erase",
@@ -1009,6 +1032,7 @@
     },
     {
       "path": "/features/album-patterns",
+      "noindex": true,
       "file": "features/album-patterns.html",
       "type": "feature",
       "ct": "f-album-patterns",
@@ -1025,6 +1049,7 @@
     },
     {
       "path": "/features/iphone-ipad-sync",
+      "noindex": true,
       "file": "features/iphone-ipad-sync.html",
       "type": "feature",
       "ct": "f-sync",
@@ -1041,6 +1066,7 @@
     },
     {
       "path": "/features/shared-vaults",
+      "noindex": true,
       "file": "features/shared-vaults.html",
       "type": "feature",
       "ct": "f-shared",
@@ -1057,6 +1083,7 @@
     },
     {
       "path": "/features/import-export",
+      "noindex": true,
       "file": "features/import-export.html",
       "type": "feature",
       "ct": "f-import-export",
@@ -1073,6 +1100,7 @@
     },
     {
       "path": "/features/encrypted-notes",
+      "noindex": true,
       "file": "features/encrypted-notes.html",
       "type": "feature",
       "ct": "f-notes",
@@ -1089,6 +1117,7 @@
     },
     {
       "path": "/compare/spv",
+      "noindex": true,
       "file": "compare/spv.html",
       "type": "compare",
       "ct": "c-spv",
@@ -1108,6 +1137,7 @@
     },
     {
       "path": "/compare/pv-secret-photo-album",
+      "noindex": true,
       "file": "compare/pv-secret-photo-album.html",
       "type": "compare",
       "ct": "c-pv",
@@ -1127,6 +1157,7 @@
     },
     {
       "path": "/compare/encamera",
+      "noindex": true,
       "file": "compare/encamera.html",
       "type": "compare",
       "ct": "c-encamera",
@@ -1146,6 +1177,7 @@
     },
     {
       "path": "/compare/obscura",
+      "noindex": true,
       "file": "compare/obscura.html",
       "type": "compare",
       "ct": "c-obscura",
@@ -1165,6 +1197,7 @@
     },
     {
       "path": "/compare/hiddenvault",
+      "noindex": true,
       "file": "compare/hiddenvault.html",
       "type": "compare",
       "ct": "c-hiddenvault",
@@ -1184,6 +1217,7 @@
     },
     {
       "path": "/compare/safe-lock",
+      "noindex": true,
       "file": "compare/safe-lock.html",
       "type": "compare",
       "ct": "c-safe-lock",
@@ -1203,6 +1237,7 @@
     },
     {
       "path": "/compare/maxvault",
+      "noindex": true,
       "file": "compare/maxvault.html",
       "type": "compare",
       "ct": "c-maxvault",
@@ -1222,6 +1257,7 @@
     },
     {
       "path": "/compare/kyms",
+      "noindex": true,
       "file": "compare/kyms.html",
       "type": "compare",
       "ct": "c-kyms",

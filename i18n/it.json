@@ -61,6 +61,7 @@
   },
   "pages": {
     "/guides/keepsafe-alternatives": {
+      "noindex": true,
       "source": "2026-11-13",
       "title": "4 alternative a Keepsafe senza account né email (2026)",
       "description": "Cerchi un’alternativa a Keepsafe senza account né email? Vaultaire, Obscura, Encamera e Noxium a confronto: crittografia, backup iCloud ed esche.",
@@ -72,6 +73,7 @@
       "updated": "2026-11-14"
     },
     "/guides/how-to-hide-photos-on-iphone": {
+      "noindex": true,
       "source": "2026-11-15",
       "title": "Come nascondere le foto su iPhone: tutti i metodi (iOS 26)",
       "description": "Tutti i modi per nascondere le foto su iPhone con iOS 26: album Nascosti, note e app bloccate, casseforti. Cosa protegge ogni metodo e cosa no.",
@@ -83,6 +85,7 @@
       "updated": "2026-11-16"
     },
     "/guides/is-iphone-hidden-album-private": {
+      "noindex": true,
       "source": "2026-10-26",
       "title": "L’album Nascosti dell’iPhone è davvero sicuro?",
       "description": "L’album Nascosti si blocca con Face ID, ma il tuo codice lo apre e si sincronizza sui tuoi dispositivi. Cosa protegge e cosa no.",
@@ -94,6 +97,7 @@
       "updated": "2026-11-13"
     },
     "/guides/": {
+      "noindex": true,
       "source": "2026-10-26",
       "title": "Guide per proteggere le foto private su iPhone",
       "description": "Guide chiare per nascondere, bloccare, salvare e trasferire le foto private su iPhone e iPad, dal team della cassaforte per foto Noxium.",
@@ -102,6 +106,7 @@
       "updated": "2026-11-13"
     },
     "/guides/photo-vault-lost-photos": {
+      "noindex": true,
       "source": "2026-11-11",
       "title": "Cassaforte per foto: recuperare foto perse o eliminate",
       "description": "Foto sparite da Private Photo Vault, Keepsafe o un’altra app cassaforte? Dove possono essere ancora, come recuperarle e cosa evitare.",
@@ -113,6 +118,7 @@
       "updated": "2026-11-14"
     },
     "/guides/forgot-photo-vault-password": {
+      "noindex": true,
       "source": "2026-11-19",
       "title": "Password della cassaforte per foto dimenticata? Cosa fare",
       "description": "Sei rimasto fuori dalla tua app cassaforte? Come sbloccarla con il recupero che offre, cosa provare per prima cosa e cosa non fare per non perdere le foto.",
@@ -124,6 +130,7 @@
       "updated": "2026-11-19"
     },
     "/guides/move-photo-vault-to-new-iphone": {
+      "noindex": true,
       "source": "2026-11-19",
       "title": "Cassaforte per foto su un nuovo iPhone, senza perdere foto",
       "description": "Perché le app cassaforte perdono foto quando cambi telefono, e una checklist passo per passo per spostare la tua in sicurezza.",
@@ -135,6 +142,7 @@
       "updated": "2026-11-19"
     },
     "/guides/hidden-photos-iphone": {
+      "noindex": true,
       "source": "2026-11-15",
       "title": "Come vedere le foto nascoste su iPhone (iOS 26)",
       "description": "Trova e vedi le foto nascoste su iPhone, aggiungi foto all’album Nascosti, bloccalo e scopri cosa succede su iCloud, su Mac o su un nuovo iPhone.",
@@ -146,6 +154,7 @@
       "updated": "2026-11-15"
     },
     "/guides/what-is-a-decoy-vault": {
+      "noindex": true,
       "source": "2026-11-19",
       "title": "Cos’è una cassaforte esca, e ti protegge davvero?",
       "description": "Una cassaforte esca è una seconda cassaforte innocua in un’app per foto. Come funziona, quali app ce l’hanno e quali sono i suoi limiti reali.",
@@ -157,6 +166,7 @@
       "updated": "2026-11-20"
     },
     "/guides/are-photo-vault-apps-safe": {
+      "noindex": true,
       "source": "2026-10-26",
       "title": "Le app cassaforte per foto sono sicure? Cosa controllare",
       "description": "Le app cassaforte per foto sono sicure? I rischi reali, cosa mostrano 17 schede dell’App Store e una lista da controllare prima di affidare le foto.",
@@ -168,6 +178,7 @@
       "updated": "2026-11-17"
     },
     "/guides/lock-photos-iphone-face-id": {
+      "noindex": true,
       "source": "2026-11-18",
       "title": "Come bloccare le foto su iPhone con Face ID o sequenza",
       "description": "Bloccare le foto su iPhone: album Nascosti, app Foto con Face ID, note protette, Accesso Guidato e app cassaforte con una sequenza propria.",
@@ -179,6 +190,7 @@
       "updated": "2026-11-18"
     },
     "/best-photo-vault-apps-iphone": {
+      "noindex": true,
       "source": "2026-11-22",
       "title": "Migliori app cassaforte per foto su iPhone (2026)",
       "description": "17 app cassaforte per foto su iPhone a confronto: cifratura, backup, cassaforte esca, tracciamento e prezzi sull’App Store italiano. Con fonti e date.",
@@ -190,6 +202,7 @@
       "updated": "2026-11-24"
     },
     "/guides/how-to-hide-videos-on-iphone": {
+      "noindex": true,
       "source": "2026-11-18",
       "title": "Come nascondere i video su iPhone (iOS 26)",
       "description": "Nascondi i video su iPhone con l’album Nascosti, una nota bloccata o un’app cassaforte. Cosa cambia con video 4K, Live Photo e spazio su iCloud.",
@@ -201,6 +214,7 @@
       "updated": "2026-11-18"
     },
     "/guides/how-encrypted-photo-vaults-work": {
+      "noindex": true,
       "source": "2026-10-26",
       "title": "Come funziona una cassaforte per foto cifrata",
       "description": "La cifratura in una cassaforte per foto, senza gergo: chiavi, Argon2id, AES-256-GCM e backup. E come riconoscere quella che si limita a nascondere.",
@@ -212,6 +226,7 @@
       "updated": "2026-11-20"
     },
     "/guides/vaultaire-vs-keepsafe": {
+      "noindex": true,
       "source": "2026-11-12",
       "title": "Vaultaire o Keepsafe: confronto tra casseforti foto",
       "description": "Vaultaire non chiede account e fa il backup nel tuo iCloud. Keepsafe usa un account email e il suo cloud. Prezzi, cifratura e cassaforte esca a confronto.",
@@ -223,6 +238,7 @@
       "updated": "2026-11-22"
     },
     "/features/pattern-lock": {
+      "noindex": true,
       "source": "2026-11-13",
       "title": "Cassaforte foto con sequenza: come funziona Noxium",
       "description": "Noxium si apre con una sequenza su 6 o più dei 25 bulloni. Come diventa la tua chiave, quante sequenze esistono e come sceglierne una robusta.",
@@ -234,6 +250,7 @@
       "updated": "2026-11-22"
     },
     "/features/on-device-encryption": {
+      "noindex": true,
       "source": "2026-11-13",
       "title": "App cassaforte per foto cifrata: cosa cifra Noxium",
       "description": "Noxium cifra ogni foto, video e nota sull’iPhone con AES-256-GCM, con una chiave ricavata dalla tua sequenza tramite Argon2id. Cosa copre e cosa no.",
@@ -245,6 +262,7 @@
       "updated": "2026-11-23"
     },
     "/features/encrypted-icloud-backup": {
+      "noindex": true,
       "source": "2026-11-13",
       "title": "Cassaforte foto con backup iCloud cifrato: Noxium",
       "description": "Noxium salva una copia cifrata della cassaforte nel tuo iCloud. Cosa viene caricato, come ripristinare su un nuovo iPhone e cosa il backup non fa.",
@@ -256,6 +274,7 @@
       "updated": "2026-11-23"
     },
     "/features/": {
+      "noindex": true,
       "source": "2026-11-12",
       "title": "Funzioni di Noxium: sequenza, cifratura, cassaforte esca",
       "description": "Cosa fa la cassaforte per foto Noxium, funzione per funzione: blocco con sequenza, cifratura sul dispositivo, backup iCloud cifrato, casseforti esca.",
@@ -264,6 +283,7 @@
       "updated": "2026-11-23"
     },
     "/features/recovery-phrase": {
+      "noindex": true,
       "source": "2026-11-13",
       "title": "Frase di recupero della cassaforte foto Noxium",
       "description": "Sequenza dimenticata? La frase di recupero di Noxium apre la cassaforte, e nessuno può reimpostarla per te. Come funziona, dove tenerla e i suoi limiti.",
@@ -275,6 +295,7 @@
       "updated": "2026-11-25"
     },
     "/compare/keepsafe": {
+      "noindex": true,
       "source": "2026-11-14",
       "title": "Keepsafe: recensione (2026) e confronto con Noxium",
       "description": "Keepsafe si sincronizza con un account email e il suo cloud, con pubblicità nel piano gratuito. Cosa fa bene, dove è carente e come si confronta.",

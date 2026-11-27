@@ -61,6 +61,7 @@
   },
   "pages": {
     "/guides/keepsafe-alternatives": {
+      "noindex": true,
       "source": "2026-11-13",
       "title": "4 alternativas a Keepsafe sin cuenta ni correo (2026)",
       "description": "¿Buscas una alternativa a Keepsafe sin cuenta ni correo? Vaultaire, Obscura, Encamera y Noxium comparadas: cifrado, copia en iCloud y señuelos.",
@@ -72,6 +73,7 @@
       "updated": "2026-11-14"
     },
     "/guides/how-to-hide-photos-on-iphone": {
+      "noindex": true,
       "source": "2026-11-15",
       "title": "Cómo ocultar fotos en el iPhone: todos los métodos (iOS 26)",
       "description": "Todas las formas de ocultar fotos en el iPhone con iOS 26: álbum Oculto, notas y apps bloqueadas y bóvedas. Qué protege cada una y qué no.",
@@ -83,6 +85,7 @@
       "updated": "2026-11-16"
     },
     "/guides/is-iphone-hidden-album-private": {
+      "noindex": true,
       "source": "2026-10-26",
       "title": "¿Es seguro el álbum Oculto del iPhone? Lo que protege",
       "description": "El álbum Oculto se bloquea con Face ID, pero tu código lo abre y se sincroniza con tus dispositivos. Qué protege y qué no.",
@@ -94,6 +97,7 @@
       "updated": "2026-11-13"
     },
     "/guides/": {
+      "noindex": true,
       "source": "2026-10-26",
       "title": "Guías para proteger tus fotos privadas en el iPhone",
       "description": "Guías claras para ocultar, bloquear, guardar y pasar fotos privadas en iPhone y iPad, del equipo de la caja fuerte de fotos Noxium.",
@@ -102,6 +106,7 @@
       "updated": "2026-11-13"
     },
     "/guides/photo-vault-lost-photos": {
+      "noindex": true,
       "source": "2026-11-11",
       "title": "Caja fuerte de fotos: recuperar fotos perdidas o borradas",
       "description": "¿Faltan fotos en Private Photo Vault, Keepsafe u otra app de caja fuerte? Dónde pueden seguir, cómo recuperarlas y qué no hacer.",
@@ -113,6 +118,7 @@
       "updated": "2026-11-14"
     },
     "/guides/forgot-photo-vault-password": {
+      "noindex": true,
       "source": "2026-11-19",
       "title": "¿Olvidaste la contraseña de tu caja fuerte de fotos?",
       "description": "¿No puedes entrar en tu caja fuerte de fotos? Cómo desbloquearla con la recuperación que ofrece, qué probar primero y qué no hacer para no perder fotos.",
@@ -124,6 +130,7 @@
       "updated": "2026-11-19"
     },
     "/guides/move-photo-vault-to-new-iphone": {
+      "noindex": true,
       "source": "2026-11-19",
       "title": "Caja fuerte de fotos a un iPhone nuevo, sin perder fotos",
       "description": "Por qué las apps de caja fuerte pierden fotos al cambiar de móvil, y una lista paso a paso para pasar la tuya sin riesgos: antes, durante y después.",
@@ -135,6 +142,7 @@
       "updated": "2026-11-19"
     },
     "/guides/hidden-photos-iphone": {
+      "noindex": true,
       "source": "2026-11-15",
       "title": "Cómo ver las fotos ocultas en el iPhone (iOS 26)",
       "description": "Encuentra y ve las fotos ocultas en el iPhone, añade fotos al álbum Oculto, bloquéalo y descubre qué pasa en iCloud, en un Mac o en un iPhone nuevo.",
@@ -146,6 +154,7 @@
       "updated": "2026-11-15"
     },
     "/guides/what-is-a-decoy-vault": {
+      "noindex": true,
       "source": "2026-11-19",
       "title": "¿Qué es una caja señuelo y de verdad te protege?",
       "description": "Una caja señuelo es una segunda caja fuerte inofensiva en una app de fotos. Cómo funciona, qué apps la tienen y cuáles son sus límites reales.",
@@ -157,6 +166,7 @@
       "updated": "2026-11-20"
     },
     "/guides/are-photo-vault-apps-safe": {
+      "noindex": true,
       "source": "2026-10-26",
       "title": "¿Son seguras las apps de caja fuerte de fotos?",
       "description": "¿Son seguras las apps de caja fuerte de fotos? Los riesgos reales, lo que muestran 17 fichas del App Store y una lista para revisar antes de fiarte.",
@@ -168,6 +178,7 @@
       "updated": "2026-11-17"
     },
     "/guides/lock-photos-iphone-face-id": {
+      "noindex": true,
       "source": "2026-11-18",
       "title": "Cómo bloquear fotos en el iPhone con Face ID o un patrón",
       "description": "Bloquea fotos en el iPhone: el álbum Oculto, la app Fotos con Face ID, notas bloqueadas, Acceso guiado y apps de caja fuerte con su propio patrón.",
@@ -179,6 +190,7 @@
       "updated": "2026-11-18"
     },
     "/best-photo-vault-apps-iphone": {
+      "noindex": true,
       "source": "2026-11-22",
       "title": "Las mejores apps de caja fuerte de fotos para iPhone (2026)",
       "description": "17 apps de caja fuerte de fotos para iPhone comparadas: cifrado, copia, caja señuelo, rastreo y precios en el App Store de España. Con fuentes y fechas.",
@@ -190,6 +202,7 @@
       "updated": "2026-11-24"
     },
     "/guides/how-to-hide-videos-on-iphone": {
+      "noindex": true,
       "source": "2026-11-18",
       "title": "Cómo ocultar vídeos en el iPhone (iOS 26)",
       "description": "Oculta vídeos en el iPhone con el álbum Oculto, una nota bloqueada o una app caja fuerte. Qué cambia con vídeos 4K, Live Photos y el espacio de iCloud.",
@@ -201,6 +214,7 @@
       "updated": "2026-11-18"
     },
     "/guides/how-encrypted-photo-vaults-work": {
+      "noindex": true,
       "source": "2026-10-26",
       "title": "Cómo funciona una caja fuerte de fotos cifrada",
       "description": "Qué es el cifrado en una caja fuerte de fotos: claves, Argon2id, AES-256-GCM y copias, sin tecnicismos, y cómo detectar una que solo oculta.",
@@ -212,6 +226,7 @@
       "updated": "2026-11-20"
     },
     "/guides/vaultaire-vs-keepsafe": {
+      "noindex": true,
       "source": "2026-11-12",
       "title": "Vaultaire o Keepsafe: comparativa de cajas fuertes",
       "description": "Vaultaire no pide cuenta y hace la copia en tu iCloud. Keepsafe usa una cuenta de correo y su propia nube. Precio, cifrado y caja señuelo, comparados.",
@@ -223,6 +238,7 @@
       "updated": "2026-11-22"
     },
     "/features/pattern-lock": {
+      "noindex": true,
       "source": "2026-11-13",
       "title": "Caja fuerte de fotos con patrón: así funciona Noxium",
       "description": "Noxium se abre con un patrón que pasa por 6 o más de 25 pernos. Cómo se convierte en tu clave, cuántos patrones hay y cómo elegir uno fuerte.",
@@ -234,6 +250,7 @@
       "updated": "2026-11-22"
     },
     "/features/on-device-encryption": {
+      "noindex": true,
       "source": "2026-11-13",
       "title": "App de caja fuerte de fotos cifrada: qué cifra Noxium",
       "description": "Noxium cifra cada foto, vídeo y nota en el iPhone con AES-256-GCM, con una clave que sale de tu patrón mediante Argon2id. Qué cubre y qué no.",
@@ -245,6 +262,7 @@
       "updated": "2026-11-23"
     },
     "/features/encrypted-icloud-backup": {
+      "noindex": true,
       "source": "2026-11-13",
       "title": "Caja fuerte de fotos con copia cifrada en iCloud: Noxium",
       "description": "Noxium hace una copia cifrada de tu caja fuerte en tu propio iCloud. Qué se sube, cómo restaurarla en un iPhone nuevo y lo que no puede hacer.",
@@ -256,6 +274,7 @@
       "updated": "2026-11-23"
     },
     "/features/": {
+      "noindex": true,
       "source": "2026-11-12",
       "title": "Funciones de Noxium: patrón, cifrado y cajas señuelo",
       "description": "Lo que hace la caja fuerte de fotos Noxium, función a función: bloqueo con patrón, cifrado en el dispositivo, copia cifrada en iCloud, cajas señuelo y más.",
@@ -264,6 +283,7 @@
       "updated": "2026-11-23"
     },
     "/features/recovery-phrase": {
+      "noindex": true,
       "source": "2026-11-13",
       "title": "Frase de recuperación de la caja fuerte de fotos",
       "description": "¿Olvidaste tu patrón? La frase de recuperación de Noxium abre tu caja fuerte y nadie puede restablecerla por ti. Cómo funciona, dónde guardarla y límites.",
@@ -275,6 +295,7 @@
       "updated": "2026-11-25"
     },
     "/compare/keepsafe": {
+      "noindex": true,
       "source": "2026-11-14",
       "title": "Keepsafe: opiniones (2026) y comparativa con Noxium",
       "description": "Keepsafe sincroniza con una cuenta de correo y su propia nube, con anuncios en el plan gratuito. Qué hace bien, en qué falla y cómo se compara.",

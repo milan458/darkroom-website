@@ -61,6 +61,7 @@
   },
   "pages": {
     "/guides/keepsafe-alternatives": {
+      "noindex": true,
       "source": "2026-11-13",
       "title": "계정·이메일 없는 Keepsafe 대체 앱 4선",
       "description": "계정·이메일 없는 Keepsafe 대체 앱 비교: Vaultaire, Obscura, Encamera, Noxium의 암호화와 백업.",
@@ -72,6 +73,7 @@
       "updated": "2026-11-14"
     },
     "/guides/how-to-hide-photos-on-iphone": {
+      "noindex": true,
       "source": "2026-11-15",
       "title": "아이폰 사진 숨기기: 모든 방법 총정리 (iOS 26)",
       "description": "아이폰 사진 숨기는 모든 방법(iOS 26): 가려진 항목 앨범, 메모 잠금, 앱 잠금, 보관함 앱. 각각 지켜 주는 것과 못 지키는 것.",
@@ -83,6 +85,7 @@
       "updated": "2026-11-16"
     },
     "/guides/is-iphone-hidden-album-private": {
+      "noindex": true,
       "source": "2026-10-26",
       "title": "아이폰 가려진 항목 앨범, 정말 안전할까?",
       "description": "가려진 항목 앨범은 Face ID로 잠기지만 암호로 열리고 다른 기기에도 동기화됩니다. 지켜 주는 것과 못 지키는 것.",
@@ -94,6 +97,7 @@
       "updated": "2026-11-13"
     },
     "/guides/": {
+      "noindex": true,
       "source": "2026-10-26",
       "title": "아이폰 사진 보호 가이드 모음",
       "description": "iPhone과 iPad에서 개인 사진을 숨기고, 잠그고, 백업하고, 옮기는 방법. Noxium 사진 금고를 만드는 팀이 정리했습니다.",
@@ -102,6 +106,7 @@
       "updated": "2026-11-13"
     },
     "/guides/photo-vault-lost-photos": {
+      "noindex": true,
       "source": "2026-11-11",
       "title": "사진 금고 앱에서 사라진 사진 복구 방법",
       "description": "Private Photo Vault, Keepsafe 등 금고 앱에서 사진이 사라졌다면. 남아 있을 만한 곳, 복구 순서, 하면 안 되는 일.",
@@ -113,6 +118,7 @@
       "updated": "2026-11-14"
     },
     "/guides/forgot-photo-vault-password": {
+      "noindex": true,
       "source": "2026-11-19",
       "title": "사진 금고 비밀번호를 잊었을 때 해결 방법",
       "description": "사진 금고 앱에 못 들어갈 때. 앱별 복구 방법, 먼저 시도할 것, 사진을 잃지 않으려면 하지 말아야 할 일.",
@@ -124,6 +130,7 @@
       "updated": "2026-11-19"
     },
     "/guides/move-photo-vault-to-new-iphone": {
+      "noindex": true,
       "source": "2026-11-19",
       "title": "사진 금고를 새 iPhone으로 옮기는 방법",
       "description": "폰을 바꿀 때 금고 앱 사진이 사라지는 이유와, 옮기기 전·중·후에 확인할 단계별 체크리스트. 사진을 잃지 않고 새 iPhone으로 옮기세요.",
@@ -135,6 +142,7 @@
       "updated": "2026-11-19"
     },
     "/guides/hidden-photos-iphone": {
+      "noindex": true,
       "source": "2026-11-15",
       "title": "iPhone 가려진 사진 보는 방법(iOS 26)",
       "description": "iPhone 가려진 사진을 찾고 보는 법, '가려진 항목'에 추가하고 잠그는 법, iCloud·Mac·새 iPhone에서 일어나는 일.",
@@ -146,6 +154,7 @@
       "updated": "2026-11-15"
     },
     "/guides/what-is-a-decoy-vault": {
+      "noindex": true,
       "source": "2026-11-19",
       "title": "위장 금고란? 정말 나를 지켜 줄까",
       "description": "위장 금고는 사진 금고 앱 안의 무해한 두 번째 금고입니다. 작동 방식, 위장 금고가 있는 앱, 그리고 솔직한 한계를 정리했습니다.",
@@ -157,6 +166,7 @@
       "updated": "2026-11-20"
     },
     "/guides/are-photo-vault-apps-safe": {
+      "noindex": true,
       "source": "2026-10-26",
       "title": "사진 금고 앱은 안전할까? 확인할 것",
       "description": "사진 금고 앱은 정말 안전할까? 실제 위험, 앱 17개의 App Store 페이지가 보여 주는 것, 사진을 맡기기 전 체크리스트.",
@@ -168,6 +178,7 @@
       "updated": "2026-11-17"
     },
     "/guides/lock-photos-iphone-face-id": {
+      "noindex": true,
       "source": "2026-11-18",
       "title": "iPhone 사진 잠그는 방법(Face ID·패턴)",
       "description": "iPhone 사진 잠금: '가려진 항목' 앨범, Face ID로 여는 사진 앱, 잠긴 메모, 사용법 유도, 자체 패턴이 있는 금고 앱까지.",
@@ -179,6 +190,7 @@
       "updated": "2026-11-18"
     },
     "/best-photo-vault-apps-iphone": {
+      "noindex": true,
       "source": "2026-11-22",
       "title": "2026 iPhone 사진 금고 앱 추천 비교",
       "description": "iPhone 사진 금고 앱 17개 비교: 암호화, 백업, 위장 금고, 추적, 한국 App Store 가격까지. 출처와 날짜를 함께 밝혔습니다.",
@@ -190,6 +202,7 @@
       "updated": "2026-11-24"
     },
     "/guides/how-to-hide-videos-on-iphone": {
+      "noindex": true,
       "source": "2026-11-18",
       "title": "아이폰 동영상 숨기기 방법 (iOS 26)",
       "description": "아이폰 동영상을 가려진 항목 앨범, 잠긴 메모, 금고 앱으로 숨기는 법. 4K 비디오, Live Photo, iCloud 용량에서 달라지는 점.",
@@ -201,6 +214,7 @@
       "updated": "2026-11-18"
     },
     "/guides/how-encrypted-photo-vaults-work": {
+      "noindex": true,
       "source": "2026-10-26",
       "title": "사진 금고 앱 암호화 원리, 쉽게 정리",
       "description": "사진 금고의 암호화란? 키, Argon2id, AES-256-GCM, 암호화된 백업을 전문 용어 없이 설명하고, 숨기기만 하는 앱 구별법까지.",
@@ -212,6 +226,7 @@
       "updated": "2026-11-20"
     },
     "/guides/vaultaire-vs-keepsafe": {
+      "noindex": true,
       "source": "2026-11-12",
       "title": "Vaultaire vs Keepsafe 비교",
       "description": "Vaultaire는 계정 없이 내 iCloud에 백업, Keepsafe는 이메일 계정과 자체 클라우드. 가격, 암호화, 위장 금고를 비교합니다.",
@@ -223,6 +238,7 @@
       "updated": "2026-11-22"
     },
     "/features/pattern-lock": {
+      "noindex": true,
       "source": "2026-11-13",
       "title": "패턴 잠금 사진 금고 Noxium의 원리",
       "description": "Noxium은 볼트 25개 중 6개 이상을 지나는 패턴으로 열립니다. 패턴이 키가 되는 원리, 패턴의 수, 강한 패턴 고르는 법.",
@@ -234,6 +250,7 @@
       "updated": "2026-11-22"
     },
     "/features/on-device-encryption": {
+      "noindex": true,
       "source": "2026-11-13",
       "title": "암호화 사진 금고 앱: Noxium이 암호화하는 것",
       "description": "Noxium은 사진·비디오·메모를 iPhone에서 AES-256-GCM으로 암호화합니다. 키는 패턴에서 Argon2id로. 범위와 한계.",
@@ -245,6 +262,7 @@
       "updated": "2026-11-23"
     },
     "/features/encrypted-icloud-backup": {
+      "noindex": true,
       "source": "2026-11-13",
       "title": "사진 금고 암호화 iCloud 백업: Noxium",
       "description": "Noxium은 금고의 암호화된 사본을 내 iCloud에 백업합니다. 무엇이 올라가는지, 새 iPhone에서 복원하는 법, 못 하는 일.",
@@ -256,6 +274,7 @@
       "updated": "2026-11-23"
     },
     "/features/": {
+      "noindex": true,
       "source": "2026-11-12",
       "title": "Noxium 기능: 패턴 잠금, 암호화, 위장 금고",
       "description": "사진 금고 Noxium의 기능을 하나씩: 패턴 잠금, 기기 내 암호화, 암호화된 iCloud 백업, 위장 금고 등.",
@@ -264,6 +283,7 @@
       "updated": "2026-11-23"
     },
     "/features/recovery-phrase": {
+      "noindex": true,
       "source": "2026-11-13",
       "title": "사진 금고 복구 문구: Noxium의 예비 키",
       "description": "패턴을 잊어도 Noxium 복구 문구로 금고를 엽니다. 누구도 대신 재설정할 수 없습니다. 원리, 보관법, 한계를 설명합니다.",
@@ -275,6 +295,7 @@
       "updated": "2026-11-25"
     },
     "/compare/keepsafe": {
+      "noindex": true,
       "source": "2026-11-14",
       "title": "Keepsafe 후기(2026): Noxium과 비교",
       "description": "Keepsafe는 이메일 계정과 자체 클라우드로 동기화하며 무료 요금제에 광고가 있습니다. 장점, 아쉬운 점, Noxium과의 차이를 봅니다.",
