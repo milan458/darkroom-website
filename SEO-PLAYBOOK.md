@@ -129,6 +129,12 @@ Answer **one** real question about hiding, locking, backing up or moving private
 
 Never point `--publish` at this website repo: it's public.
 
+**Search Console data in a Google Sheet.** With `--sheet`, the Mac's daily run also appends Search Console numbers to a Google Sheet in Milan's Google account, so any Claude session with the Google Sheets connector can read them. Tabs: `daily` (whole site per day), `pages` (per page per day) and `queries` (per query per day), each with clicks, impressions, CTR and position. The first run creates the sheet and backfills the last 16 months; after that each run appends only the days whose data became final. Search Console drops data after 16 months; the sheet keeps it. The sheet's id is in `~/seo-data/getnoxium-app/sheet.json`. Setup, once:
+
+1. Google Cloud (the project that owns gum's OAuth client): enable **Google Sheets API**.
+2. `gum login --service searchconsole,sheets` (adds the Sheets permission to the existing sign-in).
+3. `cd ~/dev/darkroom-website && python3 tools/seo-daily.py --sheet-only` (creates and backfills the sheet, prints its link), then `python3 tools/seo-daily.py --install --publish --sheet` to keep it in the daily schedule.
+
 Act on the report weekly, not daily: positions move day to day, and a page change needs 1–4 weeks to show. Daily, just look for anything not indexed or a sudden drop.
 
 ### Daily publishing (30-day plan, from November 2026)

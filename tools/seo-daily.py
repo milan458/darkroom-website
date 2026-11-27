@@ -11,6 +11,8 @@ here). Standard library only; works with macOS's /usr/bin/python3.
     python3 tools/seo-daily.py --uninstall     # stop the daily run
     python3 tools/seo-daily.py --publish       # also push summary.json to the private data repo
     python3 tools/seo-daily.py --install --publish
+    python3 tools/seo-daily.py --sheet-only    # only update the Google Sheet (the first run creates and backfills it)
+    python3 tools/seo-daily.py --install --publish --sheet   # daily report + summary push + Google Sheet
     python3 tools/seo-daily.py --site sc-domain:example.com --sitemap https://example.com/sitemap.xml
 
 Output (outside the repo, because this repo is public):
@@ -18,11 +20,20 @@ Output (outside the repo, because this repo is public):
     ~/seo-data/<site>/raw/YYYY-MM-DD/*.json   raw gum responses, for later comparisons
     ~/seo-data/<site>/seen-queries.json       every query seen so far, to spot new ones
     ~/seo-data/<site>/summary.json            compact numbers for the cloud runs (see below)
+    ~/seo-data/<site>/sheet.json              the Google Sheet's id and the last day written to each tab
 
 --publish: if ~/seo-data is a git clone of a PRIVATE repo (e.g. milan458/noxium-seo-data), commit and
 push <site>/summary.json and <site>/reports/latest.md there after each run, so the daily cloud runs can
 read Search Console numbers without gum. Raw data, logs and query history stay on this Mac (.gitignore).
 Never point this at the public website repo.
+
+--sheet: also append Search Console numbers to a Google Sheet (in the Google account gum is signed in
+to), so any Claude session with a Google Sheets connector can read them. The first run creates the
+sheet and backfills everything Search Console still has (about 16 months); later runs append only the
+days that became final since the last run. Tabs: daily (whole site per day), pages (per page per day),
+queries (per query per day); columns date, page/query, clicks, impressions, ctr, position. Search
+Console keeps 16 months, the sheet keeps everything. Needs the Sheets scope once:
+    gum login --service searchconsole,sheets
 
 What the report covers (Search Console data lags 2-3 days, so windows end 3 days ago):
     - clicks and impressions, last 7 days vs the 7 before
@@ -42,6 +53,7 @@ import re
 import shutil
 import subprocess
 import sys
+import time
 from pathlib import Path
 
 DEFAULT_SITE = "sc-domain:getnoxium.app"
@@ -59,11 +71,16 @@ class GumError(Exception):
 
 # ---------- gum ----------
 
-def gum(args, op, params):
-    cmd = [args.gum, "read", op, "--args", json.dumps(params), "--output", "json"]
+def gum(args, op, params, verb="read", flags=()):
+    cmd = [args.gum, verb, op]
+    if verb == "write":
+        cmd.append("--allow-write")
+    cmd += ["--args", json.dumps(params), "--output", "json", *flags]
     if args.profile:
         cmd += ["--profile", args.profile]
     p = subprocess.run(cmd, capture_output=True, text=True, timeout=180)
+    if "results_omitted_count" in p.stderr:
+        raise GumError(f"gum dropped rows from {op}: {p.stderr.strip()[-500:]}")
     out = p.stdout.strip()
     try:
         data = json.loads(out) if out else {}
@@ -134,6 +151,10 @@ def totals(daily, start, end):
     return t
 
 
+def origin_of(site):
+    return "https://" + site.split(":", 1)[1] if site.startswith("sc-domain:") else site.rstrip("/")
+
+
 def short(url, origin):
     return url.replace(origin, "") or "/"
 
@@ -182,7 +203,7 @@ def run(args):
     end = today - dt.timedelta(days=3)
     cur_start, prev_end = end - dt.timedelta(days=6), end - dt.timedelta(days=7)
     prev_start, start28 = end - dt.timedelta(days=13), end - dt.timedelta(days=27)
-    origin = "https://" + args.site.split(":", 1)[1] if args.site.startswith("sc-domain:") else args.site.rstrip("/")
+    origin = origin_of(args.site)
 
     out_dir = Path(args.out).expanduser()
     raw_dir = out_dir / "raw" / today.isoformat()
@@ -312,6 +333,12 @@ def run(args):
     (out_dir / "summary.json").write_text(json.dumps(summary_data, indent=1, ensure_ascii=False), encoding="utf-8")
     if args.publish:
         publish(out_dir, today)
+    if args.sheet:
+        try:
+            sheet_export(args)
+        except GumError as e:
+            print(f"--sheet: Google Sheet update failed: {e}")
+            notify("SEO daily report", "Couldn't update the Google Sheet (see launchd.log)")
 
     summary = (f"{origin}: {t_cur['clicks']} clicks ({pct(t_cur['clicks'], t_prev['clicks'])}), "
                f"{t_cur['impressions']} impressions ({pct(t_cur['impressions'], t_prev['impressions'])}), "
@@ -344,6 +371,97 @@ def publish(out_dir, today):
         notify("SEO daily report", "Couldn't push the summary to GitHub (see launchd.log)")
     else:
         print(f"--publish: pushed {site}/summary.json")
+
+
+# ---------- Google Sheet export ----------
+
+SHEET_TABS = {
+    "daily": (["date"], ["date", "clicks", "impressions", "ctr", "position"]),
+    "pages": (["date", "page"], ["date", "page", "clicks", "impressions", "ctr", "position"]),
+    "queries": (["date", "query"], ["date", "query", "clicks", "impressions", "ctr", "position"]),
+}
+SC_HISTORY_DAYS = 486   # Search Console keeps about 16 months
+SC_PAGE_ROWS = 25000    # the API's maximum rowLimit
+APPEND_ROWS = 1000      # rows per append, keeps gum's --args well under macOS's argument size limit
+
+
+def sa_all_rows(args, start, end, dimensions):
+    """Every row for the window (final data only, the API default), following startRow pages."""
+    out, start_row = [], 0
+    while True:
+        body = {"startDate": start.isoformat(), "endDate": end.isoformat(), "dimensions": dimensions,
+                "rowLimit": SC_PAGE_ROWS, "startRow": start_row}
+        batch = rows(gum(args, "searchconsole.searchanalytics.query", {"siteUrl": args.site, "body": body},
+                         flags=["--max-items", "all"]))
+        out += batch
+        if len(batch) < SC_PAGE_ROWS:
+            return out
+        start_row += SC_PAGE_ROWS
+
+
+def create_sheet(args, origin):
+    params = {"properties": {"title": f"Search Console: {origin.split('//', 1)[-1]}"},
+              "sheets": [{"properties": {"title": tab, "gridProperties": {"frozenRowCount": 1}}}
+                         for tab in SHEET_TABS]}
+    r = gum(args, "sheets.spreadsheets.create", params, verb="write")
+    sid = find_key(r, "spreadsheetId")
+    if not sid:
+        raise GumError(f"Sheets didn't return a spreadsheet id: {json.dumps(r)[:500]}")
+    gum(args, "sheets.spreadsheets.values.batchUpdate",
+        {"spreadsheetId": sid, "valueInputOption": "RAW",
+         "data": [{"range": f"{tab}!A1", "values": [header]} for tab, (_, header) in SHEET_TABS.items()]},
+        verb="write")
+    return sid, find_key(r, "spreadsheetUrl") or f"https://docs.google.com/spreadsheets/d/{sid}/edit"
+
+
+def sheet_export(args):
+    """Append the days that became final since the last run; the first run creates the sheet and backfills."""
+    origin = origin_of(args.site)
+    out_dir = Path(args.out).expanduser()
+    out_dir.mkdir(parents=True, exist_ok=True)
+    state_file = out_dir / "sheet.json"
+    state = json.loads(state_file.read_text(encoding="utf-8")) if state_file.exists() else {}
+    save_state = lambda: state_file.write_text(json.dumps(state, indent=1), encoding="utf-8")
+    if not state.get("spreadsheetId"):
+        sid, url = create_sheet(args, origin)
+        state = {"spreadsheetId": sid, "url": url, "through": {}}
+        save_state()
+        print(f"--sheet: created {url}")
+    sid, through = state["spreadsheetId"], state.setdefault("through", {})
+
+    today = dt.date.today()
+    earliest, end = today - dt.timedelta(days=SC_HISTORY_DAYS), today - dt.timedelta(days=1)
+    added = {}
+    for tab, (dims, _) in SHEET_TABS.items():
+        last = through.get(tab)
+        start = max(earliest, dt.date.fromisoformat(last) + dt.timedelta(days=1)) if last else earliest
+        if start > end:
+            continue
+        by_date = {}
+        for r in sa_all_rows(args, start, end, dims):
+            keys = r["keys"]
+            label = [short(keys[1], origin)] if tab == "pages" else keys[1:]
+            by_date.setdefault(keys[0], []).append(
+                [keys[0], *label, r["clicks"], r["impressions"], round(r["ctr"], 4), round(r["position"], 2)])
+        # Append whole days at a time and record progress after each append, so a failed run
+        # never writes the same day twice.
+        chunk, chunk_last, n = [], None, 0
+        dates = sorted(by_date)
+        for i, d in enumerate(dates):
+            chunk += sorted(by_date[d], key=lambda v: (-v[-4], -v[-3]))
+            chunk_last = d
+            if len(chunk) >= APPEND_ROWS or i == len(dates) - 1:
+                gum(args, "sheets.spreadsheets.values.append",
+                    {"spreadsheetId": sid, "range": f"{tab}!A1", "valueInputOption": "RAW",
+                     "insertDataOption": "INSERT_ROWS", "values": chunk}, verb="write")
+                n += len(chunk)
+                through[tab] = chunk_last
+                save_state()
+                chunk = []
+                time.sleep(1.1)  # stay under the Sheets write quota (60 a minute) during a backfill
+        added[tab] = n
+    print(f"--sheet: added {', '.join(f'{n} {t} rows' for t, n in added.items()) or 'nothing new'} "
+          f"(final data through {max(through.values(), default='none')}). {state.get('url', '')}")
 
 
 # ---------- macOS helpers ----------
@@ -381,6 +499,8 @@ def install(args):
         prog.append("--no-inspect")
     if args.publish:
         prog.append("--publish")
+    if args.sheet:
+        prog.append("--sheet")
     esc = lambda s: s.replace("&", "&amp;").replace("<", "&lt;")
     plist.parent.mkdir(parents=True, exist_ok=True)
     plist.write_text(f"""<?xml version="1.0" encoding="UTF-8"?>
@@ -429,6 +549,9 @@ def main():
     ap.add_argument("--out", default="", help="output folder (default: ~/seo-data/<site>)")
     ap.add_argument("--no-inspect", dest="inspect", action="store_false", help="skip URL Inspection")
     ap.add_argument("--publish", action="store_true", help="push summary.json to the private data repo (~/seo-data)")
+    ap.add_argument("--sheet", action="store_true",
+                    help="also append the numbers to a Google Sheet (created and backfilled on the first run)")
+    ap.add_argument("--sheet-only", action="store_true", help="only update the Google Sheet, no report")
     ap.add_argument("--install", action="store_true", help="run daily via macOS launchd")
     ap.add_argument("--uninstall", action="store_true", help="remove the daily run")
     ap.add_argument("--hour", type=int, default=9)
@@ -440,13 +563,13 @@ def main():
     if args.uninstall:
         return uninstall(args)
     try:
-        run(args)
+        sheet_export(args) if args.sheet_only else run(args)
     except GumError as e:
         msg = str(e)
         hint = ""
         if "AUTH_REFRESH_FAILED" in msg or "SCOPE_MISSING" in msg:
-            hint = ("\nThe Google sign-in expired or is missing Search Console access. Run:\n"
-                    "  gum auth login --scope https://www.googleapis.com/auth/webmasters.readonly\n"
+            hint = ("\nThe Google sign-in expired or is missing Search Console or Sheets access. Run:\n"
+                    "  gum login --service searchconsole,sheets\n"
                     "If it expires every 7 days, publish the OAuth app (Google Auth Platform > Audience > Publish app).")
         notify("SEO daily report failed", "gum sign-in needed" if hint else "See launchd.log")
         sys.exit(f"gum failed:\n{msg}{hint}")
