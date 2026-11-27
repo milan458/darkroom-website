@@ -127,6 +127,7 @@
   ],
   "pages": {
     "/guides/keepsafe-alternatives": {
+      "noindex": true,
       "source": "2026-11-13",
       "title": "4 款不用帳號的 Keepsafe 替代 App（2026）",
       "description": "不用帳號和電子郵件的 Keepsafe 替代 App：Vaultaire、Obscura、Encamera、Noxium 的加密與 iCloud 備份比較。",
@@ -138,6 +139,7 @@
       "updated": "2026-11-14"
     },
     "/guides/how-to-hide-photos-on-iphone": {
+      "noindex": true,
       "source": "2026-11-15",
       "title": "iPhone 隱藏照片教學：所有方法與保護範圍（iOS 26）",
       "description": "iOS 26 的 iPhone 隱藏照片完整教學：「已隱藏」相簿、鎖定備忘錄、鎖定 App 和保險庫 App，各能保護什麼、不能保護什麼。",
@@ -149,6 +151,7 @@
       "updated": "2026-11-16"
     },
     "/guides/is-iphone-hidden-album-private": {
+      "noindex": true,
       "source": "2026-10-26",
       "title": "iPhone「已隱藏」相簿安全嗎？能保護什麼",
       "description": "「已隱藏」相簿用 Face ID 鎖定，但密碼就能打開，還會同步到你的其他裝置。它能保護什麼、不能保護什麼。",
@@ -160,6 +163,7 @@
       "updated": "2026-11-13"
     },
     "/guides/": {
+      "noindex": true,
       "source": "2026-10-26",
       "title": "iPhone 照片隱私指南總覽",
       "description": "教你在 iPhone 和 iPad 上隱藏、鎖定、備份和搬移私密照片。由 Noxium 照片保險庫團隊撰寫。",
@@ -168,6 +172,7 @@
       "updated": "2026-11-13"
     },
     "/guides/photo-vault-lost-photos": {
+      "noindex": true,
       "source": "2026-11-11",
       "title": "照片保險庫 App 照片不見了？救回方法",
       "description": "Private Photo Vault、Keepsafe 等保險庫 App 的照片不見了？照片可能還在哪裡、怎麼救回，以及不能做的事。",
@@ -179,6 +184,7 @@
       "updated": "2026-11-14"
     },
     "/guides/forgot-photo-vault-password": {
+      "noindex": true,
       "source": "2026-11-19",
       "title": "忘記照片保險庫密碼？解鎖與復原方法",
       "description": "打不開照片保險庫 App？各 App 的復原方式、應該先試什麼，以及為了不弄丟照片不能做的事。",
@@ -190,6 +196,7 @@
       "updated": "2026-11-19"
     },
     "/guides/move-photo-vault-to-new-iphone": {
+      "noindex": true,
       "source": "2026-11-19",
       "title": "把照片保險庫移到新 iPhone，照片不弄丟",
       "description": "換手機時保險庫 App 為什麼會弄丟照片，以及移轉前、移轉中、移轉後的逐步檢查清單，讓你安全把保險庫移到新 iPhone。",
@@ -201,6 +208,7 @@
       "updated": "2026-11-19"
     },
     "/guides/hidden-photos-iphone": {
+      "noindex": true,
       "source": "2026-11-15",
       "title": "如何查看 iPhone 隱藏的照片（iOS 26）",
       "description": "在 iPhone 上找到並查看隱藏的照片、把照片加入「已隱藏」、鎖定相簿，以及在 iCloud、Mac 和新 iPhone 上會發生什麼。",
@@ -212,6 +220,7 @@
       "updated": "2026-11-15"
     },
     "/guides/what-is-a-decoy-vault": {
+      "noindex": true,
       "source": "2026-11-19",
       "title": "什麼是偽裝保險庫？真的能保護你嗎",
       "description": "偽裝保險庫是照片保險庫 App 裡第二個、無害的保險庫。它怎麼運作、哪些 App 有，以及它真正的限制。",
@@ -223,6 +232,7 @@
       "updated": "2026-11-20"
     },
     "/guides/are-photo-vault-apps-safe": {
+      "noindex": true,
       "source": "2026-10-26",
       "title": "照片保險庫 App 安全嗎？先檢查這些",
       "description": "照片保險庫 App 真的安全嗎？真正的風險、17 款 App 的 App Store 頁面透露了什麼，以及把照片交出去之前的檢查清單。",
@@ -234,6 +244,7 @@
       "updated": "2026-11-17"
     },
     "/guides/lock-photos-iphone-face-id": {
+      "noindex": true,
       "source": "2026-11-18",
       "title": "如何鎖定 iPhone 照片（Face ID、圖形）",
       "description": "鎖定 iPhone 照片的方法：「已隱藏」相簿、需要 Face ID 的「照片」App、鎖定的備忘錄、引導使用模式，以及有自己圖形的保險庫 App。",
@@ -245,6 +256,7 @@
       "updated": "2026-11-18"
     },
     "/best-photo-vault-apps-iphone": {
+      "noindex": true,
       "source": "2026-11-22",
       "title": "2026 最佳 iPhone 照片保險庫 App 比較",
       "description": "比較 17 款 iPhone 照片保險庫 App：加密、備份、偽裝保險庫、追蹤，以及台灣 App Store 的價格。附來源與日期。",
@@ -256,6 +268,7 @@
       "updated": "2026-11-24"
     },
     "/guides/how-to-hide-videos-on-iphone": {
+      "noindex": true,
       "source": "2026-11-18",
       "title": "如何在 iPhone 隱藏影片（iOS 26）",
       "description": "用「已隱藏」相簿、上鎖的備忘錄或保險庫 App 在 iPhone 隱藏影片。4K 大檔、原況照片和 iCloud 空間要注意什麼。",
@@ -267,6 +280,7 @@
       "updated": "2026-11-18"
     },
     "/guides/how-encrypted-photo-vaults-work": {
+      "noindex": true,
       "source": "2026-10-26",
       "title": "照片保險庫加密原理，一次看懂",
       "description": "照片保險庫的加密是什麼？用白話說明金鑰、Argon2id、AES-256-GCM 和加密備份，並教你分辨只是隱藏的 App。",
@@ -278,6 +292,7 @@
       "updated": "2026-11-20"
     },
     "/guides/vaultaire-vs-keepsafe": {
+      "noindex": true,
       "source": "2026-11-12",
       "title": "Vaultaire 和 Keepsafe 比較",
       "description": "Vaultaire 不用帳號、備份到你的 iCloud；Keepsafe 用電子郵件帳號和自家雲端。比較價格、加密和偽裝保險庫。",
@@ -289,6 +304,7 @@
       "updated": "2026-11-22"
     },
     "/features/pattern-lock": {
+      "noindex": true,
       "source": "2026-11-13",
       "title": "圖形鎖照片保險庫：Noxium 如何運作",
       "description": "Noxium 用經過 25 顆螺栓中至少 6 顆的圖形打開。圖形如何變成金鑰、共有多少種圖形，以及怎麼選一個強的圖形。",
@@ -300,6 +316,7 @@
       "updated": "2026-11-22"
     },
     "/features/on-device-encryption": {
+      "noindex": true,
       "source": "2026-11-13",
       "title": "加密照片保險庫 App：Noxium 加密了什麼",
       "description": "Noxium 在 iPhone 上以 AES-256-GCM 加密每張照片、影片和備忘錄，金鑰由你的圖形經 Argon2id 產生。保護什麼、不保護什麼。",
@@ -311,6 +328,7 @@
       "updated": "2026-11-23"
     },
     "/features/encrypted-icloud-backup": {
+      "noindex": true,
       "source": "2026-11-13",
       "title": "照片保險庫加密 iCloud 備份：Noxium",
       "description": "Noxium 把保險庫的加密副本備份到你自己的 iCloud。會上傳什麼、怎麼在新 iPhone 回復，以及做不到的事。",
@@ -322,6 +340,7 @@
       "updated": "2026-11-23"
     },
     "/features/": {
+      "noindex": true,
       "source": "2026-11-12",
       "title": "Noxium 功能：圖形鎖、加密、偽裝保險庫",
       "description": "Noxium 照片保險庫的功能逐一介紹：圖形鎖、裝置端加密、加密 iCloud 備份、偽裝保險庫等。",
@@ -330,6 +349,7 @@
       "updated": "2026-11-23"
     },
     "/features/recovery-phrase": {
+      "noindex": true,
       "source": "2026-11-13",
       "title": "照片保險庫復原短語：Noxium 的備用鑰匙",
       "description": "忘記圖形？Noxium 的復原短語能打開你的保險庫，沒有人能替你重設。說明運作方式、保管方法與限制。",
@@ -341,6 +361,7 @@
       "updated": "2026-11-25"
     },
     "/compare/keepsafe": {
+      "noindex": true,
       "source": "2026-11-14",
       "title": "Keepsafe 評價（2026）：和 Noxium 比較",
       "description": "Keepsafe 透過電子郵件帳號和自家雲端同步，免費方案有廣告。它的優點、不足，以及和 Noxium 的比較。",

@@ -61,6 +61,7 @@
   },
   "pages": {
     "/guides/keepsafe-alternatives": {
+      "noindex": true,
       "source": "2026-11-13",
       "title": "4 Keepsafe-Alternativen ohne Konto und E-Mail (2026)",
       "description": "Keepsafe-Alternative ohne Konto und E-Mail gesucht? Vaultaire, Obscura, Encamera und Noxium im Vergleich: Verschlüsselung, iCloud-Backup, Tarntresor.",
@@ -72,6 +73,7 @@
       "updated": "2026-11-14"
     },
     "/guides/how-to-hide-photos-on-iphone": {
+      "noindex": true,
       "source": "2026-11-15",
       "title": "iPhone Fotos verstecken: alle Wege im Überblick (iOS 26)",
       "description": "Fotos auf dem iPhone verstecken mit iOS 26: Album „Ausgeblendet“, gesperrte Notizen, gesperrte Apps und Tresor-Apps. Was jeder Weg schützt und was nicht.",
@@ -83,6 +85,7 @@
       "updated": "2026-11-16"
     },
     "/guides/is-iphone-hidden-album-private": {
+      "noindex": true,
       "source": "2026-10-26",
       "title": "Ist das Album „Ausgeblendet“ auf dem iPhone sicher?",
       "description": "Das Album „Ausgeblendet“ sperrt mit Face ID, doch dein iPhone-Code öffnet es, und es synchronisiert auf alle Geräte. Was es schützt und was nicht.",
@@ -94,6 +97,7 @@
       "updated": "2026-11-13"
     },
     "/guides/": {
+      "noindex": true,
       "source": "2026-10-26",
       "title": "Anleitungen: private Fotos auf dem iPhone schützen",
       "description": "Klare Anleitungen zum Verstecken, Sperren, Sichern und Umziehen privater Fotos auf iPhone und iPad. Vom Team hinter dem Noxium Foto-Tresor.",
@@ -102,6 +106,7 @@
       "updated": "2026-11-13"
     },
     "/guides/photo-vault-lost-photos": {
+      "noindex": true,
       "source": "2026-11-11",
       "title": "Foto-Tresor: verlorene Fotos wiederherstellen",
       "description": "Fotos aus Private Photo Vault, Keepsafe oder einer anderen Tresor-App weg? Wo sie noch sein können, wie du sie zurückholst und was du vermeiden solltest.",
@@ -113,6 +118,7 @@
       "updated": "2026-11-14"
     },
     "/guides/forgot-photo-vault-password": {
+      "noindex": true,
       "source": "2026-11-19",
       "title": "Foto-Tresor-Passwort vergessen? So kommst du wieder rein",
       "description": "Aus einer Foto-Tresor-App ausgesperrt? So kommst du mit der Wiederherstellung der App wieder rein, was du zuerst versuchst und was du lassen solltest.",
@@ -124,6 +130,7 @@
       "updated": "2026-11-19"
     },
     "/guides/move-photo-vault-to-new-iphone": {
+      "noindex": true,
       "source": "2026-11-19",
       "title": "Foto-Tresor aufs neue iPhone, ohne Fotos zu verlieren",
       "description": "Warum Tresor-Apps beim Handywechsel Fotos verlieren, und eine Checkliste, mit der dein Tresor sicher umzieht: vorher, dabei und danach.",
@@ -135,6 +142,7 @@
       "updated": "2026-11-19"
     },
     "/guides/hidden-photos-iphone": {
+      "noindex": true,
       "source": "2026-11-15",
       "title": "Ausgeblendete Fotos auf dem iPhone anzeigen (iOS 26)",
       "description": "So findest und siehst du ausgeblendete Fotos auf dem iPhone, fügst Fotos zu „Ausgeblendet“ hinzu, sperrst das Album und nimmst es mit aufs neue iPhone.",
@@ -146,6 +154,7 @@
       "updated": "2026-11-15"
     },
     "/guides/what-is-a-decoy-vault": {
+      "noindex": true,
       "source": "2026-11-19",
       "title": "Was ist ein Tarntresor? Und schützt er dich wirklich?",
       "description": "Ein Tarntresor ist ein zweiter, harmloser Tresor in einer Foto-Tresor-App. Wie er funktioniert, welche Apps einen haben und wo seine Grenzen liegen.",
@@ -157,6 +166,7 @@
       "updated": "2026-11-20"
     },
     "/guides/are-photo-vault-apps-safe": {
+      "noindex": true,
       "source": "2026-10-26",
       "title": "Sind Foto-Tresor-Apps sicher? Das solltest du prüfen",
       "description": "Wie sicher sind Foto-Tresor-Apps? Die echten Risiken, was 17 App-Store-Seiten zeigen, und eine Checkliste, bevor du einem Tresor deine Fotos gibst.",
@@ -168,6 +178,7 @@
       "updated": "2026-11-17"
     },
     "/guides/lock-photos-iphone-face-id": {
+      "noindex": true,
       "source": "2026-11-18",
       "title": "Fotos auf dem iPhone sperren: Face ID, Code oder Muster",
       "description": "Fotos auf dem iPhone sperren: Album „Ausgeblendet“, Fotos-App mit Face ID, gesperrte Notizen, geführter Zugriff und Tresor-Apps mit eigenem Muster.",
@@ -179,6 +190,7 @@
       "updated": "2026-11-18"
     },
     "/best-photo-vault-apps-iphone": {
+      "noindex": true,
       "source": "2026-11-22",
       "title": "Die besten Foto-Tresor-Apps fürs iPhone 2026 im Vergleich",
       "description": "17 Foto-Tresor-Apps fürs iPhone im Vergleich: Verschlüsselung, Backup, Tarntresor, Tracking und Preise im deutschen App Store. Mit Quellen und Datum.",
@@ -190,6 +202,7 @@
       "updated": "2026-11-24"
     },
     "/guides/how-to-hide-videos-on-iphone": {
+      "noindex": true,
       "source": "2026-11-18",
       "title": "Videos auf dem iPhone verstecken (iOS 26)",
       "description": "Videos auf dem iPhone verstecken: Album „Ausgeblendet“, gesperrte Notiz oder Tresor-App. Was bei großen 4K-Videos, Live Photos und iCloud-Speicher zählt.",
@@ -201,6 +214,7 @@
       "updated": "2026-11-18"
     },
     "/guides/how-encrypted-photo-vaults-work": {
+      "noindex": true,
       "source": "2026-10-26",
       "title": "Wie funktioniert ein verschlüsselter Foto-Tresor?",
       "description": "Was Verschlüsselung im Foto-Tresor heißt: Schlüssel, Argon2id, AES-256-GCM und Backups, einfach erklärt. Und wie du Tresore erkennst, die nur verstecken.",
@@ -212,6 +226,7 @@
       "updated": "2026-11-20"
     },
     "/guides/vaultaire-vs-keepsafe": {
+      "noindex": true,
       "source": "2026-11-12",
       "title": "Vaultaire oder Keepsafe? Foto-Tresore im Vergleich",
       "description": "Vaultaire braucht kein Konto und sichert in deiner iCloud. Keepsafe nutzt ein E-Mail-Konto und eigene Server. Preise, Verschlüsselung und Tarntresor.",
@@ -223,6 +238,7 @@
       "updated": "2026-11-22"
     },
     "/features/pattern-lock": {
+      "noindex": true,
       "source": "2026-11-13",
       "title": "Foto-Tresor mit Mustersperre: So funktioniert Noxium",
       "description": "Noxium öffnet sich mit einem Muster über 6+ von 25 Bolzen. Wie das Muster zum Schlüssel wird, wie viele Muster es gibt und wie du ein starkes wählst.",
@@ -234,6 +250,7 @@
       "updated": "2026-11-22"
     },
     "/features/on-device-encryption": {
+      "noindex": true,
       "source": "2026-11-13",
       "title": "Verschlüsselte Foto-Tresor-App: Was Noxium verschlüsselt",
       "description": "Noxium verschlüsselt Fotos, Videos und Notizen auf dem iPhone mit AES-256-GCM, Schlüssel per Argon2id aus deinem Muster. Was geschützt ist, was nicht.",
@@ -245,6 +262,7 @@
       "updated": "2026-11-23"
     },
     "/features/encrypted-icloud-backup": {
+      "noindex": true,
       "source": "2026-11-13",
       "title": "Foto-Tresor mit iCloud-Backup, verschlüsselt: so bei Noxium",
       "description": "Noxium sichert eine verschlüsselte Kopie deines Tresors in deiner eigenen iCloud. Was hochgeladen wird, wie das Wiederherstellen geht und die Grenzen.",
@@ -256,6 +274,7 @@
       "updated": "2026-11-23"
     },
     "/features/": {
+      "noindex": true,
       "source": "2026-11-12",
       "title": "Noxium Funktionen: Mustersperre, Verschlüsselung, Tarntresor",
       "description": "Was der Noxium Foto-Tresor kann, Funktion für Funktion: Mustersperre, Verschlüsselung auf dem Gerät, verschlüsseltes iCloud-Backup, Tarntresore und mehr.",
@@ -264,6 +283,7 @@
       "updated": "2026-11-23"
     },
     "/features/recovery-phrase": {
+      "noindex": true,
       "source": "2026-11-13",
       "title": "Wiederherstellungsphrase im Foto-Tresor: Noxium",
       "description": "Muster vergessen? Die Wiederherstellungsphrase von Noxium öffnet deinen Tresor, niemand kann ihn für dich zurücksetzen. So funktioniert und hält sie.",
@@ -275,6 +295,7 @@
       "updated": "2026-11-25"
     },
     "/compare/keepsafe": {
+      "noindex": true,
       "source": "2026-11-14",
       "title": "Keepsafe im Test (2026): Keepsafe oder Noxium?",
       "description": "Keepsafe synchronisiert über ein E-Mail-Konto und seine eigene Cloud, mit Werbung im Gratis-Plan. Was es gut kann, wo es schwächelt und der Vergleich.",

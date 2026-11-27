@@ -61,6 +61,7 @@
   },
   "pages": {
     "/guides/keepsafe-alternatives": {
+      "noindex": true,
       "source": "2026-11-13",
       "title": "4 alternatives à Keepsafe sans compte ni courriel (2026)",
       "description": "Une alternative à Keepsafe sans compte ni courriel? Vaultaire, Obscura, Encamera et Noxium comparées : chiffrement, sauvegarde iCloud et leurres.",
@@ -72,6 +73,7 @@
       "updated": "2026-11-14"
     },
     "/guides/how-to-hide-photos-on-iphone": {
+      "noindex": true,
       "source": "2026-11-15",
       "title": "Cacher des photos sur iPhone : toutes les méthodes (iOS 26)",
       "description": "Cacher des photos sur iPhone avec iOS 26 : album Masquées, note ou app verrouillée, coffre-fort. Ce que chaque méthode protège, et ses limites.",
@@ -83,6 +85,7 @@
       "updated": "2026-11-16"
     },
     "/guides/is-iphone-hidden-album-private": {
+      "noindex": true,
       "source": "2026-10-26",
       "title": "L’album Masquées de l’iPhone est-il vraiment privé?",
       "description": "L’album Masquées se verrouille avec Face ID, mais votre code l’ouvre et il se synchronise sur vos appareils. Ce qu’il protège, et ce qu’il ne protège pas.",
@@ -94,6 +97,7 @@
       "updated": "2026-11-13"
     },
     "/guides/": {
+      "noindex": true,
       "source": "2026-10-26",
       "title": "Guides : protéger vos photos privées sur iPhone",
       "description": "Des guides clairs pour cacher, verrouiller, sauvegarder et transférer vos photos privées sur iPhone et iPad, par l’équipe du coffre photo Noxium.",
@@ -102,6 +106,7 @@
       "updated": "2026-11-13"
     },
     "/guides/photo-vault-lost-photos": {
+      "noindex": true,
       "source": "2026-11-11",
       "title": "Coffre photo : récupérer des photos perdues ou supprimées",
       "description": "Des photos ont disparu de Private Photo Vault, Keepsafe ou d’une autre app de coffre? Où elles peuvent encore être, comment les récupérer, quoi éviter.",
@@ -113,6 +118,7 @@
       "updated": "2026-11-14"
     },
     "/guides/forgot-photo-vault-password": {
+      "noindex": true,
       "source": "2026-11-19",
       "title": "Mot de passe du coffre photo oublié? Déverrouiller l’app",
       "description": "Bloqué hors de votre app de coffre photo? Comment la déverrouiller avec sa récupération, quoi essayer d’abord et quoi éviter pour garder vos photos.",
@@ -124,6 +130,7 @@
       "updated": "2026-11-19"
     },
     "/guides/move-photo-vault-to-new-iphone": {
+      "noindex": true,
       "source": "2026-11-19",
       "title": "Coffre photo vers un nouvel iPhone, sans perdre de photos",
       "description": "Pourquoi les apps de coffre perdent des photos quand on change de téléphone, et une liste pour transférer le vôtre en toute sécurité.",
@@ -135,6 +142,7 @@
       "updated": "2026-11-19"
     },
     "/guides/hidden-photos-iphone": {
+      "noindex": true,
       "source": "2026-11-15",
       "title": "Voir les photos masquées sur iPhone (iOS 26)",
       "description": "Trouver et voir les photos masquées sur iPhone, en ajouter à l’album Masquées, le verrouiller, et ce qui se passe sur iCloud, un Mac ou un nouvel iPhone.",
@@ -146,6 +154,7 @@
       "updated": "2026-11-15"
     },
     "/guides/what-is-a-decoy-vault": {
+      "noindex": true,
       "source": "2026-11-19",
       "title": "Qu’est-ce qu’un coffre leurre? Vous protège-t-il vraiment?",
       "description": "Un coffre leurre est un deuxième coffre anodin dans une app de coffre photo. Comment il fonctionne, quelles apps en ont un, et ses vraies limites.",
@@ -157,6 +166,7 @@
       "updated": "2026-11-20"
     },
     "/guides/are-photo-vault-apps-safe": {
+      "noindex": true,
       "source": "2026-10-26",
       "title": "Les apps de coffre photo sont-elles sûres? À vérifier",
       "description": "Les apps de coffre photo sont-elles sûres? Les vrais risques, ce que montrent 17 fiches App Store, et une liste à vérifier avant de confier vos photos.",
@@ -168,6 +178,7 @@
       "updated": "2026-11-17"
     },
     "/guides/lock-photos-iphone-face-id": {
+      "noindex": true,
       "source": "2026-11-18",
       "title": "Verrouiller des photos sur iPhone : Face ID ou schéma",
       "description": "Verrouiller des photos sur iPhone : album Masquées, app Photos avec Face ID, notes verrouillées, Accès guidé, et apps de coffre avec leur propre schéma.",
@@ -179,6 +190,7 @@
       "updated": "2026-11-18"
     },
     "/best-photo-vault-apps-iphone": {
+      "noindex": true,
       "source": "2026-11-22",
       "title": "Meilleures apps de coffre photo pour iPhone (2026)",
       "description": "17 apps de coffre photo pour iPhone comparées : chiffrement, sauvegarde, coffre leurre, traçage et prix sur l’App Store canadien. Avec sources et dates.",
@@ -190,6 +202,7 @@
       "updated": "2026-11-24"
     },
     "/guides/how-to-hide-videos-on-iphone": {
+      "noindex": true,
       "source": "2026-11-18",
       "title": "Comment cacher des vidéos sur iPhone (iOS 26)",
       "description": "Cacher des vidéos sur iPhone avec l’album Masqués, une note verrouillée ou une app coffre-fort. Ce qui change pour la 4K, les Live Photos et iCloud.",
@@ -201,6 +214,7 @@
       "updated": "2026-11-18"
     },
     "/guides/how-encrypted-photo-vaults-work": {
+      "noindex": true,
       "source": "2026-10-26",
       "title": "Comment fonctionne un coffre photo chiffré",
       "description": "Le chiffrement d’un coffre photo, sans jargon : clés, Argon2id, AES-256-GCM et sauvegardes. Et comment repérer un coffre qui ne fait que cacher.",
@@ -212,6 +226,7 @@
       "updated": "2026-11-20"
     },
     "/guides/vaultaire-vs-keepsafe": {
+      "noindex": true,
       "source": "2026-11-12",
       "title": "Vaultaire ou Keepsafe : comparatif de coffres photo",
       "description": "Vaultaire ne demande aucun compte et sauvegarde dans votre iCloud. Keepsafe utilise un compte courriel et son nuage. Prix, chiffrement et leurres comparés.",
@@ -223,6 +238,7 @@
       "updated": "2026-11-22"
     },
     "/features/pattern-lock": {
+      "noindex": true,
       "source": "2026-11-13",
       "title": "Coffre photo à verrou par schéma : le 5×5 de Noxium",
       "description": "Noxium s’ouvre avec un schéma passant par 6 de ses 25 boulons ou plus. Comment il devient votre clé, combien il y en a et comment en choisir un solide.",
@@ -234,6 +250,7 @@
       "updated": "2026-11-22"
     },
     "/features/on-device-encryption": {
+      "noindex": true,
       "source": "2026-11-13",
       "title": "App coffre photo chiffrée sur iPhone : ce que Noxium chiffre",
       "description": "Noxium chiffre photos, vidéos et notes sur l’iPhone en AES-256-GCM, avec une clé tirée de votre schéma par Argon2id. Ce qui est protégé ou non.",
@@ -245,6 +262,7 @@
       "updated": "2026-11-23"
     },
     "/features/encrypted-icloud-backup": {
+      "noindex": true,
       "source": "2026-11-13",
       "title": "Coffre photo avec sauvegarde iCloud chiffrée : Noxium",
       "description": "Noxium sauvegarde une copie chiffrée de votre coffre dans votre propre iCloud. Ce qui est téléversé, comment restaurer sur un nouvel iPhone, ses limites.",
@@ -256,6 +274,7 @@
       "updated": "2026-11-23"
     },
     "/features/": {
+      "noindex": true,
       "source": "2026-11-12",
       "title": "Fonctionnalités de Noxium : schéma, chiffrement, leurres",
       "description": "Ce que fait le coffre photo Noxium, fonction par fonction : verrou par schéma, chiffrement sur l’appareil, sauvegarde iCloud chiffrée, coffres leurres.",
@@ -265,6 +284,7 @@
       "allLabel": "Toutes les fonctionnalités"
     },
     "/features/recovery-phrase": {
+      "noindex": true,
       "source": "2026-11-13",
       "title": "Phrase de récupération du coffre photo Noxium",
       "description": "Schéma oublié ? La phrase de récupération de Noxium ouvre votre coffre, et personne ne peut le réinitialiser. Fonctionnement, rangement et limites.",
@@ -276,6 +296,7 @@
       "updated": "2026-11-25"
     },
     "/compare/keepsafe": {
+      "noindex": true,
       "source": "2026-11-14",
       "title": "Avis sur Keepsafe (2026) : Keepsafe ou Noxium?",
       "description": "Keepsafe se synchronise par un compte courriel et son propre nuage, avec des publicités au forfait gratuit. Ses forces, ses limites et la comparaison.",

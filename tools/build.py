@@ -100,7 +100,7 @@ for _lang in LOCALES:
         I18N[_lang] = json.loads(_f.read_text(encoding="utf-8")) if _f.exists() else {}
 
 TRANSLATED_FIELDS = ("title", "description", "headline", "summary", "crumb", "keyword", "published",
-                     "updated", "draft", "image", "ogImage", "allLabel")
+                     "updated", "draft", "noindex", "image", "ogImage", "allLabel")
 notes = []  # printed, but don't fail the build (e.g. a translation older than its English page)
 
 for _p in PAGES:
@@ -159,12 +159,20 @@ def best(src, lang):
     return BY_PATH.get(src)
 
 
-def versions(page):
-    """Every published language version of a page, the page itself included, keyed by language."""
+def indexable(page):
+    """Published and open to search engines. "noindex": true keeps a published page on the site for
+    visitors (hub lists, links, footer language list) but out of Google: robots noindex, no hreflang,
+    not in the sitemap."""
+    return not page.get("draft") and not page.get("noindex")
+
+
+def versions(page, indexed=False):
+    """Every published language version of a page, the page itself included, keyed by language.
+    indexed=True keeps only the versions open to search engines (for hreflang and the sitemap)."""
     out = {}
     for lang in LOCALES:
         v = version(page["_src"], lang)
-        if v and not v.get("draft"):
+        if v and not v.get("draft") and (indexable(v) or not indexed):
             out[lang] = v
     return out
 
@@ -272,11 +280,11 @@ def render_meta(page):
         f'<meta name="description" content="{esc(desc)}">',
         f'<link rel="canonical" href="{url}">',
     ]
-    if page.get("draft"):
+    if not indexable(page):
         lines.append('<meta name="robots" content="noindex, follow">')
     else:
         lines.append('<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">')
-        alts = versions(page)
+        alts = versions(page, indexed=True)
         if len(alts) > 1:  # hreflang only when the page has another language version
             for lang, v in alts.items():
                 lines.append(f'<link rel="alternate" hreflang="{LOCALES[lang]["hreflang"]}" href="{absolute(v["path"])}">')
@@ -414,7 +422,7 @@ def render_jsonld(page, text):
         graph.append(app_node())
     elif page.get("listType"):
         # Hub page: the list of pages in its section.
-        items = [p for p in pages_of(page["listType"], lang_of(page)) if not p.get("draft")]
+        items = [p for p in pages_of(page["listType"], lang_of(page)) if indexable(p)]
         graph.append({
             "@type": "CollectionPage", "@id": url + "#webpage", "url": url, "name": page["title"],
             "description": page["description"], "isPartOf": {"@id": SITE_ID},
@@ -700,7 +708,7 @@ def write(name, content):
 
 
 def build_sitemap(public):
-    alternates = {p["path"]: versions(p) for p in public}
+    alternates = {p["path"]: versions(p, indexed=True) for p in public}
     multilingual = any(len(a) > 1 for a in alternates.values())
     xhtml = ' xmlns:xhtml="http://www.w3.org/1999/xhtml"' if multilingual else ""
     out = ['<?xml version="1.0" encoding="UTF-8"?>',
@@ -784,11 +792,14 @@ def main():
                 warn(f"{page['file']}: keyword \"{kw}\" is already the target of {seen[k]}")
             seen[k] = page["file"]
     public = [p for p in ALL_PAGES if not p.get("draft") and p["path"] in rendered]
-    build_sitemap(public)
+    build_sitemap([p for p in public if indexable(p)])
     build_llms([p for p in public if lang_of(p) == DEFAULT_LANG], rendered)
     drafts = [p["file"] for p in ALL_PAGES if p.get("draft")]
+    hidden = [p for p in public if not indexable(p)]
     print(f"release: {RELEASE}{' (no appStoreId yet, CTAs stay on the waitlist)' if RELEASE == 'live' and not live() else ''}")
-    print(f"pages: {len(rendered)}, in sitemap: {len(public)}, drafts (noindex): {', '.join(drafts) or 'none'}")
+    print(f"pages: {len(rendered)}, in sitemap: {len(public) - len(hidden)}, drafts (noindex): {', '.join(drafts) or 'none'}")
+    if hidden:
+        print(f"published but noindex: {len(hidden)} ({sum(lang_of(p) != DEFAULT_LANG for p in hidden)} translations)")
     if I18N:
         print("translated: " + ", ".join(f"{lang} {len(LPAGES[lang])}" for lang in I18N))
     for n in notes:

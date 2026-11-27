@@ -61,6 +61,7 @@
   },
   "pages": {
     "/guides/keepsafe-alternatives": {
+      "noindex": true,
       "source": "2026-11-13",
       "title": "Keepsafeの代わり4選：アカウント・メール不要（2026）",
       "description": "アカウントもメールも不要なKeepsafeの代わりを比較。Vaultaire、Obscura、Encamera、Noxiumの暗号化とiCloudバックアップ。",
@@ -72,6 +73,7 @@
       "updated": "2026-11-14"
     },
     "/guides/how-to-hide-photos-on-iphone": {
+      "noindex": true,
       "source": "2026-11-15",
       "title": "iPhoneで写真を隠す方法：全手段と守れる範囲（iOS 26）",
       "description": "iOS 26のiPhoneで写真を隠す方法を全部解説。「非表示」アルバム、メモのロック、アプリのロック、保管庫アプリで何が守れて何が守れないか。",
@@ -83,6 +85,7 @@
       "updated": "2026-11-16"
     },
     "/guides/is-iphone-hidden-album-private": {
+      "noindex": true,
       "source": "2026-10-26",
       "title": "iPhoneの「非表示」アルバムは安全？守れる範囲を解説",
       "description": "「非表示」アルバムはFace IDでロックされますが、パスコードで開けて、ほかのデバイスにも同期されます。守れることと守れないこと。",
@@ -94,6 +97,7 @@
       "updated": "2026-11-13"
     },
     "/guides/": {
+      "noindex": true,
       "source": "2026-10-26",
       "title": "iPhoneの写真プライバシーガイド一覧",
       "description": "iPhoneとiPadでプライベートな写真を隠す・ロックする・バックアップする・移行する方法。Noxium写真保管庫の開発チームが解説します。",
@@ -102,6 +106,7 @@
       "updated": "2026-11-13"
     },
     "/guides/photo-vault-lost-photos": {
+      "noindex": true,
       "source": "2026-11-11",
       "title": "写真保管庫アプリの写真が消えた時の復元方法",
       "description": "Private Photo VaultやKeepsafeなどの保管庫アプリから写真が消えたら。まだ残っている可能性がある場所、復元の手順、やってはいけないこと。",
@@ -113,6 +118,7 @@
       "updated": "2026-11-14"
     },
     "/guides/forgot-photo-vault-password": {
+      "noindex": true,
       "source": "2026-11-19",
       "title": "写真保管庫のパスワードを忘れた時の対処法",
       "description": "写真保管庫アプリに入れなくなったら。アプリごとの復旧方法、最初に試すこと、写真を失わないためにやってはいけないこと。",
@@ -124,6 +130,7 @@
       "updated": "2026-11-19"
     },
     "/guides/move-photo-vault-to-new-iphone": {
+      "noindex": true,
       "source": "2026-11-19",
       "title": "写真保管庫を新しい iPhone に移す方法",
       "description": "機種変更で保管庫アプリの写真が消える理由と、移行の前・最中・後に確認する手順。写真を失わずに新しい iPhone へ移すためのチェックリストです。",
@@ -135,6 +142,7 @@
       "updated": "2026-11-19"
     },
     "/guides/hidden-photos-iphone": {
+      "noindex": true,
       "source": "2026-11-15",
       "title": "iPhone の非表示の写真を見る方法（iOS 26）",
       "description": "iPhone で非表示にした写真の見つけ方と見方、「非表示」への追加、ロック、iCloud・Mac・新しい iPhone でどうなるかをまとめました。",
@@ -146,6 +154,7 @@
       "updated": "2026-11-15"
     },
     "/guides/what-is-a-decoy-vault": {
+      "noindex": true,
       "source": "2026-11-19",
       "title": "おとり保管庫とは？ 本当に守ってくれるのか",
       "description": "おとり保管庫は、写真保管庫アプリの中にある当たり障りのない 2 つ目の保管庫。仕組み、対応アプリ、そして本当の限界を解説します。",
@@ -157,6 +166,7 @@
       "updated": "2026-11-20"
     },
     "/guides/are-photo-vault-apps-safe": {
+      "noindex": true,
       "source": "2026-10-26",
       "title": "写真保管庫アプリは安全？ 確認すべきこと",
       "description": "写真保管庫アプリは本当に安全？ 本当のリスク、17 本の App Store ページから分かること、写真を預ける前のチェックリスト。",
@@ -168,6 +178,7 @@
       "updated": "2026-11-17"
     },
     "/guides/lock-photos-iphone-face-id": {
+      "noindex": true,
       "source": "2026-11-18",
       "title": "iPhone の写真をロックする方法（Face ID・パターン）",
       "description": "iPhone の写真をロックする方法：「非表示」アルバム、Face ID で開く写真アプリ、ロックしたメモ、アクセスガイド、独自パターンの保管庫アプリ。",
@@ -179,6 +190,7 @@
       "updated": "2026-11-18"
     },
     "/best-photo-vault-apps-iphone": {
+      "noindex": true,
       "source": "2026-11-22",
       "title": "iPhone 写真保管庫アプリおすすめ比較（2026）",
       "description": "iPhone 向け写真保管庫アプリ 17 本を比較：暗号化、バックアップ、おとり保管庫、トラッキング、日本の App Store での価格。出典と日付付き。",
@@ -190,6 +202,7 @@
       "updated": "2026-11-24"
     },
     "/guides/how-to-hide-videos-on-iphone": {
+      "noindex": true,
       "source": "2026-11-18",
       "title": "iPhoneで動画を隠す方法（iOS 26）",
       "description": "iPhoneの動画を「非表示」アルバム、ロックしたメモ、保管庫アプリで隠す方法。4K動画、Live Photos、iCloudの容量で気をつけること。",
@@ -201,6 +214,7 @@
       "updated": "2026-11-18"
     },
     "/guides/how-encrypted-photo-vaults-work": {
+      "noindex": true,
       "source": "2026-10-26",
       "title": "写真保管庫アプリの暗号化のしくみをやさしく解説",
       "description": "写真保管庫の暗号化とは？ 鍵、Argon2id、AES-256-GCM、暗号化バックアップを専門用語なしで解説。隠すだけのアプリの見分け方も。",
@@ -212,6 +226,7 @@
       "updated": "2026-11-20"
     },
     "/guides/vaultaire-vs-keepsafe": {
+      "noindex": true,
       "source": "2026-11-12",
       "title": "Vaultaire と Keepsafe を比較",
       "description": "Vaultaire はアカウント不要で自分の iCloud にバックアップ。Keepsafe はメールアカウントと自社クラウド。料金・暗号化・おとり機能を比較。",
@@ -223,6 +238,7 @@
       "updated": "2026-11-22"
     },
     "/features/pattern-lock": {
+      "noindex": true,
       "source": "2026-11-13",
       "title": "パターンロックの写真保管庫 Noxium",
       "description": "Noxium は 25 本中 6 本以上のボルトを通るパターンで開きます。パターンが鍵になるしくみ、パターンの数、強いパターンの選び方。",
@@ -234,6 +250,7 @@
       "updated": "2026-11-22"
     },
     "/features/on-device-encryption": {
+      "noindex": true,
       "source": "2026-11-13",
       "title": "暗号化の写真保管庫アプリ Noxium の中身",
       "description": "Noxium は写真・ビデオ・メモを iPhone 上で AES-256-GCM で暗号化。鍵はパターンから Argon2id で生成。守れるものと守れないもの",
@@ -245,6 +262,7 @@
       "updated": "2026-11-23"
     },
     "/features/encrypted-icloud-backup": {
+      "noindex": true,
       "source": "2026-11-13",
       "title": "写真保管庫の暗号化 iCloud バックアップ",
       "description": "Noxium は保管庫の暗号化コピーを自分の iCloud にバックアップ。何が送られるか、新しい iPhone での復元方法、できないこと。",
@@ -256,6 +274,7 @@
       "updated": "2026-11-23"
     },
     "/features/": {
+      "noindex": true,
       "source": "2026-11-12",
       "title": "Noxium の機能：パターンロック・暗号化",
       "description": "写真保管庫 Noxium の機能を 1 つずつ。パターンロック、デバイス上の暗号化、暗号化 iCloud バックアップ、おとり保管庫など。",
@@ -264,6 +283,7 @@
       "updated": "2026-11-23"
     },
     "/features/recovery-phrase": {
+      "noindex": true,
       "source": "2026-11-13",
       "title": "写真保管庫の復元フレーズ：Noxium の予備の鍵",
       "description": "パターンを忘れても、Noxium の復元フレーズで保管庫を開けます。誰にもリセットできません。しくみ、保管のしかた、限界を説明します。",
@@ -275,6 +295,7 @@
       "updated": "2026-11-25"
     },
     "/compare/keepsafe": {
+      "noindex": true,
       "source": "2026-11-14",
       "title": "Keepsafe の評判（2026）：Noxium と比較",
       "description": "Keepsafe はメールアカウントと独自クラウドで同期し、無料プランには広告があります。良い点、足りない点、Noxium との違いを説明します。",
