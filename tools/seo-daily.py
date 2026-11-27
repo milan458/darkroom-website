@@ -400,16 +400,19 @@ def sa_all_rows(args, start, end, dimensions):
 
 
 def create_sheet(args, origin):
-    params = {"properties": {"title": f"Search Console: {origin.split('//', 1)[-1]}"},
-              "sheets": [{"properties": {"title": tab, "gridProperties": {"frozenRowCount": 1}}}
-                         for tab in SHEET_TABS]}
+    # gum takes a request's body fields under the reserved "body" arg; path and query
+    # fields (spreadsheetId, range, valueInputOption on append) stay at the top level.
+    params = {"body": {"properties": {"title": f"Search Console: {origin.split('//', 1)[-1]}"},
+                       "sheets": [{"properties": {"title": tab, "gridProperties": {"frozenRowCount": 1}}}
+                                  for tab in SHEET_TABS]}}
     r = gum(args, "sheets.spreadsheets.create", params, verb="write")
     sid = find_key(r, "spreadsheetId")
     if not sid:
         raise GumError(f"Sheets didn't return a spreadsheet id: {json.dumps(r)[:500]}")
     gum(args, "sheets.spreadsheets.values.batchUpdate",
-        {"spreadsheetId": sid, "valueInputOption": "RAW",
-         "data": [{"range": f"{tab}!A1", "values": [header]} for tab, (_, header) in SHEET_TABS.items()]},
+        {"spreadsheetId": sid,
+         "body": {"valueInputOption": "RAW",
+                  "data": [{"range": f"{tab}!A1", "values": [header]} for tab, (_, header) in SHEET_TABS.items()]}},
         verb="write")
     return sid, find_key(r, "spreadsheetUrl") or f"https://docs.google.com/spreadsheets/d/{sid}/edit"
 
@@ -453,7 +456,7 @@ def sheet_export(args):
             if len(chunk) >= APPEND_ROWS or i == len(dates) - 1:
                 gum(args, "sheets.spreadsheets.values.append",
                     {"spreadsheetId": sid, "range": f"{tab}!A1", "valueInputOption": "RAW",
-                     "insertDataOption": "INSERT_ROWS", "values": chunk}, verb="write")
+                     "insertDataOption": "INSERT_ROWS", "body": {"values": chunk}}, verb="write")
                 n += len(chunk)
                 through[tab] = chunk_last
                 save_state()
