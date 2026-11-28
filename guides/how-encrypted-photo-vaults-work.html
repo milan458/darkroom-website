@@ -16,14 +16,14 @@
 
     gtag('config', 'G-WWNMHW99TP');
   </script>
-  <title>How Encrypted Photo Vaults Work, in Plain English</title>
-  <meta name="description" content="What encryption means in a photo vault: keys, Argon2id, AES-256-GCM and encrypted backups, without jargon, and how to spot a vault that only hides.">
+  <title>How Photo Vault Apps Work: Encryption in Plain English</title>
+  <meta name="description" content="How a photo vault app encrypts photos: keys, Argon2id, AES-256-GCM and encrypted backups, without jargon, and what 9 rival apps say they use.">
   <link rel="canonical" href="https://getnoxium.app/guides/how-encrypted-photo-vaults-work">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="Noxium">
-  <meta property="og:title" content="How Encrypted Photo Vaults Work, in Plain English">
-  <meta property="og:description" content="What encryption means in a photo vault: keys, Argon2id, AES-256-GCM and encrypted backups, without jargon, and how to spot a vault that only hides.">
+  <meta property="og:title" content="How Photo Vault Apps Work: Encryption in Plain English">
+  <meta property="og:description" content="How a photo vault app encrypts photos: keys, Argon2id, AES-256-GCM and encrypted backups, without jargon, and what 9 rival apps say they use.">
   <meta property="og:url" content="https://getnoxium.app/guides/how-encrypted-photo-vaults-work">
   <meta property="og:image" content="https://getnoxium.app/assets/og/noxium-og.png">
   <meta property="og:image:width" content="1200">
@@ -31,10 +31,10 @@
   <meta property="og:image:alt" content="Noxium photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
   <meta property="og:locale" content="en_US">
   <meta property="article:published_time" content="2026-10-22">
-  <meta property="article:modified_time" content="2026-11-22">
+  <meta property="article:modified_time" content="2026-11-28">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="How Encrypted Photo Vaults Work, in Plain English">
-  <meta name="twitter:description" content="What encryption means in a photo vault: keys, Argon2id, AES-256-GCM and encrypted backups, without jargon, and how to spot a vault that only hides.">
+  <meta name="twitter:title" content="How Photo Vault Apps Work: Encryption in Plain English">
+  <meta name="twitter:description" content="How a photo vault app encrypts photos: keys, Argon2id, AES-256-GCM and encrypted backups, without jargon, and what 9 rival apps say they use.">
   <meta name="twitter:image" content="https://getnoxium.app/assets/og/noxium-og.png">
   <meta name="twitter:image:alt" content="Noxium photo vault: a 5×5 plate of bolts with a red pattern drawn across it. Photos only you can see.">
   <meta name="apple-itunes-app" content="app-id=6824616093">
@@ -75,12 +75,12 @@
         "@type": "Article",
         "@id": "https://getnoxium.app/guides/how-encrypted-photo-vaults-work#article",
         "headline": "How encrypted photo vaults work, in plain English",
-        "description": "What encryption means in a photo vault: keys, Argon2id, AES-256-GCM and encrypted backups, without jargon, and how to spot a vault that only hides.",
+        "description": "How a photo vault app encrypts photos: keys, Argon2id, AES-256-GCM and encrypted backups, without jargon, and what 9 rival apps say they use.",
         "url": "https://getnoxium.app/guides/how-encrypted-photo-vaults-work",
         "mainEntityOfPage": "https://getnoxium.app/guides/how-encrypted-photo-vaults-work",
         "image": "https://getnoxium.app/assets/guides/noxium-lock.jpg",
         "datePublished": "2026-10-22",
-        "dateModified": "2026-11-22",
+        "dateModified": "2026-11-28",
         "author": {
           "@id": "https://getnoxium.app/#org"
         },
@@ -121,18 +121,26 @@
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "Are photo vault apps encrypted?",
+            "name": "How does a vault app work?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Some are, some aren't. Many only show a PIN screen in front of ordinary files. Look for a named cipher, such as AES-256, and encryption on the device before backup."
+              "text": "It stores your photos inside the app behind its own code. A good one also encrypts each photo with a key that only your code unlocks, so the stored files are unreadable without it."
             }
           },
           {
             "@type": "Question",
-            "name": "What does military-grade encryption mean?",
+            "name": "What is the best encryption app for iPhone?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Usually just AES, the standard cipher. It doesn't tell you how the key is made or stored, which matters more."
+              "text": "There's no single best one. Pick a vault that names its cipher (such as AES-256-GCM), encrypts on the device before backup, and can't reset your code by email. We compare apps in our vault app comparison ."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are photo vault apps encrypted?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Some are, some don't say. Of the 9 rival listings and help pages in our table, 2 name AES-256-GCM, 2 more name AES, and 2 don't mention encryption."
             }
           },
           {
@@ -140,15 +148,7 @@
             "name": "What is Argon2id?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "A key derivation function that turns a password or pattern into an encryption key slowly and with a lot of memory, so guessing codes is expensive."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Is Face ID part of the encryption?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Not directly. Face ID is a shortcut to a key the app stored in the iPhone's Keychain. In Noxium, that key stays on this iPhone, isn't synced, and stops working if your Face ID enrolment changes; your pattern always works."
+              "text": "A key derivation function that turns a password or pattern into a key, using a set amount of memory and time for each guess, so guessing codes is expensive. It's standardised in RFC 9106."
             }
           },
           {
@@ -156,7 +156,7 @@
             "name": "Can an encrypted vault be hacked?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "The encryption itself isn't the weak point. Short codes, codes seen by someone else, and unencrypted copies left elsewhere are. Use a long code and remove originals after importing."
+              "text": "The cipher itself isn't the weak point. Short codes, codes seen by someone else, and unencrypted copies left elsewhere are. Use a long code and remove originals after importing."
             }
           }
         ]
@@ -223,132 +223,110 @@
         <p class="eyebrow"><span class="dot dot-ink" aria-hidden="true"></span>Guide · Encryption explained</p>
         <h1>How encrypted photo vaults work, in plain English</h1>
         <!-- build:byline -->
-        <p class="byline"><span>By <a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>Published <time datetime="2026-10-22">22 October 2026</time></span><span aria-hidden="true">·</span><span>Last updated <time datetime="2026-11-22">22 November 2026</time></span></p>
+        <p class="byline"><span>By <a href="https://getnoxium.app/about" rel="author">Inertia Projects</a></span><span aria-hidden="true">·</span><span>Published <time datetime="2026-10-22">22 October 2026</time></span><span aria-hidden="true">·</span><span>Last updated <time datetime="2026-11-28">28 November 2026</time></span></p>
         <!-- /build:byline -->
         <div class="answer">
           <span class="answer-label">Short answer</span>
-          <p>An encrypted photo vault scrambles each photo with a secret key, so the file is unreadable without it. Your PIN, password or pattern is turned into that key (or into a key that unlocks it) on your phone, slowly on purpose, so guessing is expensive. A vault that only shows a PIN screen in front of normal files is hiding photos, not encrypting them.</p>
+          <p>An encrypted photo vault app scrambles each photo with a secret key, so the stored file is unreadable without it. Your PIN, password or pattern is turned into that key, or into a key that unlocks it, on your phone and slowly on purpose, so guessing is expensive. A vault that only shows a PIN screen in front of ordinary files is hiding photos, not encrypting them.</p>
         </div>
       </div>
     </div>
 
     <div class="container article-layout">
       <article class="prose">
-        <p>Vault apps love the word "encrypted", and some add "military-grade". Neither tells you much. This guide explains, without math, what real encryption in a photo vault involves, so you can read an app's claims and know what they mean.</p>
+        <p>A photo vault app works by encrypting each photo with a secret key, so the file stored on your phone or in the cloud is unreadable without that key. Your code (a PIN, password or pattern) is what unlocks the key, so the code is what an attacker has to guess. This guide is for anyone who searched "how does a vault app work" or "best iPhone encryption app" and wants to read a vault's security claims and know what they mean, without the math.</p>
+        <p>Vault apps love the word "encrypted". On its own it tells you very little. The sections below explain what real encryption involves, what a few popular apps say about theirs, and what no encryption can protect.</p>
 
         <h2 id="lock-vs-encrypt">What's the difference between hiding and encrypting a photo?</h2>
         <p>Hiding puts a door in front of a normal photo. Encrypting turns the photo itself into unreadable data.</p>
-        <p>A vault that only hides stores your photos as ordinary image files inside the app, and shows a PIN screen before it displays them. Anyone who gets at those files another way (a computer backup, a forensic tool, a bug) sees the photos. An encrypting vault stores only scrambled data. Without the key, even a perfect copy of the files is useless.</p>
+        <p>A vault that only hides stores your photos as ordinary image files inside the app, and shows a PIN screen before it displays them. Anyone who gets at those files another way (a computer backup, a forensic tool, a bug) sees the photos. An encrypting vault stores only scrambled data. Without the key, even a perfect copy of the files is useless. The iPhone's own Hidden album is the first kind: <a href="/guides/is-iphone-hidden-album-private">is the iPhone Hidden album private?</a> explains why.</p>
 
-        <h2 id="keys">What is an encryption key?</h2>
-        <p>A key is a long random number that the encryption uses to scramble and unscramble data. A 256-bit key has about 10<sup>77</sup> possible values, far beyond what any computer could try, so nobody guesses the key itself.</p>
-        <p>That's why attackers don't go after the key. They go after the thing that unlocks it: your code.</p>
-
-        <h2 id="stretching">How does a PIN or pattern become a key?</h2>
-        <p>Through a "key derivation function", which turns your code into a key. Good ones are deliberately slow and memory-hungry, so each guess costs real time.</p>
-        <p>This matters because codes are short. A 4-digit PIN has 10,000 possibilities. If each guess took a microsecond, a computer would try them all in a hundredth of a second. If each guess takes half a second and a lot of memory, the same search takes over an hour for a 4-digit PIN, and grows enormously with every extra character or bolt. A long random password becomes impractical to guess.</p>
+        <h2 id="stretching">How does a PIN or pattern become an encryption key?</h2>
+        <p>Through a key derivation function: a recipe that turns your code into a key. Good ones are deliberately slow, and the best are also memory-hungry, so each guess costs real time and hardware.</p>
+        <p>A key is a long random number. AES, the cipher NIST standardised in FIPS 197, uses keys of 128, 192 or 256 bits (<a href="https://csrc.nist.gov/projects/aes" rel="noopener">NIST: AES</a>). A 256-bit key has 2<sup>256</sup> possible values, about 10<sup>77</sup>, so nobody guesses the key itself. Attackers go after the code that unlocks it instead.</p>
+        <p>That's why stretching matters. A 4-digit PIN has 10,000 possibilities. If each guess took a microsecond, a computer would try them all in a hundredth of a second. If each guess takes half a second, the same search takes about 83 minutes, and every extra character or bolt multiplies it.</p>
         <ul>
-          <li><strong>Argon2id</strong> is the current recommended choice. It's "memory-hard", which makes it expensive to speed up with graphics cards or custom chips.</li>
-          <li><strong>PBKDF2</strong> is older and still common. It's slow, but cheaper to attack with specialised hardware.</li>
+          <li><strong>Argon2id</strong> is a "memory-hard" function: each guess needs a set amount of memory as well as time, which raises the cost of dedicated cracking hardware. Its standard, RFC 9106, makes Argon2id the variant every implementation must support, and gives 64 MiB of memory with 3 passes as its second recommended setting for devices with less memory (<a href="https://www.rfc-editor.org/rfc/rfc9106" rel="noopener">RFC 9106</a>).</li>
+          <li><strong>PBKDF2-style functions</strong> repeat a hash many times. They're slow, but need little memory. NIST's guidance on password-based key derivation is SP 800-132, which NIST said in 2023 it plans to revise (<a href="https://csrc.nist.gov/pubs/sp/800/132/final" rel="noopener">NIST SP 800-132</a>).</li>
           <li><strong>A plain hash, or nothing,</strong> means guesses are nearly free.</li>
         </ul>
-        <p>Noxium, which we make, uses Argon2id with 64 MiB of memory and 3 passes, plus a random 128-bit salt so the same pattern never produces the same key twice. Our page on <a href="/features/pattern-lock">Noxium's pattern lock</a> shows how many patterns the 5×5 plate allows.</p>
+        <p>A random "salt" is mixed in too, so the same code never produces the same key in two vaults. RFC 9106 says a 128-bit salt is enough for all applications. Noxium, which we make, derives its keys from your pattern through Argon2id, and the pattern is never stored. Our <a href="/features/pattern-lock">pattern lock page</a> shows how many patterns the 5×5 plate allows.</p>
 
-        <h2 id="aes">What does AES-256-GCM mean?</h2>
-        <p>It's the cipher that scrambles the photos, in a mode that also detects tampering.</p>
+        <h2 id="aes">What do AES-256-GCM and "keys inside keys" mean?</h2>
+        <p>AES-256-GCM is the cipher that scrambles the photos, in a mode that also detects tampering.</p>
         <ul>
-          <li><strong>AES</strong> is the standard cipher used by governments, banks and your iPhone itself.</li>
+          <li><strong>AES</strong> is the standard cipher (<a href="https://csrc.nist.gov/projects/aes" rel="noopener">NIST FIPS 197</a>).</li>
           <li><strong>256</strong> is the key size in bits.</li>
-          <li><strong>GCM</strong> adds an authentication tag: if a single bit of the encrypted file is changed or damaged, decryption fails instead of producing a corrupted photo.</li>
+          <li><strong>GCM</strong> is a mode NIST calls "authenticated encryption" (<a href="https://csrc.nist.gov/pubs/sp/800/38/d/final" rel="noopener">NIST SP 800-38D</a>). If the encrypted file is changed or damaged, decryption fails instead of producing a corrupted photo.</li>
         </ul>
-        <p>"Military-grade encryption" usually just means AES. The interesting questions are what the key comes from, where it's kept, and whether the backup is encrypted too.</p>
-
-        <h2 id="wrapping">Why do good vaults use "keys inside keys"?</h2>
-        <p>So you can change your code without re-encrypting every photo, and so one leaked file key doesn't expose the rest.</p>
+        <p>Marketing words like "military" or "bank" grade usually just mean AES. The questions that matter are what the key comes from, where it's kept, and whether the backup is encrypted too.</p>
+        <p>Good vaults also use keys inside keys, the same idea Apple uses for the iPhone's storage. In iOS Data Protection, every file has its own key, which is wrapped by a class key, which is protected by the device's hardware key and, for some classes, your passcode (<a href="https://support.apple.com/guide/security/sece8608431d/web" rel="noopener">Apple Platform Security: Data Protection</a>). A vault does the same with your code:</p>
         <ol class="steps">
           <li>Your code is stretched into a <strong>wrapping key</strong>.</li>
           <li>The wrapping key unlocks a random <strong>vault key</strong>, stored only in encrypted form.</li>
-          <li>The vault key unlocks a separate random <strong>file key</strong> for every photo, video and note.</li>
+          <li>The vault key unlocks the <strong>file keys</strong> that encrypt each photo, video and note.</li>
         </ol>
-        <p>Changing your code only re-wraps the vault key. A recovery phrase works the same way: it's a second wrapping of the same vault key, so either the code or the phrase opens the vault. Large videos are often encrypted in chunks, so they can play without decrypting the whole file first. Noxium uses 1 MiB chunks, each with its own authentication tag. The full key hierarchy is on our <a href="/#security">security section</a>, and every layer is explained on our <a href="/features/on-device-encryption">on-device encryption</a> page.</p>
+        <p>Changing your code then only re-wraps the vault key, instead of re-encrypting every photo. A recovery phrase can be a second wrapping of the same vault key, so either the code or the phrase opens the vault. Noxium's layers are explained on our <a href="/features/on-device-encryption">on-device encryption</a> page.</p>
 
         <h2 id="backup">How does an encrypted backup stay private?</h2>
-        <p>By encrypting on the phone before anything is uploaded, so the cloud only ever stores scrambled data. This is called end-to-end encryption.</p>
-        <p>The test is simple: could the company reset your code by email and give you your photos back? If yes, they can reach the key, and so could anyone who gets into their systems or your email. If no, only you can decrypt the backup, which is also why losing both your code and your recovery phrase means losing access.</p>
-        <p>Noxium encrypts photos, thumbnails and their names, dates and places on the iPhone, then backs up only that ciphertext to your own private iCloud (CloudKit). Apple stores it but can't read it.</p>
-
-        <h2 id="limits">What can encryption not protect against?</h2>
-        <ul>
-          <li><strong>Someone watching you enter your code,</strong> or making you enter it.</li>
-          <li><strong>An open vault.</strong> While it's unlocked on screen, the photos are visible. Good apps lock quickly and hide content in the app switcher.</li>
-          <li><strong>A short code.</strong> Slow key derivation helps, but a 4-digit PIN can still be tried exhaustively.</li>
-          <li><strong>Copies outside the vault,</strong> such as originals left in Photos, Messages or Recently Deleted.</li>
-        </ul>
-
-        <h2 id="spot">How can you tell if a vault really encrypts?</h2>
-        <ul>
-          <li>It names the cipher and the key derivation (for example AES-256-GCM and Argon2id or PBKDF2), not just "secure".</li>
-          <li>It says encryption happens on the device, before backup.</li>
-          <li>It can't reset your code by email, or it says honestly that it can.</li>
-          <li>Its backup is described as encrypted with your key, not just "secure cloud".</li>
-          <li>Ideally, the encryption code is open source or independently reviewed.</li>
-        </ul>
-        <p>In October 2026, only 2 of the 17 vault apps we compared named AES-256-GCM in their App Store description. See them all in <a href="/best-photo-vault-apps-iphone">our comparison</a>.</p>
-
-        <h2 id="apps">What do popular vault apps say about their encryption?</h2>
-        <p>Few say much. Of the 15 vault apps we've reviewed, only Vaultaire and Obscura name their cipher in their listings. Keepsafe names AES-256 in its help center, and Obscura and Encamera publish their encryption code. The rest say "encrypted" without details, or don't mention encryption.</p>
-        <div class="data-table-wrap" tabindex="0" role="region" aria-labelledby="apps-caption">
-          <table class="data-table">
-            <caption id="apps-caption">What each app's US App Store listing (and, where noted, its own help pages or code) says about encryption, checked 11 to 22 November 2026. We report claims, not test results.</caption>
-            <thead><tr><th scope="col">App</th><th scope="col">What it says about encryption</th></tr></thead>
-            <tbody>
-              <tr><th scope="row"><a href="/compare/vaultaire">Vaultaire</a></th><td>AES-256-GCM on the device; iCloud backup encrypted before upload</td></tr>
-              <tr><th scope="row"><a href="/compare/obscura">Obscura</a></th><td>AES-256-GCM; key from your password through PBKDF2, 600,000 rounds; publishes its encryption code</td></tr>
-              <tr><th scope="row"><a href="/compare/encamera">Encamera</a></th><td>Encrypts all media; publishes its encryption code, built on libsodium</td></tr>
-              <tr><th scope="row"><a href="/compare/keepsafe">Keepsafe</a></th><td>"Military-grade" in the listing; AES-256 in its help center</td></tr>
-              <tr><th scope="row"><a href="/compare/kyms">KYMS</a></th><td>"AES military-grade"; key size and mode not named</td></tr>
-              <tr><th scope="row"><a href="/compare/privault">Privault</a></th><td>Says storage is encrypted; cipher not named</td></tr>
-              <tr><th scope="row"><a href="/compare/private-photo-vault">Private Photo Vault</a></th><td>Cloud backup called "encrypted"; cipher not named</td></tr>
-              <tr><th scope="row"><a href="/compare/pv-secret-photo-album">PV - Secret Photo Album</a></th><td>Mentions "data encryption"; cipher not named</td></tr>
-              <tr><th scope="row"><a href="/compare/hiddenvault">HiddenVault</a></th><td>"Zero-knowledge"; cipher not named</td></tr>
-              <tr><th scope="row"><a href="/compare/spv">SPV - Secret Photo Vault</a></th><td>Not mentioned; PIN protection</td></tr>
-              <tr><th scope="row"><a href="/compare/secret-photo-vault">Secret Photo Vault Lock Photos</a></th><td>Not mentioned</td></tr>
-              <tr><th scope="row"><a href="/compare/safe-lock">Safe Lock</a></th><td>Not mentioned</td></tr>
-              <tr><th scope="row"><a href="/compare/maxvault">MaxVault</a></th><td>Not mentioned</td></tr>
-              <tr><th scope="row"><a href="/compare/hide-it-pro">Hide it Pro</a></th><td>Not mentioned</td></tr>
-              <tr><th scope="row"><a href="/compare/calculator-hide-photos">Calculator#</a></th><td>Not mentioned</td></tr>
-              <tr><th scope="row">Noxium (ours)</th><td>AES-256-GCM on the device, key from your pattern through Argon2id; backup is ciphertext only</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <p>"Not mentioned" doesn't prove an app doesn't encrypt; it means you can't tell from what the developer publishes. If it matters to you, ask the developer the questions in the list above.</p>
+        <p>By encrypting on the phone before anything is uploaded, so the cloud only ever stores scrambled data. This is end-to-end encryption.</p>
+        <p>The test is simple: could the company reset your code by email and give you your photos back? If yes, it can reach the key, and so could anyone who gets into its systems or your email. If no, only you can decrypt the backup, which is also why losing both your code and your recovery phrase means losing access. If that's happened, see <a href="/guides/forgot-photo-vault-password">forgot your photo vault password</a>.</p>
+        <p>Noxium encrypts everything on the device, including names, dates and places, and only encrypted data goes to your own private iCloud (CloudKit). Nobody can reset your pattern: not us, not Apple.</p>
 
         <h2 id="ios">Doesn't the iPhone already encrypt my photos?</h2>
-        <p>Yes, while the phone is locked. Once it's unlocked, anyone holding it can open Photos, so a vault adds a second lock with its own key.</p>
+        <p>Yes, with keys tied to your device and passcode. Once the iPhone is unlocked, anyone holding it can open Photos, so a vault adds a second lock with its own key.</p>
         <ul>
-          <li><strong>On the iPhone.</strong> iOS encrypts its storage with keys tied to your passcode (Apple calls this Data Protection). That protects a lost, locked phone. It doesn't separate one app's photos from someone who knows or watches your passcode.</li>
+          <li><strong>On the iPhone.</strong> iOS encrypts each file with its own key under Data Protection, with key management rooted in the Secure Enclave (<a href="https://support.apple.com/guide/security/sece3bee0835" rel="noopener">Apple Platform Security: Encryption overview</a>). That protects a lost, locked phone. It doesn't separate one app's photos from someone who knows your passcode.</li>
           <li><strong>The Hidden album.</strong> It needs Face ID or your passcode to open, but it's the same passcode, and it syncs to your other devices. See <a href="/guides/lock-photos-iphone-face-id">how to lock photos on iPhone</a>.</li>
-          <li><strong>iCloud Photos.</strong> With Advanced Data Protection turned on, iCloud Photos is end-to-end encrypted. Without it, Apple holds the keys to your iCloud Photos.</li>
+          <li><strong>iCloud Photos.</strong> With standard data protection, Apple holds the keys. With Advanced Data Protection on, iCloud Photos is end-to-end encrypted (<a href="https://support.apple.com/en-us/102651" rel="noopener">Apple: iCloud data security overview</a>).</li>
         </ul>
         <p>A vault that encrypts with a key from its own code means your iPhone passcode alone doesn't open it.</p>
 
-        <h2 id="open-source">Does open-source code prove a vault is safe?</h2>
-        <p>No, but it helps. Published code lets anyone check how files are encrypted, instead of trusting a word like "secure".</p>
+        <h2 id="spot">How can you tell if a vault app really encrypts?</h2>
+        <p>Read what it names. There's no single best iPhone encryption app for everyone, but a trustworthy one tells you these things:</p>
         <ul>
-          <li><strong>It shows the method.</strong> You can see the cipher, how keys are made, and where they're stored.</li>
-          <li><strong>It isn't the same as an audit.</strong> Code being public doesn't mean someone qualified has reviewed it.</li>
-          <li><strong>It may not be the whole app.</strong> Some developers publish only the encryption part. That's the part that matters most, but the rest of the app still handles your photos.</li>
-          <li><strong>You can't easily confirm the App Store build matches.</strong> Apple doesn't let you check that the app you installed was built from the published code.</li>
+          <li>The cipher and the key derivation (for example AES-256-GCM and Argon2id), not just "secure".</li>
+          <li>That encryption happens on the device, before backup.</li>
+          <li>Whether it can reset your code by email. If it can, it can reach your key.</li>
+          <li>That its backup is encrypted with your key, not just "secure cloud".</li>
+          <li>Ideally, published encryption code or an independent review.</li>
         </ul>
-        <p>Noxium, which we make, isn't open source. We publish exactly what it uses instead: Argon2id, AES-256-GCM, the key layers and the chunk size, on our <a href="/features/on-device-encryption">on-device encryption</a> page.</p>
+        <p>Here's what a sample of popular vault apps say. We report their claims, not test results.</p>
+        <div class="data-table-wrap" tabindex="0" role="region" aria-labelledby="apps-caption">
+          <table class="data-table">
+            <caption id="apps-caption">What each app's US App Store listing (and, for Keepsafe, its help center) says about encryption, checked 28 November 2026</caption>
+            <thead><tr><th scope="col">App</th><th scope="col">What it says about encryption</th></tr></thead>
+            <tbody>
+              <tr><th scope="row"><a href="https://apps.apple.com/us/app/photo-vault-vaultaire/id6758529311" rel="noopener">Vaultaire</a></th><td>AES-256-GCM on the iPhone; a random file key unlocked by your pattern; backup encrypted before it goes to your iCloud</td></tr>
+              <tr><th scope="row"><a href="https://apps.apple.com/us/app/obscura-encrypted-photo-vault/id6759755376" rel="noopener">Obscura</a></th><td>AES-256-GCM; 600,000 rounds of key derivation; a 24-word recovery key; encryption code is open source</td></tr>
+              <tr><th scope="row"><a href="https://apps.apple.com/us/app/encamera-encrypted-photo-vault/id1639202616" rel="noopener">Encamera</a></th><td>Encrypts all media; code open for review; cipher not named in the listing</td></tr>
+              <tr><th scope="row"><a href="https://support.getkeepsafe.com/hc/en-us/articles/360035454311-How-does-Keepsafe-protect-my-data" rel="noopener">Keepsafe</a></th><td>256-bit AES, files encrypted at rest, encrypted backups (help center)</td></tr>
+              <tr><th scope="row"><a href="https://apps.apple.com/us/app/secret-photos-kyms/id471303390" rel="noopener">KYMS</a></th><td>AES; key size and mode not named</td></tr>
+              <tr><th scope="row"><a href="https://apps.apple.com/us/app/privault-private-photo-vault/id1186436980" rel="noopener">Privault</a></th><td>"Encrypted storage" opened by your passcode; cipher not named</td></tr>
+              <tr><th scope="row"><a href="https://apps.apple.com/us/app/private-photo-vault-pic-safe/id417571834" rel="noopener">Private Photo Vault</a></th><td>"Encrypted Cloud Backup"; cipher not named</td></tr>
+              <tr><th scope="row"><a href="https://apps.apple.com/us/app/spv-secret-photo-vault/id1449239240" rel="noopener">SPV - Secret Photo Vault</a></th><td>Not mentioned; PIN protection, stored on the device only</td></tr>
+              <tr><th scope="row"><a href="https://apps.apple.com/us/app/hide-photos-video-hide-it-pro/id523488488" rel="noopener">Hide it Pro</a></th><td>Not mentioned</td></tr>
+              <tr class="is-noxium"><th scope="row">Noxium<small>Our app</small></th><td>AES-256-GCM on the device, keys from your pattern through Argon2id; only encrypted data leaves the device</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>"Not mentioned" doesn't prove an app doesn't encrypt; it means you can't tell from what the developer publishes. Published code helps, but it isn't an audit, it may cover only the encryption part, and you can't easily confirm the App Store build matches it. Noxium isn't open source; we publish what it uses on our <a href="/features/on-device-encryption">on-device encryption</a> page instead. For full app-by-app reviews, see <a href="/best-photo-vault-apps-iphone">the best photo vault apps for iPhone</a>.</p>
+
+        <h2 id="limits">What can encryption not protect against?</h2>
+        <ul>
+          <li><strong>Someone watching you enter your code,</strong> or making you enter it. A <a href="/guides/what-is-a-decoy-vault">decoy vault</a> helps with the second, not the first.</li>
+          <li><strong>An open vault.</strong> While it's unlocked on screen, the photos are visible. Good apps hide content in the app switcher; Noxium also hides it during screen recording.</li>
+          <li><strong>A short code.</strong> Slow key derivation helps, but a 4-digit PIN can still be tried exhaustively.</li>
+          <li><strong>Copies outside the vault,</strong> such as originals left in Photos, Messages or Recently Deleted.</li>
+        </ul>
         <figure class="shot">
           <img src="/assets/guides/noxium-lock.jpg" alt="Noxium's lock screen: the pattern is stretched with Argon2id into the key that opens the vault" width="559" height="1216" loading="lazy" decoding="async">
-          <figcaption>In Noxium, your pattern is never stored. It's stretched with Argon2id into the key that opens your vault.</figcaption>
+          <figcaption>In Noxium, your pattern is never stored. Keys come from it through Argon2id.</figcaption>
         </figure>
 
         <div class="cta-card">
           <p class="cta-card-title">Encryption you can read about</p>
-          <p>Noxium names every piece: Argon2id for your pattern, AES-256-GCM for each file, and only ciphertext in your own iCloud. Free for 150 photos and 10 videos.</p>
+          <p>Noxium names every piece: Argon2id for your pattern, AES-256-GCM for each file, and only encrypted data in your own iCloud. Free for 150 photos and 10 videos.</p>
           <a href="https://apps.apple.com/app/apple-store/id6824616093" class="btn btn-primary" data-cta="body" data-label-waitlist="Join the beta" data-label-live="Download on the App Store">Download on the App Store</a>
           <!-- build:status -->
           <span class="release-status">Available on the App Store for iPhone and iPad.</span>
@@ -358,27 +336,37 @@
         <h2 id="faq">Questions people ask</h2>
         <div class="faq-list">
           <details class="faq-item">
-            <summary class="faq-summary"><span class="faq-summary-left"><span>Are photo vault apps encrypted?</span></span></summary>
-            <div class="faq-body"><p>Some are, some aren't. Many only show a PIN screen in front of ordinary files. Look for a named cipher, such as AES-256, and encryption on the device before backup.</p></div>
+            <summary class="faq-summary"><span class="faq-summary-left"><span>How does a vault app work?</span></span></summary>
+            <div class="faq-body"><p>It stores your photos inside the app behind its own code. A good one also encrypts each photo with a key that only your code unlocks, so the stored files are unreadable without it.</p></div>
           </details>
           <details class="faq-item">
-            <summary class="faq-summary"><span class="faq-summary-left"><span>What does military-grade encryption mean?</span></span></summary>
-            <div class="faq-body"><p>Usually just AES, the standard cipher. It doesn't tell you how the key is made or stored, which matters more.</p></div>
+            <summary class="faq-summary"><span class="faq-summary-left"><span>What is the best encryption app for iPhone?</span></span></summary>
+            <div class="faq-body"><p>There's no single best one. Pick a vault that names its cipher (such as AES-256-GCM), encrypts on the device before backup, and can't reset your code by email. We compare apps in <a href="/best-photo-vault-apps-iphone">our vault app comparison</a>.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-summary"><span class="faq-summary-left"><span>Are photo vault apps encrypted?</span></span></summary>
+            <div class="faq-body"><p>Some are, some don't say. Of the 9 rival listings and help pages in our table, 2 name AES-256-GCM, 2 more name AES, and 2 don't mention encryption.</p></div>
           </details>
           <details class="faq-item">
             <summary class="faq-summary"><span class="faq-summary-left"><span>What is Argon2id?</span></span></summary>
-            <div class="faq-body"><p>A key derivation function that turns a password or pattern into an encryption key slowly and with a lot of memory, so guessing codes is expensive.</p></div>
-          </details>
-          <details class="faq-item">
-            <summary class="faq-summary"><span class="faq-summary-left"><span>Is Face ID part of the encryption?</span></span></summary>
-            <div class="faq-body"><p>Not directly. Face ID is a shortcut to a key the app stored in the iPhone's Keychain. In Noxium, that key stays on this iPhone, isn't synced, and stops working if your Face ID enrolment changes; your pattern always works.</p></div>
+            <div class="faq-body"><p>A key derivation function that turns a password or pattern into a key, using a set amount of memory and time for each guess, so guessing codes is expensive. It's standardised in RFC 9106.</p></div>
           </details>
           <details class="faq-item">
             <summary class="faq-summary"><span class="faq-summary-left"><span>Can an encrypted vault be hacked?</span></span></summary>
-            <div class="faq-body"><p>The encryption itself isn't the weak point. Short codes, codes seen by someone else, and unencrypted copies left elsewhere are. Use a long code and remove originals after importing.</p></div>
+            <div class="faq-body"><p>The cipher itself isn't the weak point. Short codes, codes seen by someone else, and unencrypted copies left elsewhere are. Use a long code and remove originals after importing.</p></div>
           </details>
         </div>
 
+        <h2 id="sources">Sources</h2>
+        <ul>
+          <li><a href="https://csrc.nist.gov/projects/aes" rel="noopener">NIST: AES (FIPS 197)</a>. AES as the standard cipher and its key sizes. Checked 28 November 2026.</li>
+          <li><a href="https://csrc.nist.gov/pubs/sp/800/38/d/final" rel="noopener">NIST SP 800-38D: GCM and GMAC</a>. GCM as authenticated encryption. Checked 28 November 2026.</li>
+          <li><a href="https://www.rfc-editor.org/rfc/rfc9106" rel="noopener">RFC 9106: Argon2</a>. Argon2id as the main variant, its recommended settings and salt length. Checked 28 November 2026.</li>
+          <li><a href="https://support.apple.com/guide/security/sece8608431d/web" rel="noopener">Apple Platform Security: Data Protection</a>. Per-file keys wrapped by class keys on iPhone. Checked 28 November 2026.</li>
+          <li><a href="https://support.apple.com/en-us/102651" rel="noopener">Apple Support: iCloud data security overview</a>. When iCloud Photos is end-to-end encrypted. Checked 28 November 2026.</li>
+        </ul>
+
+        <p class="how-made"><em>How this guide was made: drafted with AI help, then checked against the sources above by Inertia Projects, which makes Noxium.</em></p>
         <p><em>Something wrong or out of date? Email <a href="mailto:business@inertiaprojects.info">business@inertiaprojects.info</a> and we'll fix it.</em></p>
       </article>
 
@@ -387,17 +375,14 @@
           <p class="toc-title">On this page</p>
           <ol>
             <li><a href="#lock-vs-encrypt">Hiding vs encrypting</a></li>
-            <li><a href="#keys">What a key is</a></li>
-            <li><a href="#stretching">Turning a code into a key</a></li>
-            <li><a href="#aes">AES-256-GCM</a></li>
-            <li><a href="#wrapping">Keys inside keys</a></li>
+            <li><a href="#stretching">How a code becomes a key</a></li>
+            <li><a href="#aes">AES-256-GCM and keys inside keys</a></li>
             <li><a href="#backup">Encrypted backups</a></li>
-            <li><a href="#limits">What encryption can't do</a></li>
-            <li><a href="#spot">How to spot the difference</a></li>
-            <li><a href="#apps">What vault apps say</a></li>
             <li><a href="#ios">The iPhone's own encryption</a></li>
-            <li><a href="#open-source">Open-source code</a></li>
+            <li><a href="#spot">How to tell if a vault encrypts</a></li>
+            <li><a href="#limits">What encryption can't do</a></li>
             <li><a href="#faq">Questions people ask</a></li>
+            <li><a href="#sources">Sources</a></li>
           </ol>
         </nav>
         <!-- build:related -->
