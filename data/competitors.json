@@ -301,7 +301,7 @@
           "developer": "KeepSafe Software, Inc",
           "price": "Free",
           "rating": 4.7,
-          "ratingCount": 386264,
+          "ratingCount": 387000,
           "version": "13.36.0",
           "lastUpdate": "2026-11-12",
           "minimumOs": "17.0",
@@ -344,7 +344,7 @@
               "price": "$35.99"
             }
           ],
-          "checked": "2026-11-14"
+          "checked": "2026-11-28"
         },
         "de": {
           "name": "Keepsafe - Bilder Verstecken",
@@ -871,9 +871,9 @@
           "developer": "Legendary Software Labs LLC",
           "price": "Free",
           "rating": 4.8,
-          "ratingCount": 1019778,
-          "version": "30.0",
-          "lastUpdate": "2026-11-12",
+          "ratingCount": 1020705,
+          "version": "30.1",
+          "lastUpdate": "2026-11-23",
           "minimumOs": "15.0",
           "url": "https://apps.apple.com/us/app/private-photo-vault-pic-safe/id417571834",
           "privacyLabel": [
@@ -895,14 +895,14 @@
             },
             {
               "name": "Private Photo Vault Premium",
-              "price": "$39.99"
+              "price": "$6.99"
             },
             {
               "name": "Private Photo Vault Premium",
-              "price": "$6.99"
+              "price": "$39.99"
             }
           ],
-          "checked": "2026-11-14"
+          "checked": "2026-11-28"
         },
         "de": {
           "name": "Private Photo Vault - Pic Safe",
@@ -1616,7 +1616,7 @@
           "developer": "Wraxle LLC",
           "price": "Free",
           "rating": 4.7,
-          "ratingCount": 65,
+          "ratingCount": 72,
           "version": "1.1.2",
           "lastUpdate": "2026-10-23",
           "minimumOs": "17.0",
@@ -1639,10 +1639,6 @@
               "price": "$1.99"
             },
             {
-              "name": "Vaultaire Pro Monthly",
-              "price": "$5.99"
-            },
-            {
               "name": "Vaultaire Pro Annual Offer",
               "price": "$19.99"
             },
@@ -1651,11 +1647,15 @@
               "price": "$99.99"
             },
             {
+              "name": "Vaultaire Pro Monthly",
+              "price": "$5.99"
+            },
+            {
               "name": "Vaultaire Pro Family Annual",
               "price": "$49.99"
             }
           ],
-          "checked": "2026-11-14"
+          "checked": "2026-11-28"
         },
         "de": {
           "name": "Fototresor - Vaultaire",

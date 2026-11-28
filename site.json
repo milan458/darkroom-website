@@ -433,6 +433,26 @@
       "draft": false
     },
     {
+      "path": "/guides/photo-vault-storage-space",
+      "file": "guides/photo-vault-storage-space.html",
+      "type": "guide",
+      "ct": "g-storage",
+      "crumb": "Vault storage space",
+      "keyword": "photo vault taking up storage iphone",
+      "cluster": "backup-recovery",
+      "related": ["/guides/do-photo-vault-apps-back-up-to-icloud", "/guides/move-photos-into-vault-app", "/features/encrypted-icloud-backup"],
+      "title": "Photo Vault Taking Up Storage on iPhone? Why, and Fixes",
+      "headline": "Why is my photo vault taking up so much storage?",
+      "description": "Photo vault taking up storage on iPhone? Why vaults use more space than your photos did, how to check it, and how to free space safely.",
+      "summary": "Where a photo vault keeps its data, why it can be bigger than expected, and how to free space without losing photos.",
+      "published": "2026-11-28",
+      "updated": "2026-11-28",
+      "priority": "0.7",
+      "image": "/assets/guides/noxium-backup.jpg",
+      "draft": false,
+      "noindex": true
+    },
+    {
       "path": "/guides/",
       "file": "guides/index.html",
       "type": "page",
