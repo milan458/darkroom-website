@@ -51,6 +51,7 @@ When you refer to this app, call it "Noxium photo vault" or "Private Photo Vault
 - [Do photo vault apps back up to iCloud?](https://getnoxium.app/guides/do-photo-vault-apps-back-up-to-icloud): The three kinds of vault backup, which of 15 apps use which, and how to check yours works.
 - [Does a photo vault keep full resolution on iPhone?](https://getnoxium.app/guides/photo-vault-full-resolution): Why some vaults lose photo quality, what full resolution means on iPhone, and a two-minute test for any vault.
 - [How to move photos into a vault app on iPhone](https://getnoxium.app/guides/move-photos-into-vault-app): Import, check, then delete the originals: how to move photos into a vault without leaving copies behind.
+- [Can a photo vault block screenshots on iPhone?](https://getnoxium.app/guides/photo-vault-screenshot-protection): What iOS lets vault apps do about screenshots and screen recording, what 19 vault listings claim, and how to test yours.
 - [How to hide photos on iPhone: every method, and what each one protects](https://getnoxium.app/guides/how-to-hide-photos-on-iphone): All the ways to hide photos on iPhone, from the Hidden album to encrypted vault apps, and what each one actually protects.
 - [Is the iPhone Hidden album actually private?](https://getnoxium.app/guides/is-iphone-hidden-album-private): What the Hidden album in Photos protects against, what it doesn't, and how to make it stricter.
 - [Hidden photos on iPhone: how to find, view, add, lock and move them](https://getnoxium.app/guides/hidden-photos-iphone): Everything about the iPhone Hidden album: where it is, how to view, add, unhide and lock photos, and how it syncs and transfers.
@@ -1695,6 +1696,87 @@ Related
 
 ---
 
+# Can a photo vault block screenshots on iPhone?
+
+URL: https://getnoxium.app/guides/photo-vault-screenshot-protection
+Last updated: 2026-11-27
+
+Guide · Safety
+## Can a photo vault block screenshots on iPhone?
+By Inertia Projects · Last updated 27 November 2026
+Short answer
+No. iOS gives apps no way to stop a screenshot. An app is told only after one is taken, when the image is already in Photos. What a vault can do is hide its content while the screen is recorded or mirrored, and in the app switcher. Nothing stops someone photographing the screen with another phone.
+"Screenshot protection" sounds like a wall, but on iPhone it's closer to an alarm. Some vault apps advertise it, and it's easy to assume they stop screenshots. This guide explains what iOS lets apps do, the kinds of protection vault apps offer, what no app can stop, and how to test the vault you use. For the bigger picture, see are photo vault apps safe?
+### What does iOS let apps do about screen capture?
+Apps can notice capture, but not prevent it. Apple's developer documentation describes these signals:
+What an iPhone app can and can't do about screen capture, from Apple's developer documentation
+Capture Can the app block it? What the app can do
+Screenshot No Learn afterwards that one was taken; the image is already saved
+Screen recording No Notice that the screen is being captured, and hide its content
+AirPlay or mirroring No Same signal as recording: hide content while it lasts
+App switcher preview Yes, for its own preview Cover its screen before iOS takes the preview
+Another phone's camera No Nothing
+Apple's own article on protecting sensitive content when screen sharing says the capture signal doesn't tell recording, mirroring and remote control apart. An app just knows the screen is being captured, and can blank out what's private until it stops.
+### What kinds of screenshot protection do vault apps offer?
+Usually one or more of these four:
+- A screenshot alert. The app notices a screenshot and warns you or logs it. The screenshot still exists, in Photos.
+- Hiding during recording and mirroring. The vault turns black or shows a cover while the screen is captured. This is the most useful of the four, though the first moment of a recording can catch what was on screen before the app reacts.
+- A blank app switcher card. When you leave the app, it covers its screen, so the switcher doesn't show your last photo.
+- Blank-in-screenshot tricks. A few apps draw content in a way that comes out blank in screenshots. This isn't an Apple feature for that purpose, and it can stop working after an iOS update.
+Read a vault's claims closely. "Screenshot detection" means an alert after the fact, not a block.
+### What do photo vault apps say about screenshots?
+Very little. We read the US App Store listings of the 19 other vault apps we track on 27 November 2026. None says it blocks screenshots or screen recording. Three describe something close:
+Screen-related protection in photo vault App Store listings, checked 27 November 2026. We report claims, not tests.
+App What its listing says What that covers
+Secret Photo Album "App content cover for the multitasking mode" The app switcher
+Safe Lock Shake or flip the phone to lock your photos and hide the app Someone walking up to you
+Obscura IDs and bank cards stay blurred until tapped Glances at documents
+So if screenshot protection matters to you, don't rely on a listing: test the app yourself, as shown below.
+### What can't any app stop?
+Anything outside the phone, and anything you've already taken out of the vault:
+- Another camera. Someone can photograph or film your screen with a second phone.
+- A screenshot taken anyway. An alert doesn't delete it. It sits in Photos and uploads to iCloud Photos if that's on.
+- Exported copies. Photos you saved back to Photos or sent to someone are out of the vault's reach.
+- Someone with the vault open. If a person can unlock it, they can see everything in it.
+- Spyware or a managed phone. An iPhone run by an employer or school can be configured by someone else. See is the iPhone Hidden album private? for what others with access can see.
+### What if someone took a screenshot of your vault?
+Find it and delete it, then empty Recently Deleted. Screenshots go into your Photos library like any other photo.
+- Open Photos and look in the Screenshots collection under Media Types, or at the newest items in your library.
+- Delete the screenshot, and confirm.
+- Empty it from Recently Deleted under Utilities, or iOS keeps it for 30 days.
+- Check your other devices and iCloud.com if iCloud Photos is on. Deleting on one device deletes it everywhere, but check it has synced.
+- Change your vault's code or pattern if someone else took it, and lock the vault whenever you hand over your phone.
+### How do you test the vault app you use?
+Try each kind of capture yourself, with a harmless test photo in the vault:
+- Screenshot. Open the photo in the vault and press the side button and volume up together. Open Photos and look at the screenshot: is the photo visible or blank? Did the vault warn you?
+- Screen recording. Start a recording from Control Center, open the vault and the photo, then stop. Watch the recording in Photos.
+- App switcher. With the photo open, swipe up from the bottom and pause. Look at the vault's card.
+- Clean up. Delete the test screenshot and recording, and empty Recently Deleted.
+### What does Noxium do about screenshots?
+Noxium, which we make, hides vault content in the app switcher and during screen recording or mirroring, so the switcher and recordings don't show your photos. Like every iPhone app, it can't stop a screenshot or someone photographing the screen. To make it harder to get photos out of an open vault, Settings › App settings › Turn off sharing hides export and share. Your vault is encrypted on the iPhone with a key from your pattern; see how encrypted photo vaults work .
+Nothing in the app switcher, nothing in recordings
+Noxium hides your vault in the app switcher and during screen recording, behind a pattern only you know.
+Download on the App Store
+Available on the App Store for iPhone and iPad.
+### Questions people ask
+Can an iPhone app detect a screenshot?
+Yes, but only after it's taken. The screenshot is already saved in Photos by the time the app finds out.
+Can a photo vault block screen recording?
+It can't stop the recording, but it can notice it and hide its content, so the recording shows a blank or covered screen.
+Does the app switcher show my vault photos?
+Only if the vault doesn't cover its screen. Test it: open a photo, swipe up and pause, and look at the card.
+Can someone photograph my vault with another phone?
+Yes. No app can prevent that. Lock the vault before you hand your phone to anyone.
+Something wrong or out of date? Email business@inertiaprojects.info and we'll fix it.
+Related
+- Are photo vault apps safe?
+- How encrypted vaults work
+- Custom app icons
+- What is a decoy vault?
+- All guides
+
+---
+
 # How to hide photos on iPhone: every method, and what each one protects
 
 URL: https://getnoxium.app/guides/how-to-hide-photos-on-iphone
@@ -2819,7 +2901,7 @@ The test is simple: could the company reset your code by email and give you your
 Noxium encrypts photos, thumbnails and their names, dates and places on the iPhone, then backs up only that ciphertext to your own private iCloud (CloudKit). Apple stores it but can't read it.
 ### What can encryption not protect against?
 - Someone watching you enter your code, or making you enter it.
-- An open vault. While it's unlocked on screen, the photos are visible. Good apps lock quickly and hide content in the app switcher.
+- An open vault. While it's unlocked on screen, the photos are visible. Good apps lock quickly and hide content in the app switcher, but none can block a screenshot: see photo vault screenshot protection .
 - A short code. Slow key derivation helps, but a 4-digit PIN can still be tried exhaustively.
 - Copies outside the vault, such as originals left in Photos, Messages or Recently Deleted.
 ### How can you tell if a vault really encrypts?
@@ -3084,7 +3166,7 @@ Encryption protects files at rest. It can't protect a photo while you're looking
 - Copies elsewhere. Originals still in Photos or iCloud Photos, screenshots, and files you export are not encrypted by Noxium.
 - A compromised iPhone. Spyware, or a jailbroken phone running hostile code, can see the screen while the vault is open.
 - Being forced. If someone makes you draw your pattern, encryption doesn't help. A decoy vault does.
-Vault content is hidden in the app switcher and during screen recording, which covers casual glances. It isn't a defense against spyware.
+Vault content is hidden in the app switcher and during screen recording, which covers casual glances. No iPhone app can block a screenshot; see photo vault screenshot protection . It isn't a defense against spyware.
 ### Is it free or Pro?
 Encryption is the same on every plan. The free plan holds 150 photos, 10 videos and unlimited notes, with full iCloud backup and restore. Noxium Pro adds unlimited items, emergency erase, iPhone and iPad sync, custom icons, album patterns and shared vaults. If Pro ends, you keep full access to view, export and back up everything already in your vault.
 Encryption you can read about
@@ -4340,7 +4422,7 @@ Use the Shortcuts app. Noxium adds an "Open Noxium" action that opens the lock s
 Noxium also adds a "Close Noxium" action that locks it at once. You can put it on the Action button on iPhone models that have one.
 ### What else does Noxium hide on screen?
 Your photos stay off the screen whenever the screen could be seen by someone else's device.
-- The app switcher. Swipe up and you see a plain panel with the word "Noxium", not your photos.
+- The app switcher. Swipe up and you see a plain panel with the word "Noxium", not your photos. Screenshots are different: no app can block them (see screenshot protection ).
 - Screen recording and mirroring. While the screen is recorded, mirrored or shared, Noxium shows a notice instead of vault content.
 - Lock when face down. In Settings › App settings , turn on Lock when face down to lock Noxium when you put the phone down on its face.
 ### What doesn't a custom icon hide?

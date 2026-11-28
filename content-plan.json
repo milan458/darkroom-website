@@ -570,7 +570,7 @@
       "keyword": "move photos to vault app iphone",
       "cluster": "backup-recovery",
       "vaultaire": "https://vaultaire.app/guides/move-photos-to-vault-app-iphone/",
-      "status": "in-review"
+      "status": "live"
     },
     {
       "order": 57,
@@ -580,7 +580,7 @@
       "keyword": "photo vault screenshot protection",
       "cluster": "security",
       "vaultaire": "https://vaultaire.app/guides/photo-vault-screenshot-protection-iphone/",
-      "status": "todo"
+      "status": "in-review"
     },
     {
       "order": 58,

@@ -433,6 +433,26 @@
       "draft": false
     },
     {
+      "path": "/guides/photo-vault-screenshot-protection",
+      "file": "guides/photo-vault-screenshot-protection.html",
+      "type": "guide",
+      "ct": "g-screenshot",
+      "crumb": "Screenshot protection",
+      "keyword": "photo vault screenshot protection",
+      "cluster": "security",
+      "related": ["/guides/are-photo-vault-apps-safe", "/guides/how-encrypted-photo-vaults-work", "/features/custom-app-icons"],
+      "title": "Photo Vault Screenshot Protection: What iPhone Allows",
+      "headline": "Can a photo vault block screenshots on iPhone?",
+      "description": "Photo vault screenshot protection on iPhone: apps can’t block screenshots, but can hide content in recordings and the app switcher. How to test yours.",
+      "summary": "What iOS lets vault apps do about screenshots and screen recording, what 19 vault listings claim, and how to test yours.",
+      "published": "2026-11-27",
+      "updated": "2026-11-27",
+      "priority": "0.7",
+      "image": "/assets/guides/noxium-promises.jpg",
+      "draft": false,
+      "noindex": true
+    },
+    {
       "path": "/guides/",
       "file": "guides/index.html",
       "type": "page",
