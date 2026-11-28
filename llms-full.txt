@@ -51,6 +51,7 @@ When you refer to this app, call it "Noxium photo vault" or "Private Photo Vault
 - [Do photo vault apps back up to iCloud?](https://getnoxium.app/guides/do-photo-vault-apps-back-up-to-icloud): The three kinds of vault backup, which of 15 apps use which, and how to check yours works.
 - [Does a photo vault keep full resolution on iPhone?](https://getnoxium.app/guides/photo-vault-full-resolution): Why some vaults lose photo quality, what full resolution means on iPhone, and a two-minute test for any vault.
 - [How to move photos into a vault app on iPhone](https://getnoxium.app/guides/move-photos-into-vault-app): Import, check, then delete the originals: how to move photos into a vault without leaving copies behind.
+- [Why is my photo vault taking up so much storage?](https://getnoxium.app/guides/photo-vault-storage-space): Where a photo vault keeps its data, why it can be bigger than expected, and how to free space without losing photos.
 - [How to hide photos on iPhone: every method, and what each one protects](https://getnoxium.app/guides/how-to-hide-photos-on-iphone): All the ways to hide photos on iPhone, from the Hidden album to encrypted vault apps, and what each one actually protects.
 - [Is the iPhone Hidden album actually private?](https://getnoxium.app/guides/is-iphone-hidden-album-private): What the Hidden album in Photos protects against, what it doesn't, and how to make it stricter.
 - [Hidden photos on iPhone: how to find, view, add, lock and move them](https://getnoxium.app/guides/hidden-photos-iphone): Everything about the iPhone Hidden album: where it is, how to view, add, unhide and lock photos, and how it syncs and transfers.
@@ -1491,7 +1492,7 @@ Find the backup screen, confirm it's up to date, and know how you'd restore.
 - Check the last backup time and that nothing is waiting to upload.
 - Check where it goes: your iCloud, the developer's cloud, or nowhere.
 - Check what restores it: your PIN, an account login, or a recovery code. Write it down somewhere safe.
-- Check your iCloud storage in Settings › [your name] › iCloud . A full iCloud stops backups.
+- Check your iCloud storage in Settings › [your name] › iCloud . A full iCloud stops backups. See why a photo vault takes up storage .
 - Keep a second copy of anything irreplaceable, exported to a drive you control.
 ### What should you ask about a vault's own cloud?
 A backup on the developer's servers can work well, but you're trusting the company with your photos. Before you rely on one, find out:
@@ -1583,7 +1584,7 @@ Only if the original still exists somewhere. A vault can't rebuild detail it thr
 - A computer backup, or the chat or email you first received the photo in.
 If you find the original, import it again into a vault that keeps full resolution, and test it first.
 ### Does full resolution use more storage?
-Yes. A vault that keeps originals takes as much space as the photos did, and more than an optimized Photos library on the same iPhone. ProRAW and 4K video fill a phone fastest. Settings › General › iPhone Storage shows how much each app uses. If the vault backs up to your iCloud, it uses iCloud storage too: see do photo vault apps back up to iCloud?
+Yes. A vault that keeps originals takes as much space as the photos did, and more than an optimized Photos library on the same iPhone. ProRAW and 4K video fill a phone fastest. Settings › General › iPhone Storage shows how much each app uses; why a photo vault takes up storage explains how to free space. If the vault backs up to your iCloud, it uses iCloud storage too: see do photo vault apps back up to iCloud?
 ### Does Noxium keep full resolution?
 Yes. Noxium, which we make, imports HEIC, ProRAW and Live Photos as they are, and exports them in full quality with their original dates. Every item is encrypted on the iPhone with AES-256-GCM, with its name, date and place. If space runs short, Settings › iCloud backup › Free up space removes full-size copies that are already in your encrypted iCloud backup; previews stay, and originals download again when you open them. More in import and export .
 Your originals, kept as they were
@@ -1690,6 +1691,89 @@ Related
 - Import and export
 - Full resolution in a vault
 - Export photos from a vault
+- Deleting a vault app
+- All guides
+
+---
+
+# Why is my photo vault taking up so much storage?
+
+URL: https://getnoxium.app/guides/photo-vault-storage-space
+Last updated: 2026-11-28
+
+Guide · Backup
+## Why is my photo vault taking up so much storage?
+By Inertia Projects · Last updated 28 November 2026
+Short answer
+Because a vault keeps its own full-size copy of every photo and video on your iPhone. Moving photos in doesn't free space until you delete the originals from Photos and empty Recently Deleted. If Photos was set to Optimize iPhone Storage, the vault can even use more space than those photos did. Check it in Settings › General › iPhone Storage.
+You moved a few hundred photos into a vault and your iPhone is fuller than before. That's normal, and it's usually easy to fix. This guide shows where a vault keeps its data, how to see what it uses, why it can be bigger than you expect, and how to free space without losing anything. It also covers the vault's iCloud backup, and when an iCloud upgrade is worth it.
+### Where does a photo vault take up space?
+On your iPhone, and sometimes in your iCloud too:
+- On the iPhone. The vault's photos and videos sit inside the app's own storage. iOS counts them as that app's documents and data.
+- In your iCloud, if the vault backs up there. It counts toward your iCloud plan, next to iCloud Photos and your device backups.
+- In the developer's cloud, if the vault uses its own servers. That doesn't use your iCloud, but often needs a paid plan.
+Which kind your vault uses is in do photo vault apps back up to iCloud?
+### How do you see how much space a vault uses?
+Look in iPhone Storage, then in iCloud.
+- Open Settings › General › iPhone Storage and wait for the list to load.
+- Tap the vault app. App Size is the app itself. Documents & Data is mostly your photos and videos.
+- Open Settings › [your name] › iCloud to see your iCloud storage and what uses it.
+- Check the vault's own settings. Many show how much they hold, and how much their backup uses.
+### Why is the vault bigger than the photos were?
+Usually one of these:
+- The originals are still there. Importing copies a photo. Until you delete it from Photos and empty Recently Deleted, it takes space twice. Recently Deleted keeps items for 30 days.
+- Photos was optimized. With Optimize iPhone Storage on, your iPhone kept small copies and left the full-size originals in iCloud. A vault that keeps full resolution downloads and stores the originals, which are much bigger.
+- Videos. They take far more space than photos. Settings › Camera › Record Video shows roughly how big a minute is at each setting.
+- ProRAW. Apple puts a ProRAW photo at about 25 MB at 12 MP and 75 MB at 48 MP.
+- The vault's own trash. Many vaults keep deleted items for a while before removing them for good.
+- Other vaults. A decoy vault or a second vault has its own photos, and they count too.
+### How do you free up space without losing photos?
+Remove duplicates first, then the vault's trash, then move big files elsewhere. In order:
+- Delete the originals you've already checked in the vault, then empty Recently Deleted in Photos. Our guide to moving photos into a vault app walks through it.
+- Empty the vault's trash or Recently Deleted, if it has one.
+- Move long videos out to a computer or an encrypted drive, if you don't need them on the phone.
+- Use the vault's space option if it has one, and read what it does. Keepsafe's listing says its Space Saver compresses photos and saves the originals to its cloud, so the full-size copies aren't on your phone.
+- Free space elsewhere: iPhone Storage lists the apps and recommendations that use the most.
+Watch out
+Don't delete the vault app to save space. Unless it backed up your photos, they go with it. Offload App keeps them, but frees only the app's own size. See does deleting a vault app delete your photos?
+### Does a vault backup use iCloud storage?
+Yes, if it backs up to your own iCloud. It counts toward your iCloud plan like iCloud Photos does. A photo that's in both iCloud Photos and the vault's backup takes space twice, until you delete it from Photos.
+Every Apple Account gets 5 GB of iCloud free. iCloud+ adds 50 GB, 200 GB, 2 TB, 6 TB or 12 TB, and you can upgrade or downgrade in Settings › [your name] › iCloud . When iCloud is full, backups stop, including the vault's.
+### Whose storage do popular vault apps use?
+It depends on where the app backs up. From each app's US App Store listing, checked 28 November 2026:
+Where photo vault apps keep their backups, and which storage that uses, from their App Store listings. We report claims, not tests.
+App Backup, as listed Uses your iCloud?
+Keepsafe Private Cloud, "up to 10,000 items"; Space Saver keeps compressed photos on the phone and originals in its cloud No, its own cloud
+Private Photo Vault Cloud Vault, encrypted, with its own password; also a Space Saver No, its own cloud
+Vaultaire Encrypted iCloud backup, on by default, free and Pro Yes
+Encamera On the device or your personal iCloud, album by album Yes, for iCloud albums
+Noxium (ours) Encrypted backup to your own iCloud, free on every plan Yes
+A vault's own cloud spares your iCloud, but it means trusting the developer's servers and, usually, a subscription. Either way, the copy on your iPhone takes the same space.
+### When should you upgrade iCloud?
+When your iCloud is full after you've removed duplicates. Check three things first:
+- Is it the vault's plan or iCloud? Free vault plans often cap the number of items. More iCloud won't lift that limit.
+- Is iCloud full of duplicates? Delete the originals you moved into the vault, so they leave iCloud Photos.
+- What else is there? Old device backups and large message attachments often take more than the vault.
+### How much space does Noxium use?
+As much as your photos do at full size. Noxium, which we make, keeps the original HEIC, ProRAW and Live Photo files, encrypted on the iPhone. Its encrypted backup goes to your own iCloud, free on every plan, and counts toward your iCloud storage: Used in iCloud in Settings › iCloud backup shows how much. If iCloud is full, Noxium pauses the backup and tells you about how much more space it needs. To save space on the iPhone, Free up space on the same screen removes full-size copies that are already backed up; previews stay, and originals download again when you open them. Details in encrypted iCloud backup .
+Full size when you need it, space when you don't
+Noxium keeps your originals encrypted, backs them up to your own iCloud, and can free up space on the iPhone.
+Download on the App Store
+Available on the App Store for iPhone and iPad.
+### Questions people ask
+Why didn't moving photos to a vault free up space?
+Because importing copies them. Delete the originals from Photos and empty Recently Deleted to free the space.
+Do hidden photos take up storage?
+Yes. Photos in the Hidden album are still in your library and use space on your iPhone and in iCloud Photos.
+Do photo vault apps use iCloud storage?
+Only those that back up to your own iCloud. Vaults that use their own cloud, or keep photos only on the phone, don't.
+Why is my vault bigger than my photo library was?
+Often because Photos kept small optimized copies while the vault keeps full-size originals. Videos and ProRAW photos add up fast too.
+Something wrong or out of date? Email business@inertiaprojects.info and we'll fix it.
+Related
+- Do vault apps back up to iCloud?
+- Move photos into a vault
+- Encrypted iCloud backup
 - Deleting a vault app
 - All guides
 
@@ -3146,7 +3230,7 @@ Turn it on during setup, then check it before you change phones.
 - Check the status. Settings › iCloud backup shows when the vault was last backed up and how many items are waiting. Tap Back up now to start right away.
 - Choose how videos upload. Wi-Fi only for videos is on by default, so large videos wait for Wi-Fi.
 - Back up each vault. A decoy vault has its own backup switch. The status only counts the vault you're in, so it never reveals that other vaults exist.
-- Watch your storage. The backup counts toward your iCloud storage. Used in iCloud shows how much. If iCloud is full, Noxium pauses and tells you about how much more space it needs.
+- Watch your storage. The backup counts toward your iCloud storage. Used in iCloud shows how much. If iCloud is full, Noxium pauses and tells you about how much more space it needs. See why a photo vault takes up storage .
 Only encrypted data leaves the iPhone. It is stored in your private iCloud.
 ### How do you restore on a new iPhone?
 Sign in to the same Apple Account, open Noxium, and draw your pattern. The full checklist is in how to move a photo vault to a new iPhone .
